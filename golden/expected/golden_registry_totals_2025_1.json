@@ -1,0 +1,117 @@
+{
+ "_source": "pandas over data/sample/sales.csv (golden/expected/make_expected.py, decisions/052): registry totals under bar and bar_inside columns, subtotals",
+ "Regions": {
+  "East": {
+   "Sales": 52353.59,
+   "Margin": 0.0931,
+   "Units": 627
+  },
+  "North": {
+   "Sales": 58482.58,
+   "Margin": 0.1314,
+   "Units": 608
+  },
+  "South": {
+   "Sales": 58862.46,
+   "Margin": 0.1093,
+   "Units": 751
+  },
+  "West": {
+   "Sales": 55011.05,
+   "Margin": 0.0828,
+   "Units": 624
+  },
+  "TOTAL": {
+   "Sales": 224709.68,
+   "Margin": 0.1048,
+   "Units": 2610
+  }
+ },
+ "Categories": {
+  "East | Furniture": {
+   "Sales": 18839.86,
+   "Profit": 1730.9,
+   "Margin %": 0.0919
+  },
+  "East | Office": {
+   "Sales": 15632.96,
+   "Profit": 1378.06,
+   "Margin %": 0.0882
+  },
+  "East | Tech": {
+   "Sales": 17880.77,
+   "Profit": 1766.43,
+   "Margin %": 0.0988
+  },
+  "North | Furniture": {
+   "Sales": 23294.07,
+   "Profit": 2872.4,
+   "Margin %": 0.1233
+  },
+  "North | Office": {
+   "Sales": 14205.31,
+   "Profit": 1522.56,
+   "Margin %": 0.1072
+  },
+  "North | Tech": {
+   "Sales": 20983.2,
+   "Profit": 3291.54,
+   "Margin %": 0.1569
+  },
+  "South | Furniture": {
+   "Sales": 15128.11,
+   "Profit": 1651.05,
+   "Margin %": 0.1091
+  },
+  "South | Office": {
+   "Sales": 22634.41,
+   "Profit": 2436.61,
+   "Margin %": 0.1077
+  },
+  "South | Tech": {
+   "Sales": 21099.94,
+   "Profit": 2346.47,
+   "Margin %": 0.1112
+  },
+  "West | Furniture": {
+   "Sales": 17694.88,
+   "Profit": 1331.46,
+   "Margin %": 0.0752
+  },
+  "West | Office": {
+   "Sales": 18705.07,
+   "Profit": 1874.39,
+   "Margin %": 0.1002
+  },
+  "West | Tech": {
+   "Sales": 18611.1,
+   "Profit": 1347.73,
+   "Margin %": 0.0724
+  },
+  "East | Total": {
+   "Sales": 52353.59,
+   "Profit": 4875.39,
+   "Margin %": 0.0931
+  },
+  "North | Total": {
+   "Sales": 58482.58,
+   "Profit": 7686.5,
+   "Margin %": 0.1314
+  },
+  "South | Total": {
+   "Sales": 58862.46,
+   "Profit": 6434.13,
+   "Margin %": 0.1093
+  },
+  "West | Total": {
+   "Sales": 55011.05,
+   "Profit": 4553.58,
+   "Margin %": 0.0828
+  },
+  "Total": {
+   "Sales": 224709.68,
+   "Profit": 23549.6,
+   "Margin %": 0.1048
+  }
+ }
+}

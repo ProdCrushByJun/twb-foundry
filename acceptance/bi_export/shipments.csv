@@ -1,0 +1,1850 @@
+Shipment ID,Ship Date,Region,Carrier,Mode,Weight kg,Freight Cost,Transit Days,On Time Flag
+SH-70001,2024-01-01,Northeast,RapidHaul,Road,180,165,5,1
+SH-70002,2024-01-01,Midwest,BlueLine,Road,90,86,5,1
+SH-70003,2024-01-01,Midwest,TransAlpha,Road,120,98,4,1
+SH-70004,2024-01-02,Northeast,Gulf Freight,Air,260,782,3,1
+SH-70005,2024-01-03,Southeast,RapidHaul,Sea,410,151,10,1
+SH-70006,2024-01-03,Southeast,BlueLine,Road,400,408,2,1
+SH-70007,2024-01-03,Southeast,RapidHaul,Road,280,251,4,1
+SH-70008,2024-01-03,Midwest,RapidHaul,Road,210,174,4,1
+SH-70009,2024-01-04,Midwest,BlueLine,Road,170,120,6,0
+SH-70010,2024-01-04,Midwest,TransAlpha,Road,350,276,2,1
+SH-70011,2024-01-08,Northeast,NorthStar,Road,1340,1281,5,0
+SH-70012,2024-01-08,Southwest,RapidHaul,Air,190,477,3,1
+SH-70013,2024-01-09,Southwest,BlueLine,Rail,1030,671,5,1
+SH-70014,2024-01-09,West,RapidHaul,Rail,310,242,7,1
+SH-70015,2024-01-10,West,Gulf Freight,Rail,750,585,7,0
+SH-70016,2024-01-11,Midwest,RapidHaul,Rail,1040,519,7,1
+SH-70017,2024-01-12,Southwest,RapidHaul,Rail,2250,1337,5,1
+SH-70018,2024-01-12,West,Gulf Freight,Sea,240,127,11,1
+SH-70019,2024-01-12,Midwest,NorthStar,Road,420,389,4,1
+SH-70020,2024-01-12,Southwest,NorthStar,Road,220,259,3,1
+SH-70021,2024-01-13,Southwest,RapidHaul,Road,1170,1084,1,1
+SH-70022,2024-01-14,Southeast,NorthStar,Air,590,2027,2,1
+SH-70023,2024-01-15,Southeast,NorthStar,Air,910,2567,3,1
+SH-70024,2024-01-15,Southeast,TransAlpha,Air,190,599,3,1
+SH-70025,2024-01-15,Southwest,RapidHaul,Air,910,2866,2,1
+SH-70026,2024-01-15,Northeast,NorthStar,Road,510,614,4,1
+SH-70027,2024-01-16,Northeast,NorthStar,Sea,550,305,12,1
+SH-70028,2024-01-17,Midwest,BlueLine,Road,400,384,4,1
+SH-70029,2024-01-18,West,Gulf Freight,Rail,510,329,6,1
+SH-70030,2024-01-18,West,TransAlpha,Road,660,676,4,1
+SH-70031,2024-01-18,Southwest,TransAlpha,Road,530,557,4,1
+SH-70032,2024-01-19,West,RapidHaul,Road,480,478,5,0
+SH-70033,2024-01-19,Southeast,BlueLine,Road,450,363,4,1
+SH-70034,2024-01-19,Southwest,BlueLine,Road,1170,1206,4,1
+SH-70035,2024-01-19,Midwest,NorthStar,Road,400,423,5,1
+SH-70036,2024-01-20,Midwest,NorthStar,Air,570,1540,2,1
+SH-70037,2024-01-20,Southwest,TransAlpha,Sea,380,158,12,1
+SH-70038,2024-01-21,Southeast,Gulf Freight,Road,230,211,4,1
+SH-70039,2024-01-21,Northeast,Gulf Freight,Rail,680,426,4,1
+SH-70040,2024-01-21,Midwest,BlueLine,Road,740,596,6,1
+SH-70041,2024-01-22,West,Gulf Freight,Air,350,1025,2,0
+SH-70042,2024-01-22,Southeast,RapidHaul,Air,400,984,2,1
+SH-70043,2024-01-22,Midwest,BlueLine,Rail,470,257,5,1
+SH-70044,2024-01-23,West,NorthStar,Road,1210,1467,3,1
+SH-70045,2024-01-23,Southeast,BlueLine,Road,250,209,3,1
+SH-70046,2024-01-23,Southeast,Gulf Freight,Road,440,362,3,1
+SH-70047,2024-01-24,Southeast,RapidHaul,Rail,300,153,6,1
+SH-70048,2024-01-24,Northeast,NorthStar,Sea,770,496,12,1
+SH-70049,2024-01-24,Midwest,Gulf Freight,Rail,850,463,9,1
+SH-70050,2024-01-25,Midwest,RapidHaul,Road,790,520,6,1
+SH-70051,2024-01-26,Southwest,NorthStar,Road,400,409,2,1
+SH-70052,2024-01-26,West,RapidHaul,Road,620,581,5,0
+SH-70053,2024-01-26,Northeast,RapidHaul,Road,890,726,3,1
+SH-70054,2024-01-27,Southeast,TransAlpha,Rail,520,280,5,1
+SH-70055,2024-01-27,Southwest,BlueLine,Rail,420,275,6,1
+SH-70056,2024-01-28,West,BlueLine,Rail,1130,992,6,1
+SH-70057,2024-01-28,West,RapidHaul,Road,210,194,6,1
+SH-70058,2024-01-28,Northeast,Gulf Freight,Road,990,948,3,1
+SH-70059,2024-01-29,West,Gulf Freight,Air,670,1972,1,1
+SH-70060,2024-01-29,Southwest,RapidHaul,Road,560,408,5,1
+SH-70061,2024-01-29,Northeast,Gulf Freight,Road,340,286,3,1
+SH-70062,2024-01-30,Southeast,BlueLine,Road,260,256,4,0
+SH-70063,2024-01-30,Midwest,BlueLine,Road,820,724,2,1
+SH-70064,2024-01-31,Southeast,BlueLine,Air,370,886,2,1
+SH-70065,2024-02-01,Southeast,Gulf Freight,Rail,630,296,6,1
+SH-70066,2024-02-02,Northeast,Gulf Freight,Road,250,246,6,1
+SH-70067,2024-02-02,Northeast,BlueLine,Road,310,264,2,1
+SH-70068,2024-02-02,West,BlueLine,Road,880,1086,4,1
+SH-70069,2024-02-04,Northeast,NorthStar,Road,350,392,6,1
+SH-70070,2024-02-05,Midwest,TransAlpha,Road,300,237,3,1
+SH-70071,2024-02-05,Midwest,BlueLine,Road,490,343,4,1
+SH-70072,2024-02-05,Southeast,Gulf Freight,Road,250,202,3,0
+SH-70073,2024-02-06,Southeast,BlueLine,Rail,410,226,6,1
+SH-70074,2024-02-06,Northeast,BlueLine,Road,430,451,2,1
+SH-70075,2024-02-06,Midwest,RapidHaul,Road,380,280,5,1
+SH-70076,2024-02-07,Southeast,NorthStar,Air,1160,3155,1,0
+SH-70077,2024-02-08,Midwest,Gulf Freight,Rail,810,427,9,1
+SH-70078,2024-02-08,Midwest,RapidHaul,Rail,600,324,5,1
+SH-70079,2024-02-09,Northeast,Gulf Freight,Rail,670,360,7,1
+SH-70080,2024-02-11,Northeast,NorthStar,Rail,760,615,5,1
+SH-70081,2024-02-11,Midwest,TransAlpha,Rail,520,344,5,1
+SH-70082,2024-02-12,West,TransAlpha,Sea,1200,731,12,1
+SH-70083,2024-02-12,Midwest,NorthStar,Sea,720,280,13,1
+SH-70084,2024-02-15,West,NorthStar,Rail,1040,1020,6,1
+SH-70085,2024-02-15,Midwest,Gulf Freight,Rail,470,266,7,1
+SH-70086,2024-02-15,Southwest,TransAlpha,Rail,1720,1099,5,1
+SH-70087,2024-02-15,Midwest,BlueLine,Road,1220,1035,4,1
+SH-70088,2024-02-16,West,NorthStar,Rail,290,287,6,1
+SH-70089,2024-02-16,Northeast,BlueLine,Road,180,174,5,1
+SH-70090,2024-02-16,Midwest,Gulf Freight,Road,290,251,6,1
+SH-70091,2024-02-18,Midwest,BlueLine,Road,980,759,4,1
+SH-70092,2024-02-18,West,Gulf Freight,Road,220,247,4,1
+SH-70093,2024-02-19,Northeast,NorthStar,Road,440,556,4,1
+SH-70094,2024-02-20,West,TransAlpha,Rail,480,404,6,1
+SH-70095,2024-02-21,Northeast,Gulf Freight,Road,410,400,5,0
+SH-70096,2024-02-21,Southeast,Gulf Freight,Sea,480,184,11,1
+SH-70097,2024-02-21,Northeast,RapidHaul,Road,520,416,4,1
+SH-70098,2024-02-22,Northeast,Gulf Freight,Sea,360,189,11,1
+SH-70099,2024-02-22,Northeast,BlueLine,Road,370,378,2,1
+SH-70100,2024-02-22,Southeast,TransAlpha,Sea,1390,589,10,1
+SH-70101,2024-02-23,West,Gulf Freight,Road,2150,2445,6,1
+SH-70102,2024-02-23,Northeast,Gulf Freight,Air,300,908,2,1
+SH-70103,2024-02-24,Northeast,Gulf Freight,Road,420,418,5,1
+SH-70104,2024-02-26,Southeast,RapidHaul,Sea,830,309,13,1
+SH-70105,2024-02-26,West,RapidHaul,Road,470,503,4,1
+SH-70106,2024-02-28,West,Gulf Freight,Sea,800,415,9,0
+SH-70107,2024-02-29,Southeast,BlueLine,Road,1640,1328,5,1
+SH-70108,2024-02-29,Southwest,Gulf Freight,Road,990,766,4,1
+SH-70109,2024-02-29,Northeast,RapidHaul,Road,150,163,2,0
+SH-70110,2024-03-01,Midwest,NorthStar,Road,200,165,5,1
+SH-70111,2024-03-01,Southwest,NorthStar,Road,370,374,6,1
+SH-70112,2024-03-01,Southeast,RapidHaul,Road,490,391,6,1
+SH-70113,2024-03-01,Southeast,TransAlpha,Rail,2550,1426,7,1
+SH-70114,2024-03-02,Midwest,TransAlpha,Rail,440,229,6,0
+SH-70115,2024-03-02,Southwest,NorthStar,Road,380,433,5,1
+SH-70116,2024-03-03,Northeast,BlueLine,Rail,1220,794,5,1
+SH-70117,2024-03-03,Southwest,NorthStar,Rail,1050,635,6,1
+SH-70118,2024-03-03,Midwest,BlueLine,Road,1710,1291,4,1
+SH-70119,2024-03-04,Southeast,BlueLine,Road,550,447,2,1
+SH-70120,2024-03-04,Midwest,RapidHaul,Rail,470,216,5,1
+SH-70121,2024-03-04,Southeast,Gulf Freight,Road,380,286,6,0
+SH-70122,2024-03-04,West,NorthStar,Sea,1650,981,11,1
+SH-70123,2024-03-05,Northeast,Gulf Freight,Road,460,432,5,1
+SH-70124,2024-03-05,Southeast,NorthStar,Road,650,631,5,1
+SH-70125,2024-03-05,West,RapidHaul,Road,490,429,4,1
+SH-70126,2024-03-05,Northeast,NorthStar,Road,990,1174,4,0
+SH-70127,2024-03-07,Southwest,Gulf Freight,Road,1410,1138,3,1
+SH-70128,2024-03-07,Northeast,BlueLine,Sea,370,212,10,1
+SH-70129,2024-03-07,West,RapidHaul,Road,240,287,6,1
+SH-70130,2024-03-08,Midwest,RapidHaul,Rail,850,447,7,1
+SH-70131,2024-03-08,West,NorthStar,Rail,470,384,7,1
+SH-70132,2024-03-08,Southeast,NorthStar,Road,1320,1477,6,1
+SH-70133,2024-03-08,West,BlueLine,Road,1240,1187,6,1
+SH-70134,2024-03-09,Northeast,RapidHaul,Road,400,335,4,0
+SH-70135,2024-03-11,Northeast,RapidHaul,Road,140,120,3,0
+SH-70136,2024-03-11,Northeast,BlueLine,Rail,800,543,7,1
+SH-70137,2024-03-11,Southwest,BlueLine,Road,810,693,6,1
+SH-70138,2024-03-11,Midwest,BlueLine,Sea,300,134,13,1
+SH-70139,2024-03-12,Midwest,BlueLine,Road,470,416,4,1
+SH-70140,2024-03-12,Northeast,Gulf Freight,Road,300,252,3,1
+SH-70141,2024-03-13,Northeast,RapidHaul,Road,420,344,3,0
+SH-70142,2024-03-13,West,NorthStar,Rail,390,312,6,1
+SH-70143,2024-03-14,West,RapidHaul,Road,300,342,4,0
+SH-70144,2024-03-15,Midwest,RapidHaul,Road,940,654,4,1
+SH-70145,2024-03-18,Southeast,TransAlpha,Road,830,871,4,0
+SH-70146,2024-03-18,West,Gulf Freight,Road,1070,945,6,1
+SH-70147,2024-03-19,Northeast,BlueLine,Road,430,473,5,1
+SH-70148,2024-03-19,West,NorthStar,Rail,1190,1116,8,1
+SH-70149,2024-03-19,Midwest,BlueLine,Road,1600,1444,2,1
+SH-70150,2024-03-20,Midwest,RapidHaul,Road,320,259,5,1
+SH-70151,2024-03-20,Northeast,Gulf Freight,Road,260,211,6,0
+SH-70152,2024-03-21,Southeast,RapidHaul,Rail,2620,1755,7,1
+SH-70153,2024-03-21,Midwest,TransAlpha,Rail,720,422,6,1
+SH-70154,2024-03-21,Northeast,RapidHaul,Rail,240,187,4,1
+SH-70155,2024-03-21,Northeast,NorthStar,Sea,590,375,10,1
+SH-70156,2024-03-21,Southwest,BlueLine,Road,940,819,6,1
+SH-70157,2024-03-22,Northeast,Gulf Freight,Road,1430,1232,3,1
+SH-70158,2024-03-22,Northeast,Gulf Freight,Road,430,354,3,1
+SH-70159,2024-03-23,Midwest,BlueLine,Road,430,395,7,1
+SH-70160,2024-03-24,Southwest,RapidHaul,Sea,210,80,13,1
+SH-70161,2024-03-24,Midwest,BlueLine,Rail,160,86,6,1
+SH-70162,2024-03-25,West,NorthStar,Road,1330,1691,3,1
+SH-70163,2024-03-25,Northeast,RapidHaul,Road,590,619,7,1
+SH-70164,2024-03-25,West,NorthStar,Sea,1000,705,11,1
+SH-70165,2024-03-25,Southeast,NorthStar,Road,260,288,4,1
+SH-70166,2024-03-26,West,RapidHaul,Road,810,748,4,1
+SH-70167,2024-03-26,Southeast,NorthStar,Sea,2730,1348,13,1
+SH-70168,2024-03-27,West,TransAlpha,Road,190,229,4,1
+SH-70169,2024-03-27,Midwest,NorthStar,Road,330,267,3,1
+SH-70170,2024-03-27,Southwest,RapidHaul,Sea,1940,843,11,0
+SH-70171,2024-03-27,Midwest,NorthStar,Rail,270,160,5,1
+SH-70172,2024-03-27,West,NorthStar,Road,290,317,5,1
+SH-70173,2024-03-27,Midwest,Gulf Freight,Rail,1200,546,4,1
+SH-70174,2024-03-28,Southeast,BlueLine,Rail,660,404,6,1
+SH-70175,2024-03-28,Northeast,BlueLine,Rail,260,193,5,1
+SH-70176,2024-03-28,Midwest,NorthStar,Sea,190,88,13,1
+SH-70177,2024-03-28,Midwest,RapidHaul,Air,300,802,2,1
+SH-70178,2024-03-28,Midwest,NorthStar,Road,370,308,4,0
+SH-70179,2024-03-30,Midwest,RapidHaul,Road,440,373,2,1
+SH-70180,2024-03-31,West,RapidHaul,Rail,750,502,4,1
+SH-70181,2024-04-01,Southeast,TransAlpha,Road,430,430,5,1
+SH-70182,2024-04-01,West,BlueLine,Road,550,521,4,1
+SH-70183,2024-04-01,Northeast,BlueLine,Road,300,267,2,1
+SH-70184,2024-04-01,Southwest,TransAlpha,Sea,1000,458,13,1
+SH-70185,2024-04-01,Southwest,BlueLine,Sea,890,393,11,1
+SH-70186,2024-04-01,West,BlueLine,Sea,860,523,11,1
+SH-70187,2024-04-02,Southwest,TransAlpha,Road,480,484,2,1
+SH-70188,2024-04-02,West,BlueLine,Road,1820,2174,4,0
+SH-70189,2024-04-02,West,NorthStar,Sea,340,230,10,1
+SH-70190,2024-04-02,Northeast,BlueLine,Air,440,1580,3,1
+SH-70191,2024-04-02,Northeast,BlueLine,Sea,510,269,11,1
+SH-70192,2024-04-04,West,BlueLine,Road,540,502,6,1
+SH-70193,2024-04-04,Midwest,RapidHaul,Road,390,287,4,1
+SH-70194,2024-04-04,West,NorthStar,Air,410,1709,2,1
+SH-70195,2024-04-04,Southeast,RapidHaul,Road,250,220,4,1
+SH-70196,2024-04-05,Northeast,TransAlpha,Sea,760,454,11,1
+SH-70197,2024-04-05,Midwest,NorthStar,Road,1070,827,4,1
+SH-70198,2024-04-07,Southwest,BlueLine,Road,300,269,3,1
+SH-70199,2024-04-07,Southwest,BlueLine,Rail,260,174,7,1
+SH-70200,2024-04-07,Southeast,NorthStar,Road,450,368,1,1
+SH-70201,2024-04-09,Northeast,TransAlpha,Rail,100,74,7,1
+SH-70202,2024-04-10,Northeast,Gulf Freight,Road,340,294,5,0
+SH-70203,2024-04-10,Midwest,BlueLine,Sea,360,173,12,1
+SH-70204,2024-04-10,Northeast,BlueLine,Road,410,418,4,1
+SH-70205,2024-04-10,Midwest,NorthStar,Road,1450,1179,5,1
+SH-70206,2024-04-10,Midwest,TransAlpha,Sea,520,244,12,1
+SH-70207,2024-04-11,West,RapidHaul,Road,830,932,3,1
+SH-70208,2024-04-11,Northeast,Gulf Freight,Road,230,227,4,1
+SH-70209,2024-04-11,Midwest,TransAlpha,Road,590,533,5,1
+SH-70210,2024-04-13,Southeast,NorthStar,Sea,770,406,10,1
+SH-70211,2024-04-13,Southeast,NorthStar,Road,250,237,3,1
+SH-70212,2024-04-14,Northeast,BlueLine,Rail,490,301,6,1
+SH-70213,2024-04-15,West,BlueLine,Road,260,316,4,1
+SH-70214,2024-04-16,West,BlueLine,Air,680,2358,3,1
+SH-70215,2024-04-16,Southeast,BlueLine,Sea,180,77,9,1
+SH-70216,2024-04-16,West,NorthStar,Road,1520,1579,4,1
+SH-70217,2024-04-16,Midwest,BlueLine,Road,170,122,4,1
+SH-70218,2024-04-16,West,BlueLine,Sea,1060,545,12,1
+SH-70219,2024-04-17,West,TransAlpha,Rail,290,261,8,1
+SH-70220,2024-04-17,Southeast,BlueLine,Rail,2590,1701,4,1
+SH-70221,2024-04-17,Southeast,BlueLine,Sea,1080,450,10,1
+SH-70222,2024-04-17,West,RapidHaul,Road,380,405,5,1
+SH-70223,2024-04-18,Southeast,TransAlpha,Road,770,699,3,1
+SH-70224,2024-04-18,Midwest,BlueLine,Air,750,2214,1,1
+SH-70225,2024-04-18,West,BlueLine,Road,130,163,5,1
+SH-70226,2024-04-18,West,NorthStar,Air,490,2202,3,1
+SH-70227,2024-04-18,West,NorthStar,Sea,940,481,10,1
+SH-70228,2024-04-19,Northeast,NorthStar,Rail,1600,1167,6,1
+SH-70229,2024-04-19,West,BlueLine,Sea,830,446,11,1
+SH-70230,2024-04-19,West,Gulf Freight,Road,890,1010,2,1
+SH-70231,2024-04-19,Southwest,NorthStar,Air,650,2212,4,0
+SH-70232,2024-04-20,Southwest,RapidHaul,Road,310,250,4,1
+SH-70233,2024-04-20,Northeast,NorthStar,Road,810,945,7,1
+SH-70234,2024-04-22,Midwest,RapidHaul,Road,640,536,6,1
+SH-70235,2024-04-22,Midwest,RapidHaul,Road,360,271,4,1
+SH-70236,2024-04-22,Southwest,TransAlpha,Rail,1400,813,4,1
+SH-70237,2024-04-22,Southeast,BlueLine,Road,380,323,4,1
+SH-70238,2024-04-23,Southwest,RapidHaul,Rail,430,302,4,1
+SH-70239,2024-04-23,Midwest,NorthStar,Air,740,2064,2,1
+SH-70240,2024-04-23,Midwest,NorthStar,Road,1220,1236,3,1
+SH-70241,2024-04-23,Southeast,Gulf Freight,Road,290,199,4,1
+SH-70242,2024-04-23,Midwest,BlueLine,Road,310,260,3,0
+SH-70243,2024-04-24,Southeast,Gulf Freight,Road,210,139,5,1
+SH-70244,2024-04-24,Southwest,BlueLine,Rail,1730,1100,8,1
+SH-70245,2024-04-24,West,BlueLine,Road,480,589,4,1
+SH-70246,2024-04-24,Southwest,RapidHaul,Road,320,281,4,0
+SH-70247,2024-04-24,Southeast,BlueLine,Rail,930,605,4,1
+SH-70248,2024-04-25,Northeast,NorthStar,Road,700,892,5,1
+SH-70249,2024-04-26,Southeast,BlueLine,Rail,620,369,7,1
+SH-70250,2024-04-27,Southeast,Gulf Freight,Road,910,771,4,1
+SH-70251,2024-04-27,West,RapidHaul,Road,770,762,5,1
+SH-70252,2024-04-28,Southeast,Gulf Freight,Road,510,365,7,1
+SH-70253,2024-04-28,West,BlueLine,Sea,660,328,14,1
+SH-70254,2024-04-28,Southeast,Gulf Freight,Road,360,259,5,1
+SH-70255,2024-04-28,West,BlueLine,Sea,550,329,11,1
+SH-70256,2024-04-29,Southeast,RapidHaul,Rail,1590,885,6,1
+SH-70257,2024-04-30,Northeast,Gulf Freight,Road,310,299,2,1
+SH-70258,2024-04-30,West,TransAlpha,Road,1120,1513,6,1
+SH-70259,2024-04-30,Southeast,BlueLine,Rail,620,354,6,1
+SH-70260,2024-04-30,Southwest,BlueLine,Road,730,768,4,1
+SH-70261,2024-04-30,West,NorthStar,Air,2740,11850,1,0
+SH-70262,2024-05-01,West,Gulf Freight,Road,570,600,5,1
+SH-70263,2024-05-01,Southeast,RapidHaul,Road,600,429,4,1
+SH-70264,2024-05-02,Southwest,Gulf Freight,Road,240,169,3,0
+SH-70265,2024-05-02,Southeast,NorthStar,Air,400,1089,3,1
+SH-70266,2024-05-02,West,RapidHaul,Road,1440,1734,3,1
+SH-70267,2024-05-03,Northeast,TransAlpha,Rail,720,592,6,1
+SH-70268,2024-05-03,Southwest,RapidHaul,Road,540,550,5,1
+SH-70269,2024-05-03,Southeast,TransAlpha,Road,1150,1188,4,0
+SH-70270,2024-05-04,Midwest,RapidHaul,Rail,170,101,6,0
+SH-70271,2024-05-05,Midwest,Gulf Freight,Road,880,718,3,1
+SH-70272,2024-05-05,Southeast,TransAlpha,Road,120,129,5,1
+SH-70273,2024-05-06,Northeast,BlueLine,Road,680,683,4,1
+SH-70274,2024-05-06,West,BlueLine,Road,930,987,2,1
+SH-70275,2024-05-07,Southwest,NorthStar,Rail,800,489,6,1
+SH-70276,2024-05-07,Midwest,BlueLine,Road,1210,976,1,1
+SH-70277,2024-05-08,West,BlueLine,Road,570,550,5,1
+SH-70278,2024-05-08,Southeast,Gulf Freight,Road,480,321,2,0
+SH-70279,2024-05-08,West,BlueLine,Rail,500,335,6,1
+SH-70280,2024-05-08,Southwest,BlueLine,Road,750,647,5,1
+SH-70281,2024-05-08,Midwest,NorthStar,Road,140,149,4,1
+SH-70282,2024-05-10,Southeast,Gulf Freight,Road,490,336,2,1
+SH-70283,2024-05-10,Midwest,RapidHaul,Road,240,220,4,1
+SH-70284,2024-05-10,Midwest,BlueLine,Rail,4560,2621,5,1
+SH-70285,2024-05-11,Southeast,RapidHaul,Road,180,175,6,0
+SH-70286,2024-05-11,West,Gulf Freight,Rail,450,268,5,1
+SH-70287,2024-05-11,Southeast,Gulf Freight,Rail,1150,630,5,1
+SH-70288,2024-05-12,West,NorthStar,Rail,430,364,5,1
+SH-70289,2024-05-13,Northeast,RapidHaul,Road,760,851,4,1
+SH-70290,2024-05-13,West,RapidHaul,Air,510,1717,3,1
+SH-70291,2024-05-13,Midwest,NorthStar,Road,450,345,4,1
+SH-70292,2024-05-13,Northeast,Gulf Freight,Road,450,457,5,0
+SH-70293,2024-05-13,Northeast,BlueLine,Road,410,364,4,1
+SH-70294,2024-05-14,Northeast,RapidHaul,Sea,570,315,10,1
+SH-70295,2024-05-14,Southeast,NorthStar,Road,910,949,5,1
+SH-70296,2024-05-15,Southeast,TransAlpha,Rail,280,165,7,1
+SH-70297,2024-05-15,Southeast,NorthStar,Rail,1130,690,6,1
+SH-70298,2024-05-15,West,NorthStar,Sea,350,190,10,1
+SH-70299,2024-05-16,Northeast,NorthStar,Rail,600,406,6,1
+SH-70300,2024-05-16,Southeast,NorthStar,Road,640,720,5,1
+SH-70301,2024-05-16,Midwest,BlueLine,Road,900,759,5,1
+SH-70302,2024-05-16,Southwest,NorthStar,Road,1270,1111,5,1
+SH-70303,2024-05-17,Southeast,RapidHaul,Road,390,313,5,1
+SH-70304,2024-05-17,Southeast,RapidHaul,Road,440,428,1,1
+SH-70305,2024-05-20,Midwest,BlueLine,Rail,790,408,6,1
+SH-70306,2024-05-20,West,RapidHaul,Rail,740,540,5,1
+SH-70307,2024-05-20,Southwest,Gulf Freight,Road,350,255,6,1
+SH-70308,2024-05-20,Southeast,TransAlpha,Rail,790,492,5,1
+SH-70309,2024-05-21,Southwest,RapidHaul,Road,340,284,5,1
+SH-70310,2024-05-21,Midwest,RapidHaul,Road,350,297,3,1
+SH-70311,2024-05-21,Southeast,Gulf Freight,Rail,930,565,4,1
+SH-70312,2024-05-21,Northeast,RapidHaul,Rail,190,131,5,1
+SH-70313,2024-05-21,Southeast,BlueLine,Road,360,326,4,1
+SH-70314,2024-05-22,West,BlueLine,Air,860,2848,3,1
+SH-70315,2024-05-22,Midwest,NorthStar,Sea,520,243,10,1
+SH-70316,2024-05-22,Southwest,TransAlpha,Road,330,311,2,1
+SH-70317,2024-05-22,West,Gulf Freight,Rail,750,477,4,1
+SH-70318,2024-05-23,Southeast,Gulf Freight,Road,1340,1177,4,0
+SH-70319,2024-05-23,Northeast,RapidHaul,Air,210,684,3,1
+SH-70320,2024-05-23,Southeast,RapidHaul,Air,280,641,2,1
+SH-70321,2024-05-24,Southeast,BlueLine,Air,940,2487,1,1
+SH-70322,2024-05-24,Southwest,Gulf Freight,Road,340,330,5,1
+SH-70323,2024-05-26,Midwest,RapidHaul,Sea,870,303,10,1
+SH-70324,2024-05-27,Southwest,NorthStar,Road,750,690,3,1
+SH-70325,2024-05-28,West,NorthStar,Road,480,621,4,1
+SH-70326,2024-05-28,Midwest,RapidHaul,Road,1660,1238,6,1
+SH-70327,2024-05-29,West,NorthStar,Road,180,255,1,1
+SH-70328,2024-05-30,Southeast,RapidHaul,Road,1060,818,5,1
+SH-70329,2024-05-30,Midwest,RapidHaul,Sea,360,119,11,1
+SH-70330,2024-05-30,Midwest,TransAlpha,Road,390,290,4,1
+SH-70331,2024-06-02,Northeast,RapidHaul,Road,600,644,6,0
+SH-70332,2024-06-02,Midwest,BlueLine,Road,560,501,4,1
+SH-70333,2024-06-03,Southwest,NorthStar,Road,240,259,3,0
+SH-70334,2024-06-03,West,RapidHaul,Rail,950,680,4,1
+SH-70335,2024-06-03,Midwest,RapidHaul,Road,280,251,5,1
+SH-70336,2024-06-03,Southeast,RapidHaul,Air,160,438,2,1
+SH-70337,2024-06-04,Southeast,BlueLine,Road,700,678,4,1
+SH-70338,2024-06-04,Southeast,TransAlpha,Sea,510,252,11,1
+SH-70339,2024-06-05,West,NorthStar,Road,210,236,5,1
+SH-70340,2024-06-05,Northeast,NorthStar,Road,660,742,4,1
+SH-70341,2024-06-06,Midwest,BlueLine,Rail,780,459,5,1
+SH-70342,2024-06-06,West,NorthStar,Rail,270,217,7,1
+SH-70343,2024-06-06,Northeast,TransAlpha,Rail,240,191,5,1
+SH-70344,2024-06-07,Northeast,BlueLine,Air,30,91,2,1
+SH-70345,2024-06-07,West,RapidHaul,Sea,810,358,11,1
+SH-70346,2024-06-07,Midwest,RapidHaul,Road,1110,797,4,1
+SH-70347,2024-06-08,Midwest,TransAlpha,Rail,1250,653,8,1
+SH-70348,2024-06-08,Midwest,Gulf Freight,Rail,1250,713,5,1
+SH-70349,2024-06-10,Southwest,TransAlpha,Sea,280,143,12,1
+SH-70350,2024-06-12,Southeast,TransAlpha,Sea,1450,596,11,1
+SH-70351,2024-06-12,Midwest,NorthStar,Road,1070,950,3,1
+SH-70352,2024-06-12,Southeast,RapidHaul,Road,1060,793,5,1
+SH-70353,2024-06-12,West,BlueLine,Sea,1040,569,11,1
+SH-70354,2024-06-13,Northeast,RapidHaul,Road,830,929,6,1
+SH-70355,2024-06-13,Northeast,RapidHaul,Road,290,255,4,0
+SH-70356,2024-06-13,Northeast,RapidHaul,Sea,480,270,10,1
+SH-70357,2024-06-14,Southwest,RapidHaul,Road,500,468,6,1
+SH-70358,2024-06-14,Southeast,BlueLine,Sea,720,341,12,1
+SH-70359,2024-06-14,Southeast,NorthStar,Sea,750,340,10,1
+SH-70360,2024-06-14,West,NorthStar,Road,980,1064,5,1
+SH-70361,2024-06-15,Northeast,Gulf Freight,Rail,1430,788,6,1
+SH-70362,2024-06-15,Midwest,BlueLine,Road,380,314,4,1
+SH-70363,2024-06-16,West,BlueLine,Road,1920,1923,2,1
+SH-70364,2024-06-16,Midwest,BlueLine,Road,290,206,6,1
+SH-70365,2024-06-17,West,NorthStar,Sea,1080,589,10,1
+SH-70366,2024-06-17,Midwest,TransAlpha,Rail,120,85,5,1
+SH-70367,2024-06-18,Southwest,RapidHaul,Road,260,265,5,1
+SH-70368,2024-06-18,Southeast,BlueLine,Road,330,253,3,1
+SH-70369,2024-06-18,Midwest,Gulf Freight,Rail,260,120,7,1
+SH-70370,2024-06-18,Southeast,RapidHaul,Air,640,1796,2,1
+SH-70371,2024-06-18,Midwest,RapidHaul,Sea,1940,870,9,1
+SH-70372,2024-06-18,Midwest,BlueLine,Road,560,449,4,1
+SH-70373,2024-06-19,Midwest,BlueLine,Road,740,659,4,1
+SH-70374,2024-06-19,Southeast,NorthStar,Road,200,177,2,1
+SH-70375,2024-06-20,Southeast,RapidHaul,Road,630,557,2,1
+SH-70376,2024-06-20,Southwest,BlueLine,Rail,150,98,6,1
+SH-70377,2024-06-20,Southeast,RapidHaul,Road,1030,952,5,1
+SH-70378,2024-06-20,Southeast,Gulf Freight,Rail,840,392,6,1
+SH-70379,2024-06-20,Southwest,NorthStar,Rail,1570,1205,5,1
+SH-70380,2024-06-21,Southeast,BlueLine,Sea,220,88,8,1
+SH-70381,2024-06-21,Northeast,RapidHaul,Rail,660,449,7,0
+SH-70382,2024-06-21,Northeast,BlueLine,Road,410,376,6,1
+SH-70383,2024-06-23,Southwest,Gulf Freight,Rail,1150,707,5,0
+SH-70384,2024-06-24,Northeast,BlueLine,Air,540,1938,2,1
+SH-70385,2024-06-25,West,BlueLine,Road,450,498,2,1
+SH-70386,2024-06-25,Midwest,Gulf Freight,Road,1210,974,6,1
+SH-70387,2024-06-26,Southeast,RapidHaul,Road,1080,965,4,1
+SH-70388,2024-06-26,West,RapidHaul,Road,590,622,3,1
+SH-70389,2024-06-26,Southeast,RapidHaul,Sea,940,335,12,1
+SH-70390,2024-06-26,Southwest,BlueLine,Road,1060,1109,1,1
+SH-70391,2024-06-26,West,RapidHaul,Sea,2580,1349,11,1
+SH-70392,2024-06-27,Northeast,RapidHaul,Road,480,502,4,0
+SH-70393,2024-06-27,Southwest,BlueLine,Road,410,364,6,1
+SH-70394,2024-06-27,West,NorthStar,Road,2150,2836,3,1
+SH-70395,2024-06-27,Southeast,BlueLine,Road,700,662,6,1
+SH-70396,2024-06-28,Southeast,NorthStar,Road,120,103,4,1
+SH-70397,2024-06-28,Southwest,Gulf Freight,Road,190,160,4,1
+SH-70398,2024-06-28,Southeast,RapidHaul,Road,260,213,3,1
+SH-70399,2024-06-28,West,BlueLine,Road,350,446,5,1
+SH-70400,2024-06-29,Northeast,RapidHaul,Rail,890,542,5,0
+SH-70401,2024-06-29,Midwest,Gulf Freight,Rail,1060,578,6,1
+SH-70402,2024-06-29,Midwest,BlueLine,Rail,210,133,5,1
+SH-70403,2024-06-29,Southeast,RapidHaul,Rail,330,178,6,1
+SH-70404,2024-06-30,Southeast,Gulf Freight,Road,1190,898,4,1
+SH-70405,2024-06-30,Southwest,NorthStar,Road,460,467,4,1
+SH-70406,2024-07-01,West,RapidHaul,Rail,2030,1732,8,1
+SH-70407,2024-07-02,Southeast,TransAlpha,Road,160,134,5,1
+SH-70408,2024-07-03,Southwest,Gulf Freight,Sea,1380,531,12,1
+SH-70409,2024-07-03,West,NorthStar,Road,190,193,2,1
+SH-70410,2024-07-03,Southeast,NorthStar,Road,830,773,5,1
+SH-70411,2024-07-03,Northeast,BlueLine,Sea,1280,558,10,1
+SH-70412,2024-07-04,Southwest,RapidHaul,Rail,430,290,6,1
+SH-70413,2024-07-04,Midwest,TransAlpha,Sea,1340,620,11,1
+SH-70414,2024-07-04,Northeast,NorthStar,Road,750,775,4,1
+SH-70415,2024-07-04,West,TransAlpha,Rail,740,654,7,1
+SH-70416,2024-07-05,West,NorthStar,Rail,1150,1114,6,1
+SH-70417,2024-07-05,West,TransAlpha,Air,580,2286,1,1
+SH-70418,2024-07-05,Midwest,Gulf Freight,Air,180,469,1,0
+SH-70419,2024-07-05,West,BlueLine,Rail,1890,1223,6,1
+SH-70420,2024-07-06,Northeast,Gulf Freight,Road,830,817,6,1
+SH-70421,2024-07-07,Southeast,BlueLine,Road,510,388,2,1
+SH-70422,2024-07-08,Midwest,NorthStar,Road,620,659,5,1
+SH-70423,2024-07-08,Southeast,TransAlpha,Road,200,206,5,1
+SH-70424,2024-07-08,West,RapidHaul,Sea,340,186,9,1
+SH-70425,2024-07-09,Southeast,RapidHaul,Road,330,297,3,1
+SH-70426,2024-07-10,Midwest,RapidHaul,Sea,260,107,12,0
+SH-70427,2024-07-10,West,BlueLine,Road,350,377,3,1
+SH-70428,2024-07-10,Northeast,NorthStar,Rail,670,535,8,1
+SH-70429,2024-07-10,West,BlueLine,Rail,700,451,5,1
+SH-70430,2024-07-11,Southeast,TransAlpha,Road,670,554,3,1
+SH-70431,2024-07-11,Northeast,Gulf Freight,Rail,150,105,6,0
+SH-70432,2024-07-11,Southwest,NorthStar,Rail,430,323,6,1
+SH-70433,2024-07-11,Midwest,Gulf Freight,Road,470,344,3,1
+SH-70434,2024-07-12,West,BlueLine,Air,1680,5418,3,1
+SH-70435,2024-07-12,Southwest,TransAlpha,Road,1880,1807,2,1
+SH-70436,2024-07-12,Midwest,NorthStar,Sea,690,314,11,1
+SH-70437,2024-07-12,Midwest,RapidHaul,Road,1070,969,3,1
+SH-70438,2024-07-12,Northeast,RapidHaul,Road,550,511,5,1
+SH-70439,2024-07-13,Midwest,RapidHaul,Sea,540,217,11,1
+SH-70440,2024-07-13,Southwest,RapidHaul,Sea,290,148,11,1
+SH-70441,2024-07-14,Southeast,BlueLine,Rail,130,81,7,1
+SH-70442,2024-07-15,Southeast,RapidHaul,Road,200,141,6,1
+SH-70443,2024-07-16,Southeast,TransAlpha,Rail,260,154,4,1
+SH-70444,2024-07-16,West,RapidHaul,Rail,1360,1131,7,1
+SH-70445,2024-07-16,Southeast,BlueLine,Rail,290,159,8,1
+SH-70446,2024-07-16,Northeast,BlueLine,Sea,900,392,10,1
+SH-70447,2024-07-16,West,RapidHaul,Road,360,316,4,1
+SH-70448,2024-07-16,Southwest,NorthStar,Rail,900,537,5,1
+SH-70449,2024-07-17,Northeast,RapidHaul,Air,1240,4433,3,0
+SH-70450,2024-07-17,Midwest,BlueLine,Road,110,94,2,1
+SH-70451,2024-07-17,Southeast,NorthStar,Rail,350,259,9,1
+SH-70452,2024-07-17,Southwest,Gulf Freight,Rail,1070,703,6,1
+SH-70453,2024-07-17,Southeast,Gulf Freight,Road,1160,808,4,1
+SH-70454,2024-07-17,Northeast,BlueLine,Road,770,894,4,1
+SH-70455,2024-07-18,Midwest,BlueLine,Road,910,815,5,1
+SH-70456,2024-07-18,West,Gulf Freight,Rail,380,291,7,1
+SH-70457,2024-07-18,Midwest,BlueLine,Road,520,494,2,1
+SH-70458,2024-07-18,Northeast,RapidHaul,Road,1790,1698,2,1
+SH-70459,2024-07-18,Southeast,RapidHaul,Rail,630,378,7,1
+SH-70460,2024-07-21,Southwest,Gulf Freight,Air,760,2332,3,0
+SH-70461,2024-07-22,West,RapidHaul,Air,230,889,3,1
+SH-70462,2024-07-22,Southeast,RapidHaul,Road,660,480,3,1
+SH-70463,2024-07-22,Southeast,RapidHaul,Sea,210,78,10,1
+SH-70464,2024-07-22,Southwest,BlueLine,Road,420,380,5,1
+SH-70465,2024-07-22,Southwest,BlueLine,Road,600,482,4,1
+SH-70466,2024-07-23,Southeast,RapidHaul,Road,360,314,6,1
+SH-70467,2024-07-23,Southeast,RapidHaul,Road,410,345,2,1
+SH-70468,2024-07-23,Southeast,Gulf Freight,Road,900,666,2,1
+SH-70469,2024-07-23,Midwest,NorthStar,Rail,1300,730,6,1
+SH-70470,2024-07-24,Southeast,TransAlpha,Road,1130,1143,5,1
+SH-70471,2024-07-24,Northeast,BlueLine,Road,200,173,4,1
+SH-70472,2024-07-24,Midwest,NorthStar,Road,970,793,3,1
+SH-70473,2024-07-24,Southeast,BlueLine,Rail,1380,739,4,1
+SH-70474,2024-07-24,Northeast,RapidHaul,Road,1670,1656,4,1
+SH-70475,2024-07-25,Southeast,Gulf Freight,Rail,3030,1492,5,1
+SH-70476,2024-07-25,Southwest,RapidHaul,Road,350,325,4,0
+SH-70477,2024-07-25,Southeast,NorthStar,Sea,710,383,9,1
+SH-70478,2024-07-25,West,Gulf Freight,Sea,920,497,10,1
+SH-70479,2024-07-25,Northeast,RapidHaul,Road,220,203,2,1
+SH-70480,2024-07-25,Northeast,NorthStar,Road,860,947,4,1
+SH-70481,2024-07-26,Northeast,Gulf Freight,Road,200,200,4,1
+SH-70482,2024-07-26,Southeast,TransAlpha,Air,1000,3101,3,1
+SH-70483,2024-07-27,Southwest,TransAlpha,Road,4970,5070,3,1
+SH-70484,2024-07-28,Southwest,BlueLine,Road,290,294,7,1
+SH-70485,2024-07-28,West,NorthStar,Road,520,549,4,0
+SH-70486,2024-07-28,Southwest,Gulf Freight,Sea,950,456,12,1
+SH-70487,2024-07-29,Southwest,TransAlpha,Sea,280,159,11,1
+SH-70488,2024-07-29,Southwest,NorthStar,Rail,230,147,7,1
+SH-70489,2024-07-30,Southwest,RapidHaul,Sea,340,171,11,1
+SH-70490,2024-07-30,Southeast,RapidHaul,Rail,480,315,7,1
+SH-70491,2024-08-01,Southeast,BlueLine,Air,230,597,2,1
+SH-70492,2024-08-01,Southwest,NorthStar,Air,160,465,3,1
+SH-70493,2024-08-01,Southwest,BlueLine,Rail,1250,812,7,1
+SH-70494,2024-08-02,Southwest,RapidHaul,Air,600,1461,2,1
+SH-70495,2024-08-02,Southwest,RapidHaul,Sea,2140,951,12,1
+SH-70496,2024-08-02,Southeast,BlueLine,Road,320,320,4,1
+SH-70497,2024-08-03,Midwest,Gulf Freight,Road,920,802,5,1
+SH-70498,2024-08-05,Midwest,BlueLine,Road,280,200,2,1
+SH-70499,2024-08-05,West,BlueLine,Sea,290,179,9,1
+SH-70500,2024-08-05,Southeast,RapidHaul,Road,220,207,4,0
+SH-70501,2024-08-06,Southeast,RapidHaul,Road,420,341,2,1
+SH-70502,2024-08-06,West,NorthStar,Road,240,255,3,1
+SH-70503,2024-08-06,Northeast,BlueLine,Road,550,463,4,0
+SH-70504,2024-08-07,Midwest,RapidHaul,Rail,920,532,4,1
+SH-70505,2024-08-08,Northeast,TransAlpha,Air,130,497,1,1
+SH-70506,2024-08-09,Southeast,BlueLine,Rail,1880,1081,6,1
+SH-70507,2024-08-10,Southeast,RapidHaul,Air,770,1922,1,1
+SH-70508,2024-08-10,Northeast,Gulf Freight,Rail,130,74,7,1
+SH-70509,2024-08-11,Midwest,NorthStar,Road,690,678,4,1
+SH-70510,2024-08-11,Southwest,RapidHaul,Road,680,642,3,1
+SH-70511,2024-08-12,Southeast,TransAlpha,Road,600,505,5,1
+SH-70512,2024-08-12,Northeast,NorthStar,Air,760,2310,1,1
+SH-70513,2024-08-12,Midwest,RapidHaul,Air,1530,4215,3,1
+SH-70514,2024-08-12,West,Gulf Freight,Air,780,2619,1,1
+SH-70515,2024-08-13,Southeast,Gulf Freight,Road,230,171,4,1
+SH-70516,2024-08-13,Southeast,RapidHaul,Road,720,639,5,1
+SH-70517,2024-08-14,Northeast,BlueLine,Road,410,379,5,1
+SH-70518,2024-08-14,Midwest,BlueLine,Sea,1430,585,9,1
+SH-70519,2024-08-14,Southeast,BlueLine,Sea,510,196,11,1
+SH-70520,2024-08-15,Southeast,RapidHaul,Sea,370,152,10,1
+SH-70521,2024-08-15,West,NorthStar,Road,290,354,6,1
+SH-70522,2024-08-16,Northeast,NorthStar,Sea,1050,556,12,1
+SH-70523,2024-08-16,Southeast,Gulf Freight,Road,340,302,4,1
+SH-70524,2024-08-16,Southwest,NorthStar,Rail,2540,1834,5,1
+SH-70525,2024-08-17,Midwest,BlueLine,Road,560,392,4,1
+SH-70526,2024-08-17,Southwest,NorthStar,Road,380,431,4,1
+SH-70527,2024-08-17,Midwest,BlueLine,Rail,820,440,7,1
+SH-70528,2024-08-18,Southwest,BlueLine,Road,320,319,4,1
+SH-70529,2024-08-18,Midwest,BlueLine,Rail,370,250,7,1
+SH-70530,2024-08-18,Southeast,BlueLine,Rail,1730,1235,5,0
+SH-70531,2024-08-19,Southeast,RapidHaul,Rail,620,310,9,1
+SH-70532,2024-08-19,Southeast,BlueLine,Rail,360,235,9,1
+SH-70533,2024-08-19,Northeast,BlueLine,Road,250,244,5,1
+SH-70534,2024-08-20,Southeast,NorthStar,Road,1120,1172,4,1
+SH-70535,2024-08-21,Southeast,Gulf Freight,Road,350,257,4,1
+SH-70536,2024-08-22,Southeast,NorthStar,Road,370,411,4,1
+SH-70537,2024-08-22,Southwest,RapidHaul,Air,290,776,2,1
+SH-70538,2024-08-22,Southeast,BlueLine,Road,500,450,6,1
+SH-70539,2024-08-23,Southwest,Gulf Freight,Road,940,799,4,1
+SH-70540,2024-08-23,Midwest,RapidHaul,Rail,850,468,5,1
+SH-70541,2024-08-26,Northeast,BlueLine,Road,550,548,5,1
+SH-70542,2024-08-26,Southeast,BlueLine,Road,510,454,4,1
+SH-70543,2024-08-27,Northeast,BlueLine,Road,1260,1166,3,1
+SH-70544,2024-08-27,Southeast,Gulf Freight,Road,270,217,3,1
+SH-70545,2024-08-27,Northeast,RapidHaul,Sea,1210,592,10,1
+SH-70546,2024-08-27,West,NorthStar,Rail,400,385,8,1
+SH-70547,2024-08-27,West,BlueLine,Sea,280,131,12,1
+SH-70548,2024-08-28,Northeast,BlueLine,Sea,720,364,11,1
+SH-70549,2024-08-28,Midwest,BlueLine,Road,360,327,3,1
+SH-70550,2024-08-29,Southwest,RapidHaul,Road,430,337,5,1
+SH-70551,2024-08-29,Midwest,Gulf Freight,Road,870,548,2,1
+SH-70552,2024-08-29,Southeast,Gulf Freight,Road,450,384,6,1
+SH-70553,2024-08-29,Southwest,BlueLine,Road,1270,1359,4,1
+SH-70554,2024-08-29,Southwest,BlueLine,Road,580,549,5,1
+SH-70555,2024-08-29,Northeast,Gulf Freight,Road,290,236,2,1
+SH-70556,2024-08-30,Southeast,BlueLine,Road,880,811,4,1
+SH-70557,2024-08-30,Northeast,Gulf Freight,Road,490,483,6,1
+SH-70558,2024-08-30,Southwest,Gulf Freight,Road,2270,1796,5,1
+SH-70559,2024-08-30,Southeast,RapidHaul,Road,470,455,5,1
+SH-70560,2024-08-31,West,RapidHaul,Road,830,788,3,1
+SH-70561,2024-08-31,Southwest,BlueLine,Rail,670,416,8,0
+SH-70562,2024-08-31,Northeast,BlueLine,Road,1110,1241,1,1
+SH-70563,2024-08-31,Midwest,RapidHaul,Road,230,202,3,0
+SH-70564,2024-09-02,Midwest,Gulf Freight,Road,1470,931,4,1
+SH-70565,2024-09-02,Southwest,BlueLine,Rail,1000,577,7,1
+SH-70566,2024-09-02,Midwest,Gulf Freight,Sea,670,243,12,1
+SH-70567,2024-09-03,Southeast,NorthStar,Road,820,919,3,1
+SH-70568,2024-09-03,West,BlueLine,Road,640,689,3,1
+SH-70569,2024-09-04,Southeast,TransAlpha,Air,370,1023,3,0
+SH-70570,2024-09-04,Northeast,NorthStar,Sea,700,456,10,1
+SH-70571,2024-09-04,Southwest,RapidHaul,Road,230,198,4,1
+SH-70572,2024-09-04,Northeast,Gulf Freight,Road,1070,872,4,1
+SH-70573,2024-09-04,Northeast,BlueLine,Road,270,320,4,1
+SH-70574,2024-09-05,Southeast,RapidHaul,Road,880,735,5,1
+SH-70575,2024-09-05,Northeast,Gulf Freight,Road,730,744,4,1
+SH-70576,2024-09-06,Southeast,RapidHaul,Road,310,226,4,1
+SH-70577,2024-09-06,Southwest,RapidHaul,Road,610,460,6,1
+SH-70578,2024-09-08,Northeast,NorthStar,Sea,360,222,11,1
+SH-70579,2024-09-08,West,NorthStar,Rail,1880,1480,4,1
+SH-70580,2024-09-08,Midwest,BlueLine,Road,840,695,3,1
+SH-70581,2024-09-08,Midwest,BlueLine,Sea,880,388,11,1
+SH-70582,2024-09-09,Southeast,BlueLine,Road,1170,1092,4,1
+SH-70583,2024-09-10,Midwest,Gulf Freight,Road,420,261,3,1
+SH-70584,2024-09-10,Midwest,BlueLine,Sea,1000,381,12,1
+SH-70585,2024-09-10,Midwest,RapidHaul,Road,580,412,6,1
+SH-70586,2024-09-10,West,NorthStar,Road,360,444,3,0
+SH-70587,2024-09-11,Midwest,TransAlpha,Road,480,443,3,1
+SH-70588,2024-09-11,Midwest,Gulf Freight,Road,650,456,3,1
+SH-70589,2024-09-11,West,NorthStar,Road,400,525,1,1
+SH-70590,2024-09-11,Southwest,NorthStar,Sea,310,161,10,1
+SH-70591,2024-09-11,West,TransAlpha,Rail,620,534,5,1
+SH-70592,2024-09-12,West,BlueLine,Road,240,237,4,1
+SH-70593,2024-09-12,Northeast,BlueLine,Road,1350,1210,4,1
+SH-70594,2024-09-12,Northeast,RapidHaul,Rail,550,389,5,1
+SH-70595,2024-09-12,Northeast,BlueLine,Road,680,653,3,1
+SH-70596,2024-09-12,West,RapidHaul,Road,450,473,4,1
+SH-70597,2024-09-13,Midwest,NorthStar,Sea,1660,840,10,1
+SH-70598,2024-09-13,Midwest,RapidHaul,Rail,360,177,5,1
+SH-70599,2024-09-14,Northeast,BlueLine,Road,170,162,4,1
+SH-70600,2024-09-15,Southeast,Gulf Freight,Road,300,251,5,1
+SH-70601,2024-09-16,Southeast,NorthStar,Air,710,2037,2,1
+SH-70602,2024-09-16,West,RapidHaul,Rail,570,414,5,1
+SH-70603,2024-09-17,Midwest,RapidHaul,Sea,830,314,11,1
+SH-70604,2024-09-17,West,NorthStar,Road,730,1023,5,1
+SH-70605,2024-09-17,West,BlueLine,Road,540,568,2,1
+SH-70606,2024-09-17,West,TransAlpha,Road,370,497,3,1
+SH-70607,2024-09-18,Northeast,NorthStar,Rail,740,605,7,0
+SH-70608,2024-09-18,Southwest,RapidHaul,Road,1020,1013,4,1
+SH-70609,2024-09-18,Southeast,NorthStar,Road,970,968,3,1
+SH-70610,2024-09-18,Midwest,Gulf Freight,Road,170,135,4,1
+SH-70611,2024-09-19,Southeast,NorthStar,Rail,560,358,5,0
+SH-70612,2024-09-19,Southwest,BlueLine,Rail,1100,710,7,1
+SH-70613,2024-09-20,Southeast,BlueLine,Sea,980,382,12,1
+SH-70614,2024-09-20,Midwest,Gulf Freight,Sea,640,222,10,1
+SH-70615,2024-09-20,Southeast,RapidHaul,Road,1680,1360,5,1
+SH-70616,2024-09-21,West,BlueLine,Sea,970,515,11,1
+SH-70617,2024-09-21,West,TransAlpha,Rail,1020,797,8,1
+SH-70618,2024-09-21,West,RapidHaul,Road,220,230,3,0
+SH-70619,2024-09-24,Southeast,BlueLine,Rail,1080,579,8,1
+SH-70620,2024-09-24,Northeast,Gulf Freight,Road,520,463,5,1
+SH-70621,2024-09-24,Midwest,RapidHaul,Sea,610,210,10,1
+SH-70622,2024-09-24,Southeast,TransAlpha,Air,360,1161,4,1
+SH-70623,2024-09-25,Southeast,BlueLine,Sea,1470,697,9,1
+SH-70624,2024-09-26,Southwest,BlueLine,Sea,790,414,9,1
+SH-70625,2024-09-26,Southeast,RapidHaul,Road,1760,1450,4,1
+SH-70626,2024-09-26,Midwest,TransAlpha,Road,880,705,2,1
+SH-70627,2024-09-26,Southeast,Gulf Freight,Road,450,405,3,0
+SH-70628,2024-09-26,West,RapidHaul,Road,620,703,4,1
+SH-70629,2024-09-26,Southeast,TransAlpha,Sea,130,60,10,1
+SH-70630,2024-09-26,Northeast,NorthStar,Air,940,3250,3,0
+SH-70631,2024-09-27,Southeast,RapidHaul,Air,1970,5189,3,1
+SH-70632,2024-09-27,Southwest,BlueLine,Road,300,318,3,1
+SH-70633,2024-09-27,Midwest,BlueLine,Road,1190,1053,4,0
+SH-70634,2024-09-27,Northeast,TransAlpha,Rail,360,307,4,1
+SH-70635,2024-09-28,Southwest,Gulf Freight,Road,680,581,2,1
+SH-70636,2024-09-28,Southwest,TransAlpha,Road,1410,1292,6,1
+SH-70637,2024-09-29,Southwest,RapidHaul,Road,880,686,5,1
+SH-70638,2024-09-29,West,Gulf Freight,Rail,450,279,6,1
+SH-70639,2024-09-30,Northeast,NorthStar,Sea,250,148,11,1
+SH-70640,2024-09-30,Northeast,RapidHaul,Road,780,652,5,0
+SH-70641,2024-09-30,Southeast,Gulf Freight,Road,1020,699,6,1
+SH-70642,2024-10-01,Southwest,RapidHaul,Sea,580,242,8,1
+SH-70643,2024-10-01,Northeast,Gulf Freight,Road,870,696,5,1
+SH-70644,2024-10-01,Southeast,BlueLine,Rail,2180,1287,7,0
+SH-70645,2024-10-02,West,BlueLine,Road,890,1035,5,1
+SH-70646,2024-10-02,Northeast,RapidHaul,Road,330,265,4,1
+SH-70647,2024-10-02,Northeast,NorthStar,Rail,970,782,5,1
+SH-70648,2024-10-02,Northeast,Gulf Freight,Rail,250,159,8,1
+SH-70649,2024-10-02,West,BlueLine,Road,280,357,4,1
+SH-70650,2024-10-03,West,TransAlpha,Road,690,785,3,1
+SH-70651,2024-10-03,Southwest,RapidHaul,Road,160,150,5,1
+SH-70652,2024-10-04,West,RapidHaul,Rail,440,336,7,1
+SH-70653,2024-10-04,Northeast,RapidHaul,Rail,1150,835,6,1
+SH-70654,2024-10-04,Southwest,BlueLine,Road,220,180,3,1
+SH-70655,2024-10-04,Midwest,BlueLine,Road,710,508,5,1
+SH-70656,2024-10-04,West,BlueLine,Air,450,1571,3,1
+SH-70657,2024-10-04,Southeast,BlueLine,Road,1210,1187,5,1
+SH-70658,2024-10-04,West,Gulf Freight,Sea,410,236,12,1
+SH-70659,2024-10-05,Northeast,BlueLine,Road,400,441,3,1
+SH-70660,2024-10-06,West,TransAlpha,Road,1890,2257,6,1
+SH-70661,2024-10-07,Southwest,BlueLine,Road,610,472,4,1
+SH-70662,2024-10-07,Southeast,RapidHaul,Air,570,1528,4,1
+SH-70663,2024-10-07,Northeast,TransAlpha,Air,500,1648,2,1
+SH-70664,2024-10-08,Northeast,Gulf Freight,Sea,1030,507,10,1
+SH-70665,2024-10-08,Northeast,BlueLine,Rail,3090,1982,4,1
+SH-70666,2024-10-08,Midwest,BlueLine,Road,460,425,7,1
+SH-70667,2024-10-08,Northeast,BlueLine,Road,650,757,4,1
+SH-70668,2024-10-09,Northeast,NorthStar,Road,110,112,3,1
+SH-70669,2024-10-09,Northeast,RapidHaul,Rail,690,515,8,1
+SH-70670,2024-10-10,Southeast,Gulf Freight,Sea,2620,928,12,0
+SH-70671,2024-10-10,Southwest,BlueLine,Road,1790,1530,5,1
+SH-70672,2024-10-11,Southeast,RapidHaul,Road,610,533,5,1
+SH-70673,2024-10-11,Midwest,NorthStar,Road,320,269,3,1
+SH-70674,2024-10-11,West,RapidHaul,Air,1070,3637,3,1
+SH-70675,2024-10-11,Midwest,BlueLine,Rail,310,157,6,1
+SH-70676,2024-10-13,Southeast,NorthStar,Rail,620,414,6,1
+SH-70677,2024-10-15,West,TransAlpha,Road,290,386,4,1
+SH-70678,2024-10-15,West,NorthStar,Road,280,304,4,1
+SH-70679,2024-10-15,Midwest,BlueLine,Air,400,1142,1,1
+SH-70680,2024-10-15,Southeast,NorthStar,Road,1840,1811,3,1
+SH-70681,2024-10-15,Midwest,NorthStar,Road,930,896,5,1
+SH-70682,2024-10-15,Midwest,RapidHaul,Rail,250,157,6,1
+SH-70683,2024-10-15,Midwest,RapidHaul,Air,1090,2633,2,0
+SH-70684,2024-10-16,Midwest,BlueLine,Rail,1140,643,7,1
+SH-70685,2024-10-16,West,TransAlpha,Sea,1900,1142,11,1
+SH-70686,2024-10-16,Midwest,RapidHaul,Road,200,137,3,1
+SH-70687,2024-10-16,Northeast,TransAlpha,Road,600,603,3,1
+SH-70688,2024-10-17,West,RapidHaul,Rail,310,215,6,1
+SH-70689,2024-10-18,West,NorthStar,Rail,1230,1180,7,1
+SH-70690,2024-10-18,Southeast,Gulf Freight,Rail,2090,1052,8,1
+SH-70691,2024-10-18,Midwest,RapidHaul,Road,270,228,3,1
+SH-70692,2024-10-19,Northeast,RapidHaul,Road,1000,1087,4,1
+SH-70693,2024-10-19,Midwest,RapidHaul,Road,270,216,2,1
+SH-70694,2024-10-20,Southwest,RapidHaul,Road,900,842,4,1
+SH-70695,2024-10-20,Northeast,RapidHaul,Air,1310,4601,2,0
+SH-70696,2024-10-21,Northeast,RapidHaul,Road,610,675,3,1
+SH-70697,2024-10-21,Northeast,Gulf Freight,Road,460,440,4,1
+SH-70698,2024-10-21,West,BlueLine,Rail,420,327,6,0
+SH-70699,2024-10-22,Northeast,NorthStar,Road,430,464,5,1
+SH-70700,2024-10-22,Southeast,BlueLine,Air,650,1852,1,1
+SH-70701,2024-10-22,Midwest,Gulf Freight,Sea,370,140,11,1
+SH-70702,2024-10-23,West,BlueLine,Rail,930,709,4,1
+SH-70703,2024-10-23,West,NorthStar,Rail,2500,2081,6,1
+SH-70704,2024-10-24,Midwest,NorthStar,Road,190,150,3,1
+SH-70705,2024-10-24,Midwest,BlueLine,Rail,300,168,7,1
+SH-70706,2024-10-24,Midwest,BlueLine,Sea,420,175,11,1
+SH-70707,2024-10-24,West,RapidHaul,Road,760,672,3,1
+SH-70708,2024-10-24,Northeast,BlueLine,Road,150,130,5,1
+SH-70709,2024-10-24,Northeast,BlueLine,Rail,860,528,6,1
+SH-70710,2024-10-25,West,NorthStar,Rail,910,694,5,1
+SH-70711,2024-10-26,Northeast,RapidHaul,Road,520,421,7,1
+SH-70712,2024-10-26,Southwest,BlueLine,Road,2260,2104,6,1
+SH-70713,2024-10-27,Midwest,BlueLine,Air,750,2237,2,0
+SH-70714,2024-10-27,West,BlueLine,Air,190,719,1,1
+SH-70715,2024-10-28,Midwest,BlueLine,Rail,1070,569,4,1
+SH-70716,2024-10-29,West,NorthStar,Road,340,402,3,1
+SH-70717,2024-10-29,Midwest,NorthStar,Road,330,347,5,1
+SH-70718,2024-10-29,Southwest,RapidHaul,Air,160,503,2,1
+SH-70719,2024-10-29,West,BlueLine,Road,270,260,3,1
+SH-70720,2024-10-29,Northeast,TransAlpha,Road,1290,1501,2,1
+SH-70721,2024-10-29,West,NorthStar,Road,270,326,5,1
+SH-70722,2024-10-29,West,BlueLine,Road,330,373,5,1
+SH-70723,2024-10-30,Southeast,RapidHaul,Rail,1150,775,4,1
+SH-70724,2024-10-30,Midwest,BlueLine,Road,750,686,5,1
+SH-70725,2024-11-01,Midwest,NorthStar,Road,920,833,3,1
+SH-70726,2024-11-01,Southwest,RapidHaul,Road,430,408,4,1
+SH-70727,2024-11-01,Northeast,RapidHaul,Road,390,361,5,0
+SH-70728,2024-11-02,Midwest,NorthStar,Road,300,317,4,1
+SH-70729,2024-11-02,Midwest,RapidHaul,Sea,1480,513,11,1
+SH-70730,2024-11-02,Midwest,BlueLine,Road,520,485,4,1
+SH-70731,2024-11-04,Southwest,NorthStar,Road,490,470,4,1
+SH-70732,2024-11-04,Southeast,RapidHaul,Sea,800,323,12,1
+SH-70733,2024-11-04,Southeast,RapidHaul,Road,390,303,6,1
+SH-70734,2024-11-06,Midwest,Gulf Freight,Road,580,374,3,1
+SH-70735,2024-11-06,Midwest,RapidHaul,Road,440,289,2,0
+SH-70736,2024-11-06,West,Gulf Freight,Rail,1220,943,5,1
+SH-70737,2024-11-07,Northeast,RapidHaul,Road,160,176,7,1
+SH-70738,2024-11-07,West,BlueLine,Air,880,3127,1,1
+SH-70739,2024-11-08,Southwest,NorthStar,Sea,480,217,11,1
+SH-70740,2024-11-08,Midwest,BlueLine,Road,250,215,4,1
+SH-70741,2024-11-08,West,BlueLine,Sea,140,65,12,1
+SH-70742,2024-11-09,Southeast,BlueLine,Road,1800,1514,4,1
+SH-70743,2024-11-09,Southeast,TransAlpha,Air,550,1665,1,1
+SH-70744,2024-11-11,West,BlueLine,Road,1160,1228,4,1
+SH-70745,2024-11-11,West,NorthStar,Rail,1030,955,7,1
+SH-70746,2024-11-11,Midwest,BlueLine,Road,620,478,4,1
+SH-70747,2024-11-11,Southeast,RapidHaul,Air,650,1799,3,0
+SH-70748,2024-11-11,Southwest,NorthStar,Road,160,168,2,1
+SH-70749,2024-11-11,Southwest,RapidHaul,Road,2290,1848,4,1
+SH-70750,2024-11-12,Northeast,Gulf Freight,Road,1070,997,4,1
+SH-70751,2024-11-12,Midwest,RapidHaul,Air,370,909,1,1
+SH-70752,2024-11-13,Southwest,Gulf Freight,Sea,590,214,10,1
+SH-70753,2024-11-13,Northeast,TransAlpha,Road,570,542,6,1
+SH-70754,2024-11-14,Midwest,NorthStar,Road,800,707,2,1
+SH-70755,2024-11-14,Southwest,Gulf Freight,Sea,680,276,12,1
+SH-70756,2024-11-14,West,Gulf Freight,Rail,400,246,7,1
+SH-70757,2024-11-15,Midwest,BlueLine,Sea,530,242,9,1
+SH-70758,2024-11-15,Northeast,BlueLine,Sea,470,198,13,1
+SH-70759,2024-11-15,Southwest,RapidHaul,Road,740,756,3,1
+SH-70760,2024-11-15,Southwest,NorthStar,Sea,870,424,11,1
+SH-70761,2024-11-15,Midwest,BlueLine,Road,350,243,1,1
+SH-70762,2024-11-15,West,RapidHaul,Rail,480,311,7,1
+SH-70763,2024-11-16,Northeast,Gulf Freight,Rail,620,352,7,1
+SH-70764,2024-11-16,Southeast,BlueLine,Road,1160,1052,4,0
+SH-70765,2024-11-17,Northeast,RapidHaul,Road,370,335,6,1
+SH-70766,2024-11-18,Midwest,BlueLine,Rail,640,374,5,1
+SH-70767,2024-11-18,West,NorthStar,Rail,1200,1129,3,0
+SH-70768,2024-11-19,West,TransAlpha,Road,940,1191,4,1
+SH-70769,2024-11-19,Southeast,NorthStar,Road,340,332,2,1
+SH-70770,2024-11-19,West,RapidHaul,Road,580,592,1,1
+SH-70771,2024-11-20,Southwest,Gulf Freight,Road,820,656,7,0
+SH-70772,2024-11-20,West,NorthStar,Road,280,398,4,1
+SH-70773,2024-11-20,West,RapidHaul,Road,750,893,5,1
+SH-70774,2024-11-20,Southwest,BlueLine,Road,260,223,3,1
+SH-70775,2024-11-21,Southwest,BlueLine,Road,440,362,4,1
+SH-70776,2024-11-21,West,BlueLine,Road,1180,1255,3,1
+SH-70777,2024-11-21,West,RapidHaul,Road,580,526,2,1
+SH-70778,2024-11-21,Southeast,Gulf Freight,Road,710,525,3,1
+SH-70779,2024-11-21,Midwest,BlueLine,Road,770,645,6,1
+SH-70780,2024-11-22,Midwest,NorthStar,Road,400,344,5,1
+SH-70781,2024-11-22,Midwest,RapidHaul,Air,320,889,2,1
+SH-70782,2024-11-22,Southeast,NorthStar,Sea,2890,1364,12,1
+SH-70783,2024-11-25,West,TransAlpha,Sea,1200,645,10,1
+SH-70784,2024-11-25,Southeast,RapidHaul,Road,260,245,2,0
+SH-70785,2024-11-25,Southwest,Gulf Freight,Road,610,451,4,1
+SH-70786,2024-11-25,Southwest,BlueLine,Road,1800,1913,3,1
+SH-70787,2024-11-25,West,Gulf Freight,Rail,780,554,5,1
+SH-70788,2024-11-26,Northeast,BlueLine,Rail,470,364,7,1
+SH-70789,2024-11-26,Northeast,BlueLine,Road,240,271,5,1
+SH-70790,2024-11-26,Midwest,BlueLine,Sea,810,377,11,1
+SH-70791,2024-11-27,Southeast,BlueLine,Air,180,470,1,1
+SH-70792,2024-11-27,Southwest,NorthStar,Road,90,102,4,1
+SH-70793,2024-11-27,West,BlueLine,Rail,340,275,6,1
+SH-70794,2024-11-28,Midwest,BlueLine,Rail,180,102,9,1
+SH-70795,2024-11-28,Southeast,RapidHaul,Road,430,334,4,1
+SH-70796,2024-11-28,West,NorthStar,Road,980,1192,3,1
+SH-70797,2024-11-29,Southeast,NorthStar,Road,180,162,4,1
+SH-70798,2024-11-29,Southwest,BlueLine,Air,220,641,1,1
+SH-70799,2024-11-29,Northeast,Gulf Freight,Road,1460,1305,3,1
+SH-70800,2024-11-29,Northeast,RapidHaul,Rail,590,449,6,1
+SH-70801,2024-11-30,Southwest,RapidHaul,Road,180,146,4,1
+SH-70802,2024-12-01,Southeast,BlueLine,Sea,520,263,11,1
+SH-70803,2024-12-02,Southeast,TransAlpha,Sea,1400,662,12,1
+SH-70804,2024-12-02,Southeast,NorthStar,Rail,1070,828,8,0
+SH-70805,2024-12-02,Southeast,BlueLine,Road,460,414,5,1
+SH-70806,2024-12-03,Midwest,RapidHaul,Road,460,390,4,1
+SH-70807,2024-12-03,Midwest,RapidHaul,Rail,670,391,5,1
+SH-70808,2024-12-03,West,TransAlpha,Road,530,626,5,0
+SH-70809,2024-12-04,Northeast,Gulf Freight,Rail,130,79,6,1
+SH-70810,2024-12-05,Northeast,Gulf Freight,Road,1530,1406,4,1
+SH-70811,2024-12-05,Southwest,RapidHaul,Road,600,520,4,1
+SH-70812,2024-12-06,Southeast,Gulf Freight,Rail,470,220,8,1
+SH-70813,2024-12-06,Northeast,BlueLine,Road,410,415,4,1
+SH-70814,2024-12-06,Midwest,TransAlpha,Road,280,274,3,1
+SH-70815,2024-12-07,Northeast,BlueLine,Road,160,173,4,1
+SH-70816,2024-12-07,Midwest,BlueLine,Road,660,629,5,1
+SH-70817,2024-12-07,Midwest,TransAlpha,Road,650,617,5,1
+SH-70818,2024-12-09,Southeast,BlueLine,Road,620,579,4,1
+SH-70819,2024-12-09,Southeast,RapidHaul,Rail,1630,812,5,1
+SH-70820,2024-12-09,Northeast,RapidHaul,Road,1280,1177,4,1
+SH-70821,2024-12-10,Midwest,Gulf Freight,Road,410,339,4,1
+SH-70822,2024-12-10,Midwest,NorthStar,Air,200,644,3,1
+SH-70823,2024-12-10,Northeast,TransAlpha,Rail,1250,858,7,1
+SH-70824,2024-12-10,Southeast,Gulf Freight,Road,1090,844,5,0
+SH-70825,2024-12-12,Southwest,RapidHaul,Road,240,196,3,1
+SH-70826,2024-12-12,Midwest,Gulf Freight,Rail,960,565,5,0
+SH-70827,2024-12-12,Southwest,BlueLine,Air,710,2050,3,1
+SH-70828,2024-12-12,Midwest,TransAlpha,Sea,570,285,10,1
+SH-70829,2024-12-12,West,Gulf Freight,Road,540,495,3,1
+SH-70830,2024-12-12,Northeast,NorthStar,Rail,650,497,4,1
+SH-70831,2024-12-12,Southeast,BlueLine,Rail,330,212,4,1
+SH-70832,2024-12-13,Northeast,NorthStar,Road,680,810,4,1
+SH-70833,2024-12-13,West,BlueLine,Road,710,657,4,1
+SH-70834,2024-12-13,West,NorthStar,Rail,1040,776,7,1
+SH-70835,2024-12-14,West,NorthStar,Road,400,428,4,1
+SH-70836,2024-12-14,Northeast,RapidHaul,Road,410,365,5,0
+SH-70837,2024-12-15,Northeast,NorthStar,Air,800,2829,3,1
+SH-70838,2024-12-15,Southeast,RapidHaul,Road,550,447,3,1
+SH-70839,2024-12-15,Southwest,BlueLine,Road,1010,1024,4,1
+SH-70840,2024-12-15,West,RapidHaul,Sea,490,246,12,1
+SH-70841,2024-12-16,Northeast,BlueLine,Air,260,777,3,1
+SH-70842,2024-12-17,Southeast,TransAlpha,Road,580,566,3,1
+SH-70843,2024-12-17,Southeast,RapidHaul,Road,460,373,5,1
+SH-70844,2024-12-17,West,Gulf Freight,Road,80,77,4,1
+SH-70845,2024-12-17,West,BlueLine,Road,240,251,5,1
+SH-70846,2024-12-18,Northeast,NorthStar,Road,180,182,2,0
+SH-70847,2024-12-18,Midwest,Gulf Freight,Rail,880,433,6,0
+SH-70848,2024-12-18,Midwest,BlueLine,Road,450,434,5,1
+SH-70849,2024-12-18,Northeast,BlueLine,Road,820,703,4,1
+SH-70850,2024-12-18,Southwest,Gulf Freight,Air,180,482,3,1
+SH-70851,2024-12-19,Southeast,NorthStar,Road,310,341,5,0
+SH-70852,2024-12-19,Southeast,TransAlpha,Air,580,1537,3,0
+SH-70853,2024-12-20,West,BlueLine,Road,590,715,3,1
+SH-70854,2024-12-20,West,NorthStar,Road,360,509,4,1
+SH-70855,2024-12-20,Southwest,RapidHaul,Rail,680,427,6,0
+SH-70856,2024-12-20,Southwest,BlueLine,Rail,1330,885,6,1
+SH-70857,2024-12-20,Northeast,BlueLine,Road,550,602,5,0
+SH-70858,2024-12-21,Southwest,NorthStar,Rail,840,502,5,0
+SH-70859,2024-12-21,West,RapidHaul,Road,1180,1111,3,1
+SH-70860,2024-12-22,Midwest,TransAlpha,Road,730,529,3,1
+SH-70861,2024-12-24,Northeast,BlueLine,Road,1960,2128,5,1
+SH-70862,2024-12-24,Northeast,Gulf Freight,Road,640,672,5,1
+SH-70863,2024-12-25,Northeast,Gulf Freight,Rail,960,701,7,0
+SH-70864,2024-12-25,West,NorthStar,Sea,390,227,10,1
+SH-70865,2024-12-25,Midwest,BlueLine,Rail,350,209,4,1
+SH-70866,2024-12-26,Northeast,RapidHaul,Sea,880,470,10,1
+SH-70867,2024-12-26,West,NorthStar,Road,410,562,4,0
+SH-70868,2024-12-26,Midwest,TransAlpha,Rail,480,337,7,0
+SH-70869,2024-12-27,Southeast,TransAlpha,Road,830,747,5,1
+SH-70870,2024-12-27,Southeast,RapidHaul,Road,670,592,2,1
+SH-70871,2024-12-28,Midwest,BlueLine,Road,180,169,6,1
+SH-70872,2024-12-28,Northeast,Gulf Freight,Road,760,652,4,1
+SH-70873,2024-12-28,Midwest,RapidHaul,Road,260,179,3,0
+SH-70874,2024-12-29,Northeast,RapidHaul,Road,890,796,4,1
+SH-70875,2024-12-30,Southwest,BlueLine,Road,200,216,4,1
+SH-70876,2024-12-30,Northeast,RapidHaul,Sea,750,413,11,1
+SH-70877,2024-12-30,West,TransAlpha,Rail,1930,1740,5,1
+SH-70878,2024-12-30,Midwest,BlueLine,Road,530,490,5,1
+SH-70879,2024-12-30,Southwest,BlueLine,Air,400,1231,3,1
+SH-70880,2024-12-31,Northeast,Gulf Freight,Rail,2380,1514,6,1
+SH-70881,2024-12-31,Southwest,BlueLine,Sea,520,244,11,1
+SH-70882,2024-12-31,Southeast,NorthStar,Air,340,1037,2,1
+SH-70883,2024-12-31,Southeast,NorthStar,Rail,460,289,5,1
+SH-70884,2024-12-31,Southwest,NorthStar,Rail,1210,987,5,1
+SH-70885,2024-12-31,Southeast,Gulf Freight,Sea,380,166,11,1
+SH-70886,2024-12-31,Midwest,Gulf Freight,Air,660,1670,1,1
+SH-70887,2025-01-01,Midwest,TransAlpha,Road,400,327,4,1
+SH-70888,2025-01-02,West,NorthStar,Road,1180,1588,3,1
+SH-70889,2025-01-05,Midwest,RapidHaul,Road,150,98,5,1
+SH-70890,2025-01-06,Midwest,NorthStar,Road,1140,1034,2,1
+SH-70891,2025-01-06,Southeast,Gulf Freight,Road,580,472,5,0
+SH-70892,2025-01-07,Northeast,NorthStar,Rail,1600,1445,5,1
+SH-70893,2025-01-07,West,Gulf Freight,Road,580,600,3,1
+SH-70894,2025-01-07,Northeast,BlueLine,Road,620,612,2,1
+SH-70895,2025-01-07,Southwest,RapidHaul,Road,730,556,5,0
+SH-70896,2025-01-08,West,Gulf Freight,Road,390,423,4,1
+SH-70897,2025-01-08,Southwest,NorthStar,Sea,810,435,11,1
+SH-70898,2025-01-10,Southeast,Gulf Freight,Road,420,352,6,1
+SH-70899,2025-01-10,Southwest,NorthStar,Rail,1120,860,6,1
+SH-70900,2025-01-10,Southwest,Gulf Freight,Rail,720,388,6,1
+SH-70901,2025-01-10,West,RapidHaul,Road,730,770,2,1
+SH-70902,2025-01-10,Southwest,RapidHaul,Road,310,303,5,1
+SH-70903,2025-01-11,Midwest,BlueLine,Rail,260,126,6,1
+SH-70904,2025-01-11,West,RapidHaul,Road,660,726,3,1
+SH-70905,2025-01-13,Southwest,Gulf Freight,Rail,1150,708,7,1
+SH-70906,2025-01-14,Southeast,RapidHaul,Air,1250,3089,1,0
+SH-70907,2025-01-15,Midwest,BlueLine,Air,550,1467,3,1
+SH-70908,2025-01-15,Southeast,Gulf Freight,Road,250,197,5,1
+SH-70909,2025-01-15,Midwest,BlueLine,Air,410,1231,2,1
+SH-70910,2025-01-17,West,Gulf Freight,Sea,260,141,10,1
+SH-70911,2025-01-18,West,NorthStar,Road,2340,2805,3,1
+SH-70912,2025-01-18,Southeast,BlueLine,Rail,1340,944,6,1
+SH-70913,2025-01-19,Southwest,BlueLine,Rail,340,221,7,1
+SH-70914,2025-01-20,Southeast,RapidHaul,Road,660,465,5,1
+SH-70915,2025-01-20,Northeast,BlueLine,Rail,1460,1173,8,1
+SH-70916,2025-01-20,Northeast,TransAlpha,Road,210,210,5,1
+SH-70917,2025-01-20,Southeast,NorthStar,Rail,740,498,4,1
+SH-70918,2025-01-21,Southwest,RapidHaul,Road,380,342,5,0
+SH-70919,2025-01-21,Northeast,BlueLine,Road,260,300,5,1
+SH-70920,2025-01-21,Northeast,TransAlpha,Air,220,779,4,1
+SH-70921,2025-01-22,Southwest,TransAlpha,Sea,550,243,10,1
+SH-70922,2025-01-22,Northeast,RapidHaul,Rail,470,323,5,1
+SH-70923,2025-01-22,Midwest,BlueLine,Rail,270,166,5,1
+SH-70924,2025-01-22,West,TransAlpha,Rail,300,254,7,1
+SH-70925,2025-01-23,West,RapidHaul,Road,220,256,3,0
+SH-70926,2025-01-23,Southeast,Gulf Freight,Rail,350,183,5,1
+SH-70927,2025-01-23,Northeast,NorthStar,Air,620,2082,1,1
+SH-70928,2025-01-23,Midwest,RapidHaul,Air,300,854,2,1
+SH-70929,2025-01-24,Southeast,BlueLine,Road,170,132,3,1
+SH-70930,2025-01-25,West,BlueLine,Road,850,885,4,1
+SH-70931,2025-01-26,Southeast,NorthStar,Road,730,644,5,1
+SH-70932,2025-01-26,Midwest,RapidHaul,Sea,560,256,10,1
+SH-70933,2025-01-27,West,BlueLine,Road,1230,1447,4,1
+SH-70934,2025-01-27,Midwest,RapidHaul,Sea,330,132,11,1
+SH-70935,2025-01-27,Northeast,NorthStar,Road,780,884,3,1
+SH-70936,2025-01-28,Northeast,BlueLine,Sea,1170,668,10,1
+SH-70937,2025-01-28,Southwest,BlueLine,Road,500,516,3,1
+SH-70938,2025-01-29,West,Gulf Freight,Road,820,726,3,1
+SH-70939,2025-01-29,Midwest,Gulf Freight,Rail,340,204,5,1
+SH-70940,2025-01-29,Northeast,BlueLine,Sea,560,287,10,1
+SH-70941,2025-01-29,Midwest,RapidHaul,Road,1180,896,5,1
+SH-70942,2025-01-31,Midwest,Gulf Freight,Sea,950,362,12,1
+SH-70943,2025-02-01,Midwest,BlueLine,Air,900,2378,1,1
+SH-70944,2025-02-01,Northeast,BlueLine,Sea,340,153,12,1
+SH-70945,2025-02-02,Southwest,RapidHaul,Rail,270,177,3,1
+SH-70946,2025-02-03,Northeast,TransAlpha,Road,760,673,3,1
+SH-70947,2025-02-03,Southeast,Gulf Freight,Road,870,698,4,1
+SH-70948,2025-02-03,Southwest,BlueLine,Road,180,155,5,1
+SH-70949,2025-02-03,West,BlueLine,Rail,160,111,4,1
+SH-70950,2025-02-04,Midwest,RapidHaul,Road,170,141,5,1
+SH-70951,2025-02-05,Southwest,BlueLine,Road,410,352,2,1
+SH-70952,2025-02-05,Midwest,NorthStar,Air,250,680,3,1
+SH-70953,2025-02-05,Southeast,Gulf Freight,Rail,2720,1674,4,1
+SH-70954,2025-02-06,Northeast,NorthStar,Road,1250,1544,4,1
+SH-70955,2025-02-06,Southeast,RapidHaul,Road,750,631,3,1
+SH-70956,2025-02-06,Northeast,BlueLine,Rail,690,542,7,1
+SH-70957,2025-02-06,West,NorthStar,Road,450,499,4,1
+SH-70958,2025-02-07,Northeast,NorthStar,Road,330,410,3,1
+SH-70959,2025-02-07,Northeast,BlueLine,Rail,1010,709,7,0
+SH-70960,2025-02-07,Midwest,BlueLine,Road,190,132,5,1
+SH-70961,2025-02-08,West,BlueLine,Rail,1560,1394,4,1
+SH-70962,2025-02-09,Southeast,RapidHaul,Road,230,186,4,1
+SH-70963,2025-02-10,Southwest,NorthStar,Sea,210,119,10,1
+SH-70964,2025-02-10,Northeast,TransAlpha,Rail,240,203,4,1
+SH-70965,2025-02-10,Southeast,Gulf Freight,Air,690,1862,2,1
+SH-70966,2025-02-11,Midwest,BlueLine,Road,700,489,6,1
+SH-70967,2025-02-11,Northeast,RapidHaul,Road,720,751,4,1
+SH-70968,2025-02-12,Southwest,BlueLine,Road,920,853,3,1
+SH-70969,2025-02-12,Southeast,NorthStar,Road,720,682,6,1
+SH-70970,2025-02-12,West,BlueLine,Rail,320,240,5,1
+SH-70971,2025-02-12,West,Gulf Freight,Sea,600,283,9,1
+SH-70972,2025-02-13,Southeast,BlueLine,Road,1030,756,6,1
+SH-70973,2025-02-13,Southwest,Gulf Freight,Road,330,251,6,1
+SH-70974,2025-02-13,West,NorthStar,Sea,310,169,13,1
+SH-70975,2025-02-13,Southeast,NorthStar,Road,450,419,5,1
+SH-70976,2025-02-14,Northeast,RapidHaul,Road,770,715,2,1
+SH-70977,2025-02-14,Midwest,BlueLine,Road,2550,1798,3,1
+SH-70978,2025-02-14,Northeast,TransAlpha,Sea,650,401,11,1
+SH-70979,2025-02-14,Midwest,BlueLine,Road,370,332,2,1
+SH-70980,2025-02-15,Midwest,TransAlpha,Road,2080,1636,6,1
+SH-70981,2025-02-15,Northeast,BlueLine,Sea,230,119,14,1
+SH-70982,2025-02-16,Midwest,RapidHaul,Road,360,261,4,1
+SH-70983,2025-02-17,Southeast,NorthStar,Road,750,830,4,1
+SH-70984,2025-02-18,Southeast,TransAlpha,Sea,680,296,11,1
+SH-70985,2025-02-18,Midwest,NorthStar,Road,110,103,3,1
+SH-70986,2025-02-19,Southeast,RapidHaul,Road,290,225,3,1
+SH-70987,2025-02-19,Southeast,NorthStar,Rail,410,291,5,1
+SH-70988,2025-02-19,Midwest,Gulf Freight,Road,130,109,4,0
+SH-70989,2025-02-20,Southwest,RapidHaul,Air,840,2010,3,1
+SH-70990,2025-02-21,Southwest,BlueLine,Road,1560,1666,5,1
+SH-70991,2025-02-21,Midwest,Gulf Freight,Sea,730,316,11,1
+SH-70992,2025-02-21,Midwest,BlueLine,Road,190,135,5,1
+SH-70993,2025-02-21,Southwest,BlueLine,Air,830,2083,2,0
+SH-70994,2025-02-22,West,Gulf Freight,Rail,1100,817,5,0
+SH-70995,2025-02-23,Midwest,TransAlpha,Road,260,199,3,1
+SH-70996,2025-02-25,West,NorthStar,Road,740,757,4,1
+SH-70997,2025-02-25,Midwest,RapidHaul,Rail,790,464,8,1
+SH-70998,2025-02-25,Southeast,BlueLine,Road,520,481,5,1
+SH-70999,2025-02-26,Southeast,RapidHaul,Road,210,203,4,1
+SH-71000,2025-02-26,Midwest,RapidHaul,Road,1540,1108,4,1
+SH-71001,2025-02-26,West,BlueLine,Road,480,501,5,1
+SH-71002,2025-02-26,West,Gulf Freight,Road,1720,1602,3,1
+SH-71003,2025-02-26,West,BlueLine,Road,1540,1767,4,1
+SH-71004,2025-02-27,Southwest,RapidHaul,Sea,390,185,10,1
+SH-71005,2025-02-28,West,NorthStar,Rail,550,545,5,1
+SH-71006,2025-02-28,West,RapidHaul,Sea,2820,1377,11,1
+SH-71007,2025-02-28,West,NorthStar,Rail,380,379,4,1
+SH-71008,2025-03-02,Southwest,BlueLine,Road,310,324,4,1
+SH-71009,2025-03-02,Midwest,NorthStar,Road,710,549,4,1
+SH-71010,2025-03-03,Northeast,Gulf Freight,Road,830,699,3,0
+SH-71011,2025-03-03,Midwest,BlueLine,Rail,460,252,6,1
+SH-71012,2025-03-03,Midwest,BlueLine,Road,1150,1021,4,1
+SH-71013,2025-03-04,Southeast,BlueLine,Air,260,729,1,1
+SH-71014,2025-03-04,Southeast,TransAlpha,Road,450,415,4,1
+SH-71015,2025-03-05,West,RapidHaul,Road,300,280,4,1
+SH-71016,2025-03-05,Midwest,RapidHaul,Road,2340,1886,6,1
+SH-71017,2025-03-06,West,NorthStar,Rail,3670,2774,7,1
+SH-71018,2025-03-06,Northeast,NorthStar,Rail,770,552,8,1
+SH-71019,2025-03-07,Southeast,NorthStar,Sea,3000,1408,12,1
+SH-71020,2025-03-07,Southwest,NorthStar,Air,330,951,3,1
+SH-71021,2025-03-08,Northeast,NorthStar,Road,480,531,5,0
+SH-71022,2025-03-08,Southeast,BlueLine,Air,600,1878,1,1
+SH-71023,2025-03-10,Northeast,RapidHaul,Rail,560,355,5,1
+SH-71024,2025-03-10,Midwest,NorthStar,Sea,2160,880,11,1
+SH-71025,2025-03-11,Midwest,Gulf Freight,Road,270,209,4,1
+SH-71026,2025-03-11,Northeast,NorthStar,Sea,880,574,8,1
+SH-71027,2025-03-11,Midwest,RapidHaul,Road,220,182,3,1
+SH-71028,2025-03-12,Southwest,Gulf Freight,Rail,5810,3005,5,1
+SH-71029,2025-03-12,West,NorthStar,Sea,2280,1355,12,1
+SH-71030,2025-03-13,West,BlueLine,Rail,290,202,6,1
+SH-71031,2025-03-13,Northeast,NorthStar,Road,340,332,2,1
+SH-71032,2025-03-13,West,TransAlpha,Road,250,251,6,1
+SH-71033,2025-03-14,Northeast,RapidHaul,Road,300,313,4,1
+SH-71034,2025-03-14,Midwest,TransAlpha,Rail,710,446,8,0
+SH-71035,2025-03-16,Northeast,NorthStar,Rail,1230,857,7,1
+SH-71036,2025-03-16,West,RapidHaul,Rail,390,317,4,1
+SH-71037,2025-03-17,Northeast,BlueLine,Road,120,109,5,1
+SH-71038,2025-03-17,Southeast,RapidHaul,Air,240,748,2,1
+SH-71039,2025-03-17,Southeast,Gulf Freight,Air,1430,3893,3,1
+SH-71040,2025-03-17,Northeast,RapidHaul,Sea,890,490,11,1
+SH-71041,2025-03-18,Northeast,RapidHaul,Road,890,822,3,0
+SH-71042,2025-03-18,Southwest,NorthStar,Sea,1850,937,11,1
+SH-71043,2025-03-21,West,TransAlpha,Road,770,900,3,1
+SH-71044,2025-03-22,Northeast,BlueLine,Sea,970,492,10,1
+SH-71045,2025-03-23,Northeast,RapidHaul,Road,600,610,6,1
+SH-71046,2025-03-24,Southwest,NorthStar,Road,450,439,3,0
+SH-71047,2025-03-24,West,TransAlpha,Road,130,137,3,1
+SH-71048,2025-03-24,Northeast,BlueLine,Sea,940,423,10,1
+SH-71049,2025-03-25,Northeast,RapidHaul,Road,340,372,3,1
+SH-71050,2025-03-25,Midwest,Gulf Freight,Road,380,307,4,1
+SH-71051,2025-03-25,Southeast,NorthStar,Road,300,301,2,0
+SH-71052,2025-03-25,Northeast,RapidHaul,Rail,280,185,6,1
+SH-71053,2025-03-25,Northeast,BlueLine,Road,800,878,6,1
+SH-71054,2025-03-25,West,Gulf Freight,Road,1250,1436,5,1
+SH-71055,2025-03-26,Southeast,NorthStar,Sea,290,128,9,1
+SH-71056,2025-03-26,Northeast,RapidHaul,Road,670,574,5,1
+SH-71057,2025-03-26,Midwest,BlueLine,Rail,890,477,6,1
+SH-71058,2025-03-26,West,TransAlpha,Rail,1510,1106,6,1
+SH-71059,2025-03-27,Midwest,RapidHaul,Air,500,1445,1,1
+SH-71060,2025-03-27,Midwest,NorthStar,Road,850,782,4,1
+SH-71061,2025-03-27,Northeast,RapidHaul,Sea,1040,454,12,1
+SH-71062,2025-03-27,Northeast,TransAlpha,Road,640,618,5,1
+SH-71063,2025-03-28,Northeast,RapidHaul,Road,520,563,5,1
+SH-71064,2025-03-28,Midwest,Gulf Freight,Sea,810,257,10,1
+SH-71065,2025-03-28,Southeast,NorthStar,Sea,620,342,11,1
+SH-71066,2025-03-29,Southeast,BlueLine,Rail,750,392,4,1
+SH-71067,2025-03-29,Northeast,TransAlpha,Sea,1310,723,12,1
+SH-71068,2025-03-29,Northeast,NorthStar,Road,650,763,1,1
+SH-71069,2025-03-30,West,Gulf Freight,Rail,800,488,7,0
+SH-71070,2025-03-31,Midwest,RapidHaul,Air,310,734,1,1
+SH-71071,2025-04-01,Northeast,NorthStar,Rail,700,591,7,1
+SH-71072,2025-04-01,Southeast,NorthStar,Road,470,470,5,1
+SH-71073,2025-04-01,Northeast,NorthStar,Rail,1200,959,5,1
+SH-71074,2025-04-02,Midwest,NorthStar,Rail,370,250,5,1
+SH-71075,2025-04-02,Southeast,Gulf Freight,Road,110,83,5,1
+SH-71076,2025-04-02,Northeast,TransAlpha,Sea,630,374,12,0
+SH-71077,2025-04-02,Midwest,Gulf Freight,Road,480,318,3,1
+SH-71078,2025-04-03,West,RapidHaul,Road,780,954,4,1
+SH-71079,2025-04-03,Midwest,Gulf Freight,Road,270,168,3,1
+SH-71080,2025-04-03,Southeast,RapidHaul,Air,680,1672,1,1
+SH-71081,2025-04-06,Southeast,NorthStar,Road,1910,1928,3,1
+SH-71082,2025-04-07,Southeast,RapidHaul,Rail,1470,860,4,1
+SH-71083,2025-04-07,Midwest,RapidHaul,Road,350,232,5,1
+SH-71084,2025-04-07,West,RapidHaul,Road,210,232,4,1
+SH-71085,2025-04-08,Midwest,RapidHaul,Road,160,126,4,1
+SH-71086,2025-04-08,Midwest,BlueLine,Rail,690,334,5,1
+SH-71087,2025-04-09,Northeast,Gulf Freight,Road,2560,2431,4,1
+SH-71088,2025-04-09,West,RapidHaul,Air,760,2808,3,1
+SH-71089,2025-04-10,Midwest,Gulf Freight,Road,290,196,6,1
+SH-71090,2025-04-10,Southeast,BlueLine,Road,420,376,3,1
+SH-71091,2025-04-10,West,RapidHaul,Road,350,345,4,1
+SH-71092,2025-04-11,Midwest,BlueLine,Sea,680,306,9,1
+SH-71093,2025-04-11,Southeast,BlueLine,Air,210,551,2,1
+SH-71094,2025-04-11,Midwest,RapidHaul,Road,2550,2255,5,1
+SH-71095,2025-04-11,Northeast,Gulf Freight,Rail,400,218,6,1
+SH-71096,2025-04-14,Southwest,RapidHaul,Sea,1530,601,11,1
+SH-71097,2025-04-14,Midwest,BlueLine,Road,1420,1047,4,1
+SH-71098,2025-04-14,Northeast,NorthStar,Road,180,170,7,1
+SH-71099,2025-04-14,Southwest,BlueLine,Road,1180,1013,3,1
+SH-71100,2025-04-15,Midwest,RapidHaul,Rail,2870,1494,6,1
+SH-71101,2025-04-15,Southeast,Gulf Freight,Rail,780,430,4,0
+SH-71102,2025-04-15,Northeast,NorthStar,Rail,350,280,6,1
+SH-71103,2025-04-16,Southwest,BlueLine,Sea,870,384,10,1
+SH-71104,2025-04-16,Southeast,BlueLine,Rail,630,444,6,1
+SH-71105,2025-04-16,Southeast,BlueLine,Sea,720,304,10,1
+SH-71106,2025-04-16,West,Gulf Freight,Rail,650,388,5,1
+SH-71107,2025-04-17,Southwest,Gulf Freight,Road,900,871,4,1
+SH-71108,2025-04-17,West,Gulf Freight,Road,390,331,4,1
+SH-71109,2025-04-18,Northeast,NorthStar,Road,280,288,3,1
+SH-71110,2025-04-18,Southeast,Gulf Freight,Sea,1550,554,10,1
+SH-71111,2025-04-18,Northeast,TransAlpha,Road,570,584,5,1
+SH-71112,2025-04-18,Southwest,BlueLine,Air,380,1016,3,1
+SH-71113,2025-04-18,Midwest,RapidHaul,Road,50,39,5,1
+SH-71114,2025-04-18,Midwest,NorthStar,Sea,940,389,10,1
+SH-71115,2025-04-19,Midwest,BlueLine,Road,520,477,6,0
+SH-71116,2025-04-19,Midwest,BlueLine,Road,230,190,5,1
+SH-71117,2025-04-19,Southwest,NorthStar,Road,260,285,4,1
+SH-71118,2025-04-20,Northeast,Gulf Freight,Road,690,708,5,1
+SH-71119,2025-04-22,Midwest,NorthStar,Rail,650,376,5,1
+SH-71120,2025-04-22,Southwest,NorthStar,Rail,630,408,6,1
+SH-71121,2025-04-22,Midwest,BlueLine,Rail,560,379,4,1
+SH-71122,2025-04-22,Northeast,BlueLine,Air,190,558,2,1
+SH-71123,2025-04-22,West,BlueLine,Rail,4170,3622,7,0
+SH-71124,2025-04-23,Northeast,NorthStar,Road,410,508,3,1
+SH-71125,2025-04-23,Midwest,BlueLine,Air,1050,3137,2,1
+SH-71126,2025-04-23,Southwest,NorthStar,Road,260,290,6,1
+SH-71127,2025-04-23,Midwest,RapidHaul,Road,610,475,4,1
+SH-71128,2025-04-24,Southeast,NorthStar,Road,390,389,5,1
+SH-71129,2025-04-24,Southwest,RapidHaul,Road,540,448,5,1
+SH-71130,2025-04-25,Southeast,TransAlpha,Road,290,265,2,1
+SH-71131,2025-04-25,Southeast,TransAlpha,Road,420,432,3,1
+SH-71132,2025-04-25,Midwest,BlueLine,Road,1220,918,6,1
+SH-71133,2025-04-26,Southwest,Gulf Freight,Road,1770,1253,3,1
+SH-71134,2025-04-26,West,RapidHaul,Air,430,1407,3,1
+SH-71135,2025-04-27,Southwest,BlueLine,Rail,570,420,6,1
+SH-71136,2025-04-28,Northeast,Gulf Freight,Road,280,294,5,1
+SH-71137,2025-04-28,Southeast,NorthStar,Road,1020,1126,3,1
+SH-71138,2025-04-29,Midwest,BlueLine,Road,260,219,4,1
+SH-71139,2025-04-29,Southeast,RapidHaul,Rail,310,170,6,1
+SH-71140,2025-04-29,West,NorthStar,Road,310,439,4,1
+SH-71141,2025-04-29,Southwest,BlueLine,Rail,310,189,9,1
+SH-71142,2025-04-30,West,NorthStar,Rail,790,694,6,1
+SH-71143,2025-04-30,Northeast,NorthStar,Sea,1170,582,11,1
+SH-71144,2025-05-01,Northeast,BlueLine,Road,910,819,4,1
+SH-71145,2025-05-01,West,BlueLine,Road,500,630,5,1
+SH-71146,2025-05-01,Southwest,TransAlpha,Rail,710,410,5,1
+SH-71147,2025-05-01,Southwest,RapidHaul,Rail,2410,1510,6,1
+SH-71148,2025-05-01,Southeast,BlueLine,Sea,230,116,12,1
+SH-71149,2025-05-02,Southeast,BlueLine,Road,1360,1108,4,1
+SH-71150,2025-05-02,Northeast,NorthStar,Road,1190,1486,5,1
+SH-71151,2025-05-02,Midwest,Gulf Freight,Road,880,640,2,1
+SH-71152,2025-05-02,Northeast,BlueLine,Rail,1900,1239,7,1
+SH-71153,2025-05-02,Southwest,BlueLine,Road,510,484,5,1
+SH-71154,2025-05-02,Midwest,RapidHaul,Road,740,526,6,1
+SH-71155,2025-05-03,Northeast,TransAlpha,Rail,1140,754,5,1
+SH-71156,2025-05-03,West,Gulf Freight,Air,380,1187,2,1
+SH-71157,2025-05-03,Southwest,NorthStar,Road,360,393,3,1
+SH-71158,2025-05-04,Southeast,BlueLine,Road,420,319,4,1
+SH-71159,2025-05-04,Southeast,TransAlpha,Road,210,199,3,1
+SH-71160,2025-05-05,Southeast,RapidHaul,Road,1230,1052,3,1
+SH-71161,2025-05-07,Northeast,NorthStar,Sea,2520,1167,12,1
+SH-71162,2025-05-07,West,RapidHaul,Road,830,999,4,1
+SH-71163,2025-05-07,Southeast,BlueLine,Road,700,682,4,1
+SH-71164,2025-05-07,Northeast,RapidHaul,Road,140,149,3,1
+SH-71165,2025-05-07,Midwest,Gulf Freight,Road,490,309,2,1
+SH-71166,2025-05-08,Midwest,NorthStar,Road,540,542,5,1
+SH-71167,2025-05-08,Northeast,Gulf Freight,Road,250,229,5,1
+SH-71168,2025-05-08,West,NorthStar,Road,2360,2829,4,1
+SH-71169,2025-05-09,Southeast,NorthStar,Road,700,758,1,1
+SH-71170,2025-05-09,West,BlueLine,Road,1180,1328,4,1
+SH-71171,2025-05-10,Southwest,RapidHaul,Road,340,264,4,1
+SH-71172,2025-05-10,Northeast,Gulf Freight,Road,920,821,4,1
+SH-71173,2025-05-10,Southeast,RapidHaul,Road,760,547,5,1
+SH-71174,2025-05-10,Northeast,Gulf Freight,Sea,1150,511,11,1
+SH-71175,2025-05-11,West,BlueLine,Sea,290,186,10,1
+SH-71176,2025-05-11,Southwest,BlueLine,Road,990,1011,4,1
+SH-71177,2025-05-12,West,BlueLine,Road,230,247,5,1
+SH-71178,2025-05-12,Southwest,NorthStar,Road,330,383,3,1
+SH-71179,2025-05-12,Southeast,NorthStar,Rail,300,187,6,1
+SH-71180,2025-05-13,West,BlueLine,Rail,770,685,7,1
+SH-71181,2025-05-13,Southwest,BlueLine,Road,340,313,6,1
+SH-71182,2025-05-13,Southwest,NorthStar,Road,890,845,1,1
+SH-71183,2025-05-13,Southwest,TransAlpha,Rail,1000,758,8,1
+SH-71184,2025-05-14,Southwest,NorthStar,Air,320,1089,1,1
+SH-71185,2025-05-15,West,Gulf Freight,Air,920,3035,1,1
+SH-71186,2025-05-15,Northeast,BlueLine,Road,570,624,5,1
+SH-71187,2025-05-15,Southeast,RapidHaul,Rail,2350,1417,7,1
+SH-71188,2025-05-15,West,RapidHaul,Rail,450,369,5,1
+SH-71189,2025-05-16,West,Gulf Freight,Sea,290,141,11,0
+SH-71190,2025-05-16,Northeast,RapidHaul,Rail,720,465,6,0
+SH-71191,2025-05-16,West,BlueLine,Sea,2280,1094,11,1
+SH-71192,2025-05-16,Southwest,NorthStar,Air,740,2421,3,1
+SH-71193,2025-05-16,West,TransAlpha,Sea,680,419,11,1
+SH-71194,2025-05-16,Midwest,BlueLine,Road,250,212,4,1
+SH-71195,2025-05-17,Midwest,RapidHaul,Rail,820,468,5,1
+SH-71196,2025-05-17,Southwest,NorthStar,Road,860,993,4,1
+SH-71197,2025-05-18,Southeast,NorthStar,Sea,480,201,12,1
+SH-71198,2025-05-19,Northeast,NorthStar,Road,250,280,5,1
+SH-71199,2025-05-19,Northeast,Gulf Freight,Sea,710,362,11,1
+SH-71200,2025-05-19,Southwest,TransAlpha,Road,350,391,4,1
+SH-71201,2025-05-20,Midwest,RapidHaul,Road,250,217,5,1
+SH-71202,2025-05-20,Southeast,NorthStar,Road,1480,1561,5,1
+SH-71203,2025-05-21,Southeast,BlueLine,Road,200,163,7,1
+SH-71204,2025-05-21,Northeast,RapidHaul,Rail,570,438,6,1
+SH-71205,2025-05-21,Southeast,NorthStar,Road,1610,1288,5,1
+SH-71206,2025-05-21,Midwest,RapidHaul,Rail,360,215,9,1
+SH-71207,2025-05-22,Southwest,RapidHaul,Rail,270,163,5,0
+SH-71208,2025-05-22,Midwest,BlueLine,Road,1640,1228,4,1
+SH-71209,2025-05-22,West,NorthStar,Road,700,927,3,1
+SH-71210,2025-05-22,Southeast,RapidHaul,Road,160,146,3,1
+SH-71211,2025-05-23,Southeast,BlueLine,Road,880,822,5,1
+SH-71212,2025-05-23,Northeast,BlueLine,Sea,680,313,10,1
+SH-71213,2025-05-24,Midwest,BlueLine,Sea,1150,402,13,1
+SH-71214,2025-05-25,Southwest,RapidHaul,Road,360,338,4,1
+SH-71215,2025-05-26,Northeast,RapidHaul,Sea,800,344,12,1
+SH-71216,2025-05-26,West,RapidHaul,Road,280,329,5,0
+SH-71217,2025-05-27,Northeast,NorthStar,Sea,330,194,13,1
+SH-71218,2025-05-28,Northeast,TransAlpha,Road,1340,1545,1,1
+SH-71219,2025-05-28,Southeast,RapidHaul,Road,370,268,4,1
+SH-71220,2025-05-28,Northeast,NorthStar,Road,150,155,6,1
+SH-71221,2025-05-28,Southeast,RapidHaul,Air,370,1035,3,1
+SH-71222,2025-05-30,Southeast,RapidHaul,Road,110,95,4,1
+SH-71223,2025-05-31,Midwest,TransAlpha,Road,740,637,5,1
+SH-71224,2025-06-02,West,NorthStar,Road,990,1188,3,1
+SH-71225,2025-06-02,Northeast,NorthStar,Air,460,1613,2,1
+SH-71226,2025-06-02,West,RapidHaul,Road,1270,1471,4,1
+SH-71227,2025-06-02,Midwest,BlueLine,Road,180,151,3,1
+SH-71228,2025-06-02,Southwest,NorthStar,Road,160,143,2,1
+SH-71229,2025-06-03,West,BlueLine,Road,370,407,4,1
+SH-71230,2025-06-03,West,NorthStar,Road,750,1023,2,1
+SH-71231,2025-06-04,Southwest,RapidHaul,Road,180,166,5,1
+SH-71232,2025-06-04,Southeast,NorthStar,Rail,460,362,6,1
+SH-71233,2025-06-05,Northeast,RapidHaul,Rail,140,93,3,1
+SH-71234,2025-06-05,Northeast,BlueLine,Sea,1270,538,10,1
+SH-71235,2025-06-05,Midwest,RapidHaul,Sea,610,271,12,1
+SH-71236,2025-06-06,Northeast,NorthStar,Rail,1230,950,4,1
+SH-71237,2025-06-06,Southwest,TransAlpha,Road,840,873,2,1
+SH-71238,2025-06-06,Southeast,TransAlpha,Rail,500,342,7,1
+SH-71239,2025-06-06,West,BlueLine,Sea,870,484,12,1
+SH-71240,2025-06-06,Midwest,NorthStar,Sea,480,242,10,1
+SH-71241,2025-06-07,Northeast,BlueLine,Road,1150,1197,5,1
+SH-71242,2025-06-09,Southwest,RapidHaul,Rail,670,352,7,1
+SH-71243,2025-06-09,Northeast,RapidHaul,Road,270,238,5,1
+SH-71244,2025-06-09,Midwest,BlueLine,Road,480,454,2,1
+SH-71245,2025-06-10,West,NorthStar,Sea,490,286,12,1
+SH-71246,2025-06-10,Southeast,TransAlpha,Rail,330,181,6,1
+SH-71247,2025-06-10,Southeast,TransAlpha,Road,660,545,5,1
+SH-71248,2025-06-10,Midwest,Gulf Freight,Road,210,133,4,1
+SH-71249,2025-06-11,Northeast,NorthStar,Road,1860,1741,3,1
+SH-71250,2025-06-11,Southeast,RapidHaul,Sea,1480,586,11,1
+SH-71251,2025-06-11,Southwest,Gulf Freight,Road,340,278,5,1
+SH-71252,2025-06-12,Southeast,BlueLine,Road,1110,1011,1,1
+SH-71253,2025-06-12,Northeast,RapidHaul,Rail,560,407,7,1
+SH-71254,2025-06-12,Northeast,NorthStar,Rail,1880,1410,4,1
+SH-71255,2025-06-13,West,RapidHaul,Rail,1380,890,5,1
+SH-71256,2025-06-13,Southeast,RapidHaul,Road,2300,1919,4,1
+SH-71257,2025-06-13,West,BlueLine,Road,350,343,6,1
+SH-71258,2025-06-14,West,NorthStar,Air,570,2081,1,1
+SH-71259,2025-06-15,Southeast,BlueLine,Sea,760,311,10,1
+SH-71260,2025-06-15,Midwest,TransAlpha,Sea,700,345,11,1
+SH-71261,2025-06-15,Northeast,BlueLine,Rail,450,329,4,1
+SH-71262,2025-06-16,Southeast,RapidHaul,Road,210,161,5,1
+SH-71263,2025-06-16,Southeast,NorthStar,Road,450,409,4,1
+SH-71264,2025-06-16,Southwest,TransAlpha,Road,660,591,6,1
+SH-71265,2025-06-16,Northeast,RapidHaul,Road,410,409,4,1
+SH-71266,2025-06-17,West,NorthStar,Road,1330,1858,1,1
+SH-71267,2025-06-17,West,RapidHaul,Air,1060,3009,3,1
+SH-71268,2025-06-17,Midwest,Gulf Freight,Road,250,203,5,1
+SH-71269,2025-06-18,Southeast,NorthStar,Road,720,605,2,1
+SH-71270,2025-06-18,Southwest,BlueLine,Road,690,662,5,1
+SH-71271,2025-06-18,West,TransAlpha,Road,330,351,4,1
+SH-71272,2025-06-18,Midwest,NorthStar,Road,750,757,3,1
+SH-71273,2025-06-18,Midwest,Gulf Freight,Road,480,410,4,1
+SH-71274,2025-06-19,West,NorthStar,Rail,1140,852,7,1
+SH-71275,2025-06-19,West,RapidHaul,Air,550,1536,1,1
+SH-71276,2025-06-20,Northeast,NorthStar,Air,590,2295,2,1
+SH-71277,2025-06-20,Southeast,BlueLine,Rail,1150,606,8,1
+SH-71278,2025-06-20,Southwest,BlueLine,Road,570,480,5,1
+SH-71279,2025-06-21,Southeast,BlueLine,Road,530,521,2,1
+SH-71280,2025-06-21,West,RapidHaul,Rail,2110,1343,6,1
+SH-71281,2025-06-23,Northeast,NorthStar,Road,320,405,4,1
+SH-71282,2025-06-23,Midwest,Gulf Freight,Road,180,135,5,1
+SH-71283,2025-06-23,Northeast,NorthStar,Road,620,795,3,1
+SH-71284,2025-06-23,Southwest,Gulf Freight,Road,1170,1109,5,1
+SH-71285,2025-06-24,Southeast,NorthStar,Rail,270,200,5,1
+SH-71286,2025-06-24,Southwest,BlueLine,Sea,500,204,12,1
+SH-71287,2025-06-24,Southeast,NorthStar,Rail,1970,1449,5,1
+SH-71288,2025-06-24,Northeast,BlueLine,Sea,850,371,11,1
+SH-71289,2025-06-25,West,BlueLine,Air,500,2055,5,1
+SH-71290,2025-06-25,West,RapidHaul,Sea,1360,598,11,0
+SH-71291,2025-06-25,Northeast,NorthStar,Air,780,2931,1,1
+SH-71292,2025-06-25,Midwest,RapidHaul,Road,1140,938,5,1
+SH-71293,2025-06-26,Northeast,Gulf Freight,Road,900,913,5,1
+SH-71294,2025-06-26,Southwest,RapidHaul,Road,460,457,4,1
+SH-71295,2025-06-27,Midwest,BlueLine,Sea,560,194,10,1
+SH-71296,2025-06-27,Southeast,RapidHaul,Sea,880,308,9,1
+SH-71297,2025-06-27,West,Gulf Freight,Road,180,173,4,1
+SH-71298,2025-06-28,Southeast,NorthStar,Air,230,816,2,1
+SH-71299,2025-06-29,Southeast,BlueLine,Road,320,287,4,1
+SH-71300,2025-06-29,Northeast,NorthStar,Sea,860,511,13,1
+SH-71301,2025-06-30,Northeast,NorthStar,Sea,440,275,11,1
+SH-71302,2025-06-30,West,NorthStar,Road,320,411,5,1
+SH-71303,2025-06-30,Southeast,BlueLine,Sea,1800,906,10,1
+SH-71304,2025-06-30,Northeast,NorthStar,Road,340,330,4,1
+SH-71305,2025-07-01,Southwest,BlueLine,Road,820,654,2,1
+SH-71306,2025-07-01,Northeast,TransAlpha,Air,610,2121,1,1
+SH-71307,2025-07-02,Midwest,RapidHaul,Road,160,109,3,1
+SH-71308,2025-07-02,Northeast,TransAlpha,Rail,590,431,5,1
+SH-71309,2025-07-02,Southeast,NorthStar,Rail,410,258,7,0
+SH-71310,2025-07-03,Southeast,BlueLine,Road,200,203,4,0
+SH-71311,2025-07-03,Southeast,Gulf Freight,Road,400,291,5,0
+SH-71312,2025-07-03,Northeast,BlueLine,Road,520,608,3,1
+SH-71313,2025-07-03,Southeast,Gulf Freight,Road,480,382,5,1
+SH-71314,2025-07-03,Northeast,RapidHaul,Rail,810,489,4,1
+SH-71315,2025-07-04,Midwest,NorthStar,Rail,1400,747,6,1
+SH-71316,2025-07-04,Southeast,BlueLine,Road,190,187,5,1
+SH-71317,2025-07-04,Midwest,BlueLine,Rail,550,309,7,1
+SH-71318,2025-07-04,West,TransAlpha,Sea,600,376,7,1
+SH-71319,2025-07-05,West,Gulf Freight,Road,320,363,2,1
+SH-71320,2025-07-05,West,NorthStar,Road,1270,1356,5,1
+SH-71321,2025-07-06,Southeast,NorthStar,Air,750,2602,2,1
+SH-71322,2025-07-06,Midwest,NorthStar,Sea,740,368,13,1
+SH-71323,2025-07-07,Northeast,RapidHaul,Road,490,521,5,1
+SH-71324,2025-07-08,Northeast,TransAlpha,Rail,930,731,5,1
+SH-71325,2025-07-08,West,Gulf Freight,Road,1420,1181,4,0
+SH-71326,2025-07-08,Southwest,RapidHaul,Sea,850,420,12,0
+SH-71327,2025-07-09,Southwest,TransAlpha,Air,370,1154,3,1
+SH-71328,2025-07-10,Midwest,BlueLine,Rail,1680,869,5,1
+SH-71329,2025-07-10,Southeast,BlueLine,Rail,150,87,6,1
+SH-71330,2025-07-12,Midwest,BlueLine,Road,250,218,6,1
+SH-71331,2025-07-12,Southeast,RapidHaul,Road,1080,793,3,1
+SH-71332,2025-07-12,Northeast,TransAlpha,Road,570,539,4,0
+SH-71333,2025-07-14,Southwest,NorthStar,Road,550,599,3,1
+SH-71334,2025-07-14,West,Gulf Freight,Road,670,763,5,1
+SH-71335,2025-07-14,Midwest,BlueLine,Road,520,495,4,1
+SH-71336,2025-07-15,Southeast,BlueLine,Sea,910,344,10,1
+SH-71337,2025-07-15,Southeast,RapidHaul,Road,270,255,3,1
+SH-71338,2025-07-15,Midwest,BlueLine,Road,430,369,6,1
+SH-71339,2025-07-16,Northeast,NorthStar,Road,940,1225,4,1
+SH-71340,2025-07-16,West,NorthStar,Road,240,271,2,1
+SH-71341,2025-07-16,West,NorthStar,Sea,290,178,11,1
+SH-71342,2025-07-16,Northeast,Gulf Freight,Road,360,342,4,1
+SH-71343,2025-07-16,Southeast,BlueLine,Road,300,231,5,1
+SH-71344,2025-07-17,Midwest,Gulf Freight,Air,240,541,3,0
+SH-71345,2025-07-19,Southwest,BlueLine,Rail,260,156,6,1
+SH-71346,2025-07-19,Southeast,BlueLine,Road,640,580,4,1
+SH-71347,2025-07-19,Southwest,BlueLine,Sea,370,197,11,1
+SH-71348,2025-07-22,Southeast,NorthStar,Road,900,916,4,1
+SH-71349,2025-07-23,West,RapidHaul,Sea,310,152,10,1
+SH-71350,2025-07-23,Midwest,BlueLine,Sea,640,235,10,1
+SH-71351,2025-07-25,Southwest,NorthStar,Road,730,859,3,0
+SH-71352,2025-07-25,Midwest,RapidHaul,Rail,720,390,6,1
+SH-71353,2025-07-25,Southeast,RapidHaul,Road,1090,1039,5,1
+SH-71354,2025-07-26,Southeast,RapidHaul,Road,580,411,4,0
+SH-71355,2025-07-26,Midwest,Gulf Freight,Road,130,95,4,1
+SH-71356,2025-07-27,West,BlueLine,Road,240,228,4,1
+SH-71357,2025-07-27,Southwest,BlueLine,Road,160,132,3,1
+SH-71358,2025-07-27,Northeast,RapidHaul,Road,730,686,4,0
+SH-71359,2025-07-28,Southeast,RapidHaul,Rail,1200,651,8,1
+SH-71360,2025-07-28,Southeast,BlueLine,Rail,570,409,8,1
+SH-71361,2025-07-28,Southeast,NorthStar,Rail,660,520,10,1
+SH-71362,2025-07-29,Northeast,BlueLine,Air,2000,7159,2,1
+SH-71363,2025-07-29,Southeast,Gulf Freight,Road,890,738,4,1
+SH-71364,2025-07-30,Midwest,BlueLine,Sea,180,80,11,1
+SH-71365,2025-07-30,Southwest,Gulf Freight,Road,550,491,5,1
+SH-71366,2025-07-30,Southeast,BlueLine,Road,1160,1071,3,1
+SH-71367,2025-07-30,Midwest,BlueLine,Road,450,337,3,1
+SH-71368,2025-07-30,Southwest,RapidHaul,Road,460,406,3,0
+SH-71369,2025-07-31,West,Gulf Freight,Rail,1950,1196,5,1
+SH-71370,2025-07-31,Midwest,BlueLine,Sea,660,278,14,1
+SH-71371,2025-07-31,Southeast,RapidHaul,Road,1060,1021,3,1
+SH-71372,2025-07-31,Northeast,BlueLine,Rail,480,311,6,1
+SH-71373,2025-07-31,Northeast,BlueLine,Road,600,634,4,0
+SH-71374,2025-08-01,Midwest,NorthStar,Road,1320,1153,3,1
+SH-71375,2025-08-01,Southeast,TransAlpha,Road,110,103,3,1
+SH-71376,2025-08-01,West,BlueLine,Rail,320,220,6,1
+SH-71377,2025-08-02,Northeast,RapidHaul,Road,730,618,2,1
+SH-71378,2025-08-02,Southwest,BlueLine,Road,420,368,4,1
+SH-71379,2025-08-04,West,BlueLine,Road,1590,1601,5,1
+SH-71380,2025-08-04,Southwest,BlueLine,Road,210,212,4,1
+SH-71381,2025-08-05,Southeast,BlueLine,Road,790,719,5,1
+SH-71382,2025-08-05,Southeast,TransAlpha,Sea,5270,2327,11,0
+SH-71383,2025-08-06,Northeast,RapidHaul,Road,780,693,5,1
+SH-71384,2025-08-07,Northeast,Gulf Freight,Road,560,432,4,1
+SH-71385,2025-08-07,Southeast,RapidHaul,Road,710,672,2,1
+SH-71386,2025-08-07,Southeast,NorthStar,Road,240,206,3,1
+SH-71387,2025-08-07,Midwest,NorthStar,Sea,450,206,8,1
+SH-71388,2025-08-08,Southeast,NorthStar,Road,400,439,2,1
+SH-71389,2025-08-08,Southeast,BlueLine,Road,540,484,5,1
+SH-71390,2025-08-08,West,RapidHaul,Road,190,201,4,1
+SH-71391,2025-08-08,West,RapidHaul,Rail,240,172,8,1
+SH-71392,2025-08-09,Southwest,RapidHaul,Sea,540,223,12,1
+SH-71393,2025-08-09,Southwest,BlueLine,Road,2500,2395,6,1
+SH-71394,2025-08-10,West,Gulf Freight,Sea,2550,1351,10,0
+SH-71395,2025-08-10,Northeast,NorthStar,Road,290,275,5,1
+SH-71396,2025-08-11,Southwest,RapidHaul,Road,510,472,4,1
+SH-71397,2025-08-11,Southwest,RapidHaul,Road,550,469,4,0
+SH-71398,2025-08-12,West,RapidHaul,Road,660,806,3,1
+SH-71399,2025-08-12,Northeast,NorthStar,Rail,310,228,7,0
+SH-71400,2025-08-12,Southwest,RapidHaul,Sea,480,204,12,1
+SH-71401,2025-08-12,West,BlueLine,Road,380,393,4,1
+SH-71402,2025-08-13,Northeast,RapidHaul,Rail,450,285,6,1
+SH-71403,2025-08-14,Southwest,NorthStar,Road,240,249,6,1
+SH-71404,2025-08-14,Southeast,BlueLine,Road,630,605,6,0
+SH-71405,2025-08-14,Southwest,BlueLine,Road,200,180,5,1
+SH-71406,2025-08-14,Southeast,BlueLine,Rail,690,495,7,1
+SH-71407,2025-08-14,Southwest,Gulf Freight,Air,350,1039,1,1
+SH-71408,2025-08-14,West,RapidHaul,Road,1670,1911,5,1
+SH-71409,2025-08-14,Southeast,RapidHaul,Road,670,593,5,1
+SH-71410,2025-08-15,Southeast,BlueLine,Rail,1420,780,6,1
+SH-71411,2025-08-15,Northeast,NorthStar,Road,170,168,4,1
+SH-71412,2025-08-16,Southwest,TransAlpha,Road,410,394,4,1
+SH-71413,2025-08-16,Southwest,BlueLine,Rail,1320,987,5,1
+SH-71414,2025-08-17,Northeast,RapidHaul,Rail,830,655,7,1
+SH-71415,2025-08-17,Southwest,BlueLine,Rail,1010,750,5,1
+SH-71416,2025-08-17,Northeast,RapidHaul,Rail,1600,1153,5,1
+SH-71417,2025-08-17,Southeast,NorthStar,Sea,1470,745,10,1
+SH-71418,2025-08-18,Southeast,RapidHaul,Rail,370,221,5,1
+SH-71419,2025-08-18,Midwest,NorthStar,Road,90,70,3,1
+SH-71420,2025-08-18,Midwest,RapidHaul,Road,1060,907,4,1
+SH-71421,2025-08-18,Northeast,BlueLine,Rail,740,531,7,1
+SH-71422,2025-08-18,Midwest,TransAlpha,Road,1170,870,3,1
+SH-71423,2025-08-18,Southwest,BlueLine,Road,660,703,2,1
+SH-71424,2025-08-19,Northeast,RapidHaul,Road,220,239,4,1
+SH-71425,2025-08-19,Southeast,NorthStar,Sea,310,156,11,1
+SH-71426,2025-08-19,Southwest,BlueLine,Rail,90,51,7,1
+SH-71427,2025-08-19,Southeast,NorthStar,Road,4440,4986,5,1
+SH-71428,2025-08-20,Southeast,TransAlpha,Road,480,501,6,1
+SH-71429,2025-08-20,Northeast,BlueLine,Road,310,276,6,1
+SH-71430,2025-08-20,Midwest,Gulf Freight,Road,490,322,2,1
+SH-71431,2025-08-21,Southeast,TransAlpha,Road,1450,1230,3,1
+SH-71432,2025-08-21,Northeast,NorthStar,Air,530,2073,2,1
+SH-71433,2025-08-21,Northeast,NorthStar,Rail,1530,1066,8,1
+SH-71434,2025-08-21,Midwest,Gulf Freight,Sea,460,149,13,1
+SH-71435,2025-08-22,Southwest,BlueLine,Road,520,512,3,1
+SH-71436,2025-08-22,West,BlueLine,Road,420,419,3,1
+SH-71437,2025-08-22,West,RapidHaul,Rail,1480,1145,6,1
+SH-71438,2025-08-23,Southeast,BlueLine,Road,390,395,4,0
+SH-71439,2025-08-23,Midwest,Gulf Freight,Road,850,538,5,1
+SH-71440,2025-08-25,Southeast,RapidHaul,Road,330,300,3,1
+SH-71441,2025-08-25,Southeast,Gulf Freight,Road,280,211,2,1
+SH-71442,2025-08-26,Southeast,RapidHaul,Road,270,236,5,1
+SH-71443,2025-08-26,Southwest,RapidHaul,Road,2680,2243,4,1
+SH-71444,2025-08-26,Southeast,RapidHaul,Road,360,293,5,1
+SH-71445,2025-08-27,West,BlueLine,Road,90,113,6,1
+SH-71446,2025-08-27,Southwest,NorthStar,Road,830,955,3,1
+SH-71447,2025-08-27,Midwest,BlueLine,Rail,1180,698,5,1
+SH-71448,2025-08-28,Southeast,BlueLine,Road,3250,3123,5,1
+SH-71449,2025-08-28,Southwest,NorthStar,Road,870,913,3,1
+SH-71450,2025-08-29,Northeast,TransAlpha,Road,240,222,4,1
+SH-71451,2025-08-29,West,BlueLine,Road,920,975,4,1
+SH-71452,2025-08-29,Northeast,TransAlpha,Road,530,611,5,1
+SH-71453,2025-08-29,Midwest,Gulf Freight,Air,600,1376,1,1
+SH-71454,2025-08-29,Northeast,BlueLine,Road,470,411,3,1
+SH-71455,2025-08-29,West,NorthStar,Sea,450,292,11,1
+SH-71456,2025-08-30,Midwest,BlueLine,Air,1300,4039,3,1
+SH-71457,2025-08-31,West,RapidHaul,Road,1970,2196,3,1
+SH-71458,2025-08-31,West,Gulf Freight,Air,950,2629,3,1
+SH-71459,2025-09-01,Midwest,BlueLine,Road,630,435,4,1
+SH-71460,2025-09-01,Southwest,Gulf Freight,Road,760,674,4,1
+SH-71461,2025-09-01,West,NorthStar,Road,420,568,5,1
+SH-71462,2025-09-01,Northeast,RapidHaul,Air,70,227,1,1
+SH-71463,2025-09-02,West,RapidHaul,Road,1210,1392,3,1
+SH-71464,2025-09-03,Southwest,RapidHaul,Sea,350,167,12,1
+SH-71465,2025-09-03,Midwest,BlueLine,Rail,440,229,6,1
+SH-71466,2025-09-03,Northeast,BlueLine,Road,380,353,4,1
+SH-71467,2025-09-04,Northeast,NorthStar,Road,310,287,3,1
+SH-71468,2025-09-04,West,NorthStar,Road,270,385,6,1
+SH-71469,2025-09-04,Southwest,BlueLine,Road,820,846,4,1
+SH-71470,2025-09-04,West,BlueLine,Road,480,603,4,1
+SH-71471,2025-09-05,Midwest,RapidHaul,Air,1290,2941,1,1
+SH-71472,2025-09-05,Southwest,TransAlpha,Road,580,526,5,1
+SH-71473,2025-09-05,Southeast,NorthStar,Air,1120,3515,1,1
+SH-71474,2025-09-06,Southwest,RapidHaul,Road,170,169,5,1
+SH-71475,2025-09-06,West,Gulf Freight,Road,730,810,3,1
+SH-71476,2025-09-08,Northeast,RapidHaul,Rail,420,314,5,0
+SH-71477,2025-09-08,Midwest,Gulf Freight,Rail,490,226,5,0
+SH-71478,2025-09-08,Southwest,Gulf Freight,Road,430,297,5,1
+SH-71479,2025-09-08,Northeast,BlueLine,Road,270,282,4,1
+SH-71480,2025-09-09,Southeast,RapidHaul,Road,370,354,4,1
+SH-71481,2025-09-09,Southeast,NorthStar,Rail,330,247,5,1
+SH-71482,2025-09-09,West,Gulf Freight,Road,600,691,5,0
+SH-71483,2025-09-09,Midwest,TransAlpha,Road,160,144,4,1
+SH-71484,2025-09-10,West,NorthStar,Road,580,794,4,1
+SH-71485,2025-09-10,Midwest,BlueLine,Rail,680,331,6,1
+SH-71486,2025-09-11,Southwest,NorthStar,Road,1400,1398,5,1
+SH-71487,2025-09-11,Southeast,BlueLine,Road,710,629,4,1
+SH-71488,2025-09-11,Midwest,BlueLine,Road,470,340,5,1
+SH-71489,2025-09-11,Southeast,BlueLine,Air,1220,2924,3,1
+SH-71490,2025-09-13,Midwest,NorthStar,Road,460,422,5,1
+SH-71491,2025-09-13,West,Gulf Freight,Road,270,295,5,1
+SH-71492,2025-09-14,Southeast,RapidHaul,Sea,360,173,11,1
+SH-71493,2025-09-14,Midwest,NorthStar,Road,360,355,5,1
+SH-71494,2025-09-15,Northeast,BlueLine,Road,1350,1430,3,1
+SH-71495,2025-09-15,Midwest,BlueLine,Road,920,758,4,1
+SH-71496,2025-09-15,Northeast,RapidHaul,Rail,1020,590,6,1
+SH-71497,2025-09-15,Southwest,NorthStar,Sea,350,198,11,1
+SH-71498,2025-09-15,Southeast,NorthStar,Road,450,468,6,1
+SH-71499,2025-09-16,Southeast,Gulf Freight,Sea,820,313,11,1
+SH-71500,2025-09-16,Midwest,Gulf Freight,Road,1110,849,4,1
+SH-71501,2025-09-16,Northeast,BlueLine,Road,290,265,5,1
+SH-71502,2025-09-16,West,RapidHaul,Road,240,264,4,1
+SH-71503,2025-09-17,Southwest,TransAlpha,Sea,1230,531,13,1
+SH-71504,2025-09-18,West,TransAlpha,Road,920,1070,2,1
+SH-71505,2025-09-18,Southeast,BlueLine,Road,1000,988,4,1
+SH-71506,2025-09-18,West,BlueLine,Air,290,1121,1,1
+SH-71507,2025-09-18,Southeast,NorthStar,Rail,170,129,5,1
+SH-71508,2025-09-18,Midwest,RapidHaul,Air,370,1078,2,1
+SH-71509,2025-09-18,Southeast,NorthStar,Road,430,378,4,1
+SH-71510,2025-09-19,Southwest,Gulf Freight,Road,490,359,3,1
+SH-71511,2025-09-19,Midwest,Gulf Freight,Road,340,266,5,1
+SH-71512,2025-09-19,Southeast,NorthStar,Road,1570,1685,4,1
+SH-71513,2025-09-19,Southwest,BlueLine,Sea,1050,555,12,0
+SH-71514,2025-09-19,West,NorthStar,Rail,240,225,4,1
+SH-71515,2025-09-20,Midwest,TransAlpha,Air,560,1697,1,1
+SH-71516,2025-09-20,Midwest,NorthStar,Road,470,460,4,1
+SH-71517,2025-09-20,Southeast,NorthStar,Road,90,73,8,1
+SH-71518,2025-09-21,Southwest,BlueLine,Sea,620,309,10,1
+SH-71519,2025-09-22,Southeast,NorthStar,Rail,380,229,2,1
+SH-71520,2025-09-22,Southwest,RapidHaul,Road,340,323,2,1
+SH-71521,2025-09-22,Southeast,BlueLine,Road,160,131,4,1
+SH-71522,2025-09-23,West,RapidHaul,Road,60,66,3,1
+SH-71523,2025-09-23,Southeast,BlueLine,Road,370,349,4,1
+SH-71524,2025-09-23,Southeast,BlueLine,Road,80,61,3,1
+SH-71525,2025-09-23,West,NorthStar,Air,500,1846,3,1
+SH-71526,2025-09-24,West,RapidHaul,Road,650,592,3,1
+SH-71527,2025-09-24,Northeast,RapidHaul,Air,130,350,2,1
+SH-71528,2025-09-24,Southwest,BlueLine,Road,1430,1400,3,1
+SH-71529,2025-09-24,Northeast,NorthStar,Road,930,1053,3,1
+SH-71530,2025-09-25,Southeast,Gulf Freight,Road,100,78,4,0
+SH-71531,2025-09-25,Midwest,BlueLine,Sea,900,407,11,1
+SH-71532,2025-09-25,Southwest,NorthStar,Rail,1230,984,7,1
+SH-71533,2025-09-26,Southeast,NorthStar,Road,260,286,4,1
+SH-71534,2025-09-26,Southeast,TransAlpha,Sea,400,184,12,1
+SH-71535,2025-09-27,Southwest,TransAlpha,Sea,1560,817,10,1
+SH-71536,2025-09-27,Northeast,NorthStar,Rail,1330,1197,5,1
+SH-71537,2025-09-27,Southwest,NorthStar,Air,410,1120,2,0
+SH-71538,2025-09-28,West,Gulf Freight,Road,650,553,3,1
+SH-71539,2025-09-29,West,NorthStar,Road,580,749,4,0
+SH-71540,2025-09-29,Southwest,BlueLine,Rail,400,296,7,1
+SH-71541,2025-09-29,Southwest,NorthStar,Road,900,909,2,1
+SH-71542,2025-09-29,Southwest,RapidHaul,Road,1410,1239,5,1
+SH-71543,2025-09-29,Southeast,RapidHaul,Road,660,545,5,1
+SH-71544,2025-09-29,Southeast,Gulf Freight,Rail,730,394,6,1
+SH-71545,2025-09-30,Southwest,RapidHaul,Sea,660,261,10,1
+SH-71546,2025-09-30,Northeast,BlueLine,Road,410,408,4,1
+SH-71547,2025-10-01,Northeast,Gulf Freight,Road,200,166,5,1
+SH-71548,2025-10-01,West,RapidHaul,Air,360,1335,1,1
+SH-71549,2025-10-01,Northeast,BlueLine,Sea,210,117,11,1
+SH-71550,2025-10-01,Southwest,NorthStar,Rail,1400,841,5,1
+SH-71551,2025-10-01,Midwest,RapidHaul,Road,240,200,3,1
+SH-71552,2025-10-02,Southwest,BlueLine,Road,1270,1311,3,1
+SH-71553,2025-10-02,Southwest,RapidHaul,Road,530,535,2,1
+SH-71554,2025-10-02,Southeast,BlueLine,Road,1810,1804,3,1
+SH-71555,2025-10-02,Southwest,RapidHaul,Sea,290,114,12,1
+SH-71556,2025-10-02,Midwest,RapidHaul,Road,430,389,4,1
+SH-71557,2025-10-03,Midwest,RapidHaul,Road,490,397,3,1
+SH-71558,2025-10-03,Northeast,NorthStar,Air,1550,5618,5,1
+SH-71559,2025-10-03,Northeast,BlueLine,Road,500,428,2,1
+SH-71560,2025-10-03,West,NorthStar,Rail,840,750,8,1
+SH-71561,2025-10-04,Southwest,NorthStar,Road,680,784,5,1
+SH-71562,2025-10-05,Northeast,RapidHaul,Sea,1630,725,10,1
+SH-71563,2025-10-06,West,BlueLine,Air,1630,5464,2,1
+SH-71564,2025-10-06,Midwest,BlueLine,Road,340,316,3,1
+SH-71565,2025-10-06,Southwest,BlueLine,Rail,1630,957,6,1
+SH-71566,2025-10-06,West,NorthStar,Road,160,228,5,1
+SH-71567,2025-10-06,Midwest,TransAlpha,Road,110,112,6,1
+SH-71568,2025-10-07,Midwest,RapidHaul,Road,1050,968,4,1
+SH-71569,2025-10-07,Midwest,Gulf Freight,Air,370,745,3,0
+SH-71570,2025-10-07,Southeast,BlueLine,Road,410,335,2,1
+SH-71571,2025-10-07,Southwest,BlueLine,Road,280,257,5,1
+SH-71572,2025-10-08,West,BlueLine,Road,1220,1350,4,1
+SH-71573,2025-10-08,Midwest,RapidHaul,Air,1460,3732,1,0
+SH-71574,2025-10-08,Northeast,BlueLine,Sea,510,232,10,1
+SH-71575,2025-10-08,Southwest,BlueLine,Rail,400,263,4,1
+SH-71576,2025-10-08,Northeast,Gulf Freight,Sea,610,322,13,1
+SH-71577,2025-10-09,Northeast,RapidHaul,Road,230,235,2,1
+SH-71578,2025-10-09,Southeast,BlueLine,Rail,1260,804,7,1
+SH-71579,2025-10-09,Southeast,NorthStar,Air,340,1138,1,1
+SH-71580,2025-10-09,Southeast,BlueLine,Road,600,477,4,1
+SH-71581,2025-10-09,Southwest,RapidHaul,Rail,220,114,7,1
+SH-71582,2025-10-10,Southeast,BlueLine,Road,970,915,4,1
+SH-71583,2025-10-10,Southeast,BlueLine,Rail,430,245,7,0
+SH-71584,2025-10-11,Midwest,TransAlpha,Air,690,1921,2,1
+SH-71585,2025-10-11,Southeast,BlueLine,Road,570,498,7,1
+SH-71586,2025-10-12,Southeast,RapidHaul,Sea,760,313,13,1
+SH-71587,2025-10-12,Midwest,RapidHaul,Sea,1130,514,8,1
+SH-71588,2025-10-13,West,Gulf Freight,Rail,890,632,7,1
+SH-71589,2025-10-13,Midwest,NorthStar,Sea,320,156,10,1
+SH-71590,2025-10-15,Northeast,RapidHaul,Road,310,264,6,1
+SH-71591,2025-10-15,West,NorthStar,Sea,660,357,12,1
+SH-71592,2025-10-15,Southwest,RapidHaul,Sea,400,178,11,1
+SH-71593,2025-10-15,Southwest,TransAlpha,Sea,560,301,10,1
+SH-71594,2025-10-15,West,TransAlpha,Rail,1160,968,8,1
+SH-71595,2025-10-16,Midwest,RapidHaul,Sea,260,118,11,1
+SH-71596,2025-10-16,Midwest,RapidHaul,Road,310,221,4,1
+SH-71597,2025-10-16,Midwest,RapidHaul,Air,1140,3098,3,1
+SH-71598,2025-10-16,West,Gulf Freight,Sea,480,200,12,1
+SH-71599,2025-10-16,Southwest,TransAlpha,Road,410,421,5,1
+SH-71600,2025-10-16,Northeast,BlueLine,Road,120,134,2,1
+SH-71601,2025-10-17,Southwest,RapidHaul,Rail,1630,1007,6,0
+SH-71602,2025-10-17,West,NorthStar,Road,510,567,5,0
+SH-71603,2025-10-17,West,RapidHaul,Road,580,524,5,1
+SH-71604,2025-10-17,Midwest,TransAlpha,Sea,730,265,9,1
+SH-71605,2025-10-17,Midwest,NorthStar,Road,250,219,4,1
+SH-71606,2025-10-18,Southeast,NorthStar,Air,520,1548,3,1
+SH-71607,2025-10-18,Southwest,Gulf Freight,Rail,410,201,8,1
+SH-71608,2025-10-19,Midwest,NorthStar,Road,420,411,5,1
+SH-71609,2025-10-19,Southwest,TransAlpha,Sea,420,176,11,1
+SH-71610,2025-10-20,Southeast,NorthStar,Road,370,358,5,1
+SH-71611,2025-10-20,Southeast,BlueLine,Road,170,163,3,1
+SH-71612,2025-10-20,Northeast,Gulf Freight,Air,580,1608,3,1
+SH-71613,2025-10-20,Southwest,TransAlpha,Air,730,2597,3,1
+SH-71614,2025-10-20,West,NorthStar,Road,750,1029,5,1
+SH-71615,2025-10-20,Midwest,RapidHaul,Rail,500,270,7,1
+SH-71616,2025-10-21,West,BlueLine,Rail,610,498,2,1
+SH-71617,2025-10-21,Southeast,Gulf Freight,Air,400,858,3,1
+SH-71618,2025-10-21,Midwest,RapidHaul,Road,300,252,3,1
+SH-71619,2025-10-22,Midwest,BlueLine,Road,350,299,4,1
+SH-71620,2025-10-22,Southeast,Gulf Freight,Sea,660,275,11,0
+SH-71621,2025-10-22,West,RapidHaul,Road,630,569,4,1
+SH-71622,2025-10-22,Southeast,RapidHaul,Road,320,253,5,1
+SH-71623,2025-10-23,Midwest,Gulf Freight,Road,240,173,4,0
+SH-71624,2025-10-23,Northeast,Gulf Freight,Road,380,345,3,1
+SH-71625,2025-10-23,Southeast,RapidHaul,Road,260,185,7,1
+SH-71626,2025-10-23,West,Gulf Freight,Road,430,428,2,1
+SH-71627,2025-10-23,Southeast,Gulf Freight,Road,420,369,3,1
+SH-71628,2025-10-24,West,RapidHaul,Road,440,491,4,1
+SH-71629,2025-10-24,Northeast,BlueLine,Road,890,844,3,1
+SH-71630,2025-10-24,Midwest,Gulf Freight,Air,470,1061,1,1
+SH-71631,2025-10-26,Midwest,RapidHaul,Sea,420,168,12,1
+SH-71632,2025-10-27,West,TransAlpha,Road,770,860,4,1
+SH-71633,2025-10-27,Midwest,BlueLine,Rail,450,296,5,1
+SH-71634,2025-10-27,Midwest,BlueLine,Road,260,243,4,1
+SH-71635,2025-10-28,Southeast,RapidHaul,Road,1020,765,2,1
+SH-71636,2025-10-28,West,BlueLine,Road,680,661,4,1
+SH-71637,2025-10-28,Southwest,Gulf Freight,Road,640,543,4,0
+SH-71638,2025-10-28,Southwest,Gulf Freight,Road,530,396,4,0
+SH-71639,2025-10-28,Northeast,TransAlpha,Sea,890,404,11,1
+SH-71640,2025-10-28,West,Gulf Freight,Road,660,669,4,1
+SH-71641,2025-10-28,Northeast,BlueLine,Rail,760,479,5,1
+SH-71642,2025-10-29,Southeast,RapidHaul,Road,690,608,6,1
+SH-71643,2025-10-29,West,Gulf Freight,Rail,300,242,6,1
+SH-71644,2025-10-29,West,RapidHaul,Road,830,770,5,1
+SH-71645,2025-10-29,Northeast,TransAlpha,Sea,480,254,11,1
+SH-71646,2025-10-29,Southwest,Gulf Freight,Rail,480,279,5,1
+SH-71647,2025-10-29,Southeast,BlueLine,Air,1020,2768,2,1
+SH-71648,2025-10-30,Northeast,TransAlpha,Sea,450,224,13,1
+SH-71649,2025-10-30,Midwest,RapidHaul,Sea,1420,641,11,1
+SH-71650,2025-10-30,Northeast,BlueLine,Road,510,529,2,1
+SH-71651,2025-10-30,Northeast,RapidHaul,Rail,1210,868,4,1
+SH-71652,2025-10-30,West,BlueLine,Road,700,734,6,1
+SH-71653,2025-10-30,West,BlueLine,Rail,660,526,4,1
+SH-71654,2025-10-30,Northeast,Gulf Freight,Road,610,635,4,1
+SH-71655,2025-10-31,Northeast,RapidHaul,Sea,1240,678,10,1
+SH-71656,2025-10-31,Southeast,BlueLine,Air,490,1458,1,1
+SH-71657,2025-10-31,West,Gulf Freight,Air,5800,21427,1,1
+SH-71658,2025-11-01,Midwest,BlueLine,Rail,680,401,7,1
+SH-71659,2025-11-01,Southeast,NorthStar,Road,180,145,6,0
+SH-71660,2025-11-01,Northeast,BlueLine,Air,440,1599,2,1
+SH-71661,2025-11-02,West,BlueLine,Road,90,87,2,1
+SH-71662,2025-11-02,Southeast,Gulf Freight,Road,600,528,4,1
+SH-71663,2025-11-03,West,NorthStar,Air,3510,11672,3,1
+SH-71664,2025-11-03,Midwest,Gulf Freight,Sea,970,334,8,1
+SH-71665,2025-11-03,Southeast,BlueLine,Air,580,1363,2,1
+SH-71666,2025-11-03,Southwest,BlueLine,Rail,2060,1282,4,1
+SH-71667,2025-11-03,Southwest,RapidHaul,Road,950,805,6,1
+SH-71668,2025-11-03,Southwest,BlueLine,Rail,480,299,6,1
+SH-71669,2025-11-03,West,RapidHaul,Rail,900,551,8,1
+SH-71670,2025-11-04,Midwest,BlueLine,Road,870,824,4,1
+SH-71671,2025-11-04,West,NorthStar,Air,460,1940,3,1
+SH-71672,2025-11-04,Southeast,BlueLine,Rail,740,434,6,1
+SH-71673,2025-11-04,Southeast,NorthStar,Sea,300,121,10,1
+SH-71674,2025-11-05,Southwest,NorthStar,Road,420,424,5,1
+SH-71675,2025-11-05,Northeast,Gulf Freight,Sea,1040,505,9,1
+SH-71676,2025-11-05,Midwest,Gulf Freight,Road,950,611,3,0
+SH-71677,2025-11-06,Midwest,RapidHaul,Road,330,281,7,1
+SH-71678,2025-11-06,Northeast,TransAlpha,Air,390,1222,2,1
+SH-71679,2025-11-06,Midwest,RapidHaul,Road,190,136,4,1
+SH-71680,2025-11-06,Northeast,RapidHaul,Sea,430,228,12,1
+SH-71681,2025-11-06,Southeast,TransAlpha,Sea,1330,562,11,1
+SH-71682,2025-11-07,Midwest,BlueLine,Road,730,532,5,1
+SH-71683,2025-11-08,Southeast,RapidHaul,Rail,380,222,5,1
+SH-71684,2025-11-08,Southwest,NorthStar,Road,680,726,4,1
+SH-71685,2025-11-09,Northeast,Gulf Freight,Road,300,230,3,1
+SH-71686,2025-11-09,Southeast,NorthStar,Road,620,576,4,1
+SH-71687,2025-11-09,Southeast,Gulf Freight,Road,610,542,4,1
+SH-71688,2025-11-10,West,BlueLine,Road,1030,1122,3,1
+SH-71689,2025-11-10,West,RapidHaul,Road,240,221,1,1
+SH-71690,2025-11-11,Northeast,NorthStar,Air,550,1842,2,1
+SH-71691,2025-11-12,Southwest,Gulf Freight,Road,990,707,6,1
+SH-71692,2025-11-13,Midwest,TransAlpha,Road,550,422,3,0
+SH-71693,2025-11-13,Southeast,BlueLine,Road,1150,974,5,1
+SH-71694,2025-11-13,West,RapidHaul,Road,470,563,3,1
+SH-71695,2025-11-13,West,TransAlpha,Road,1210,1549,4,1
+SH-71696,2025-11-14,Southeast,BlueLine,Sea,740,348,12,1
+SH-71697,2025-11-14,Midwest,RapidHaul,Air,690,2038,1,1
+SH-71698,2025-11-14,Midwest,TransAlpha,Road,260,205,4,0
+SH-71699,2025-11-14,West,BlueLine,Road,1030,1265,3,0
+SH-71700,2025-11-14,Northeast,RapidHaul,Sea,1320,724,10,1
+SH-71701,2025-11-15,Northeast,NorthStar,Road,500,572,4,1
+SH-71702,2025-11-15,Midwest,TransAlpha,Road,220,212,5,1
+SH-71703,2025-11-16,Southeast,Gulf Freight,Rail,1860,931,8,1
+SH-71704,2025-11-16,Northeast,NorthStar,Sea,640,316,11,1
+SH-71705,2025-11-17,Southeast,Gulf Freight,Air,140,343,3,1
+SH-71706,2025-11-17,Southeast,BlueLine,Road,550,536,4,1
+SH-71707,2025-11-18,Northeast,BlueLine,Rail,1550,967,4,0
+SH-71708,2025-11-18,West,TransAlpha,Rail,250,175,5,1
+SH-71709,2025-11-18,Northeast,BlueLine,Rail,620,448,5,1
+SH-71710,2025-11-18,Southeast,RapidHaul,Air,1670,4583,1,1
+SH-71711,2025-11-19,Northeast,RapidHaul,Road,380,354,2,1
+SH-71712,2025-11-19,Midwest,NorthStar,Road,790,614,6,1
+SH-71713,2025-11-19,Northeast,TransAlpha,Road,680,847,5,1
+SH-71714,2025-11-19,West,TransAlpha,Rail,860,723,6,1
+SH-71715,2025-11-19,Northeast,NorthStar,Rail,800,523,7,1
+SH-71716,2025-11-19,Northeast,RapidHaul,Road,810,710,4,1
+SH-71717,2025-11-20,West,NorthStar,Road,470,614,7,1
+SH-71718,2025-11-20,Southwest,TransAlpha,Road,400,386,5,1
+SH-71719,2025-11-20,Southeast,RapidHaul,Sea,3030,1095,12,1
+SH-71720,2025-11-20,Northeast,Gulf Freight,Road,520,510,4,1
+SH-71721,2025-11-20,Southeast,Gulf Freight,Rail,2860,1451,7,1
+SH-71722,2025-11-21,Southwest,RapidHaul,Road,710,681,6,1
+SH-71723,2025-11-22,Midwest,BlueLine,Road,470,428,3,1
+SH-71724,2025-11-22,Southeast,RapidHaul,Road,1110,806,4,0
+SH-71725,2025-11-24,Midwest,BlueLine,Road,410,314,4,1
+SH-71726,2025-11-24,Northeast,NorthStar,Sea,1460,891,11,1
+SH-71727,2025-11-24,West,Gulf Freight,Rail,1020,614,6,0
+SH-71728,2025-11-25,Southeast,NorthStar,Road,150,120,5,1
+SH-71729,2025-11-25,Southeast,RapidHaul,Rail,120,77,6,1
+SH-71730,2025-11-25,Southeast,TransAlpha,Road,250,201,4,1
+SH-71731,2025-11-26,Midwest,BlueLine,Road,410,329,2,1
+SH-71732,2025-11-26,Northeast,BlueLine,Air,480,1583,2,1
+SH-71733,2025-11-26,Southeast,NorthStar,Road,120,135,4,1
+SH-71734,2025-11-26,Southeast,Gulf Freight,Road,290,222,6,0
+SH-71735,2025-11-26,Southeast,BlueLine,Sea,860,369,12,1
+SH-71736,2025-11-27,Southwest,TransAlpha,Sea,480,222,10,1
+SH-71737,2025-11-27,Southeast,BlueLine,Road,550,412,5,1
+SH-71738,2025-11-27,Midwest,NorthStar,Road,2110,1967,2,1
+SH-71739,2025-11-28,Southeast,RapidHaul,Sea,1020,356,11,1
+SH-71740,2025-11-28,Northeast,RapidHaul,Rail,510,384,6,1
+SH-71741,2025-11-30,Southeast,BlueLine,Road,210,191,2,1
+SH-71742,2025-11-30,Midwest,TransAlpha,Road,1650,1498,6,1
+SH-71743,2025-11-30,Midwest,BlueLine,Road,520,481,5,1
+SH-71744,2025-11-30,Southeast,Gulf Freight,Road,770,585,1,0
+SH-71745,2025-12-01,Southeast,BlueLine,Road,230,234,3,1
+SH-71746,2025-12-01,Southeast,BlueLine,Sea,1100,456,10,1
+SH-71747,2025-12-01,West,NorthStar,Air,680,2210,3,1
+SH-71748,2025-12-02,Southeast,RapidHaul,Road,380,275,3,1
+SH-71749,2025-12-02,West,BlueLine,Road,3120,3895,2,1
+SH-71750,2025-12-02,Northeast,NorthStar,Road,220,211,6,1
+SH-71751,2025-12-02,Midwest,RapidHaul,Road,1160,972,7,1
+SH-71752,2025-12-02,Southeast,BlueLine,Road,330,274,5,1
+SH-71753,2025-12-03,West,RapidHaul,Road,340,343,4,0
+SH-71754,2025-12-03,Northeast,NorthStar,Road,2020,2553,5,1
+SH-71755,2025-12-03,Northeast,Gulf Freight,Road,1050,1092,6,1
+SH-71756,2025-12-03,Midwest,NorthStar,Road,610,523,5,1
+SH-71757,2025-12-05,Southeast,NorthStar,Road,240,195,5,1
+SH-71758,2025-12-05,West,TransAlpha,Road,360,441,7,1
+SH-71759,2025-12-06,Southwest,Gulf Freight,Road,260,198,3,1
+SH-71760,2025-12-06,Northeast,RapidHaul,Road,280,312,4,1
+SH-71761,2025-12-06,Southeast,BlueLine,Road,360,287,3,1
+SH-71762,2025-12-07,Midwest,RapidHaul,Sea,910,407,11,1
+SH-71763,2025-12-07,Midwest,RapidHaul,Air,320,823,2,1
+SH-71764,2025-12-07,Northeast,Gulf Freight,Sea,510,226,12,1
+SH-71765,2025-12-08,West,Gulf Freight,Road,860,931,3,0
+SH-71766,2025-12-08,Southwest,RapidHaul,Road,1320,1276,5,1
+SH-71767,2025-12-08,West,NorthStar,Rail,620,598,6,1
+SH-71768,2025-12-08,West,Gulf Freight,Road,560,622,3,1
+SH-71769,2025-12-08,Southeast,BlueLine,Road,2020,1802,4,1
+SH-71770,2025-12-09,Midwest,TransAlpha,Road,740,727,2,1
+SH-71771,2025-12-09,Midwest,TransAlpha,Sea,200,77,13,1
+SH-71772,2025-12-09,Midwest,Gulf Freight,Road,270,167,4,1
+SH-71773,2025-12-09,Southeast,NorthStar,Road,330,280,5,1
+SH-71774,2025-12-10,Midwest,RapidHaul,Road,550,482,4,0
+SH-71775,2025-12-10,Midwest,BlueLine,Sea,700,332,13,1
+SH-71776,2025-12-10,Southeast,RapidHaul,Rail,220,116,5,1
+SH-71777,2025-12-10,West,BlueLine,Road,650,684,4,1
+SH-71778,2025-12-10,Northeast,BlueLine,Sea,2930,1561,10,1
+SH-71779,2025-12-10,West,BlueLine,Road,450,474,4,0
+SH-71780,2025-12-11,Southeast,RapidHaul,Road,190,181,4,1
+SH-71781,2025-12-11,Northeast,RapidHaul,Air,1630,5260,3,1
+SH-71782,2025-12-11,Southwest,NorthStar,Rail,320,206,7,1
+SH-71783,2025-12-12,Midwest,BlueLine,Road,1780,1669,7,1
+SH-71784,2025-12-12,Northeast,RapidHaul,Rail,240,173,6,1
+SH-71785,2025-12-12,West,Gulf Freight,Road,200,215,4,1
+SH-71786,2025-12-12,Southeast,Gulf Freight,Rail,1130,531,7,1
+SH-71787,2025-12-12,Midwest,NorthStar,Rail,450,242,4,1
+SH-71788,2025-12-13,Southwest,RapidHaul,Road,260,190,5,1
+SH-71789,2025-12-13,Midwest,RapidHaul,Rail,790,380,6,1
+SH-71790,2025-12-13,West,RapidHaul,Road,560,672,4,1
+SH-71791,2025-12-15,Midwest,Gulf Freight,Rail,1010,575,7,1
+SH-71792,2025-12-15,Southeast,Gulf Freight,Road,40,33,3,1
+SH-71793,2025-12-16,West,Gulf Freight,Rail,380,260,6,1
+SH-71794,2025-12-16,West,TransAlpha,Rail,720,588,7,1
+SH-71795,2025-12-17,Midwest,BlueLine,Sea,360,166,12,1
+SH-71796,2025-12-17,Southwest,RapidHaul,Road,290,297,4,1
+SH-71797,2025-12-17,Southeast,Gulf Freight,Rail,1090,593,6,1
+SH-71798,2025-12-17,Midwest,BlueLine,Road,530,371,5,0
+SH-71799,2025-12-17,Southeast,NorthStar,Air,60,208,2,0
+SH-71800,2025-12-17,Southwest,BlueLine,Road,780,700,4,1
+SH-71801,2025-12-18,West,Gulf Freight,Road,410,382,4,1
+SH-71802,2025-12-18,Southwest,Gulf Freight,Rail,1220,609,5,0
+SH-71803,2025-12-18,Midwest,Gulf Freight,Road,330,261,4,1
+SH-71804,2025-12-18,Southwest,BlueLine,Road,780,702,6,0
+SH-71805,2025-12-19,Northeast,BlueLine,Rail,7230,4297,7,1
+SH-71806,2025-12-19,Northeast,RapidHaul,Rail,310,188,9,1
+SH-71807,2025-12-20,Midwest,Gulf Freight,Sea,1120,442,11,1
+SH-71808,2025-12-20,Southeast,BlueLine,Road,210,181,3,1
+SH-71809,2025-12-21,Northeast,BlueLine,Road,940,845,4,1
+SH-71810,2025-12-22,Northeast,BlueLine,Rail,890,546,6,1
+SH-71811,2025-12-22,Southeast,Gulf Freight,Sea,910,368,11,1
+SH-71812,2025-12-22,West,TransAlpha,Road,780,856,6,1
+SH-71813,2025-12-22,Midwest,RapidHaul,Rail,1790,1110,7,0
+SH-71814,2025-12-22,Midwest,BlueLine,Sea,2310,849,10,1
+SH-71815,2025-12-23,Northeast,NorthStar,Road,750,741,5,1
+SH-71816,2025-12-23,Southwest,BlueLine,Sea,820,415,11,1
+SH-71817,2025-12-23,Southeast,BlueLine,Sea,1950,855,10,1
+SH-71818,2025-12-23,Northeast,NorthStar,Road,400,411,5,1
+SH-71819,2025-12-24,Southwest,NorthStar,Rail,1140,803,6,0
+SH-71820,2025-12-24,Southeast,RapidHaul,Road,260,185,4,0
+SH-71821,2025-12-24,Southeast,BlueLine,Sea,760,387,11,1
+SH-71822,2025-12-24,Northeast,BlueLine,Road,710,843,4,1
+SH-71823,2025-12-25,West,BlueLine,Air,630,2610,3,1
+SH-71824,2025-12-25,Northeast,BlueLine,Rail,440,308,7,1
+SH-71825,2025-12-25,Southwest,Gulf Freight,Road,930,873,4,1
+SH-71826,2025-12-26,Midwest,NorthStar,Air,680,2210,1,1
+SH-71827,2025-12-26,Southeast,NorthStar,Sea,960,485,9,1
+SH-71828,2025-12-26,Southeast,BlueLine,Sea,1400,563,12,1
+SH-71829,2025-12-26,Northeast,BlueLine,Road,1210,1240,6,1
+SH-71830,2025-12-26,Northeast,Gulf Freight,Road,820,726,3,1
+SH-71831,2025-12-26,West,BlueLine,Air,430,1755,2,1
+SH-71832,2025-12-27,West,BlueLine,Sea,180,93,10,1
+SH-71833,2025-12-27,West,Gulf Freight,Road,460,425,6,1
+SH-71834,2025-12-27,Southeast,Gulf Freight,Road,780,610,5,1
+SH-71835,2025-12-27,Southeast,NorthStar,Sea,610,258,9,1
+SH-71836,2025-12-27,Southeast,RapidHaul,Rail,1930,1100,5,1
+SH-71837,2025-12-28,Southwest,NorthStar,Sea,600,293,10,1
+SH-71838,2025-12-28,Southeast,Gulf Freight,Rail,710,384,6,0
+SH-71839,2025-12-29,Southwest,NorthStar,Road,200,194,6,1
+SH-71840,2025-12-29,West,RapidHaul,Road,630,643,3,1
+SH-71841,2025-12-29,Southeast,BlueLine,Road,1600,1436,7,1
+SH-71842,2025-12-29,Southwest,RapidHaul,Road,800,806,6,1
+SH-71843,2025-12-30,West,BlueLine,Road,530,525,2,1
+SH-71844,2025-12-30,Midwest,NorthStar,Road,1640,1643,2,1
+SH-71845,2025-12-31,Northeast,RapidHaul,Road,210,185,4,1
+SH-71846,2025-12-31,Midwest,TransAlpha,Sea,1660,676,11,1
+SH-71847,2025-12-31,Midwest,BlueLine,Road,350,242,2,1
+SH-71848,2025-12-31,Northeast,BlueLine,Road,660,591,6,1
+SH-71849,2025-12-31,Midwest,BlueLine,Sea,1460,579,11,1

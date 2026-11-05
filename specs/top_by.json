@@ -1,0 +1,23 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_products.csv"},
+  "calcs": [
+    {"name": "Margin", "formula": "SUM([Profit]) / SUM([Sales])"}
+  ],
+  "sheets": [
+    {"name": "Profit of Top Sellers", "type": "bar", "title": "Profit of the **top 5 sellers**",
+     "subtitle": "Top 5 products by sales", "dimension": "Product", "measure": {"field": "Profit"}, "sort": "desc",
+     "top": {"n": 5, "by": {"field": "Sales"}}},
+    {"name": "Sales of Top Margins", "type": "bar", "title": "Sales of the **top 4 margins**",
+     "subtitle": "Top 4 products by SUM(Profit) / SUM(Sales)", "dimension": "Product", "measure": {"field": "Sales"},
+     "sort": "desc", "top": {"n": 4, "by": {"field": "Margin"}}},
+    {"name": "Busiest Products", "type": "registry", "title": "**Busiest** products",
+     "subtitle": "Top 6 products by average quantity", "rows": ["Product"],
+     "columns": [{"measure": {"field": "Sales"}, "style": "text"}, {"measure": {"field": "Profit"}, "style": "text"}],
+     "top": {"n": 6, "by": {"field": "Quantity", "agg": "avg"}}}
+  ],
+  "dashboard": {"name": "Top By", "title": "**Top N** by another measure", "subtitle": "Sample data, 2025, 640 orders",
+                "width": 1200, "height": 800,
+                "grid": [["Profit of Top Sellers", "Sales of Top Margins"], ["Busiest Products"]]}
+}

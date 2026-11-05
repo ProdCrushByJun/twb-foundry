@@ -1,0 +1,16 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "fields": {"Category": {"color": {"Furniture": "#4e79a7", "Office": "#f28e2b", "Tech": "#76b7b2"}}},
+  "sheets": [
+    {"name": "Inside", "type": "bar", "title": "Sales **by region**", "subtitle": "Categories inside the region total",
+     "dimension": "Region", "measure": {"field": "Sales"}, "sort": "desc", "color": "Category", "parts": "inside",
+     "orientation": "vertical", "legend": "inline"},
+    {"name": "Columns", "type": "bar", "title": "Profit **by region**", "subtitle": "Categories inside the region total",
+     "dimension": "Region", "measure": {"field": "Profit"}, "sort": "desc", "color": "Category", "parts": "inside",
+     "orientation": "vertical", "legend": "inline"}
+  ],
+  "dashboard": {"name": "Bar in bar", "title": "**Bar-in-bar**", "subtitle": "Sample data, 2025",
+                "width": 1200, "height": 700, "grid": [["Inside", "Columns"]]}
+}

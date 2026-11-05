@@ -1,0 +1,1299 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook locale='en_US' original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='sales_products' inline='true' name='federated.gj4dkuu0medx8z95ja1n7l5luhke' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sales_products' name='textscan.h85fsycc20bk58rgitqlo5ct9zcw'>
+            <connection class='textscan' directory='Data/sample' filename='sales_products.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.h85fsycc20bk58rgitqlo5ct9zcw' name='sales_products.csv' table='[sales_products#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Order Date' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='string' name='Product' ordinal='2' />
+            <column datatype='real' name='Sales' ordinal='3' />
+            <column datatype='real' name='Profit' ordinal='4' />
+            <column datatype='integer' name='Quantity' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_products.csv_E8D4CA97DD134504B56CE37C727492AF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[sales_products.csv_E8D4CA97DD134504B56CE37C727492AF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[sales_products.csv_E8D4CA97DD134504B56CE37C727492AF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_products.csv_E8D4CA97DD134504B56CE37C727492AF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_products.csv_E8D4CA97DD134504B56CE37C727492AF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_products.csv_E8D4CA97DD134504B56CE37C727492AF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Order Size' datatype='string' name='[Calculation_1014154018034077524]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Sales] &gt;= 300 THEN &quot;Large&quot; ELSEIF [Sales] &gt;= 150 THEN &quot;Medium&quot; ELSE &quot;Small&quot; END' />
+        <aliases>
+          <alias key='&quot;Large&quot;' value='Large order' />
+          <alias key='&quot;Medium&quot;' value='Medium order' />
+          <alias key='&quot;Small&quot;' value='Small order' />
+        </aliases>
+      </column>
+      <column datatype='string' name='[Qty Band]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Quantity]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;1-4 units&quot;'>
+            <value>1</value>
+            <value>2</value>
+            <value>3</value>
+            <value>4</value>
+          </bin>
+          <bin default-name='false' value='&quot;5-8 units&quot;'>
+            <value>5</value>
+            <value>6</value>
+            <value>7</value>
+            <value>8</value>
+          </bin>
+          <bin default-name='false' value='&quot;9+ units&quot;'>
+            <value>9</value>
+            <value>10</value>
+            <value>11</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Quantity]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Size Tier]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Calculation_1014154018034077524]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;The rest&quot;'>
+            <value>&quot;Medium&quot;</value>
+            <value>&quot;Small&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Top orders&quot;'>
+            <value>&quot;Large&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='sales_products.csv' datatype='table' name='[__tableau_internal_object_id__].[sales_products.csv_E8D4CA97DD134504B56CE37C727492AF]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1014154018034077524]' derivation='None' name='[none:Calculation_1014154018034077524:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1014154018034077524:nk]' type='palette'>
+            <map to='#1f3a5f'>
+              <bucket>&quot;Large&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+            <map to='#a0c4e8'>
+              <bucket>&quot;Small&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Size Tier]' type='palette'>
+            <map to='#1f3a5f'>
+              <bucket>&quot;Top orders&quot;</bucket>
+            </map>
+            <map to='#a0c4e8'>
+              <bucket>&quot;The rest&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Russia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[Qty Band]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;1-4 units&quot;</bucket>
+            <bucket>&quot;5-8 units&quot;</bucket>
+            <bucket>&quot;9+ units&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[Size Tier]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Top orders&quot;</bucket>
+            <bucket>&quot;The rest&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+        <manual-sort column='[none:Calculation_1014154018034077524:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Large&quot;</bucket>
+            <bucket>&quot;Medium&quot;</bucket>
+            <bucket>&quot;Small&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <object-graph>
+        <objects>
+          <object caption='sales_products.csv' id='sales_products.csv_E8D4CA97DD134504B56CE37C727492AF'>
+            <properties context=''>
+              <relation connection='textscan.h85fsycc20bk58rgitqlo5ct9zcw' name='sales_products.csv' table='[sales_products#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Order Date' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='string' name='Product' ordinal='2' />
+                  <column datatype='real' name='Sales' ordinal='3' />
+                  <column datatype='real' name='Profit' ordinal='4' />
+                  <column datatype='integer' name='Quantity' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.gj4dkuu0medx8z95ja1n7l5luhke'>
+      <datasources>
+        <datasource caption='sales_products' name='federated.gj4dkuu0medx8z95ja1n7l5luhke' />
+      </datasources>
+      <datasource-dependencies datasource='federated.gj4dkuu0medx8z95ja1n7l5luhke'>
+        <column caption='Order Size' datatype='string' name='[Calculation_1014154018034077524]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF [Sales] &gt;= 300 THEN &quot;Large&quot; ELSEIF [Sales] &gt;= 150 THEN &quot;Medium&quot; ELSE &quot;Small&quot; END' />
+          <aliases>
+            <alias key='&quot;Large&quot;' value='Large order' />
+            <alias key='&quot;Medium&quot;' value='Medium order' />
+            <alias key='&quot;Small&quot;' value='Small order' />
+          </aliases>
+        </column>
+        <column datatype='string' name='[Size Tier]' role='dimension' type='nominal'>
+          <calculation class='categorical-bin' column='[Calculation_1014154018034077524]' default='&quot;Other&quot;' new-bin='true'>
+            <bin default-name='false' value='&quot;The rest&quot;'>
+              <value>&quot;Medium&quot;</value>
+              <value>&quot;Small&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;Top orders&quot;'>
+              <value>&quot;Large&quot;</value>
+            </bin>
+          </calculation>
+        </column>
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]'>
+        <groupfilter function='level-members' level='[Size Tier]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Bands'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.gj4dkuu0medx8z95ja1n7l5luhke' />
+          </datasources>
+          <datasource-dependencies datasource='federated.gj4dkuu0medx8z95ja1n7l5luhke'>
+            <column caption='Order Size' datatype='string' name='[Calculation_1014154018034077524]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Sales] &gt;= 300 THEN &quot;Large&quot; ELSEIF [Sales] &gt;= 150 THEN &quot;Medium&quot; ELSE &quot;Small&quot; END' />
+              <aliases>
+                <alias key='&quot;Large&quot;' value='Large order' />
+                <alias key='&quot;Medium&quot;' value='Medium order' />
+                <alias key='&quot;Small&quot;' value='Small order' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Qty Band]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Quantity]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;1-4 units&quot;'>
+                  <value>1</value>
+                  <value>2</value>
+                  <value>3</value>
+                  <value>4</value>
+                </bin>
+                <bin default-name='false' value='&quot;5-8 units&quot;'>
+                  <value>5</value>
+                  <value>6</value>
+                  <value>7</value>
+                  <value>8</value>
+                </bin>
+                <bin default-name='false' value='&quot;9+ units&quot;'>
+                  <value>9</value>
+                  <value>10</value>
+                  <value>11</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Quantity]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Size Tier]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Calculation_1014154018034077524]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;The rest&quot;'>
+                  <value>&quot;Medium&quot;</value>
+                  <value>&quot;Small&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Top orders&quot;'>
+                  <value>&quot;Large&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[sum:Sales:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[sum:Sales:qk]' scope='cols' value='false' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='width' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Qty Band]' value='81' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Qty Band]' value='#333333' />
+            <format attr='font-size' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Qty Band]' value='10' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#898989' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Qty Band]</rows>
+        <cols>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{7BB3481C-901F-496B-BBE5-3B53F048B730}' />
+    </worksheet>
+    <worksheet name='Matrix'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.gj4dkuu0medx8z95ja1n7l5luhke' />
+          </datasources>
+          <datasource-dependencies datasource='federated.gj4dkuu0medx8z95ja1n7l5luhke'>
+            <column caption='Order Size' datatype='string' name='[Calculation_1014154018034077524]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Sales] &gt;= 300 THEN &quot;Large&quot; ELSEIF [Sales] &gt;= 150 THEN &quot;Medium&quot; ELSE &quot;Small&quot; END' />
+              <aliases>
+                <alias key='&quot;Large&quot;' value='Large order' />
+                <alias key='&quot;Medium&quot;' value='Medium order' />
+                <alias key='&quot;Small&quot;' value='Small order' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Qty Band]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Quantity]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;1-4 units&quot;'>
+                  <value>1</value>
+                  <value>2</value>
+                  <value>3</value>
+                  <value>4</value>
+                </bin>
+                <bin default-name='false' value='&quot;5-8 units&quot;'>
+                  <value>5</value>
+                  <value>6</value>
+                  <value>7</value>
+                  <value>8</value>
+                </bin>
+                <bin default-name='false' value='&quot;9+ units&quot;'>
+                  <value>9</value>
+                  <value>10</value>
+                  <value>11</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Quantity]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Size Tier]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Calculation_1014154018034077524]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;The rest&quot;'>
+                  <value>&quot;Medium&quot;</value>
+                  <value>&quot;Small&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Top orders&quot;'>
+                  <value>&quot;Large&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]' value='30' />
+            <format attr='width' value='81' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#898989' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]</rows>
+        <cols>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Qty Band]</cols>
+      </table>
+      <simple-id uuid='{816A1B8B-AC11-4020-BB45-3FA691E3534D}' />
+    </worksheet>
+    <worksheet name='Sizes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.gj4dkuu0medx8z95ja1n7l5luhke' />
+          </datasources>
+          <datasource-dependencies datasource='federated.gj4dkuu0medx8z95ja1n7l5luhke'>
+            <column caption='Order Size' datatype='string' name='[Calculation_1014154018034077524]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Sales] &gt;= 300 THEN &quot;Large&quot; ELSEIF [Sales] &gt;= 150 THEN &quot;Medium&quot; ELSE &quot;Small&quot; END' />
+              <aliases>
+                <alias key='&quot;Large&quot;' value='Large order' />
+                <alias key='&quot;Medium&quot;' value='Medium order' />
+                <alias key='&quot;Small&quot;' value='Small order' />
+              </aliases>
+            </column>
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Size Tier]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Calculation_1014154018034077524]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;The rest&quot;'>
+                  <value>&quot;Medium&quot;</value>
+                  <value>&quot;Small&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Top orders&quot;'>
+                  <value>&quot;Large&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[Calculation_1014154018034077524]' derivation='None' name='[none:Calculation_1014154018034077524:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[sum:Sales:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[sum:Sales:qk]' scope='cols' value='false' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='width' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[none:Calculation_1014154018034077524:nk]' value='72' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[none:Calculation_1014154018034077524:nk]' value='#333333' />
+            <format attr='font-size' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[none:Calculation_1014154018034077524:nk]' value='10' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#898989' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[none:Calculation_1014154018034077524:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[none:Calculation_1014154018034077524:nk]</rows>
+        <cols>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{006302D7-8105-4863-9363-BC7997AF52C0}' />
+    </worksheet>
+    <worksheet name='Tiers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.gj4dkuu0medx8z95ja1n7l5luhke' />
+          </datasources>
+          <datasource-dependencies datasource='federated.gj4dkuu0medx8z95ja1n7l5luhke'>
+            <column caption='Order Size' datatype='string' name='[Calculation_1014154018034077524]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Sales] &gt;= 300 THEN &quot;Large&quot; ELSEIF [Sales] &gt;= 150 THEN &quot;Medium&quot; ELSE &quot;Small&quot; END' />
+              <aliases>
+                <alias key='&quot;Large&quot;' value='Large order' />
+                <alias key='&quot;Medium&quot;' value='Medium order' />
+                <alias key='&quot;Small&quot;' value='Small order' />
+              </aliases>
+            </column>
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Size Tier]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Calculation_1014154018034077524]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;The rest&quot;'>
+                  <value>&quot;Medium&quot;</value>
+                  <value>&quot;Small&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Top orders&quot;'>
+                  <value>&quot;Large&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[sum:Sales:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[sum:Sales:qk]' scope='cols' value='false' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='width' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]' value='94' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]' value='#333333' />
+            <format attr='font-size' field='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]' value='10' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#898989' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]</rows>
+        <cols>[federated.gj4dkuu0medx8z95ja1n7l5luhke].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{0E116823-3136-47E8-98AC-8F21F789A9A4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Fields v2'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' />
+      <datasources>
+        <datasource caption='sales_products' name='federated.gj4dkuu0medx8z95ja1n7l5luhke' />
+      </datasources>
+      <datasource-dependencies datasource='federated.gj4dkuu0medx8z95ja1n7l5luhke'>
+        <column caption='Order Size' datatype='string' name='[Calculation_1014154018034077524]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF [Sales] &gt;= 300 THEN &quot;Large&quot; ELSEIF [Sales] &gt;= 150 THEN &quot;Medium&quot; ELSE &quot;Small&quot; END' />
+          <aliases>
+            <alias key='&quot;Large&quot;' value='Large order' />
+            <alias key='&quot;Medium&quot;' value='Medium order' />
+            <alias key='&quot;Small&quot;' value='Small order' />
+          </aliases>
+        </column>
+        <column datatype='string' name='[Size Tier]' role='dimension' type='nominal'>
+          <calculation class='categorical-bin' column='[Calculation_1014154018034077524]' default='&quot;Other&quot;' new-bin='true'>
+            <bin default-name='false' value='&quot;The rest&quot;'>
+              <value>&quot;Medium&quot;</value>
+              <value>&quot;Small&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;Top orders&quot;'>
+              <value>&quot;Large&quot;</value>
+            </bin>
+          </calculation>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='3' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='9750' id='4' param='horz' type-v2='layout-flow' w='99000' x='500' y='750'>
+            <zone forceUpdate='true' h='9750' id='5' type-v2='text' w='86334' x='500' y='750'>
+              <formatted-text>
+                <run bold='true' fontcolor='#333333' fontsize='18'>Field</run>
+                <run fontcolor='#333333' fontsize='18'> properties v2</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#666666' fontsize='11'>Calc aliases, order, colors; groups over a calc and a number · sample data</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='6' />
+                <format attr='margin-right' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='142' h='9750' id='6' is-fixed='true' mode='checkdropdown' name='Matrix' param='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]' type-v2='filter' w='12666' x='86834' y='750'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='6' />
+                <format attr='margin-left' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='88750' id='7' param='horz' type-v2='layout-flow' w='99000' x='500' y='10500'>
+            <zone h='88750' id='8' type-v2='layout-basic' w='85667' x='500' y='10500'>
+              <zone h='44375' id='9' param='vert' type-v2='layout-flow' w='42833' x='500' y='10500'>
+                <zone h='38625' id='10' type-v2='layout-basic' w='39001' x='2416' y='13375'>
+                  <zone forceUpdate='true' h='7625' id='11' type-v2='text' w='39001' x='2416' y='13375'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>Sales </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>by order size</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#898989' fontsize='9'>a calc dimension with aliases, order and colors</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='31000' id='12' name='Sizes' show-title='false' w='39001' x='2416' y='21000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='44375' id='13' param='vert' type-v2='layout-flow' w='42834' x='43333' y='10500'>
+                <zone h='38625' id='14' type-v2='layout-basic' w='39002' x='45249' y='13375'>
+                  <zone forceUpdate='true' h='7625' id='15' type-v2='text' w='39002' x='45249' y='13375'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>Sales </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>by size tier</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#898989' fontsize='9'>a group over the calc</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='31000' id='16' name='Tiers' show-title='false' w='39002' x='45249' y='21000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='44375' id='17' param='vert' type-v2='layout-flow' w='42833' x='500' y='54875'>
+                <zone h='38625' id='18' type-v2='layout-basic' w='39001' x='2416' y='57750'>
+                  <zone forceUpdate='true' h='7625' id='19' type-v2='text' w='39001' x='2416' y='57750'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>Sales </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>by quantity band</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#898989' fontsize='9'>a group over a number</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='31000' id='20' name='Bands' show-title='false' w='39001' x='2416' y='65375'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='44375' id='21' param='vert' type-v2='layout-flow' w='42834' x='43333' y='54875'>
+                <zone h='38625' id='22' type-v2='layout-basic' w='39002' x='45249' y='57750'>
+                  <zone forceUpdate='true' h='5000' id='23' type-v2='text' w='39002' x='45249' y='57750'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>Sales </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>by tier and band</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='2625' id='24' type-v2='empty' w='39002' x='45249' y='62750'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='31000' id='25' name='Matrix' show-title='false' w='39002' x='45249' y='65375'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='88750' id='26' is-fixed='true' param='vert' type-v2='layout-flow' w='13333' x='86167' y='10500'>
+              <zone h='11125' id='27' name='Sizes' pane-specification-id='0' param='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[none:Calculation_1014154018034077524:nk]' type-v2='color' w='13333' x='86167' y='10500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='6' />
+                  <format attr='margin-bottom' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8375' id='28' name='Tiers' pane-specification-id='0' param='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]' type-v2='color' w='13333' x='86167' y='21625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-right' value='6' />
+                  <format attr='margin-left' value='6' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='6' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{2E956F35-EF66-4668-88EE-7036385F6611}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Sizes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[none:Calculation_1014154018034077524:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{481A7E6F-255E-4AB1-95A0-F11647BDB739}' />
+    </window>
+    <window class='worksheet' name='Tiers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{73966FE0-9747-497F-A7DF-07DD14E4990E}' />
+    </window>
+    <window class='worksheet' name='Bands'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9F963EF6-B546-4D0F-AD0E-A6BDEBC7C5A4}' />
+    </window>
+    <window class='worksheet' name='Matrix'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.gj4dkuu0medx8z95ja1n7l5luhke].[Size Tier]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DE0441F9-F052-443C-AEE1-A2660539FCD2}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Fields v2'>
+      <viewpoints>
+        <viewpoint name='Bands'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Matrix'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sizes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tiers'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4AF17F93-952A-42D2-AB01-2BB05A66B424}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Fields v2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

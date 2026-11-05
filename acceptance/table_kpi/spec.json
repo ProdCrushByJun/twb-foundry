@@ -1,0 +1,49 @@
+{
+  "$schema": "../../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "sales.csv"},
+  "calcs": [
+    {"name": "Profit Margin", "formula": "SUM([Profit]) / SUM([Sales])", "format": "pct1"},
+    {"name": "Sales 2025", "formula": "SUM(IF YEAR([Order Date]) = 2025 THEN [Sales] END)", "format": {"type": "currency", "decimals": 0}},
+    {"name": "Sales 2024", "formula": "SUM(IF YEAR([Order Date]) = 2024 THEN [Sales] END)", "format": {"type": "currency", "decimals": 0}},
+    {"name": "Profit 2025", "formula": "SUM(IF YEAR([Order Date]) = 2025 THEN [Profit] END)", "format": {"type": "currency", "decimals": 0}},
+    {"name": "Margin 2025", "formula": "SUM(IF YEAR([Order Date]) = 2025 THEN [Profit] END) / SUM(IF YEAR([Order Date]) = 2025 THEN [Sales] END)", "format": "pct1"},
+    {"name": "Margin Change pp", "formula": "(SUM(IF YEAR([Order Date]) = 2025 THEN [Profit] END) / SUM(IF YEAR([Order Date]) = 2025 THEN [Sales] END) - SUM(IF YEAR([Order Date]) = 2024 THEN [Profit] END) / SUM(IF YEAR([Order Date]) = 2024 THEN [Sales] END)) * 100", "format": {"type": "number", "decimals": 1, "plus": true, "suffix": "pp"}},
+    {"name": "Units 2025", "formula": "SUM(IF YEAR([Order Date]) = 2025 THEN [Quantity] END)", "format": {"type": "number", "decimals": 0}}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "cards", "arrange": "strip",
+     "date": {"field": "Order Date", "level": "month"}, "compare": "previous", "period_line": true,
+     "measures": [
+       {"field": "Sales", "format": "currency_k", "label": "Sales"},
+       {"field": "Profit", "format": "currency_k", "label": "Profit"},
+       {"field": "Profit", "per": "Sales", "format": "pct1", "label": "Profit margin"},
+       {"field": "Order ID", "agg": "count", "label": "Orders"},
+       {"field": "Quantity", "label": "Units sold"}
+     ]},
+    {"name": "Region Category", "type": "registry", "title": "Sales **by region and category**",
+     "subtitle": "2025 totals; change against 2024", "rows": ["Region", "Category"], "sort": "none",
+     "header": {"color": "#0d3a6b"},
+     "columns": [
+       {"measure": {"field": "Sales 2025"}, "style": "text", "label": "Sales"},
+       {"measure": {"field": "Sales 2025"}, "style": "delta", "label": "vs 2024", "base": {"field": "Sales 2024"}},
+       {"measure": {"field": "Profit 2025"}, "style": "text", "label": "Profit"},
+       {"measure": {"field": "Margin 2025"}, "style": "text", "label": "Margin"},
+       {"measure": {"field": "Margin Change pp"}, "style": "text", "label": "Margin vs 2024"},
+       {"measure": {"field": "Units 2025"}, "style": "text", "label": "Units"}
+     ],
+     "totals": {"grand": "rows", "sub": ["Region"], "label": "Total"}},
+    {"name": "Top Products", "type": "registry", "title": "**Top 5** products", "subtitle": "by 2025 sales",
+     "rows": ["Product"], "sort": "desc", "top": {"n": 5}, "header": {"color": "#0d3a6b"},
+     "columns": [
+       {"measure": {"field": "Sales 2025"}, "style": "rank", "label": "#"},
+       {"measure": {"field": "Sales 2025"}, "style": "text", "label": "Sales"},
+       {"measure": {"field": "Sales 2025"}, "style": "share", "label": "Share"},
+       {"measure": {"field": "Sales 2025"}, "style": "delta", "label": "vs 2024", "base": {"field": "Sales 2024"}}
+     ]}
+  ],
+  "dashboard": {"name": "Retail Sales Report", "title": "**Retail Sales** Report",
+    "subtitle": "December 2025 against November 2025 · full year 2025 against 2024 · all regions",
+    "theme": "cards", "width": 1600, "height": 960, "row_heights": [4, 8],
+    "grid": [["KPI"], [{"sheet": "Region Category", "width": 7}, {"sheet": "Top Products", "width": 4}]]}
+}

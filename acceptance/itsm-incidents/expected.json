@@ -1,0 +1,21 @@
+{
+ "_source": "itsm-incidents.html: the numbers its JS computes from the same rows (KPI tiles, the groups table, Chart.js data and the doughnut's labels '<channel> <share>%'), 2026-10-22; written to the precision the page shows them (decisions/069)",
+ "spec.json": {
+  "KPI": {"COUNT(Number)": 2742, "COUNT(Resolved)": 2724, "SUM(Backlog)": 18, "AVG(Resolve Hours)": 40.2, "AGG(SLA Met)": 0.888},
+  "By Category": {"Software": 787, "Access": 567, "Hardware": 480, "Network": 442, "Email": 253, "Database": 213},
+  "MTTR By Priority": {"1 - Critical": 4.9, "2 - High": 13.9, "3 - Moderate": 35.1, "4 - Low": 64.8},
+  "Assignment Groups": {
+   "Service Desk": {"Incidents": 892, "Backlog": 4, "MTTR, h": 25.6, "SLA met": 0.963},
+   "Security": {"Incidents": 153, "Backlog": 0, "MTTR, h": 58.7, "SLA met": 0.758}
+  },
+  "Channel Mix": {"Portal": 936, "Email": 537, "Monitoring": 493, "Phone": 442, "Chat": 334},
+  "Channel Mix · Total": 2742,
+  "Channel Mix · Legend": {
+   "Portal": {"value": 936, "share": 0.341},
+   "Email": {"value": 537, "share": 0.196},
+   "Monitoring": {"value": 493, "share": 0.180},
+   "Phone": {"value": 442, "share": 0.161},
+   "Chat": {"value": 334, "share": 0.122}
+  }
+ }
+}

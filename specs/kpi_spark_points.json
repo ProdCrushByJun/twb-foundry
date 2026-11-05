@@ -1,0 +1,19 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "sheets": [
+    {"name": "Monthly", "type": "kpi", "style": "cards", "title": "Latest **month**",
+     "subtitle": "{good:best} and {bad:worst} month, {accent:latest}",
+     "date": {"field": "Order Date", "level": "month"}, "compare": "previous", "history": "line",
+     "history_points": ["max", "min", "last"], "history_reference": {"type": "avg"},
+     "measures": [{"field": "Sales", "format": "currency_k"}, {"field": "Profit"},
+                  {"field": "Quantity", "label": "Units", "good": "down"}]},
+    {"name": "Latest", "type": "kpi", "style": "cards", "title": "Units, **dots only**",
+     "date": {"field": "Order Date", "level": "month"}, "history": "line", "history_points": ["last", "min"],
+     "history_point_labels": false, "measures": [{"field": "Quantity", "label": "Units", "good": "down"}]}
+  ],
+  "dashboard": {"name": "Spark Points", "title": "**Sales** KPI", "subtitle": "Sample data, 2024-2025",
+                "theme": "cards", "width": 1250, "height": 800, "row_heights": [1, 1],
+                "grid": [["Monthly"], ["Latest"]]}
+}

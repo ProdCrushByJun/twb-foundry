@@ -1,0 +1,33 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_stores.csv"},
+  "calcs": [
+    {"name": "Avg Order", "formula": "SUM([Sales]) / COUNT([Sales])", "format": "currency"},
+    {"name": "Margin", "formula": "SUM([Profit]) / SUM([Sales])", "format": "pct1"},
+    {"name": "Region Key", "formula": "{INCLUDE [Region] : STR(INT(SUM([Sales])) + 1000000) + MIN([Region])}"},
+    {"name": "Top Region", "formula": "MID(MAX([Region Key]), 8)"},
+    {"name": "Top Region Share", "formula": "(INT(LEFT(MAX([Region Key]), 7)) - 1000000) / SUM([Sales])",
+     "format": "pct1"},
+    {"name": "City Count", "formula": "COUNTD([City])"}
+  ],
+  "fields": {
+    "Channel": {"color": {"Online": "#2f4a6d", "Retail": "#5b8db8", "Partner": "#b3c3d6"},
+                "order": ["Online", "Retail", "Partner"]}
+  },
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [
+      {"field": "Sales", "label": "Sales", "note": "[Avg Order] per order"},
+      {"field": "Profit", "label": "Profit", "note": "**[Margin]** margin"}
+    ]},
+    {"name": "By Region", "type": "bar", "title": "Sales **by region**", "subtitle": "all channels, 2025",
+     "insight": "**[Top Region]** leads with [Top Region Share] of sales; [City Count] cities in view.",
+     "dimension": "Region", "measure": {"field": "Sales"}, "color": "Channel", "legend": "inline", "sort": "desc"},
+    {"name": "Detail", "type": "table", "title": "Sales **by city**", "rows": ["City", "Region"], "cols": "Channel",
+     "measure": {"field": "Sales"}, "totals": {"grand": "both"}, "sort": {"by": "total", "order": "desc"}}
+  ],
+  "filters": [{"field": "Region", "show_on": "By Region"}],
+  "dashboard": {"name": "Insight", "title": "**Insight** lines", "subtitle": "Sample stores, 800 orders",
+                "width": 1200, "height": 800, "row_heights": [3, 7],
+                "grid": [["KPI"], ["By Region", {"sheet": "Detail", "width": 2}]]}
+}

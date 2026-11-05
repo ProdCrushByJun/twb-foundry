@@ -1,0 +1,28 @@
+{
+ "_source": "pandas over data/sample/sales_products.csv (golden/expected/make_expected.py, decisions/052): Region aliases, the Product Line group with Other",
+ "Regions": {
+  "East coast": 35210.92,
+  "North side": 44518.47,
+  "South belt": 44292.98,
+  "West coast": 46525.2
+ },
+ "Lines": {
+  "Core": 53528.5,
+  "Growth": 32597.19,
+  "Other": 84421.88
+ },
+ "Matrix": {
+  "East coast | Core": 13403.32,
+  "East coast | Growth": 7043.81,
+  "East coast | Other": 14763.79,
+  "North side | Core": 13963.88,
+  "North side | Growth": 8797.98,
+  "North side | Other": 21756.61,
+  "South belt | Core": 12403.45,
+  "South belt | Growth": 7819.58,
+  "South belt | Other": 24069.95,
+  "West coast | Core": 13757.85,
+  "West coast | Growth": 8935.82,
+  "West coast | Other": 23831.53
+ }
+}

@@ -1,0 +1,1501 @@
+Order Date,State,Code,Region,Tile Row,Tile Col,Sales,Profit
+2025-01-01,Colorado,CO,West,5,3,311.78,88.97
+2025-01-02,California,CA,West,5,1,787.65,116.4
+2025-01-02,Maryland,MD,South,5,9,53.17,10.13
+2025-01-02,Texas,TX,South,8,4,766.44,-104.79
+2025-01-02,Washington,WA,West,3,1,296.14,-28.83
+2025-01-03,California,CA,West,5,1,574.54,143.58
+2025-01-03,Virginia,VA,South,5,8,368.16,106.76
+2025-01-03,Wisconsin,WI,Midwest,3,7,455.59,113.01
+2025-01-04,Nevada,NV,West,4,2,610.86,34.68
+2025-01-04,Ohio,OH,Midwest,4,7,537.33,-25.74
+2025-01-05,Alaska,AK,West,1,1,155.17,7.76
+2025-01-05,Indiana,IN,Midwest,4,6,29.56,5.03
+2025-01-05,Massachusetts,MA,Northeast,3,11,309.02,-16.46
+2025-01-05,Texas,TX,South,8,4,369.93,102.83
+2025-01-06,Colorado,CO,West,5,3,124.3,-15.64
+2025-01-06,District of Columbia,DC,South,6,9,422.25,116.4
+2025-01-06,Nevada,NV,West,4,2,81.48,25.44
+2025-01-06,Utah,UT,West,5,2,560.29,-71.03
+2025-01-07,New York,NY,Northeast,3,9,279.18,5.05
+2025-01-07,Washington,WA,West,3,1,502.54,142.52
+2025-01-08,Colorado,CO,West,5,3,616.99,158.32
+2025-01-08,Missouri,MO,Midwest,5,5,793.41,180.19
+2025-01-08,New York,NY,Northeast,3,9,148.15,-3.8
+2025-01-08,Ohio,OH,Midwest,4,7,831.59,91.02
+2025-01-08,Vermont,VT,Northeast,2,10,521.36,-38.07
+2025-01-09,Illinois,IL,Midwest,3,6,192.05,56.88
+2025-01-09,Oregon,OR,West,4,1,33.41,1.16
+2025-01-10,Colorado,CO,West,5,3,612.88,-18.38
+2025-01-10,Florida,FL,South,8,9,232.15,-20.69
+2025-01-10,Florida,FL,South,8,9,461.13,-53.61
+2025-01-10,New York,NY,Northeast,3,9,602.61,152.68
+2025-01-10,New York,NY,Northeast,3,9,815.54,208.13
+2025-01-10,Pennsylvania,PA,Northeast,4,8,361.58,4.88
+2025-01-10,Washington,WA,West,3,1,480.17,71.71
+2025-01-11,Florida,FL,South,8,9,784.64,-78.61
+2025-01-11,New York,NY,Northeast,3,9,202.21,16.04
+2025-01-11,North Carolina,NC,South,6,7,279.41,84.82
+2025-01-12,California,CA,West,5,1,705.03,195.0
+2025-01-12,Pennsylvania,PA,Northeast,4,8,473.61,93.4
+2025-01-12,Virginia,VA,South,5,8,429.04,116.14
+2025-01-13,California,CA,West,5,1,626.65,-13.95
+2025-01-13,New Jersey,NJ,Northeast,4,9,353.09,-45.65
+2025-01-13,Washington,WA,West,3,1,775.9,-99.07
+2025-01-14,California,CA,West,5,1,550.22,82.59
+2025-01-14,Kansas,KS,Midwest,6,4,305.2,5.97
+2025-01-14,Michigan,MI,Midwest,3,8,758.52,151.18
+2025-01-14,Michigan,MI,Midwest,3,8,804.44,111.17
+2025-01-14,Missouri,MO,Midwest,5,5,335.87,-11.79
+2025-01-15,Arizona,AZ,West,6,2,818.41,-38.11
+2025-01-15,California,CA,West,5,1,44.57,-0.37
+2025-01-15,District of Columbia,DC,South,6,9,664.4,185.76
+2025-01-15,Florida,FL,South,8,9,655.18,5.57
+2025-01-15,Pennsylvania,PA,Northeast,4,8,641.71,92.77
+2025-01-17,Colorado,CO,West,5,3,295.19,-10.88
+2025-01-17,Florida,FL,South,8,9,569.62,3.6
+2025-01-17,Minnesota,MN,Midwest,3,5,165.66,4.36
+2025-01-17,Missouri,MO,Midwest,5,5,704.05,-4.65
+2025-01-17,South Dakota,SD,Midwest,4,4,661.76,134.77
+2025-01-18,Florida,FL,South,8,9,97.81,13.42
+2025-01-18,Minnesota,MN,Midwest,3,5,241.25,36.81
+2025-01-18,Nevada,NV,West,4,2,652.64,192.35
+2025-01-18,Utah,UT,West,5,2,83.71,-3.62
+2025-01-18,Wisconsin,WI,Midwest,3,7,193.41,61.48
+2025-01-19,Connecticut,CT,Northeast,4,10,780.26,194.73
+2025-01-19,Louisiana,LA,South,7,5,207.22,4.26
+2025-01-19,New York,NY,Northeast,3,9,222.74,-27.89
+2025-01-20,Florida,FL,South,8,9,143.62,-10.69
+2025-01-20,Indiana,IN,Midwest,4,6,887.87,132.94
+2025-01-20,Pennsylvania,PA,Northeast,4,8,213.41,15.52
+2025-01-21,Connecticut,CT,Northeast,4,10,768.85,-55.72
+2025-01-21,North Carolina,NC,South,6,7,787.0,239.8
+2025-01-22,California,CA,West,5,1,288.86,91.73
+2025-01-22,Kentucky,KY,South,5,6,397.4,107.51
+2025-01-22,Kentucky,KY,South,5,6,731.66,244.79
+2025-01-22,Texas,TX,South,8,4,581.15,-4.56
+2025-01-23,Arizona,AZ,West,6,2,140.13,3.84
+2025-01-23,Delaware,DE,South,5,10,415.51,78.24
+2025-01-23,Florida,FL,South,8,9,39.58,7.29
+2025-01-23,Missouri,MO,Midwest,5,5,330.97,-7.09
+2025-01-24,New York,NY,Northeast,3,9,506.7,-35.49
+2025-01-24,Texas,TX,South,8,4,665.69,15.09
+2025-01-25,District of Columbia,DC,South,6,9,154.74,20.96
+2025-01-25,New York,NY,Northeast,3,9,308.21,51.73
+2025-01-25,New York,NY,Northeast,3,9,362.1,9.09
+2025-01-25,Wyoming,WY,West,4,3,876.69,21.12
+2025-01-26,Alaska,AK,West,1,1,653.33,128.93
+2025-01-26,Georgia,GA,South,7,8,830.33,45.77
+2025-01-26,New Mexico,NM,West,6,3,89.57,4.22
+2025-01-27,Arizona,AZ,West,6,2,510.58,-50.91
+2025-01-27,Louisiana,LA,South,7,5,544.76,-52.77
+2025-01-27,Pennsylvania,PA,Northeast,4,8,591.5,-65.29
+2025-01-27,South Carolina,SC,South,6,8,729.33,-90.81
+2025-01-28,Delaware,DE,South,5,10,148.02,29.61
+2025-01-28,Iowa,IA,Midwest,4,5,511.36,-47.52
+2025-01-28,Maryland,MD,South,5,9,256.86,46.11
+2025-01-28,Texas,TX,South,8,4,87.23,17.57
+2025-01-29,Georgia,GA,South,7,8,560.77,79.87
+2025-01-29,Idaho,ID,West,3,2,197.86,33.74
+2025-01-29,Minnesota,MN,Midwest,3,5,371.87,103.09
+2025-01-29,North Carolina,NC,South,6,7,295.31,70.11
+2025-01-29,Pennsylvania,PA,Northeast,4,8,675.03,-85.42
+2025-01-30,Nebraska,NE,Midwest,5,4,253.89,-17.17
+2025-01-31,Massachusetts,MA,Northeast,3,11,837.61,256.7
+2025-01-31,Texas,TX,South,8,4,236.22,53.04
+2025-01-31,Vermont,VT,Northeast,2,10,442.38,137.89
+2025-01-31,Virginia,VA,South,5,8,560.22,-26.32
+2025-01-31,Virginia,VA,South,5,8,638.68,-56.19
+2025-01-31,Virginia,VA,South,5,8,867.27,220.16
+2025-02-01,California,CA,West,5,1,357.67,80.42
+2025-02-01,Colorado,CO,West,5,3,362.98,17.0
+2025-02-01,Connecticut,CT,Northeast,4,10,257.0,30.5
+2025-02-01,New Jersey,NJ,Northeast,4,9,199.73,-23.57
+2025-02-01,New York,NY,Northeast,3,9,598.38,-29.51
+2025-02-02,Kentucky,KY,South,5,6,688.12,63.24
+2025-02-02,New York,NY,Northeast,3,9,326.28,4.06
+2025-02-02,Rhode Island,RI,Northeast,3,10,208.82,-19.46
+2025-02-02,Wisconsin,WI,Midwest,3,7,539.7,47.24
+2025-02-03,California,CA,West,5,1,278.67,68.88
+2025-02-03,California,CA,West,5,1,597.96,164.2
+2025-02-03,Georgia,GA,South,7,8,605.26,-64.47
+2025-02-03,Texas,TX,South,8,4,281.01,-36.16
+2025-02-03,Washington,WA,West,3,1,701.79,158.21
+2025-02-03,Washington,WA,West,3,1,793.5,-56.73
+2025-02-04,California,CA,West,5,1,835.38,-48.24
+2025-02-04,Colorado,CO,West,5,3,665.66,-0.5
+2025-02-04,Georgia,GA,South,7,8,225.14,49.97
+2025-02-04,Maryland,MD,South,5,9,209.85,-3.29
+2025-02-05,Arkansas,AR,South,6,5,460.4,92.32
+2025-02-05,California,CA,West,5,1,345.85,-28.78
+2025-02-05,Pennsylvania,PA,Northeast,4,8,662.99,17.88
+2025-02-05,Texas,TX,South,8,4,766.59,257.42
+2025-02-06,Florida,FL,South,8,9,513.13,116.21
+2025-02-06,Tennessee,TN,South,6,6,449.59,54.73
+2025-02-06,Wisconsin,WI,Midwest,3,7,387.94,-42.16
+2025-02-07,Idaho,ID,West,3,2,31.19,-0.97
+2025-02-07,Illinois,IL,Midwest,3,6,694.24,208.07
+2025-02-07,Ohio,OH,Midwest,4,7,450.55,-17.03
+2025-02-07,Ohio,OH,Midwest,4,7,788.54,-63.1
+2025-02-08,Minnesota,MN,Midwest,3,5,509.99,83.45
+2025-02-08,Wyoming,WY,West,4,3,41.47,-4.56
+2025-02-09,Georgia,GA,South,7,8,208.55,3.84
+2025-02-09,Texas,TX,South,8,4,129.95,13.79
+2025-02-09,Virginia,VA,South,5,8,398.92,9.13
+2025-02-10,Florida,FL,South,8,9,27.99,6.65
+2025-02-10,Indiana,IN,Midwest,4,6,269.83,-35.19
+2025-02-10,Montana,MT,West,3,3,830.58,279.99
+2025-02-11,New Jersey,NJ,Northeast,4,9,450.9,122.15
+2025-02-11,Wyoming,WY,West,4,3,736.8,-4.13
+2025-02-12,Georgia,GA,South,7,8,525.01,142.27
+2025-02-12,Illinois,IL,Midwest,3,6,632.52,190.31
+2025-02-12,New York,NY,Northeast,3,9,716.23,125.88
+2025-02-12,Oklahoma,OK,South,7,4,752.3,210.39
+2025-02-13,California,CA,West,5,1,610.85,-5.55
+2025-02-13,Colorado,CO,West,5,3,368.32,58.93
+2025-02-13,Florida,FL,South,8,9,758.01,255.86
+2025-02-13,Indiana,IN,Midwest,4,6,554.82,46.56
+2025-02-13,Kansas,KS,Midwest,6,4,506.51,-63.6
+2025-02-13,New York,NY,Northeast,3,9,597.69,35.71
+2025-02-13,Ohio,OH,Midwest,4,7,619.0,30.49
+2025-02-13,Virginia,VA,South,5,8,518.47,-60.48
+2025-02-14,Arizona,AZ,West,6,2,811.6,78.92
+2025-02-14,Florida,FL,South,8,9,449.73,58.72
+2025-02-14,Georgia,GA,South,7,8,863.09,214.71
+2025-02-14,Indiana,IN,Midwest,4,6,673.6,-65.46
+2025-02-14,Kansas,KS,Midwest,6,4,631.23,-70.84
+2025-02-14,Michigan,MI,Midwest,3,8,749.28,215.47
+2025-02-15,Texas,TX,South,8,4,819.98,-74.73
+2025-02-16,Florida,FL,South,8,9,777.05,-75.04
+2025-02-16,Illinois,IL,Midwest,3,6,100.31,-1.64
+2025-02-16,Kansas,KS,Midwest,6,4,386.55,-37.14
+2025-02-16,Maine,ME,Northeast,1,11,173.24,35.49
+2025-02-17,Florida,FL,South,8,9,813.77,201.72
+2025-02-17,West Virginia,WV,South,5,7,272.6,85.84
+2025-02-17,Wisconsin,WI,Midwest,3,7,433.16,135.22
+2025-02-18,Alaska,AK,West,1,1,176.12,57.14
+2025-02-18,Hawaii,HI,West,8,1,803.2,227.57
+2025-02-18,Texas,TX,South,8,4,715.82,-57.15
+2025-02-19,Indiana,IN,Midwest,4,6,440.02,92.91
+2025-02-19,New York,NY,Northeast,3,9,468.02,143.56
+2025-02-19,North Carolina,NC,South,6,7,130.08,26.76
+2025-02-19,Tennessee,TN,South,6,6,745.76,190.89
+2025-02-20,Arizona,AZ,West,6,2,185.83,-3.22
+2025-02-20,Florida,FL,South,8,9,799.22,-113.21
+2025-02-20,Pennsylvania,PA,Northeast,4,8,261.38,2.67
+2025-02-20,Vermont,VT,Northeast,2,10,367.04,38.73
+2025-02-21,Arizona,AZ,West,6,2,777.25,-39.02
+2025-02-21,Oklahoma,OK,South,7,4,59.25,3.83
+2025-02-22,California,CA,West,5,1,744.75,196.79
+2025-02-22,Iowa,IA,Midwest,4,5,336.84,66.76
+2025-02-22,Maryland,MD,South,5,9,506.48,18.74
+2025-02-23,District of Columbia,DC,South,6,9,396.56,-6.42
+2025-02-23,Georgia,GA,South,7,8,829.03,218.79
+2025-02-23,New Hampshire,NH,Northeast,2,11,767.71,-47.3
+2025-02-23,Ohio,OH,Midwest,4,7,525.57,30.16
+2025-02-23,Pennsylvania,PA,Northeast,4,8,618.11,212.93
+2025-02-24,California,CA,West,5,1,569.85,73.23
+2025-02-24,California,CA,West,5,1,591.49,157.13
+2025-02-24,Connecticut,CT,Northeast,4,10,887.81,234.43
+2025-02-24,Illinois,IL,Midwest,3,6,110.15,4.77
+2025-02-24,Illinois,IL,Midwest,3,6,673.34,126.4
+2025-02-24,Washington,WA,West,3,1,802.66,-57.73
+2025-02-25,California,CA,West,5,1,316.11,7.5
+2025-02-25,Georgia,GA,South,7,8,758.23,51.82
+2025-02-25,Michigan,MI,Midwest,3,8,66.87,3.38
+2025-02-25,New York,NY,Northeast,3,9,810.44,11.8
+2025-02-25,Pennsylvania,PA,Northeast,4,8,751.11,93.47
+2025-02-26,Florida,FL,South,8,9,403.83,-1.07
+2025-02-26,Missouri,MO,Midwest,5,5,114.31,39.71
+2025-02-26,Oregon,OR,West,4,1,617.36,-60.83
+2025-02-28,Florida,FL,South,8,9,301.9,2.2
+2025-02-28,Montana,MT,West,3,3,184.6,-8.82
+2025-02-28,Pennsylvania,PA,Northeast,4,8,118.41,33.53
+2025-02-28,Virginia,VA,South,5,8,565.21,84.54
+2025-02-28,Wisconsin,WI,Midwest,3,7,813.49,110.55
+2025-03-01,Florida,FL,South,8,9,422.61,116.34
+2025-03-01,Texas,TX,South,8,4,485.57,-9.17
+2025-03-02,Indiana,IN,Midwest,4,6,491.57,23.39
+2025-03-02,Indiana,IN,Midwest,4,6,759.88,222.68
+2025-03-02,Ohio,OH,Midwest,4,7,834.36,-23.65
+2025-03-03,California,CA,West,5,1,25.25,6.13
+2025-03-03,Georgia,GA,South,7,8,816.81,203.3
+2025-03-03,Hawaii,HI,West,8,1,789.23,159.9
+2025-03-03,Massachusetts,MA,Northeast,3,11,619.25,140.25
+2025-03-03,Michigan,MI,Midwest,3,8,475.25,83.26
+2025-03-03,New York,NY,Northeast,3,9,534.24,7.58
+2025-03-03,North Carolina,NC,South,6,7,873.75,174.5
+2025-03-03,Ohio,OH,Midwest,4,7,564.6,-59.88
+2025-03-03,Wisconsin,WI,Midwest,3,7,805.68,177.47
+2025-03-04,Arizona,AZ,West,6,2,702.97,-37.8
+2025-03-04,Rhode Island,RI,Northeast,3,10,409.72,106.62
+2025-03-04,Virginia,VA,South,5,8,764.39,98.17
+2025-03-05,Arkansas,AR,South,6,5,788.83,-61.45
+2025-03-05,California,CA,West,5,1,26.52,-0.54
+2025-03-05,Maine,ME,Northeast,1,11,395.95,-11.67
+2025-03-05,Utah,UT,West,5,2,489.3,-14.66
+2025-03-05,Virginia,VA,South,5,8,836.37,-40.3
+2025-03-06,California,CA,West,5,1,156.53,52.47
+2025-03-06,Illinois,IL,Midwest,3,6,840.97,-53.06
+2025-03-06,Louisiana,LA,South,7,5,857.56,249.74
+2025-03-06,Missouri,MO,Midwest,5,5,799.8,-116.66
+2025-03-06,Texas,TX,South,8,4,156.02,38.5
+2025-03-07,Florida,FL,South,8,9,560.17,-4.64
+2025-03-07,Maryland,MD,South,5,9,751.05,110.06
+2025-03-07,New York,NY,Northeast,3,9,142.49,4.17
+2025-03-07,Texas,TX,South,8,4,48.29,-0.43
+2025-03-08,California,CA,West,5,1,23.5,-0.39
+2025-03-08,New Jersey,NJ,Northeast,4,9,189.61,13.08
+2025-03-08,North Carolina,NC,South,6,7,87.42,20.85
+2025-03-08,Ohio,OH,Midwest,4,7,651.46,223.45
+2025-03-09,Arkansas,AR,South,6,5,73.93,19.3
+2025-03-09,California,CA,West,5,1,293.74,17.92
+2025-03-09,California,CA,West,5,1,369.07,86.13
+2025-03-09,California,CA,West,5,1,587.33,-6.04
+2025-03-09,California,CA,West,5,1,684.65,114.89
+2025-03-09,Delaware,DE,South,5,10,542.84,11.78
+2025-03-09,Indiana,IN,Midwest,4,6,139.37,-14.02
+2025-03-09,Washington,WA,West,3,1,428.18,51.47
+2025-03-10,Rhode Island,RI,Northeast,3,10,263.4,3.25
+2025-03-11,Ohio,OH,Midwest,4,7,541.43,171.96
+2025-03-11,Wisconsin,WI,Midwest,3,7,76.58,-6.31
+2025-03-11,Wisconsin,WI,Midwest,3,7,234.78,-9.01
+2025-03-12,Texas,TX,South,8,4,589.21,-78.97
+2025-03-12,Texas,TX,South,8,4,723.95,53.68
+2025-03-13,Minnesota,MN,Midwest,3,5,642.17,76.58
+2025-03-13,New Jersey,NJ,Northeast,4,9,442.36,-28.1
+2025-03-13,Oregon,OR,West,4,1,584.92,15.09
+2025-03-13,Pennsylvania,PA,Northeast,4,8,65.21,3.65
+2025-03-13,South Dakota,SD,Midwest,4,4,188.17,48.42
+2025-03-13,Tennessee,TN,South,6,6,528.92,-9.12
+2025-03-13,Texas,TX,South,8,4,378.87,-41.45
+2025-03-14,Illinois,IL,Midwest,3,6,484.28,146.11
+2025-03-15,California,CA,West,5,1,271.28,-9.06
+2025-03-15,California,CA,West,5,1,599.26,196.48
+2025-03-16,California,CA,West,5,1,199.52,-9.47
+2025-03-16,Iowa,IA,Midwest,4,5,530.01,-39.75
+2025-03-17,Virginia,VA,South,5,8,792.94,214.46
+2025-03-18,California,CA,West,5,1,108.09,-11.87
+2025-03-18,Maryland,MD,South,5,9,874.75,-26.57
+2025-03-18,New Jersey,NJ,Northeast,4,9,496.52,-18.77
+2025-03-18,New York,NY,Northeast,3,9,526.44,142.43
+2025-03-18,Rhode Island,RI,Northeast,3,10,196.72,29.47
+2025-03-18,Washington,WA,West,3,1,329.06,100.64
+2025-03-19,Arkansas,AR,South,6,5,374.24,41.56
+2025-03-19,Michigan,MI,Midwest,3,8,75.05,-10.5
+2025-03-19,Missouri,MO,Midwest,5,5,658.92,189.63
+2025-03-19,Texas,TX,South,8,4,846.4,50.96
+2025-03-20,California,CA,West,5,1,570.2,-20.29
+2025-03-20,Maryland,MD,South,5,9,656.38,-88.04
+2025-03-20,Massachusetts,MA,Northeast,3,11,817.13,65.13
+2025-03-20,Pennsylvania,PA,Northeast,4,8,389.83,52.85
+2025-03-21,Iowa,IA,Midwest,4,5,555.98,75.55
+2025-03-21,Pennsylvania,PA,Northeast,4,8,80.24,12.05
+2025-03-21,Texas,TX,South,8,4,828.77,88.35
+2025-03-22,Alaska,AK,West,1,1,323.97,43.01
+2025-03-22,California,CA,West,5,1,646.71,20.44
+2025-03-22,Massachusetts,MA,Northeast,3,11,76.71,0.37
+2025-03-22,Michigan,MI,Midwest,3,8,69.94,16.98
+2025-03-22,New York,NY,Northeast,3,9,395.06,-33.22
+2025-03-22,Texas,TX,South,8,4,25.24,-1.55
+2025-03-22,Texas,TX,South,8,4,439.55,138.4
+2025-03-22,Virginia,VA,South,5,8,78.21,7.86
+2025-03-23,Colorado,CO,West,5,3,129.03,42.55
+2025-03-23,Connecticut,CT,Northeast,4,10,771.45,73.58
+2025-03-23,Georgia,GA,South,7,8,293.84,73.22
+2025-03-23,New Jersey,NJ,Northeast,4,9,591.42,-82.99
+2025-03-23,Wyoming,WY,West,4,3,67.11,9.12
+2025-03-24,California,CA,West,5,1,226.23,73.37
+2025-03-24,Idaho,ID,West,3,2,62.74,-0.44
+2025-03-24,New Mexico,NM,West,6,3,147.22,9.94
+2025-03-24,Pennsylvania,PA,Northeast,4,8,281.43,5.85
+2025-03-24,South Dakota,SD,Midwest,4,4,217.88,53.89
+2025-03-25,California,CA,West,5,1,511.45,21.01
+2025-03-25,Delaware,DE,South,5,10,834.41,-26.54
+2025-03-25,Florida,FL,South,8,9,760.74,-77.3
+2025-03-25,Idaho,ID,West,3,2,693.28,137.51
+2025-03-25,Louisiana,LA,South,7,5,116.62,9.2
+2025-03-25,Michigan,MI,Midwest,3,8,506.78,-36.82
+2025-03-25,New York,NY,Northeast,3,9,551.97,-23.67
+2025-03-25,Pennsylvania,PA,Northeast,4,8,207.41,55.1
+2025-03-25,Virginia,VA,South,5,8,803.8,242.48
+2025-03-26,New Jersey,NJ,Northeast,4,9,65.66,11.53
+2025-03-26,New York,NY,Northeast,3,9,392.12,108.63
+2025-03-27,Georgia,GA,South,7,8,770.43,-33.81
+2025-03-27,Hawaii,HI,West,8,1,338.26,-43.59
+2025-03-27,Texas,TX,South,8,4,208.86,29.14
+2025-03-27,Washington,WA,West,3,1,873.27,264.01
+2025-03-28,Colorado,CO,West,5,3,275.15,40.48
+2025-03-28,Minnesota,MN,Midwest,3,5,870.46,-112.95
+2025-03-28,Ohio,OH,Midwest,4,7,303.24,-11.59
+2025-03-28,Ohio,OH,Midwest,4,7,774.16,-40.15
+2025-03-29,New York,NY,Northeast,3,9,707.94,-81.92
+2025-03-30,Alabama,AL,South,7,7,229.13,77.85
+2025-03-30,California,CA,West,5,1,567.68,-48.3
+2025-03-30,Kansas,KS,Midwest,6,4,21.77,7.25
+2025-03-31,California,CA,West,5,1,261.27,53.27
+2025-03-31,Idaho,ID,West,3,2,505.4,-54.72
+2025-03-31,Mississippi,MS,South,7,6,62.09,21.5
+2025-03-31,New York,NY,Northeast,3,9,814.96,251.7
+2025-04-01,California,CA,West,5,1,723.56,47.03
+2025-04-01,Georgia,GA,South,7,8,831.64,228.51
+2025-04-02,California,CA,West,5,1,189.38,63.15
+2025-04-02,California,CA,West,5,1,657.37,48.25
+2025-04-02,California,CA,West,5,1,677.63,209.87
+2025-04-02,Washington,WA,West,3,1,173.7,21.9
+2025-04-03,Florida,FL,South,8,9,551.73,148.66
+2025-04-03,Minnesota,MN,Midwest,3,5,424.06,-45.11
+2025-04-03,Texas,TX,South,8,4,852.45,258.16
+2025-04-03,Wisconsin,WI,Midwest,3,7,682.46,-89.53
+2025-04-04,California,CA,West,5,1,67.33,17.81
+2025-04-04,California,CA,West,5,1,248.36,36.12
+2025-04-04,Florida,FL,South,8,9,26.41,0.23
+2025-04-04,Florida,FL,South,8,9,184.46,36.9
+2025-04-04,Louisiana,LA,South,7,5,722.78,232.61
+2025-04-04,Minnesota,MN,Midwest,3,5,550.87,128.53
+2025-04-04,Texas,TX,South,8,4,126.91,13.26
+2025-04-04,Texas,TX,South,8,4,143.26,5.33
+2025-04-04,Texas,TX,South,8,4,524.04,119.53
+2025-04-05,Georgia,GA,South,7,8,672.69,-49.71
+2025-04-05,New Jersey,NJ,Northeast,4,9,631.1,42.16
+2025-04-05,Texas,TX,South,8,4,630.57,-72.62
+2025-04-05,Virginia,VA,South,5,8,820.16,182.38
+2025-04-05,Washington,WA,West,3,1,312.24,-28.63
+2025-04-05,Wisconsin,WI,Midwest,3,7,711.76,77.34
+2025-04-06,California,CA,West,5,1,125.49,-14.43
+2025-04-06,California,CA,West,5,1,152.7,39.53
+2025-04-06,Delaware,DE,South,5,10,664.13,-3.39
+2025-04-06,Kentucky,KY,South,5,6,571.54,114.59
+2025-04-06,Minnesota,MN,Midwest,3,5,378.91,-17.66
+2025-04-06,Tennessee,TN,South,6,6,291.07,-6.27
+2025-04-06,Wisconsin,WI,Midwest,3,7,233.37,45.4
+2025-04-07,New Hampshire,NH,Northeast,2,11,828.63,91.59
+2025-04-07,Virginia,VA,South,5,8,443.45,29.63
+2025-04-08,Arizona,AZ,West,6,2,60.93,8.03
+2025-04-08,Arizona,AZ,West,6,2,635.07,92.26
+2025-04-08,Arkansas,AR,South,6,5,578.94,-18.93
+2025-04-08,California,CA,West,5,1,66.62,8.51
+2025-04-08,California,CA,West,5,1,745.93,129.55
+2025-04-08,Florida,FL,South,8,9,432.21,12.3
+2025-04-08,Maine,ME,Northeast,1,11,806.58,215.65
+2025-04-08,Maryland,MD,South,5,9,792.95,55.45
+2025-04-08,New Jersey,NJ,Northeast,4,9,670.55,194.72
+2025-04-08,North Carolina,NC,South,6,7,651.91,145.37
+2025-04-09,Alabama,AL,South,7,7,262.53,69.96
+2025-04-09,Hawaii,HI,West,8,1,467.62,-0.49
+2025-04-09,Illinois,IL,Midwest,3,6,613.08,13.49
+2025-04-09,Minnesota,MN,Midwest,3,5,467.79,-9.46
+2025-04-09,New York,NY,Northeast,3,9,396.47,85.84
+2025-04-10,Colorado,CO,West,5,3,844.49,194.34
+2025-04-10,Massachusetts,MA,Northeast,3,11,150.09,-17.82
+2025-04-10,New York,NY,Northeast,3,9,740.34,-99.64
+2025-04-11,Connecticut,CT,Northeast,4,10,446.05,-6.67
+2025-04-11,Idaho,ID,West,3,2,662.99,26.69
+2025-04-11,Iowa,IA,Midwest,4,5,629.29,207.56
+2025-04-11,Missouri,MO,Midwest,5,5,561.21,87.67
+2025-04-11,New York,NY,Northeast,3,9,570.69,24.58
+2025-04-11,Texas,TX,South,8,4,134.14,27.4
+2025-04-11,Texas,TX,South,8,4,533.56,-0.2
+2025-04-11,Washington,WA,West,3,1,290.07,36.47
+2025-04-12,California,CA,West,5,1,137.78,25.49
+2025-04-12,Florida,FL,South,8,9,892.06,54.57
+2025-04-12,Illinois,IL,Midwest,3,6,711.15,52.56
+2025-04-12,New Jersey,NJ,Northeast,4,9,485.18,-22.76
+2025-04-12,New York,NY,Northeast,3,9,667.88,116.38
+2025-04-13,Minnesota,MN,Midwest,3,5,565.72,48.36
+2025-04-13,Missouri,MO,Midwest,5,5,637.52,179.65
+2025-04-13,New Hampshire,NH,Northeast,2,11,430.22,-38.7
+2025-04-13,North Carolina,NC,South,6,7,213.05,21.26
+2025-04-14,New Jersey,NJ,Northeast,4,9,602.86,-81.69
+2025-04-15,Alaska,AK,West,1,1,238.26,53.46
+2025-04-15,Arizona,AZ,West,6,2,467.91,-21.41
+2025-04-15,Texas,TX,South,8,4,567.08,198.4
+2025-04-15,Texas,TX,South,8,4,876.13,-129.73
+2025-04-16,Florida,FL,South,8,9,568.49,3.47
+2025-04-16,Maryland,MD,South,5,9,76.79,22.16
+2025-04-16,Oklahoma,OK,South,7,4,636.95,45.24
+2025-04-17,Alabama,AL,South,7,7,897.5,189.91
+2025-04-17,California,CA,West,5,1,876.77,-2.58
+2025-04-17,Georgia,GA,South,7,8,67.74,22.05
+2025-04-17,Idaho,ID,West,3,2,111.15,-11.77
+2025-04-17,Illinois,IL,Midwest,3,6,774.39,7.37
+2025-04-17,Ohio,OH,Midwest,4,7,496.3,-58.08
+2025-04-17,Oklahoma,OK,South,7,4,334.39,-42.59
+2025-04-18,New York,NY,Northeast,3,9,29.48,9.87
+2025-04-18,Texas,TX,South,8,4,696.91,49.2
+2025-04-19,Illinois,IL,Midwest,3,6,856.01,-87.49
+2025-04-19,New York,NY,Northeast,3,9,505.5,144.42
+2025-04-19,Ohio,OH,Midwest,4,7,786.3,97.11
+2025-04-20,Hawaii,HI,West,8,1,317.33,98.78
+2025-04-20,Oklahoma,OK,South,7,4,55.42,-7.02
+2025-04-20,West Virginia,WV,South,5,7,198.35,36.97
+2025-04-21,California,CA,West,5,1,768.22,-37.23
+2025-04-21,Ohio,OH,Midwest,4,7,821.83,132.75
+2025-04-22,Arkansas,AR,South,6,5,493.4,-20.66
+2025-04-22,Arkansas,AR,South,6,5,630.58,41.25
+2025-04-22,Michigan,MI,Midwest,3,8,606.93,-35.12
+2025-04-22,Missouri,MO,Midwest,5,5,325.59,-44.06
+2025-04-22,Pennsylvania,PA,Northeast,4,8,827.82,-7.22
+2025-04-22,Wisconsin,WI,Midwest,3,7,123.22,23.27
+2025-04-23,Michigan,MI,Midwest,3,8,286.34,83.82
+2025-04-23,Pennsylvania,PA,Northeast,4,8,418.11,-43.48
+2025-04-23,Texas,TX,South,8,4,412.16,-6.94
+2025-04-24,Colorado,CO,West,5,3,687.3,-48.83
+2025-04-24,Montana,MT,West,3,3,813.59,-84.97
+2025-04-24,South Dakota,SD,Midwest,4,4,714.73,178.06
+2025-04-25,California,CA,West,5,1,342.36,-36.79
+2025-04-25,California,CA,West,5,1,808.57,247.1
+2025-04-25,Kansas,KS,Midwest,6,4,737.59,231.88
+2025-04-25,Michigan,MI,Midwest,3,8,473.51,124.51
+2025-04-25,Wyoming,WY,West,4,3,820.06,-89.91
+2025-04-26,Alabama,AL,South,7,7,449.85,93.65
+2025-04-26,Georgia,GA,South,7,8,124.31,4.18
+2025-04-26,Hawaii,HI,West,8,1,311.55,90.6
+2025-04-26,Massachusetts,MA,Northeast,3,11,639.25,84.98
+2025-04-26,New York,NY,Northeast,3,9,796.07,276.61
+2025-04-26,North Carolina,NC,South,6,7,245.76,51.79
+2025-04-26,South Carolina,SC,South,6,8,309.08,29.81
+2025-04-27,Arizona,AZ,West,6,2,121.04,7.68
+2025-04-27,California,CA,West,5,1,301.08,62.56
+2025-04-27,Florida,FL,South,8,9,679.92,234.7
+2025-04-27,Texas,TX,South,8,4,339.08,118.19
+2025-04-27,Virginia,VA,South,5,8,861.63,238.58
+2025-04-27,Wyoming,WY,West,4,3,259.73,-15.24
+2025-04-28,California,CA,West,5,1,265.83,9.2
+2025-04-28,California,CA,West,5,1,384.66,88.95
+2025-04-28,California,CA,West,5,1,619.46,204.06
+2025-04-28,Florida,FL,South,8,9,205.97,4.24
+2025-04-28,Illinois,IL,Midwest,3,6,570.45,144.52
+2025-04-28,Maryland,MD,South,5,9,868.4,254.64
+2025-04-28,South Dakota,SD,Midwest,4,4,698.4,-6.88
+2025-04-28,Virginia,VA,South,5,8,198.31,-4.21
+2025-04-29,Arizona,AZ,West,6,2,461.99,89.35
+2025-04-29,District of Columbia,DC,South,6,9,357.0,44.16
+2025-04-30,Colorado,CO,West,5,3,49.04,6.53
+2025-04-30,Colorado,CO,West,5,3,746.35,205.42
+2025-04-30,Indiana,IN,Midwest,4,6,686.89,45.32
+2025-04-30,Indiana,IN,Midwest,4,6,693.72,151.94
+2025-04-30,Maine,ME,Northeast,1,11,186.84,18.31
+2025-04-30,Massachusetts,MA,Northeast,3,11,119.78,3.73
+2025-04-30,Missouri,MO,Midwest,5,5,219.22,-13.07
+2025-04-30,Ohio,OH,Midwest,4,7,317.69,32.2
+2025-04-30,Pennsylvania,PA,Northeast,4,8,795.64,-67.45
+2025-05-01,Hawaii,HI,West,8,1,318.05,-12.4
+2025-05-01,Maryland,MD,South,5,9,350.94,89.4
+2025-05-01,Virginia,VA,South,5,8,231.1,70.69
+2025-05-02,Indiana,IN,Midwest,4,6,751.48,201.04
+2025-05-02,North Carolina,NC,South,6,7,107.74,24.94
+2025-05-02,Texas,TX,South,8,4,517.44,27.53
+2025-05-03,Iowa,IA,Midwest,4,5,124.17,-5.77
+2025-05-03,Nevada,NV,West,4,2,891.45,-69.09
+2025-05-03,New York,NY,Northeast,3,9,651.04,-46.21
+2025-05-03,Tennessee,TN,South,6,6,528.32,46.44
+2025-05-03,Texas,TX,South,8,4,310.89,16.43
+2025-05-03,Texas,TX,South,8,4,832.59,-41.63
+2025-05-03,Washington,WA,West,3,1,714.58,-102.95
+2025-05-04,California,CA,West,5,1,446.08,113.35
+2025-05-04,Florida,FL,South,8,9,340.17,44.31
+2025-05-04,Georgia,GA,South,7,8,81.35,5.7
+2025-05-04,Michigan,MI,Midwest,3,8,752.64,207.02
+2025-05-04,South Carolina,SC,South,6,8,502.19,66.46
+2025-05-04,Tennessee,TN,South,6,6,113.99,15.68
+2025-05-04,Texas,TX,South,8,4,553.05,-11.35
+2025-05-04,Texas,TX,South,8,4,810.69,-30.76
+2025-05-05,Massachusetts,MA,Northeast,3,11,171.38,-21.63
+2025-05-06,Arizona,AZ,West,6,2,125.44,40.9
+2025-05-06,Florida,FL,South,8,9,490.03,122.63
+2025-05-06,Maine,ME,Northeast,1,11,375.82,-47.85
+2025-05-06,Oklahoma,OK,South,7,4,120.57,-5.43
+2025-05-07,Idaho,ID,West,3,2,515.37,112.74
+2025-05-07,Massachusetts,MA,Northeast,3,11,494.98,19.79
+2025-05-07,Texas,TX,South,8,4,304.96,14.14
+2025-05-07,Wisconsin,WI,Midwest,3,7,419.56,64.03
+2025-05-08,California,CA,West,5,1,500.99,-72.24
+2025-05-08,Pennsylvania,PA,Northeast,4,8,310.3,16.71
+2025-05-08,Pennsylvania,PA,Northeast,4,8,772.98,143.1
+2025-05-09,Arizona,AZ,West,6,2,208.38,33.56
+2025-05-09,Colorado,CO,West,5,3,289.15,47.06
+2025-05-09,Florida,FL,South,8,9,537.51,104.19
+2025-05-09,Maryland,MD,South,5,9,795.71,104.3
+2025-05-09,New York,NY,Northeast,3,9,340.18,-46.26
+2025-05-10,Arizona,AZ,West,6,2,858.34,30.25
+2025-05-10,Michigan,MI,Midwest,3,8,30.12,6.71
+2025-05-10,Michigan,MI,Midwest,3,8,275.73,-24.64
+2025-05-10,North Carolina,NC,South,6,7,680.73,2.39
+2025-05-10,Virginia,VA,South,5,8,289.34,49.18
+2025-05-11,California,CA,West,5,1,316.15,27.04
+2025-05-11,Illinois,IL,Midwest,3,6,47.07,-0.99
+2025-05-11,Massachusetts,MA,Northeast,3,11,528.06,-44.96
+2025-05-11,Nebraska,NE,Midwest,5,4,462.9,156.99
+2025-05-11,New York,NY,Northeast,3,9,133.51,3.77
+2025-05-11,Texas,TX,South,8,4,307.94,3.64
+2025-05-12,Oklahoma,OK,South,7,4,853.0,147.33
+2025-05-12,Virginia,VA,South,5,8,329.84,32.75
+2025-05-13,Florida,FL,South,8,9,780.58,144.22
+2025-05-13,New Hampshire,NH,Northeast,2,11,286.33,57.06
+2025-05-13,New Jersey,NJ,Northeast,4,9,216.48,57.35
+2025-05-13,North Carolina,NC,South,6,7,499.48,-8.12
+2025-05-13,Tennessee,TN,South,6,6,650.51,108.36
+2025-05-14,Alabama,AL,South,7,7,697.53,183.31
+2025-05-14,Illinois,IL,Midwest,3,6,235.06,53.25
+2025-05-14,Illinois,IL,Midwest,3,6,770.3,266.27
+2025-05-14,New York,NY,Northeast,3,9,291.22,18.85
+2025-05-15,Florida,FL,South,8,9,434.04,86.79
+2025-05-15,New York,NY,Northeast,3,9,864.47,37.01
+2025-05-15,North Dakota,ND,Midwest,3,4,544.96,150.86
+2025-05-15,Texas,TX,South,8,4,347.69,28.14
+2025-05-15,Washington,WA,West,3,1,508.72,5.94
+2025-05-15,Washington,WA,West,3,1,745.4,184.4
+2025-05-16,California,CA,West,5,1,844.39,-55.81
+2025-05-16,California,CA,West,5,1,851.03,130.16
+2025-05-16,Louisiana,LA,South,7,5,178.08,6.04
+2025-05-16,Michigan,MI,Midwest,3,8,66.57,7.59
+2025-05-16,Michigan,MI,Midwest,3,8,329.5,67.08
+2025-05-16,New Jersey,NJ,Northeast,4,9,849.4,30.34
+2025-05-17,Alabama,AL,South,7,7,157.95,31.16
+2025-05-17,California,CA,West,5,1,835.81,228.52
+2025-05-17,New Jersey,NJ,Northeast,4,9,260.48,80.35
+2025-05-17,North Dakota,ND,Midwest,3,4,707.94,-63.16
+2025-05-17,Pennsylvania,PA,Northeast,4,8,353.74,104.36
+2025-05-17,South Dakota,SD,Midwest,4,4,877.83,-69.58
+2025-05-18,New York,NY,Northeast,3,9,551.46,100.02
+2025-05-18,Pennsylvania,PA,Northeast,4,8,86.47,-8.25
+2025-05-19,California,CA,West,5,1,41.99,-1.17
+2025-05-19,Delaware,DE,South,5,10,314.08,89.67
+2025-05-19,Florida,FL,South,8,9,333.93,-5.95
+2025-05-19,Michigan,MI,Midwest,3,8,138.1,7.41
+2025-05-19,New Hampshire,NH,Northeast,2,11,641.62,74.29
+2025-05-19,Texas,TX,South,8,4,26.43,-2.57
+2025-05-20,Florida,FL,South,8,9,640.72,-29.24
+2025-05-20,Tennessee,TN,South,6,6,722.76,170.62
+2025-05-20,West Virginia,WV,South,5,7,606.28,-71.45
+2025-05-21,Hawaii,HI,West,8,1,483.85,-26.32
+2025-05-21,Minnesota,MN,Midwest,3,5,712.64,73.64
+2025-05-21,New York,NY,Northeast,3,9,28.02,6.84
+2025-05-21,New York,NY,Northeast,3,9,183.89,61.96
+2025-05-21,North Dakota,ND,Midwest,3,4,501.42,92.32
+2025-05-21,Oklahoma,OK,South,7,4,388.07,-49.64
+2025-05-21,Oklahoma,OK,South,7,4,887.83,-91.1
+2025-05-22,Pennsylvania,PA,Northeast,4,8,831.98,9.48
+2025-05-22,South Carolina,SC,South,6,8,809.42,267.54
+2025-05-22,Washington,WA,West,3,1,701.69,137.79
+2025-05-23,Delaware,DE,South,5,10,191.4,13.71
+2025-05-23,Florida,FL,South,8,9,899.96,103.06
+2025-05-23,Missouri,MO,Midwest,5,5,26.17,-2.42
+2025-05-24,Colorado,CO,West,5,3,441.5,-37.07
+2025-05-24,New Mexico,NM,West,6,3,58.6,10.26
+2025-05-25,California,CA,West,5,1,106.18,-10.88
+2025-05-25,California,CA,West,5,1,690.51,51.22
+2025-05-25,Hawaii,HI,West,8,1,831.71,17.68
+2025-05-25,Mississippi,MS,South,7,6,45.8,-0.19
+2025-05-25,Pennsylvania,PA,Northeast,4,8,759.08,-41.58
+2025-05-26,Georgia,GA,South,7,8,878.4,83.77
+2025-05-26,Hawaii,HI,West,8,1,42.85,4.45
+2025-05-26,North Carolina,NC,South,6,7,208.67,34.3
+2025-05-26,North Carolina,NC,South,6,7,830.17,-124.42
+2025-05-26,Pennsylvania,PA,Northeast,4,8,723.37,59.01
+2025-05-26,Washington,WA,West,3,1,175.2,-4.24
+2025-05-27,California,CA,West,5,1,296.47,34.25
+2025-05-27,California,CA,West,5,1,514.88,-75.41
+2025-05-27,Iowa,IA,Midwest,4,5,271.72,92.63
+2025-05-27,Missouri,MO,Midwest,5,5,48.91,-2.06
+2025-05-28,Connecticut,CT,Northeast,4,10,670.15,141.7
+2025-05-28,Delaware,DE,South,5,10,697.15,-86.35
+2025-05-28,North Carolina,NC,South,6,7,392.4,17.31
+2025-05-28,Tennessee,TN,South,6,6,777.03,259.62
+2025-05-28,Texas,TX,South,8,4,397.31,21.39
+2025-05-29,Delaware,DE,South,5,10,377.2,89.64
+2025-05-29,North Carolina,NC,South,6,7,836.11,-112.27
+2025-05-29,Ohio,OH,Midwest,4,7,247.66,63.28
+2025-05-30,Connecticut,CT,Northeast,4,10,129.25,31.13
+2025-05-30,Florida,FL,South,8,9,788.23,14.3
+2025-05-30,Kansas,KS,Midwest,6,4,102.13,12.93
+2025-05-30,Texas,TX,South,8,4,258.77,-30.95
+2025-05-30,Texas,TX,South,8,4,874.33,-71.69
+2025-05-31,Georgia,GA,South,7,8,104.64,29.47
+2025-05-31,Illinois,IL,Midwest,3,6,332.38,94.01
+2025-05-31,New Mexico,NM,West,6,3,427.16,50.67
+2025-05-31,Oklahoma,OK,South,7,4,534.2,-2.13
+2025-05-31,Pennsylvania,PA,Northeast,4,8,292.36,57.12
+2025-06-01,Iowa,IA,Midwest,4,5,640.2,27.02
+2025-06-01,Maryland,MD,South,5,9,326.11,6.64
+2025-06-01,Missouri,MO,Midwest,5,5,75.79,21.61
+2025-06-01,Missouri,MO,Midwest,5,5,372.69,74.78
+2025-06-01,Tennessee,TN,South,6,6,831.42,50.51
+2025-06-01,Utah,UT,West,5,2,435.01,-31.29
+2025-06-02,Massachusetts,MA,Northeast,3,11,507.97,79.15
+2025-06-02,Virginia,VA,South,5,8,761.68,13.53
+2025-06-03,New York,NY,Northeast,3,9,826.59,30.55
+2025-06-03,North Carolina,NC,South,6,7,494.57,130.7
+2025-06-03,Texas,TX,South,8,4,748.77,197.04
+2025-06-03,Virginia,VA,South,5,8,317.0,-14.64
+2025-06-04,California,CA,West,5,1,681.86,-98.07
+2025-06-04,Florida,FL,South,8,9,525.78,-77.0
+2025-06-04,New Hampshire,NH,Northeast,2,11,413.59,131.3
+2025-06-04,New Jersey,NJ,Northeast,4,9,221.95,-10.65
+2025-06-04,New York,NY,Northeast,3,9,834.26,290.66
+2025-06-04,Washington,WA,West,3,1,31.61,10.68
+2025-06-05,District of Columbia,DC,South,6,9,298.39,38.72
+2025-06-05,Idaho,ID,West,3,2,314.79,60.37
+2025-06-05,Kansas,KS,Midwest,6,4,805.38,109.25
+2025-06-05,Maine,ME,Northeast,1,11,189.32,47.5
+2025-06-05,Nevada,NV,West,4,2,114.1,9.47
+2025-06-05,New York,NY,Northeast,3,9,385.18,57.72
+2025-06-05,New York,NY,Northeast,3,9,401.02,21.53
+2025-06-05,Ohio,OH,Midwest,4,7,855.08,30.11
+2025-06-05,Pennsylvania,PA,Northeast,4,8,829.15,43.55
+2025-06-05,Tennessee,TN,South,6,6,427.89,-42.04
+2025-06-05,Texas,TX,South,8,4,618.24,160.78
+2025-06-05,Wyoming,WY,West,4,3,524.18,-68.92
+2025-06-06,California,CA,West,5,1,92.78,28.82
+2025-06-06,California,CA,West,5,1,255.39,87.67
+2025-06-06,Florida,FL,South,8,9,131.37,-7.88
+2025-06-06,New York,NY,Northeast,3,9,275.69,32.22
+2025-06-06,Washington,WA,West,3,1,200.97,-17.37
+2025-06-07,Virginia,VA,South,5,8,489.99,154.23
+2025-06-08,Florida,FL,South,8,9,75.51,-2.92
+2025-06-08,Georgia,GA,South,7,8,214.69,-23.02
+2025-06-09,Arkansas,AR,South,6,5,827.11,-89.92
+2025-06-09,New Jersey,NJ,Northeast,4,9,265.66,-16.79
+2025-06-09,New York,NY,Northeast,3,9,65.16,2.81
+2025-06-09,North Carolina,NC,South,6,7,860.51,74.22
+2025-06-09,North Dakota,ND,Midwest,3,4,375.52,42.18
+2025-06-09,Washington,WA,West,3,1,206.13,-4.84
+2025-06-10,Virginia,VA,South,5,8,660.47,62.24
+2025-06-11,California,CA,West,5,1,209.66,17.67
+2025-06-11,California,CA,West,5,1,873.35,-59.98
+2025-06-11,Indiana,IN,Midwest,4,6,544.87,34.95
+2025-06-11,Michigan,MI,Midwest,3,8,816.25,116.9
+2025-06-11,Wyoming,WY,West,4,3,263.2,85.4
+2025-06-12,California,CA,West,5,1,493.03,-47.7
+2025-06-12,Connecticut,CT,Northeast,4,10,897.43,83.32
+2025-06-12,Iowa,IA,Midwest,4,5,329.95,2.52
+2025-06-13,New Jersey,NJ,Northeast,4,9,213.13,-25.98
+2025-06-13,Oregon,OR,West,4,1,161.18,50.58
+2025-06-14,Arkansas,AR,South,6,5,456.88,-41.41
+2025-06-14,Colorado,CO,West,5,3,354.44,63.07
+2025-06-14,Indiana,IN,Midwest,4,6,799.51,-59.25
+2025-06-14,Maryland,MD,South,5,9,68.55,-8.97
+2025-06-14,Michigan,MI,Midwest,3,8,442.21,-57.08
+2025-06-14,New York,NY,Northeast,3,9,345.7,-16.66
+2025-06-15,Illinois,IL,Midwest,3,6,619.85,26.83
+2025-06-15,Louisiana,LA,South,7,5,693.32,209.09
+2025-06-15,New York,NY,Northeast,3,9,68.32,21.1
+2025-06-16,Delaware,DE,South,5,10,492.88,-0.13
+2025-06-16,Tennessee,TN,South,6,6,81.1,27.11
+2025-06-17,Ohio,OH,Midwest,4,7,724.71,203.88
+2025-06-17,Oregon,OR,West,4,1,367.74,-18.79
+2025-06-17,Texas,TX,South,8,4,201.82,-3.89
+2025-06-17,Washington,WA,West,3,1,262.58,66.9
+2025-06-18,Alaska,AK,West,1,1,403.86,75.12
+2025-06-18,Connecticut,CT,Northeast,4,10,556.38,8.52
+2025-06-18,Maryland,MD,South,5,9,539.94,135.68
+2025-06-18,Nebraska,NE,Midwest,5,4,722.07,179.07
+2025-06-18,Vermont,VT,Northeast,2,10,702.01,-17.15
+2025-06-19,California,CA,West,5,1,423.39,6.78
+2025-06-19,California,CA,West,5,1,698.13,32.36
+2025-06-19,California,CA,West,5,1,770.67,-41.74
+2025-06-19,New York,NY,Northeast,3,9,783.63,14.8
+2025-06-19,Ohio,OH,Midwest,4,7,520.22,-77.56
+2025-06-20,Michigan,MI,Midwest,3,8,860.0,297.41
+2025-06-20,Minnesota,MN,Midwest,3,5,804.77,-87.83
+2025-06-20,North Carolina,NC,South,6,7,755.76,-2.0
+2025-06-20,Ohio,OH,Midwest,4,7,120.39,-9.96
+2025-06-20,Texas,TX,South,8,4,817.18,-100.08
+2025-06-20,Washington,WA,West,3,1,643.99,-70.4
+2025-06-21,Montana,MT,West,3,3,423.41,-60.83
+2025-06-22,California,CA,West,5,1,363.29,95.44
+2025-06-22,California,CA,West,5,1,750.67,192.5
+2025-06-23,District of Columbia,DC,South,6,9,251.37,30.11
+2025-06-23,Mississippi,MS,South,7,6,838.76,-29.77
+2025-06-24,District of Columbia,DC,South,6,9,345.84,77.47
+2025-06-24,New Mexico,NM,West,6,3,664.91,41.63
+2025-06-24,New York,NY,Northeast,3,9,523.59,115.72
+2025-06-24,Pennsylvania,PA,Northeast,4,8,778.94,-77.59
+2025-06-25,Arizona,AZ,West,6,2,885.47,25.39
+2025-06-26,Illinois,IL,Midwest,3,6,216.89,52.61
+2025-06-26,Missouri,MO,Midwest,5,5,220.24,52.56
+2025-06-26,Missouri,MO,Midwest,5,5,792.08,-48.71
+2025-06-26,Texas,TX,South,8,4,216.3,-13.02
+2025-06-26,Texas,TX,South,8,4,301.06,-2.18
+2025-06-26,Texas,TX,South,8,4,506.49,-54.85
+2025-06-26,Texas,TX,South,8,4,516.79,141.25
+2025-06-26,Washington,WA,West,3,1,657.98,-13.26
+2025-06-27,Arizona,AZ,West,6,2,215.79,11.87
+2025-06-27,Arkansas,AR,South,6,5,445.66,-43.7
+2025-06-27,California,CA,West,5,1,180.93,45.98
+2025-06-27,Georgia,GA,South,7,8,139.95,48.92
+2025-06-27,Georgia,GA,South,7,8,360.9,126.3
+2025-06-27,Indiana,IN,Midwest,4,6,349.77,24.09
+2025-06-27,North Dakota,ND,Midwest,3,4,795.24,262.64
+2025-06-27,Texas,TX,South,8,4,241.43,82.76
+2025-06-28,California,CA,West,5,1,751.43,243.48
+2025-06-28,Minnesota,MN,Midwest,3,5,827.94,6.71
+2025-06-28,North Carolina,NC,South,6,7,397.22,117.19
+2025-06-29,California,CA,West,5,1,149.67,4.14
+2025-06-29,Connecticut,CT,Northeast,4,10,661.5,149.73
+2025-06-29,Connecticut,CT,Northeast,4,10,748.6,90.75
+2025-06-29,Massachusetts,MA,Northeast,3,11,245.2,-7.02
+2025-06-29,Minnesota,MN,Midwest,3,5,91.22,16.81
+2025-06-29,Nebraska,NE,Midwest,5,4,227.02,6.16
+2025-06-29,Nevada,NV,West,4,2,626.53,-46.51
+2025-06-29,New York,NY,Northeast,3,9,92.5,-1.63
+2025-06-29,New York,NY,Northeast,3,9,338.02,104.31
+2025-06-29,Oklahoma,OK,South,7,4,837.63,161.38
+2025-06-29,Pennsylvania,PA,Northeast,4,8,252.8,61.24
+2025-06-29,Tennessee,TN,South,6,6,820.91,60.18
+2025-06-30,California,CA,West,5,1,96.64,26.31
+2025-06-30,Idaho,ID,West,3,2,500.52,157.29
+2025-06-30,Kansas,KS,Midwest,6,4,651.11,-4.63
+2025-06-30,North Carolina,NC,South,6,7,669.73,-95.15
+2025-07-01,California,CA,West,5,1,31.5,8.18
+2025-07-01,California,CA,West,5,1,777.04,-72.38
+2025-07-01,Texas,TX,South,8,4,485.72,-57.99
+2025-07-01,Virginia,VA,South,5,8,686.8,198.88
+2025-07-01,Washington,WA,West,3,1,720.4,239.72
+2025-07-02,Florida,FL,South,8,9,547.77,145.87
+2025-07-02,Indiana,IN,Midwest,4,6,212.91,-23.96
+2025-07-02,North Carolina,NC,South,6,7,199.91,63.37
+2025-07-02,Oregon,OR,West,4,1,410.69,-47.44
+2025-07-02,Tennessee,TN,South,6,6,656.26,79.58
+2025-07-02,Vermont,VT,Northeast,2,10,112.91,30.96
+2025-07-03,Arizona,AZ,West,6,2,405.02,-41.58
+2025-07-03,Ohio,OH,Midwest,4,7,242.91,28.74
+2025-07-03,Virginia,VA,South,5,8,784.21,115.22
+2025-07-04,North Dakota,ND,Midwest,3,4,573.55,-77.35
+2025-07-05,Hawaii,HI,West,8,1,696.39,198.37
+2025-07-06,Nebraska,NE,Midwest,5,4,463.88,-14.85
+2025-07-06,Virginia,VA,South,5,8,298.5,44.01
+2025-07-06,Wisconsin,WI,Midwest,3,7,166.15,4.61
+2025-07-07,Colorado,CO,West,5,3,713.91,-60.72
+2025-07-07,Florida,FL,South,8,9,627.66,-73.14
+2025-07-07,Indiana,IN,Midwest,4,6,327.39,113.19
+2025-07-07,Texas,TX,South,8,4,307.96,35.09
+2025-07-08,Florida,FL,South,8,9,687.55,-62.32
+2025-07-08,Idaho,ID,West,3,2,720.24,242.6
+2025-07-08,Texas,TX,South,8,4,39.89,1.75
+2025-07-09,Illinois,IL,Midwest,3,6,334.39,-0.21
+2025-07-09,Nevada,NV,West,4,2,64.18,14.05
+2025-07-10,Alaska,AK,West,1,1,330.88,-3.79
+2025-07-10,Georgia,GA,South,7,8,653.18,56.01
+2025-07-10,North Carolina,NC,South,6,7,458.42,76.38
+2025-07-11,Connecticut,CT,Northeast,4,10,272.62,78.04
+2025-07-12,Alaska,AK,West,1,1,198.77,18.53
+2025-07-12,Arkansas,AR,South,6,5,776.17,113.59
+2025-07-12,California,CA,West,5,1,276.83,61.22
+2025-07-13,Louisiana,LA,South,7,5,595.77,148.35
+2025-07-13,Missouri,MO,Midwest,5,5,66.08,-6.79
+2025-07-13,Ohio,OH,Midwest,4,7,420.79,-50.15
+2025-07-13,Pennsylvania,PA,Northeast,4,8,241.73,-19.25
+2025-07-13,Texas,TX,South,8,4,796.14,19.71
+2025-07-13,Washington,WA,West,3,1,255.57,84.76
+2025-07-13,Wyoming,WY,West,4,3,621.49,15.68
+2025-07-14,California,CA,West,5,1,400.79,115.97
+2025-07-14,California,CA,West,5,1,422.46,90.11
+2025-07-14,Massachusetts,MA,Northeast,3,11,635.16,174.26
+2025-07-14,Michigan,MI,Midwest,3,8,160.93,46.64
+2025-07-14,Michigan,MI,Midwest,3,8,782.88,144.96
+2025-07-14,Texas,TX,South,8,4,297.14,78.35
+2025-07-14,Texas,TX,South,8,4,795.62,74.43
+2025-07-15,Florida,FL,South,8,9,283.12,-3.52
+2025-07-15,Ohio,OH,Midwest,4,7,101.24,2.35
+2025-07-15,Texas,TX,South,8,4,680.94,-88.86
+2025-07-15,Washington,WA,West,3,1,173.56,45.35
+2025-07-16,California,CA,West,5,1,497.64,-74.41
+2025-07-16,Georgia,GA,South,7,8,755.73,190.41
+2025-07-16,Louisiana,LA,South,7,5,517.9,156.81
+2025-07-16,New Jersey,NJ,Northeast,4,9,312.46,16.23
+2025-07-16,New York,NY,Northeast,3,9,377.45,126.64
+2025-07-16,Oregon,OR,West,4,1,134.1,24.05
+2025-07-16,Rhode Island,RI,Northeast,3,10,638.71,1.63
+2025-07-16,Texas,TX,South,8,4,113.47,13.27
+2025-07-16,Texas,TX,South,8,4,363.2,124.54
+2025-07-17,Massachusetts,MA,Northeast,3,11,424.27,113.29
+2025-07-17,Texas,TX,South,8,4,438.86,-38.58
+2025-07-17,Wisconsin,WI,Midwest,3,7,499.18,-52.33
+2025-07-18,Alabama,AL,South,7,7,120.34,28.68
+2025-07-18,Delaware,DE,South,5,10,899.48,-122.65
+2025-07-18,Idaho,ID,West,3,2,794.72,175.68
+2025-07-19,Alabama,AL,South,7,7,473.94,11.79
+2025-07-19,Georgia,GA,South,7,8,532.28,119.61
+2025-07-19,Idaho,ID,West,3,2,435.37,-56.59
+2025-07-19,Kansas,KS,Midwest,6,4,510.31,73.71
+2025-07-20,Delaware,DE,South,5,10,28.67,1.03
+2025-07-20,Massachusetts,MA,Northeast,3,11,875.77,-112.98
+2025-07-20,Michigan,MI,Midwest,3,8,407.85,141.69
+2025-07-20,Missouri,MO,Midwest,5,5,774.99,-31.7
+2025-07-21,California,CA,West,5,1,777.11,54.74
+2025-07-21,Iowa,IA,Midwest,4,5,87.47,3.35
+2025-07-22,Kentucky,KY,South,5,6,806.62,-27.98
+2025-07-22,Tennessee,TN,South,6,6,406.5,-2.71
+2025-07-23,Arizona,AZ,West,6,2,45.31,7.7
+2025-07-23,Arkansas,AR,South,6,5,832.85,234.56
+2025-07-23,Florida,FL,South,8,9,184.65,-16.18
+2025-07-23,Georgia,GA,South,7,8,787.04,235.7
+2025-07-23,Kentucky,KY,South,5,6,506.74,-23.54
+2025-07-23,Louisiana,LA,South,7,5,792.76,-50.14
+2025-07-23,Vermont,VT,Northeast,2,10,417.44,26.35
+2025-07-23,Washington,WA,West,3,1,552.56,-63.14
+2025-07-24,California,CA,West,5,1,229.15,35.08
+2025-07-24,Maine,ME,Northeast,1,11,888.2,143.82
+2025-07-25,California,CA,West,5,1,94.95,7.29
+2025-07-25,Delaware,DE,South,5,10,220.98,34.59
+2025-07-25,Kentucky,KY,South,5,6,166.32,-13.82
+2025-07-25,New York,NY,Northeast,3,9,223.2,-21.3
+2025-07-25,New York,NY,Northeast,3,9,597.44,-49.42
+2025-07-26,New Jersey,NJ,Northeast,4,9,832.06,206.49
+2025-07-26,New York,NY,Northeast,3,9,118.0,12.91
+2025-07-27,Florida,FL,South,8,9,92.6,12.3
+2025-07-27,Oregon,OR,West,4,1,65.03,-4.41
+2025-07-27,Wisconsin,WI,Midwest,3,7,542.59,96.92
+2025-07-27,Wyoming,WY,West,4,3,450.4,121.82
+2025-07-28,Georgia,GA,South,7,8,512.96,32.31
+2025-07-28,Maryland,MD,South,5,9,253.29,-36.71
+2025-07-28,Mississippi,MS,South,7,6,723.43,144.85
+2025-07-28,North Dakota,ND,Midwest,3,4,879.12,-14.49
+2025-07-29,California,CA,West,5,1,651.36,196.18
+2025-07-29,Texas,TX,South,8,4,227.2,-15.4
+2025-07-30,Arizona,AZ,West,6,2,116.13,-10.67
+2025-07-30,Florida,FL,South,8,9,612.36,-18.66
+2025-07-30,Massachusetts,MA,Northeast,3,11,609.29,192.38
+2025-07-30,Minnesota,MN,Midwest,3,5,80.42,-9.98
+2025-07-30,New York,NY,Northeast,3,9,366.56,58.15
+2025-07-30,Texas,TX,South,8,4,512.58,164.24
+2025-07-31,Connecticut,CT,Northeast,4,10,324.37,92.73
+2025-07-31,Florida,FL,South,8,9,712.7,167.99
+2025-07-31,Louisiana,LA,South,7,5,361.5,3.5
+2025-07-31,Minnesota,MN,Midwest,3,5,678.33,38.52
+2025-07-31,Pennsylvania,PA,Northeast,4,8,678.8,90.46
+2025-08-01,District of Columbia,DC,South,6,9,115.19,14.06
+2025-08-01,Georgia,GA,South,7,8,832.76,83.82
+2025-08-01,New York,NY,Northeast,3,9,255.66,-6.82
+2025-08-01,Texas,TX,South,8,4,65.06,16.38
+2025-08-01,West Virginia,WV,South,5,7,611.3,-33.61
+2025-08-02,Georgia,GA,South,7,8,229.13,-25.7
+2025-08-02,New Hampshire,NH,Northeast,2,11,287.6,57.93
+2025-08-02,New Hampshire,NH,Northeast,2,11,355.89,80.06
+2025-08-02,Pennsylvania,PA,Northeast,4,8,380.12,72.48
+2025-08-03,California,CA,West,5,1,50.88,-4.14
+2025-08-03,New York,NY,Northeast,3,9,816.85,-73.26
+2025-08-03,Texas,TX,South,8,4,311.67,-27.18
+2025-08-04,Alaska,AK,West,1,1,792.51,274.39
+2025-08-04,California,CA,West,5,1,547.94,-30.95
+2025-08-04,California,CA,West,5,1,806.46,-105.65
+2025-08-04,Florida,FL,South,8,9,123.55,36.38
+2025-08-04,Florida,FL,South,8,9,193.97,9.1
+2025-08-04,Illinois,IL,Midwest,3,6,41.0,13.3
+2025-08-04,Kansas,KS,Midwest,6,4,811.53,89.87
+2025-08-04,Tennessee,TN,South,6,6,487.85,94.17
+2025-08-05,California,CA,West,5,1,122.79,2.52
+2025-08-05,Georgia,GA,South,7,8,341.53,42.69
+2025-08-05,Maryland,MD,South,5,9,591.84,24.81
+2025-08-05,Montana,MT,West,3,3,493.89,95.71
+2025-08-05,Texas,TX,South,8,4,202.3,5.52
+2025-08-05,Washington,WA,West,3,1,593.21,-31.73
+2025-08-06,Minnesota,MN,Midwest,3,5,881.38,209.85
+2025-08-06,Texas,TX,South,8,4,409.54,68.22
+2025-08-06,Washington,WA,West,3,1,338.41,64.03
+2025-08-07,Iowa,IA,Midwest,4,5,259.99,2.7
+2025-08-07,North Carolina,NC,South,6,7,90.33,16.01
+2025-08-07,Virginia,VA,South,5,8,504.52,171.69
+2025-08-08,Montana,MT,West,3,3,584.14,135.93
+2025-08-08,New Jersey,NJ,Northeast,4,9,646.03,114.29
+2025-08-08,Texas,TX,South,8,4,74.85,-9.91
+2025-08-10,California,CA,West,5,1,454.85,28.59
+2025-08-10,Florida,FL,South,8,9,111.99,28.44
+2025-08-10,North Carolina,NC,South,6,7,666.01,17.11
+2025-08-10,Texas,TX,South,8,4,202.67,-20.12
+2025-08-11,District of Columbia,DC,South,6,9,569.1,189.19
+2025-08-11,Nebraska,NE,Midwest,5,4,92.51,-6.82
+2025-08-11,New Mexico,NM,West,6,3,20.46,3.33
+2025-08-12,California,CA,West,5,1,432.25,5.72
+2025-08-12,Florida,FL,South,8,9,570.54,130.16
+2025-08-12,Georgia,GA,South,7,8,700.6,115.62
+2025-08-12,Louisiana,LA,South,7,5,810.95,191.63
+2025-08-12,Nebraska,NE,Midwest,5,4,516.58,105.44
+2025-08-12,North Carolina,NC,South,6,7,452.44,37.75
+2025-08-12,South Carolina,SC,South,6,8,876.06,163.63
+2025-08-12,Tennessee,TN,South,6,6,557.03,58.47
+2025-08-13,Arizona,AZ,West,6,2,712.88,53.53
+2025-08-13,Florida,FL,South,8,9,663.02,-54.89
+2025-08-13,Florida,FL,South,8,9,814.68,-82.02
+2025-08-13,Illinois,IL,Midwest,3,6,820.61,-30.65
+2025-08-13,Kentucky,KY,South,5,6,847.62,287.78
+2025-08-13,Michigan,MI,Midwest,3,8,441.16,75.9
+2025-08-13,Washington,WA,West,3,1,224.89,28.17
+2025-08-14,Arizona,AZ,West,6,2,766.35,2.47
+2025-08-14,Missouri,MO,Midwest,5,5,70.29,21.71
+2025-08-14,North Carolina,NC,South,6,7,36.41,1.01
+2025-08-14,Rhode Island,RI,Northeast,3,10,759.63,-46.25
+2025-08-14,Utah,UT,West,5,2,656.47,-31.27
+2025-08-15,Texas,TX,South,8,4,572.87,-22.43
+2025-08-15,Washington,WA,West,3,1,147.25,-11.83
+2025-08-15,Washington,WA,West,3,1,189.05,58.3
+2025-08-15,Wisconsin,WI,Midwest,3,7,334.21,28.84
+2025-08-16,Florida,FL,South,8,9,504.47,144.89
+2025-08-16,Iowa,IA,Midwest,4,5,802.24,-7.91
+2025-08-16,Texas,TX,South,8,4,112.98,34.38
+2025-08-16,Washington,WA,West,3,1,236.03,11.78
+2025-08-17,Connecticut,CT,Northeast,4,10,500.12,119.44
+2025-08-17,North Dakota,ND,Midwest,3,4,183.7,-9.48
+2025-08-17,Texas,TX,South,8,4,147.6,-18.99
+2025-08-17,Washington,WA,West,3,1,642.79,71.98
+2025-08-17,West Virginia,WV,South,5,7,485.58,126.15
+2025-08-18,Maine,ME,Northeast,1,11,198.5,-22.59
+2025-08-18,Rhode Island,RI,Northeast,3,10,486.44,39.57
+2025-08-18,Tennessee,TN,South,6,6,459.76,100.16
+2025-08-18,Texas,TX,South,8,4,797.08,-89.8
+2025-08-18,Texas,TX,South,8,4,882.09,80.48
+2025-08-19,Hawaii,HI,West,8,1,313.64,-18.84
+2025-08-19,Montana,MT,West,3,3,380.42,32.08
+2025-08-19,Pennsylvania,PA,Northeast,4,8,330.0,61.99
+2025-08-20,California,CA,West,5,1,185.58,-25.16
+2025-08-20,Illinois,IL,Midwest,3,6,442.97,144.9
+2025-08-20,New York,NY,Northeast,3,9,383.73,58.49
+2025-08-20,North Carolina,NC,South,6,7,764.88,-8.89
+2025-08-20,North Dakota,ND,Midwest,3,4,803.34,-10.13
+2025-08-20,Rhode Island,RI,Northeast,3,10,105.44,-10.27
+2025-08-21,Florida,FL,South,8,9,54.49,-2.89
+2025-08-21,Mississippi,MS,South,7,6,870.26,-112.21
+2025-08-21,New York,NY,Northeast,3,9,286.78,12.05
+2025-08-21,New York,NY,Northeast,3,9,595.02,185.57
+2025-08-21,Virginia,VA,South,5,8,421.86,146.23
+2025-08-21,Virginia,VA,South,5,8,720.92,7.44
+2025-08-21,Wisconsin,WI,Midwest,3,7,517.64,-56.47
+2025-08-22,Florida,FL,South,8,9,452.71,110.07
+2025-08-23,Massachusetts,MA,Northeast,3,11,81.87,-1.28
+2025-08-23,Pennsylvania,PA,Northeast,4,8,340.03,116.95
+2025-08-23,Rhode Island,RI,Northeast,3,10,413.55,62.2
+2025-08-23,Rhode Island,RI,Northeast,3,10,563.59,88.65
+2025-08-24,California,CA,West,5,1,418.36,145.33
+2025-08-24,New York,NY,Northeast,3,9,484.82,-61.77
+2025-08-24,Oklahoma,OK,South,7,4,577.48,137.96
+2025-08-25,California,CA,West,5,1,92.37,4.18
+2025-08-25,California,CA,West,5,1,703.86,-72.33
+2025-08-25,Massachusetts,MA,Northeast,3,11,476.08,54.43
+2025-08-26,Colorado,CO,West,5,3,872.13,49.13
+2025-08-26,Florida,FL,South,8,9,318.86,13.43
+2025-08-26,Hawaii,HI,West,8,1,623.19,87.12
+2025-08-26,New York,NY,Northeast,3,9,858.44,-50.81
+2025-08-26,North Carolina,NC,South,6,7,79.99,-10.02
+2025-08-27,Utah,UT,West,5,2,695.59,31.94
+2025-08-27,West Virginia,WV,South,5,7,257.11,60.05
+2025-08-28,Illinois,IL,Midwest,3,6,516.99,-60.34
+2025-08-28,Maryland,MD,South,5,9,203.08,43.37
+2025-08-28,Oklahoma,OK,South,7,4,136.71,11.5
+2025-08-29,California,CA,West,5,1,532.32,181.47
+2025-08-29,Maryland,MD,South,5,9,880.18,167.35
+2025-08-29,New York,NY,Northeast,3,9,792.47,166.29
+2025-08-29,Virginia,VA,South,5,8,442.21,-5.06
+2025-08-30,Arkansas,AR,South,6,5,133.44,6.54
+2025-08-30,California,CA,West,5,1,569.78,54.32
+2025-08-30,Idaho,ID,West,3,2,240.56,45.02
+2025-08-30,Indiana,IN,Midwest,4,6,228.66,48.52
+2025-08-30,Massachusetts,MA,Northeast,3,11,253.31,66.56
+2025-08-30,North Carolina,NC,South,6,7,776.69,253.67
+2025-08-30,Ohio,OH,Midwest,4,7,770.33,39.08
+2025-08-30,Texas,TX,South,8,4,278.72,-1.45
+2025-08-30,Washington,WA,West,3,1,565.59,-21.81
+2025-08-31,Texas,TX,South,8,4,415.66,75.56
+2025-09-01,Illinois,IL,Midwest,3,6,517.7,-42.56
+2025-09-01,Ohio,OH,Midwest,4,7,513.92,20.38
+2025-09-02,Alabama,AL,South,7,7,127.67,30.75
+2025-09-02,Alabama,AL,South,7,7,410.33,32.23
+2025-09-02,New York,NY,Northeast,3,9,872.16,27.81
+2025-09-04,California,CA,West,5,1,95.71,16.2
+2025-09-04,Michigan,MI,Midwest,3,8,262.05,-29.83
+2025-09-04,South Carolina,SC,South,6,8,846.44,257.29
+2025-09-04,West Virginia,WV,South,5,7,838.34,-56.93
+2025-09-05,Colorado,CO,West,5,3,88.72,-11.28
+2025-09-05,Missouri,MO,Midwest,5,5,413.16,29.47
+2025-09-05,Pennsylvania,PA,Northeast,4,8,284.1,-18.14
+2025-09-05,Texas,TX,South,8,4,200.69,-25.34
+2025-09-06,California,CA,West,5,1,732.12,52.09
+2025-09-07,California,CA,West,5,1,688.97,236.26
+2025-09-07,Colorado,CO,West,5,3,304.54,24.89
+2025-09-07,Illinois,IL,Midwest,3,6,654.72,-73.94
+2025-09-07,Kentucky,KY,South,5,6,753.21,131.11
+2025-09-07,Minnesota,MN,Midwest,3,5,812.04,120.74
+2025-09-07,Washington,WA,West,3,1,283.08,-41.64
+2025-09-07,Washington,WA,West,3,1,548.43,-35.78
+2025-09-08,California,CA,West,5,1,141.6,0.21
+2025-09-08,Michigan,MI,Midwest,3,8,525.51,83.93
+2025-09-08,Texas,TX,South,8,4,381.73,131.13
+2025-09-08,Washington,WA,West,3,1,484.92,-42.36
+2025-09-09,Arizona,AZ,West,6,2,653.71,112.27
+2025-09-09,North Carolina,NC,South,6,7,445.05,-63.42
+2025-09-10,Arizona,AZ,West,6,2,655.0,-20.37
+2025-09-10,California,CA,West,5,1,718.55,158.41
+2025-09-10,Florida,FL,South,8,9,128.38,-17.34
+2025-09-10,Illinois,IL,Midwest,3,6,618.04,61.5
+2025-09-10,Mississippi,MS,South,7,6,250.14,-21.37
+2025-09-11,California,CA,West,5,1,752.7,18.06
+2025-09-11,Tennessee,TN,South,6,6,474.32,108.73
+2025-09-11,Washington,WA,West,3,1,710.77,-11.79
+2025-09-12,California,CA,West,5,1,283.42,5.11
+2025-09-12,California,CA,West,5,1,412.81,64.73
+2025-09-12,Illinois,IL,Midwest,3,6,600.88,-4.9
+2025-09-12,Michigan,MI,Midwest,3,8,120.14,-3.25
+2025-09-13,Indiana,IN,Midwest,4,6,273.18,-13.08
+2025-09-13,New York,NY,Northeast,3,9,465.76,142.53
+2025-09-13,Tennessee,TN,South,6,6,426.91,108.9
+2025-09-14,New York,NY,Northeast,3,9,131.94,18.64
+2025-09-14,Ohio,OH,Midwest,4,7,210.69,-2.47
+2025-09-15,Ohio,OH,Midwest,4,7,792.98,-69.52
+2025-09-16,California,CA,West,5,1,121.81,-1.12
+2025-09-16,California,CA,West,5,1,856.17,159.85
+2025-09-16,Hawaii,HI,West,8,1,878.18,-101.57
+2025-09-16,Illinois,IL,Midwest,3,6,192.62,52.21
+2025-09-16,Indiana,IN,Midwest,4,6,630.85,84.37
+2025-09-16,Oregon,OR,West,4,1,720.72,-49.67
+2025-09-16,Pennsylvania,PA,Northeast,4,8,636.74,-9.4
+2025-09-16,Washington,WA,West,3,1,552.94,85.16
+2025-09-17,Illinois,IL,Midwest,3,6,686.24,225.85
+2025-09-17,Minnesota,MN,Midwest,3,5,773.41,52.44
+2025-09-17,Montana,MT,West,3,3,271.72,34.88
+2025-09-17,Nebraska,NE,Midwest,5,4,718.36,217.6
+2025-09-17,New York,NY,Northeast,3,9,581.17,196.64
+2025-09-17,Pennsylvania,PA,Northeast,4,8,306.38,55.8
+2025-09-18,Delaware,DE,South,5,10,121.45,7.17
+2025-09-18,District of Columbia,DC,South,6,9,886.65,-103.37
+2025-09-18,Florida,FL,South,8,9,881.41,64.04
+2025-09-18,Maine,ME,Northeast,1,11,202.84,-29.89
+2025-09-18,Massachusetts,MA,Northeast,3,11,197.63,0.44
+2025-09-18,New York,NY,Northeast,3,9,218.42,-1.7
+2025-09-20,California,CA,West,5,1,105.58,2.65
+2025-09-20,Idaho,ID,West,3,2,680.19,196.33
+2025-09-20,Kentucky,KY,South,5,6,390.42,68.31
+2025-09-20,Massachusetts,MA,Northeast,3,11,162.91,10.44
+2025-09-20,New York,NY,Northeast,3,9,438.68,6.02
+2025-09-20,Texas,TX,South,8,4,45.6,-3.36
+2025-09-21,Arizona,AZ,West,6,2,473.16,-32.2
+2025-09-21,Arizona,AZ,West,6,2,863.3,-68.39
+2025-09-21,Florida,FL,South,8,9,213.62,45.18
+2025-09-21,Minnesota,MN,Midwest,3,5,347.6,-34.88
+2025-09-21,Ohio,OH,Midwest,4,7,672.22,201.61
+2025-09-21,Virginia,VA,South,5,8,537.92,188.14
+2025-09-22,California,CA,West,5,1,793.58,108.31
+2025-09-22,North Carolina,NC,South,6,7,690.57,165.77
+2025-09-22,Vermont,VT,Northeast,2,10,453.19,76.44
+2025-09-23,California,CA,West,5,1,547.37,55.61
+2025-09-23,Florida,FL,South,8,9,456.45,24.65
+2025-09-23,Georgia,GA,South,7,8,421.7,147.43
+2025-09-23,Texas,TX,South,8,4,651.99,14.28
+2025-09-24,California,CA,West,5,1,52.38,11.32
+2025-09-24,Iowa,IA,Midwest,4,5,329.63,-46.64
+2025-09-24,Missouri,MO,Midwest,5,5,773.95,83.36
+2025-09-24,Texas,TX,South,8,4,72.93,12.17
+2025-09-24,Wyoming,WY,West,4,3,115.06,-12.36
+2025-09-25,Indiana,IN,Midwest,4,6,893.54,123.5
+2025-09-25,Oregon,OR,West,4,1,737.29,-105.53
+2025-09-25,Texas,TX,South,8,4,314.18,17.15
+2025-09-25,Texas,TX,South,8,4,315.65,54.44
+2025-09-26,Georgia,GA,South,7,8,714.62,-42.64
+2025-09-26,Hawaii,HI,West,8,1,214.32,-21.3
+2025-09-26,Minnesota,MN,Midwest,3,5,84.25,-9.07
+2025-09-26,Nebraska,NE,Midwest,5,4,882.71,198.08
+2025-09-26,North Carolina,NC,South,6,7,426.73,-13.18
+2025-09-26,Texas,TX,South,8,4,215.48,9.25
+2025-09-27,New York,NY,Northeast,3,9,109.3,23.89
+2025-09-27,Washington,WA,West,3,1,47.38,-4.55
+2025-09-27,Wyoming,WY,West,4,3,450.52,-15.12
+2025-09-28,Arizona,AZ,West,6,2,191.97,10.21
+2025-09-28,Illinois,IL,Midwest,3,6,196.95,27.39
+2025-09-28,Ohio,OH,Midwest,4,7,865.96,51.23
+2025-09-28,Texas,TX,South,8,4,460.46,-19.49
+2025-09-28,Virginia,VA,South,5,8,369.39,97.38
+2025-09-28,Washington,WA,West,3,1,30.74,-0.97
+2025-09-29,New Jersey,NJ,Northeast,4,9,432.7,64.74
+2025-09-29,Texas,TX,South,8,4,100.41,4.82
+2025-09-29,Utah,UT,West,5,2,184.49,51.95
+2025-09-29,Wyoming,WY,West,4,3,226.93,32.98
+2025-09-30,Arizona,AZ,West,6,2,829.25,41.03
+2025-09-30,Hawaii,HI,West,8,1,629.31,-43.65
+2025-09-30,Indiana,IN,Midwest,4,6,590.2,-66.84
+2025-09-30,Minnesota,MN,Midwest,3,5,358.61,-45.39
+2025-09-30,Minnesota,MN,Midwest,3,5,814.54,-22.65
+2025-09-30,New Jersey,NJ,Northeast,4,9,797.37,-90.66
+2025-09-30,Ohio,OH,Midwest,4,7,748.46,-92.44
+2025-09-30,Oregon,OR,West,4,1,70.19,10.6
+2025-10-01,California,CA,West,5,1,23.86,4.09
+2025-10-01,Delaware,DE,South,5,10,592.86,-44.3
+2025-10-01,Florida,FL,South,8,9,426.75,0.49
+2025-10-01,Florida,FL,South,8,9,817.52,218.28
+2025-10-01,Texas,TX,South,8,4,147.12,48.97
+2025-10-01,Texas,TX,South,8,4,831.88,189.92
+2025-10-02,California,CA,West,5,1,813.84,55.46
+2025-10-02,Pennsylvania,PA,Northeast,4,8,648.97,-43.74
+2025-10-02,Rhode Island,RI,Northeast,3,10,167.82,-2.22
+2025-10-02,West Virginia,WV,South,5,7,102.23,22.11
+2025-10-02,Wyoming,WY,West,4,3,718.13,232.75
+2025-10-03,Delaware,DE,South,5,10,885.82,229.66
+2025-10-03,Montana,MT,West,3,3,870.47,121.36
+2025-10-03,New York,NY,Northeast,3,9,745.16,174.21
+2025-10-04,Illinois,IL,Midwest,3,6,250.52,-14.56
+2025-10-05,California,CA,West,5,1,356.4,29.2
+2025-10-05,District of Columbia,DC,South,6,9,424.87,-50.1
+2025-10-05,Florida,FL,South,8,9,390.62,62.27
+2025-10-05,West Virginia,WV,South,5,7,226.67,28.48
+2025-10-06,South Carolina,SC,South,6,8,543.33,-57.65
+2025-10-07,Iowa,IA,Midwest,4,5,463.48,7.64
+2025-10-07,Massachusetts,MA,Northeast,3,11,836.17,19.17
+2025-10-07,Michigan,MI,Midwest,3,8,468.0,111.65
+2025-10-07,New Hampshire,NH,Northeast,2,11,116.52,28.72
+2025-10-07,New Jersey,NJ,Northeast,4,9,172.56,47.65
+2025-10-07,New Jersey,NJ,Northeast,4,9,765.57,-92.86
+2025-10-07,North Carolina,NC,South,6,7,407.99,52.61
+2025-10-07,South Carolina,SC,South,6,8,237.14,4.22
+2025-10-07,Texas,TX,South,8,4,411.66,31.3
+2025-10-07,Texas,TX,South,8,4,800.01,248.39
+2025-10-07,Virginia,VA,South,5,8,541.74,170.13
+2025-10-07,Wisconsin,WI,Midwest,3,7,569.94,63.54
+2025-10-08,California,CA,West,5,1,213.73,23.54
+2025-10-08,Hawaii,HI,West,8,1,892.32,301.47
+2025-10-08,Washington,WA,West,3,1,106.12,8.23
+2025-10-08,Washington,WA,West,3,1,358.18,25.44
+2025-10-09,Illinois,IL,Midwest,3,6,714.8,-29.69
+2025-10-09,Wisconsin,WI,Midwest,3,7,135.32,7.2
+2025-10-10,Tennessee,TN,South,6,6,871.78,-112.75
+2025-10-10,Texas,TX,South,8,4,625.42,27.57
+2025-10-11,California,CA,West,5,1,728.01,16.85
+2025-10-11,Delaware,DE,South,5,10,75.8,17.75
+2025-10-11,Georgia,GA,South,7,8,241.43,66.45
+2025-10-11,Illinois,IL,Midwest,3,6,761.38,192.78
+2025-10-11,Maine,ME,Northeast,1,11,526.73,91.74
+2025-10-11,Massachusetts,MA,Northeast,3,11,608.26,36.1
+2025-10-11,Pennsylvania,PA,Northeast,4,8,227.14,55.29
+2025-10-11,Texas,TX,South,8,4,344.86,119.65
+2025-10-12,Georgia,GA,South,7,8,628.0,158.22
+2025-10-12,Maryland,MD,South,5,9,696.07,38.21
+2025-10-13,Michigan,MI,Midwest,3,8,76.99,26.52
+2025-10-13,New Jersey,NJ,Northeast,4,9,237.11,-15.29
+2025-10-13,Virginia,VA,South,5,8,856.14,86.59
+2025-10-14,District of Columbia,DC,South,6,9,825.73,280.57
+2025-10-14,Florida,FL,South,8,9,631.2,50.07
+2025-10-14,North Carolina,NC,South,6,7,353.78,110.79
+2025-10-14,Texas,TX,South,8,4,63.62,20.93
+2025-10-14,Washington,WA,West,3,1,258.21,-11.76
+2025-10-15,Colorado,CO,West,5,3,39.86,-0.88
+2025-10-15,Idaho,ID,West,3,2,489.87,22.54
+2025-10-15,Michigan,MI,Midwest,3,8,676.4,171.47
+2025-10-15,New York,NY,Northeast,3,9,234.71,-5.3
+2025-10-15,Ohio,OH,Midwest,4,7,34.89,6.39
+2025-10-16,Alabama,AL,South,7,7,737.03,-98.16
+2025-10-16,New Hampshire,NH,Northeast,2,11,805.72,171.16
+2025-10-17,California,CA,West,5,1,527.78,89.07
+2025-10-17,Kentucky,KY,South,5,6,42.76,5.46
+2025-10-17,Maine,ME,Northeast,1,11,419.05,112.75
+2025-10-17,Maryland,MD,South,5,9,697.16,106.09
+2025-10-17,North Carolina,NC,South,6,7,694.42,59.49
+2025-10-17,North Carolina,NC,South,6,7,787.06,106.39
+2025-10-18,Illinois,IL,Midwest,3,6,774.81,149.66
+2025-10-18,Missouri,MO,Midwest,5,5,329.19,-4.99
+2025-10-18,New York,NY,Northeast,3,9,554.4,186.68
+2025-10-18,South Dakota,SD,Midwest,4,4,328.88,-2.19
+2025-10-19,Illinois,IL,Midwest,3,6,812.98,-52.23
+2025-10-19,Indiana,IN,Midwest,4,6,222.08,68.81
+2025-10-19,Ohio,OH,Midwest,4,7,230.14,-19.28
+2025-10-19,Vermont,VT,Northeast,2,10,866.84,-1.53
+2025-10-20,California,CA,West,5,1,394.25,114.05
+2025-10-20,Florida,FL,South,8,9,112.69,-5.37
+2025-10-20,Indiana,IN,Midwest,4,6,788.9,-73.53
+2025-10-20,Maryland,MD,South,5,9,530.85,127.39
+2025-10-21,California,CA,West,5,1,589.34,4.12
+2025-10-21,Illinois,IL,Midwest,3,6,677.84,217.39
+2025-10-21,Maryland,MD,South,5,9,655.14,40.68
+2025-10-22,Connecticut,CT,Northeast,4,10,665.25,-77.33
+2025-10-22,North Carolina,NC,South,6,7,177.54,-4.93
+2025-10-23,Ohio,OH,Midwest,4,7,41.53,-5.11
+2025-10-23,Washington,WA,West,3,1,424.18,63.5
+2025-10-24,Arkansas,AR,South,6,5,656.3,68.44
+2025-10-24,Minnesota,MN,Midwest,3,5,814.54,117.85
+2025-10-24,Nebraska,NE,Midwest,5,4,840.67,-49.87
+2025-10-24,North Carolina,NC,South,6,7,855.41,92.68
+2025-10-25,Georgia,GA,South,7,8,486.56,-13.92
+2025-10-25,New Jersey,NJ,Northeast,4,9,81.06,-6.12
+2025-10-25,Wyoming,WY,West,4,3,224.72,-23.99
+2025-10-26,Kansas,KS,Midwest,6,4,167.85,-20.77
+2025-10-26,Massachusetts,MA,Northeast,3,11,169.26,1.35
+2025-10-26,New Hampshire,NH,Northeast,2,11,593.08,115.98
+2025-10-27,Arizona,AZ,West,6,2,98.58,33.54
+2025-10-27,Georgia,GA,South,7,8,354.82,85.06
+2025-10-27,Iowa,IA,Midwest,4,5,85.69,25.34
+2025-10-27,Maryland,MD,South,5,9,132.22,9.19
+2025-10-27,New Hampshire,NH,Northeast,2,11,740.13,71.54
+2025-10-27,New York,NY,Northeast,3,9,152.32,-7.34
+2025-10-27,Washington,WA,West,3,1,211.18,-29.17
+2025-10-28,Colorado,CO,West,5,3,24.37,1.98
+2025-10-28,Idaho,ID,West,3,2,347.84,22.81
+2025-10-28,New Hampshire,NH,Northeast,2,11,597.79,36.15
+2025-10-28,North Carolina,NC,South,6,7,827.33,201.01
+2025-10-28,Texas,TX,South,8,4,52.17,-6.83
+2025-10-28,Texas,TX,South,8,4,304.66,27.38
+2025-10-28,Texas,TX,South,8,4,417.29,-47.48
+2025-10-28,Texas,TX,South,8,4,582.55,196.34
+2025-10-28,Wyoming,WY,West,4,3,294.29,18.91
+2025-10-29,District of Columbia,DC,South,6,9,837.2,9.53
+2025-10-30,California,CA,West,5,1,304.61,99.43
+2025-10-30,California,CA,West,5,1,463.33,122.01
+2025-10-30,Connecticut,CT,Northeast,4,10,707.91,236.13
+2025-10-30,Georgia,GA,South,7,8,591.39,147.1
+2025-10-30,New Mexico,NM,West,6,3,572.49,112.38
+2025-10-30,Texas,TX,South,8,4,861.97,182.03
+2025-10-31,New York,NY,Northeast,3,9,604.85,-31.66
+2025-10-31,Texas,TX,South,8,4,138.18,45.82
+2025-11-01,District of Columbia,DC,South,6,9,476.09,-21.69
+2025-11-01,Maryland,MD,South,5,9,146.09,37.05
+2025-11-01,Maryland,MD,South,5,9,809.55,-66.07
+2025-11-01,Missouri,MO,Midwest,5,5,188.33,41.58
+2025-11-01,Texas,TX,South,8,4,176.95,-25.92
+2025-11-01,Virginia,VA,South,5,8,638.96,112.81
+2025-11-01,West Virginia,WV,South,5,7,345.3,80.29
+2025-11-02,California,CA,West,5,1,417.02,-56.1
+2025-11-02,Kentucky,KY,South,5,6,670.78,-62.4
+2025-11-02,Minnesota,MN,Midwest,3,5,185.06,45.14
+2025-11-02,Nevada,NV,West,4,2,670.2,95.64
+2025-11-02,Ohio,OH,Midwest,4,7,663.59,-95.2
+2025-11-03,Missouri,MO,Midwest,5,5,115.15,25.12
+2025-11-03,New Jersey,NJ,Northeast,4,9,344.24,-23.76
+2025-11-04,Georgia,GA,South,7,8,425.81,79.45
+2025-11-04,Missouri,MO,Midwest,5,5,753.55,96.82
+2025-11-04,New Hampshire,NH,Northeast,2,11,731.1,7.04
+2025-11-04,Ohio,OH,Midwest,4,7,409.52,106.05
+2025-11-04,Wisconsin,WI,Midwest,3,7,813.31,34.62
+2025-11-05,Georgia,GA,South,7,8,323.64,36.7
+2025-11-05,Illinois,IL,Midwest,3,6,640.97,85.14
+2025-11-05,South Dakota,SD,Midwest,4,4,169.63,49.99
+2025-11-06,Arizona,AZ,West,6,2,549.29,94.99
+2025-11-06,California,CA,West,5,1,720.91,89.5
+2025-11-06,Oklahoma,OK,South,7,4,893.25,155.24
+2025-11-06,Wyoming,WY,West,4,3,64.95,19.56
+2025-11-07,California,CA,West,5,1,173.06,28.94
+2025-11-08,California,CA,West,5,1,290.72,3.46
+2025-11-08,North Carolina,NC,South,6,7,725.24,86.26
+2025-11-09,Florida,FL,South,8,9,121.51,35.63
+2025-11-09,Ohio,OH,Midwest,4,7,416.56,107.7
+2025-11-10,Illinois,IL,Midwest,3,6,701.23,233.66
+2025-11-10,Kentucky,KY,South,5,6,274.45,51.32
+2025-11-10,New York,NY,Northeast,3,9,448.87,18.91
+2025-11-11,California,CA,West,5,1,718.36,49.85
+2025-11-11,Illinois,IL,Midwest,3,6,93.41,15.11
+2025-11-11,Michigan,MI,Midwest,3,8,832.65,-99.44
+2025-11-11,Tennessee,TN,South,6,6,883.02,180.74
+2025-11-11,Texas,TX,South,8,4,449.34,33.7
+2025-11-11,Wyoming,WY,West,4,3,213.47,60.58
+2025-11-12,Alabama,AL,South,7,7,444.04,-5.89
+2025-11-12,Delaware,DE,South,5,10,717.76,20.17
+2025-11-12,Georgia,GA,South,7,8,727.65,166.71
+2025-11-12,Illinois,IL,Midwest,3,6,106.8,21.96
+2025-11-12,New York,NY,Northeast,3,9,37.2,7.82
+2025-11-12,New York,NY,Northeast,3,9,610.9,-82.19
+2025-11-12,Pennsylvania,PA,Northeast,4,8,886.62,153.61
+2025-11-13,New York,NY,Northeast,3,9,308.73,76.93
+2025-11-13,Washington,WA,West,3,1,411.96,-17.95
+2025-11-14,Ohio,OH,Midwest,4,7,85.76,25.01
+2025-11-14,Ohio,OH,Midwest,4,7,640.26,-67.17
+2025-11-15,Florida,FL,South,8,9,702.52,73.16
+2025-11-15,Oregon,OR,West,4,1,508.96,0.3
+2025-11-15,Virginia,VA,South,5,8,817.35,267.42
+2025-11-16,Illinois,IL,Midwest,3,6,339.14,107.91
+2025-11-16,Indiana,IN,Midwest,4,6,728.72,172.92
+2025-11-16,Massachusetts,MA,Northeast,3,11,82.11,-6.51
+2025-11-16,Michigan,MI,Midwest,3,8,308.03,-37.87
+2025-11-16,Mississippi,MS,South,7,6,490.68,-10.72
+2025-11-16,Nevada,NV,West,4,2,819.47,-107.8
+2025-11-16,West Virginia,WV,South,5,7,60.39,10.97
+2025-11-16,Wyoming,WY,West,4,3,26.35,7.61
+2025-11-17,Georgia,GA,South,7,8,681.91,219.24
+2025-11-18,California,CA,West,5,1,191.65,-5.76
+2025-11-18,Louisiana,LA,South,7,5,415.02,89.28
+2025-11-18,New Hampshire,NH,Northeast,2,11,207.2,13.67
+2025-11-18,North Carolina,NC,South,6,7,394.3,38.56
+2025-11-19,California,CA,West,5,1,802.94,41.96
+2025-11-19,Colorado,CO,West,5,3,758.04,-24.34
+2025-11-19,Florida,FL,South,8,9,163.73,7.57
+2025-11-19,Texas,TX,South,8,4,413.07,72.78
+2025-11-20,Florida,FL,South,8,9,453.72,-19.55
+2025-11-20,Montana,MT,West,3,3,79.97,21.38
+2025-11-20,New York,NY,Northeast,3,9,844.74,38.11
+2025-11-20,South Dakota,SD,Midwest,4,4,203.68,-5.29
+2025-11-20,South Dakota,SD,Midwest,4,4,260.11,17.56
+2025-11-20,Virginia,VA,South,5,8,440.56,-65.55
+2025-11-21,California,CA,West,5,1,310.83,48.33
+2025-11-21,California,CA,West,5,1,367.42,-16.65
+2025-11-22,Alaska,AK,West,1,1,22.13,2.82
+2025-11-22,Arizona,AZ,West,6,2,739.47,198.58
+2025-11-22,California,CA,West,5,1,787.9,91.79
+2025-11-22,Florida,FL,South,8,9,468.91,-28.66
+2025-11-22,Illinois,IL,Midwest,3,6,109.2,-11.9
+2025-11-22,Washington,WA,West,3,1,194.53,35.25
+2025-11-23,California,CA,West,5,1,86.23,12.46
+2025-11-23,District of Columbia,DC,South,6,9,766.79,94.45
+2025-11-23,Oklahoma,OK,South,7,4,705.7,124.13
+2025-11-23,Virginia,VA,South,5,8,168.43,-23.86
+2025-11-23,Wisconsin,WI,Midwest,3,7,379.34,129.38
+2025-11-24,California,CA,West,5,1,744.1,249.94
+2025-11-24,Colorado,CO,West,5,3,291.43,57.77
+2025-11-24,Florida,FL,South,8,9,543.27,59.83
+2025-11-24,Illinois,IL,Midwest,3,6,523.46,110.01
+2025-11-24,Oregon,OR,West,4,1,561.21,172.01
+2025-11-25,California,CA,West,5,1,715.93,-18.35
+2025-11-25,Colorado,CO,West,5,3,326.87,78.77
+2025-11-26,California,CA,West,5,1,677.45,84.56
+2025-11-26,California,CA,West,5,1,696.41,210.23
+2025-11-26,Georgia,GA,South,7,8,399.5,18.96
+2025-11-26,Iowa,IA,Midwest,4,5,501.22,22.68
+2025-11-26,Maryland,MD,South,5,9,781.78,180.89
+2025-11-27,Georgia,GA,South,7,8,332.21,-2.01
+2025-11-27,Montana,MT,West,3,3,110.21,-14.76
+2025-11-27,Ohio,OH,Midwest,4,7,380.51,31.83
+2025-11-27,Pennsylvania,PA,Northeast,4,8,205.27,29.79
+2025-11-27,Utah,UT,West,5,2,542.51,25.2
+2025-11-28,California,CA,West,5,1,625.65,178.87
+2025-11-28,Virginia,VA,South,5,8,290.32,34.0
+2025-11-28,Washington,WA,West,3,1,762.48,-81.67
+2025-11-29,Illinois,IL,Midwest,3,6,25.87,1.68
+2025-11-29,Maryland,MD,South,5,9,672.9,186.63
+2025-11-30,New York,NY,Northeast,3,9,764.78,181.74
+2025-11-30,Texas,TX,South,8,4,465.6,-49.42
+2025-12-01,California,CA,West,5,1,845.84,295.15
+2025-12-01,Florida,FL,South,8,9,22.22,5.63
+2025-12-02,California,CA,West,5,1,859.05,266.18
+2025-12-02,Hawaii,HI,West,8,1,284.66,53.29
+2025-12-02,Missouri,MO,Midwest,5,5,655.06,121.79
+2025-12-02,Rhode Island,RI,Northeast,3,10,623.42,-11.41
+2025-12-02,Tennessee,TN,South,6,6,643.87,-41.62
+2025-12-02,Texas,TX,South,8,4,507.05,-23.0
+2025-12-03,California,CA,West,5,1,179.65,50.5
+2025-12-03,New York,NY,Northeast,3,9,629.41,216.4
+2025-12-03,New York,NY,Northeast,3,9,713.94,62.4
+2025-12-03,Texas,TX,South,8,4,808.24,149.13
+2025-12-04,Alabama,AL,South,7,7,677.69,33.35
+2025-12-04,Idaho,ID,West,3,2,325.57,-47.23
+2025-12-04,Illinois,IL,Midwest,3,6,45.66,-4.33
+2025-12-04,New Jersey,NJ,Northeast,4,9,282.86,4.35
+2025-12-04,Ohio,OH,Midwest,4,7,875.54,-35.46
+2025-12-04,Wisconsin,WI,Midwest,3,7,539.55,-75.92
+2025-12-05,Indiana,IN,Midwest,4,6,730.74,124.16
+2025-12-05,Oklahoma,OK,South,7,4,766.8,104.2
+2025-12-05,Washington,WA,West,3,1,843.86,177.25
+2025-12-06,Missouri,MO,Midwest,5,5,736.24,209.94
+2025-12-06,North Dakota,ND,Midwest,3,4,508.77,119.61
+2025-12-06,Texas,TX,South,8,4,308.76,-0.97
+2025-12-06,Wisconsin,WI,Midwest,3,7,31.68,8.82
+2025-12-07,California,CA,West,5,1,27.19,3.7
+2025-12-07,California,CA,West,5,1,712.63,-77.71
+2025-12-07,Maine,ME,Northeast,1,11,662.74,-17.37
+2025-12-07,New Jersey,NJ,Northeast,4,9,104.24,31.03
+2025-12-07,New York,NY,Northeast,3,9,162.13,-9.9
+2025-12-07,Ohio,OH,Midwest,4,7,672.09,166.39
+2025-12-07,Wisconsin,WI,Midwest,3,7,441.68,-47.91
+2025-12-08,Arizona,AZ,West,6,2,703.1,82.77
+2025-12-08,California,CA,West,5,1,207.43,-20.6
+2025-12-09,Colorado,CO,West,5,3,240.93,-34.82
+2025-12-09,Illinois,IL,Midwest,3,6,90.07,11.2
+2025-12-09,Minnesota,MN,Midwest,3,5,312.04,89.73
+2025-12-09,North Dakota,ND,Midwest,3,4,423.9,-46.27
+2025-12-09,Texas,TX,South,8,4,117.86,-10.79
+2025-12-10,Indiana,IN,Midwest,4,6,742.19,221.15
+2025-12-10,Montana,MT,West,3,3,855.11,-75.24
+2025-12-10,Pennsylvania,PA,Northeast,4,8,807.47,91.33
+2025-12-10,Washington,WA,West,3,1,274.78,-36.58
+2025-12-11,California,CA,West,5,1,819.78,-23.75
+2025-12-11,Delaware,DE,South,5,10,632.81,-50.11
+2025-12-11,Massachusetts,MA,Northeast,3,11,888.04,66.94
+2025-12-11,Michigan,MI,Midwest,3,8,168.09,24.67
+2025-12-11,Missouri,MO,Midwest,5,5,712.17,-37.19
+2025-12-11,Nevada,NV,West,4,2,280.32,-37.69
+2025-12-11,Utah,UT,West,5,2,866.11,185.86
+2025-12-12,Oregon,OR,West,4,1,707.67,195.53
+2025-12-13,California,CA,West,5,1,745.95,220.44
+2025-12-13,Virginia,VA,South,5,8,430.42,142.58
+2025-12-14,California,CA,West,5,1,307.49,11.35
+2025-12-14,California,CA,West,5,1,768.25,148.27
+2025-12-14,Michigan,MI,Midwest,3,8,545.63,84.06
+2025-12-14,Pennsylvania,PA,Northeast,4,8,732.94,107.55
+2025-12-14,Texas,TX,South,8,4,559.13,49.53
+2025-12-15,California,CA,West,5,1,782.28,78.99
+2025-12-15,Illinois,IL,Midwest,3,6,769.09,-105.35
+2025-12-15,New Jersey,NJ,Northeast,4,9,316.88,90.89
+2025-12-15,Oklahoma,OK,South,7,4,808.04,-63.57
+2025-12-15,Texas,TX,South,8,4,211.99,22.34
+2025-12-15,Washington,WA,West,3,1,391.81,113.11
+2025-12-16,Hawaii,HI,West,8,1,558.67,-62.81
+2025-12-16,New Hampshire,NH,Northeast,2,11,416.17,63.63
+2025-12-16,Ohio,OH,Midwest,4,7,632.07,36.04
+2025-12-16,Tennessee,TN,South,6,6,755.21,-21.0
+2025-12-16,West Virginia,WV,South,5,7,249.43,42.6
+2025-12-17,Delaware,DE,South,5,10,725.24,96.74
+2025-12-17,Nebraska,NE,Midwest,5,4,336.29,-27.25
+2025-12-17,Utah,UT,West,5,2,68.28,-7.09
+2025-12-18,California,CA,West,5,1,232.22,44.97
+2025-12-18,Georgia,GA,South,7,8,732.85,174.4
+2025-12-18,Kentucky,KY,South,5,6,489.3,117.23
+2025-12-19,Alaska,AK,West,1,1,129.41,36.85
+2025-12-19,Connecticut,CT,Northeast,4,10,749.27,150.48
+2025-12-19,Mississippi,MS,South,7,6,765.49,157.6
+2025-12-19,New York,NY,Northeast,3,9,845.49,38.49
+2025-12-19,North Dakota,ND,Midwest,3,4,657.68,98.94
+2025-12-19,Oregon,OR,West,4,1,258.75,43.22
+2025-12-19,Pennsylvania,PA,Northeast,4,8,660.17,-26.05
+2025-12-19,Texas,TX,South,8,4,32.56,7.62
+2025-12-19,Washington,WA,West,3,1,352.08,-25.18
+2025-12-20,California,CA,West,5,1,525.78,-51.4
+2025-12-20,California,CA,West,5,1,663.84,-8.17
+2025-12-20,Delaware,DE,South,5,10,706.47,56.33
+2025-12-20,Missouri,MO,Midwest,5,5,804.23,138.66
+2025-12-20,Ohio,OH,Midwest,4,7,326.24,112.06
+2025-12-20,Ohio,OH,Midwest,4,7,878.87,-111.67
+2025-12-20,South Dakota,SD,Midwest,4,4,862.32,164.91
+2025-12-21,Mississippi,MS,South,7,6,785.14,26.51
+2025-12-22,Georgia,GA,South,7,8,365.3,119.63
+2025-12-22,Utah,UT,West,5,2,74.22,23.65
+2025-12-23,California,CA,West,5,1,789.55,212.32
+2025-12-23,Minnesota,MN,Midwest,3,5,292.59,37.08
+2025-12-23,Texas,TX,South,8,4,204.31,28.59
+2025-12-24,Kentucky,KY,South,5,6,95.42,25.81
+2025-12-24,Massachusetts,MA,Northeast,3,11,27.99,-0.16
+2025-12-24,Mississippi,MS,South,7,6,126.52,4.19
+2025-12-24,New Mexico,NM,West,6,3,188.68,65.68
+2025-12-24,Ohio,OH,Midwest,4,7,269.61,31.67
+2025-12-24,Wyoming,WY,West,4,3,562.91,-51.82
+2025-12-25,Florida,FL,South,8,9,249.41,0.73
+2025-12-25,Massachusetts,MA,Northeast,3,11,152.52,-20.55
+2025-12-25,New York,NY,Northeast,3,9,144.54,-9.29
+2025-12-25,North Carolina,NC,South,6,7,528.49,-40.45
+2025-12-25,Ohio,OH,Midwest,4,7,345.48,97.63
+2025-12-25,Pennsylvania,PA,Northeast,4,8,483.14,49.2
+2025-12-26,California,CA,West,5,1,367.09,56.54
+2025-12-26,Texas,TX,South,8,4,589.52,147.13
+2025-12-27,Arkansas,AR,South,6,5,462.46,-35.78
+2025-12-27,Connecticut,CT,Northeast,4,10,152.79,-21.61
+2025-12-27,Indiana,IN,Midwest,4,6,887.32,18.13
+2025-12-27,Missouri,MO,Midwest,5,5,750.76,173.74
+2025-12-27,New York,NY,Northeast,3,9,833.77,210.62
+2025-12-27,Tennessee,TN,South,6,6,75.4,18.35
+2025-12-27,Vermont,VT,Northeast,2,10,341.3,115.58
+2025-12-28,Maryland,MD,South,5,9,743.13,252.95
+2025-12-28,Oklahoma,OK,South,7,4,99.35,-2.61
+2025-12-28,Texas,TX,South,8,4,398.16,94.49
+2025-12-28,Virginia,VA,South,5,8,204.57,11.55
+2025-12-28,Washington,WA,West,3,1,479.7,87.25
+2025-12-29,Arizona,AZ,West,6,2,422.05,107.67
+2025-12-29,Kentucky,KY,South,5,6,351.35,5.82
+2025-12-29,Michigan,MI,Midwest,3,8,313.65,-34.47
+2025-12-29,Michigan,MI,Midwest,3,8,603.36,26.75
+2025-12-30,California,CA,West,5,1,538.39,81.34
+2025-12-30,Missouri,MO,Midwest,5,5,668.77,-15.37
+2025-12-30,New York,NY,Northeast,3,9,658.12,-56.62
+2025-12-30,Texas,TX,South,8,4,256.61,26.93
+2025-12-30,Texas,TX,South,8,4,568.92,30.59
+2025-12-31,California,CA,West,5,1,773.55,133.31
+2025-12-31,Florida,FL,South,8,9,579.5,-24.53
+2025-12-31,Idaho,ID,West,3,2,758.78,228.66
+2025-12-31,Illinois,IL,Midwest,3,6,183.35,36.32
+2025-12-31,Illinois,IL,Midwest,3,6,312.37,18.03
+2025-12-31,Illinois,IL,Midwest,3,6,354.56,55.84
+2025-12-31,Illinois,IL,Midwest,3,6,613.53,0.16
+2025-12-31,New Mexico,NM,West,6,3,168.49,14.08
+2025-12-31,North Carolina,NC,South,6,7,418.66,36.22
+2025-12-31,Rhode Island,RI,Northeast,3,10,807.89,-6.78
+2025-12-31,Virginia,VA,South,5,8,576.14,30.51

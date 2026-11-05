@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../out/big/sales_1m.csv"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "measures": [{"field": "Sales"}, {"field": "Profit"}, {"field": "Quantity"}, {"field": "Customer", "agg": "countd"}]},
+    {"name": "By Region", "type": "bar", "dimension": "Region", "measure": {"field": "Sales"}, "color": "Category"},
+    {"name": "Monthly", "type": "line", "date": {"field": "Order Date", "level": "month"}, "measure": {"field": "Sales"}},
+    {"name": "Table", "type": "table", "rows": "Region", "cols": "Category", "measure": {"field": "Profit"}}
+  ],
+  "filters": [{"field": "Region", "show_on": "Table"}],
+  "dashboard": {"name": "Overview", "title": "Sales, 1M rows", "width": 1200, "height": 800, "grid": [["KPI"], ["By Region", "Monthly"], ["Table"]]}
+}

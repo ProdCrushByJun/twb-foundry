@@ -1,0 +1,37 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_products.csv"},
+  "calcs": [
+    {"name": "Order Size", "formula": "IF [Sales] >= 300 THEN \"Large\" ELSEIF [Sales] >= 150 THEN \"Medium\" ELSE \"Small\" END"}
+  ],
+  "fields": {
+    "Order Size": {
+      "aliases": {"Large": "Large order", "Medium": "Medium order", "Small": "Small order"},
+      "order": ["Large", "Medium", "Small"],
+      "color": {"Large": "#1f3a5f", "Medium": "#4e79a7", "Small": "#a0c4e8"}
+    },
+    "Size Tier": {
+      "group": {"field": "Order Size", "bins": {"Top orders": ["Large"], "The rest": ["Medium", "Small"]}, "other": "Other"},
+      "order": ["Top orders", "The rest"],
+      "color": {"Top orders": "#1f3a5f", "The rest": "#a0c4e8"}
+    },
+    "Qty Band": {
+      "group": {"field": "Quantity", "bins": {"1-4 units": [1, 2, 3, 4], "5-8 units": [5, 6, 7, 8], "9+ units": [9, 10, 11]}, "other": "Other"},
+      "order": ["1-4 units", "5-8 units", "9+ units"]
+    }
+  },
+  "sheets": [
+    {"name": "Sizes", "type": "bar", "title": "Sales **by order size**", "subtitle": "a calc dimension with aliases, order and colors",
+     "dimension": "Order Size", "measure": {"field": "Sales"}, "color": "Order Size"},
+    {"name": "Tiers", "type": "bar", "title": "Sales **by size tier**", "subtitle": "a group over the calc",
+     "dimension": "Size Tier", "measure": {"field": "Sales"}, "color": "Size Tier"},
+    {"name": "Bands", "type": "bar", "title": "Sales **by quantity band**", "subtitle": "a group over a number",
+     "dimension": "Qty Band", "measure": {"field": "Sales"}},
+    {"name": "Matrix", "type": "table", "title": "Sales **by tier and band**",
+     "rows": "Size Tier", "cols": "Qty Band", "measure": {"field": "Sales"}}
+  ],
+  "filters": [{"field": "Size Tier", "show_on": "Matrix"}],
+  "dashboard": {"name": "Fields v2", "title": "**Field** properties v2", "subtitle": "Calc aliases, order, colors; groups over a calc and a number · sample data",
+                "width": 1200, "height": 800, "grid": [["Sizes", "Tiers"], ["Bands", "Matrix"]]}
+}

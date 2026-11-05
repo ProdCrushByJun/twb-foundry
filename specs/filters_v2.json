@@ -1,0 +1,26 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_stores.csv"},
+  "calcs": [
+    {"name": "Region total", "formula": "{FIXED : SUM([Sales])}"},
+    {"name": "Share of region", "formula": "SUM([Sales]) / MIN([Region total])", "format": "percent"}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles",
+     "measures": [{"field": "Sales", "label": "Sales"}, {"field": "Share of region", "label": "Share of region"}]},
+    {"name": "Top Products", "type": "bar", "title": "Top 5 **products** in the region",
+     "subtitle": "Ranked over all channels and cities of the region", "dimension": "Product",
+     "measure": {"field": "Sales"}, "sort": "desc", "top": {"n": 5}},
+    {"name": "By City", "type": "bar", "title": "Sales **by city**", "dimension": "City",
+     "measure": {"field": "Sales"}, "sort": "desc"}
+  ],
+  "filters": [
+    {"field": "Region", "show_on": "Top Products", "mode": "single_dropdown", "default": ["North"], "context": true},
+    {"field": "City", "show_on": "By City", "relevant": true},
+    {"field": "Channel", "show_on": "Top Products", "default": ["Online", "Retail"]}
+  ],
+  "dashboard": {"name": "Stores", "title": "**Stores** by region", "subtitle": "Sample data, 2025, 800 orders",
+                "width": 1400, "height": 800, "row_heights": [2, 5],
+                "grid": [["KPI"], ["Top Products", "By City"]]}
+}

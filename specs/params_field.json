@@ -1,0 +1,32 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/params_v2.csv"},
+  "parameters": [
+    {"name": "Region pick", "type": "string", "values_from": "Region", "default": "East"},
+    {"name": "As of", "type": "date", "values_from": "Order Date", "default_from": "Last date"},
+    {"name": "Min sale", "type": "integer", "values_from": "Sales", "default_from": "Smallest sale"},
+    {"name": "Top count", "type": "integer", "values": [2, 3, 4], "default_from": "Regions",
+     "aliases": {"2": "two", "3": "three", "4": "four"}}
+  ],
+  "calcs": [
+    {"name": "Last date", "formula": "{MAX([Order Date])}"},
+    {"name": "Smallest sale", "formula": "{FIXED : MIN([Sales])}"},
+    {"name": "Regions", "formula": "{COUNTD([Region])}"},
+    {"name": "Region sales", "formula": "SUM(IIF([Region] = [Region pick], [Sales], 0))"},
+    {"name": "Sales to date", "formula": "SUM(IIF([Order Date] < [As of], [Sales], 0))"},
+    {"name": "Big sales", "formula": "SUM(IIF([Sales] > [Min sale], [Sales], 0))"}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles",
+     "measures": [{"field": "Region sales", "label": "Picked region", "heading": "[Region pick] sales"},
+                  {"field": "Sales to date"}, {"field": "Big sales"}]},
+    {"name": "Top Bar", "type": "bar", "title": "Top [Top count] **products**", "dimension": "Product",
+     "measure": {"field": "Sales"}, "sort": "desc", "top": {"n": "Top count"}},
+    {"name": "To Date", "type": "line", "title": "Sales **before [As of]**", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales to date"}}
+  ],
+  "dashboard": {"name": "Params from field", "title": "**Parameters** from a field", "subtitle": "Lists and defaults read when the workbook opens",
+                "width": 1400, "height": 800, "row_heights": [2, 5],
+                "grid": [["KPI"], ["Top Bar", "To Date"]]}
+}

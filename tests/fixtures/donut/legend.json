@@ -1,0 +1,55 @@
+{
+ "version": 1,
+ "datasource": {
+  "type": "csv",
+  "path": "../../../data/sample/sales_2y.csv"
+ },
+ "sheets": [
+  {
+   "name": "L1",
+   "type": "donut",
+   "dimension": "Category",
+   "measure": {
+    "field": "Sales"
+   }
+  },
+  {
+   "name": "L2",
+   "type": "donut",
+   "dimension": "Category",
+   "measure": {
+    "field": "Sales"
+   }
+  },
+  {
+   "name": "L3",
+   "type": "donut",
+   "dimension": "Category",
+   "measure": {
+    "field": "Sales"
+   }
+  },
+  {
+   "name": "L4",
+   "type": "donut",
+   "dimension": "Category",
+   "measure": {
+    "field": "Sales"
+   }
+  }
+ ],
+ "dashboard": {
+  "name": "Lab",
+  "title": "Donut lab",
+  "width": 1400,
+  "height": 700,
+  "grid": [
+   [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+   ]
+  ]
+ }
+}

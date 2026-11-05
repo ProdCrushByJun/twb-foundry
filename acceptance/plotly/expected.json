@@ -1,0 +1,126 @@
+{
+ "_source": "hr_events.csv via pandas (make_expected.py); the page shows the same numbers (decisions/102)",
+ "spec.json": {
+  "KPI": {
+   "SUM(Hire Flag)": 619,
+   "SUM(Exit Flag)": 527,
+   "AGG(Net Change)": 92
+  },
+  "By Quarter": {
+   "2025-Q1 | Exit": 134,
+   "2025-Q1 | Hire": 170,
+   "2025-Q2 | Exit": 116,
+   "2025-Q2 | Hire": 145,
+   "2025-Q3 | Exit": 136,
+   "2025-Q3 | Hire": 176,
+   "2025-Q4 | Exit": 141,
+   "2025-Q4 | Hire": 128
+  },
+  "Exits by Dept": {
+   "Engineering": 182,
+   "Finance": 32,
+   "Operations": 60,
+   "People": 14,
+   "Sales": 137,
+   "Support": 102
+  },
+  "Exit Heatmap": {
+   "Engineering | 2025-01": 19,
+   "Engineering | 2025-02": 12,
+   "Engineering | 2025-03": 8,
+   "Engineering | 2025-04": 17,
+   "Engineering | 2025-05": 16,
+   "Engineering | 2025-06": 17,
+   "Engineering | 2025-07": 19,
+   "Engineering | 2025-08": 15,
+   "Engineering | 2025-09": 19,
+   "Engineering | 2025-10": 12,
+   "Engineering | 2025-11": 7,
+   "Engineering | 2025-12": 21,
+   "Finance | 2025-01": 11,
+   "Finance | 2025-02": 1,
+   "Finance | 2025-03": 5,
+   "Finance | 2025-05": 3,
+   "Finance | 2025-06": 3,
+   "Finance | 2025-07": 3,
+   "Finance | 2025-08": 3,
+   "Finance | 2025-10": 1,
+   "Finance | 2025-12": 2,
+   "Operations | 2025-01": 6,
+   "Operations | 2025-02": 6,
+   "Operations | 2025-03": 4,
+   "Operations | 2025-05": 4,
+   "Operations | 2025-06": 7,
+   "Operations | 2025-07": 3,
+   "Operations | 2025-08": 4,
+   "Operations | 2025-09": 5,
+   "Operations | 2025-10": 7,
+   "Operations | 2025-11": 4,
+   "Operations | 2025-12": 10,
+   "People | 2025-01": 3,
+   "People | 2025-05": 2,
+   "People | 2025-06": 2,
+   "People | 2025-07": 1,
+   "People | 2025-08": 2,
+   "People | 2025-09": 1,
+   "People | 2025-10": 1,
+   "People | 2025-12": 2,
+   "Sales | 2025-01": 12,
+   "Sales | 2025-02": 11,
+   "Sales | 2025-03": 10,
+   "Sales | 2025-04": 8,
+   "Sales | 2025-05": 11,
+   "Sales | 2025-06": 11,
+   "Sales | 2025-07": 14,
+   "Sales | 2025-08": 12,
+   "Sales | 2025-09": 7,
+   "Sales | 2025-10": 11,
+   "Sales | 2025-11": 13,
+   "Sales | 2025-12": 17,
+   "Support | 2025-01": 9,
+   "Support | 2025-02": 7,
+   "Support | 2025-03": 10,
+   "Support | 2025-04": 7,
+   "Support | 2025-05": 5,
+   "Support | 2025-06": 3,
+   "Support | 2025-07": 6,
+   "Support | 2025-08": 7,
+   "Support | 2025-09": 15,
+   "Support | 2025-10": 9,
+   "Support | 2025-11": 6,
+   "Support | 2025-12": 18
+  },
+  "Balance": {
+   "Engineering": {
+    "Hires": 231,
+    "Exits": 182,
+    "Net": 49
+   },
+   "Finance": {
+    "Hires": 37,
+    "Exits": 32,
+    "Net": 5
+   },
+   "Operations": {
+    "Hires": 75,
+    "Exits": 60,
+    "Net": 15
+   },
+   "People": {
+    "Hires": 18,
+    "Exits": 14,
+    "Net": 4
+   },
+   "Sales": {
+    "Hires": 161,
+    "Exits": 137,
+    "Net": 24
+   },
+   "Support": {
+    "Hires": 97,
+    "Exits": 102,
+    "Net": -5
+   }
+  }
+ }
+}

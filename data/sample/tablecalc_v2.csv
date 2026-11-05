@@ -1,0 +1,13 @@
+Region,Month,Sales,Refunds
+A,M1,40,5
+A,M2,25,
+A,M3,25,8
+A,M4,60,
+A,M5,10,
+A,M6,25,3
+B,M1,30,
+B,M2,30,4
+B,M3,70,
+B,M4,20,6
+B,M5,20,6
+B,M6,50,

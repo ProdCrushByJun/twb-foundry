@@ -1,0 +1,21 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_dates.csv", "hyper": true},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Units"}]},
+    {"name": "Orders", "type": "line", "title": "Sales by **order month**", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}},
+    {"name": "Shipments", "type": "line", "title": "Sales by **ship week**", "date": {"field": "Shipped At", "level": "week"},
+     "measure": {"field": "Sales"}},
+    {"name": "Regions", "type": "bar", "title": "Sales by **region**", "dimension": "Region", "measure": {"field": "Sales"}}
+  ],
+  "filters": [
+    {"field": "Region", "show_on": "Regions"},
+    {"field": "Order Date", "show_on": "Orders", "mode": "range", "min": "2024-07-01", "max": "2025-06-30"},
+    {"field": "Shipped At", "show_on": "Shipments", "mode": "relative", "period": "month", "last": 3}
+  ],
+  "dashboard": {"name": "Dates", "title": "**Sales** by period", "subtitle": "Orders of the last 12 months, shipped in the last 3",
+                "width": 1400, "height": 800, "row_heights": [2, 3],
+                "grid": [["KPI", "Regions"], ["Orders", "Shipments"]]}
+}

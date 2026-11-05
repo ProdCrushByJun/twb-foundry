@@ -1,0 +1,37 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "parameters": [
+    {"name": "Region pick", "type": "string", "values": ["All", "East", "North", "South", "West"], "default": "All",
+     "control": "none"}
+  ],
+  "calcs": [
+    {"name": "Picked Sales", "formula": "SUM(IF [Region pick] = \"All\" OR [Region] = [Region pick] THEN [Sales] END)"}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Picked Sales"}]},
+    {"name": "By Region", "type": "registry", "title": "**Regions**", "subtitle": "Sales and profit", "rows": ["Region"],
+     "sort": "desc", "columns": [{"measure": {"field": "Sales"}}, {"measure": {"field": "Profit"}, "style": "text"}]},
+    {"name": "By Category", "type": "bar", "title": "**Categories**", "subtitle": "Sum of sales", "dimension": "Category",
+     "measure": {"field": "Sales"}, "sort": "desc"},
+    {"name": "By Month", "type": "bar", "title": "Monthly **Sales**", "dimension": "Order Date", "date_level": "month",
+     "measure": {"field": "Sales"}},
+    {"name": "Trend", "type": "line", "title": "**Sales** by category", "date": {"field": "Order Date", "level": "month"},
+     "color": "Category", "measure": {"field": "Sales"}}
+  ],
+  "filters": [{"field": "Category", "show_on": "Trend"}],
+  "dashboard": {"name": "Actions v2", "title": "**Sales** Actions v2", "subtitle": "Region picked: [Region pick]",
+                "width": 1000, "height": 960, "row_heights": [4, 7, 9], "filter_toggle": "shown",
+                "grid": [["KPI"], ["By Region", "By Category"], ["By Month", "Trend"]],
+                "action_hints": true,
+                "actions": [
+                  {"type": "parameter", "source": "By Region", "field": "Region", "parameter": "Region pick",
+                   "clear": "All"},
+                  {"type": "highlight", "source": "By Category", "on": "hover", "fields": ["Category"]},
+                  {"type": "url", "source": "By Category", "on": "menu",
+                   "url": "https://www.google.com/search?q=<Category>"},
+                  {"type": "highlight", "source": "By Month", "targets": ["Trend"], "fields": ["Order Date"]},
+                  {"source": "Trend", "fields": ["Category"], "targets": ["By Category"]}
+                ]}
+}

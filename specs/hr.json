@@ -1,0 +1,14 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/hr/hires.csv"},
+  "sheets": [
+    {"name": "Headline", "type": "kpi", "measures": [{"field": "Headcount"}, {"field": "Salary", "agg": "avg"}]},
+    {"name": "By Department", "type": "bar", "dimension": "Department", "measure": {"field": "Headcount"}, "orientation": "vertical"},
+    {"name": "Hiring Trend", "type": "line", "date": {"field": "Hire Date", "level": "quarter"}, "measure": {"field": "Headcount"}, "color": "City"},
+    {"name": "Salary Matrix", "type": "table", "rows": "Department", "cols": "City", "measure": {"field": "Salary", "agg": "avg"}}
+  ],
+  "filters": [{"field": "City", "show_on": "Salary Matrix"}],
+  "dashboard": {"name": "HR Overview", "width": 1200, "height": 900,
+                "grid": [["Headline"], ["By Department", "Hiring Trend"], ["Salary Matrix"]]}
+}

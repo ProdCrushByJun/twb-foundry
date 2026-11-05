@@ -1,0 +1,14 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_states.csv"},
+  "sheets": [
+    {"name": "State Tiles", "type": "tilegrid", "title": "Sales **by state**", "subtitle": "A tile per state at its place on the map, darker: more sales",
+     "dimension": "State", "label": "Code", "measure": {"field": "Sales", "format": "currency_k"}, "layout": {"row": "Tile Row", "col": "Tile Col"}},
+    {"name": "Region Wall", "type": "tilegrid", "title": "States **ranked** in each region", "subtitle": "Largest sales first, three to a row, darker: more sales",
+     "dimension": "State", "label": "Code", "measure": {"field": "Sales", "format": "currency_k"}, "layout": {"cols": 3}, "group": "Region"}
+  ],
+  "dashboard": {"name": "Tile Grid", "title": "**Sales across the US**: tile grids", "subtitle": "Orders of 2025 in every state and DC",
+                "theme": "cards", "width": 1300, "height": 760,
+                "grid": [[{"sheet": "State Tiles", "width": 3}, {"sheet": "Region Wall", "width": 2}]]}
+}

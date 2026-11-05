@@ -1,0 +1,39 @@
+{
+  "$schema": "../../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "orders.csv"},
+  "calcs": [
+    {"name": "Profit Margin", "formula": "(SUM([Revenue]) - SUM([Cost])) / SUM([Revenue])", "format": "pct1"},
+    {"name": "Avg Order Value", "formula": "SUM([Revenue]) / COUNT([Order ID])", "format": {"type": "currency", "decimals": 0}},
+    {"name": "Revenue K", "formula": "[Revenue] / 1000", "format": {"type": "number", "decimals": 0}}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "arrange": "strip",
+     "measures": [
+       {"field": "Revenue", "agg": "sum", "label": "Revenue",
+        "format": {"type": "currency", "units": "M", "decimals": 2}},
+       {"field": "Order ID", "agg": "count", "label": "Orders"},
+       {"field": "Avg Order Value", "label": "Average order value"},
+       {"field": "Profit Margin", "label": "Profit margin"}
+     ]},
+    {"name": "By Month", "type": "line", "title": "Revenue **by month**", "subtitle": "$ thousands",
+     "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Revenue K", "agg": "sum"}},
+    {"name": "By Category", "type": "bar", "title": "Revenue **by category**", "subtitle": "$ thousands, all months",
+     "dimension": "Category", "measure": {"field": "Revenue K", "agg": "sum", "label": "revenue"},
+     "orientation": "horizontal", "sort": "desc"},
+    {"name": "Top Products", "type": "registry", "title": "Top 10 **products**", "subtitle": "by revenue",
+     "rows": ["Product"], "sort": "desc", "top": {"n": 10},
+     "columns": [
+       {"measure": {"field": "Revenue K", "agg": "sum"}, "style": "bar", "label": "Revenue, $K"},
+       {"measure": {"field": "Order ID", "agg": "count"}, "style": "text", "label": "Orders"},
+       {"measure": {"field": "Profit Margin"}, "style": "text", "label": "Margin"}
+     ]},
+    {"name": "Channel Mix", "type": "donut", "title": "Revenue **by channel**", "subtitle": "share of revenue",
+     "dimension": "Channel", "measure": {"field": "Revenue", "agg": "sum", "label": "revenue"}}
+  ],
+  "dashboard": {"name": "Sales Overview", "title": "**Retail Sales** · Overview 2025",
+    "subtitle": "January – December 2025 · all regions", "theme": "cards", "width": 1280, "height": 900,
+    "row_heights": [2, 5, 6],
+    "grid": [["KPI"], [{"sheet": "By Month", "width": 2}, "By Category"], [{"sheet": "Top Products", "width": 2}, "Channel Mix"]]}
+}

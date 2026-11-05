@@ -1,0 +1,40 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "calcs": [
+    {"name": "Sales 2025", "formula": "SUM(IF YEAR([Order Date]) = 2025 THEN [Sales] END)", "format": "number"},
+    {"name": "Sales 2024", "formula": "SUM(IF YEAR([Order Date]) = 2024 THEN [Sales] END)", "format": "number"}
+  ],
+  "sheets": [
+    {"name": "Regions", "type": "registry", "title": "Regions **ranked by 2025 sales**",
+     "subtitle": "Share of the total, average profit per order", "rows": ["Region"], "sort": "desc",
+     "header": {"color": "#0d3a6b"}, "bar_color": "#0d3a6b",
+     "columns": [
+       {"measure": {"field": "Sales 2025"}, "style": "rank", "label": "#"},
+       {"measure": {"field": "Sales 2025"}, "style": "bar_inside", "label": "Sales"},
+       {"measure": {"field": "Sales 2025"}, "style": "track", "label": "Of total"},
+       {"measure": {"field": "Sales 2025"}, "style": "share", "label": "Share", "with_value": true},
+       {"measure": {"field": "Profit", "agg": "avg"}, "style": "dot", "label": "Avg profit"}
+     ]},
+    {"name": "Categories", "type": "registry", "title": "2025 **against 2024**",
+     "subtitle": "Tick: 2024 sales; change in the good or bad color", "rows": ["Region", "Category"],
+     "sort": "desc",
+     "columns": [
+       {"measure": {"field": "Sales 2025"}, "style": "rank", "label": "#"},
+       {"measure": {"field": "Sales 2025"}, "style": "tick", "label": "Sales vs PY", "base": {"field": "Sales 2024"}},
+       {"measure": {"field": "Sales 2025"}, "style": "delta", "label": "Change", "base": {"field": "Sales 2024"}},
+       {"measure": {"field": "Quantity"}, "style": "text", "label": "Units", "second": {"field": "Profit"}}
+     ]},
+    {"name": "Top", "type": "registry", "title": "Top 2 by", "repeat": ["Region", "Category"], "top": {"n": 2},
+     "sort": "desc",
+     "columns": [
+       {"measure": {"field": "Sales 2025"}, "style": "rank", "label": "#"},
+       {"measure": {"field": "Sales 2025"}, "style": "bar_inside", "label": "Sales"},
+       {"measure": {"field": "Sales 2025"}, "style": "delta", "label": "vs PY", "base": {"field": "Sales 2024"}}
+     ]}
+  ],
+  "dashboard": {"name": "Registry v2", "title": "**Registry** v2", "subtitle": "Sample data, 2024-2025",
+                "width": 1200, "height": 1100, "row_heights": [2, 2, 1],
+                "grid": [["Regions"], ["Categories"], ["Top"]]}
+}

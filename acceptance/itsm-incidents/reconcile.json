@@ -1,0 +1,9 @@
+{
+  "accepted": [
+    {
+      "number": "85%",
+      "context": "SLA met below 85% in red",
+      "reason": "threshold of the SLA highlight, not a metric: registry column 'SLA met' highlight below 0.85; same 85% in the block subtitle"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+ "_source": "pandas over data/sample/sales_stores.csv (golden/expected/make_expected.py, decisions/052): single value list Region = East, Channel list with Apply",
+ "By City": {
+  "Albany": 11178.02,
+  "Boston": 11833.62,
+  "Newark": 11972.86
+ },
+ "By Product": {
+  "Atlas": 3043.52,
+  "Beacon": 1718.3,
+  "Cobalt": 1801.13,
+  "Delta": 4644.09,
+  "Ember": 577.81,
+  "Falcon": 2292.53,
+  "Granite": 2372.48,
+  "Harbor": 1793.97,
+  "Iris": 2766.71,
+  "Juniper": 3715.72,
+  "Kestrel": 815.2,
+  "Lumen": 1066.77,
+  "Meridian": 2847.38,
+  "Nova": 1769.8,
+  "Orbit": 2505.32,
+  "Pioneer": 1253.77
+ }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_products.csv"},
+  "parameters": [
+    {"name": "Cutoff", "type": "date", "range": {"min": "2025-01-01", "max": "2025-12-31"}, "default": "2025-09-30"},
+    {"name": "Top count", "type": "integer", "values": [3, 5, 8], "default": 5},
+    {"name": "Target margin", "type": "real", "range": {"min": 0, "max": 0.5, "step": 0.125}, "default": 0.25},
+    {"name": "With West", "type": "boolean", "default": true}
+  ],
+  "calcs": [
+    {"name": "Before cutoff", "formula": "[Order Date] <= [Cutoff]"},
+    {"name": "Shown sales", "formula": "IF [With West] THEN SUM([Sales]) ELSE SUM(IIF([Region] <> \"West\", [Sales], 0)) END"},
+    {"name": "Margin", "formula": "SUM([Profit]) / SUM([Sales])", "format": "percent"},
+    {"name": "Margin gap", "formula": "SUM([Profit]) / SUM([Sales]) - [Target margin]", "format": "percent"},
+    {"name": "Profitable", "formula": "[Profit] > 0"},
+    {"name": "Order size", "formula": "IF [Quantity] >= 3 THEN \"Large\" ELSE \"Small\" END"}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles",
+     "measures": [{"field": "Shown sales", "label": "Sales to the cutoff"}, {"field": "Margin gap", "label": "Margin vs target"}]},
+    {"name": "Top Products", "type": "bar", "title": "Top [Top count] **products**", "dimension": "Product",
+     "measure": {"field": "Sales"}, "sort": "desc", "top": {"n": "Top count"}},
+    {"name": "North East", "type": "bar", "title": "Profitable orders, **North and East**", "dimension": "Product",
+     "measure": {"field": "Sales"}, "sort": "desc",
+     "filters": [{"field": "Region", "default": ["North", "East"]}, {"field": "Profitable", "default": [true]}]},
+    {"name": "Big Products", "type": "bar", "title": "Products **over 9 000**", "dimension": "Product",
+     "measure": {"field": "Sales"}, "sort": "desc", "filters": [{"field": "Sales", "agg": "sum", "min": 9000}]},
+    {"name": "Large Orders", "type": "bar", "title": "Margin of **large orders**", "subtitle": "Regions above 14 %",
+     "dimension": "Region", "measure": {"field": "Margin"}, "sort": "desc",
+     "filters": [{"field": "Order size", "default": ["Large"]}, {"field": "Margin", "min": 0.14}]},
+    {"name": "Trend", "type": "line", "title": "Sales **by month**", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}}
+  ],
+  "filters": [
+    {"field": "Before cutoff", "show_on": "KPI", "default": [true], "context": true}
+  ],
+  "dashboard": {"name": "Cutoff", "title": "**Products** to the cutoff", "subtitle": "Sample data, 2025, 640 orders",
+                "width": 1600, "height": 900, "row_heights": [3, 5, 5],
+                "grid": [["KPI"], ["Top Products", "North East", "Big Products"], ["Large Orders", {"sheet": "Trend", "width": 2}]]}
+}

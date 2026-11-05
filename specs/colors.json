@@ -1,0 +1,24 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_plan.csv"},
+  "calcs": [{"name": "Sales vs Plan", "formula": "SUM([Sales]) - SUM([Plan])"}],
+  "sheets": [
+    {"name": "Regions", "type": "bar", "title": "Sales **by region**", "subtitle": "{accent:East} against the other regions",
+     "dimension": "Region", "measure": {"field": "Sales"}, "sort": "desc", "color": {"highlight": ["East"]}},
+    {"name": "Managers", "type": "bar", "title": "Sales **by manager**", "subtitle": "{accent:Denis and Galina} in their regions",
+     "dimension": "Region", "measure": {"field": "Sales"}, "color": {"field": "Manager", "highlight": ["Denis", "Galina"]}},
+    {"name": "Plan", "type": "bar", "title": "**Plan** and fact by manager", "subtitle": "{accent:Sales} in front of the plan",
+     "dimension": "Manager", "measure": {"field": "Sales"}, "plan": {"field": "Plan"}, "sort": "desc"},
+    {"name": "Trend", "type": "line", "title": "Monthly **sales**", "subtitle": "{accent:East} against the other regions",
+     "date": {"field": "Month", "level": "month"}, "measure": {"field": "Sales"},
+     "color": {"field": "Region", "highlight": ["East"]}},
+    {"name": "Stack", "type": "area", "title": "Monthly sales, **stacked**", "subtitle": "{accent:East} at the bottom",
+     "date": {"field": "Month", "level": "month"}, "measure": {"field": "Sales"},
+     "color": {"field": "Region", "highlight": ["East"]}},
+    {"name": "Gap", "type": "bar", "title": "Sales **vs plan** by manager", "subtitle": "{good:Above plan} and {bad:below plan}",
+     "dimension": "Manager", "measure": {"field": "Sales vs Plan"}, "sort": "desc", "color": {"good": "up"}}
+  ],
+  "dashboard": {"name": "Colors", "title": "**Color** with meaning", "subtitle": "Sample data, 2025",
+                "width": 1200, "height": 800, "grid": [["Regions", "Managers", "Plan"], ["Trend", "Stack", "Gap"]]}
+}

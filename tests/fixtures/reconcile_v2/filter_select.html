@@ -1,0 +1,66 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Sales by category</title>
+<style>
+  body { font-family: Segoe UI, Arial, sans-serif; margin: 24px; color: #222 }
+  .kpis { display: flex; gap: 24px; margin-bottom: 16px }
+  .kpi .v { font-size: 28px; font-weight: 600 }
+  .row { display: flex; gap: 24px; flex-wrap: wrap }
+  section { margin-bottom: 16px }
+  .bar-row { display: flex; gap: 8px; align-items: center; width: 360px }
+  .bar-row span:first-child { width: 60px }
+  .fill { background: #4e79a7; height: 14px }
+</style>
+</head><body>
+<h1>Sales by category</h1>
+<label for="cat">Category</label> <select id="cat"><option>Furniture</option><option>Office</option><option>Tech</option></select>
+<div class="kpis">
+  <div class="kpi"><div class="v" id="k-sales"></div><div class="l">Total sales</div></div>
+  <div class="kpi"><div class="v" id="k-profit"></div><div class="l">Total profit</div></div>
+</div>
+<section><h3>Sales by region</h3><div id="bars"></div></section>
+<script>
+const DATA = {
+ "Furniture": {
+  "sales": 74956.92,
+  "profit": 7585.81,
+  "regions": {
+   "East": 18839.86,
+   "North": 23294.07,
+   "South": 15128.11,
+   "West": 17694.88
+  }
+ },
+ "Office": {
+  "sales": 71177.75,
+  "profit": 7211.62,
+  "regions": {
+   "East": 15632.96,
+   "North": 14205.31,
+   "South": 22634.41,
+   "West": 18705.07
+  }
+ },
+ "Tech": {
+  "sales": 78575.01,
+  "profit": 8752.17,
+  "regions": {
+   "East": 17880.77,
+   "North": 20983.2,
+   "South": 21099.94,
+   "West": 18611.1
+  }
+ }
+};
+const fmt = (v) => Math.round(v).toLocaleString("en-US");
+function render(cat) {
+  const d = DATA[cat], max = Math.max(...Object.values(d.regions));
+  document.getElementById("k-sales").textContent = fmt(d.sales);
+  document.getElementById("k-profit").textContent = fmt(d.profit);
+  document.getElementById("bars").innerHTML = Object.entries(d.regions).map(([r, v]) =>
+    `<div class="bar-row"><span>${r}</span><div class="fill" style="width:${200 * v / max}px"></div><span>${fmt(v)}</span></div>`).join("");
+}
+const sel = document.getElementById("cat");
+sel.addEventListener("change", () => render(sel.value));
+render(sel.value);
+</script>
+</body></html>

@@ -1,0 +1,3 @@
+# The house style. It sets nothing on purpose: the tokens are tbuilder/design.py, each with its source there
+# (decisions/193). A second copy here could only drift.
+profile_version: 1

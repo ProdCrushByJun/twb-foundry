@@ -1,0 +1,19 @@
+{
+ "_source": "pandas over data/sample/params_v2.csv (golden/expected/make_expected.py, decisions/052): parameters from a field when the workbook opens: lists and defaults",
+ "KPI": {
+  "AGG(Region sales)": 570,
+  "AGG(Sales to date)": 1520,
+  "AGG(Big sales)": 1800
+ },
+ "Top Bar": {
+  "A": 600,
+  "B": 480,
+  "C": 360,
+  "D": 360
+ },
+ "To Date": {
+  "2025-01": 760,
+  "2025-02": 760,
+  "2025-03": 0
+ }
+}

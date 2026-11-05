@@ -1,0 +1,21 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "sheets": [
+    {"name": "Monthly", "type": "kpi", "style": "cards", "arrange": "strip", "title": "Latest **month**",
+     "date": {"field": "Order Date", "level": "month"}, "compare": "previous", "period_line": true,
+     "delta": "abs_pct", "history": "line", "history_reference": {"type": "avg"}, "marker": "bar",
+     "measures": [{"field": "Sales", "format": "currency_k"}, {"field": "Profit"},
+                  {"field": "Quantity", "label": "Units", "good": "down"}]},
+    {"name": "Yearly", "type": "kpi", "style": "cards", "title": "Same month **last year**",
+     "date": {"field": "Order Date", "level": "month"}, "compare": "year", "delta_style": "pill", "marker": "bar",
+     "measures": [{"field": "Sales", "format": "currency_k"}, {"field": "Profit"}]},
+    {"name": "Stacked", "type": "kpi", "style": "cards", "arrange": "column", "title": "Units **by month**",
+     "date": {"field": "Order Date", "level": "month"}, "delta": "abs_pct", "delta_style": "pill",
+     "history": "line", "measures": [{"field": "Quantity", "label": "Units", "good": "down"}]}
+  ],
+  "dashboard": {"name": "KPI v2", "title": "**Sales** KPI", "subtitle": "Sample data, 2024-2025",
+                "data_as_of": "Order Date", "theme": "cards", "theme_font": "Arial", "width": 1250, "height": 800,
+                "row_heights": [1, 1], "grid": [["Monthly"], ["Yearly", "Stacked"]]}
+}

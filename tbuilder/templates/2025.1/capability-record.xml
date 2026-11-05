@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<metadata-record class="capability">
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype="string" name="character-set">"UTF-8"</attribute>
+              <attribute datatype="string" name="collation">"ru"</attribute>
+              <attribute datatype="string" name="currency">"₽"</attribute>
+              <attribute datatype="string" name="decimal-char">","</attribute>
+              <attribute datatype="string" name="field-delimiter">","</attribute>
+              <attribute datatype="string" name="header-row">"true"</attribute>
+              <attribute datatype="string" name="locale">"ru_RU"</attribute>
+              <attribute datatype="string" name="single-char">""</attribute>
+              <attribute datatype="string" name="thousands-char">" "</attribute>
+            </attributes>
+          </metadata-record>
+          

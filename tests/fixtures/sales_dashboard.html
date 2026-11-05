@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sales Pulse 2025 (fixture)</title>
+<!-- Synthetic fixture for tests: every number is computed from data/sample/sales.csv. -->
+<style>
+  :root { --bg:#0E1117; --ink:#F2F4F8; --muted:#8A93A6; --rule:#1F2633; --accent:#4FB3FF; --warm:#FFB347; }
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { background:var(--bg); color:var(--ink); font-family:"Segoe UI", Arial, sans-serif }
+  .frame { width:1200px; margin:0 auto; padding:32px; display:grid; gap:28px }
+  h1 { font-size:30px }
+  .kpis { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px }
+  .kpi { border:1px solid var(--rule); border-radius:10px; padding:16px }
+  .kpi .v { font-size:34px; font-weight:800 }
+  .kpi .l { font-size:11px; letter-spacing:.15em; color:var(--muted); text-transform:uppercase; margin-top:6px }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:28px }
+  h3 { font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin-bottom:12px }
+  .bars .bar-row { display:grid; grid-template-columns:70px 1fr 70px; align-items:center; gap:8px; margin:6px 0; font-size:13px }
+  .bars .track { background:var(--rule); height:16px; border-radius:4px }
+  .bars .fill { background:var(--accent); height:16px; border-radius:4px }
+  table { width:100%; border-collapse:collapse; font-size:13px }
+  th, td { padding:6px 8px; border-bottom:1px solid var(--rule); text-align:right }
+  th:first-child, td:first-child { text-align:left }
+  select { background:var(--rule); color:var(--ink); border:0; padding:6px 10px; border-radius:6px }
+  .toolbar { display:flex; justify-content:space-between; align-items:center }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="toolbar">
+    <h1>Sales Pulse 2025</h1>
+    <select aria-label="Region"><option>All</option><option>East</option><option>North</option><option>South</option><option>West</option></select>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi"><div class="v">224,710</div><div class="l">Total sales</div></div>
+    <div class="kpi"><div class="v">23,550</div><div class="l">Total profit</div></div>
+    <div class="kpi"><div class="v">2,610</div><div class="l">Units sold</div></div>
+  </div>
+
+  <div class="row">
+    <section>
+      <h3>Sales by region</h3>
+      <div class="bars">
+        <div class="bar-row"><span>South</span><div class="track"><div class="fill" style="width:100%"></div></div><span>58,862</span></div>
+        <div class="bar-row"><span>North</span><div class="track"><div class="fill" style="width:99.4%"></div></div><span>58,483</span></div>
+        <div class="bar-row"><span>West</span><div class="track"><div class="fill" style="width:93.5%"></div></div><span>55,011</span></div>
+        <div class="bar-row"><span>East</span><div class="track"><div class="fill" style="width:88.9%"></div></div><span>52,354</span></div>
+      </div>
+    </section>
+    <section>
+      <h3>Monthly sales trend</h3>
+      <svg width="540" height="180" viewBox="0 0 540 180">
+        <polyline fill="none" stroke="#4FB3FF" stroke-width="2"
+          points="20,62 64,22 108,40 152,70 196,102 240,24 284,50 328,48 372,93 416,98 460,110 504,76"/>
+        <text x="20" y="175" fill="#8A93A6" font-size="10">Jan</text>
+        <text x="152" y="175" fill="#8A93A6" font-size="10">Apr</text>
+        <text x="284" y="175" fill="#8A93A6" font-size="10">Jul</text>
+        <text x="416" y="175" fill="#8A93A6" font-size="10">Oct</text>
+        <text x="490" y="175" fill="#8A93A6" font-size="10">Dec</text>
+      </svg>
+    </section>
+  </div>
+
+  <section>
+    <h3>Sales by region and category</h3>
+    <table>
+      <thead><tr><th>Region</th><th>Furniture</th><th>Office</th><th>Tech</th></tr></thead>
+      <tbody>
+        <tr><td>East</td><td>18,840</td><td>15,633</td><td>17,881</td></tr>
+        <tr><td>North</td><td>23,294</td><td>14,205</td><td>20,983</td></tr>
+        <tr><td>South</td><td>15,128</td><td>22,634</td><td>21,100</td></tr>
+        <tr><td>West</td><td>17,695</td><td>18,705</td><td>18,611</td></tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+</body>
+</html>

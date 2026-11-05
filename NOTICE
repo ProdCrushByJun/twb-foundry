@@ -1,0 +1,11 @@
+twb-foundry is under the MIT License (see LICENSE), except for what is listed here.
+
+tbuilder/vendor/tableau-document-schemas/
+    Tableau's document schemas (XSD), copyright Salesforce, Inc., under the Apache License 2.0:
+    see tbuilder/vendor/tableau-document-schemas/LICENSE.txt. Included unchanged.
+
+tbuilder/geo_names.json.gz is not in this repository. tools/geo_names.py makes it on first use
+from the geocoding data of your own Tableau Desktop.
+
+Tableau is a trademark of Salesforce, Inc. This project is not affiliated with or endorsed by
+Salesforce or Tableau.

@@ -1,0 +1,17 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "sheets": [
+    {"name": "Combo", "type": "combo", "title": "Sales and **profit**",
+     "subtitle": "by region; bars: sales, line: {accent:profit}",
+     "dimension": "Region", "bar": {"field": "Sales"}, "line": {"field": "Profit"}, "sort": "desc"},
+    {"name": "Donut", "type": "donut", "title": "Sales **by category**", "subtitle": "share of the total",
+     "dimension": "Category", "measure": {"field": "Sales"}},
+    {"name": "Lollipop", "type": "lollipop", "title": "Quantity **by region**",
+     "dimension": "Region", "measure": {"field": "Quantity"}, "sort": "desc"}
+  ],
+  "dashboard": {"name": "Dual Axis", "title": "**Dual** axis", "subtitle": "Sample data, 2024-2025",
+                "width": 1400, "height": 700,
+                "grid": [["Combo", "Donut", "Lollipop"]]}
+}

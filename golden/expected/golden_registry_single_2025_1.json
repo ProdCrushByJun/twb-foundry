@@ -1,0 +1,155 @@
+{
+ "_source": "pandas over data/sample/sales_2y.csv (golden/expected/make_expected.py, decisions/052): one column per style: one pane, id 1 without x-axis-name",
+ "One Text": {
+  "East": {
+   "Sales": 78646.07
+  },
+  "North": {
+   "Sales": 82909.04
+  },
+  "South": {
+   "Sales": 70212.64
+  },
+  "West": {
+   "Sales": 85565.19
+  }
+ },
+ "One Text Top": {
+  "Furniture": {
+   "Sales": 105262.97
+  },
+  "Office": {
+   "Sales": 108217.06
+  },
+  "Tech": {
+   "Sales": 103852.91
+  }
+ },
+ "One Text Nested": {
+  "East | Furniture": {
+   "Sales": 23494.91
+  },
+  "East | Office": {
+   "Sales": 29050.27
+  },
+  "East | Tech": {
+   "Sales": 26100.89
+  },
+  "North | Furniture": {
+   "Sales": 26044.93
+  },
+  "North | Office": {
+   "Sales": 33687.71
+  },
+  "North | Tech": {
+   "Sales": 23176.4
+  },
+  "South | Furniture": {
+   "Sales": 27649.66
+  },
+  "South | Office": {
+   "Sales": 21567.24
+  },
+  "South | Tech": {
+   "Sales": 20995.74
+  },
+  "West | Furniture": {
+   "Sales": 28073.47
+  },
+  "West | Office": {
+   "Sales": 23911.84
+  },
+  "West | Tech": {
+   "Sales": 33579.88
+  },
+  "East | Total": {
+   "Sales": 78646.07
+  },
+  "North | Total": {
+   "Sales": 82909.04
+  },
+  "South | Total": {
+   "Sales": 70212.64
+  },
+  "West | Total": {
+   "Sales": 85565.19
+  },
+  "Total": {
+   "Sales": 317332.94
+  }
+ },
+ "One Bar": {
+  "East": {
+   "Profit": 5896.8
+  },
+  "North": {
+   "Profit": 6646.76
+  },
+  "South": {
+   "Profit": 4666.01
+  },
+  "West": {
+   "Profit": 7335.88
+  }
+ },
+ "One Bar Inside": {
+  "East": {
+   "Sales": 45254.44
+  },
+  "North": {
+   "Sales": 47810.97
+  },
+  "South": {
+   "Sales": 38386.69
+  },
+  "West": {
+   "Sales": 47109.55
+  }
+ },
+ "One Tick": {
+  "East": {
+   "Sales vs PY": 45254.44,
+   "Sales vs PY · Sales 2024": 33391.63
+  },
+  "North": {
+   "Sales vs PY": 47810.97,
+   "Sales vs PY · Sales 2024": 35098.07
+  },
+  "South": {
+   "Sales vs PY": 38386.69,
+   "Sales vs PY · Sales 2024": 31825.95
+  },
+  "West": {
+   "Sales vs PY": 47109.55,
+   "Sales vs PY · Sales 2024": 38455.64
+  }
+ },
+ "One Dot": {
+  "East": {
+   "Avg profit": 31.5337
+  },
+  "North": {
+   "Avg profit": 35.168
+  },
+  "South": {
+   "Avg profit": 27.6095
+  },
+  "West": {
+   "Avg profit": 38.4077
+  }
+ },
+ "One Track": {
+  "East": {
+   "Of total": 0.2534
+  },
+  "North": {
+   "Of total": 0.2678
+  },
+  "South": {
+   "Of total": 0.215
+  },
+  "West": {
+   "Of total": 0.2638
+  }
+ }
+}

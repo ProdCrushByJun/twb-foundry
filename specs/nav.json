@@ -1,0 +1,31 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Profit"}]},
+    {"name": "By Category", "type": "bar", "title": "**Categories**", "subtitle": "Sum of sales",
+     "dimension": "Category", "measure": {"field": "Sales"}, "sort": "desc"},
+    {"name": "Trend", "type": "line", "title": "Monthly **Sales**", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}},
+    {"name": "By Region", "type": "registry", "title": "**Regions**", "subtitle": "Sales and profit", "rows": ["Region"],
+     "sort": "desc", "columns": [{"measure": {"field": "Sales"}}, {"measure": {"field": "Profit"}, "style": "text"}]},
+    {"name": "Matrix", "type": "table", "title": "**Region** × Category", "subtitle": "Sum of sales",
+     "rows": "Region", "cols": "Category", "measure": {"field": "Sales"}}
+  ],
+  "filters": [{"field": "Region", "show_on": "By Category"}],
+  "dashboards": [
+    {"name": "Overview", "title": "**Sales** Overview", "subtitle": "Sample data, 500 orders",
+     "width": 1000, "height": 800, "row_heights": [5, 9, 9],
+     "grid": [["KPI"], ["By Category"], ["Trend"]],
+     "actions": [{"source": "By Category", "targets": ["Trend"], "fields": ["Category"]}]},
+    {"name": "Regions", "title": "**Regions**", "subtitle": "Sample data, 500 orders",
+     "width": 1000, "height": 800, "row_heights": [1, 1],
+     "grid": [["Trend"], ["By Region"]],
+     "actions": [{"source": "By Region"}]},
+    {"name": "Details", "title": "**Details**", "subtitle": "Sample data, 500 orders",
+     "width": 1000, "height": 800,
+     "grid": [["Matrix", "By Category"]]}
+  ],
+  "nav": {"style": "tabs"}
+}

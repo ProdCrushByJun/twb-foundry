@@ -1,0 +1,74 @@
+{
+ "_source": "pandas over data/sample/sales_2y.csv (golden/expected/make_expected.py, decisions/052): MoM cards, bar, line, table",
+ "KPI": {
+  "Sales": {
+   "current": 15462.12,
+   "previous": 13995.54,
+   "delta": 0.1048
+  },
+  "Profit": {
+   "current": 825.38,
+   "previous": 1257.53,
+   "delta": -0.3436
+  },
+  "Units": {
+   "current": 104,
+   "previous": 102,
+   "delta": 0.0196
+  }
+ },
+ "Bar": {
+  "East | Furniture": 23494.91,
+  "East | Office": 29050.27,
+  "East | Tech": 26100.89,
+  "North | Furniture": 26044.93,
+  "North | Office": 33687.71,
+  "North | Tech": 23176.4,
+  "South | Furniture": 27649.66,
+  "South | Office": 21567.24,
+  "South | Tech": 20995.74,
+  "West | Furniture": 28073.47,
+  "West | Office": 23911.84,
+  "West | Tech": 33579.88
+ },
+ "Line": {
+  "2024-01": 11933.91,
+  "2024-02": 10545.56,
+  "2024-03": 12774.78,
+  "2024-04": 13530.44,
+  "2024-05": 11546.42,
+  "2024-06": 10592.13,
+  "2024-07": 5612.36,
+  "2024-08": 13967.83,
+  "2024-09": 11039.1,
+  "2024-10": 13651.01,
+  "2024-11": 14006.39,
+  "2024-12": 9571.36,
+  "2025-01": 13422.44,
+  "2025-02": 13544.03,
+  "2025-03": 17285.09,
+  "2025-04": 15395.75,
+  "2025-05": 12871.01,
+  "2025-06": 16320.19,
+  "2025-07": 14157.16,
+  "2025-08": 16952.82,
+  "2025-09": 15372.27,
+  "2025-10": 13783.23,
+  "2025-11": 13995.54,
+  "2025-12": 15462.12
+ },
+ "Table": {
+  "East | Furniture": 23494.91,
+  "East | Office": 29050.27,
+  "East | Tech": 26100.89,
+  "North | Furniture": 26044.93,
+  "North | Office": 33687.71,
+  "North | Tech": 23176.4,
+  "South | Furniture": 27649.66,
+  "South | Office": 21567.24,
+  "South | Tech": 20995.74,
+  "West | Furniture": 28073.47,
+  "West | Office": 23911.84,
+  "West | Tech": 33579.88
+ }
+}

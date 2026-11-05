@@ -1,0 +1,572 @@
+{
+ "_source": "pandas over data/sample/sales_states.csv (golden/expected/make_expected.py, decisions/052): a US tile map from the data's row / column, a wall ranked by region",
+ "State Tiles": {
+  "Alabama": 5685.53,
+  "Alaska": 3424.41,
+  "Arizona": 16211.7,
+  "Arkansas": 7991.19,
+  "California": 73615.58,
+  "Colorado": 10835.35,
+  "Connecticut": 10947.06,
+  "Delaware": 10284.96,
+  "District of Columbia": 7792.17,
+  "Florida": 34011.08,
+  "Georgia": 23535.4,
+  "Hawaii": 9794.33,
+  "Idaho": 8388.43,
+  "Illinois": 23998.64,
+  "Indiana": 15329.44,
+  "Iowa": 6459.24,
+  "Kansas": 5637.16,
+  "Kentucky": 7783.71,
+  "Louisiana": 6814.24,
+  "Maine": 5025.81,
+  "Maryland": 14921.21,
+  "Massachusetts": 11997.07,
+  "Michigan": 15277.35,
+  "Minnesota": 14060.13,
+  "Mississippi": 4958.31,
+  "Missouri": 14828.67,
+  "Montana": 5898.11,
+  "Nebraska": 5516.88,
+  "Nevada": 4811.23,
+  "New Hampshire": 8219.3,
+  "New Jersey": 12531.22,
+  "New Mexico": 2337.58,
+  "New York": 40987.49,
+  "North Carolina": 21554.43,
+  "North Dakota": 6955.14,
+  "Ohio": 24554.17,
+  "Oklahoma": 9446.94,
+  "Oregon": 5939.22,
+  "Pennsylvania": 22275.32,
+  "Rhode Island": 5645.15,
+  "South Carolina": 4852.99,
+  "South Dakota": 5183.39,
+  "Tennessee": 13667.18,
+  "Texas": 49637.59,
+  "Utah": 4655.98,
+  "Vermont": 4224.47,
+  "Virginia": 22755.61,
+  "Washington": 23974.71,
+  "West Virginia": 4253.58,
+  "Wisconsin": 11081.29,
+  "Wyoming": 7558.46
+ },
+ "State Tiles · Tiles": {
+  "Alabama": {
+   "row": 7,
+   "col": 7
+  },
+  "Alaska": {
+   "row": 1,
+   "col": 1
+  },
+  "Arizona": {
+   "row": 6,
+   "col": 2
+  },
+  "Arkansas": {
+   "row": 6,
+   "col": 5
+  },
+  "California": {
+   "row": 5,
+   "col": 1
+  },
+  "Colorado": {
+   "row": 5,
+   "col": 3
+  },
+  "Connecticut": {
+   "row": 4,
+   "col": 10
+  },
+  "Delaware": {
+   "row": 5,
+   "col": 10
+  },
+  "District of Columbia": {
+   "row": 6,
+   "col": 9
+  },
+  "Florida": {
+   "row": 8,
+   "col": 9
+  },
+  "Georgia": {
+   "row": 7,
+   "col": 8
+  },
+  "Hawaii": {
+   "row": 8,
+   "col": 1
+  },
+  "Idaho": {
+   "row": 3,
+   "col": 2
+  },
+  "Illinois": {
+   "row": 3,
+   "col": 6
+  },
+  "Indiana": {
+   "row": 4,
+   "col": 6
+  },
+  "Iowa": {
+   "row": 4,
+   "col": 5
+  },
+  "Kansas": {
+   "row": 6,
+   "col": 4
+  },
+  "Kentucky": {
+   "row": 5,
+   "col": 6
+  },
+  "Louisiana": {
+   "row": 7,
+   "col": 5
+  },
+  "Maine": {
+   "row": 1,
+   "col": 11
+  },
+  "Maryland": {
+   "row": 5,
+   "col": 9
+  },
+  "Massachusetts": {
+   "row": 3,
+   "col": 11
+  },
+  "Michigan": {
+   "row": 3,
+   "col": 8
+  },
+  "Minnesota": {
+   "row": 3,
+   "col": 5
+  },
+  "Mississippi": {
+   "row": 7,
+   "col": 6
+  },
+  "Missouri": {
+   "row": 5,
+   "col": 5
+  },
+  "Montana": {
+   "row": 3,
+   "col": 3
+  },
+  "Nebraska": {
+   "row": 5,
+   "col": 4
+  },
+  "Nevada": {
+   "row": 4,
+   "col": 2
+  },
+  "New Hampshire": {
+   "row": 2,
+   "col": 11
+  },
+  "New Jersey": {
+   "row": 4,
+   "col": 9
+  },
+  "New Mexico": {
+   "row": 6,
+   "col": 3
+  },
+  "New York": {
+   "row": 3,
+   "col": 9
+  },
+  "North Carolina": {
+   "row": 6,
+   "col": 7
+  },
+  "North Dakota": {
+   "row": 3,
+   "col": 4
+  },
+  "Ohio": {
+   "row": 4,
+   "col": 7
+  },
+  "Oklahoma": {
+   "row": 7,
+   "col": 4
+  },
+  "Oregon": {
+   "row": 4,
+   "col": 1
+  },
+  "Pennsylvania": {
+   "row": 4,
+   "col": 8
+  },
+  "Rhode Island": {
+   "row": 3,
+   "col": 10
+  },
+  "South Carolina": {
+   "row": 6,
+   "col": 8
+  },
+  "South Dakota": {
+   "row": 4,
+   "col": 4
+  },
+  "Tennessee": {
+   "row": 6,
+   "col": 6
+  },
+  "Texas": {
+   "row": 8,
+   "col": 4
+  },
+  "Utah": {
+   "row": 5,
+   "col": 2
+  },
+  "Vermont": {
+   "row": 2,
+   "col": 10
+  },
+  "Virginia": {
+   "row": 5,
+   "col": 8
+  },
+  "Washington": {
+   "row": 3,
+   "col": 1
+  },
+  "West Virginia": {
+   "row": 5,
+   "col": 7
+  },
+  "Wisconsin": {
+   "row": 3,
+   "col": 7
+  },
+  "Wyoming": {
+   "row": 4,
+   "col": 3
+  }
+ },
+ "Region Wall": {
+  "Alabama": 5685.53,
+  "Alaska": 3424.41,
+  "Arizona": 16211.7,
+  "Arkansas": 7991.19,
+  "California": 73615.58,
+  "Colorado": 10835.35,
+  "Connecticut": 10947.06,
+  "Delaware": 10284.96,
+  "District of Columbia": 7792.17,
+  "Florida": 34011.08,
+  "Georgia": 23535.4,
+  "Hawaii": 9794.33,
+  "Idaho": 8388.43,
+  "Illinois": 23998.64,
+  "Indiana": 15329.44,
+  "Iowa": 6459.24,
+  "Kansas": 5637.16,
+  "Kentucky": 7783.71,
+  "Louisiana": 6814.24,
+  "Maine": 5025.81,
+  "Maryland": 14921.21,
+  "Massachusetts": 11997.07,
+  "Michigan": 15277.35,
+  "Minnesota": 14060.13,
+  "Mississippi": 4958.31,
+  "Missouri": 14828.67,
+  "Montana": 5898.11,
+  "Nebraska": 5516.88,
+  "Nevada": 4811.23,
+  "New Hampshire": 8219.3,
+  "New Jersey": 12531.22,
+  "New Mexico": 2337.58,
+  "New York": 40987.49,
+  "North Carolina": 21554.43,
+  "North Dakota": 6955.14,
+  "Ohio": 24554.17,
+  "Oklahoma": 9446.94,
+  "Oregon": 5939.22,
+  "Pennsylvania": 22275.32,
+  "Rhode Island": 5645.15,
+  "South Carolina": 4852.99,
+  "South Dakota": 5183.39,
+  "Tennessee": 13667.18,
+  "Texas": 49637.59,
+  "Utah": 4655.98,
+  "Vermont": 4224.47,
+  "Virginia": 22755.61,
+  "Washington": 23974.71,
+  "West Virginia": 4253.58,
+  "Wisconsin": 11081.29,
+  "Wyoming": 7558.46
+ },
+ "Region Wall · Tiles": {
+  "Alabama": {
+   "row": 5,
+   "col": 2,
+   "group": "South"
+  },
+  "Alaska": {
+   "row": 4,
+   "col": 3,
+   "group": "West"
+  },
+  "Arizona": {
+   "row": 1,
+   "col": 3,
+   "group": "West"
+  },
+  "Arkansas": {
+   "row": 4,
+   "col": 1,
+   "group": "South"
+  },
+  "California": {
+   "row": 1,
+   "col": 1,
+   "group": "West"
+  },
+  "Colorado": {
+   "row": 2,
+   "col": 1,
+   "group": "West"
+  },
+  "Connecticut": {
+   "row": 2,
+   "col": 2,
+   "group": "Northeast"
+  },
+  "Delaware": {
+   "row": 3,
+   "col": 2,
+   "group": "South"
+  },
+  "District of Columbia": {
+   "row": 4,
+   "col": 2,
+   "group": "South"
+  },
+  "Florida": {
+   "row": 1,
+   "col": 2,
+   "group": "South"
+  },
+  "Georgia": {
+   "row": 1,
+   "col": 3,
+   "group": "South"
+  },
+  "Hawaii": {
+   "row": 2,
+   "col": 2,
+   "group": "West"
+  },
+  "Idaho": {
+   "row": 2,
+   "col": 3,
+   "group": "West"
+  },
+  "Illinois": {
+   "row": 1,
+   "col": 2,
+   "group": "Midwest"
+  },
+  "Indiana": {
+   "row": 1,
+   "col": 3,
+   "group": "Midwest"
+  },
+  "Iowa": {
+   "row": 3,
+   "col": 3,
+   "group": "Midwest"
+  },
+  "Kansas": {
+   "row": 4,
+   "col": 1,
+   "group": "Midwest"
+  },
+  "Kentucky": {
+   "row": 4,
+   "col": 3,
+   "group": "South"
+  },
+  "Louisiana": {
+   "row": 5,
+   "col": 1,
+   "group": "South"
+  },
+  "Maine": {
+   "row": 3,
+   "col": 2,
+   "group": "Northeast"
+  },
+  "Maryland": {
+   "row": 2,
+   "col": 3,
+   "group": "South"
+  },
+  "Massachusetts": {
+   "row": 2,
+   "col": 1,
+   "group": "Northeast"
+  },
+  "Michigan": {
+   "row": 2,
+   "col": 1,
+   "group": "Midwest"
+  },
+  "Minnesota": {
+   "row": 2,
+   "col": 3,
+   "group": "Midwest"
+  },
+  "Mississippi": {
+   "row": 5,
+   "col": 3,
+   "group": "South"
+  },
+  "Missouri": {
+   "row": 2,
+   "col": 2,
+   "group": "Midwest"
+  },
+  "Montana": {
+   "row": 3,
+   "col": 3,
+   "group": "West"
+  },
+  "Nebraska": {
+   "row": 4,
+   "col": 2,
+   "group": "Midwest"
+  },
+  "Nevada": {
+   "row": 4,
+   "col": 1,
+   "group": "West"
+  },
+  "New Hampshire": {
+   "row": 2,
+   "col": 3,
+   "group": "Northeast"
+  },
+  "New Jersey": {
+   "row": 1,
+   "col": 3,
+   "group": "Northeast"
+  },
+  "New Mexico": {
+   "row": 5,
+   "col": 1,
+   "group": "West"
+  },
+  "New York": {
+   "row": 1,
+   "col": 1,
+   "group": "Northeast"
+  },
+  "North Carolina": {
+   "row": 2,
+   "col": 2,
+   "group": "South"
+  },
+  "North Dakota": {
+   "row": 3,
+   "col": 2,
+   "group": "Midwest"
+  },
+  "Ohio": {
+   "row": 1,
+   "col": 1,
+   "group": "Midwest"
+  },
+  "Oklahoma": {
+   "row": 3,
+   "col": 3,
+   "group": "South"
+  },
+  "Oregon": {
+   "row": 3,
+   "col": 2,
+   "group": "West"
+  },
+  "Pennsylvania": {
+   "row": 1,
+   "col": 2,
+   "group": "Northeast"
+  },
+  "Rhode Island": {
+   "row": 3,
+   "col": 1,
+   "group": "Northeast"
+  },
+  "South Carolina": {
+   "row": 6,
+   "col": 1,
+   "group": "South"
+  },
+  "South Dakota": {
+   "row": 4,
+   "col": 3,
+   "group": "Midwest"
+  },
+  "Tennessee": {
+   "row": 3,
+   "col": 1,
+   "group": "South"
+  },
+  "Texas": {
+   "row": 1,
+   "col": 1,
+   "group": "South"
+  },
+  "Utah": {
+   "row": 4,
+   "col": 2,
+   "group": "West"
+  },
+  "Vermont": {
+   "row": 3,
+   "col": 3,
+   "group": "Northeast"
+  },
+  "Virginia": {
+   "row": 2,
+   "col": 1,
+   "group": "South"
+  },
+  "Washington": {
+   "row": 1,
+   "col": 2,
+   "group": "West"
+  },
+  "West Virginia": {
+   "row": 6,
+   "col": 2,
+   "group": "South"
+  },
+  "Wisconsin": {
+   "row": 3,
+   "col": 1,
+   "group": "Midwest"
+  },
+  "Wyoming": {
+   "row": 3,
+   "col": 1,
+   "group": "West"
+  }
+ }
+}

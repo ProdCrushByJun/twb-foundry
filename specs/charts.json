@@ -1,0 +1,12 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "block_headers": false,
+  "declutter": false,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "Area", "type": "area", "title": "Monthly Sales by Category", "date": {"field": "Order Date", "level": "month"}, "measure": {"field": "Sales"}, "color": "Category"},
+    {"name": "Heatmap", "type": "heatmap", "title": "Sales: Region x Category", "rows": "Region", "cols": "Category", "measure": {"field": "Sales"}}
+  ],
+  "dashboard": {"theme": "flat", "name": "Charts", "width": 1200, "height": 700, "grid": [[{"sheet": "Area", "width": 2}, "Heatmap"]]}
+}

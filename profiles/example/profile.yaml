@@ -1,0 +1,60 @@
+# A template. Copy the folder to profiles/<your name>/ (not in git), delete what you do not need, then:
+#   python -m tbuilder lint spec.json --profile <your name>
+#   python -m tbuilder build spec.json --profile <your name>
+# or set TB_PROFILE, or put "profile": "<your name>" in the spec. An explicit field of a spec beats the profile.
+# A profile only changes values: it adds no chart types, writes no XML and turns no check off.
+profile_version: 1
+
+# What everything you leave out comes from.
+based_on: house
+
+# The one workbook your style comes from. `kind`: file | public | server. `python -m tbuilder copy-style` fills it.
+# style_book: {kind: file, file: refs/my_book.twbx, dashboard: Overview}
+
+# Where else your taste comes from, for your own record.
+# sources:
+#   - {kind: brandbook, file: context/brand.md}
+
+# Keys are those of tbuilder/design.py: COLOR, FONT, SPACE. An unknown key is a lint error.
+tokens:
+  color:
+    accent: "#1f77b4"    # the highlighted mark, the dark end of a sequential scale, KPI, nav line
+    good: "#2ca02c"      # good_text and good_fill follow it unless you set them
+    bad: "#d62728"       # bad_text and bad_fill follow it unless you set them
+    canvas: "#f7f7f7"    # under the cards
+    card_bg: "#ffffff"   # card face; sheets show it through, a registry's text cells follow it
+    text: "#222222"      # titles and numbers
+    scale_low: "#f1f1f1" # the light end of a sequential scale; its dark end is accent
+    scale_mid: "#d9d9d9" # the middle of a diverging scale; its ends are bad and good
+  font:
+    family: Arial        # or leave it out for Tableau Book
+    dash_title: 20       # pt, in both themes
+    block_title: 12
+  space:
+    card_margin: 6       # px; cards are twice this apart, theme_edge follows it unless you set it
+    card_padding: 16
+
+palettes:
+  categorical: ["#1f77b4", "#ff7f0e", "#2ca02c"]  # up to 5 (rule C2)
+
+legend: words   # words: colored words in the subtitle; card: a legend card
+theme: cards    # cards | flat
+
+# What /to-tableau and dashboard-designer prefer when the source leaves a choice. /pick-charts fills it from workbooks:
+# the keys are kpi, comparison, trend, part_to_whole, table, distribution, relationship, geography, flow.
+prefer:
+  kpi: cards             # tiles | cards | strip
+  comparison: bar        # bar | bar_in_bar | bullet
+  trend: line
+  part_to_whole: stacked_100
+avoid: [pie, donut, gauge]
+
+# The dashboard whose rows and columns a new book takes. /pick-charts fills it, `tb pick-layout` puts it in a spec.
+# layout: {file: refs/my_book.twbx, dashboard: Overview}
+
+# The level of a lint rule (warn | info) and C2's threshold. Contrast (C8, C9), data-ink (I*) and spacing (D5) stay.
+rules:
+  C2: {max_categories: 6}
+
+# Folders outside the repo with your MD files. Your own go to context/ next to this file; they are read first.
+context_dirs: []

@@ -1,0 +1,26 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "calcs": [
+    {"name": "Month", "formula": "IIF(MONTH([Order Date]) < 10, \"0\", \"\") + STR(MONTH([Order Date])) + \" \" + LEFT(DATENAME('month', [Order Date]), 3)"},
+    {"name": "Sales Change", "formula": "(SUM(IIF(YEAR([Order Date]) = 2025, [Sales], 0)) - SUM(IIF(YEAR([Order Date]) = 2024, [Sales], 0))) / SUM(IIF(YEAR([Order Date]) = 2024, [Sales], 0))",
+     "format": {"type": "percent", "decimals": 1}}
+  ],
+  "sheets": [
+    {"name": "Seasonality", "type": "heatmap", "title": "**Sales** by month and region",
+     "subtitle": "2024-2025; totals of each month at the right, of each region above, dashed: average",
+     "rows": "Month", "cols": "Region", "measure": {"field": "Sales"},
+     "color": {"scale": "sequential"}, "margins": {"rows": "bar", "cols": "bar"}},
+    {"name": "Change", "type": "heatmap", "title": "**Change** 2025 vs 2024",
+     "subtitle": "Sales by region and category, grey: no change",
+     "rows": "Region", "cols": "Category", "measure": {"field": "Sales Change"},
+     "color": {"scale": "diverging", "center": 0}},
+    {"name": "Profit", "type": "bar", "title": "**Profit** by category", "subtitle": "Darker: more profit, 4 steps",
+     "dimension": "Category", "measure": {"field": "Profit"}, "sort": "desc",
+     "color": {"scale": "sequential", "steps": 4}}
+  ],
+  "dashboard": {"name": "Heatmap v2", "title": "**Heatmap** v2", "subtitle": "Sample data, 2024-2025: continuous color scales and marginal totals",
+                "width": 1400, "height": 960,
+                "grid": [[{"sheet": "Seasonality", "width": 3}, {"rows": [["Change"], ["Profit"]], "width": 2}]]}
+}

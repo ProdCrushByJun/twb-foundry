@@ -1,0 +1,24 @@
+{
+  "$schema": "../../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "sales_nulls.csv"},
+  "fields": {
+    "Category": {"order": ["Tech", "Office", "Furniture"]}
+  },
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Quantity"}]},
+    {"name": "Regions", "type": "bar", "title": "Sales **by region**", "dimension": "Region", "sort": "desc",
+     "measure": {"field": "Sales"}},
+    {"name": "Categories", "type": "bar", "title": "Manual **order**", "dimension": "Category",
+     "measure": {"field": "Sales"}},
+    {"name": "Channels", "type": "bar", "title": "Sales **by channel**", "dimension": "Channel",
+     "measure": {"field": "Sales"}}
+  ],
+  "filters": [
+    {"field": "Region", "show_on": "KPI", "mode": "checkdropdown", "default": ["West"], "exclude": true},
+    {"field": "Channel", "show_on": "KPI", "mode": "checkdropdown", "default": ["Online"]}
+  ],
+  "dashboard": {"name": "Nulls filters", "title": "**Null** and filters",
+                "subtitle": "Region: all but West; Channel: Online; decisions/056", "width": 1600,
+                "height": 900, "row_heights": [1, 3], "grid": [["KPI"], ["Regions", "Categories", "Channels"]]}
+}

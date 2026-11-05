@@ -1,0 +1,19 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "locale": "en_US",
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "calcs": [
+    {"name": "Margin", "formula": "SUM([Profit]) / SUM([Sales]) * 100", "format": {"type": "number", "decimals": 0}}
+  ],
+  "sheets": [
+    {"name": "Margin Map", "type": "heatmap", "title": "**Margin** by region, category and quarter",
+     "subtitle": "Profit per 100 of sales; numbers only where it reaches 10",
+     "rows": ["Region", "Category"], "cols": "Order Date", "date_level": "quarter", "field_labels": "none",
+     "measure": {"field": "Margin"}, "label": {"min": 10},
+     "color": {"scale": "sequential", "min": 5, "max": 15}}
+  ],
+  "dashboard": {"name": "Heatmap rows", "title": "**Margin**: region over its categories",
+    "subtitle": "Two row fields: the region bold once, its categories under it",
+    "width": 1000, "height": 700, "row_heights": [1], "grid": [["Margin Map"]]}
+}

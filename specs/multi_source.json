@@ -1,0 +1,39 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasources": [
+    {"name": "orders", "type": "csv", "path": "../data/sample/sales.csv"},
+    {"name": "plan", "type": "csv", "path": "../data/sample/sales_plan.csv"}
+  ],
+  "parameters": [
+    {"name": "Top Managers", "type": "integer", "range": {"min": 2, "max": 6, "step": 1}, "default": 4}
+  ],
+  "calcs": [
+    {"name": "Margin", "formula": "SUM([Profit]) / SUM([Sales])", "format": "pct1"},
+    {"name": "Attainment", "datasource": "plan", "formula": "SUM([Sales]) / SUM([Plan])", "format": "pct1"}
+  ],
+  "fields": {
+    "Region": {"order": ["North", "East", "South", "West"]},
+    "Manager": {"caption": "Account manager"}
+  },
+  "sheets": [
+    {"name": "Orders KPI", "type": "kpi", "style": "tiles",
+     "measures": [{"field": "Sales", "label": "Sales"}, {"field": "Margin", "label": "Margin"}]},
+    {"name": "Orders by Region", "type": "bar", "title": "**Orders** by region", "subtitle": "Sum of sales",
+     "dimension": "Region", "measure": {"field": "Sales"}},
+    {"name": "Plan KPI", "datasource": "plan", "type": "kpi", "style": "tiles",
+     "measures": [{"field": "Plan", "label": "Plan"}, {"field": "Attainment", "label": "Attainment"}]},
+    {"name": "Sales by Manager", "datasource": "plan", "type": "bar",
+     "title": "Top [Top Managers] **managers**", "subtitle": "Sum of sales against plan",
+     "dimension": "Manager", "measure": {"field": "Sales"}, "sort": "desc", "top": {"n": "Top Managers"}}
+  ],
+  "filters": [
+    {"field": "Category", "show_on": "Orders by Region", "mode": "single_dropdown"},
+    {"field": "Region", "show_on": "Sales by Manager", "mode": "single_dropdown"}
+  ],
+  "dashboard": {"name": "Orders and Plan", "title": "**Orders** and **plan**",
+                "subtitle": "Two data sources: orders and the monthly sales plan",
+                "width": 1200, "height": 800, "row_heights": [2, 5],
+                "grid": [["Orders KPI", "Plan KPI"], ["Orders by Region", "Sales by Manager"]],
+                "actions": [{"source": "Orders by Region", "fields": ["Region"]}]}
+}

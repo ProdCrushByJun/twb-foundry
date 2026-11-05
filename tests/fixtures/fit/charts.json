@@ -1,0 +1,121 @@
+{
+ "$schema": "../../../tbuilder/spec.schema.json",
+ "version": 1,
+ "datasource": {
+  "type": "csv",
+  "path": "lab.csv"
+ },
+ "calcs": [
+  {
+   "name": "Big",
+   "formula": "IF [Sales] > 600 THEN 1 ELSE 0 END"
+  },
+  {
+   "name": "Margin",
+   "formula": "SUM([Profit]) / SUM([Sales])",
+   "format": "pct1"
+  }
+ ],
+ "sheets": [
+  {
+   "name": "Line",
+   "type": "line",
+   "title": "**Line** by month",
+   "date": {
+    "field": "Order Date",
+    "level": "month"
+   },
+   "measure": {
+    "field": "Sales"
+   }
+  },
+  {
+   "name": "Area",
+   "type": "area",
+   "title": "**Area** by month and region",
+   "date": {
+    "field": "Order Date",
+    "level": "month"
+   },
+   "measure": {
+    "field": "Sales"
+   },
+   "color": "Region"
+  },
+  {
+   "name": "Combo",
+   "type": "combo",
+   "title": "**Combo** by group",
+   "dimension": "Group",
+   "bar": {
+    "field": "Sales"
+   },
+   "line": {
+    "field": "Profit"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "Heat",
+   "type": "heatmap",
+   "title": "**Heatmap** team x region",
+   "rows": "Team",
+   "cols": "Region",
+   "measure": {
+    "field": "Sales"
+   },
+   "color": {
+    "scale": "sequential"
+   }
+  },
+  {
+   "name": "HeatM",
+   "type": "heatmap",
+   "title": "**Heatmap** with margins",
+   "rows": "Team",
+   "cols": "Region",
+   "measure": {
+    "field": "Sales"
+   },
+   "color": {
+    "scale": "sequential"
+   },
+   "margins": {
+    "rows": "bar",
+    "cols": "bar"
+   }
+  },
+  {
+   "name": "Lolli",
+   "type": "lollipop",
+   "title": "**Lollipop** by group",
+   "dimension": "Group",
+   "measure": {
+    "field": "Quantity"
+   },
+   "sort": "desc"
+  }
+ ],
+ "dashboard": {
+  "name": "Lab",
+  "title": "**Fit** lab: charts",
+  "theme": "cards",
+  "width": 1300,
+  "grid": [
+   [
+    "Line",
+    "Area",
+    "Combo"
+   ],
+   [
+    "Heat",
+    {
+     "sheet": "HeatM",
+     "width": 2
+    },
+    "Lolli"
+   ]
+  ],
+  "height": 900
+ }
+}

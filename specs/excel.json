@@ -1,0 +1,15 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "block_headers": false,
+  "declutter": false,
+  "datasource": {"type": "excel", "path": "../data/sample/sales.xlsx", "sheet": "Orders 2025"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "measures": [{"field": "Profit"}, {"field": "Quantity"}, {"field": "Sales"}]},
+    {"name": "Bar", "type": "bar", "dimension": "Region", "measure": {"field": "Sales"}, "color": "Category"},
+    {"name": "Line", "type": "line", "date": {"field": "Shipped At", "level": "month"}, "measure": {"field": "Sales"}},
+    {"name": "Table", "type": "table", "rows": "Region", "cols": "Category", "measure": {"field": "Profit", "agg": "avg"}}
+  ],
+  "filters": [{"field": "Region", "show_on": "Table"}],
+  "dashboard": {"theme": "flat", "name": "Overview", "width": 1000, "height": 800, "grid": [["KPI", "Bar"], ["Line", "Table"]]}
+}

@@ -1,0 +1,901 @@
+Order Date,Code,Region,Group,Team,Item,Sales,Profit,Quantity,N7,N8,N9,N10,N11,N12,N13,N14,N15,N17
+2025-01-22,C10000,North,Alpha,Service Desk,Item Bx,849.35,-6.64,1,Value A,Value A,Value A,Value A,Value A,Value A,Value A,Value A,Value A,Value A
+2025-02-23,C10001,East,Charlie,Service Desk,Item Bx,291.51,57.16,3,Value B,Value B,Value B,Value B,Value B,Value B,Value B,Value B,Value B,Value B
+2025-03-17,C10002,North,Alpha,App Support,Item A,121.13,16.22,8,Value C,Value C,Value C,Value C,Value C,Value C,Value C,Value C,Value C,Value C
+2025-04-02,C10003,East,Alpha,Security,Item Bx,77.43,9.69,6,Value D,Value D,Value D,Value D,Value D,Value D,Value D,Value D,Value D,Value D
+2025-05-04,C10004,West,Charlie,App Support,Item Jx,861.4,71.28,1,Value E,Value E,Value E,Value E,Value E,Value E,Value E,Value E,Value E,Value E
+2025-06-05,C10005,East,Charlie,Security,Item Bx,70.92,3.43,5,Value F,Value F,Value F,Value F,Value F,Value F,Value F,Value F,Value F,Value F
+2025-07-17,C10006,West,Alpha,Service Desk,Item Dxxx,520.87,47.82,2,Value G,Value G,Value G,Value G,Value G,Value G,Value G,Value G,Value G,Value G
+2025-08-24,C10007,West,Bravo,Desktop,Item Dxxx,698.71,-68.38,8,Value A,Value H,Value H,Value H,Value H,Value H,Value H,Value H,Value H,Value H
+2025-09-02,C10008,South,Alpha,Service Desk,Item I,287.99,55.41,5,Value B,Value A,Value I,Value I,Value I,Value I,Value I,Value I,Value I,Value I
+2025-10-15,C10009,East,Alpha,Security,Item A,277.57,73.25,1,Value C,Value B,Value A,Value J,Value J,Value J,Value J,Value J,Value J,Value J
+2025-11-13,C10010,North,Bravo,App Support,Item E,318.64,55.82,6,Value D,Value C,Value B,Value A,Value K,Value K,Value K,Value K,Value K,Value K
+2025-12-21,C10011,West,Delta,App Support,Item Hxxx,470.19,5.65,5,Value E,Value D,Value C,Value B,Value A,Value L,Value L,Value L,Value L,Value L
+2025-01-11,C10012,South,Bravo,App Support,Item Kxx,739.57,137.96,6,Value F,Value E,Value D,Value C,Value B,Value A,Value M,Value M,Value M,Value M
+2025-02-06,C10013,East,Alpha,Service Desk,Item E,417.24,-35.34,8,Value G,Value F,Value E,Value D,Value C,Value B,Value A,Value N,Value N,Value N
+2025-03-23,C10014,North,Bravo,Desktop,Item Fx,770.92,180.21,2,Value A,Value G,Value F,Value E,Value D,Value C,Value B,Value A,Value O,Value O
+2025-04-26,C10015,North,Bravo,Security,Item Dxxx,835.55,-32.66,4,Value B,Value H,Value G,Value F,Value E,Value D,Value C,Value B,Value A,Value P
+2025-05-19,C10016,North,Bravo,App Support,Item E,346.96,21.42,1,Value C,Value A,Value H,Value G,Value F,Value E,Value D,Value C,Value B,Value Q
+2025-06-11,C10017,South,Charlie,Service Desk,Item Hxxx,30.3,5.68,7,Value D,Value B,Value I,Value H,Value G,Value F,Value E,Value D,Value C,Value A
+2025-07-20,C10018,West,Bravo,Service Desk,Item Gxx,154.79,31.29,7,Value E,Value C,Value A,Value I,Value H,Value G,Value F,Value E,Value D,Value B
+2025-08-03,C10019,North,Alpha,Service Desk,Item Bx,719.79,43.94,7,Value F,Value D,Value B,Value J,Value I,Value H,Value G,Value F,Value E,Value C
+2025-09-12,C10020,East,Alpha,Desktop,Item Cxx,891.65,-71.19,8,Value G,Value E,Value C,Value A,Value J,Value I,Value H,Value G,Value F,Value D
+2025-10-17,C10021,West,Alpha,Service Desk,Item Cxx,177.2,16.15,6,Value A,Value F,Value D,Value B,Value K,Value J,Value I,Value H,Value G,Value E
+2025-11-13,C10022,North,Alpha,App Support,Item Fx,502.16,28.04,8,Value B,Value G,Value E,Value C,Value A,Value K,Value J,Value I,Value H,Value F
+2025-12-25,C10023,North,Alpha,App Support,Item Fx,803.64,189.31,2,Value C,Value H,Value F,Value D,Value B,Value L,Value K,Value J,Value I,Value G
+2025-01-22,C10024,South,Bravo,App Support,Item I,223.12,-7.84,6,Value D,Value A,Value G,Value E,Value C,Value A,Value L,Value K,Value J,Value H
+2025-02-09,C10025,East,Charlie,App Support,Item Gxx,862.11,-67.3,5,Value E,Value B,Value H,Value F,Value D,Value B,Value M,Value L,Value K,Value I
+2025-03-08,C10026,North,Alpha,Service Desk,Item Cxx,77.07,13.55,3,Value F,Value C,Value I,Value G,Value E,Value C,Value A,Value M,Value L,Value J
+2025-04-14,C10027,West,Bravo,Service Desk,Item Kxx,634.91,-12.48,4,Value G,Value D,Value A,Value H,Value F,Value D,Value B,Value N,Value M,Value K
+2025-05-02,C10028,West,Alpha,Network Ops,Item Fx,352.55,13.91,3,Value A,Value E,Value B,Value I,Value G,Value E,Value C,Value A,Value N,Value L
+2025-06-11,C10029,South,Bravo,Service Desk,Item A,884.36,-45.8,8,Value B,Value F,Value C,Value J,Value H,Value F,Value D,Value B,Value O,Value M
+2025-07-25,C10030,South,Alpha,Service Desk,Item Cxx,826.18,-81.07,7,Value C,Value G,Value D,Value A,Value I,Value G,Value E,Value C,Value A,Value N
+2025-08-09,C10031,North,Alpha,Service Desk,Item E,611.1,-25.72,1,Value D,Value H,Value E,Value B,Value J,Value H,Value F,Value D,Value B,Value O
+2025-09-12,C10032,North,Charlie,Service Desk,Item Cxx,815.68,100.53,7,Value E,Value A,Value F,Value C,Value K,Value I,Value G,Value E,Value C,Value P
+2025-10-26,C10033,West,Bravo,Service Desk,Item Jx,331.31,6.55,6,Value F,Value B,Value G,Value D,Value A,Value J,Value H,Value F,Value D,Value Q
+2025-11-12,C10034,East,Alpha,Service Desk,Item Kxx,793.23,-46.76,3,Value G,Value C,Value H,Value E,Value B,Value K,Value I,Value G,Value E,Value A
+2025-12-23,C10035,East,Alpha,Service Desk,Item Bx,321.4,-27.39,5,Value A,Value D,Value I,Value F,Value C,Value L,Value J,Value H,Value F,Value B
+2025-01-07,C10036,East,Alpha,Network Ops,Item E,213.21,-16.05,3,Value B,Value E,Value A,Value G,Value D,Value A,Value K,Value I,Value G,Value C
+2025-02-04,C10037,East,Bravo,Service Desk,Item Oxx,792.86,79.42,1,Value C,Value F,Value B,Value H,Value E,Value B,Value L,Value J,Value H,Value D
+2025-03-21,C10038,North,Bravo,Service Desk,Item Cxx,330.55,3.63,4,Value D,Value G,Value C,Value I,Value F,Value C,Value M,Value K,Value I,Value E
+2025-04-10,C10039,West,Charlie,App Support,Item Txxx,562.32,65.65,3,Value E,Value H,Value D,Value J,Value G,Value D,Value A,Value L,Value J,Value F
+2025-05-13,C10040,East,Charlie,App Support,Item Nx,610.63,128.81,3,Value F,Value A,Value E,Value A,Value H,Value E,Value B,Value M,Value K,Value G
+2025-06-03,C10041,East,Delta,Service Desk,Item Nx,775.46,-60.78,1,Value G,Value B,Value F,Value B,Value I,Value F,Value C,Value N,Value L,Value H
+2025-07-16,C10042,South,Alpha,Desktop,Item A,640.64,3.36,3,Value A,Value C,Value G,Value C,Value J,Value G,Value D,Value A,Value M,Value I
+2025-08-19,C10043,South,Charlie,App Support,Item Jx,176.98,33.38,3,Value B,Value D,Value H,Value D,Value K,Value H,Value E,Value B,Value N,Value J
+2025-09-04,C10044,East,Alpha,App Support,Item Bx,210.98,12.25,5,Value C,Value E,Value I,Value E,Value A,Value I,Value F,Value C,Value O,Value K
+2025-10-06,C10045,North,Bravo,Security,Item A,96.87,26.44,8,Value D,Value F,Value A,Value F,Value B,Value J,Value G,Value D,Value A,Value L
+2025-11-03,C10046,North,Alpha,Service Desk,Item Cxx,560.84,-3.37,4,Value E,Value G,Value B,Value G,Value C,Value K,Value H,Value E,Value B,Value M
+2025-12-19,C10047,West,Bravo,Service Desk,Item Hxxx,65.99,13.01,5,Value F,Value H,Value C,Value H,Value D,Value L,Value I,Value F,Value C,Value N
+2025-01-28,C10048,South,Alpha,Network Ops,Item Bx,299.17,-11.2,1,Value G,Value A,Value D,Value I,Value E,Value A,Value J,Value G,Value D,Value O
+2025-02-18,C10049,West,Delta,App Support,Item Cxx,485.03,40.26,3,Value A,Value B,Value E,Value J,Value F,Value B,Value K,Value H,Value E,Value P
+2025-03-21,C10050,East,Bravo,Service Desk,Item Bx,863.64,191.28,6,Value B,Value C,Value F,Value A,Value G,Value C,Value L,Value I,Value F,Value Q
+2025-04-16,C10051,North,Delta,Desktop,Item Cxx,600.46,147.67,2,Value C,Value D,Value G,Value B,Value H,Value D,Value M,Value J,Value G,Value A
+2025-05-08,C10052,East,Bravo,Service Desk,Item Bx,360.79,-23.45,7,Value D,Value E,Value H,Value C,Value I,Value E,Value A,Value K,Value H,Value B
+2025-06-11,C10053,North,Bravo,DBA,Item Bx,94.25,-5.21,3,Value E,Value F,Value I,Value D,Value J,Value F,Value B,Value L,Value I,Value C
+2025-07-10,C10054,South,Bravo,App Support,Item Jx,535.73,158.19,3,Value F,Value G,Value A,Value E,Value K,Value G,Value C,Value M,Value J,Value D
+2025-08-08,C10055,East,Alpha,Service Desk,Item E,448.34,85.65,3,Value G,Value H,Value B,Value F,Value A,Value H,Value D,Value N,Value K,Value E
+2025-09-05,C10056,North,Charlie,Service Desk,Item Nx,513.48,87.37,6,Value A,Value A,Value C,Value G,Value B,Value I,Value E,Value A,Value L,Value F
+2025-10-13,C10057,East,Alpha,Service Desk,Item Dxxx,451.95,-14.8,5,Value B,Value B,Value D,Value H,Value C,Value J,Value F,Value B,Value M,Value G
+2025-11-13,C10058,West,Alpha,Service Desk,Item Dxxx,462.79,26.28,8,Value C,Value C,Value E,Value I,Value D,Value K,Value G,Value C,Value N,Value H
+2025-12-14,C10059,East,Charlie,Desktop,Item Nx,58.88,2.93,8,Value D,Value D,Value F,Value J,Value E,Value L,Value H,Value D,Value O,Value I
+2025-01-07,C10060,South,Bravo,Service Desk,Item A,759.26,30.82,6,Value E,Value E,Value G,Value A,Value F,Value A,Value I,Value E,Value A,Value J
+2025-02-18,C10061,West,Charlie,DBA,Item Oxx,245.51,-11.28,3,Value F,Value F,Value H,Value B,Value G,Value B,Value J,Value F,Value B,Value K
+2025-03-14,C10062,North,Charlie,Service Desk,Item Bx,165.01,28.68,5,Value G,Value G,Value I,Value C,Value H,Value C,Value K,Value G,Value C,Value L
+2025-04-21,C10063,West,Alpha,Security,Item Jx,263.95,64.84,6,Value A,Value H,Value A,Value D,Value I,Value D,Value L,Value H,Value D,Value M
+2025-05-04,C10064,East,Alpha,DBA,Item Lxxx,162.02,-9.97,8,Value B,Value A,Value B,Value E,Value J,Value E,Value M,Value I,Value E,Value N
+2025-06-20,C10065,East,Alpha,App Support,Item Txxx,490.45,-47.07,2,Value C,Value B,Value C,Value F,Value K,Value F,Value A,Value J,Value F,Value O
+2025-07-12,C10066,North,Alpha,Network Ops,Item Lxxx,211.27,-5.33,4,Value D,Value C,Value D,Value G,Value A,Value G,Value B,Value K,Value G,Value P
+2025-08-03,C10067,East,Bravo,Network Ops,Item Fx,828.74,162.2,5,Value E,Value D,Value E,Value H,Value B,Value H,Value C,Value L,Value H,Value Q
+2025-09-10,C10068,East,Charlie,Security,Item M,193.85,25.36,7,Value F,Value E,Value F,Value I,Value C,Value I,Value D,Value M,Value I,Value A
+2025-10-04,C10069,East,Alpha,Service Desk,Item Fx,776.01,209.03,5,Value G,Value F,Value G,Value J,Value D,Value J,Value E,Value N,Value J,Value B
+2025-11-23,C10070,South,Alpha,Service Desk,Item E,680.47,121.7,5,Value A,Value G,Value H,Value A,Value E,Value K,Value F,Value A,Value K,Value C
+2025-12-19,C10071,West,Alpha,Service Desk,Item Hxxx,899.57,76.52,8,Value B,Value H,Value I,Value B,Value F,Value L,Value G,Value B,Value L,Value D
+2025-01-13,C10072,North,Alpha,Network Ops,Item Dxxx,783.91,2.99,8,Value C,Value A,Value A,Value C,Value G,Value A,Value H,Value C,Value M,Value E
+2025-02-10,C10073,East,Alpha,Service Desk,Item Bx,92.48,3.73,7,Value D,Value B,Value B,Value D,Value H,Value B,Value I,Value D,Value N,Value F
+2025-03-27,C10074,East,Alpha,Network Ops,Item Bx,227.78,58.13,1,Value E,Value C,Value C,Value E,Value I,Value C,Value J,Value E,Value O,Value G
+2025-04-16,C10075,North,Delta,Service Desk,Item Lxxx,275.01,67.99,3,Value F,Value D,Value D,Value F,Value J,Value D,Value K,Value F,Value A,Value H
+2025-05-28,C10076,West,Alpha,Service Desk,Item A,170.82,40.45,8,Value G,Value E,Value E,Value G,Value K,Value E,Value L,Value G,Value B,Value I
+2025-06-06,C10077,West,Alpha,App Support,Item M,106.05,-10.52,4,Value A,Value F,Value F,Value H,Value A,Value F,Value M,Value H,Value C,Value J
+2025-07-07,C10078,North,Alpha,Service Desk,Item Gxx,580.34,-53.91,8,Value B,Value G,Value G,Value I,Value B,Value G,Value A,Value I,Value D,Value K
+2025-08-24,C10079,East,Echo,Service Desk,Item Sxx,96.43,12.74,5,Value C,Value H,Value H,Value J,Value C,Value H,Value B,Value J,Value E,Value L
+2025-09-05,C10080,East,Alpha,Desktop,Item A,537.27,119.83,6,Value D,Value A,Value I,Value A,Value D,Value I,Value C,Value K,Value F,Value M
+2025-10-06,C10081,West,Charlie,Service Desk,Item E,75.17,-2.8,5,Value E,Value B,Value A,Value B,Value E,Value J,Value D,Value L,Value G,Value N
+2025-11-02,C10082,North,Alpha,Service Desk,Item Fx,256.72,20.84,3,Value F,Value C,Value B,Value C,Value F,Value K,Value E,Value M,Value H,Value O
+2025-12-08,C10083,North,Alpha,Service Desk,Item Lxxx,171.61,-16.36,3,Value G,Value D,Value C,Value D,Value G,Value L,Value F,Value N,Value I,Value P
+2025-01-04,C10084,West,Bravo,Service Desk,Item Oxx,783.15,129.24,3,Value A,Value E,Value D,Value E,Value H,Value A,Value G,Value A,Value J,Value Q
+2025-02-07,C10085,South,Alpha,Service Desk,Item Gxx,565.17,126.97,6,Value B,Value F,Value E,Value F,Value I,Value B,Value H,Value B,Value K,Value A
+2025-03-03,C10086,West,Alpha,Service Desk,Item A,543.0,8.58,1,Value C,Value G,Value F,Value G,Value J,Value C,Value I,Value C,Value L,Value B
+2025-04-05,C10087,South,Echo,Security,Item Gxx,787.94,154.99,3,Value D,Value H,Value G,Value H,Value K,Value D,Value J,Value D,Value M,Value C
+2025-05-22,C10088,West,Bravo,Service Desk,Item Hxxx,770.56,-53.77,4,Value E,Value A,Value H,Value I,Value A,Value E,Value K,Value E,Value N,Value D
+2025-06-21,C10089,North,Echo,App Support,Item Oxx,381.75,48.3,4,Value F,Value B,Value I,Value J,Value B,Value F,Value L,Value F,Value O,Value E
+2025-07-22,C10090,North,Alpha,Security,Item Bx,634.56,-20.85,7,Value G,Value C,Value A,Value A,Value C,Value G,Value M,Value G,Value A,Value F
+2025-08-24,C10091,West,Alpha,Security,Item I,38.6,0.12,8,Value A,Value D,Value B,Value B,Value D,Value H,Value A,Value H,Value B,Value G
+2025-09-11,C10092,East,Delta,Service Desk,Item Bx,109.39,5.76,7,Value B,Value E,Value C,Value C,Value E,Value I,Value B,Value I,Value C,Value H
+2025-10-22,C10093,South,Alpha,Network Ops,Item A,335.23,-19.67,3,Value C,Value F,Value D,Value D,Value F,Value J,Value C,Value J,Value D,Value I
+2025-11-01,C10094,East,Bravo,Service Desk,Item I,562.59,97.01,1,Value D,Value G,Value E,Value E,Value G,Value K,Value D,Value K,Value E,Value J
+2025-12-21,C10095,West,Charlie,App Support,Item Gxx,243.99,1.62,7,Value E,Value H,Value F,Value F,Value H,Value L,Value E,Value L,Value F,Value K
+2025-01-05,C10096,North,Bravo,Desktop,Item Cxx,95.37,3.43,8,Value F,Value A,Value G,Value G,Value I,Value A,Value F,Value M,Value G,Value L
+2025-02-25,C10097,West,Alpha,Service Desk,Item Cxx,653.05,124.28,4,Value G,Value B,Value H,Value H,Value J,Value B,Value G,Value N,Value H,Value M
+2025-03-14,C10098,North,Bravo,Desktop,Item A,883.4,122.06,8,Value A,Value C,Value I,Value I,Value K,Value C,Value H,Value A,Value I,Value N
+2025-04-15,C10099,West,Alpha,Desktop,Item E,630.89,87.44,7,Value B,Value D,Value A,Value J,Value A,Value D,Value I,Value B,Value J,Value O
+2025-05-15,C10100,East,Alpha,Service Desk,Item Fx,700.54,-52.82,4,Value C,Value E,Value B,Value A,Value B,Value E,Value J,Value C,Value K,Value P
+2025-06-15,C10101,West,Echo,Service Desk,Item Rx,753.62,-8.04,7,Value D,Value F,Value C,Value B,Value C,Value F,Value K,Value D,Value L,Value Q
+2025-07-27,C10102,East,Charlie,Security,Item Rx,142.62,29.97,2,Value E,Value G,Value D,Value C,Value D,Value G,Value L,Value E,Value M,Value A
+2025-08-08,C10103,South,Bravo,Desktop,Item Rx,44.19,1.81,6,Value F,Value H,Value E,Value D,Value E,Value H,Value M,Value F,Value N,Value B
+2025-09-22,C10104,West,Bravo,Service Desk,Item Hxxx,881.25,-1.04,7,Value G,Value A,Value F,Value E,Value F,Value I,Value A,Value G,Value O,Value C
+2025-10-22,C10105,North,Bravo,App Support,Item I,776.3,-57.81,3,Value A,Value B,Value G,Value F,Value G,Value J,Value B,Value H,Value A,Value D
+2025-11-14,C10106,South,Alpha,App Support,Item Bx,92.06,-1.41,4,Value B,Value C,Value H,Value G,Value H,Value K,Value C,Value I,Value B,Value E
+2025-12-24,C10107,North,Alpha,Desktop,Item Jx,175.16,10.44,3,Value C,Value D,Value I,Value H,Value I,Value L,Value D,Value J,Value C,Value F
+2025-01-16,C10108,North,Charlie,Desktop,Item Cxx,399.88,35.96,3,Value D,Value E,Value A,Value I,Value J,Value A,Value E,Value K,Value D,Value G
+2025-02-17,C10109,South,Delta,Service Desk,Item E,654.12,78.1,1,Value E,Value F,Value B,Value J,Value K,Value B,Value F,Value L,Value E,Value H
+2025-03-17,C10110,South,Alpha,Desktop,Item Bx,377.95,107.19,1,Value F,Value G,Value C,Value A,Value A,Value C,Value G,Value M,Value F,Value I
+2025-04-28,C10111,East,Alpha,Desktop,Item A,136.98,22.4,3,Value G,Value H,Value D,Value B,Value B,Value D,Value H,Value N,Value G,Value J
+2025-05-19,C10112,West,Charlie,Service Desk,Item Dxxx,562.12,-42.65,2,Value A,Value A,Value E,Value C,Value C,Value E,Value I,Value A,Value H,Value K
+2025-06-05,C10113,East,Delta,Service Desk,Item Oxx,611.98,167.69,3,Value B,Value B,Value F,Value D,Value D,Value F,Value J,Value B,Value I,Value L
+2025-07-02,C10114,North,Bravo,Service Desk,Item Jx,316.11,-24.91,8,Value C,Value C,Value G,Value E,Value E,Value G,Value K,Value C,Value J,Value M
+2025-08-02,C10115,East,Alpha,App Support,Item Jx,166.8,14.76,3,Value D,Value D,Value H,Value F,Value F,Value H,Value L,Value D,Value K,Value N
+2025-09-17,C10116,North,Bravo,Service Desk,Item Sxx,248.97,60.7,6,Value E,Value E,Value I,Value G,Value G,Value I,Value M,Value E,Value L,Value O
+2025-10-28,C10117,North,Bravo,Service Desk,Item Oxx,55.26,2.18,2,Value F,Value F,Value A,Value H,Value H,Value J,Value A,Value F,Value M,Value P
+2025-11-11,C10118,South,Alpha,Service Desk,Item Gxx,783.55,-10.2,3,Value G,Value G,Value B,Value I,Value I,Value K,Value B,Value G,Value N,Value Q
+2025-12-27,C10119,South,Alpha,Service Desk,Item Hxxx,748.06,209.65,4,Value A,Value H,Value C,Value J,Value J,Value L,Value C,Value H,Value O,Value A
+2025-01-05,C10120,West,Alpha,Desktop,Item I,478.79,-36.61,4,Value B,Value A,Value D,Value A,Value K,Value A,Value D,Value I,Value A,Value B
+2025-02-28,C10121,North,Alpha,Desktop,Item Kxx,316.99,40.24,4,Value C,Value B,Value E,Value B,Value A,Value B,Value E,Value J,Value B,Value C
+2025-03-02,C10122,West,Alpha,Desktop,Item Dxxx,567.45,58.59,3,Value D,Value C,Value F,Value C,Value B,Value C,Value F,Value K,Value C,Value D
+2025-04-18,C10123,West,Alpha,App Support,Item Fx,637.44,-11.09,3,Value E,Value D,Value G,Value D,Value C,Value D,Value G,Value L,Value D,Value E
+2025-05-14,C10124,South,Alpha,Desktop,Item A,413.58,-24.57,8,Value F,Value E,Value H,Value E,Value D,Value E,Value H,Value M,Value E,Value F
+2025-06-12,C10125,West,Alpha,App Support,Item Hxxx,643.94,149.81,4,Value G,Value F,Value I,Value F,Value E,Value F,Value I,Value N,Value F,Value G
+2025-07-25,C10126,South,Bravo,Service Desk,Item Cxx,631.52,15.91,6,Value A,Value G,Value A,Value G,Value F,Value G,Value J,Value A,Value G,Value H
+2025-08-14,C10127,South,Alpha,Desktop,Item Dxxx,674.33,-12.91,3,Value B,Value H,Value B,Value H,Value G,Value H,Value K,Value B,Value H,Value I
+2025-09-28,C10128,North,Bravo,Service Desk,Item Txxx,293.44,24.8,1,Value C,Value A,Value C,Value I,Value H,Value I,Value L,Value C,Value I,Value J
+2025-10-07,C10129,South,Bravo,DBA,Item Dxxx,396.73,23.01,5,Value D,Value B,Value D,Value J,Value I,Value J,Value M,Value D,Value J,Value K
+2025-11-25,C10130,West,Bravo,Service Desk,Item Kxx,22.76,3.52,8,Value E,Value C,Value E,Value A,Value J,Value K,Value A,Value E,Value K,Value L
+2025-12-20,C10131,East,Echo,Service Desk,Item A,135.19,34.68,1,Value F,Value D,Value F,Value B,Value K,Value L,Value B,Value F,Value L,Value M
+2025-01-11,C10132,West,Alpha,Service Desk,Item A,185.06,28.78,3,Value G,Value E,Value G,Value C,Value A,Value A,Value C,Value G,Value M,Value N
+2025-02-06,C10133,North,Alpha,Desktop,Item Gxx,439.93,84.51,7,Value A,Value F,Value H,Value D,Value B,Value B,Value D,Value H,Value N,Value O
+2025-03-21,C10134,South,Echo,Service Desk,Item A,218.46,51.46,7,Value B,Value G,Value I,Value E,Value C,Value C,Value E,Value I,Value O,Value P
+2025-04-19,C10135,West,Alpha,Desktop,Item Bx,821.19,217.04,1,Value C,Value H,Value A,Value F,Value D,Value D,Value F,Value J,Value A,Value Q
+2025-05-03,C10136,East,Echo,Desktop,Item Sxx,472.33,23.71,2,Value D,Value A,Value B,Value G,Value E,Value E,Value G,Value K,Value B,Value A
+2025-06-17,C10137,South,Alpha,DBA,Item Bx,827.72,145.66,6,Value E,Value B,Value C,Value H,Value F,Value F,Value H,Value L,Value C,Value B
+2025-07-04,C10138,South,Alpha,App Support,Item Lxxx,272.2,-16.62,2,Value F,Value C,Value D,Value I,Value G,Value G,Value I,Value M,Value D,Value C
+2025-08-05,C10139,North,Bravo,Network Ops,Item Bx,800.36,46.38,7,Value G,Value D,Value E,Value J,Value H,Value H,Value J,Value N,Value E,Value D
+2025-09-12,C10140,West,Bravo,Service Desk,Item Gxx,447.6,8.87,2,Value A,Value E,Value F,Value A,Value I,Value I,Value K,Value A,Value F,Value E
+2025-10-26,C10141,East,Alpha,App Support,Item E,617.88,139.07,2,Value B,Value F,Value G,Value B,Value J,Value J,Value L,Value B,Value G,Value F
+2025-11-28,C10142,South,Alpha,Service Desk,Item A,585.74,40.1,5,Value C,Value G,Value H,Value C,Value K,Value K,Value M,Value C,Value H,Value G
+2025-12-16,C10143,North,Alpha,App Support,Item A,181.61,-1.61,2,Value D,Value H,Value I,Value D,Value A,Value L,Value A,Value D,Value I,Value H
+2025-01-18,C10144,North,Charlie,Security,Item Cxx,622.86,94.94,5,Value E,Value A,Value A,Value E,Value B,Value A,Value B,Value E,Value J,Value I
+2025-02-01,C10145,East,Alpha,Network Ops,Item Gxx,228.64,45.93,7,Value F,Value B,Value B,Value F,Value C,Value B,Value C,Value F,Value K,Value J
+2025-03-28,C10146,South,Alpha,Service Desk,Item Bx,99.93,-1.31,5,Value G,Value C,Value C,Value G,Value D,Value C,Value D,Value G,Value L,Value K
+2025-04-05,C10147,North,Alpha,Desktop,Item Cxx,516.6,-24.71,8,Value A,Value D,Value D,Value H,Value E,Value D,Value E,Value H,Value M,Value L
+2025-05-23,C10148,North,Bravo,Service Desk,Item Bx,794.12,-69.13,6,Value B,Value E,Value E,Value I,Value F,Value E,Value F,Value I,Value N,Value M
+2025-06-23,C10149,North,Delta,Desktop,Item Lxxx,671.43,65.34,4,Value C,Value F,Value F,Value J,Value G,Value F,Value G,Value J,Value O,Value N
+2025-07-19,C10150,North,Alpha,Service Desk,Item Hxxx,628.99,30.61,6,Value D,Value G,Value G,Value A,Value H,Value G,Value H,Value K,Value A,Value O
+2025-08-23,C10151,South,Charlie,Service Desk,Item Gxx,825.03,29.39,2,Value E,Value H,Value H,Value B,Value I,Value H,Value I,Value L,Value B,Value P
+2025-09-18,C10152,South,Bravo,DBA,Item A,710.88,94.24,4,Value F,Value A,Value I,Value C,Value J,Value I,Value J,Value M,Value C,Value Q
+2025-10-22,C10153,East,Alpha,Desktop,Item Txxx,320.15,34.18,7,Value G,Value B,Value A,Value D,Value K,Value J,Value K,Value N,Value D,Value A
+2025-11-12,C10154,East,Bravo,Security,Item Dxxx,281.05,-19.65,1,Value A,Value C,Value B,Value E,Value A,Value K,Value L,Value A,Value E,Value B
+2025-12-10,C10155,South,Alpha,Service Desk,Item Gxx,795.01,28.63,6,Value B,Value D,Value C,Value F,Value B,Value L,Value M,Value B,Value F,Value C
+2025-01-14,C10156,South,Alpha,Network Ops,Item Lxxx,219.09,51.1,3,Value C,Value E,Value D,Value G,Value C,Value A,Value A,Value C,Value G,Value D
+2025-02-06,C10157,South,Alpha,DBA,Item Cxx,514.95,-48.43,6,Value D,Value F,Value E,Value H,Value D,Value B,Value B,Value D,Value H,Value E
+2025-03-17,C10158,South,Bravo,App Support,Item Kxx,814.53,59.1,1,Value E,Value G,Value F,Value I,Value E,Value C,Value C,Value E,Value I,Value F
+2025-04-22,C10159,East,Alpha,DBA,Item Txxx,248.41,-21.64,2,Value F,Value H,Value G,Value J,Value F,Value D,Value D,Value F,Value J,Value G
+2025-05-08,C10160,North,Alpha,Service Desk,Item M,206.82,0.36,8,Value G,Value A,Value H,Value A,Value G,Value E,Value E,Value G,Value K,Value H
+2025-06-18,C10161,North,Alpha,App Support,Item Dxxx,160.13,32.79,6,Value A,Value B,Value I,Value B,Value H,Value F,Value F,Value H,Value L,Value I
+2025-07-09,C10162,West,Alpha,App Support,Item M,775.26,128.0,2,Value B,Value C,Value A,Value C,Value I,Value G,Value G,Value I,Value M,Value J
+2025-08-09,C10163,South,Charlie,Desktop,Item Lxxx,603.33,158.07,2,Value C,Value D,Value B,Value D,Value J,Value H,Value H,Value J,Value N,Value K
+2025-09-07,C10164,West,Alpha,Service Desk,Item Hxxx,397.76,5.81,1,Value D,Value E,Value C,Value E,Value K,Value I,Value I,Value K,Value O,Value L
+2025-10-17,C10165,East,Alpha,Service Desk,Item Cxx,358.82,26.17,6,Value E,Value F,Value D,Value F,Value A,Value J,Value J,Value L,Value A,Value M
+2025-11-22,C10166,West,Charlie,App Support,Item Bx,540.93,155.95,4,Value F,Value G,Value E,Value G,Value B,Value K,Value K,Value M,Value B,Value N
+2025-12-14,C10167,West,Alpha,Service Desk,Item Cxx,809.06,78.94,7,Value G,Value H,Value F,Value H,Value C,Value L,Value L,Value N,Value C,Value O
+2025-01-22,C10168,East,Alpha,App Support,Item Hxxx,368.59,-18.51,5,Value A,Value A,Value G,Value I,Value D,Value A,Value M,Value A,Value D,Value P
+2025-02-27,C10169,West,Bravo,Network Ops,Item Dxxx,335.72,42.02,1,Value B,Value B,Value H,Value J,Value E,Value B,Value A,Value B,Value E,Value Q
+2025-03-15,C10170,North,Echo,App Support,Item Fx,140.44,-11.53,1,Value C,Value C,Value I,Value A,Value F,Value C,Value B,Value C,Value F,Value A
+2025-04-06,C10171,West,Alpha,Security,Item Dxxx,397.9,-37.22,7,Value D,Value D,Value A,Value B,Value G,Value D,Value C,Value D,Value G,Value B
+2025-05-16,C10172,North,Alpha,App Support,Item Bx,854.53,61.37,5,Value E,Value E,Value B,Value C,Value H,Value E,Value D,Value E,Value H,Value C
+2025-06-18,C10173,West,Echo,Desktop,Item Fx,301.02,-11.18,8,Value F,Value F,Value C,Value D,Value I,Value F,Value E,Value F,Value I,Value D
+2025-07-15,C10174,North,Bravo,Service Desk,Item Dxxx,357.53,12.26,6,Value G,Value G,Value D,Value E,Value J,Value G,Value F,Value G,Value J,Value E
+2025-08-26,C10175,South,Bravo,App Support,Item Cxx,152.41,-11.57,6,Value A,Value H,Value E,Value F,Value K,Value H,Value G,Value H,Value K,Value F
+2025-09-27,C10176,West,Alpha,Security,Item Bx,769.07,-43.67,6,Value B,Value A,Value F,Value G,Value A,Value I,Value H,Value I,Value L,Value G
+2025-10-14,C10177,West,Charlie,Service Desk,Item Oxx,559.33,21.65,6,Value C,Value B,Value G,Value H,Value B,Value J,Value I,Value J,Value M,Value H
+2025-11-28,C10178,North,Alpha,Service Desk,Item Kxx,455.01,-13.55,6,Value D,Value C,Value H,Value I,Value C,Value K,Value J,Value K,Value N,Value I
+2025-12-16,C10179,South,Bravo,Service Desk,Item Cxx,456.62,-40.11,3,Value E,Value D,Value I,Value J,Value D,Value L,Value K,Value L,Value O,Value J
+2025-01-19,C10180,North,Alpha,Service Desk,Item Fx,324.91,-20.49,4,Value F,Value E,Value A,Value A,Value E,Value A,Value L,Value M,Value A,Value K
+2025-02-16,C10181,South,Charlie,Service Desk,Item Fx,390.07,106.1,8,Value G,Value F,Value B,Value B,Value F,Value B,Value M,Value N,Value B,Value L
+2025-03-06,C10182,East,Bravo,Service Desk,Item A,832.99,202.02,5,Value A,Value G,Value C,Value C,Value G,Value C,Value A,Value A,Value C,Value M
+2025-04-09,C10183,East,Alpha,Desktop,Item E,87.17,-4.42,5,Value B,Value H,Value D,Value D,Value H,Value D,Value B,Value B,Value D,Value N
+2025-05-25,C10184,West,Bravo,App Support,Item E,678.1,62.23,4,Value C,Value A,Value E,Value E,Value I,Value E,Value C,Value C,Value E,Value O
+2025-06-17,C10185,South,Alpha,App Support,Item I,564.35,20.89,3,Value D,Value B,Value F,Value F,Value J,Value F,Value D,Value D,Value F,Value P
+2025-07-04,C10186,South,Alpha,App Support,Item Hxxx,236.31,39.13,8,Value E,Value C,Value G,Value G,Value K,Value G,Value E,Value E,Value G,Value Q
+2025-08-28,C10187,East,Alpha,App Support,Item Txxx,898.63,130.12,4,Value F,Value D,Value H,Value H,Value A,Value H,Value F,Value F,Value H,Value A
+2025-09-21,C10188,East,Alpha,DBA,Item A,629.1,22.91,8,Value G,Value E,Value I,Value I,Value B,Value I,Value G,Value G,Value I,Value B
+2025-10-14,C10189,West,Alpha,Network Ops,Item Oxx,178.98,31.68,8,Value A,Value F,Value A,Value J,Value C,Value J,Value H,Value H,Value J,Value C
+2025-11-06,C10190,East,Alpha,DBA,Item Jx,124.46,25.94,1,Value B,Value G,Value B,Value A,Value D,Value K,Value I,Value I,Value K,Value D
+2025-12-01,C10191,East,Alpha,DBA,Item Cxx,641.3,-10.71,4,Value C,Value H,Value C,Value B,Value E,Value L,Value J,Value J,Value L,Value E
+2025-01-13,C10192,South,Charlie,Service Desk,Item Txxx,84.91,16.23,5,Value D,Value A,Value D,Value C,Value F,Value A,Value K,Value K,Value M,Value F
+2025-02-10,C10193,North,Charlie,App Support,Item Fx,272.73,71.76,8,Value E,Value B,Value E,Value D,Value G,Value B,Value L,Value L,Value N,Value G
+2025-03-26,C10194,East,Alpha,Network Ops,Item A,237.62,66.07,8,Value F,Value C,Value F,Value E,Value H,Value C,Value M,Value M,Value O,Value H
+2025-04-18,C10195,North,Alpha,App Support,Item E,94.77,3.37,4,Value G,Value D,Value G,Value F,Value I,Value D,Value A,Value N,Value A,Value I
+2025-05-13,C10196,South,Alpha,App Support,Item Cxx,119.12,5.24,3,Value A,Value E,Value H,Value G,Value J,Value E,Value B,Value A,Value B,Value J
+2025-06-07,C10197,South,Charlie,Service Desk,Item Bx,427.66,125.33,1,Value B,Value F,Value I,Value H,Value K,Value F,Value C,Value B,Value C,Value K
+2025-07-09,C10198,North,Delta,Service Desk,Item A,124.57,3.54,5,Value C,Value G,Value A,Value I,Value A,Value G,Value D,Value C,Value D,Value L
+2025-08-20,C10199,West,Alpha,App Support,Item E,831.42,141.39,7,Value D,Value H,Value B,Value J,Value B,Value H,Value E,Value D,Value E,Value M
+2025-09-14,C10200,West,Alpha,Network Ops,Item Jx,283.58,64.5,2,Value E,Value A,Value C,Value A,Value C,Value I,Value F,Value E,Value F,Value N
+2025-10-14,C10201,South,Alpha,Service Desk,Item Q,510.27,126.9,4,Value F,Value B,Value D,Value B,Value D,Value J,Value G,Value F,Value G,Value O
+2025-11-11,C10202,East,Alpha,Network Ops,Item Cxx,839.46,148.26,1,Value G,Value C,Value E,Value C,Value E,Value K,Value H,Value G,Value H,Value P
+2025-12-25,C10203,West,Echo,Service Desk,Item Bx,752.31,57.4,6,Value A,Value D,Value F,Value D,Value F,Value L,Value I,Value H,Value I,Value Q
+2025-01-12,C10204,South,Alpha,Desktop,Item E,21.37,-0.34,5,Value B,Value E,Value G,Value E,Value G,Value A,Value J,Value I,Value J,Value A
+2025-02-06,C10205,North,Alpha,Security,Item Bx,877.67,-15.98,2,Value C,Value F,Value H,Value F,Value H,Value B,Value K,Value J,Value K,Value B
+2025-03-06,C10206,West,Alpha,Desktop,Item A,518.16,149.9,5,Value D,Value G,Value I,Value G,Value I,Value C,Value L,Value K,Value L,Value C
+2025-04-04,C10207,West,Bravo,App Support,Item Cxx,133.83,0.17,4,Value E,Value H,Value A,Value H,Value J,Value D,Value M,Value L,Value M,Value D
+2025-05-18,C10208,South,Alpha,Desktop,Item Jx,857.37,-73.11,2,Value F,Value A,Value B,Value I,Value K,Value E,Value A,Value M,Value N,Value E
+2025-06-24,C10209,South,Alpha,Network Ops,Item Jx,494.6,118.5,7,Value G,Value B,Value C,Value J,Value A,Value F,Value B,Value N,Value O,Value F
+2025-07-20,C10210,East,Alpha,Network Ops,Item Txxx,508.23,26.67,1,Value A,Value C,Value D,Value A,Value B,Value G,Value C,Value A,Value A,Value G
+2025-08-02,C10211,North,Alpha,Network Ops,Item Cxx,826.01,-38.04,1,Value B,Value D,Value E,Value B,Value C,Value H,Value D,Value B,Value B,Value H
+2025-09-24,C10212,North,Alpha,Network Ops,Item Dxxx,294.23,25.87,7,Value C,Value E,Value F,Value C,Value D,Value I,Value E,Value C,Value C,Value I
+2025-10-03,C10213,South,Alpha,Service Desk,Item Cxx,309.67,-21.19,3,Value D,Value F,Value G,Value D,Value E,Value J,Value F,Value D,Value D,Value J
+2025-11-11,C10214,North,Alpha,Security,Item Dxxx,251.74,-2.46,8,Value E,Value G,Value H,Value E,Value F,Value K,Value G,Value E,Value E,Value K
+2025-12-09,C10215,North,Alpha,DBA,Item E,146.45,-6.55,4,Value F,Value H,Value I,Value F,Value G,Value L,Value H,Value F,Value F,Value L
+2025-01-22,C10216,West,Alpha,Network Ops,Item Txxx,579.08,154.21,8,Value G,Value A,Value A,Value G,Value H,Value A,Value I,Value G,Value G,Value M
+2025-02-01,C10217,North,Alpha,Service Desk,Item A,561.43,-18.71,1,Value A,Value B,Value B,Value H,Value I,Value B,Value J,Value H,Value H,Value N
+2025-03-12,C10218,West,Alpha,Network Ops,Item M,256.7,74.84,8,Value B,Value C,Value C,Value I,Value J,Value C,Value K,Value I,Value I,Value O
+2025-04-28,C10219,South,Bravo,App Support,Item E,231.09,50.08,2,Value C,Value D,Value D,Value J,Value K,Value D,Value L,Value J,Value J,Value P
+2025-05-04,C10220,North,Alpha,Service Desk,Item Bx,247.27,65.59,6,Value D,Value E,Value E,Value A,Value A,Value E,Value M,Value K,Value K,Value Q
+2025-06-17,C10221,West,Charlie,Service Desk,Item Hxxx,122.4,22.91,2,Value E,Value F,Value F,Value B,Value B,Value F,Value A,Value L,Value L,Value A
+2025-07-10,C10222,North,Alpha,Service Desk,Item Bx,258.52,45.48,3,Value F,Value G,Value G,Value C,Value C,Value G,Value B,Value M,Value M,Value B
+2025-08-27,C10223,North,Alpha,App Support,Item Jx,577.39,-25.86,8,Value G,Value H,Value H,Value D,Value D,Value H,Value C,Value N,Value N,Value C
+2025-09-08,C10224,East,Delta,Desktop,Item A,86.19,-1.65,6,Value A,Value A,Value I,Value E,Value E,Value I,Value D,Value A,Value O,Value D
+2025-10-16,C10225,West,Delta,Service Desk,Item Lxxx,853.68,133.27,1,Value B,Value B,Value A,Value F,Value F,Value J,Value E,Value B,Value A,Value E
+2025-11-11,C10226,South,Bravo,App Support,Item Jx,827.04,34.76,3,Value C,Value C,Value B,Value G,Value G,Value K,Value F,Value C,Value B,Value F
+2025-12-27,C10227,West,Alpha,Service Desk,Item Dxxx,549.17,116.61,3,Value D,Value D,Value C,Value H,Value H,Value L,Value G,Value D,Value C,Value G
+2025-01-27,C10228,West,Alpha,App Support,Item Gxx,292.65,30.45,6,Value E,Value E,Value D,Value I,Value I,Value A,Value H,Value E,Value D,Value H
+2025-02-15,C10229,West,Alpha,App Support,Item Hxxx,859.73,214.88,4,Value F,Value F,Value E,Value J,Value J,Value B,Value I,Value F,Value E,Value I
+2025-03-03,C10230,East,Bravo,Security,Item Pxxx,209.06,58.53,1,Value G,Value G,Value F,Value A,Value K,Value C,Value J,Value G,Value F,Value J
+2025-04-12,C10231,West,Delta,Desktop,Item A,84.85,-4.99,2,Value A,Value H,Value G,Value B,Value A,Value D,Value K,Value H,Value G,Value K
+2025-05-28,C10232,East,Bravo,Security,Item Fx,575.84,52.86,5,Value B,Value A,Value H,Value C,Value B,Value E,Value L,Value I,Value H,Value L
+2025-06-18,C10233,West,Alpha,Service Desk,Item A,377.21,16.49,8,Value C,Value B,Value I,Value D,Value C,Value F,Value M,Value J,Value I,Value M
+2025-07-07,C10234,South,Bravo,Service Desk,Item Hxxx,526.44,145.56,6,Value D,Value C,Value A,Value E,Value D,Value G,Value A,Value K,Value J,Value N
+2025-08-16,C10235,North,Alpha,Service Desk,Item Dxxx,829.81,127.44,6,Value E,Value D,Value B,Value F,Value E,Value H,Value B,Value L,Value K,Value O
+2025-09-06,C10236,North,Alpha,App Support,Item A,618.41,85.82,2,Value F,Value E,Value C,Value G,Value F,Value I,Value C,Value M,Value L,Value P
+2025-10-01,C10237,North,Alpha,Service Desk,Item E,476.98,120.18,8,Value G,Value F,Value D,Value H,Value G,Value J,Value D,Value N,Value M,Value Q
+2025-11-19,C10238,North,Bravo,Service Desk,Item I,663.2,-60.73,3,Value A,Value G,Value E,Value I,Value H,Value K,Value E,Value A,Value N,Value A
+2025-12-19,C10239,South,Alpha,App Support,Item Fx,207.0,-13.85,7,Value B,Value H,Value F,Value J,Value I,Value L,Value F,Value B,Value O,Value B
+2025-01-06,C10240,South,Alpha,Network Ops,Item Cxx,309.67,-8.68,4,Value C,Value A,Value G,Value A,Value J,Value A,Value G,Value C,Value A,Value C
+2025-02-21,C10241,East,Bravo,App Support,Item A,598.54,174.44,6,Value D,Value B,Value H,Value B,Value K,Value B,Value H,Value D,Value B,Value D
+2025-03-01,C10242,East,Alpha,Desktop,Item A,96.28,16.94,1,Value E,Value C,Value I,Value C,Value A,Value C,Value I,Value E,Value C,Value E
+2025-04-20,C10243,East,Charlie,Service Desk,Item Nx,52.37,3.25,7,Value F,Value D,Value A,Value D,Value B,Value D,Value J,Value F,Value D,Value F
+2025-05-27,C10244,East,Bravo,Service Desk,Item Fx,241.81,65.85,8,Value G,Value E,Value B,Value E,Value C,Value E,Value K,Value G,Value E,Value G
+2025-06-13,C10245,North,Alpha,DBA,Item Jx,873.81,87.22,8,Value A,Value F,Value C,Value F,Value D,Value F,Value L,Value H,Value F,Value H
+2025-07-19,C10246,East,Bravo,DBA,Item Txxx,418.73,120.2,7,Value B,Value G,Value D,Value G,Value E,Value G,Value M,Value I,Value G,Value I
+2025-08-28,C10247,North,Alpha,Network Ops,Item Pxxx,50.01,5.24,3,Value C,Value H,Value E,Value H,Value F,Value H,Value A,Value J,Value H,Value J
+2025-09-10,C10248,East,Alpha,Security,Item Gxx,450.74,72.1,8,Value D,Value A,Value F,Value I,Value G,Value I,Value B,Value K,Value I,Value K
+2025-10-25,C10249,West,Bravo,App Support,Item E,287.02,30.2,8,Value E,Value B,Value G,Value J,Value H,Value J,Value C,Value L,Value J,Value L
+2025-11-28,C10250,East,Alpha,Service Desk,Item Jx,720.38,98.92,3,Value F,Value C,Value H,Value A,Value I,Value K,Value D,Value M,Value K,Value M
+2025-12-04,C10251,East,Alpha,Network Ops,Item Cxx,498.83,58.31,7,Value G,Value D,Value I,Value B,Value J,Value L,Value E,Value N,Value L,Value N
+2025-01-12,C10252,North,Alpha,Network Ops,Item Cxx,686.45,-36.56,6,Value A,Value E,Value A,Value C,Value K,Value A,Value F,Value A,Value M,Value O
+2025-02-28,C10253,South,Alpha,Network Ops,Item Fx,682.47,100.93,4,Value B,Value F,Value B,Value D,Value A,Value B,Value G,Value B,Value N,Value P
+2025-03-10,C10254,North,Alpha,Service Desk,Item Hxxx,740.8,50.82,2,Value C,Value G,Value C,Value E,Value B,Value C,Value H,Value C,Value O,Value Q
+2025-04-03,C10255,East,Bravo,App Support,Item Fx,898.36,214.45,8,Value D,Value H,Value D,Value F,Value C,Value D,Value I,Value D,Value A,Value A
+2025-05-08,C10256,East,Bravo,Desktop,Item Fx,644.33,99.46,2,Value E,Value A,Value E,Value G,Value D,Value E,Value J,Value E,Value B,Value B
+2025-06-23,C10257,West,Delta,Service Desk,Item Txxx,195.22,14.72,8,Value F,Value B,Value F,Value H,Value E,Value F,Value K,Value F,Value C,Value C
+2025-07-15,C10258,South,Alpha,DBA,Item A,767.26,30.67,7,Value G,Value C,Value G,Value I,Value F,Value G,Value L,Value G,Value D,Value D
+2025-08-21,C10259,West,Echo,Desktop,Item E,75.38,-1.82,6,Value A,Value D,Value H,Value J,Value G,Value H,Value M,Value H,Value E,Value E
+2025-09-07,C10260,South,Alpha,Service Desk,Item A,230.63,-9.44,3,Value B,Value E,Value I,Value A,Value H,Value I,Value A,Value I,Value F,Value F
+2025-10-16,C10261,East,Alpha,Desktop,Item Hxxx,412.63,39.57,5,Value C,Value F,Value A,Value B,Value I,Value J,Value B,Value J,Value G,Value G
+2025-11-01,C10262,West,Alpha,Network Ops,Item Bx,679.69,-63.27,5,Value D,Value G,Value B,Value C,Value J,Value K,Value C,Value K,Value H,Value H
+2025-12-10,C10263,South,Alpha,Desktop,Item Bx,144.48,28.47,1,Value E,Value H,Value C,Value D,Value K,Value L,Value D,Value L,Value I,Value I
+2025-01-03,C10264,East,Bravo,Security,Item Txxx,483.68,-25.66,7,Value F,Value A,Value D,Value E,Value A,Value A,Value E,Value M,Value J,Value J
+2025-02-26,C10265,North,Echo,App Support,Item Fx,602.43,84.65,7,Value G,Value B,Value E,Value F,Value B,Value B,Value F,Value N,Value K,Value K
+2025-03-12,C10266,West,Bravo,Service Desk,Item Fx,625.67,84.36,3,Value A,Value C,Value F,Value G,Value C,Value C,Value G,Value A,Value L,Value L
+2025-04-25,C10267,East,Echo,Service Desk,Item A,438.25,-16.51,2,Value B,Value D,Value G,Value H,Value D,Value D,Value H,Value B,Value M,Value M
+2025-05-21,C10268,South,Bravo,Service Desk,Item Rx,322.28,7.96,6,Value C,Value E,Value H,Value I,Value E,Value E,Value I,Value C,Value N,Value N
+2025-06-21,C10269,North,Delta,Service Desk,Item Hxxx,502.36,42.57,1,Value D,Value F,Value I,Value J,Value F,Value F,Value J,Value D,Value O,Value O
+2025-07-05,C10270,West,Delta,Service Desk,Item A,808.13,-18.75,7,Value E,Value G,Value A,Value A,Value G,Value G,Value K,Value E,Value A,Value P
+2025-08-17,C10271,East,Echo,Service Desk,Item Hxxx,638.2,64.01,8,Value F,Value H,Value B,Value B,Value H,Value H,Value L,Value F,Value B,Value Q
+2025-09-08,C10272,West,Charlie,App Support,Item E,30.77,0.88,4,Value G,Value A,Value C,Value C,Value I,Value I,Value M,Value G,Value C,Value A
+2025-10-05,C10273,North,Charlie,DBA,Item Txxx,655.94,117.02,5,Value A,Value B,Value D,Value D,Value J,Value J,Value A,Value H,Value D,Value B
+2025-11-08,C10274,South,Echo,Desktop,Item Fx,693.6,11.19,6,Value B,Value C,Value E,Value E,Value K,Value K,Value B,Value I,Value E,Value C
+2025-12-23,C10275,East,Bravo,Service Desk,Item E,402.32,41.66,2,Value C,Value D,Value F,Value F,Value A,Value L,Value C,Value J,Value F,Value D
+2025-01-07,C10276,South,Alpha,Desktop,Item Fx,240.34,-1.32,8,Value D,Value E,Value G,Value G,Value B,Value A,Value D,Value K,Value G,Value E
+2025-02-08,C10277,East,Alpha,App Support,Item Dxxx,260.9,77.59,3,Value E,Value F,Value H,Value H,Value C,Value B,Value E,Value L,Value H,Value F
+2025-03-02,C10278,West,Alpha,Service Desk,Item Lxxx,481.47,38.5,8,Value F,Value G,Value I,Value I,Value D,Value C,Value F,Value M,Value I,Value G
+2025-04-12,C10279,South,Alpha,App Support,Item Cxx,259.93,42.33,2,Value G,Value H,Value A,Value J,Value E,Value D,Value G,Value N,Value J,Value H
+2025-05-15,C10280,South,Alpha,App Support,Item Cxx,211.29,63.09,8,Value A,Value A,Value B,Value A,Value F,Value E,Value H,Value A,Value K,Value I
+2025-06-17,C10281,South,Bravo,App Support,Item Jx,634.49,24.55,8,Value B,Value B,Value C,Value B,Value G,Value F,Value I,Value B,Value L,Value J
+2025-07-16,C10282,North,Bravo,App Support,Item E,629.04,168.84,5,Value C,Value C,Value D,Value C,Value H,Value G,Value J,Value C,Value M,Value K
+2025-08-15,C10283,South,Bravo,App Support,Item Cxx,809.27,189.88,5,Value D,Value D,Value E,Value D,Value I,Value H,Value K,Value D,Value N,Value L
+2025-09-06,C10284,West,Bravo,Service Desk,Item Gxx,242.23,37.73,2,Value E,Value E,Value F,Value E,Value J,Value I,Value L,Value E,Value O,Value M
+2025-10-05,C10285,East,Alpha,Service Desk,Item Bx,70.88,17.27,6,Value F,Value F,Value G,Value F,Value K,Value J,Value M,Value F,Value A,Value N
+2025-11-25,C10286,West,Alpha,Service Desk,Item I,273.31,64.73,2,Value G,Value G,Value H,Value G,Value A,Value K,Value A,Value G,Value B,Value O
+2025-12-05,C10287,North,Bravo,Service Desk,Item E,475.18,15.2,3,Value A,Value H,Value I,Value H,Value B,Value L,Value B,Value H,Value C,Value P
+2025-01-17,C10288,South,Alpha,App Support,Item Bx,59.16,7.81,1,Value B,Value A,Value A,Value I,Value C,Value A,Value C,Value I,Value D,Value Q
+2025-02-14,C10289,East,Alpha,App Support,Item A,114.87,7.64,4,Value C,Value B,Value B,Value J,Value D,Value B,Value D,Value J,Value E,Value A
+2025-03-15,C10290,South,Alpha,Security,Item Oxx,735.45,52.62,2,Value D,Value C,Value C,Value A,Value E,Value C,Value E,Value K,Value F,Value B
+2025-04-08,C10291,East,Alpha,Network Ops,Item Fx,335.76,98.37,4,Value E,Value D,Value D,Value B,Value F,Value D,Value F,Value L,Value G,Value C
+2025-05-11,C10292,West,Charlie,Security,Item Cxx,688.45,102.38,4,Value F,Value E,Value E,Value C,Value G,Value E,Value G,Value M,Value H,Value D
+2025-06-23,C10293,South,Alpha,Service Desk,Item Dxxx,634.06,-6.76,1,Value G,Value F,Value F,Value D,Value H,Value F,Value H,Value N,Value I,Value E
+2025-07-10,C10294,East,Alpha,Service Desk,Item Cxx,162.42,16.7,3,Value A,Value G,Value G,Value E,Value I,Value G,Value I,Value A,Value J,Value F
+2025-08-10,C10295,West,Alpha,Service Desk,Item E,823.91,90.48,3,Value B,Value H,Value H,Value F,Value J,Value H,Value J,Value B,Value K,Value G
+2025-09-20,C10296,North,Alpha,Desktop,Item Lxxx,809.63,128.85,3,Value C,Value A,Value I,Value G,Value K,Value I,Value K,Value C,Value L,Value H
+2025-10-25,C10297,North,Alpha,App Support,Item Bx,90.0,-2.19,5,Value D,Value B,Value A,Value H,Value A,Value J,Value L,Value D,Value M,Value I
+2025-11-14,C10298,East,Alpha,Service Desk,Item Fx,603.03,76.39,2,Value E,Value C,Value B,Value I,Value B,Value K,Value M,Value E,Value N,Value J
+2025-12-03,C10299,East,Bravo,Service Desk,Item Hxxx,824.65,108.51,7,Value F,Value D,Value C,Value J,Value C,Value L,Value A,Value F,Value O,Value K
+2025-01-22,C10300,West,Alpha,Service Desk,Item Cxx,569.12,139.79,6,Value G,Value E,Value D,Value A,Value D,Value A,Value B,Value G,Value A,Value L
+2025-02-05,C10301,East,Delta,Service Desk,Item Lxxx,239.63,-17.24,3,Value A,Value F,Value E,Value B,Value E,Value B,Value C,Value H,Value B,Value M
+2025-03-09,C10302,West,Echo,Network Ops,Item Hxxx,461.48,58.82,5,Value B,Value G,Value F,Value C,Value F,Value C,Value D,Value I,Value C,Value N
+2025-04-11,C10303,East,Alpha,Service Desk,Item Txxx,288.32,56.82,7,Value C,Value H,Value G,Value D,Value G,Value D,Value E,Value J,Value D,Value O
+2025-05-22,C10304,East,Echo,App Support,Item M,891.11,125.58,4,Value D,Value A,Value H,Value E,Value H,Value E,Value F,Value K,Value E,Value P
+2025-06-22,C10305,West,Alpha,App Support,Item Rx,374.64,16.52,5,Value E,Value B,Value I,Value F,Value I,Value F,Value G,Value L,Value F,Value Q
+2025-07-05,C10306,East,Alpha,Network Ops,Item A,741.74,-14.78,1,Value F,Value C,Value A,Value G,Value J,Value G,Value H,Value M,Value G,Value A
+2025-08-09,C10307,North,Alpha,Network Ops,Item A,807.96,159.24,6,Value G,Value D,Value B,Value H,Value K,Value H,Value I,Value N,Value H,Value B
+2025-09-25,C10308,North,Echo,Service Desk,Item Bx,464.44,130.86,5,Value A,Value E,Value C,Value I,Value A,Value I,Value J,Value A,Value I,Value C
+2025-10-01,C10309,East,Delta,Service Desk,Item Bx,613.2,175.61,6,Value B,Value F,Value D,Value J,Value B,Value J,Value K,Value B,Value J,Value D
+2025-11-18,C10310,South,Alpha,Desktop,Item A,210.11,-4.6,7,Value C,Value G,Value E,Value A,Value C,Value K,Value L,Value C,Value K,Value E
+2025-12-28,C10311,North,Alpha,Service Desk,Item E,508.52,9.02,6,Value D,Value H,Value F,Value B,Value D,Value L,Value M,Value D,Value L,Value F
+2025-01-08,C10312,East,Bravo,Desktop,Item Dxxx,780.93,169.71,3,Value E,Value A,Value G,Value C,Value E,Value A,Value A,Value E,Value M,Value G
+2025-02-04,C10313,West,Alpha,Service Desk,Item Hxxx,661.85,-56.01,2,Value F,Value B,Value H,Value D,Value F,Value B,Value B,Value F,Value N,Value H
+2025-03-11,C10314,West,Alpha,App Support,Item Jx,719.73,214.25,4,Value G,Value C,Value I,Value E,Value G,Value C,Value C,Value G,Value O,Value I
+2025-04-24,C10315,West,Alpha,Service Desk,Item Gxx,278.88,15.57,6,Value A,Value D,Value A,Value F,Value H,Value D,Value D,Value H,Value A,Value J
+2025-05-24,C10316,East,Alpha,Service Desk,Item M,124.73,-2.39,4,Value B,Value E,Value B,Value G,Value I,Value E,Value E,Value I,Value B,Value K
+2025-06-01,C10317,North,Alpha,Security,Item A,231.4,-4.01,8,Value C,Value F,Value C,Value H,Value J,Value F,Value F,Value J,Value C,Value L
+2025-07-18,C10318,West,Alpha,Service Desk,Item Gxx,495.14,90.55,3,Value D,Value G,Value D,Value I,Value K,Value G,Value G,Value K,Value D,Value M
+2025-08-04,C10319,West,Alpha,Service Desk,Item A,791.89,176.37,7,Value E,Value H,Value E,Value J,Value A,Value H,Value H,Value L,Value E,Value N
+2025-09-14,C10320,North,Bravo,Network Ops,Item Cxx,749.06,215.73,5,Value F,Value A,Value F,Value A,Value B,Value I,Value I,Value M,Value F,Value O
+2025-10-22,C10321,South,Alpha,App Support,Item A,349.01,79.36,3,Value G,Value B,Value G,Value B,Value C,Value J,Value J,Value N,Value G,Value P
+2025-11-04,C10322,North,Bravo,Network Ops,Item A,40.01,5.41,7,Value A,Value C,Value H,Value C,Value D,Value K,Value K,Value A,Value H,Value Q
+2025-12-09,C10323,West,Charlie,DBA,Item Fx,180.6,-6.89,2,Value B,Value D,Value I,Value D,Value E,Value L,Value L,Value B,Value I,Value A
+2025-01-11,C10324,East,Delta,Service Desk,Item Kxx,818.9,119.07,5,Value C,Value E,Value A,Value E,Value F,Value A,Value M,Value C,Value J,Value B
+2025-02-26,C10325,East,Charlie,Service Desk,Item A,605.04,-26.84,1,Value D,Value F,Value B,Value F,Value G,Value B,Value A,Value D,Value K,Value C
+2025-03-13,C10326,South,Bravo,Service Desk,Item Fx,55.3,-4.39,4,Value E,Value G,Value C,Value G,Value H,Value C,Value B,Value E,Value L,Value D
+2025-04-07,C10327,East,Bravo,App Support,Item Bx,650.92,126.55,5,Value F,Value H,Value D,Value H,Value I,Value D,Value C,Value F,Value M,Value E
+2025-05-14,C10328,West,Alpha,Service Desk,Item Cxx,358.71,83.54,5,Value G,Value A,Value E,Value I,Value J,Value E,Value D,Value G,Value N,Value F
+2025-06-24,C10329,South,Bravo,App Support,Item Bx,498.6,43.66,2,Value A,Value B,Value F,Value J,Value K,Value F,Value E,Value H,Value O,Value G
+2025-07-26,C10330,North,Alpha,Service Desk,Item Rx,149.18,7.58,5,Value B,Value C,Value G,Value A,Value A,Value G,Value F,Value I,Value A,Value H
+2025-08-02,C10331,North,Echo,App Support,Item Dxxx,44.65,5.21,7,Value C,Value D,Value H,Value B,Value B,Value H,Value G,Value J,Value B,Value I
+2025-09-09,C10332,East,Bravo,Security,Item Gxx,573.61,69.5,4,Value D,Value E,Value I,Value C,Value C,Value I,Value H,Value K,Value C,Value J
+2025-10-28,C10333,West,Charlie,Desktop,Item Hxxx,459.9,54.41,3,Value E,Value F,Value A,Value D,Value D,Value J,Value I,Value L,Value D,Value K
+2025-11-17,C10334,South,Bravo,App Support,Item E,804.7,-76.07,3,Value F,Value G,Value B,Value E,Value E,Value K,Value J,Value M,Value E,Value L
+2025-12-11,C10335,South,Alpha,App Support,Item Cxx,879.24,-37.35,4,Value G,Value H,Value C,Value F,Value F,Value L,Value K,Value N,Value F,Value M
+2025-01-06,C10336,East,Alpha,Service Desk,Item Lxxx,83.3,10.24,2,Value A,Value A,Value D,Value G,Value G,Value A,Value L,Value A,Value G,Value N
+2025-02-19,C10337,East,Echo,Security,Item A,532.04,-29.01,2,Value B,Value B,Value E,Value H,Value H,Value B,Value M,Value B,Value H,Value O
+2025-03-18,C10338,North,Alpha,Desktop,Item Dxxx,654.36,8.33,5,Value C,Value C,Value F,Value I,Value I,Value C,Value A,Value C,Value I,Value P
+2025-04-21,C10339,North,Alpha,Desktop,Item Hxxx,60.42,7.23,5,Value D,Value D,Value G,Value J,Value J,Value D,Value B,Value D,Value J,Value Q
+2025-05-27,C10340,West,Charlie,App Support,Item Txxx,885.25,68.73,8,Value E,Value E,Value H,Value A,Value K,Value E,Value C,Value E,Value K,Value A
+2025-06-18,C10341,North,Alpha,Desktop,Item Nx,520.06,-48.98,4,Value F,Value F,Value I,Value B,Value A,Value F,Value D,Value F,Value L,Value B
+2025-07-05,C10342,East,Bravo,Service Desk,Item Fx,128.13,22.04,6,Value G,Value G,Value A,Value C,Value B,Value G,Value E,Value G,Value M,Value C
+2025-08-18,C10343,West,Alpha,Security,Item Txxx,199.38,-17.75,8,Value A,Value H,Value B,Value D,Value C,Value H,Value F,Value H,Value N,Value D
+2025-09-01,C10344,East,Alpha,Network Ops,Item A,636.57,59.7,6,Value B,Value A,Value C,Value E,Value D,Value I,Value G,Value I,Value O,Value E
+2025-10-24,C10345,West,Alpha,DBA,Item Hxxx,696.66,76.27,2,Value C,Value B,Value D,Value F,Value E,Value J,Value H,Value J,Value A,Value F
+2025-11-15,C10346,West,Alpha,Network Ops,Item Cxx,791.64,227.07,8,Value D,Value C,Value E,Value G,Value F,Value K,Value I,Value K,Value B,Value G
+2025-12-28,C10347,North,Bravo,Service Desk,Item Fx,720.81,143.91,3,Value E,Value D,Value F,Value H,Value G,Value L,Value J,Value L,Value C,Value H
+2025-01-04,C10348,East,Alpha,Service Desk,Item Cxx,236.57,-6.45,1,Value F,Value E,Value G,Value I,Value H,Value A,Value K,Value M,Value D,Value I
+2025-02-17,C10349,West,Bravo,Service Desk,Item A,832.32,-60.98,7,Value G,Value F,Value H,Value J,Value I,Value B,Value L,Value N,Value E,Value J
+2025-03-15,C10350,East,Bravo,Service Desk,Item Nx,49.05,-0.01,8,Value A,Value G,Value I,Value A,Value J,Value C,Value M,Value A,Value F,Value K
+2025-04-05,C10351,West,Bravo,Service Desk,Item I,180.59,35.1,4,Value B,Value H,Value A,Value B,Value K,Value D,Value A,Value B,Value G,Value L
+2025-05-25,C10352,North,Charlie,App Support,Item Txxx,808.08,171.78,1,Value C,Value A,Value B,Value C,Value A,Value E,Value B,Value C,Value H,Value M
+2025-06-24,C10353,North,Delta,Service Desk,Item E,533.78,137.05,1,Value D,Value B,Value C,Value D,Value B,Value F,Value C,Value D,Value I,Value N
+2025-07-20,C10354,South,Alpha,Service Desk,Item Txxx,312.45,5.68,6,Value E,Value C,Value D,Value E,Value C,Value G,Value D,Value E,Value J,Value O
+2025-08-20,C10355,West,Alpha,App Support,Item Cxx,423.2,-19.04,1,Value F,Value D,Value E,Value F,Value D,Value H,Value E,Value F,Value K,Value P
+2025-09-13,C10356,West,Alpha,Service Desk,Item Txxx,62.29,-6.05,5,Value G,Value E,Value F,Value G,Value E,Value I,Value F,Value G,Value L,Value Q
+2025-10-20,C10357,North,Alpha,Desktop,Item Lxxx,183.84,44.27,2,Value A,Value F,Value G,Value H,Value F,Value J,Value G,Value H,Value M,Value A
+2025-11-07,C10358,West,Bravo,Service Desk,Item A,196.37,1.23,6,Value B,Value G,Value H,Value I,Value G,Value K,Value H,Value I,Value N,Value B
+2025-12-10,C10359,North,Charlie,DBA,Item Cxx,567.53,116.71,4,Value C,Value H,Value I,Value J,Value H,Value L,Value I,Value J,Value O,Value C
+2025-01-06,C10360,South,Delta,Service Desk,Item Cxx,491.57,8.78,8,Value D,Value A,Value A,Value A,Value I,Value A,Value J,Value K,Value A,Value D
+2025-02-14,C10361,West,Alpha,Service Desk,Item Txxx,342.95,81.57,4,Value E,Value B,Value B,Value B,Value J,Value B,Value K,Value L,Value B,Value E
+2025-03-28,C10362,South,Alpha,Desktop,Item Bx,894.13,95.11,3,Value F,Value C,Value C,Value C,Value K,Value C,Value L,Value M,Value C,Value F
+2025-04-19,C10363,North,Bravo,Service Desk,Item Rx,181.4,12.51,7,Value G,Value D,Value D,Value D,Value A,Value D,Value M,Value N,Value D,Value G
+2025-05-24,C10364,North,Charlie,App Support,Item A,693.84,14.2,5,Value A,Value E,Value E,Value E,Value B,Value E,Value A,Value A,Value E,Value H
+2025-06-12,C10365,South,Alpha,Network Ops,Item Fx,869.06,43.63,8,Value B,Value F,Value F,Value F,Value C,Value F,Value B,Value B,Value F,Value I
+2025-07-06,C10366,West,Bravo,Service Desk,Item Cxx,309.64,45.61,5,Value C,Value G,Value G,Value G,Value D,Value G,Value C,Value C,Value G,Value J
+2025-08-13,C10367,East,Alpha,Security,Item I,149.44,11.71,5,Value D,Value H,Value H,Value H,Value E,Value H,Value D,Value D,Value H,Value K
+2025-09-13,C10368,East,Alpha,Desktop,Item Txxx,239.1,-1.52,2,Value E,Value A,Value I,Value I,Value F,Value I,Value E,Value E,Value I,Value L
+2025-10-16,C10369,North,Alpha,Desktop,Item Dxxx,423.56,14.58,6,Value F,Value B,Value A,Value J,Value G,Value J,Value F,Value F,Value J,Value M
+2025-11-17,C10370,North,Alpha,App Support,Item Dxxx,839.66,208.07,1,Value G,Value C,Value B,Value A,Value H,Value K,Value G,Value G,Value K,Value N
+2025-12-10,C10371,South,Bravo,Desktop,Item Dxxx,719.7,17.81,1,Value A,Value D,Value C,Value B,Value I,Value L,Value H,Value H,Value L,Value O
+2025-01-22,C10372,West,Alpha,Network Ops,Item Nx,526.74,62.43,2,Value B,Value E,Value D,Value C,Value J,Value A,Value I,Value I,Value M,Value P
+2025-02-09,C10373,South,Alpha,Network Ops,Item Dxxx,536.67,148.26,5,Value C,Value F,Value E,Value D,Value K,Value B,Value J,Value J,Value N,Value Q
+2025-03-01,C10374,South,Bravo,Service Desk,Item Txxx,376.61,72.37,3,Value D,Value G,Value F,Value E,Value A,Value C,Value K,Value K,Value O,Value A
+2025-04-19,C10375,North,Bravo,Service Desk,Item A,370.15,83.81,3,Value E,Value H,Value G,Value F,Value B,Value D,Value L,Value L,Value A,Value B
+2025-05-26,C10376,West,Bravo,Service Desk,Item Dxxx,587.3,57.0,6,Value F,Value A,Value H,Value G,Value C,Value E,Value M,Value M,Value B,Value C
+2025-06-12,C10377,North,Charlie,Service Desk,Item Hxxx,232.18,57.2,6,Value G,Value B,Value I,Value H,Value D,Value F,Value A,Value N,Value C,Value D
+2025-07-08,C10378,South,Bravo,Network Ops,Item Cxx,182.55,19.54,7,Value A,Value C,Value A,Value I,Value E,Value G,Value B,Value A,Value D,Value E
+2025-08-24,C10379,North,Charlie,Service Desk,Item Sxx,447.17,62.22,1,Value B,Value D,Value B,Value J,Value F,Value H,Value C,Value B,Value E,Value F
+2025-09-27,C10380,South,Bravo,Desktop,Item I,252.18,1.83,2,Value C,Value E,Value C,Value A,Value G,Value I,Value D,Value C,Value F,Value G
+2025-10-15,C10381,East,Alpha,Network Ops,Item Kxx,256.19,18.02,4,Value D,Value F,Value D,Value B,Value H,Value J,Value E,Value D,Value G,Value H
+2025-11-20,C10382,West,Charlie,Desktop,Item Gxx,362.86,-33.92,3,Value E,Value G,Value E,Value C,Value I,Value K,Value F,Value E,Value H,Value I
+2025-12-14,C10383,South,Alpha,App Support,Item A,487.78,56.89,3,Value F,Value H,Value F,Value D,Value J,Value L,Value G,Value F,Value I,Value J
+2025-01-19,C10384,East,Bravo,App Support,Item Cxx,897.31,-77.6,8,Value G,Value A,Value G,Value E,Value K,Value A,Value H,Value G,Value J,Value K
+2025-02-26,C10385,West,Alpha,Service Desk,Item Lxxx,531.66,134.61,6,Value A,Value B,Value H,Value F,Value A,Value B,Value I,Value H,Value K,Value L
+2025-03-26,C10386,South,Bravo,DBA,Item Hxxx,591.53,13.81,6,Value B,Value C,Value I,Value G,Value B,Value C,Value J,Value I,Value L,Value M
+2025-04-26,C10387,West,Alpha,Desktop,Item Gxx,116.12,-9.19,7,Value C,Value D,Value A,Value H,Value C,Value D,Value K,Value J,Value M,Value N
+2025-05-24,C10388,West,Delta,App Support,Item E,504.23,46.26,7,Value D,Value E,Value B,Value I,Value D,Value E,Value L,Value K,Value N,Value O
+2025-06-07,C10389,South,Bravo,Service Desk,Item Dxxx,595.42,133.67,5,Value E,Value F,Value C,Value J,Value E,Value F,Value M,Value L,Value O,Value P
+2025-07-10,C10390,East,Alpha,App Support,Item M,761.94,157.72,3,Value F,Value G,Value D,Value A,Value F,Value G,Value A,Value M,Value A,Value Q
+2025-08-13,C10391,South,Alpha,Service Desk,Item Nx,718.74,16.82,7,Value G,Value H,Value E,Value B,Value G,Value H,Value B,Value N,Value B,Value A
+2025-09-10,C10392,North,Bravo,Service Desk,Item Cxx,413.75,108.14,3,Value A,Value A,Value F,Value C,Value H,Value I,Value C,Value A,Value C,Value B
+2025-10-08,C10393,North,Alpha,Network Ops,Item Bx,38.43,6.24,2,Value B,Value B,Value G,Value D,Value I,Value J,Value D,Value B,Value D,Value C
+2025-11-12,C10394,East,Bravo,Service Desk,Item A,654.93,99.73,8,Value C,Value C,Value H,Value E,Value J,Value K,Value E,Value C,Value E,Value D
+2025-12-21,C10395,West,Bravo,Desktop,Item Jx,260.68,34.7,5,Value D,Value D,Value I,Value F,Value K,Value L,Value F,Value D,Value F,Value E
+2025-01-07,C10396,North,Delta,Service Desk,Item Fx,554.4,-5.92,7,Value E,Value E,Value A,Value G,Value A,Value A,Value G,Value E,Value G,Value F
+2025-02-14,C10397,North,Delta,Service Desk,Item Bx,655.22,117.82,7,Value F,Value F,Value B,Value H,Value B,Value B,Value H,Value F,Value H,Value G
+2025-03-15,C10398,West,Alpha,Service Desk,Item Txxx,671.33,63.5,3,Value G,Value G,Value C,Value I,Value C,Value C,Value I,Value G,Value I,Value H
+2025-04-09,C10399,South,Alpha,Service Desk,Item Jx,880.76,-34.71,7,Value A,Value H,Value D,Value J,Value D,Value D,Value J,Value H,Value J,Value I
+2025-05-23,C10400,North,Bravo,Security,Item Bx,745.55,1.03,1,Value B,Value A,Value E,Value A,Value E,Value E,Value K,Value I,Value K,Value J
+2025-06-21,C10401,West,Alpha,Service Desk,Item Bx,601.61,139.45,2,Value C,Value B,Value F,Value B,Value F,Value F,Value L,Value J,Value L,Value K
+2025-07-18,C10402,East,Alpha,Network Ops,Item A,169.42,15.15,6,Value D,Value C,Value G,Value C,Value G,Value G,Value M,Value K,Value M,Value L
+2025-08-03,C10403,North,Delta,Security,Item Dxxx,361.48,26.69,3,Value E,Value D,Value H,Value D,Value H,Value H,Value A,Value L,Value N,Value M
+2025-09-11,C10404,East,Charlie,Network Ops,Item Cxx,791.66,-36.13,5,Value F,Value E,Value I,Value E,Value I,Value I,Value B,Value M,Value O,Value N
+2025-10-06,C10405,South,Alpha,App Support,Item Gxx,661.99,164.25,6,Value G,Value F,Value A,Value F,Value J,Value J,Value C,Value N,Value A,Value O
+2025-11-08,C10406,West,Alpha,Service Desk,Item A,336.73,59.35,8,Value A,Value G,Value B,Value G,Value K,Value K,Value D,Value A,Value B,Value P
+2025-12-26,C10407,South,Bravo,Desktop,Item Rx,552.76,-17.49,8,Value B,Value H,Value C,Value H,Value A,Value L,Value E,Value B,Value C,Value Q
+2025-01-10,C10408,West,Alpha,Service Desk,Item A,515.24,-17.31,8,Value C,Value A,Value D,Value I,Value B,Value A,Value F,Value C,Value D,Value A
+2025-02-03,C10409,West,Bravo,Service Desk,Item Txxx,490.15,-1.39,5,Value D,Value B,Value E,Value J,Value C,Value B,Value G,Value D,Value E,Value B
+2025-03-23,C10410,North,Alpha,Service Desk,Item A,649.87,70.74,1,Value E,Value C,Value F,Value A,Value D,Value C,Value H,Value E,Value F,Value C
+2025-04-09,C10411,North,Alpha,Security,Item A,69.17,20.53,8,Value F,Value D,Value G,Value B,Value E,Value D,Value I,Value F,Value G,Value D
+2025-05-17,C10412,South,Delta,Service Desk,Item I,337.11,-0.83,2,Value G,Value E,Value H,Value C,Value F,Value E,Value J,Value G,Value H,Value E
+2025-06-28,C10413,East,Alpha,App Support,Item E,834.87,158.05,7,Value A,Value F,Value I,Value D,Value G,Value F,Value K,Value H,Value I,Value F
+2025-07-22,C10414,East,Bravo,Service Desk,Item Dxxx,652.32,-45.91,5,Value B,Value G,Value A,Value E,Value H,Value G,Value L,Value I,Value J,Value G
+2025-08-18,C10415,West,Bravo,DBA,Item Bx,658.48,172.23,6,Value C,Value H,Value B,Value F,Value I,Value H,Value M,Value J,Value K,Value H
+2025-09-25,C10416,North,Charlie,Network Ops,Item Pxxx,335.77,90.06,3,Value D,Value A,Value C,Value G,Value J,Value I,Value A,Value K,Value L,Value I
+2025-10-17,C10417,North,Delta,Service Desk,Item A,487.32,-44.68,8,Value E,Value B,Value D,Value H,Value K,Value J,Value B,Value L,Value M,Value J
+2025-11-25,C10418,North,Alpha,Service Desk,Item Gxx,406.56,109.06,7,Value F,Value C,Value E,Value I,Value A,Value K,Value C,Value M,Value N,Value K
+2025-12-05,C10419,West,Alpha,Desktop,Item A,719.22,-51.42,2,Value G,Value D,Value F,Value J,Value B,Value L,Value D,Value N,Value O,Value L
+2025-01-24,C10420,North,Alpha,Network Ops,Item A,146.14,-13.01,7,Value A,Value E,Value G,Value A,Value C,Value A,Value E,Value A,Value A,Value M
+2025-02-11,C10421,South,Alpha,App Support,Item Bx,144.43,19.13,7,Value B,Value F,Value H,Value B,Value D,Value B,Value F,Value B,Value B,Value N
+2025-03-25,C10422,West,Bravo,DBA,Item I,168.47,41.91,8,Value C,Value G,Value I,Value C,Value E,Value C,Value G,Value C,Value C,Value O
+2025-04-08,C10423,North,Alpha,App Support,Item A,64.42,16.57,7,Value D,Value H,Value A,Value D,Value F,Value D,Value H,Value D,Value D,Value P
+2025-05-27,C10424,East,Alpha,DBA,Item Cxx,820.21,-12.7,7,Value E,Value A,Value B,Value E,Value G,Value E,Value I,Value E,Value E,Value Q
+2025-06-06,C10425,West,Alpha,App Support,Item Dxxx,561.12,133.56,6,Value F,Value B,Value C,Value F,Value H,Value F,Value J,Value F,Value F,Value A
+2025-07-26,C10426,West,Bravo,Network Ops,Item I,189.2,55.69,1,Value G,Value C,Value D,Value G,Value I,Value G,Value K,Value G,Value G,Value B
+2025-08-27,C10427,North,Echo,Network Ops,Item Dxxx,205.35,15.53,4,Value A,Value D,Value E,Value H,Value J,Value H,Value L,Value H,Value H,Value C
+2025-09-28,C10428,South,Bravo,App Support,Item A,713.85,101.16,7,Value B,Value E,Value F,Value I,Value K,Value I,Value M,Value I,Value I,Value D
+2025-10-10,C10429,West,Alpha,Network Ops,Item A,495.03,147.96,6,Value C,Value F,Value G,Value J,Value A,Value J,Value A,Value J,Value J,Value E
+2025-11-22,C10430,North,Charlie,Service Desk,Item M,36.71,0.33,6,Value D,Value G,Value H,Value A,Value B,Value K,Value B,Value K,Value K,Value F
+2025-12-02,C10431,East,Bravo,DBA,Item Bx,782.7,123.09,8,Value E,Value H,Value I,Value B,Value C,Value L,Value C,Value L,Value L,Value G
+2025-01-16,C10432,North,Alpha,Security,Item E,370.62,97.42,5,Value F,Value A,Value A,Value C,Value D,Value A,Value D,Value M,Value M,Value H
+2025-02-10,C10433,North,Alpha,Desktop,Item Gxx,171.1,-13.89,8,Value G,Value B,Value B,Value D,Value E,Value B,Value E,Value N,Value N,Value I
+2025-03-09,C10434,East,Bravo,Service Desk,Item A,211.46,35.01,3,Value A,Value C,Value C,Value E,Value F,Value C,Value F,Value A,Value O,Value J
+2025-04-13,C10435,West,Alpha,Network Ops,Item Cxx,282.14,34.33,7,Value B,Value D,Value D,Value F,Value G,Value D,Value G,Value B,Value A,Value K
+2025-05-11,C10436,South,Alpha,App Support,Item A,829.17,230.42,7,Value C,Value E,Value E,Value G,Value H,Value E,Value H,Value C,Value B,Value L
+2025-06-26,C10437,West,Alpha,Service Desk,Item Txxx,138.15,24.26,3,Value D,Value F,Value F,Value H,Value I,Value F,Value I,Value D,Value C,Value M
+2025-07-22,C10438,West,Alpha,App Support,Item Dxxx,164.37,15.77,1,Value E,Value G,Value G,Value I,Value J,Value G,Value J,Value E,Value D,Value N
+2025-08-17,C10439,South,Bravo,Service Desk,Item Cxx,854.79,100.92,5,Value F,Value H,Value H,Value J,Value K,Value H,Value K,Value F,Value E,Value O
+2025-09-23,C10440,West,Bravo,Desktop,Item Bx,518.27,-24.53,2,Value G,Value A,Value I,Value A,Value A,Value I,Value L,Value G,Value F,Value P
+2025-10-24,C10441,South,Alpha,App Support,Item Nx,854.98,138.1,1,Value A,Value B,Value A,Value B,Value B,Value J,Value M,Value H,Value G,Value Q
+2025-11-14,C10442,South,Alpha,Service Desk,Item Sxx,390.08,-35.12,2,Value B,Value C,Value B,Value C,Value C,Value K,Value A,Value I,Value H,Value A
+2025-12-13,C10443,East,Alpha,Service Desk,Item Gxx,598.24,49.13,5,Value C,Value D,Value C,Value D,Value D,Value L,Value B,Value J,Value I,Value B
+2025-01-10,C10444,West,Bravo,Security,Item Cxx,283.06,78.46,6,Value D,Value E,Value D,Value E,Value E,Value A,Value C,Value K,Value J,Value C
+2025-02-25,C10445,West,Alpha,Desktop,Item A,746.92,0.93,1,Value E,Value F,Value E,Value F,Value F,Value B,Value D,Value L,Value K,Value D
+2025-03-22,C10446,North,Alpha,Service Desk,Item E,864.58,182.57,8,Value F,Value G,Value F,Value G,Value G,Value C,Value E,Value M,Value L,Value E
+2025-04-12,C10447,South,Bravo,App Support,Item M,417.71,-41.66,3,Value G,Value H,Value G,Value H,Value H,Value D,Value F,Value N,Value M,Value F
+2025-05-23,C10448,East,Bravo,App Support,Item A,849.25,47.91,2,Value A,Value A,Value H,Value I,Value I,Value E,Value G,Value A,Value N,Value G
+2025-06-01,C10449,East,Bravo,Service Desk,Item Kxx,680.68,202.25,1,Value B,Value B,Value I,Value J,Value J,Value F,Value H,Value B,Value O,Value H
+2025-07-11,C10450,South,Echo,Network Ops,Item A,282.55,17.14,4,Value C,Value C,Value A,Value A,Value K,Value G,Value I,Value C,Value A,Value I
+2025-08-18,C10451,East,Delta,App Support,Item Cxx,720.99,139.64,5,Value D,Value D,Value B,Value B,Value A,Value H,Value J,Value D,Value B,Value J
+2025-09-14,C10452,North,Alpha,App Support,Item E,197.78,4.72,6,Value E,Value E,Value C,Value C,Value B,Value I,Value K,Value E,Value C,Value K
+2025-10-06,C10453,East,Alpha,Service Desk,Item Kxx,581.96,59.25,4,Value F,Value F,Value D,Value D,Value C,Value J,Value L,Value F,Value D,Value L
+2025-11-12,C10454,East,Alpha,App Support,Item Gxx,794.37,211.9,1,Value G,Value G,Value E,Value E,Value D,Value K,Value M,Value G,Value E,Value M
+2025-12-06,C10455,South,Delta,Security,Item Bx,402.68,-38.8,4,Value A,Value H,Value F,Value F,Value E,Value L,Value A,Value H,Value F,Value N
+2025-01-17,C10456,West,Alpha,App Support,Item A,822.64,-33.35,7,Value B,Value A,Value G,Value G,Value F,Value A,Value B,Value I,Value G,Value O
+2025-02-05,C10457,West,Echo,Desktop,Item Hxxx,809.09,-32.33,3,Value C,Value B,Value H,Value H,Value G,Value B,Value C,Value J,Value H,Value P
+2025-03-15,C10458,West,Charlie,Security,Item A,33.83,-3.27,4,Value D,Value C,Value I,Value I,Value H,Value C,Value D,Value K,Value I,Value Q
+2025-04-23,C10459,South,Bravo,App Support,Item Dxxx,39.64,4.47,1,Value E,Value D,Value A,Value J,Value I,Value D,Value E,Value L,Value J,Value A
+2025-05-10,C10460,South,Echo,DBA,Item E,25.25,7.45,6,Value F,Value E,Value B,Value A,Value J,Value E,Value F,Value M,Value K,Value B
+2025-06-23,C10461,North,Alpha,Service Desk,Item Oxx,852.92,42.34,5,Value G,Value F,Value C,Value B,Value K,Value F,Value G,Value N,Value L,Value C
+2025-07-08,C10462,North,Bravo,Service Desk,Item Txxx,502.66,150.27,4,Value A,Value G,Value D,Value C,Value A,Value G,Value H,Value A,Value M,Value D
+2025-08-13,C10463,East,Alpha,Desktop,Item Cxx,125.65,-1.01,4,Value B,Value H,Value E,Value D,Value B,Value H,Value I,Value B,Value N,Value E
+2025-09-02,C10464,West,Echo,Service Desk,Item A,444.92,-4.85,8,Value C,Value A,Value F,Value E,Value C,Value I,Value J,Value C,Value O,Value F
+2025-10-27,C10465,East,Alpha,App Support,Item Fx,30.95,-2.37,1,Value D,Value B,Value G,Value F,Value D,Value J,Value K,Value D,Value A,Value G
+2025-11-22,C10466,South,Alpha,App Support,Item Cxx,168.98,48.78,2,Value E,Value C,Value H,Value G,Value E,Value K,Value L,Value E,Value B,Value H
+2025-12-18,C10467,South,Bravo,App Support,Item Cxx,842.97,233.25,8,Value F,Value D,Value I,Value H,Value F,Value L,Value M,Value F,Value C,Value I
+2025-01-04,C10468,East,Alpha,Service Desk,Item Kxx,793.17,225.84,4,Value G,Value E,Value A,Value I,Value G,Value A,Value A,Value G,Value D,Value J
+2025-02-08,C10469,East,Alpha,App Support,Item Nx,598.6,160.58,4,Value A,Value F,Value B,Value J,Value H,Value B,Value B,Value H,Value E,Value K
+2025-03-05,C10470,West,Echo,Service Desk,Item Dxxx,122.06,17.13,1,Value B,Value G,Value C,Value A,Value I,Value C,Value C,Value I,Value F,Value L
+2025-04-16,C10471,East,Alpha,App Support,Item A,738.92,-60.65,6,Value C,Value H,Value D,Value B,Value J,Value D,Value D,Value J,Value G,Value M
+2025-05-15,C10472,East,Echo,Service Desk,Item Oxx,615.11,-4.43,7,Value D,Value A,Value E,Value C,Value K,Value E,Value E,Value K,Value H,Value N
+2025-06-04,C10473,West,Alpha,Service Desk,Item Bx,561.58,76.25,4,Value E,Value B,Value F,Value D,Value A,Value F,Value F,Value L,Value I,Value O
+2025-07-26,C10474,South,Alpha,Desktop,Item Cxx,596.95,-20.5,4,Value F,Value C,Value G,Value E,Value B,Value G,Value G,Value M,Value J,Value P
+2025-08-06,C10475,North,Alpha,DBA,Item Gxx,186.21,26.93,7,Value G,Value D,Value H,Value F,Value C,Value H,Value H,Value N,Value K,Value Q
+2025-09-16,C10476,West,Alpha,Desktop,Item Jx,243.04,54.6,3,Value A,Value E,Value I,Value G,Value D,Value I,Value I,Value A,Value L,Value A
+2025-10-05,C10477,South,Alpha,Desktop,Item A,606.8,55.66,5,Value B,Value F,Value A,Value H,Value E,Value J,Value J,Value B,Value M,Value B
+2025-11-27,C10478,East,Alpha,Desktop,Item Cxx,369.47,75.19,5,Value C,Value G,Value B,Value I,Value F,Value K,Value K,Value C,Value N,Value C
+2025-12-09,C10479,South,Bravo,Service Desk,Item Fx,810.23,-36.28,3,Value D,Value H,Value C,Value J,Value G,Value L,Value L,Value D,Value O,Value D
+2025-01-03,C10480,South,Alpha,Service Desk,Item A,618.83,159.13,6,Value E,Value A,Value D,Value A,Value H,Value A,Value M,Value E,Value A,Value E
+2025-02-21,C10481,East,Alpha,Service Desk,Item Rx,475.01,28.62,4,Value F,Value B,Value E,Value B,Value I,Value B,Value A,Value F,Value B,Value F
+2025-03-21,C10482,East,Alpha,App Support,Item Cxx,467.26,73.64,3,Value G,Value C,Value F,Value C,Value J,Value C,Value B,Value G,Value C,Value G
+2025-04-03,C10483,South,Delta,Security,Item Gxx,806.16,-42.41,5,Value A,Value D,Value G,Value D,Value K,Value D,Value C,Value H,Value D,Value H
+2025-05-20,C10484,West,Charlie,App Support,Item Cxx,416.15,-1.67,7,Value B,Value E,Value H,Value E,Value A,Value E,Value D,Value I,Value E,Value I
+2025-06-09,C10485,East,Alpha,Network Ops,Item Sxx,846.41,20.55,3,Value C,Value F,Value I,Value F,Value B,Value F,Value E,Value J,Value F,Value J
+2025-07-21,C10486,West,Alpha,DBA,Item E,157.97,34.2,7,Value D,Value G,Value A,Value G,Value C,Value G,Value F,Value K,Value G,Value K
+2025-08-12,C10487,West,Alpha,Network Ops,Item I,453.85,90.4,8,Value E,Value H,Value B,Value H,Value D,Value H,Value G,Value L,Value H,Value L
+2025-09-09,C10488,West,Bravo,Desktop,Item E,377.79,14.72,5,Value F,Value A,Value C,Value I,Value E,Value I,Value H,Value M,Value I,Value M
+2025-10-18,C10489,South,Alpha,App Support,Item E,523.44,-38.08,1,Value G,Value B,Value D,Value J,Value F,Value J,Value I,Value N,Value J,Value N
+2025-11-15,C10490,South,Alpha,Network Ops,Item Fx,138.42,34.7,2,Value A,Value C,Value E,Value A,Value G,Value K,Value J,Value A,Value K,Value O
+2025-12-20,C10491,North,Bravo,App Support,Item Bx,584.98,17.82,2,Value B,Value D,Value F,Value B,Value H,Value L,Value K,Value B,Value L,Value P
+2025-01-22,C10492,North,Alpha,Desktop,Item Fx,441.17,96.34,6,Value C,Value E,Value G,Value C,Value I,Value A,Value L,Value C,Value M,Value Q
+2025-02-13,C10493,East,Alpha,Service Desk,Item Jx,811.55,118.01,6,Value D,Value F,Value H,Value D,Value J,Value B,Value M,Value D,Value N,Value A
+2025-03-16,C10494,East,Charlie,App Support,Item A,57.38,-3.07,4,Value E,Value G,Value I,Value E,Value K,Value C,Value A,Value E,Value O,Value B
+2025-04-24,C10495,North,Bravo,Service Desk,Item Hxxx,347.59,34.85,3,Value F,Value H,Value A,Value F,Value A,Value D,Value B,Value F,Value A,Value C
+2025-05-02,C10496,North,Bravo,Security,Item Pxxx,62.87,15.16,7,Value G,Value A,Value B,Value G,Value B,Value E,Value C,Value G,Value B,Value D
+2025-06-07,C10497,North,Bravo,Service Desk,Item Dxxx,67.91,-0.9,1,Value A,Value B,Value C,Value H,Value C,Value F,Value D,Value H,Value C,Value E
+2025-07-08,C10498,South,Charlie,Service Desk,Item Nx,522.43,-26.3,6,Value B,Value C,Value D,Value I,Value D,Value G,Value E,Value I,Value D,Value F
+2025-08-14,C10499,North,Delta,Network Ops,Item Gxx,698.87,121.22,1,Value C,Value D,Value E,Value J,Value E,Value H,Value F,Value J,Value E,Value G
+2025-09-16,C10500,South,Delta,Service Desk,Item Kxx,890.47,-62.34,8,Value D,Value E,Value F,Value A,Value F,Value I,Value G,Value K,Value F,Value H
+2025-10-28,C10501,East,Alpha,DBA,Item A,86.15,8.47,5,Value E,Value F,Value G,Value B,Value G,Value J,Value H,Value L,Value G,Value I
+2025-11-23,C10502,South,Bravo,Network Ops,Item A,283.58,33.34,7,Value F,Value G,Value H,Value C,Value H,Value K,Value I,Value M,Value H,Value J
+2025-12-07,C10503,South,Bravo,App Support,Item Hxxx,85.33,13.59,7,Value G,Value H,Value I,Value D,Value I,Value L,Value J,Value N,Value I,Value K
+2025-01-02,C10504,East,Alpha,Service Desk,Item Nx,305.07,1.91,5,Value A,Value A,Value A,Value E,Value J,Value A,Value K,Value A,Value J,Value L
+2025-02-04,C10505,North,Bravo,App Support,Item Cxx,412.99,98.61,4,Value B,Value B,Value B,Value F,Value K,Value B,Value L,Value B,Value K,Value M
+2025-03-25,C10506,East,Charlie,App Support,Item Pxxx,578.48,38.76,3,Value C,Value C,Value C,Value G,Value A,Value C,Value M,Value C,Value L,Value N
+2025-04-01,C10507,North,Alpha,Service Desk,Item Nx,556.54,43.02,2,Value D,Value D,Value D,Value H,Value B,Value D,Value A,Value D,Value M,Value O
+2025-05-27,C10508,East,Echo,App Support,Item Dxxx,501.54,-17.78,8,Value E,Value E,Value E,Value I,Value C,Value E,Value B,Value E,Value N,Value P
+2025-06-19,C10509,West,Alpha,Service Desk,Item A,805.62,219.77,6,Value F,Value F,Value F,Value J,Value D,Value F,Value C,Value F,Value O,Value Q
+2025-07-11,C10510,West,Delta,Service Desk,Item Sxx,428.98,17.42,6,Value G,Value G,Value G,Value A,Value E,Value G,Value D,Value G,Value A,Value A
+2025-08-23,C10511,South,Alpha,Network Ops,Item Bx,325.36,-9.05,5,Value A,Value H,Value H,Value B,Value F,Value H,Value E,Value H,Value B,Value B
+2025-09-04,C10512,North,Alpha,App Support,Item A,526.93,57.68,3,Value B,Value A,Value I,Value C,Value G,Value I,Value F,Value I,Value C,Value C
+2025-10-22,C10513,North,Bravo,App Support,Item Lxxx,456.7,93.2,8,Value C,Value B,Value A,Value D,Value H,Value J,Value G,Value J,Value D,Value D
+2025-11-01,C10514,West,Bravo,Service Desk,Item Kxx,497.25,46.1,7,Value D,Value C,Value B,Value E,Value I,Value K,Value H,Value K,Value E,Value E
+2025-12-27,C10515,East,Bravo,App Support,Item E,596.42,174.23,8,Value E,Value D,Value C,Value F,Value J,Value L,Value I,Value L,Value F,Value F
+2025-01-18,C10516,East,Bravo,App Support,Item E,671.39,98.68,3,Value F,Value E,Value D,Value G,Value K,Value A,Value J,Value M,Value G,Value G
+2025-02-25,C10517,South,Bravo,DBA,Item Pxxx,58.38,13.32,4,Value G,Value F,Value E,Value H,Value A,Value B,Value K,Value N,Value H,Value H
+2025-03-14,C10518,East,Bravo,App Support,Item Cxx,173.73,49.8,5,Value A,Value G,Value F,Value I,Value B,Value C,Value L,Value A,Value I,Value I
+2025-04-21,C10519,North,Alpha,Service Desk,Item Fx,212.99,-19.71,1,Value B,Value H,Value G,Value J,Value C,Value D,Value M,Value B,Value J,Value J
+2025-05-23,C10520,East,Alpha,Security,Item Gxx,73.82,7.05,3,Value C,Value A,Value H,Value A,Value D,Value E,Value A,Value C,Value K,Value K
+2025-06-12,C10521,South,Alpha,Network Ops,Item A,179.93,22.88,7,Value D,Value B,Value I,Value B,Value E,Value F,Value B,Value D,Value L,Value L
+2025-07-26,C10522,East,Alpha,Service Desk,Item Dxxx,885.16,-3.96,4,Value E,Value C,Value A,Value C,Value F,Value G,Value C,Value E,Value M,Value M
+2025-08-11,C10523,North,Bravo,Service Desk,Item Cxx,546.2,156.38,4,Value F,Value D,Value B,Value D,Value G,Value H,Value D,Value F,Value N,Value N
+2025-09-22,C10524,West,Alpha,Service Desk,Item A,62.28,12.78,6,Value G,Value E,Value C,Value E,Value H,Value I,Value E,Value G,Value O,Value O
+2025-10-09,C10525,West,Bravo,DBA,Item Bx,377.08,54.59,3,Value A,Value F,Value D,Value F,Value I,Value J,Value F,Value H,Value A,Value P
+2025-11-28,C10526,West,Echo,Service Desk,Item Cxx,809.38,64.73,7,Value B,Value G,Value E,Value G,Value J,Value K,Value G,Value I,Value B,Value Q
+2025-12-21,C10527,North,Bravo,Service Desk,Item A,722.41,203.52,7,Value C,Value H,Value F,Value H,Value K,Value L,Value H,Value J,Value C,Value A
+2025-01-19,C10528,North,Charlie,App Support,Item Dxxx,508.77,78.35,8,Value D,Value A,Value G,Value I,Value A,Value A,Value I,Value K,Value D,Value B
+2025-02-14,C10529,South,Charlie,Service Desk,Item Dxxx,489.73,143.24,8,Value E,Value B,Value H,Value J,Value B,Value B,Value J,Value L,Value E,Value C
+2025-03-12,C10530,East,Charlie,Service Desk,Item Pxxx,113.03,1.87,5,Value F,Value C,Value I,Value A,Value C,Value C,Value K,Value M,Value F,Value D
+2025-04-14,C10531,West,Echo,App Support,Item Bx,147.34,21.08,6,Value G,Value D,Value A,Value B,Value D,Value D,Value L,Value N,Value G,Value E
+2025-05-01,C10532,South,Charlie,Network Ops,Item Bx,547.97,-37.55,2,Value A,Value E,Value B,Value C,Value E,Value E,Value M,Value A,Value H,Value F
+2025-06-16,C10533,South,Charlie,Network Ops,Item Bx,859.49,45.74,5,Value B,Value F,Value C,Value D,Value F,Value F,Value A,Value B,Value I,Value G
+2025-07-07,C10534,West,Alpha,Service Desk,Item Fx,735.16,206.82,5,Value C,Value G,Value D,Value E,Value G,Value G,Value B,Value C,Value J,Value H
+2025-08-05,C10535,East,Echo,Security,Item A,253.08,20.4,1,Value D,Value H,Value E,Value F,Value H,Value H,Value C,Value D,Value K,Value I
+2025-09-09,C10536,West,Echo,App Support,Item Bx,363.05,-8.25,8,Value E,Value A,Value F,Value G,Value I,Value I,Value D,Value E,Value L,Value J
+2025-10-17,C10537,West,Bravo,Service Desk,Item Kxx,302.35,-2.67,3,Value F,Value B,Value G,Value H,Value J,Value J,Value E,Value F,Value M,Value K
+2025-11-16,C10538,North,Alpha,Service Desk,Item M,319.24,73.14,4,Value G,Value C,Value H,Value I,Value K,Value K,Value F,Value G,Value N,Value L
+2025-12-22,C10539,North,Bravo,Network Ops,Item A,32.68,-1.86,3,Value A,Value D,Value I,Value J,Value A,Value L,Value G,Value H,Value O,Value M
+2025-01-21,C10540,East,Alpha,Service Desk,Item Gxx,237.57,-0.73,1,Value B,Value E,Value A,Value A,Value B,Value A,Value H,Value I,Value A,Value N
+2025-02-28,C10541,North,Alpha,Network Ops,Item Cxx,186.19,55.24,3,Value C,Value F,Value B,Value B,Value C,Value B,Value I,Value J,Value B,Value O
+2025-03-25,C10542,West,Alpha,Security,Item Jx,731.09,118.48,4,Value D,Value G,Value C,Value C,Value D,Value C,Value J,Value K,Value C,Value P
+2025-04-21,C10543,East,Charlie,Service Desk,Item Kxx,476.54,139.02,5,Value E,Value H,Value D,Value D,Value E,Value D,Value K,Value L,Value D,Value Q
+2025-05-21,C10544,South,Alpha,Service Desk,Item Hxxx,899.67,115.49,1,Value F,Value A,Value E,Value E,Value F,Value E,Value L,Value M,Value E,Value A
+2025-06-21,C10545,West,Delta,Security,Item A,667.52,-30.91,6,Value G,Value B,Value F,Value F,Value G,Value F,Value M,Value N,Value F,Value B
+2025-07-26,C10546,South,Bravo,Desktop,Item Bx,530.71,7.64,4,Value A,Value C,Value G,Value G,Value H,Value G,Value A,Value A,Value G,Value C
+2025-08-11,C10547,West,Alpha,Service Desk,Item Dxxx,790.64,103.45,5,Value B,Value D,Value H,Value H,Value I,Value H,Value B,Value B,Value H,Value D
+2025-09-17,C10548,South,Alpha,Service Desk,Item Kxx,816.77,81.69,2,Value C,Value E,Value I,Value I,Value J,Value I,Value C,Value C,Value I,Value E
+2025-10-22,C10549,East,Alpha,App Support,Item A,274.22,43.21,4,Value D,Value F,Value A,Value J,Value K,Value J,Value D,Value D,Value J,Value F
+2025-11-22,C10550,North,Alpha,App Support,Item E,795.08,48.78,7,Value E,Value G,Value B,Value A,Value A,Value K,Value E,Value E,Value K,Value G
+2025-12-14,C10551,West,Alpha,Service Desk,Item Dxxx,234.46,35.27,1,Value F,Value H,Value C,Value B,Value B,Value L,Value F,Value F,Value L,Value H
+2025-01-25,C10552,North,Bravo,Security,Item Cxx,767.41,101.41,5,Value G,Value A,Value D,Value C,Value C,Value A,Value G,Value G,Value M,Value I
+2025-02-11,C10553,East,Alpha,Service Desk,Item Gxx,817.42,-18.57,7,Value A,Value B,Value E,Value D,Value D,Value B,Value H,Value H,Value N,Value J
+2025-03-13,C10554,North,Bravo,Desktop,Item A,741.44,6.98,7,Value B,Value C,Value F,Value E,Value E,Value C,Value I,Value I,Value O,Value K
+2025-04-09,C10555,West,Delta,App Support,Item Cxx,176.06,-13.25,1,Value C,Value D,Value G,Value F,Value F,Value D,Value J,Value J,Value A,Value L
+2025-05-07,C10556,North,Alpha,Service Desk,Item Fx,660.49,-12.54,4,Value D,Value E,Value H,Value G,Value G,Value E,Value K,Value K,Value B,Value M
+2025-06-21,C10557,South,Echo,Network Ops,Item Fx,618.4,185.46,2,Value E,Value F,Value I,Value H,Value H,Value F,Value L,Value L,Value C,Value N
+2025-07-20,C10558,West,Alpha,Security,Item Bx,870.78,93.95,8,Value F,Value G,Value A,Value I,Value I,Value G,Value M,Value M,Value D,Value O
+2025-08-05,C10559,West,Alpha,Desktop,Item A,286.69,79.82,4,Value G,Value H,Value B,Value J,Value J,Value H,Value A,Value N,Value E,Value P
+2025-09-14,C10560,West,Bravo,Service Desk,Item E,768.62,-72.98,8,Value A,Value A,Value C,Value A,Value K,Value I,Value B,Value A,Value F,Value Q
+2025-10-10,C10561,South,Bravo,Service Desk,Item E,163.42,-12.54,6,Value B,Value B,Value D,Value B,Value A,Value J,Value C,Value B,Value G,Value A
+2025-11-19,C10562,East,Alpha,App Support,Item A,40.07,4.46,8,Value C,Value C,Value E,Value C,Value B,Value K,Value D,Value C,Value H,Value B
+2025-12-01,C10563,East,Alpha,Network Ops,Item Jx,504.55,108.16,8,Value D,Value D,Value F,Value D,Value C,Value L,Value E,Value D,Value I,Value C
+2025-01-18,C10564,East,Charlie,Security,Item Fx,866.24,174.94,1,Value E,Value E,Value G,Value E,Value D,Value A,Value F,Value E,Value J,Value D
+2025-02-02,C10565,West,Delta,Service Desk,Item Fx,763.33,181.09,2,Value F,Value F,Value H,Value F,Value E,Value B,Value G,Value F,Value K,Value E
+2025-03-19,C10566,West,Echo,Service Desk,Item M,111.24,15.57,8,Value G,Value G,Value I,Value G,Value F,Value C,Value H,Value G,Value L,Value F
+2025-04-21,C10567,South,Alpha,App Support,Item Gxx,196.71,44.31,2,Value A,Value H,Value A,Value H,Value G,Value D,Value I,Value H,Value M,Value G
+2025-05-23,C10568,West,Delta,Service Desk,Item Dxxx,569.95,-22.17,2,Value B,Value A,Value B,Value I,Value H,Value E,Value J,Value I,Value N,Value H
+2025-06-20,C10569,South,Charlie,DBA,Item Fx,709.52,88.7,4,Value C,Value B,Value C,Value J,Value I,Value F,Value K,Value J,Value O,Value I
+2025-07-07,C10570,North,Bravo,App Support,Item A,122.0,-6.58,1,Value D,Value C,Value D,Value A,Value J,Value G,Value L,Value K,Value A,Value J
+2025-08-06,C10571,West,Alpha,App Support,Item Dxxx,406.52,87.11,6,Value E,Value D,Value E,Value B,Value K,Value H,Value M,Value L,Value B,Value K
+2025-09-27,C10572,South,Alpha,Service Desk,Item Gxx,816.27,-46.88,6,Value F,Value E,Value F,Value C,Value A,Value I,Value A,Value M,Value C,Value L
+2025-10-09,C10573,North,Alpha,Desktop,Item M,209.59,37.38,5,Value G,Value F,Value G,Value D,Value B,Value J,Value B,Value N,Value D,Value M
+2025-11-03,C10574,North,Bravo,Desktop,Item Jx,207.73,-18.5,1,Value A,Value G,Value H,Value E,Value C,Value K,Value C,Value A,Value E,Value N
+2025-12-19,C10575,West,Bravo,Service Desk,Item Cxx,197.33,45.16,3,Value B,Value H,Value I,Value F,Value D,Value L,Value D,Value B,Value F,Value O
+2025-01-11,C10576,West,Bravo,App Support,Item Nx,794.46,212.15,2,Value C,Value A,Value A,Value G,Value E,Value A,Value E,Value C,Value G,Value P
+2025-02-23,C10577,East,Charlie,Desktop,Item Txxx,308.73,36.63,5,Value D,Value B,Value B,Value H,Value F,Value B,Value F,Value D,Value H,Value Q
+2025-03-12,C10578,North,Alpha,Desktop,Item Bx,899.61,180.6,7,Value E,Value C,Value C,Value I,Value G,Value C,Value G,Value E,Value I,Value A
+2025-04-11,C10579,West,Charlie,Service Desk,Item Dxxx,345.42,80.57,2,Value F,Value D,Value D,Value J,Value H,Value D,Value H,Value F,Value J,Value B
+2025-05-03,C10580,East,Alpha,App Support,Item Gxx,436.78,27.73,1,Value G,Value E,Value E,Value A,Value I,Value E,Value I,Value G,Value K,Value C
+2025-06-02,C10581,West,Alpha,Service Desk,Item Dxxx,469.53,102.82,6,Value A,Value F,Value F,Value B,Value J,Value F,Value J,Value H,Value L,Value D
+2025-07-18,C10582,East,Bravo,Service Desk,Item Bx,264.99,21.78,4,Value B,Value G,Value G,Value C,Value K,Value G,Value K,Value I,Value M,Value E
+2025-08-22,C10583,East,Alpha,Desktop,Item Jx,598.65,145.51,6,Value C,Value H,Value H,Value D,Value A,Value H,Value L,Value J,Value N,Value F
+2025-09-02,C10584,East,Bravo,Service Desk,Item A,461.7,11.54,7,Value D,Value A,Value I,Value E,Value B,Value I,Value M,Value K,Value O,Value G
+2025-10-15,C10585,South,Bravo,Security,Item A,524.06,94.11,3,Value E,Value B,Value A,Value F,Value C,Value J,Value A,Value L,Value A,Value H
+2025-11-27,C10586,North,Bravo,Service Desk,Item Fx,739.61,59.62,3,Value F,Value C,Value B,Value G,Value D,Value K,Value B,Value M,Value B,Value I
+2025-12-22,C10587,South,Charlie,Service Desk,Item Kxx,22.77,2.95,3,Value G,Value D,Value C,Value H,Value E,Value L,Value C,Value N,Value C,Value J
+2025-01-26,C10588,South,Alpha,App Support,Item Dxxx,778.48,-77.63,2,Value A,Value E,Value D,Value I,Value F,Value A,Value D,Value A,Value D,Value K
+2025-02-04,C10589,North,Bravo,Network Ops,Item Dxxx,522.35,-34.62,1,Value B,Value F,Value E,Value J,Value G,Value B,Value E,Value B,Value E,Value L
+2025-03-11,C10590,East,Echo,App Support,Item Lxxx,225.18,34.91,4,Value C,Value G,Value F,Value A,Value H,Value C,Value F,Value C,Value F,Value M
+2025-04-05,C10591,South,Bravo,Service Desk,Item Cxx,362.49,105.6,7,Value D,Value H,Value G,Value B,Value I,Value D,Value G,Value D,Value G,Value N
+2025-05-14,C10592,South,Alpha,App Support,Item Fx,120.11,32.73,4,Value E,Value A,Value H,Value C,Value J,Value E,Value H,Value E,Value H,Value O
+2025-06-27,C10593,East,Alpha,App Support,Item A,31.3,2.3,6,Value F,Value B,Value I,Value D,Value K,Value F,Value I,Value F,Value I,Value P
+2025-07-17,C10594,East,Alpha,Desktop,Item A,671.81,8.12,3,Value G,Value C,Value A,Value E,Value A,Value G,Value J,Value G,Value J,Value Q
+2025-08-02,C10595,West,Alpha,Service Desk,Item Bx,660.52,-31.6,2,Value A,Value D,Value B,Value F,Value B,Value H,Value K,Value H,Value K,Value A
+2025-09-10,C10596,North,Alpha,App Support,Item Fx,531.22,100.53,5,Value B,Value E,Value C,Value G,Value C,Value I,Value L,Value I,Value L,Value B
+2025-10-13,C10597,North,Alpha,Service Desk,Item Kxx,705.26,-55.03,3,Value C,Value F,Value D,Value H,Value D,Value J,Value M,Value J,Value M,Value C
+2025-11-06,C10598,North,Alpha,Desktop,Item Jx,342.21,-0.74,3,Value D,Value G,Value E,Value I,Value E,Value K,Value A,Value K,Value N,Value D
+2025-12-04,C10599,East,Alpha,Security,Item Jx,879.86,255.37,5,Value E,Value H,Value F,Value J,Value F,Value L,Value B,Value L,Value O,Value E
+2025-01-28,C10600,South,Charlie,Service Desk,Item Rx,689.0,132.22,8,Value F,Value A,Value G,Value A,Value G,Value A,Value C,Value M,Value A,Value F
+2025-02-15,C10601,West,Alpha,Service Desk,Item Cxx,511.32,-35.25,8,Value G,Value B,Value H,Value B,Value H,Value B,Value D,Value N,Value B,Value G
+2025-03-15,C10602,North,Bravo,DBA,Item Cxx,250.0,51.41,2,Value A,Value C,Value I,Value C,Value I,Value C,Value E,Value A,Value C,Value H
+2025-04-19,C10603,South,Alpha,Service Desk,Item Cxx,710.37,167.21,4,Value B,Value D,Value A,Value D,Value J,Value D,Value F,Value B,Value D,Value I
+2025-05-13,C10604,South,Alpha,Service Desk,Item Bx,541.58,157.4,3,Value C,Value E,Value B,Value E,Value K,Value E,Value G,Value C,Value E,Value J
+2025-06-20,C10605,South,Alpha,App Support,Item Hxxx,605.9,133.15,1,Value D,Value F,Value C,Value F,Value A,Value F,Value H,Value D,Value F,Value K
+2025-07-08,C10606,East,Alpha,App Support,Item Cxx,507.01,148.51,2,Value E,Value G,Value D,Value G,Value B,Value G,Value I,Value E,Value G,Value L
+2025-08-14,C10607,North,Echo,App Support,Item Txxx,496.35,9.89,1,Value F,Value H,Value E,Value H,Value C,Value H,Value J,Value F,Value H,Value M
+2025-09-03,C10608,East,Alpha,Desktop,Item I,354.55,105.79,7,Value G,Value A,Value F,Value I,Value D,Value I,Value K,Value G,Value I,Value N
+2025-10-27,C10609,West,Alpha,Service Desk,Item E,314.74,73.37,5,Value A,Value B,Value G,Value J,Value E,Value J,Value L,Value H,Value J,Value O
+2025-11-08,C10610,West,Delta,Desktop,Item A,345.52,48.18,5,Value B,Value C,Value H,Value A,Value F,Value K,Value M,Value I,Value K,Value P
+2025-12-25,C10611,East,Alpha,App Support,Item Gxx,711.66,-7.95,6,Value C,Value D,Value I,Value B,Value G,Value L,Value A,Value J,Value L,Value Q
+2025-01-15,C10612,East,Bravo,Service Desk,Item Bx,681.69,-1.77,8,Value D,Value E,Value A,Value C,Value H,Value A,Value B,Value K,Value M,Value A
+2025-02-24,C10613,West,Alpha,Desktop,Item Bx,838.39,145.11,5,Value E,Value F,Value B,Value D,Value I,Value B,Value C,Value L,Value N,Value B
+2025-03-23,C10614,East,Bravo,Service Desk,Item I,23.73,5.98,6,Value F,Value G,Value C,Value E,Value J,Value C,Value D,Value M,Value O,Value C
+2025-04-13,C10615,West,Bravo,Service Desk,Item Fx,204.02,-1.93,4,Value G,Value H,Value D,Value F,Value K,Value D,Value E,Value N,Value A,Value D
+2025-05-20,C10616,North,Bravo,App Support,Item Fx,511.88,-18.78,4,Value A,Value A,Value E,Value G,Value A,Value E,Value F,Value A,Value B,Value E
+2025-06-20,C10617,East,Alpha,Service Desk,Item E,292.44,-10.08,4,Value B,Value B,Value F,Value H,Value B,Value F,Value G,Value B,Value C,Value F
+2025-07-01,C10618,West,Bravo,DBA,Item Txxx,347.14,76.44,6,Value C,Value C,Value G,Value I,Value C,Value G,Value H,Value C,Value D,Value G
+2025-08-15,C10619,South,Bravo,Service Desk,Item A,430.23,85.04,4,Value D,Value D,Value H,Value J,Value D,Value H,Value I,Value D,Value E,Value H
+2025-09-24,C10620,South,Charlie,Service Desk,Item Dxxx,329.38,54.24,5,Value E,Value E,Value I,Value A,Value E,Value I,Value J,Value E,Value F,Value I
+2025-10-10,C10621,North,Alpha,DBA,Item A,661.06,140.37,1,Value F,Value F,Value A,Value B,Value F,Value J,Value K,Value F,Value G,Value J
+2025-11-09,C10622,South,Alpha,App Support,Item Cxx,61.52,10.36,3,Value G,Value G,Value B,Value C,Value G,Value K,Value L,Value G,Value H,Value K
+2025-12-16,C10623,North,Alpha,Desktop,Item Bx,607.48,55.89,8,Value A,Value H,Value C,Value D,Value H,Value L,Value M,Value H,Value I,Value L
+2025-01-18,C10624,South,Bravo,App Support,Item Txxx,171.95,39.89,3,Value B,Value A,Value D,Value E,Value I,Value A,Value A,Value I,Value J,Value M
+2025-02-17,C10625,South,Bravo,Network Ops,Item Cxx,325.17,68.41,3,Value C,Value B,Value E,Value F,Value J,Value B,Value B,Value J,Value K,Value N
+2025-03-25,C10626,North,Alpha,DBA,Item Cxx,465.12,75.42,4,Value D,Value C,Value F,Value G,Value K,Value C,Value C,Value K,Value L,Value O
+2025-04-03,C10627,West,Alpha,App Support,Item I,372.87,88.61,4,Value E,Value D,Value G,Value H,Value A,Value D,Value D,Value L,Value M,Value P
+2025-05-25,C10628,South,Alpha,Desktop,Item Bx,204.0,9.55,3,Value F,Value E,Value H,Value I,Value B,Value E,Value E,Value M,Value N,Value Q
+2025-06-28,C10629,East,Echo,Desktop,Item Rx,442.72,132.38,3,Value G,Value F,Value I,Value J,Value C,Value F,Value F,Value N,Value O,Value A
+2025-07-17,C10630,East,Bravo,Network Ops,Item Oxx,47.03,8.7,5,Value A,Value G,Value A,Value A,Value D,Value G,Value G,Value A,Value A,Value B
+2025-08-04,C10631,West,Alpha,Desktop,Item Fx,851.06,-23.75,2,Value B,Value H,Value B,Value B,Value E,Value H,Value H,Value B,Value B,Value C
+2025-09-02,C10632,West,Alpha,Network Ops,Item Gxx,259.0,-4.92,8,Value C,Value A,Value C,Value C,Value F,Value I,Value I,Value C,Value C,Value D
+2025-10-12,C10633,North,Alpha,Security,Item Gxx,691.35,55.16,8,Value D,Value B,Value D,Value D,Value G,Value J,Value J,Value D,Value D,Value E
+2025-11-15,C10634,West,Alpha,Network Ops,Item E,427.33,-2.31,3,Value E,Value C,Value E,Value E,Value H,Value K,Value K,Value E,Value E,Value F
+2025-12-11,C10635,East,Alpha,Desktop,Item Rx,173.16,10.44,1,Value F,Value D,Value F,Value F,Value I,Value L,Value L,Value F,Value F,Value G
+2025-01-20,C10636,South,Charlie,Service Desk,Item Txxx,67.31,18.33,6,Value G,Value E,Value G,Value G,Value J,Value A,Value M,Value G,Value G,Value H
+2025-02-19,C10637,West,Bravo,Security,Item A,537.42,9.5,8,Value A,Value F,Value H,Value H,Value K,Value B,Value A,Value H,Value H,Value I
+2025-03-20,C10638,East,Bravo,Desktop,Item Dxxx,657.79,185.26,7,Value B,Value G,Value I,Value I,Value A,Value C,Value B,Value I,Value I,Value J
+2025-04-01,C10639,East,Bravo,Desktop,Item Cxx,306.56,-16.21,1,Value C,Value H,Value A,Value J,Value B,Value D,Value C,Value J,Value J,Value K
+2025-05-20,C10640,North,Alpha,Desktop,Item Dxxx,848.58,140.19,3,Value D,Value A,Value B,Value A,Value C,Value E,Value D,Value K,Value K,Value L
+2025-06-19,C10641,East,Alpha,Service Desk,Item Txxx,196.27,-14.08,5,Value E,Value B,Value C,Value B,Value D,Value F,Value E,Value L,Value L,Value M
+2025-07-22,C10642,East,Echo,DBA,Item A,403.27,76.52,8,Value F,Value C,Value D,Value C,Value E,Value G,Value F,Value M,Value M,Value N
+2025-08-09,C10643,East,Charlie,Security,Item Txxx,623.88,47.32,5,Value G,Value D,Value E,Value D,Value F,Value H,Value G,Value N,Value N,Value O
+2025-09-09,C10644,West,Bravo,Network Ops,Item Hxxx,154.46,1.68,2,Value A,Value E,Value F,Value E,Value G,Value I,Value H,Value A,Value O,Value P
+2025-10-02,C10645,East,Echo,App Support,Item Txxx,546.01,142.29,7,Value B,Value F,Value G,Value F,Value H,Value J,Value I,Value B,Value A,Value Q
+2025-11-14,C10646,North,Bravo,Service Desk,Item A,723.79,135.2,7,Value C,Value G,Value H,Value G,Value I,Value K,Value J,Value C,Value B,Value A
+2025-12-08,C10647,East,Bravo,App Support,Item Hxxx,223.81,30.04,8,Value D,Value H,Value I,Value H,Value J,Value L,Value K,Value D,Value C,Value B
+2025-01-21,C10648,West,Alpha,App Support,Item Txxx,781.87,99.06,8,Value E,Value A,Value A,Value I,Value K,Value A,Value L,Value E,Value D,Value C
+2025-02-21,C10649,East,Charlie,App Support,Item Pxxx,785.72,221.12,2,Value F,Value B,Value B,Value J,Value A,Value B,Value M,Value F,Value E,Value D
+2025-03-22,C10650,East,Alpha,Network Ops,Item Hxxx,400.88,74.57,5,Value G,Value C,Value C,Value A,Value B,Value C,Value A,Value G,Value F,Value E
+2025-04-16,C10651,North,Alpha,Desktop,Item A,156.53,39.64,6,Value A,Value D,Value D,Value B,Value C,Value D,Value B,Value H,Value G,Value F
+2025-05-01,C10652,East,Alpha,Network Ops,Item A,745.43,-40.05,1,Value B,Value E,Value E,Value C,Value D,Value E,Value C,Value I,Value H,Value G
+2025-06-20,C10653,East,Charlie,Desktop,Item Cxx,432.64,11.01,1,Value C,Value F,Value F,Value D,Value E,Value F,Value D,Value J,Value I,Value H
+2025-07-11,C10654,West,Alpha,App Support,Item Lxxx,496.67,141.01,1,Value D,Value G,Value G,Value E,Value F,Value G,Value E,Value K,Value J,Value I
+2025-08-21,C10655,North,Bravo,Security,Item Gxx,848.39,-40.51,5,Value E,Value H,Value H,Value F,Value G,Value H,Value F,Value L,Value K,Value J
+2025-09-11,C10656,North,Alpha,App Support,Item Cxx,675.16,0.15,3,Value F,Value A,Value I,Value G,Value H,Value I,Value G,Value M,Value L,Value K
+2025-10-27,C10657,East,Alpha,App Support,Item A,600.13,128.14,5,Value G,Value B,Value A,Value H,Value I,Value J,Value H,Value N,Value M,Value L
+2025-11-01,C10658,North,Alpha,Service Desk,Item Gxx,59.26,4.51,1,Value A,Value C,Value B,Value I,Value J,Value K,Value I,Value A,Value N,Value M
+2025-12-27,C10659,West,Bravo,App Support,Item Cxx,435.16,86.91,2,Value B,Value D,Value C,Value J,Value K,Value L,Value J,Value B,Value O,Value N
+2025-01-17,C10660,East,Bravo,Service Desk,Item Bx,724.69,40.9,2,Value C,Value E,Value D,Value A,Value A,Value A,Value K,Value C,Value A,Value O
+2025-02-16,C10661,West,Alpha,Network Ops,Item Kxx,292.55,45.57,1,Value D,Value F,Value E,Value B,Value B,Value B,Value L,Value D,Value B,Value P
+2025-03-13,C10662,West,Alpha,Desktop,Item Bx,35.27,9.81,8,Value E,Value G,Value F,Value C,Value C,Value C,Value M,Value E,Value C,Value Q
+2025-04-03,C10663,South,Echo,Service Desk,Item E,764.68,106.19,3,Value F,Value H,Value G,Value D,Value D,Value D,Value A,Value F,Value D,Value A
+2025-05-27,C10664,North,Alpha,DBA,Item Dxxx,459.27,100.96,8,Value G,Value A,Value H,Value E,Value E,Value E,Value B,Value G,Value E,Value B
+2025-06-02,C10665,South,Alpha,App Support,Item Hxxx,549.97,33.87,2,Value A,Value B,Value I,Value F,Value F,Value F,Value C,Value H,Value F,Value C
+2025-07-14,C10666,North,Bravo,App Support,Item Cxx,178.86,36.18,6,Value B,Value C,Value A,Value G,Value G,Value G,Value D,Value I,Value G,Value D
+2025-08-21,C10667,South,Alpha,Desktop,Item Fx,409.1,16.93,3,Value C,Value D,Value B,Value H,Value H,Value H,Value E,Value J,Value H,Value E
+2025-09-04,C10668,West,Alpha,Service Desk,Item Q,297.15,51.69,4,Value D,Value E,Value C,Value I,Value I,Value I,Value F,Value K,Value I,Value F
+2025-10-09,C10669,North,Alpha,Service Desk,Item A,576.77,68.08,3,Value E,Value F,Value D,Value J,Value J,Value J,Value G,Value L,Value J,Value G
+2025-11-14,C10670,East,Bravo,App Support,Item Bx,544.01,2.97,1,Value F,Value G,Value E,Value A,Value K,Value K,Value H,Value M,Value K,Value H
+2025-12-14,C10671,North,Bravo,Service Desk,Item Hxxx,614.43,147.58,2,Value G,Value H,Value F,Value B,Value A,Value L,Value I,Value N,Value L,Value I
+2025-01-15,C10672,South,Charlie,Network Ops,Item M,678.9,138.99,2,Value A,Value A,Value G,Value C,Value B,Value A,Value J,Value A,Value M,Value J
+2025-02-02,C10673,West,Delta,Service Desk,Item Hxxx,259.91,72.21,8,Value B,Value B,Value H,Value D,Value C,Value B,Value K,Value B,Value N,Value K
+2025-03-25,C10674,North,Charlie,Service Desk,Item Jx,324.84,38.25,4,Value C,Value C,Value I,Value E,Value D,Value C,Value L,Value C,Value O,Value L
+2025-04-15,C10675,West,Bravo,Desktop,Item A,704.22,92.58,5,Value D,Value D,Value A,Value F,Value E,Value D,Value M,Value D,Value A,Value M
+2025-05-10,C10676,East,Alpha,Desktop,Item Sxx,510.02,-41.61,6,Value E,Value E,Value B,Value G,Value F,Value E,Value A,Value E,Value B,Value N
+2025-06-20,C10677,West,Echo,Service Desk,Item E,142.32,-12.52,5,Value F,Value F,Value C,Value H,Value G,Value F,Value B,Value F,Value C,Value O
+2025-07-23,C10678,South,Delta,Service Desk,Item Jx,868.12,52.49,6,Value G,Value G,Value D,Value I,Value H,Value G,Value C,Value G,Value D,Value P
+2025-08-12,C10679,North,Alpha,Desktop,Item Txxx,801.06,38.9,3,Value A,Value H,Value E,Value J,Value I,Value H,Value D,Value H,Value E,Value Q
+2025-09-19,C10680,West,Charlie,DBA,Item Gxx,578.87,123.04,6,Value B,Value A,Value F,Value A,Value J,Value I,Value E,Value I,Value F,Value A
+2025-10-18,C10681,East,Alpha,Service Desk,Item A,128.02,34.25,6,Value C,Value B,Value G,Value B,Value K,Value J,Value F,Value J,Value G,Value B
+2025-11-09,C10682,North,Alpha,App Support,Item Gxx,409.66,58.93,3,Value D,Value C,Value H,Value C,Value A,Value K,Value G,Value K,Value H,Value C
+2025-12-08,C10683,West,Charlie,Service Desk,Item M,471.87,111.33,8,Value E,Value D,Value I,Value D,Value B,Value L,Value H,Value L,Value I,Value D
+2025-01-14,C10684,West,Charlie,DBA,Item Bx,185.83,-11.83,6,Value F,Value E,Value A,Value E,Value C,Value A,Value I,Value M,Value J,Value E
+2025-02-27,C10685,North,Alpha,App Support,Item A,605.01,81.59,4,Value G,Value F,Value B,Value F,Value D,Value B,Value J,Value N,Value K,Value F
+2025-03-14,C10686,South,Bravo,Desktop,Item Bx,99.68,18.82,8,Value A,Value G,Value C,Value G,Value E,Value C,Value K,Value A,Value L,Value G
+2025-04-25,C10687,West,Bravo,Service Desk,Item Cxx,779.26,-60.12,4,Value B,Value H,Value D,Value H,Value F,Value D,Value L,Value B,Value M,Value H
+2025-05-16,C10688,South,Bravo,Desktop,Item Lxxx,324.22,-25.8,1,Value C,Value A,Value E,Value I,Value G,Value E,Value M,Value C,Value N,Value I
+2025-06-04,C10689,West,Alpha,Service Desk,Item E,733.58,149.21,3,Value D,Value B,Value F,Value J,Value H,Value F,Value A,Value D,Value O,Value J
+2025-07-25,C10690,South,Echo,Service Desk,Item A,471.25,13.93,8,Value E,Value C,Value G,Value A,Value I,Value G,Value B,Value E,Value A,Value K
+2025-08-18,C10691,South,Charlie,Desktop,Item Cxx,417.55,8.45,2,Value F,Value D,Value H,Value B,Value J,Value H,Value C,Value F,Value B,Value L
+2025-09-15,C10692,South,Alpha,Security,Item Cxx,838.02,220.67,8,Value G,Value E,Value I,Value C,Value K,Value I,Value D,Value G,Value C,Value M
+2025-10-21,C10693,South,Bravo,Desktop,Item Hxxx,331.77,71.52,2,Value A,Value F,Value A,Value D,Value A,Value J,Value E,Value H,Value D,Value N
+2025-11-23,C10694,South,Alpha,Service Desk,Item Bx,352.01,105.0,5,Value B,Value G,Value B,Value E,Value B,Value K,Value F,Value I,Value E,Value O
+2025-12-21,C10695,North,Bravo,App Support,Item A,391.86,59.12,7,Value C,Value H,Value C,Value F,Value C,Value L,Value G,Value J,Value F,Value P
+2025-01-28,C10696,North,Alpha,Service Desk,Item A,457.61,9.7,1,Value D,Value A,Value D,Value G,Value D,Value A,Value H,Value K,Value G,Value Q
+2025-02-08,C10697,South,Bravo,Network Ops,Item I,897.87,226.21,4,Value E,Value B,Value E,Value H,Value E,Value B,Value I,Value L,Value H,Value A
+2025-03-05,C10698,East,Charlie,Service Desk,Item Cxx,324.73,35.0,7,Value F,Value C,Value F,Value I,Value F,Value C,Value J,Value M,Value I,Value B
+2025-04-05,C10699,East,Echo,Service Desk,Item Cxx,583.1,47.82,3,Value G,Value D,Value G,Value J,Value G,Value D,Value K,Value N,Value J,Value C
+2025-05-17,C10700,East,Charlie,Service Desk,Item Kxx,301.93,19.83,3,Value A,Value E,Value H,Value A,Value H,Value E,Value L,Value A,Value K,Value D
+2025-06-25,C10701,East,Bravo,Service Desk,Item Fx,41.3,3.02,5,Value B,Value F,Value I,Value B,Value I,Value F,Value M,Value B,Value L,Value E
+2025-07-24,C10702,North,Echo,Security,Item A,42.31,12.36,6,Value C,Value G,Value A,Value C,Value J,Value G,Value A,Value C,Value M,Value F
+2025-08-21,C10703,West,Alpha,DBA,Item Cxx,700.2,44.39,2,Value D,Value H,Value B,Value D,Value K,Value H,Value B,Value D,Value N,Value G
+2025-09-01,C10704,East,Alpha,Service Desk,Item Cxx,627.33,-34.13,6,Value E,Value A,Value C,Value E,Value A,Value I,Value C,Value E,Value O,Value H
+2025-10-24,C10705,East,Bravo,Network Ops,Item Kxx,499.38,49.86,8,Value F,Value B,Value D,Value F,Value B,Value J,Value D,Value F,Value A,Value I
+2025-11-11,C10706,South,Alpha,Service Desk,Item Fx,632.1,130.82,7,Value G,Value C,Value E,Value G,Value C,Value K,Value E,Value G,Value B,Value J
+2025-12-24,C10707,South,Alpha,Network Ops,Item E,237.5,14.14,3,Value A,Value D,Value F,Value H,Value D,Value L,Value F,Value H,Value C,Value K
+2025-01-27,C10708,South,Alpha,App Support,Item I,206.09,6.11,8,Value B,Value E,Value G,Value I,Value E,Value A,Value G,Value I,Value D,Value L
+2025-02-03,C10709,East,Alpha,Service Desk,Item I,145.28,22.79,7,Value C,Value F,Value H,Value J,Value F,Value B,Value H,Value J,Value E,Value M
+2025-03-02,C10710,North,Echo,Desktop,Item Cxx,346.94,68.01,8,Value D,Value G,Value I,Value A,Value G,Value C,Value I,Value K,Value F,Value N
+2025-04-21,C10711,West,Bravo,App Support,Item Kxx,424.85,72.54,6,Value E,Value H,Value A,Value B,Value H,Value D,Value J,Value L,Value G,Value O
+2025-05-02,C10712,North,Alpha,Desktop,Item E,640.22,12.07,8,Value F,Value A,Value B,Value C,Value I,Value E,Value K,Value M,Value H,Value P
+2025-06-04,C10713,East,Alpha,Service Desk,Item Kxx,650.23,49.58,1,Value G,Value B,Value C,Value D,Value J,Value F,Value L,Value N,Value I,Value Q
+2025-07-21,C10714,East,Alpha,Service Desk,Item E,415.41,112.05,2,Value A,Value C,Value D,Value E,Value K,Value G,Value M,Value A,Value J,Value A
+2025-08-13,C10715,South,Charlie,Desktop,Item Cxx,475.1,30.53,5,Value B,Value D,Value E,Value F,Value A,Value H,Value A,Value B,Value K,Value B
+2025-09-10,C10716,North,Bravo,Desktop,Item A,604.91,-54.76,5,Value C,Value E,Value F,Value G,Value B,Value I,Value B,Value C,Value L,Value C
+2025-10-06,C10717,East,Bravo,Service Desk,Item M,297.3,49.46,5,Value D,Value F,Value G,Value H,Value C,Value J,Value C,Value D,Value M,Value D
+2025-11-21,C10718,West,Bravo,Service Desk,Item Kxx,306.85,-2.76,3,Value E,Value G,Value H,Value I,Value D,Value K,Value D,Value E,Value N,Value E
+2025-12-14,C10719,West,Echo,Security,Item Lxxx,833.44,39.45,3,Value F,Value H,Value I,Value J,Value E,Value L,Value E,Value F,Value O,Value F
+2025-01-03,C10720,West,Charlie,Service Desk,Item Lxxx,23.47,4.98,3,Value G,Value A,Value A,Value A,Value F,Value A,Value F,Value G,Value A,Value G
+2025-02-10,C10721,North,Charlie,DBA,Item Gxx,631.0,123.26,5,Value A,Value B,Value B,Value B,Value G,Value B,Value G,Value H,Value B,Value H
+2025-03-19,C10722,North,Alpha,Network Ops,Item A,469.26,138.56,8,Value B,Value C,Value C,Value C,Value H,Value C,Value H,Value I,Value C,Value I
+2025-04-18,C10723,West,Bravo,App Support,Item Hxxx,160.5,-0.81,3,Value C,Value D,Value D,Value D,Value I,Value D,Value I,Value J,Value D,Value J
+2025-05-10,C10724,East,Charlie,Service Desk,Item Fx,550.27,54.33,4,Value D,Value E,Value E,Value E,Value J,Value E,Value J,Value K,Value E,Value K
+2025-06-02,C10725,North,Alpha,DBA,Item Hxxx,660.8,96.68,3,Value E,Value F,Value F,Value F,Value K,Value F,Value K,Value L,Value F,Value L
+2025-07-09,C10726,East,Charlie,Security,Item Hxxx,373.95,82.11,2,Value F,Value G,Value G,Value G,Value A,Value G,Value L,Value M,Value G,Value M
+2025-08-08,C10727,South,Alpha,Service Desk,Item Hxxx,694.87,-10.59,3,Value G,Value H,Value H,Value H,Value B,Value H,Value M,Value N,Value H,Value N
+2025-09-19,C10728,North,Bravo,App Support,Item Dxxx,759.11,78.84,8,Value A,Value A,Value I,Value I,Value C,Value I,Value A,Value A,Value I,Value O
+2025-10-21,C10729,West,Bravo,App Support,Item A,542.68,25.53,6,Value B,Value B,Value A,Value J,Value D,Value J,Value B,Value B,Value J,Value P
+2025-11-08,C10730,West,Bravo,Network Ops,Item Hxxx,121.51,6.74,7,Value C,Value C,Value B,Value A,Value E,Value K,Value C,Value C,Value K,Value Q
+2025-12-01,C10731,East,Alpha,DBA,Item Kxx,440.92,124.76,1,Value D,Value D,Value C,Value B,Value F,Value L,Value D,Value D,Value L,Value A
+2025-01-27,C10732,South,Alpha,Network Ops,Item A,446.68,12.84,1,Value E,Value E,Value D,Value C,Value G,Value A,Value E,Value E,Value M,Value B
+2025-02-19,C10733,North,Alpha,Desktop,Item Txxx,760.24,27.48,1,Value F,Value F,Value E,Value D,Value H,Value B,Value F,Value F,Value N,Value C
+2025-03-01,C10734,West,Bravo,App Support,Item Oxx,112.55,-3.54,8,Value G,Value G,Value F,Value E,Value I,Value C,Value G,Value G,Value O,Value D
+2025-04-18,C10735,North,Alpha,Service Desk,Item Fx,562.3,-0.4,2,Value A,Value H,Value G,Value F,Value J,Value D,Value H,Value H,Value A,Value E
+2025-05-27,C10736,East,Charlie,DBA,Item Lxxx,204.75,-1.86,6,Value B,Value A,Value H,Value G,Value K,Value E,Value I,Value I,Value B,Value F
+2025-06-19,C10737,North,Bravo,Security,Item Bx,315.05,29.34,7,Value C,Value B,Value I,Value H,Value A,Value F,Value J,Value J,Value C,Value G
+2025-07-09,C10738,North,Delta,DBA,Item Dxxx,364.39,-7.52,7,Value D,Value C,Value A,Value I,Value B,Value G,Value K,Value K,Value D,Value H
+2025-08-22,C10739,South,Charlie,Desktop,Item Cxx,187.69,32.14,3,Value E,Value D,Value B,Value J,Value C,Value H,Value L,Value L,Value E,Value I
+2025-09-14,C10740,West,Alpha,Service Desk,Item E,73.97,18.37,8,Value F,Value E,Value C,Value A,Value D,Value I,Value M,Value M,Value F,Value J
+2025-10-26,C10741,South,Bravo,Service Desk,Item A,505.71,-2.57,8,Value G,Value F,Value D,Value B,Value E,Value J,Value A,Value N,Value G,Value K
+2025-11-06,C10742,North,Alpha,App Support,Item Bx,317.45,-3.83,3,Value A,Value G,Value E,Value C,Value F,Value K,Value B,Value A,Value H,Value L
+2025-12-25,C10743,South,Bravo,App Support,Item Cxx,252.75,7.55,7,Value B,Value H,Value F,Value D,Value G,Value L,Value C,Value B,Value I,Value M
+2025-01-27,C10744,North,Alpha,App Support,Item Cxx,518.42,132.43,8,Value C,Value A,Value G,Value E,Value H,Value A,Value D,Value C,Value J,Value N
+2025-02-04,C10745,East,Alpha,App Support,Item Cxx,365.41,63.86,6,Value D,Value B,Value H,Value F,Value I,Value B,Value E,Value D,Value K,Value O
+2025-03-09,C10746,East,Alpha,Service Desk,Item Bx,395.85,103.26,4,Value E,Value C,Value I,Value G,Value J,Value C,Value F,Value E,Value L,Value P
+2025-04-26,C10747,East,Delta,App Support,Item Dxxx,689.85,84.1,3,Value F,Value D,Value A,Value H,Value K,Value D,Value G,Value F,Value M,Value Q
+2025-05-09,C10748,East,Alpha,Service Desk,Item Cxx,578.53,98.01,2,Value G,Value E,Value B,Value I,Value A,Value E,Value H,Value G,Value N,Value A
+2025-06-19,C10749,East,Charlie,Desktop,Item A,526.38,-20.57,7,Value A,Value F,Value C,Value J,Value B,Value F,Value I,Value H,Value O,Value B
+2025-07-21,C10750,South,Bravo,App Support,Item E,108.92,0.34,7,Value B,Value G,Value D,Value A,Value C,Value G,Value J,Value I,Value A,Value C
+2025-08-23,C10751,East,Bravo,Service Desk,Item I,70.22,-2.58,3,Value C,Value H,Value E,Value B,Value D,Value H,Value K,Value J,Value B,Value D
+2025-09-11,C10752,North,Alpha,App Support,Item Jx,371.54,44.04,7,Value D,Value A,Value F,Value C,Value E,Value I,Value L,Value K,Value C,Value E
+2025-10-27,C10753,West,Delta,Service Desk,Item Dxxx,130.94,35.74,2,Value E,Value B,Value G,Value D,Value F,Value J,Value M,Value L,Value D,Value F
+2025-11-09,C10754,South,Delta,DBA,Item E,832.84,-58.53,6,Value F,Value C,Value H,Value E,Value G,Value K,Value A,Value M,Value E,Value G
+2025-12-03,C10755,West,Alpha,Desktop,Item M,440.97,70.45,7,Value G,Value D,Value I,Value F,Value H,Value L,Value B,Value N,Value F,Value H
+2025-01-24,C10756,West,Alpha,DBA,Item I,820.54,239.19,5,Value A,Value E,Value A,Value G,Value I,Value A,Value C,Value A,Value G,Value I
+2025-02-27,C10757,South,Alpha,Service Desk,Item Cxx,226.75,17.76,5,Value B,Value F,Value B,Value H,Value J,Value B,Value D,Value B,Value H,Value J
+2025-03-06,C10758,West,Alpha,Desktop,Item A,327.22,90.02,7,Value C,Value G,Value C,Value I,Value K,Value C,Value E,Value C,Value I,Value K
+2025-04-12,C10759,West,Alpha,Service Desk,Item E,504.13,6.08,4,Value D,Value H,Value D,Value J,Value A,Value D,Value F,Value D,Value J,Value L
+2025-05-04,C10760,South,Alpha,Service Desk,Item Fx,239.67,55.4,7,Value E,Value A,Value E,Value A,Value B,Value E,Value G,Value E,Value K,Value M
+2025-06-23,C10761,South,Bravo,Service Desk,Item Hxxx,598.47,-30.07,2,Value F,Value B,Value F,Value B,Value C,Value F,Value H,Value F,Value L,Value N
+2025-07-05,C10762,East,Bravo,Desktop,Item Rx,329.37,85.55,5,Value G,Value C,Value G,Value C,Value D,Value G,Value I,Value G,Value M,Value O
+2025-08-27,C10763,East,Alpha,Service Desk,Item Dxxx,432.0,106.59,1,Value A,Value D,Value H,Value D,Value E,Value H,Value J,Value H,Value N,Value P
+2025-09-14,C10764,West,Bravo,Network Ops,Item A,735.48,28.12,3,Value B,Value E,Value I,Value E,Value F,Value I,Value K,Value I,Value O,Value Q
+2025-10-18,C10765,South,Alpha,Security,Item Cxx,416.43,123.68,3,Value C,Value F,Value A,Value F,Value G,Value J,Value L,Value J,Value A,Value A
+2025-11-20,C10766,East,Echo,Service Desk,Item Bx,24.24,1.54,6,Value D,Value G,Value B,Value G,Value H,Value K,Value M,Value K,Value B,Value B
+2025-12-16,C10767,East,Alpha,Security,Item A,218.6,39.21,2,Value E,Value H,Value C,Value H,Value I,Value L,Value A,Value L,Value C,Value C
+2025-01-26,C10768,East,Alpha,Service Desk,Item A,691.28,68.45,7,Value F,Value A,Value D,Value I,Value J,Value A,Value B,Value M,Value D,Value D
+2025-02-21,C10769,South,Alpha,App Support,Item Bx,363.3,13.08,6,Value G,Value B,Value E,Value J,Value K,Value B,Value C,Value N,Value E,Value E
+2025-03-04,C10770,East,Bravo,App Support,Item Fx,133.37,39.4,8,Value A,Value C,Value F,Value A,Value A,Value C,Value D,Value A,Value F,Value F
+2025-04-26,C10771,West,Echo,App Support,Item Dxxx,318.19,14.92,7,Value B,Value D,Value G,Value B,Value B,Value D,Value E,Value B,Value G,Value G
+2025-05-06,C10772,North,Alpha,Security,Item Gxx,791.64,182.08,3,Value C,Value E,Value H,Value C,Value C,Value E,Value F,Value C,Value H,Value H
+2025-06-23,C10773,West,Bravo,App Support,Item Gxx,703.79,202.74,6,Value D,Value F,Value I,Value D,Value D,Value F,Value G,Value D,Value I,Value I
+2025-07-10,C10774,North,Bravo,DBA,Item Hxxx,426.39,66.07,3,Value E,Value G,Value A,Value E,Value E,Value G,Value H,Value E,Value J,Value J
+2025-08-11,C10775,West,Delta,App Support,Item I,42.94,-2.36,8,Value F,Value H,Value B,Value F,Value F,Value H,Value I,Value F,Value K,Value K
+2025-09-06,C10776,South,Alpha,Network Ops,Item Dxxx,620.29,128.13,1,Value G,Value A,Value C,Value G,Value G,Value I,Value J,Value G,Value L,Value L
+2025-10-02,C10777,West,Alpha,App Support,Item Txxx,592.26,146.78,7,Value A,Value B,Value D,Value H,Value H,Value J,Value K,Value H,Value M,Value M
+2025-11-09,C10778,South,Echo,App Support,Item A,154.85,-0.01,8,Value B,Value C,Value E,Value I,Value I,Value K,Value L,Value I,Value N,Value N
+2025-12-07,C10779,North,Alpha,App Support,Item Fx,506.0,69.74,6,Value C,Value D,Value F,Value J,Value J,Value L,Value M,Value J,Value O,Value O
+2025-01-15,C10780,North,Echo,App Support,Item Gxx,850.53,-74.86,4,Value D,Value E,Value G,Value A,Value K,Value A,Value A,Value K,Value A,Value P
+2025-02-27,C10781,West,Alpha,Service Desk,Item E,418.07,-5.02,3,Value E,Value F,Value H,Value B,Value A,Value B,Value B,Value L,Value B,Value Q
+2025-03-23,C10782,East,Alpha,Desktop,Item Cxx,384.84,16.32,7,Value F,Value G,Value I,Value C,Value B,Value C,Value C,Value M,Value C,Value A
+2025-04-24,C10783,South,Alpha,Desktop,Item Bx,890.96,-83.6,2,Value G,Value H,Value A,Value D,Value C,Value D,Value D,Value N,Value D,Value B
+2025-05-12,C10784,East,Alpha,App Support,Item Fx,681.99,178.7,2,Value A,Value A,Value B,Value E,Value D,Value E,Value E,Value A,Value E,Value C
+2025-06-12,C10785,North,Alpha,Network Ops,Item Fx,776.25,15.33,7,Value B,Value B,Value C,Value F,Value E,Value F,Value F,Value B,Value F,Value D
+2025-07-14,C10786,North,Bravo,Service Desk,Item Bx,283.15,83.12,6,Value C,Value C,Value D,Value G,Value F,Value G,Value G,Value C,Value G,Value E
+2025-08-13,C10787,West,Charlie,Service Desk,Item Hxxx,782.71,198.14,7,Value D,Value D,Value E,Value H,Value G,Value H,Value H,Value D,Value H,Value F
+2025-09-21,C10788,South,Bravo,App Support,Item Dxxx,436.98,9.81,2,Value E,Value E,Value F,Value I,Value H,Value I,Value I,Value E,Value I,Value G
+2025-10-23,C10789,North,Echo,Service Desk,Item Bx,777.22,64.14,2,Value F,Value F,Value G,Value J,Value I,Value J,Value J,Value F,Value J,Value H
+2025-11-13,C10790,North,Alpha,DBA,Item E,147.95,-9.07,5,Value G,Value G,Value H,Value A,Value J,Value K,Value K,Value G,Value K,Value I
+2025-12-15,C10791,West,Alpha,Desktop,Item Fx,77.85,12.74,7,Value A,Value H,Value I,Value B,Value K,Value L,Value L,Value H,Value L,Value J
+2025-01-14,C10792,West,Alpha,App Support,Item I,208.35,8.66,8,Value B,Value A,Value A,Value C,Value A,Value A,Value M,Value I,Value M,Value K
+2025-02-10,C10793,North,Alpha,App Support,Item Cxx,189.51,42.01,1,Value C,Value B,Value B,Value D,Value B,Value B,Value A,Value J,Value N,Value L
+2025-03-01,C10794,South,Alpha,Network Ops,Item A,168.96,23.65,8,Value D,Value C,Value C,Value E,Value C,Value C,Value B,Value K,Value O,Value M
+2025-04-20,C10795,West,Alpha,Service Desk,Item I,314.9,18.14,6,Value E,Value D,Value D,Value F,Value D,Value D,Value C,Value L,Value A,Value N
+2025-05-17,C10796,South,Alpha,App Support,Item A,553.91,43.51,1,Value F,Value E,Value E,Value G,Value E,Value E,Value D,Value M,Value B,Value O
+2025-06-17,C10797,North,Alpha,App Support,Item Jx,810.15,85.99,4,Value G,Value F,Value F,Value H,Value F,Value F,Value E,Value N,Value C,Value P
+2025-07-01,C10798,North,Bravo,App Support,Item Dxxx,636.62,-47.53,1,Value A,Value G,Value G,Value I,Value G,Value G,Value F,Value A,Value D,Value Q
+2025-08-18,C10799,East,Alpha,Desktop,Item A,598.18,-47.54,7,Value B,Value H,Value H,Value J,Value H,Value H,Value G,Value B,Value E,Value A
+2025-09-22,C10800,East,Alpha,Network Ops,Item Dxxx,181.6,-12.44,5,Value C,Value A,Value I,Value A,Value I,Value I,Value H,Value C,Value F,Value B
+2025-10-15,C10801,South,Alpha,Service Desk,Item Nx,35.05,10.34,3,Value D,Value B,Value A,Value B,Value J,Value J,Value I,Value D,Value G,Value C
+2025-11-10,C10802,North,Bravo,Service Desk,Item Txxx,754.96,118.55,6,Value E,Value C,Value B,Value C,Value K,Value K,Value J,Value E,Value H,Value D
+2025-12-20,C10803,South,Alpha,Service Desk,Item I,114.05,27.38,1,Value F,Value D,Value C,Value D,Value A,Value L,Value K,Value F,Value I,Value E
+2025-01-19,C10804,North,Alpha,Service Desk,Item E,531.4,43.9,1,Value G,Value E,Value D,Value E,Value B,Value A,Value L,Value G,Value J,Value F
+2025-02-05,C10805,West,Alpha,Service Desk,Item A,152.07,38.58,6,Value A,Value F,Value E,Value F,Value C,Value B,Value M,Value H,Value K,Value G
+2025-03-12,C10806,West,Charlie,App Support,Item Fx,484.23,9.56,3,Value B,Value G,Value F,Value G,Value D,Value C,Value A,Value I,Value L,Value H
+2025-04-14,C10807,East,Alpha,App Support,Item I,502.4,-24.0,4,Value C,Value H,Value G,Value H,Value E,Value D,Value B,Value J,Value M,Value I
+2025-05-21,C10808,West,Alpha,Service Desk,Item Kxx,532.81,16.91,1,Value D,Value A,Value H,Value I,Value F,Value E,Value C,Value K,Value N,Value J
+2025-06-07,C10809,North,Alpha,Service Desk,Item Dxxx,437.64,123.38,6,Value E,Value B,Value I,Value J,Value G,Value F,Value D,Value L,Value O,Value K
+2025-07-21,C10810,East,Bravo,Service Desk,Item Lxxx,547.47,-6.32,5,Value F,Value C,Value A,Value A,Value H,Value G,Value E,Value M,Value A,Value L
+2025-08-10,C10811,East,Alpha,App Support,Item Bx,814.33,111.48,3,Value G,Value D,Value B,Value B,Value I,Value H,Value F,Value N,Value B,Value M
+2025-09-08,C10812,South,Echo,App Support,Item Cxx,504.67,54.92,8,Value A,Value E,Value C,Value C,Value J,Value I,Value G,Value A,Value C,Value N
+2025-10-21,C10813,South,Alpha,Desktop,Item Fx,745.34,118.67,5,Value B,Value F,Value D,Value D,Value K,Value J,Value H,Value B,Value D,Value O
+2025-11-17,C10814,East,Delta,Desktop,Item Fx,837.09,154.57,3,Value C,Value G,Value E,Value E,Value A,Value K,Value I,Value C,Value E,Value P
+2025-12-13,C10815,West,Delta,Desktop,Item Bx,590.9,18.91,4,Value D,Value H,Value F,Value F,Value B,Value L,Value J,Value D,Value F,Value Q
+2025-01-27,C10816,North,Alpha,App Support,Item Fx,274.68,57.54,7,Value E,Value A,Value G,Value G,Value C,Value A,Value K,Value E,Value G,Value A
+2025-02-23,C10817,South,Bravo,Network Ops,Item Txxx,605.44,159.22,3,Value F,Value B,Value H,Value H,Value D,Value B,Value L,Value F,Value H,Value B
+2025-03-15,C10818,North,Alpha,App Support,Item Dxxx,121.43,34.92,1,Value G,Value C,Value I,Value I,Value E,Value C,Value M,Value G,Value I,Value C
+2025-04-08,C10819,West,Alpha,App Support,Item I,25.56,3.56,7,Value A,Value D,Value A,Value J,Value F,Value D,Value A,Value H,Value J,Value D
+2025-05-07,C10820,South,Alpha,App Support,Item M,531.78,117.71,3,Value B,Value E,Value B,Value A,Value G,Value E,Value B,Value I,Value K,Value E
+2025-06-06,C10821,South,Alpha,App Support,Item A,435.93,90.87,2,Value C,Value F,Value C,Value B,Value H,Value F,Value C,Value J,Value L,Value F
+2025-07-24,C10822,North,Alpha,Service Desk,Item Gxx,260.12,63.68,6,Value D,Value G,Value D,Value C,Value I,Value G,Value D,Value K,Value M,Value G
+2025-08-16,C10823,South,Alpha,Service Desk,Item E,392.74,11.63,2,Value E,Value H,Value E,Value D,Value J,Value H,Value E,Value L,Value N,Value H
+2025-09-07,C10824,West,Echo,Service Desk,Item Fx,749.6,164.0,4,Value F,Value A,Value F,Value E,Value K,Value I,Value F,Value M,Value O,Value I
+2025-10-26,C10825,East,Bravo,Security,Item Dxxx,437.69,40.26,4,Value G,Value B,Value G,Value F,Value A,Value J,Value G,Value N,Value A,Value J
+2025-11-17,C10826,East,Alpha,App Support,Item I,699.2,77.66,3,Value A,Value C,Value H,Value G,Value B,Value K,Value H,Value A,Value B,Value K
+2025-12-07,C10827,North,Alpha,Desktop,Item A,74.16,4.93,1,Value B,Value D,Value I,Value H,Value C,Value L,Value I,Value B,Value C,Value L
+2025-01-23,C10828,South,Alpha,Desktop,Item Fx,672.15,131.9,3,Value C,Value E,Value A,Value I,Value D,Value A,Value J,Value C,Value D,Value M
+2025-02-03,C10829,West,Delta,Desktop,Item I,777.25,-59.41,1,Value D,Value F,Value B,Value J,Value E,Value B,Value K,Value D,Value E,Value N
+2025-03-27,C10830,West,Alpha,Network Ops,Item E,658.18,160.26,4,Value E,Value G,Value C,Value A,Value F,Value C,Value L,Value E,Value F,Value O
+2025-04-11,C10831,East,Alpha,Desktop,Item Dxxx,354.77,-6.68,6,Value F,Value H,Value D,Value B,Value G,Value D,Value M,Value F,Value G,Value P
+2025-05-17,C10832,East,Charlie,Service Desk,Item Fx,175.8,36.33,5,Value G,Value A,Value E,Value C,Value H,Value E,Value A,Value G,Value H,Value Q
+2025-06-21,C10833,North,Bravo,Network Ops,Item Cxx,568.69,66.57,1,Value A,Value B,Value F,Value D,Value I,Value F,Value B,Value H,Value I,Value A
+2025-07-07,C10834,East,Charlie,DBA,Item Hxxx,109.93,24.55,8,Value B,Value C,Value G,Value E,Value J,Value G,Value C,Value I,Value J,Value B
+2025-08-21,C10835,West,Alpha,Service Desk,Item Hxxx,387.74,-13.88,8,Value C,Value D,Value H,Value F,Value K,Value H,Value D,Value J,Value K,Value C
+2025-09-07,C10836,North,Alpha,Service Desk,Item Txxx,329.57,59.37,1,Value D,Value E,Value I,Value G,Value A,Value I,Value E,Value K,Value L,Value D
+2025-10-24,C10837,East,Charlie,Service Desk,Item Bx,717.27,211.97,4,Value E,Value F,Value A,Value H,Value B,Value J,Value F,Value L,Value M,Value E
+2025-11-18,C10838,North,Alpha,Service Desk,Item Fx,144.65,-3.06,3,Value F,Value G,Value B,Value I,Value C,Value K,Value G,Value M,Value N,Value F
+2025-12-17,C10839,West,Alpha,Security,Item Bx,377.3,89.14,6,Value G,Value H,Value C,Value J,Value D,Value L,Value H,Value N,Value O,Value G
+2025-01-18,C10840,West,Alpha,Service Desk,Item Kxx,882.49,137.09,3,Value A,Value A,Value D,Value A,Value E,Value A,Value I,Value A,Value A,Value H
+2025-02-10,C10841,South,Bravo,Service Desk,Item Q,179.09,14.45,7,Value B,Value B,Value E,Value B,Value F,Value B,Value J,Value B,Value B,Value I
+2025-03-02,C10842,South,Echo,Service Desk,Item Cxx,414.5,65.61,5,Value C,Value C,Value F,Value C,Value G,Value C,Value K,Value C,Value C,Value J
+2025-04-04,C10843,West,Bravo,App Support,Item Nx,488.91,-1.36,6,Value D,Value D,Value G,Value D,Value H,Value D,Value L,Value D,Value D,Value K
+2025-05-04,C10844,East,Alpha,Service Desk,Item Jx,59.6,7.87,3,Value E,Value E,Value H,Value E,Value I,Value E,Value M,Value E,Value E,Value L
+2025-06-06,C10845,North,Alpha,Network Ops,Item Hxxx,372.85,1.61,7,Value F,Value F,Value I,Value F,Value J,Value F,Value A,Value F,Value F,Value M
+2025-07-28,C10846,East,Alpha,Security,Item Hxxx,461.91,94.36,4,Value G,Value G,Value A,Value G,Value K,Value G,Value B,Value G,Value G,Value N
+2025-08-21,C10847,West,Alpha,Service Desk,Item Dxxx,115.18,8.77,3,Value A,Value H,Value B,Value H,Value A,Value H,Value C,Value H,Value H,Value O
+2025-09-23,C10848,East,Alpha,Service Desk,Item Rx,582.78,5.03,6,Value B,Value A,Value C,Value I,Value B,Value I,Value D,Value I,Value I,Value P
+2025-10-24,C10849,East,Charlie,DBA,Item Jx,605.08,-17.95,8,Value C,Value B,Value D,Value J,Value C,Value J,Value E,Value J,Value J,Value Q
+2025-11-25,C10850,North,Alpha,DBA,Item Nx,150.99,1.04,6,Value D,Value C,Value E,Value A,Value D,Value K,Value F,Value K,Value K,Value A
+2025-12-08,C10851,East,Alpha,Service Desk,Item Bx,582.67,18.93,3,Value E,Value D,Value F,Value B,Value E,Value L,Value G,Value L,Value L,Value B
+2025-01-11,C10852,South,Bravo,App Support,Item A,73.07,-3.87,5,Value F,Value E,Value G,Value C,Value F,Value A,Value H,Value M,Value M,Value C
+2025-02-12,C10853,East,Echo,Service Desk,Item Bx,52.43,0.53,7,Value G,Value F,Value H,Value D,Value G,Value B,Value I,Value N,Value N,Value D
+2025-03-26,C10854,North,Delta,Desktop,Item Cxx,250.39,15.11,5,Value A,Value G,Value I,Value E,Value H,Value C,Value J,Value A,Value O,Value E
+2025-04-18,C10855,East,Alpha,Service Desk,Item A,866.49,189.46,2,Value B,Value H,Value A,Value F,Value I,Value D,Value K,Value B,Value A,Value F
+2025-05-15,C10856,North,Echo,App Support,Item I,537.44,-43.95,5,Value C,Value A,Value B,Value G,Value J,Value E,Value L,Value C,Value B,Value G
+2025-06-02,C10857,North,Alpha,App Support,Item Cxx,344.07,38.31,1,Value D,Value B,Value C,Value H,Value K,Value F,Value M,Value D,Value C,Value H
+2025-07-02,C10858,South,Alpha,App Support,Item Txxx,261.78,20.9,5,Value E,Value C,Value D,Value I,Value A,Value G,Value A,Value E,Value D,Value I
+2025-08-13,C10859,South,Alpha,Service Desk,Item Gxx,897.58,-37.72,5,Value F,Value D,Value E,Value J,Value B,Value H,Value B,Value F,Value E,Value J
+2025-09-03,C10860,South,Alpha,Service Desk,Item Cxx,713.77,113.34,8,Value G,Value E,Value F,Value A,Value C,Value I,Value C,Value G,Value F,Value K
+2025-10-24,C10861,East,Alpha,Desktop,Item Hxxx,710.67,-2.38,1,Value A,Value F,Value G,Value B,Value D,Value J,Value D,Value H,Value G,Value L
+2025-11-11,C10862,West,Bravo,Desktop,Item Bx,810.13,-13.86,4,Value B,Value G,Value H,Value C,Value E,Value K,Value E,Value I,Value H,Value M
+2025-12-22,C10863,East,Delta,Service Desk,Item Kxx,381.51,89.99,3,Value C,Value H,Value I,Value D,Value F,Value L,Value F,Value J,Value I,Value N
+2025-01-03,C10864,South,Charlie,Service Desk,Item Dxxx,143.94,42.51,8,Value D,Value A,Value A,Value E,Value G,Value A,Value G,Value K,Value J,Value O
+2025-02-03,C10865,East,Bravo,Security,Item Dxxx,613.53,115.29,3,Value E,Value B,Value B,Value F,Value H,Value B,Value H,Value L,Value K,Value P
+2025-03-02,C10866,West,Bravo,Service Desk,Item Jx,665.82,105.65,7,Value F,Value C,Value C,Value G,Value I,Value C,Value I,Value M,Value L,Value Q
+2025-04-01,C10867,West,Alpha,Service Desk,Item Cxx,36.77,8.58,3,Value G,Value D,Value D,Value H,Value J,Value D,Value J,Value N,Value M,Value A
+2025-05-02,C10868,East,Alpha,Service Desk,Item Fx,179.87,-0.85,4,Value A,Value E,Value E,Value I,Value K,Value E,Value K,Value A,Value N,Value B
+2025-06-03,C10869,North,Alpha,DBA,Item Rx,43.79,12.96,1,Value B,Value F,Value F,Value J,Value A,Value F,Value L,Value B,Value O,Value C
+2025-07-06,C10870,East,Alpha,App Support,Item Cxx,237.36,33.33,7,Value C,Value G,Value G,Value A,Value B,Value G,Value M,Value C,Value A,Value D
+2025-08-28,C10871,East,Alpha,Service Desk,Item Jx,605.77,166.66,1,Value D,Value H,Value H,Value B,Value C,Value H,Value A,Value D,Value B,Value E
+2025-09-21,C10872,North,Alpha,Network Ops,Item Sxx,52.78,-4.99,2,Value E,Value A,Value I,Value C,Value D,Value I,Value B,Value E,Value C,Value F
+2025-10-08,C10873,West,Alpha,Service Desk,Item Bx,303.89,89.27,6,Value F,Value B,Value A,Value D,Value E,Value J,Value C,Value F,Value D,Value G
+2025-11-19,C10874,West,Alpha,Desktop,Item M,311.81,9.42,2,Value G,Value C,Value B,Value E,Value F,Value K,Value D,Value G,Value E,Value H
+2025-12-19,C10875,North,Bravo,App Support,Item E,420.05,-28.6,1,Value A,Value D,Value C,Value F,Value G,Value L,Value E,Value H,Value F,Value I
+2025-01-13,C10876,South,Alpha,App Support,Item Cxx,581.81,145.36,6,Value B,Value E,Value D,Value G,Value H,Value A,Value F,Value I,Value G,Value J
+2025-02-21,C10877,West,Charlie,App Support,Item Lxxx,45.88,13.16,4,Value C,Value F,Value E,Value H,Value I,Value B,Value G,Value J,Value H,Value K
+2025-03-16,C10878,South,Alpha,Service Desk,Item Lxxx,24.29,-1.89,8,Value D,Value G,Value F,Value I,Value J,Value C,Value H,Value K,Value I,Value L
+2025-04-26,C10879,East,Alpha,Desktop,Item Hxxx,546.84,-35.59,1,Value E,Value H,Value G,Value J,Value K,Value D,Value I,Value L,Value J,Value M
+2025-05-11,C10880,North,Alpha,Network Ops,Item Bx,468.05,104.63,7,Value F,Value A,Value H,Value A,Value A,Value E,Value J,Value M,Value K,Value N
+2025-06-08,C10881,South,Alpha,Security,Item A,661.72,113.52,3,Value G,Value B,Value I,Value B,Value B,Value F,Value K,Value N,Value L,Value O
+2025-07-24,C10882,East,Bravo,App Support,Item A,891.22,202.53,2,Value A,Value C,Value A,Value C,Value C,Value G,Value L,Value A,Value M,Value P
+2025-08-12,C10883,South,Bravo,Security,Item A,638.73,-43.05,8,Value B,Value D,Value B,Value D,Value D,Value H,Value M,Value B,Value N,Value Q
+2025-09-23,C10884,South,Delta,Service Desk,Item E,798.62,197.85,1,Value C,Value E,Value C,Value E,Value E,Value I,Value A,Value C,Value O,Value A
+2025-10-19,C10885,West,Alpha,Security,Item Txxx,366.38,-21.61,1,Value D,Value F,Value D,Value F,Value F,Value J,Value B,Value D,Value A,Value B
+2025-11-25,C10886,West,Alpha,App Support,Item Cxx,627.56,93.38,6,Value E,Value G,Value E,Value G,Value G,Value K,Value C,Value E,Value B,Value C
+2025-12-06,C10887,West,Alpha,App Support,Item Lxxx,264.22,33.74,8,Value F,Value H,Value F,Value H,Value H,Value L,Value D,Value F,Value C,Value D
+2025-01-05,C10888,East,Bravo,Security,Item Txxx,843.88,130.84,1,Value G,Value A,Value G,Value I,Value I,Value A,Value E,Value G,Value D,Value E
+2025-02-11,C10889,East,Bravo,Service Desk,Item Cxx,414.48,29.99,8,Value A,Value B,Value H,Value J,Value J,Value B,Value F,Value H,Value E,Value F
+2025-03-24,C10890,South,Charlie,Security,Item Pxxx,21.5,6.1,8,Value B,Value C,Value I,Value A,Value K,Value C,Value G,Value I,Value F,Value G
+2025-04-12,C10891,North,Alpha,Desktop,Item Txxx,464.31,65.22,1,Value C,Value D,Value A,Value B,Value A,Value D,Value H,Value J,Value G,Value H
+2025-05-17,C10892,West,Bravo,Desktop,Item A,736.88,210.61,8,Value D,Value E,Value B,Value C,Value B,Value E,Value I,Value K,Value H,Value I
+2025-06-26,C10893,West,Charlie,Desktop,Item Txxx,854.05,145.19,6,Value E,Value F,Value C,Value D,Value C,Value F,Value J,Value L,Value I,Value J
+2025-07-01,C10894,North,Charlie,Service Desk,Item Cxx,189.77,35.68,6,Value F,Value G,Value D,Value E,Value D,Value G,Value K,Value M,Value J,Value K
+2025-08-13,C10895,North,Delta,Service Desk,Item Lxxx,387.53,104.44,6,Value G,Value H,Value E,Value F,Value E,Value H,Value L,Value N,Value K,Value L
+2025-09-14,C10896,East,Bravo,DBA,Item Dxxx,754.33,160.74,4,Value A,Value A,Value F,Value G,Value F,Value I,Value M,Value A,Value L,Value M
+2025-10-20,C10897,West,Alpha,Security,Item I,288.13,50.88,6,Value B,Value B,Value G,Value H,Value G,Value J,Value A,Value B,Value M,Value N
+2025-11-10,C10898,West,Charlie,Service Desk,Item Jx,889.3,21.26,1,Value C,Value C,Value H,Value I,Value H,Value K,Value B,Value C,Value N,Value O
+2025-12-08,C10899,South,Alpha,DBA,Item Bx,581.68,-36.47,8,Value D,Value D,Value I,Value J,Value I,Value L,Value C,Value D,Value O,Value P

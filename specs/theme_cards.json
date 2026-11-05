@@ -1,0 +1,19 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "cards", "arrange": "strip", "date": {"field": "Order Date", "level": "month"},
+     "measures": [{"field": "Sales"}, {"field": "Profit"}, {"field": "Quantity", "label": "Units", "good": "down"}]},
+    {"name": "Regions", "type": "bar", "title": "Sales **by region**", "subtitle": "Sum of sales, 2024-2025",
+     "dimension": "Region", "measure": {"field": "Sales"}, "sort": "desc"},
+    {"name": "Trend", "type": "line", "title": "Monthly **Sales**", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}},
+    {"name": "Registry", "type": "registry", "title": "Region **by category**", "rows": ["Region", "Category"],
+     "sort": "desc", "columns": [{"measure": {"field": "Sales"}}, {"measure": {"field": "Profit"}, "style": "text"}]}
+  ],
+  "filters": [{"field": "Category", "show_on": "Regions"}],
+  "dashboard": {"name": "Card Theme", "title": "**Sales** Overview", "subtitle": "Sample data, 2024-2025",
+                "theme": "cards", "theme_font": "Arial", "width": 1250, "height": 960, "row_heights": [4, 4, 5],
+                "grid": [["KPI"], ["Regions", {"sheet": "Trend", "width": 2}], ["Registry"]]}
+}

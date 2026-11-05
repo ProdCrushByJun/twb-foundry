@@ -1,0 +1,227 @@
+{
+  "$schema": "../../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {
+    "type": "csv",
+    "path": "incidents.csv"
+  },
+  "calcs": [
+    {
+      "name": "Resolve Hours",
+      "formula": "DATEDIFF('minute', [Opened], [Resolved]) / 60",
+      "format": "number1"
+    },
+    {
+      "name": "Backlog",
+      "formula": "IF ISNULL([Resolved]) THEN 1 ELSE 0 END"
+    },
+    {
+      "name": "SLA Met Flag",
+      "formula": "IF [Made SLA] = \"true\" THEN 1 ELSE 0 END"
+    },
+    {
+      "name": "SLA Met",
+      "formula": "SUM([SLA Met Flag]) / COUNT([Number])",
+      "format": "pct1"
+    }
+  ],
+  "fields": {
+    "Priority": {
+      "color": {
+        "1 - Critical": "bad",
+        "2 - High": "warn",
+        "3 - Moderate": "mark_muted",
+        "4 - Low": "#e6e6e6"
+      },
+      "order": [
+        "1 - Critical",
+        "2 - High",
+        "3 - Moderate",
+        "4 - Low"
+      ]
+    }
+  },
+  "sheets": [
+    {
+      "name": "KPI",
+      "type": "kpi",
+      "style": "tiles",
+      "arrange": "strip",
+      "measures": [
+        {
+          "field": "Number",
+          "agg": "count",
+          "label": "Incidents opened"
+        },
+        {
+          "field": "Resolved",
+          "agg": "count",
+          "label": "Resolved"
+        },
+        {
+          "field": "Backlog",
+          "label": "Open backlog"
+        },
+        {
+          "field": "Resolve Hours",
+          "agg": "avg",
+          "label": "Mean time to resolve, h"
+        },
+        {
+          "field": "SLA Met",
+          "label": "SLA met"
+        }
+      ]
+    },
+    {
+      "name": "By Month",
+      "type": "bar",
+      "title": "Incidents opened **by month**",
+      "subtitle": "number of incidents, stacked by priority",
+      "dimension": "Opened",
+      "date_level": "month",
+      "orientation": "vertical",
+      "measure": {
+        "field": "Number",
+        "agg": "count"
+      },
+      "color": "Priority",
+      "legend": "inline"
+    },
+    {
+      "name": "By Category",
+      "type": "bar",
+      "title": "Incidents **by category**",
+      "subtitle": "number of incidents, all months",
+      "dimension": "Category",
+      "measure": {
+        "field": "Number",
+        "agg": "count",
+        "label": "incidents"
+      },
+      "sort": "desc"
+    },
+    {
+      "name": "Assignment Groups",
+      "type": "registry",
+      "title": "Incidents and SLA **by assignment group**",
+      "subtitle": "sorted by incidents; SLA met below 85% highlighted",
+      "rows": [
+        "Assignment Group"
+      ],
+      "sort": "desc",
+      "columns": [
+        {
+          "measure": {
+            "field": "Number",
+            "agg": "count"
+          },
+          "style": "bar",
+          "label": "Incidents"
+        },
+        {
+          "measure": {
+            "field": "Backlog"
+          },
+          "style": "text",
+          "label": "Backlog"
+        },
+        {
+          "measure": {
+            "field": "Resolve Hours",
+            "agg": "avg"
+          },
+          "style": "text",
+          "label": "MTTR, h"
+        },
+        {
+          "measure": {
+            "field": "SLA Met"
+          },
+          "style": "text",
+          "label": "SLA met",
+          "highlight": {
+            "below": 0.85
+          }
+        }
+      ]
+    },
+    {
+      "name": "MTTR By Priority",
+      "type": "bar",
+      "title": "Mean time to resolve **by priority**, h",
+      "subtitle": "resolve hours of resolved incidents",
+      "dimension": "Priority",
+      "measure": {
+        "field": "Resolve Hours",
+        "agg": "avg",
+        "label": "mean time to resolve"
+      },
+      "orientation": "horizontal",
+      "sort": "none"
+    },
+    {
+      "name": "Channel Mix",
+      "type": "donut",
+      "title": "Incidents **by channel**",
+      "subtitle": "share of incidents",
+      "dimension": "Channel",
+      "measure": {
+        "field": "Number",
+        "agg": "count",
+        "label": "incidents"
+      },
+      "color": {
+        "highlight": [
+          "Portal"
+        ]
+      }
+    }
+  ],
+  "filters": [
+    {
+      "field": "Priority",
+      "mode": "single_dropdown",
+      "show_on": "KPI"
+    }
+  ],
+  "dashboard": {
+    "name": "Incident Report",
+    "title": "**IT Service Desk** · Incident Report",
+    "subtitle": "January – June 2025 · Data as of 30 Jun 2025 18:00",
+    "theme": "cards",
+    "width": 1280,
+    "height": 930,
+    "row_heights": [
+      2,
+      5,
+      6
+    ],
+    "grid": [
+      [
+        "KPI"
+      ],
+      [
+        {
+          "sheet": "By Month",
+          "width": 2
+        },
+        "By Category"
+      ],
+      [
+        {
+          "sheet": "Assignment Groups",
+          "width": 9
+        },
+        {
+          "sheet": "MTTR By Priority",
+          "width": 4
+        },
+        {
+          "sheet": "Channel Mix",
+          "width": 5
+        }
+      ]
+    ]
+  }
+}

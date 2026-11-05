@@ -1,0 +1,38 @@
+{
+  "$schema": "../../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "hr_events.csv"},
+  "fields": {"Event Type": {"color": {"Hire": "#2f6fb5", "Exit": "#e07b39"}}},
+  "calcs": [
+    {"name": "Hire Flag", "formula": "IF [Event Type] = \"Hire\" THEN 1 ELSE 0 END"},
+    {"name": "Exit Flag", "formula": "IF [Event Type] = \"Exit\" THEN 1 ELSE 0 END"},
+    {"name": "Net Change", "formula": "SUM([Hire Flag]) - SUM([Exit Flag])", "format": {"type": "number", "decimals": 0, "plus": true}}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "arrange": "strip",
+     "measures": [
+       {"field": "Hire Flag", "agg": "sum", "label": "Hires"},
+       {"field": "Exit Flag", "agg": "sum", "label": "Exits"},
+       {"field": "Net Change", "label": "Net headcount change"}
+     ]},
+    {"name": "By Quarter", "type": "bar", "title": "Hires and exits **by quarter**", "subtitle": "number of people",
+     "dimension": "Event Date", "date_level": "quarter", "orientation": "vertical",
+     "measure": {"field": "Event ID", "agg": "count", "label": "people"}, "color": "Event Type"},
+    {"name": "Exits by Dept", "type": "bar", "title": "Exits **by department**", "subtitle": "number of people, all months",
+     "dimension": "Department", "measure": {"field": "Exit Flag", "agg": "sum"}, "orientation": "horizontal", "sort": "desc"},
+    {"name": "Exit Heatmap", "type": "heatmap", "title": "Exits **by month and department**", "subtitle": "number of people",
+     "rows": "Department", "cols": "Event Date", "date_level": "month", "measure": {"field": "Exit Flag", "agg": "sum"},
+     "color": {"scale": "sequential"}},
+    {"name": "Balance", "type": "registry", "title": "Department **balance**", "subtitle": "hires, exits and net change",
+     "rows": ["Department"], "sort": "none",
+     "columns": [
+       {"measure": {"field": "Hire Flag", "agg": "sum"}, "style": "text", "label": "Hires"},
+       {"measure": {"field": "Exit Flag", "agg": "sum"}, "style": "text", "label": "Exits"},
+       {"measure": {"field": "Net Change"}, "style": "text", "label": "Net"}
+     ]}
+  ],
+  "dashboard": {"name": "HR Overview", "title": "**People & Hiring** · Overview 2025",
+    "subtitle": "January – December 2025 · all departments", "theme": "cards", "width": 1280, "height": 900,
+    "row_heights": [2, 5, 4, 6],
+    "grid": [["KPI"], ["By Quarter", "Exits by Dept"], ["Exit Heatmap"], ["Balance"]]}
+}

@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "twb-foundry user profile: profiles/<name>/profile.yaml (decisions/193)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile_version"],
+  "properties": {
+    "profile_version": {"const": 1},
+    "based_on": {"$ref": "#/$defs/name", "description": "What an unset value comes from; default house"},
+    "style_book": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "description": "The one book the style is taken from; copy-style (P2) fills it. Blocks of other books are drawn in this style",
+      "properties": {
+        "kind": {"enum": ["file", "public", "server"]},
+        "file": {"type": "string", "description": "The book, relative to the profile's folder (refs/x.twbx)"},
+        "url": {"type": "string", "description": "kind public: its Tableau Public page"},
+        "site": {"type": "string", "description": "kind server: the site"},
+        "workbook_id": {"type": "string", "description": "kind server: the workbook"},
+        "dashboard": {"type": "string", "description": "The dashboard of the book to take the style from"}
+      }
+    },
+    "sources": {
+      "type": "array",
+      "description": "Where else the taste came from (a brand book): for tokens.md and to redo it",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind"],
+        "properties": {
+          "kind": {"enum": ["file", "public", "server", "brandbook"]},
+          "file": {"type": "string"},
+          "url": {"type": "string"},
+          "site": {"type": "string"},
+          "workbook_id": {"type": "string"},
+          "picked": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file", "dashboard"],
+      "description": "The dashboard whose rows and columns a new book takes: pick-charts fills it, pick-layout puts it in a spec (decisions/196)",
+      "properties": {"file": {"type": "string"}, "dashboard": {"type": "string"}}
+    },
+    "tokens": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Keys of design.COLOR / FONT / SPACE: user_profile.problems checks them against design.py",
+      "properties": {
+        "color": {"type": "object", "additionalProperties": {"$ref": "#/$defs/hex"}},
+        "font": {
+          "type": "object",
+          "properties": {"family": {"enum": ["Arial"], "description": "theme.FONTS: the fonts the text widths are measured for"}},
+          "additionalProperties": {"type": "integer", "minimum": 6, "maximum": 72}
+        },
+        "space": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0, "maximum": 60}}
+      }
+    },
+    "palettes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "categorical": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/hex"},
+          "minItems": 1,
+          "description": "The skill gives them to members by fields.<f>.color; scales are the tokens scale_low, scale_mid, accent, good, bad"
+        }
+      }
+    },
+    "legend": {"enum": ["words", "card"], "description": "words: colored words in the subtitle (C4); card: a legend card"},
+    "theme": {"enum": ["cards", "flat"]},
+    "prefer": {
+      "type": "object",
+      "additionalProperties": {"type": "string"},
+      "description": "Chart type by question (kpi, comparison, trend, part_to_whole): read by /to-tableau and dashboard-designer"
+    },
+    "avoid": {"type": "array", "items": {"type": "string"}, "description": "Chart types not to choose"},
+    "rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The level of a lint rule, warn or info (its errors stay errors), and C2's threshold. C8, C9, D5 and I* are locked",
+      "properties": {
+        "C2": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "level": {"$ref": "#/$defs/level"},
+            "max_categories": {"type": "integer", "minimum": 2, "maximum": 12}
+          }
+        }
+      },
+      "patternProperties": {
+        "^(?!C2$)[A-Z][0-9]{1,2}$": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {"level": {"$ref": "#/$defs/level"}}
+        }
+      }
+    },
+    "context_dirs": {"type": "array", "items": {"type": "string"}, "description": "Folders outside the repo with the user's MD files"}
+  },
+  "$defs": {
+    "name": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"},
+    "hex": {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"},
+    "level": {"enum": ["warn", "info"]}
+  }
+}

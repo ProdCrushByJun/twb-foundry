@@ -1,0 +1,4 @@
+CLEAN    70.1s  golden_registry_v2_2025_1.twbx
+        golden_registry_v2_2025_1.twbx vs Desktop re-save golden_registry_v2_2025_1.resaved.twbx: 6 differences, 6 cosmetic (Desktop's own rewrites), 0 by meaning
+        nothing dropped or changed by meaning
+        every sheet shown at open: 4/4 OK

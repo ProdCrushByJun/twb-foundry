@@ -1,0 +1,30 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "calcs": [
+    {"name": "Profit Ratio", "formula": "SUM([Profit]) / SUM([Sales])",
+     "format": {"type": "percent", "decimals": 1, "negative": "parentheses"}},
+    {"name": "Avg Price", "formula": "SUM([Sales]) / SUM([Quantity])",
+     "format": {"type": "currency", "symbol": "₽", "decimals": 2}},
+    {"name": "Sales Scaled", "formula": "SUM([Sales]) * 100000", "format": {"type": "number", "units": "B", "decimals": 2}}
+  ],
+  "sheets": [
+    {"name": "Monthly", "type": "kpi", "style": "cards", "title": "Latest **month**", "subtitle": "vs the month before",
+     "date": {"field": "Order Date", "level": "month"}, "compare": "previous",
+     "measures": [{"field": "Sales", "format": "currency_k"}]},
+    {"name": "Totals", "type": "kpi", "style": "tiles",
+     "measures": [{"field": "Quantity", "format": "number"}, {"field": "Profit Ratio"}, {"field": "Avg Price"},
+                  {"field": "Sales Scaled"}]},
+    {"name": "Sales by Region", "type": "bar", "title": "Sales by **Region**", "dimension": "Region",
+     "measure": {"field": "Sales", "format": "currency_k"}, "sort": "desc"},
+    {"name": "Worst Order", "type": "table", "title": "Worst **order** profit", "rows": "Region", "cols": "Category",
+     "measure": {"field": "Profit", "agg": "min",
+                 "format": {"type": "currency", "decimals": 1, "negative": "parentheses"}}},
+    {"name": "Ratio", "type": "heatmap", "title": "Profit **ratio**", "rows": "Region", "cols": "Category",
+     "measure": {"field": "Profit Ratio"}}
+  ],
+  "dashboard": {"name": "Formats", "title": "**Number** formats", "subtitle": "Sample data, 2024-2025",
+                "width": 1200, "height": 800, "row_heights": [3, 2],
+                "grid": [["Monthly", {"sheet": "Totals", "width": 2}], ["Sales by Region", "Worst Order", "Ratio"]]}
+}

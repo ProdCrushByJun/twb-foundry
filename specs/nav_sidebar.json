@@ -1,0 +1,27 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Profit"}]},
+    {"name": "Bar", "type": "bar", "title": "**Regions** by Sales", "subtitle": "All categories",
+     "dimension": "Region", "measure": {"field": "Sales"}, "sort": "desc"},
+    {"name": "Line", "type": "line", "title": "Monthly **Sales**", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}},
+    {"name": "Table", "type": "table", "title": "**Region** × Category", "subtitle": "Sum of sales",
+     "rows": "Region", "cols": "Category", "measure": {"field": "Sales"}}
+  ],
+  "filters": [{"field": "Category", "show_on": "Bar"}],
+  "dashboards": [
+    {"name": "Summary", "title": "**Sales** Summary", "subtitle": "Sample data, 2025",
+     "width": 1200, "height": 800, "row_heights": [2, 3], "grid": [["KPI"], ["Bar", "Line"]],
+     "theme": "flat", "sidebar": {"color": "#2f6f6a", "logo": {"text": "Acme."},
+                 "footer": ["Created by Tableau Builder", "Data source: sales.csv"]}},
+    {"name": "Breakdown", "title": "**Sales** Breakdown", "subtitle": "Sample data, 2025",
+     "width": 1200, "height": 800, "grid": [["Table"], ["Line"]],
+     "theme": "flat", "sidebar": {"color": "#2f6f6a", "logo": {"text": "Acme."},
+                 "footer": ["Created by Tableau Builder", "Data source: sales.csv"]}}
+  ],
+  "nav": {"style": "sidebar", "items": [{"dashboard": "Summary", "label": "Summary"},
+                                        {"dashboard": "Breakdown", "label": "Breakdown"}]}
+}

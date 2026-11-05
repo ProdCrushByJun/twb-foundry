@@ -1,0 +1,17 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Profit"}]},
+    {"name": "Bar", "type": "bar", "title": "**Regions** by Sales", "subtitle": "Sum of sales, stacked by category",
+     "dimension": "Region", "measure": {"field": "Sales"}, "color": "Category"},
+    {"name": "Line", "type": "line", "title": "Monthly **Sales**", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}},
+    {"name": "Table", "type": "table", "subtitle": "Sales by region and category", "rows": "Region", "cols": "Category",
+     "measure": {"field": "Sales"}}
+  ],
+  "filters": [{"field": "Region", "show_on": "Table"}],
+  "dashboard": {"name": "Headers", "title": "**Sales** Overview", "subtitle": "Sample data, 500 orders",
+                "width": 1000, "height": 800, "row_heights": [2, 3], "grid": [["KPI", "Bar"], ["Line", "Table"]]}
+}

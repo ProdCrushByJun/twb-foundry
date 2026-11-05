@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incident Report</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root { --bg: #f4f6f9; --card: #ffffff; --line: #e3e7ed; --text: #1f2a37; --muted: #6b7684; --accent: #2f6db5; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 13px/1.4 "Segoe UI", Arial, sans-serif; }
+  .page { width: 1280px; margin: 0 auto; padding: 20px; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 16px; }
+  h1 { font-size: 22px; margin: 0; font-weight: 600; }
+  .sub { color: var(--muted); margin-top: 2px; }
+  label { color: var(--muted); font-size: 12px; }
+  select { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; background: #fff; }
+  .kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
+  .kpi .name { color: var(--muted); font-size: 12px; }
+  .kpi .value { font-size: 26px; font-weight: 600; margin-top: 4px; }
+  .kpi .note { color: var(--muted); font-size: 11px; margin-top: 2px; }
+  .row { display: grid; gap: 16px; margin-bottom: 16px; }
+  .row.a { grid-template-columns: 2fr 1fr; }
+  .row.b { grid-template-columns: 2fr 1fr 1fr; }
+  h2 { font-size: 14px; margin: 0 0 2px; font-weight: 600; }
+  .hint { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+  .chart { position: relative; height: 260px; }
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; color: var(--muted); font-weight: 600; font-size: 11px; border-bottom: 1px solid var(--line); padding: 6px 4px; }
+  td { padding: 6px 4px; border-bottom: 1px solid #f0f2f5; }
+  th.num, td.num { text-align: right; }
+  .bad { color: #c0392b; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div>
+      <h1>IT Service Desk · Incident Report</h1>
+      <div class="sub">January – June 2025 · Data as of 30 Jun 2025 18:00</div>
+    </div>
+    <div>
+      <label for="prio">Priority</label>
+      <select id="prio">
+        <option value="">All</option>
+        <option>1 - Critical</option>
+        <option>2 - High</option>
+        <option>3 - Moderate</option>
+        <option>4 - Low</option>
+      </select>
+    </div>
+  </header>
+
+  <section class="kpis">
+    <div class="card kpi"><div class="name">Incidents opened</div><div class="value" id="k-total"></div><div class="note">Jan – Jun 2025</div></div>
+    <div class="card kpi"><div class="name">Resolved</div><div class="value" id="k-resolved"></div><div class="note">Resolved or Closed</div></div>
+    <div class="card kpi"><div class="name">Open backlog</div><div class="value" id="k-backlog"></div><div class="note">New, In Progress, On Hold</div></div>
+    <div class="card kpi"><div class="name">Mean time to resolve</div><div class="value" id="k-mttr"></div><div class="note">hours, resolved incidents</div></div>
+    <div class="card kpi"><div class="name">SLA met</div><div class="value" id="k-sla"></div><div class="note">share of incidents</div></div>
+  </section>
+
+  <section class="row a">
+    <div class="card"><h2>Incidents opened by month</h2><div class="hint">stacked by priority</div><div class="chart"><canvas id="c-month"></canvas></div></div>
+    <div class="card"><h2>Incidents by category</h2><div class="hint">all months</div><div class="chart"><canvas id="c-cat"></canvas></div></div>
+  </section>
+
+  <section class="row b">
+    <div class="card"><h2>Assignment groups</h2><div class="hint">sorted by incidents; SLA met below 85% in red</div>
+      <table><thead><tr><th>Group</th><th class="num">Incidents</th><th class="num">Backlog</th><th class="num">MTTR, h</th><th class="num">SLA met</th></tr></thead><tbody id="t-groups"></tbody></table>
+    </div>
+    <div class="card"><h2>Mean time to resolve</h2><div class="hint">hours, by priority</div><div class="chart"><canvas id="c-mttr"></canvas></div></div>
+    <div class="card"><h2>Channel mix</h2><div class="hint">share of incidents</div><div class="chart"><canvas id="c-chan"></canvas></div></div>
+  </section>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const C = Object.fromEntries(DATA.cols.map((c, i) => [c, i]));
+const ROWS = DATA.rows;
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
+const PRIOS = ["1 - Critical", "2 - High", "3 - Moderate", "4 - Low"];
+const PRIO_COLORS = ["#c0392b", "#e67e22", "#2f6db5", "#9fb3c8"];
+const fmt = n => n.toLocaleString("en-US");
+const hours = r => (Date.parse(r[C.Resolved].replace(" ", "T") + "Z") - Date.parse(r[C.Opened].replace(" ", "T") + "Z")) / 36e5;
+const charts = {};
+
+function stats(rows) {
+  const done = rows.filter(r => r[C.Resolved] !== "");
+  const met = rows.filter(r => r[C["Made SLA"]] === "true").length;
+  return {
+    n: rows.length, resolved: done.length, backlog: rows.length - done.length,
+    mttr: done.length ? done.reduce((s, r) => s + hours(r), 0) / done.length : null,
+    sla: rows.length ? 100 * met / rows.length : null,
+  };
+}
+
+function countBy(rows, col) {
+  const m = new Map();
+  rows.forEach(r => m.set(r[col], (m.get(r[col]) || 0) + 1));
+  return m;
+}
+
+function draw(id, config) {
+  if (charts[id]) charts[id].destroy();
+  charts[id] = new Chart(document.getElementById(id), config);
+}
+
+function render() {
+  const p = document.getElementById("prio").value;
+  const rows = p ? ROWS.filter(r => r[C.Priority] === p) : ROWS;
+  const s = stats(rows);
+  document.getElementById("k-total").textContent = fmt(s.n);
+  document.getElementById("k-resolved").textContent = fmt(s.resolved);
+  document.getElementById("k-backlog").textContent = fmt(s.backlog);
+  document.getElementById("k-mttr").textContent = s.mttr === null ? "–" : s.mttr.toFixed(1) + " h";
+  document.getElementById("k-sla").textContent = s.sla === null ? "–" : s.sla.toFixed(1) + "%";
+
+  const prios = p ? [p] : PRIOS;
+  draw("c-month", {
+    type: "bar",
+    data: {
+      labels: MONTHS,
+      datasets: prios.map(pr => ({
+        label: pr, backgroundColor: PRIO_COLORS[PRIOS.indexOf(pr)],
+        data: MONTHS.map((_, i) => rows.filter(r => r[C.Priority] === pr && +r[C.Opened].slice(5, 7) === i + 1).length),
+      })),
+    },
+    options: { maintainAspectRatio: false, scales: { x: { stacked: true, grid: { display: false } }, y: { stacked: true } },
+               plugins: { legend: { position: "bottom" } } },
+  });
+
+  const cats = [...countBy(rows, C.Category)].sort((a, b) => b[1] - a[1]);
+  draw("c-cat", {
+    type: "bar",
+    data: { labels: cats.map(c => c[0]), datasets: [{ label: "Incidents", data: cats.map(c => c[1]), backgroundColor: "#2f6db5" }] },
+    options: { indexAxis: "y", maintainAspectRatio: false, plugins: { legend: { display: false } },
+               scales: { x: { grid: { display: false } }, y: { grid: { display: false } } } },
+  });
+
+  const mttr = prios.map(pr => stats(rows.filter(r => r[C.Priority] === pr)).mttr);
+  draw("c-mttr", {
+    type: "bar",
+    data: { labels: prios, datasets: [{ label: "MTTR, h", data: mttr.map(v => v === null ? null : +v.toFixed(1)), backgroundColor: "#2f6db5" }] },
+    options: { maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { grid: { display: false } } } },
+  });
+
+  const chans = [...countBy(rows, C.Channel)].sort((a, b) => b[1] - a[1]);
+  draw("c-chan", {
+    type: "doughnut",
+    data: { labels: chans.map(c => `${c[0]} ${(100 * c[1] / rows.length).toFixed(1)}%`),
+            datasets: [{ data: chans.map(c => c[1]), backgroundColor: ["#2f6db5", "#5b8fd1", "#8fb3e0", "#bfd3ee", "#dfe8f5"] }] },
+    options: { maintainAspectRatio: false, cutout: "60%", plugins: { legend: { position: "bottom" } } },
+  });
+
+  const groups = [...countBy(rows, C["Assignment Group"])].sort((a, b) => b[1] - a[1]);
+  document.getElementById("t-groups").innerHTML = groups.map(([g]) => {
+    const gs = stats(rows.filter(r => r[C["Assignment Group"]] === g));
+    const sla = gs.sla.toFixed(1) + "%";
+    return `<tr><td>${g}</td><td class="num">${fmt(gs.n)}</td><td class="num">${fmt(gs.backlog)}</td>` +
+           `<td class="num">${gs.mttr === null ? "–" : gs.mttr.toFixed(1)}</td>` +
+           `<td class="num${gs.sla < 85 ? " bad" : ""}">${sla}</td></tr>`;
+  }).join("");
+}
+
+document.getElementById("prio").addEventListener("change", render);
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+profile_version: 1
+based_on: house
+tokens:
+  color:
+    canvas: '#f3f8fc'
+    card_bg: '#fbfdfe'
+    card_border: '#f0f3f9'
+    sidebar_bg: '#373c4d'
+    text: '#333333'
+    subtitle: '#4a505b'
+    accent: '#f4842e'
+    scale_mid: '#d9d9d9'
+    bad: '#f4842e'
+    good: '#40b6ec'
+    mark_muted: '#d3deeb'
+    muted: '#868686'
+    good_text: '#2f8dba'
+    bad_text: '#c96c24'
+  font:
+    dash_title: 17
+    dash_subtitle: 13
+    block_title: 12
+    family: Arial
+  space:
+    card_margin: 2
+    card_padding: 10
+    card_padding_kpi: 10
+theme: cards
+legend: words
+style_book:
+  kind: public
+  url: https://public.tableau.com/views/DemoInsuranceDashboards-BrokerPortfolioRedesign/InsuranceDashboard-PortfolioView
+  dashboard: Insurance Dashboard - Portfolio View
+prefer:
+  table: heatmap
+  comparison: bar_in_bar
+  trend: line
+sources: []

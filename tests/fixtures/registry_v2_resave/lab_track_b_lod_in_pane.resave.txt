@@ -1,0 +1,9 @@
+DIFF     29.6s  lab_b_lod_gen.twbx
+        lab_b_lod_gen.twbx vs Desktop re-save lab_b_lod_gen.resaved.twbx: 10 differences, 6 cosmetic (Desktop's own rewrites), 4 by meaning
+        dropped: 1
+          dropped /workbook/worksheets/worksheet[name=Categories]/table/panes/pane[id=2]/reference-line[scope=per-cell][id=refline2]  <reference-line axis-column='[federated.5mhxtog5or5xqh59bec7b0ljak9a].[usr:Calculation_7776292907711204151:qk]' enable-instant-analytics='true' formula='aver...
+        changed: 2
+          changed /workbook/worksheets/worksheet[name=Regions]/table/style/style-rule[element=axis]/encoding[field=[federated.5mhxtog5or5xqh59bec7b0ljak9a].[Multiple Values]][attr=space] @max: '1' -> '1.0'
+          changed /workbook/worksheets/worksheet[name=Regions]/table/style/style-rule[element=axis]/encoding[field=[federated.5mhxtog5or5xqh59bec7b0ljak9a].[Multiple Values]][attr=space] @min: '0' -> '0.0'
+        added: 1
+          added   /workbook/worksheets/worksheet[name=Categories]/table/panes/pane/reference-line[scope=per-cell][id=refline2]  <reference-line axis-column='[federated.5mhxtog5or5xqh59bec7b0ljak9a].[usr:Calculation_7776292907711204151:qk]' enable-instant-analytics='true' formula='aver...

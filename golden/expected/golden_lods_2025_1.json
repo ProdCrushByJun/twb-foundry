@@ -1,0 +1,33 @@
+{
+ "_source": "pandas over data/sample/sales.csv (golden/expected/make_expected.py, decisions/052): FIXED: total, region, first-day orders",
+ "KPI": {
+  "MIN(Total Sales)": 224709.68,
+  "AGG(Max Region Sales)": 58862.46,
+  "SUM(First Day Orders)": 4
+ },
+ "Share by Category": {
+  "Furniture": 0.3336,
+  "Office": 0.3168,
+  "Tech": 0.3497
+ },
+ "Region Mix": {
+  "East | Furniture": 0.3599,
+  "East | Office": 0.2986,
+  "East | Tech": 0.3415,
+  "North | Furniture": 0.3983,
+  "North | Office": 0.2429,
+  "North | Tech": 0.3588,
+  "South | Furniture": 0.257,
+  "South | Office": 0.3845,
+  "South | Tech": 0.3585,
+  "West | Furniture": 0.3217,
+  "West | Office": 0.34,
+  "West | Tech": 0.3383
+ },
+ "Sales by Region": {
+  "East | Small region": 52353.59,
+  "North | Big region": 58482.58,
+  "South | Big region": 58862.46,
+  "West | Small region": 55011.05
+ }
+}

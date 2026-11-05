@@ -1,0 +1,22 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "block_headers": false,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "Category Share", "type": "bar", "dimension": "Category",
+     "measure": {"field": "Sales", "table_calc": {"type": "percent_of_total"}}},
+    {"name": "Avg Share", "type": "bar", "dimension": "Region",
+     "measure": {"field": "Sales", "agg": "avg", "table_calc": {"type": "percent_of_total"}}},
+    {"name": "Share in Region", "type": "heatmap", "rows": "Region", "cols": "Category",
+     "measure": {"field": "Sales", "table_calc": {"type": "percent_of_total", "along": ["Category"]}}},
+    {"name": "Region Difference", "type": "table", "rows": "Region", "cols": "Category",
+     "measure": {"field": "Sales", "table_calc": {"type": "difference", "along": ["Region"]}}},
+    {"name": "Running Sales", "type": "line", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales", "table_calc": {"type": "running_total"}}},
+    {"name": "MoM Change", "type": "line", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales", "table_calc": {"type": "percent_difference"}}}
+  ],
+  "dashboard": {"theme": "flat", "name": "Table Calcs", "width": 1300, "height": 850,
+                "grid": [["Category Share", "Avg Share", "Share in Region"], ["Region Difference", "Running Sales", "MoM Change"]]}
+}

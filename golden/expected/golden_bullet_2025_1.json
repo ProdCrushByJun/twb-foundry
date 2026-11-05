@@ -1,0 +1,30 @@
+{
+ "_source": "pandas over data/sample/sales_plan.csv (golden/expected/make_expected.py, decisions/052): bullet graph: target per bar, zones at percents of it (decisions/152)",
+ "Managers": {
+  "Anna": 19165.39,
+  "Boris": 16187.23,
+  "Clara": 13689.51,
+  "Denis": 18759.56,
+  "Elena": 14826.01,
+  "Fedor": 17640.42,
+  "Galina": 15580.27,
+  "Igor": 20989.99
+ },
+ "Managers · Reference": {
+  "below target": 4,
+  "below 80% of target": 0,
+  "below 95% of target": 2
+ },
+ "Regions": {
+  "East": 35352.62,
+  "North": 32449.07,
+  "South": 32466.43,
+  "West": 36570.26
+ },
+ "Regions · Reference": {
+  "below target": 3,
+  "below 50% of target": 0,
+  "below 75% of target": 0,
+  "below 90% of target": 0
+ }
+}

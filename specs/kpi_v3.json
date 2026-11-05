@@ -1,0 +1,19 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "sheets": [
+    {"name": "Monthly", "type": "kpi", "style": "cards", "title": "**KPI** trend overview",
+     "date": {"field": "Order Date", "level": "month"}, "compare": "previous", "history": "area",
+     "history_points": ["max", "min"], "history_points_legend": "block", "history_months": "letter",
+     "base_value": true,
+     "measures": [{"field": "Sales", "format": "currency_k"}, {"field": "Profit"}]},
+    {"name": "Yearly", "type": "kpi", "style": "cards", "title": "Units **vs last year**",
+     "date": {"field": "Order Date", "level": "month"}, "compare": "year", "history": "area",
+     "history_months": "letter", "base_value": true,
+     "measures": [{"field": "Quantity", "label": "Units", "good": "down"}]}
+  ],
+  "dashboard": {"name": "KPI v3", "title": "**Sales** KPI", "subtitle": "Sample data, 2024-2025",
+                "theme": "cards", "width": 1250, "height": 800, "row_heights": [1, 1],
+                "grid": [["Monthly"], ["Yearly"]]}
+}

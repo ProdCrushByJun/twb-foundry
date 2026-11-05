@@ -1,0 +1,694 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook locale='en_US' original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='funnel' inline='true' name='federated.r3t33u0s7f9wu1ljwp3e95r7kbqy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='funnel' name='textscan.iziowegkk473ni8wcdx850oeih5x'>
+            <connection class='textscan' directory='Data/sample' filename='funnel.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.iziowegkk473ni8wcdx850oeih5x' name='funnel.csv' table='[funnel#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Month' ordinal='0' />
+            <column datatype='string' name='Channel' ordinal='1' />
+            <column datatype='string' name='Stage' ordinal='2' />
+            <column datatype='integer' name='Users' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel.csv_0499D66777F047BEB5F532F89B98B15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Channel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Channel]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>Channel</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[funnel.csv_0499D66777F047BEB5F532F89B98B15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stage]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>Stage</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[funnel.csv_0499D66777F047BEB5F532F89B98B15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Users]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>Users</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel.csv_0499D66777F047BEB5F532F89B98B15E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Funnel · Start' datatype='real' name='[Calculation_1515902922940092389]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='-SUM([Users]) / 2' />
+      </column>
+      <column caption='Funnel · Conversion' datatype='real' default-format='p0%' name='[Calculation_3177096725431882282]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Users]) / LOOKUP(SUM([Users]), -1)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Social Funnel · Start' datatype='real' name='[Calculation_3283290040477435377]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='-SUM([Users]) / 2' />
+      </column>
+      <column caption='Social Funnel · Conversion' datatype='real' default-format='p0.0%' name='[Calculation_7124727699872633965]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Users]) / WINDOW_SUM(SUM([Users]), FIRST(), FIRST())'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[Stage]' role='dimension' type='nominal' />
+      <column datatype='integer' default-format='n#,##0;-#,##0' name='[Users]' role='measure' type='quantitative' />
+      <column caption='funnel.csv' datatype='table' name='[__tableau_internal_object_id__].[funnel.csv_0499D66777F047BEB5F532F89B98B15E]' role='measure' type='quantitative' />
+      <column-instance column='[Stage]' derivation='None' name='[none:Stage:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Russia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Stage:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Visit&quot;</bucket>
+            <bucket>&quot;Sign-up&quot;</bucket>
+            <bucket>&quot;Trial&quot;</bucket>
+            <bucket>&quot;Purchase&quot;</bucket>
+            <bucket>&quot;Renewal&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <object-graph>
+        <objects>
+          <object caption='funnel.csv' id='funnel.csv_0499D66777F047BEB5F532F89B98B15E'>
+            <properties context=''>
+              <relation connection='textscan.iziowegkk473ni8wcdx850oeih5x' name='funnel.csv' table='[funnel#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Month' ordinal='0' />
+                  <column datatype='string' name='Channel' ordinal='1' />
+                  <column datatype='string' name='Stage' ordinal='2' />
+                  <column datatype='integer' name='Users' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Funnel'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='funnel' name='federated.r3t33u0s7f9wu1ljwp3e95r7kbqy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.r3t33u0s7f9wu1ljwp3e95r7kbqy'>
+            <column caption='Funnel · Start' datatype='real' name='[Calculation_1515902922940092389]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='-SUM([Users]) / 2' />
+            </column>
+            <column caption='Funnel · Conversion' datatype='real' default-format='p0%' name='[Calculation_3177096725431882282]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Users]) / LOOKUP(SUM([Users]), -1)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='string' name='[Stage]' role='dimension' type='nominal' />
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Users]' role='measure' type='quantitative' />
+            <column-instance column='[Stage]' derivation='None' name='[none:Stage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Users]' derivation='Sum' name='[sum:Users:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1515902922940092389]' derivation='User' name='[usr:Calculation_1515902922940092389:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3177096725431882282]' derivation='User' name='[usr:Calculation_3177096725431882282:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[none:Stage:nk]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <computed-sort column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[none:Stage:nk]' direction='DESC' using='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[sum:Users:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_1515902922940092389:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_1515902922940092389:qk]' scope='cols' value='false' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#898989' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' id='refline0' value='0' />
+            <format attr='line-visibility' id='refline0' value='off' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline0' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <encodings>
+              <size column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[sum:Users:qk]' />
+              <text column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[sum:Users:qk]' />
+              <text column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_3177096725431882282:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_1515902922940092389:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='min' id='refline0' label-type='none' percentage-bands='true' scope='per-table' symmetric='false' value-column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_1515902922940092389:qk]' z-order='1'>
+              <reference-line-value percentage='140' />
+            </reference-line>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#0d6b4f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[none:Stage:nk]</rows>
+        <cols>[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_1515902922940092389:qk]</cols>
+      </table>
+      <simple-id uuid='{54AA19F1-27DA-458B-8A22-076B5617EFA6}' />
+    </worksheet>
+    <worksheet name='Social Funnel'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='funnel' name='federated.r3t33u0s7f9wu1ljwp3e95r7kbqy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.r3t33u0s7f9wu1ljwp3e95r7kbqy'>
+            <column caption='Social Funnel · Start' datatype='real' name='[Calculation_3283290040477435377]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='-SUM([Users]) / 2' />
+            </column>
+            <column caption='Social Funnel · Conversion' datatype='real' default-format='p0.0%' name='[Calculation_7124727699872633965]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Users]) / WINDOW_SUM(SUM([Users]), FIRST(), FIRST())'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='string' name='[Channel]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Stage]' role='dimension' type='nominal' />
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Users]' role='measure' type='quantitative' />
+            <column-instance column='[Channel]' derivation='None' name='[none:Channel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Stage]' derivation='None' name='[none:Stage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Users]' derivation='Sum' name='[sum:Users:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3283290040477435377]' derivation='User' name='[usr:Calculation_3283290040477435377:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_7124727699872633965]' derivation='User' name='[usr:Calculation_7124727699872633965:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[none:Stage:nk]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[none:Channel:nk]'>
+            <groupfilter function='member' level='[none:Channel:nk]' member='&quot;Social&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[none:Channel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_3283290040477435377:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_3283290040477435377:qk]' scope='cols' value='false' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#898989' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' id='refline0' value='0' />
+            <format attr='line-visibility' id='refline0' value='off' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline0' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <encodings>
+              <size column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[sum:Users:qk]' />
+              <text column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[sum:Users:qk]' />
+              <text column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_7124727699872633965:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_3283290040477435377:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='min' id='refline0' label-type='none' percentage-bands='true' scope='per-table' symmetric='false' value-column='[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_3283290040477435377:qk]' z-order='1'>
+              <reference-line-value percentage='140' />
+            </reference-line>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#0d6b4f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[none:Stage:nk]</rows>
+        <cols>[federated.r3t33u0s7f9wu1ljwp3e95r7kbqy].[usr:Calculation_3283290040477435377:qk]</cols>
+      </table>
+      <simple-id uuid='{E187914E-9E7A-4312-B7F6-AC6CB3755C71}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Funnels'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+      </style>
+      <size maxheight='560' maxwidth='1100' minheight='560' minwidth='1100' />
+      <zones>
+        <zone h='100000' id='3' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='13929' id='4' type-v2='text' w='98910' x='545' y='1071'>
+            <formatted-text>
+              <run bold='true' fontcolor='#333333' fontsize='18'>Product funnel</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#666666' fontsize='11'>Sample data, 2025</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='6' />
+            </zone-style>
+          </zone>
+          <zone h='83929' id='5' param='horz' type-v2='layout-flow' w='98910' x='545' y='15000'>
+            <zone h='83929' id='6' type-v2='layout-basic' w='98910' x='545' y='15000'>
+              <zone h='83929' id='7' param='vert' type-v2='layout-flow' w='49455' x='545' y='15000'>
+                <zone h='75715' id='8' type-v2='layout-basic' w='45273' x='2636' y='19107'>
+                  <zone forceUpdate='true' h='10893' id='9' type-v2='text' w='45273' x='2636' y='19107'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>Users </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>by stage</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#898989' fontsize='9'>Share of the stage before it under each number</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='64822' id='10' name='Funnel' show-title='false' w='45273' x='2636' y='30000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='83929' id='11' param='vert' type-v2='layout-flow' w='49455' x='50000' y='15000'>
+                <zone h='75715' id='12' type-v2='layout-basic' w='45273' x='52091' y='19107'>
+                  <zone forceUpdate='true' h='10893' id='13' type-v2='text' w='45273' x='52091' y='19107'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>Social: </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>share of visits</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#898989' fontsize='9'>Stages in process order, each against the visits</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='64822' id='14' name='Social Funnel' show-title='false' w='45273' x='52091' y='30000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='6' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{FA76F64F-8F3E-4CE3-BDD7-C0CFFF1E6DEE}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Funnel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{579F6350-9A4A-4885-BEA6-AC6272AAF412}' />
+    </window>
+    <window class='worksheet' name='Social Funnel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E160CB17-13A1-474E-8C2F-2D85AF8A56BB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Funnels'>
+      <viewpoints>
+        <viewpoint name='Funnel'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Social Funnel'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{086C21DD-B184-4951-A802-133EEDE5AFF9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Funnels' width='192'>
+      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
+      37UGNlxTAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

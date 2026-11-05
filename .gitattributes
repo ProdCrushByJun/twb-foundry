@@ -1,0 +1,6 @@
+# Keep Tableau-written goldens and data byte-exact (no CRLF conversion)
+*.twb   -text
+*.twbx  binary
+*.csv   -text
+*.xsd   -text
+tbuilder/templates/** -text

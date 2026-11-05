@@ -1,0 +1,30 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_plan.csv"},
+  "calcs": [
+    {"name": "Vs Plan", "formula": "SUM([Sales]) / SUM([Plan]) - 1", "format": "pct1", "good": "up"},
+    {"name": "Plan Gap", "formula": "SUM([Plan]) / SUM([Sales]) - 1", "format": "pct1", "good": "up"},
+    {"name": "Gap", "formula": "SUM([Sales]) - SUM([Plan])", "format": {"type": "number", "decimals": 0}}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "arrange": "strip",
+     "measures": [{"field": "Sales", "label": "Sales", "format": {"type": "number", "decimals": 0}, "note": "[Vs Plan] vs plan"},
+                  {"field": "Plan", "label": "Plan", "format": {"type": "number", "decimals": 0}, "note": "[Plan Gap] vs sales"}]},
+    {"name": "Managers", "type": "registry", "title": "Managers", "subtitle": "{good:Above} or {bad:below} plan",
+     "rows": ["Manager"], "sort": "desc",
+     "columns": [{"measure": {"field": "Sales", "format": {"type": "number", "decimals": 0}}, "style": "text", "label": "Sales"},
+                 {"measure": {"field": "Gap"}, "style": "text", "label": "Gap"},
+                 {"measure": {"field": "Gap"}, "style": "dot", "shape": "sign", "label": "Status"}]},
+    {"name": "Bullet", "type": "bar", "title": "Sales **vs target**", "subtitle": "{bad:Below target} against the plan line",
+     "dimension": "Manager", "measure": {"field": "Sales"}, "sort": "desc",
+     "reference": {"type": "target", "measure": {"field": "Plan"}}, "color": {"below": "target"}},
+    {"name": "Plan To Sales", "type": "dumbbell", "title": "Plan **to sales**", "subtitle": "From the plan to the {accent:sales}",
+     "dimension": "Manager", "from": {"field": "Plan"}, "to": {"field": "Sales"}, "sort": "desc", "zero": false},
+    {"name": "Gap Walk", "type": "waterfall", "title": "Gap to plan, **step by step**", "subtitle": "{good:Above} and {bad:below} plan by manager",
+     "dimension": "Manager", "measure": {"field": "Gap"}}
+  ],
+  "dashboard": {"name": "Shapes GanttBar", "title": "**Shapes** and Gantt bars", "subtitle": "Sample data, 2025",
+                "theme": "cards", "accent": "#0d6b4f", "width": 1300, "height": 1100, "row_heights": [3, 6, 5],
+                "grid": [["KPI"], ["Managers", "Bullet"], ["Plan To Sales", "Gap Walk"]]}
+}

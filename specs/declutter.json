@@ -1,0 +1,16 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "block_headers": false,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Profit"}]},
+    {"name": "Bar", "type": "bar", "dimension": "Region", "measure": {"field": "Sales"}, "sort": "desc"},
+    {"name": "Line", "type": "line", "date": {"field": "Order Date", "level": "month"}, "measure": {"field": "Sales"}},
+    {"name": "Area", "type": "area", "date": {"field": "Order Date", "level": "month"}, "measure": {"field": "Sales"}, "color": "Category"},
+    {"name": "Table", "type": "table", "rows": "Region", "cols": "Category", "measure": {"field": "Sales"}},
+    {"name": "Heatmap", "type": "heatmap", "rows": "Region", "cols": "Category", "measure": {"field": "Profit"}}
+  ],
+  "dashboard": {"theme": "flat", "name": "Declutter", "width": 1200, "height": 800, "row_heights": [1, 2, 2],
+                "grid": [["KPI"], ["Bar", "Line", "Area"], ["Table", "Heatmap"]]}
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_geo.csv"},
+  "sheets": [
+    {"name": "States", "type": "map", "title": "Sales **by state**", "subtitle": "circle size: sales, color: profit vs 2000",
+     "geo": {"field": "State", "role": "state", "country": "United States"}, "measure": {"field": "Sales"},
+     "color": {"scale": "diverging", "center": 2000, "measure": {"field": "Profit"}}},
+    {"name": "Countries", "type": "map", "style": "filled", "title": "Profit **by ship country**",
+     "subtitle": "teal: over 3000 profit, red: under",
+     "geo": {"field": "Ship Country", "role": "country"}, "measure": {"field": "Profit"},
+     "color": {"scale": "diverging", "center": 3000}},
+    {"name": "Cities", "type": "map", "title": "Sales **by city**", "subtitle": "darker: more sales",
+     "geo": {"field": "City", "lat": "Latitude", "lon": "Longitude"}, "measure": {"field": "Sales"},
+     "size": false, "color": {"scale": "sequential"}}
+  ],
+  "dashboard": {"name": "Maps", "title": "**Maps** colored by a measure", "subtitle": "Sample data, 2025",
+                "width": 1400, "height": 700, "accent": "#c4572a",
+                "grid": [["States", "Countries", "Cities"]]}
+}

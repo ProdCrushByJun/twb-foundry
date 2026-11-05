@@ -1,0 +1,56 @@
+{
+ "_source": "pandas over data/sample/sales_geo.csv (golden/expected/make_expected.py, decisions/052): states sized by sales and colored by profit, countries by profit, cities",
+ "States": {
+  "Arizona": 9379.91,
+  "California": 53190.88,
+  "Colorado": 13170.71,
+  "Florida": 32190.09,
+  "Georgia": 19964.82,
+  "Illinois": 24000.14,
+  "Massachusetts": 26025.54,
+  "Minnesota": 4612.39,
+  "New York": 30493.61,
+  "Ohio": 13139.73,
+  "Texas": 41003.19,
+  "Washington": 16348.34
+ },
+ "States · Color": {
+  "Arizona": 893.66,
+  "California": 4805.82,
+  "Colorado": 964.15,
+  "Florida": 3381.54,
+  "Georgia": 2871.8,
+  "Illinois": 1735.85,
+  "Massachusetts": 1359.26,
+  "Minnesota": 489.66,
+  "New York": 3631.49,
+  "Ohio": 1719.09,
+  "Texas": 3579.19,
+  "Washington": 1874.24
+ },
+ "Countries": {
+  "Australia": 694.34,
+  "Brazil": 2640.93,
+  "Canada": 4718.27,
+  "France": 1734.68,
+  "Germany": 2928.28,
+  "Japan": 885.26,
+  "Mexico": 1209.4,
+  "United Kingdom": 2301.1,
+  "United States": 10193.49
+ },
+ "Cities": {
+  "Atlanta": 19964.82,
+  "Boston": 26025.54,
+  "Buffalo": 30493.61,
+  "Chicago": 24000.14,
+  "Columbus": 13139.73,
+  "Denver": 13170.71,
+  "Houston": 41003.19,
+  "Los Angeles": 53190.88,
+  "Miami": 32190.09,
+  "Minneapolis": 4612.39,
+  "Phoenix": 9379.91,
+  "Seattle": 16348.34
+ }
+}

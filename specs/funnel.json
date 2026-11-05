@@ -1,0 +1,16 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/funnel.csv"},
+  "fields": {"Stage": {"order": ["Visit", "Sign-up", "Trial", "Purchase", "Renewal"]}},
+  "sheets": [
+    {"name": "Funnel", "type": "funnel", "title": "Users **by stage**", "subtitle": "Share of the stage before it under each number",
+     "dimension": "Stage", "measure": {"field": "Users", "format": {"type": "number", "decimals": 0}}},
+    {"name": "Social Funnel", "type": "funnel", "title": "Social: **share of visits**", "subtitle": "Stages in process order, each against the visits",
+     "dimension": "Stage", "measure": {"field": "Users", "format": {"type": "number", "decimals": 0}}, "sort": "none", "conversion": "first",
+     "filters": [{"field": "Channel", "default": ["Social"]}]}
+  ],
+  "dashboard": {"name": "Funnels", "title": "**Product funnel**", "subtitle": "Sample data, 2025",
+                "theme": "cards", "accent": "#0d6b4f", "width": 1100, "height": 560,
+                "grid": [["Funnel", "Social Funnel"]]}
+}

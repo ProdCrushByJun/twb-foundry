@@ -1,0 +1,45 @@
+{
+  "_source": "Tableau Desktop 2025.1, each book opened without clicks and captured with PrintWindow (decisions/048 capture, decisions/056); numbers as Desktop printed them. Bars carry no labels: their Null values are checked through the table totals of the same rows.",
+  "spec_marks.json": {
+    "KPI": {"SUM(Sales)": 224710, "SUM(Quantity)": 2610},
+    "Matrix": {
+      "Null | Furniture": 2172, "Null | Office": 1935, "Null | Tech": 4190, "Null | Total": 8297,
+      "East | Null": 564, "East | Furniture": 18502, "East | Office": 15633, "East | Tech": 16503, "East | Total": 51202,
+      "North | Null": 2748, "North | Furniture": 22457, "North | Office": 12571, "North | Tech": 19096, "North | Total": 56872,
+      "South | Null": 1287, "South | Furniture": 14587, "South | Office": 21759, "South | Tech": 19820, "South | Total": 57453,
+      "West | Null": 1423, "West | Furniture": 16402, "West | Office": 17044, "West | Tech": 16018, "West | Total": 50886,
+      "Total | Null": 6022, "Total | Furniture": 74119, "Total | Office": 68942, "Total | Tech": 75627,
+      "Total | Total": 224710
+    }
+  },
+  "spec_more.json": {
+    "Registry": {
+      "South": {"#": 1, "Sales": 57453, "Share": 0.26}, "North": {"#": 2, "Sales": 56872, "Share": 0.25},
+      "East": {"#": 3, "Sales": 51202, "Share": 0.23}, "West": {"#": 4, "Sales": 50886, "Share": 0.23},
+      "Null": {"#": 5, "Sales": 8297, "Share": 0.04}
+    },
+    "Subtotals": {
+      "Null | Furniture": {"Sales": 2172}, "Null | Office": {"Sales": 1935}, "Null | Tech": {"Sales": 4190},
+      "Null | Total": {"Sales": 8297}, "East | Null": {"Sales": 564}, "East | Total": {"Sales": 51202},
+      "North | Null": {"Sales": 2748}, "South | Null": {"Sales": 1287}, "West | Null": {"Sales": 1423}
+    },
+    "Heat": {"Null | Furniture": 2172, "East | Null": 564, "North | Null": 2748, "South | Null": 1287,
+             "East | Furniture": 18502, "North | Furniture": 22457},
+    "Heat · Row Totals": {"Null": 8297, "East": 51202},
+    "Heat · Column Totals": {"Furniture": 74119, "Office": 68942},
+    "Heat · Column Totals · Reference": {"Average": 56177}
+  },
+  "spec_filters.json": {
+    "KPI": {"SUM(Sales)": 79284, "SUM(Quantity)": 947}
+  },
+  "spec_join.json": {
+    "KPI": {"SUM(Sales)": 224710, "SUM(Quantity)": 2610},
+    "Matrix": {
+      "Null | Furniture": 17695, "Null | Office": 18705, "Null | Tech": 18611, "Null | Total": 55011,
+      "Anna Petrova | Furniture": 18840, "Anna Petrova | Office": 15633, "Anna Petrova | Tech": 17881, "Anna Petrova | Total": 52354,
+      "Ivan Sokolov | Furniture": 23294, "Ivan Sokolov | Office": 14205, "Ivan Sokolov | Tech": 20983, "Ivan Sokolov | Total": 58483,
+      "Maria Ivanova | Furniture": 15128, "Maria Ivanova | Office": 22634, "Maria Ivanova | Tech": 21100, "Maria Ivanova | Total": 58862,
+      "Total | Furniture": 74957, "Total | Office": 71178, "Total | Tech": 78575, "Total | Total": 224710
+    }
+  }
+}

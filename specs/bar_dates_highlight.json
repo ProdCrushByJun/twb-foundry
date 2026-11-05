@@ -1,0 +1,23 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "calcs": [
+    {"name": "Size", "formula": "IF [Sales] >= 500 THEN \"Large\" ELSEIF [Sales] >= 200 THEN \"Medium\" ELSE \"Small\" END"}
+  ],
+  "fields": {
+    "Size": {"order": ["Small", "Medium", "Large"]}
+  },
+  "sheets": [
+    {"name": "Sales by Month", "type": "bar", "title": "Sales **by month**", "subtitle": "{accent:Tech} vs the other categories",
+     "dimension": "Order Date", "date_level": "month", "orientation": "vertical", "measure": {"field": "Sales"},
+     "color": {"field": "Category", "highlight": ["Tech"]}},
+    {"name": "Orders by Size", "type": "bar", "title": "Orders **by size**", "subtitle": "small, medium, large",
+     "dimension": "Size", "measure": {"field": "Sales", "agg": "count"}, "sort": "none"},
+    {"name": "Sales by Quarter", "type": "bar", "title": "Sales **by quarter**", "subtitle": "stacked by size",
+     "dimension": "Order Date", "date_level": "quarter", "measure": {"field": "Sales"}, "color": "Size"}
+  ],
+  "dashboard": {"name": "Bar Dates Highlight", "title": "**Bars** along a date", "subtitle": "Sample data, 2025, 500 orders",
+                "width": 1200, "height": 800,
+                "grid": [["Sales by Month"], ["Orders by Size", "Sales by Quarter"]]}
+}

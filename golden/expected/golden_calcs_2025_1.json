@@ -1,0 +1,39 @@
+{
+ "_source": "pandas over data/sample/sales.csv (golden/expected/make_expected.py, decisions/052): ratio calc, IF calc, bin calc",
+ "KPI": {
+  "SUM(Sales)": 224709.68,
+  "AGG(Profit Ratio)": 0.1048,
+  "SUM(Tech Sales)": 78575.01
+ },
+ "Ratio by Region": {
+  "East": 0.0931,
+  "North": 0.1314,
+  "South": 0.1093,
+  "West": 0.0828
+ },
+ "Sales by Size": {
+  "Large | Furniture": 51056.51,
+  "Large | Office": 43837.36,
+  "Large | Tech": 53121.66,
+  "Medium | Furniture": 16967.6,
+  "Medium | Office": 19156.8,
+  "Medium | Tech": 15181.16,
+  "Small | Furniture": 6932.81,
+  "Small | Office": 8183.59,
+  "Small | Tech": 10272.19
+ },
+ "Ratio Matrix": {
+  "Large | East": 0.0768,
+  "Large | North": 0.1417,
+  "Large | South": 0.119,
+  "Large | West": 0.0864,
+  "Medium | East": 0.127,
+  "Medium | North": 0.0973,
+  "Medium | South": 0.09,
+  "Medium | West": 0.0619,
+  "Small | East": 0.1007,
+  "Small | North": 0.1015,
+  "Small | South": 0.1016,
+  "Small | West": 0.1077
+ }
+}

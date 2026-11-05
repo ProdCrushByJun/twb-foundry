@@ -1,0 +1,25 @@
+{
+ "_source": "pandas over data/sample/sales_products.csv (golden/expected/make_expected.py, decisions/052): a calc with aliases, order and colors, groups over a calc and a number, a group filter",
+ "Sizes": {
+  "Large order": 93229.52,
+  "Medium order": 67391.19,
+  "Small order": 9926.86
+ },
+ "Tiers": {
+  "The rest": 77318.05,
+  "Top orders": 93229.52
+ },
+ "Bands": {
+  "1-4 units": 75203.13,
+  "5-8 units": 75326.51,
+  "9+ units": 20017.93
+ },
+ "Matrix": {
+  "The rest | 1-4 units": 35807.63,
+  "The rest | 5-8 units": 29877.85,
+  "The rest | 9+ units": 11632.57,
+  "Top orders | 1-4 units": 39395.5,
+  "Top orders | 5-8 units": 45448.66,
+  "Top orders | 9+ units": 8385.36
+ }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_geo.csv"},
+  "sheets": [
+    {"name": "States", "type": "map", "title": "Sales **by state**", "subtitle": "circle size: sales",
+     "geo": {"field": "State", "role": "state", "country": "United States"}, "measure": {"field": "Sales"}},
+    {"name": "Countries", "type": "map", "style": "filled", "title": "Sales **by ship country**",
+     "subtitle": "darker: more sales",
+     "geo": {"field": "Ship Country", "role": "country"}, "measure": {"field": "Sales"}},
+    {"name": "Cities", "type": "map", "title": "Profit **by city**", "subtitle": "the data's latitude / longitude",
+     "geo": {"field": "City", "lat": "Latitude", "lon": "Longitude"}, "measure": {"field": "Profit"}}
+  ],
+  "dashboard": {"name": "Maps", "title": "**Maps**", "subtitle": "Sample data, 2025",
+                "width": 1400, "height": 700,
+                "grid": [["States", "Countries", "Cities"]]}
+}

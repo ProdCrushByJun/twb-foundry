@@ -1,0 +1,24 @@
+[
+ {
+  "op": "reference_line",
+  "sheet": "Lead Time Heat · Row Totals",
+  "width": 0,
+  "label": false
+ },
+ {
+  "op": "reference_line",
+  "sheet": "Lead Time Heat · Column Totals",
+  "width": 0,
+  "label": false
+ },
+ {
+  "op": "axis",
+  "sheet": "Cancelled 2017 Bars",
+  "title": ""
+ },
+ {
+  "op": "axis",
+  "sheet": "Change Bars",
+  "title": ""
+ }
+]

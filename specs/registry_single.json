@@ -1,0 +1,33 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "calcs": [
+    {"name": "Sales 2025", "formula": "SUM(IF YEAR([Order Date]) = 2025 THEN [Sales] END)", "format": "number"},
+    {"name": "Sales 2024", "formula": "SUM(IF YEAR([Order Date]) = 2024 THEN [Sales] END)", "format": "number"}
+  ],
+  "sheets": [
+    {"name": "One Text", "type": "registry", "title": "Sales by region", "rows": ["Region"],
+     "columns": [{"measure": {"field": "Sales"}, "style": "text", "label": "Sales"}]},
+    {"name": "One Text Top", "type": "registry", "title": "Top 3 categories", "rows": ["Category"], "top": {"n": 3},
+     "columns": [{"measure": {"field": "Sales"}, "style": "text", "label": "Sales"}]},
+    {"name": "One Text Nested", "type": "registry", "title": "Region by category", "rows": ["Region", "Category"],
+     "columns": [{"measure": {"field": "Sales"}, "style": "text", "label": "Sales"}],
+     "totals": {"grand": "rows", "sub": ["Region"]}},
+    {"name": "One Bar", "type": "registry", "title": "Profit by region", "rows": ["Region"], "sort": "desc",
+     "columns": [{"measure": {"field": "Profit"}, "style": "bar", "label": "Profit"}]},
+    {"name": "One Bar Inside", "type": "registry", "title": "2025 by region", "rows": ["Region"], "sort": "desc",
+     "columns": [{"measure": {"field": "Sales 2025"}, "style": "bar_inside", "label": "Sales"}]},
+    {"name": "One Tick", "type": "registry", "title": "2025 against 2024", "rows": ["Region"], "sort": "desc",
+     "columns": [{"measure": {"field": "Sales 2025"}, "style": "tick", "label": "Sales vs PY",
+                  "base": {"field": "Sales 2024"}}]},
+    {"name": "One Dot", "type": "registry", "title": "Average profit", "rows": ["Region"],
+     "columns": [{"measure": {"field": "Profit", "agg": "avg"}, "style": "dot", "label": "Avg profit"}]},
+    {"name": "One Track", "type": "registry", "title": "Share of 2025", "rows": ["Region"], "sort": "desc",
+     "columns": [{"measure": {"field": "Sales 2025"}, "style": "track", "label": "Of total"}]}
+  ],
+  "dashboard": {"name": "Registry single", "title": "**Registry** with one column",
+                "subtitle": "Sample data, 2024-2025", "width": 1300, "height": 900,
+                "grid": [["One Text", "One Text Top", "One Text Nested", "One Bar"],
+                         ["One Bar Inside", "One Tick", "One Dot", "One Track"]]}
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "sheets": [
+    {"name": "Monthly", "type": "kpi", "style": "cards", "title": "Latest month **against target**",
+     "date": {"field": "Order Date", "level": "month"}, "compare": "previous", "history": "line",
+     "measures": [{"field": "Sales", "format": "currency_k", "target": {"value": 15000}},
+                  {"field": "Profit", "target": {"value": 1200}},
+                  {"field": "Quantity", "label": "Units", "good": "down", "target": {"value": 100}}]},
+    {"name": "Yearly", "type": "kpi", "style": "cards", "title": "Year to date **against plan**",
+     "date": {"field": "Order Date", "level": "year"}, "compare": "previous", "progress": "thin",
+     "measures": [{"field": "Sales", "format": "currency_k", "target": {"value": 200000}},
+                  {"field": "Profit", "target": {"value": 15000}}]}
+  ],
+  "dashboard": {"name": "KPI Progress", "title": "**Sales** against target", "subtitle": "Sample data, 2024-2025",
+                "theme": "cards", "theme_font": "Arial", "width": 1250, "height": 800, "row_heights": [1, 1],
+                "grid": [["Monthly"], ["Yearly"]]}
+}

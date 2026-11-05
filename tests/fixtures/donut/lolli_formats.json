@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../../../data/sample/sales_2y.csv"},
+  "sheets": [
+    {"name": "Sales auto", "type": "lollipop", "dimension": "Region", "measure": {"field": "Sales"}, "sort": "desc"},
+    {"name": "Sales k", "type": "lollipop", "dimension": "Region", "measure": {"field": "Sales", "format": "currency_k"}, "sort": "desc"},
+    {"name": "Profit by category", "type": "lollipop", "dimension": "Category", "measure": {"field": "Profit"}, "sort": "desc"}
+  ],
+  "dashboard": {"name": "Formats", "title": "Lollipop value formats", "width": 1400, "height": 500,
+                "grid": [["Sales auto", "Sales k", "Profit by category"]]}
+}

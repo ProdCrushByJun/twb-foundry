@@ -1,0 +1,24 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_products.csv"},
+  "sheets": [
+    {"name": "Products", "type": "scatter", "title": "Quantity **vs sales** by product",
+     "subtitle": "dashed lines: the averages; {accent:Iris} highlighted",
+     "detail": "Product", "x": {"field": "Quantity"}, "y": {"field": "Sales", "format": "currency"},
+     "color": {"highlight": ["Iris"]}, "axis_lines": {"label": "Avg:"}},
+    {"name": "Profitability", "type": "scatter", "title": "Sales **vs profit**",
+     "subtitle": "circle size: quantity; dashed: the medians; solid: the trend",
+     "detail": "Product", "x": {"field": "Sales"}, "y": {"field": "Profit"}, "size": {"field": "Quantity"},
+     "axis_lines": {"type": "median"}, "trend": true},
+    {"name": "Regions", "type": "scatter", "title": "Products **by region**",
+     "subtitle": "a point per product and region",
+     "detail": "Product", "x": {"field": "Quantity"}, "y": {"field": "Sales"}, "color": "Region"},
+    {"name": "Margin", "type": "scatter", "title": "Quantity **vs profit**",
+     "subtitle": "darker: more sales",
+     "detail": "Product", "x": {"field": "Quantity"}, "y": {"field": "Profit"}, "color": {"field": "Sales"}}
+  ],
+  "dashboard": {"name": "Scatter", "title": "**Scatter**", "subtitle": "Sample data, 2025",
+                "width": 1400, "height": 900,
+                "grid": [["Products", "Profitability"], ["Regions", "Margin"]]}
+}

@@ -1,0 +1,89 @@
+{
+ "_source": "orders.csv via pandas (make_expected.py); the page shows the same numbers (decisions/097)",
+ "spec.json": {
+  "KPI": {
+   "SUM(Revenue)": 2509545.35,
+   "COUNT(Order ID)": 1115,
+   "AGG(Avg Order Value)": 2251,
+   "AGG(Profit Margin)": 0.291
+  },
+  "By Month": {
+   "2025-01": 195,
+   "2025-02": 121,
+   "2025-03": 206,
+   "2025-04": 173,
+   "2025-05": 166,
+   "2025-06": 228,
+   "2025-07": 186,
+   "2025-08": 296,
+   "2025-09": 171,
+   "2025-10": 252,
+   "2025-11": 216,
+   "2025-12": 300
+  },
+  "By Category": {
+   "Technology": 1598,
+   "Furniture": 657,
+   "Services": 142,
+   "Office Supplies": 113
+  },
+  "Channel Mix": {
+   "Online": 1087256,
+   "Partner": 369470,
+   "Phone": 283544,
+   "Retail Store": 769276
+  },
+  "Top Products": {
+   "Laptop Pro 14": {
+    "Revenue, $K": 1094,
+    "Orders": 104,
+    "Margin": 0.239
+   },
+   "Monitor 27": {
+    "Revenue, $K": 296,
+    "Orders": 107,
+    "Margin": 0.279
+   },
+   "Ergo Chair": {
+    "Revenue, $K": 279,
+    "Orders": 76,
+    "Margin": 0.277
+   },
+   "Standing Desk": {
+    "Revenue, $K": 234,
+    "Orders": 61,
+    "Margin": 0.288
+   },
+   "Docking Station": {
+    "Revenue, $K": 178,
+    "Orders": 101,
+    "Margin": 0.353
+   },
+   "Bookcase": {
+    "Revenue, $K": 114,
+    "Orders": 73,
+    "Margin": 0.229
+   },
+   "Installation": {
+    "Revenue, $K": 88,
+    "Orders": 36,
+    "Margin": 0.561
+   },
+   "Label Printer": {
+    "Revenue, $K": 86,
+    "Orders": 91,
+    "Margin": 0.324
+   },
+   "Extended Warranty": {
+    "Revenue, $K": 54,
+    "Orders": 36,
+    "Margin": 0.683
+   },
+   "Desk Lamp": {
+    "Revenue, $K": 30,
+    "Orders": 63,
+    "Margin": 0.48
+   }
+  }
+ }
+}

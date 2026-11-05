@@ -1,0 +1,2131 @@
+Order ID,Order Date,Region,Category,Product,Quantity,Sales,Profit
+US-10001,2024-01-01,East,Technology,Monitor,1,317.05,45.4
+US-10002,2024-01-01,East,Technology,Printer,5,1138.27,-36.39
+US-10003,2024-01-01,East,Furniture,Chair,2,432.32,49.93
+US-10004,2024-01-02,South,Technology,Monitor,1,320.06,58.74
+US-10005,2024-01-02,South,Technology,Laptop,1,828.43,-2.48
+US-10006,2024-01-02,South,Technology,Phone,1,353.74,44.65
+US-10007,2024-01-03,East,Technology,Laptop,1,787.83,-10.39
+US-10008,2024-01-04,South,Furniture,Chair,1,225.06,40.04
+US-10009,2024-01-04,East,Technology,Phone,3,1139.54,148.25
+US-10010,2024-01-04,Central,Technology,Printer,2,502.98,55.84
+US-10011,2024-01-05,South,Office Supplies,Binder,2,79.42,26.06
+US-10012,2024-01-05,West,Office Supplies,Pen Set,5,111.64,26.76
+US-10013,2024-01-05,East,Technology,Monitor,3,981.67,164.4
+US-10014,2024-01-05,West,Technology,Laptop,2,1981.38,194.3
+US-10015,2024-01-06,East,Furniture,Chair,5,897.79,9.55
+US-10016,2024-01-06,South,Office Supplies,Binder,3,130.31,39.16
+US-10017,2024-01-07,Central,Office Supplies,Binder,2,76.4,20.68
+US-10018,2024-01-08,West,Office Supplies,Pen Set,1,22.75,4.51
+US-10019,2024-01-08,East,Office Supplies,Pen Set,2,45.0,8.35
+US-10020,2024-01-09,East,Office Supplies,Paper,1,24.49,4.98
+US-10021,2024-01-09,East,Furniture,Desk,2,815.38,-51.33
+US-10022,2024-01-09,Central,Office Supplies,Paper,2,56.98,16.64
+US-10023,2024-01-09,East,Technology,Printer,2,453.6,-21.96
+US-10024,2024-01-09,Central,Office Supplies,Binder,3,120.45,34.24
+US-10025,2024-01-09,East,Technology,Monitor,2,618.98,127.22
+US-10026,2024-01-10,Central,Office Supplies,Binder,4,174.5,52.93
+US-10027,2024-01-11,West,Office Supplies,Paper,2,60.6,21.13
+US-10028,2024-01-11,East,Office Supplies,Paper,3,71.51,15.26
+US-10029,2024-01-12,South,Furniture,Chair,1,188.82,-3.24
+US-10030,2024-01-12,West,Office Supplies,Paper,2,60.86,20.26
+US-10031,2024-01-12,East,Office Supplies,Paper,5,158.95,54.7
+US-10032,2024-01-13,South,Office Supplies,Binder,1,35.48,7.66
+US-10033,2024-01-13,Central,Technology,Printer,2,554.94,57.59
+US-10034,2024-01-13,East,Technology,Laptop,2,1888.72,259.75
+US-10035,2024-01-13,East,Office Supplies,Pen Set,1,24.5,7.04
+US-10036,2024-01-14,East,Technology,Laptop,1,828.21,47.82
+US-10037,2024-01-15,East,Furniture,Desk,3,1367.53,-2.04
+US-10038,2024-01-17,Central,Furniture,Chair,2,455.18,80.12
+US-10039,2024-01-18,West,Office Supplies,Storage Box,2,126.45,30.59
+US-10040,2024-01-18,South,Office Supplies,Storage Box,2,126.3,21.93
+US-10041,2024-01-19,West,Office Supplies,Binder,1,38.04,10.05
+US-10042,2024-01-19,South,Office Supplies,Binder,3,130.77,38.08
+US-10043,2024-01-19,West,Office Supplies,Storage Box,3,171.83,27.09
+US-10044,2024-01-19,Central,Office Supplies,Pen Set,1,24.21,6.36
+US-10045,2024-01-19,South,Technology,Monitor,2,702.77,133.99
+US-10046,2024-01-19,South,Technology,Monitor,2,565.43,68.3
+US-10047,2024-01-19,West,Technology,Phone,4,1752.59,418.83
+US-10048,2024-01-20,East,Furniture,Bookcase,1,347.29,25.51
+US-10049,2024-01-20,South,Technology,Phone,1,426.89,96.31
+US-10050,2024-01-21,South,Technology,Printer,3,747.35,46.97
+US-10051,2024-01-22,West,Office Supplies,Binder,2,79.29,25.4
+US-10052,2024-01-22,Central,Technology,Laptop,1,734.24,-2.65
+US-10053,2024-01-23,West,Technology,Phone,2,810.71,167.88
+US-10054,2024-01-23,Central,Technology,Monitor,1,292.89,31.73
+US-10055,2024-01-23,East,Office Supplies,Paper,1,25.96,7.6
+US-10056,2024-01-23,East,Office Supplies,Paper,1,28.87,8.14
+US-10057,2024-01-23,West,Office Supplies,Binder,5,218.32,68.08
+US-10058,2024-01-24,South,Technology,Phone,3,1276.7,281.99
+US-10059,2024-01-25,East,Office Supplies,Binder,3,100.59,14.76
+US-10060,2024-01-25,East,Technology,Phone,2,807.21,192.87
+US-10061,2024-01-25,East,Office Supplies,Binder,1,38.75,10.41
+US-10062,2024-01-25,East,Furniture,Desk,5,2207.83,-16.81
+US-10063,2024-01-26,West,Office Supplies,Binder,1,32.46,5.28
+US-10064,2024-01-27,East,Office Supplies,Binder,1,43.96,13.02
+US-10065,2024-01-28,East,Furniture,Desk,1,408.99,-27.62
+US-10066,2024-01-29,South,Technology,Laptop,3,3074.48,408.64
+US-10067,2024-01-30,West,Technology,Monitor,1,311.08,57.48
+US-10068,2024-01-30,West,Office Supplies,Paper,1,27.52,9.18
+US-10069,2024-01-30,West,Technology,Printer,2,505.08,48.97
+US-10070,2024-01-31,Central,Furniture,Chair,1,190.11,-2.21
+US-10071,2024-01-31,West,Furniture,Table,2,821.82,24.3
+US-10072,2024-01-31,South,Office Supplies,Binder,2,84.16,25.02
+US-10073,2024-01-31,South,Furniture,Desk,2,923.25,22.42
+US-10074,2024-02-01,West,Technology,Phone,2,779.7,182.79
+US-10075,2024-02-01,South,Technology,Phone,2,868.05,183.25
+US-10076,2024-02-01,Central,Technology,Printer,2,560.69,68.54
+US-10077,2024-02-03,East,Furniture,Desk,2,1098.34,117.01
+US-10078,2024-02-04,South,Office Supplies,Paper,3,93.29,31.89
+US-10079,2024-02-04,South,Furniture,Desk,2,957.54,33.31
+US-10080,2024-02-06,Central,Office Supplies,Storage Box,2,133.54,33.46
+US-10081,2024-02-07,East,Furniture,Bookcase,1,369.55,41.03
+US-10082,2024-02-07,East,Office Supplies,Binder,2,82.16,24.82
+US-10083,2024-02-07,East,Technology,Printer,1,254.52,15.98
+US-10084,2024-02-08,East,Office Supplies,Binder,3,130.26,40.25
+US-10085,2024-02-08,East,Furniture,Bookcase,1,343.11,22.49
+US-10086,2024-02-08,East,Technology,Phone,1,306.62,22.85
+US-10087,2024-02-08,Central,Furniture,Table,3,1056.25,-102.0
+US-10088,2024-02-09,Central,Office Supplies,Pen Set,1,20.18,2.05
+US-10089,2024-02-09,Central,Office Supplies,Binder,2,68.31,11.32
+US-10090,2024-02-09,West,Technology,Printer,1,255.47,33.13
+US-10091,2024-02-10,East,Technology,Phone,2,767.36,176.48
+US-10092,2024-02-11,East,Office Supplies,Binder,4,178.13,57.84
+US-10093,2024-02-11,West,Technology,Phone,1,348.5,15.97
+US-10094,2024-02-12,West,Office Supplies,Binder,1,41.09,13.37
+US-10095,2024-02-12,Central,Furniture,Desk,1,516.27,44.39
+US-10096,2024-02-13,East,Technology,Laptop,3,2999.57,469.78
+US-10097,2024-02-13,South,Technology,Laptop,5,4950.92,654.23
+US-10098,2024-02-13,Central,Office Supplies,Binder,1,38.48,8.19
+US-10099,2024-02-15,West,Technology,Laptop,1,915.57,58.08
+US-10100,2024-02-15,East,Office Supplies,Paper,1,28.31,7.69
+US-10101,2024-02-15,South,Technology,Printer,3,803.08,90.43
+US-10102,2024-02-18,Central,Technology,Printer,1,269.56,30.88
+US-10103,2024-02-18,South,Technology,Phone,2,638.32,35.24
+US-10104,2024-02-19,East,Furniture,Desk,2,951.01,2.62
+US-10105,2024-02-19,East,Office Supplies,Paper,1,30.26,10.92
+US-10106,2024-02-19,West,Technology,Printer,4,1031.62,125.32
+US-10107,2024-02-19,East,Technology,Monitor,4,1379.89,263.66
+US-10108,2024-02-19,West,Furniture,Bookcase,2,775.63,96.32
+US-10109,2024-02-20,East,Furniture,Bookcase,2,756.02,93.34
+US-10110,2024-02-20,South,Office Supplies,Binder,2,64.29,10.58
+US-10111,2024-02-20,Central,Technology,Phone,1,380.68,56.39
+US-10112,2024-02-21,West,Technology,Monitor,1,352.84,73.94
+US-10113,2024-02-22,Central,Furniture,Chair,3,598.15,11.71
+US-10114,2024-02-22,East,Office Supplies,Pen Set,2,36.38,3.67
+US-10115,2024-02-22,West,Furniture,Table,2,946.75,33.47
+US-10116,2024-02-22,Central,Office Supplies,Paper,2,51.13,11.14
+US-10117,2024-02-22,South,Office Supplies,Storage Box,2,117.21,25.4
+US-10118,2024-02-23,West,Furniture,Desk,1,548.27,41.43
+US-10119,2024-02-24,South,Office Supplies,Binder,1,44.53,14.32
+US-10120,2024-02-24,East,Technology,Phone,3,1224.39,258.45
+US-10121,2024-02-25,South,Office Supplies,Paper,1,28.05,9.0
+US-10122,2024-02-25,West,Furniture,Chair,2,469.84,71.82
+US-10123,2024-02-26,West,Technology,Laptop,1,1048.43,135.65
+US-10124,2024-02-26,East,Technology,Monitor,1,335.8,60.52
+US-10125,2024-02-26,West,Technology,Phone,1,393.52,82.25
+US-10126,2024-02-26,West,Furniture,Table,4,1860.0,109.08
+US-10127,2024-02-26,West,Technology,Monitor,1,276.61,26.95
+US-10128,2024-02-27,West,Technology,Monitor,2,619.36,124.05
+US-10129,2024-02-27,Central,Furniture,Chair,1,220.47,22.6
+US-10130,2024-02-27,South,Office Supplies,Binder,4,131.6,18.21
+US-10131,2024-02-27,East,Technology,Phone,1,424.57,87.28
+US-10132,2024-02-27,East,Technology,Phone,1,393.05,90.18
+US-10133,2024-02-28,West,Furniture,Chair,1,227.47,36.48
+US-10134,2024-02-28,South,Furniture,Chair,4,911.09,62.79
+US-10135,2024-02-29,Central,Office Supplies,Paper,2,53.4,14.43
+US-10136,2024-02-29,West,Technology,Monitor,2,593.8,56.11
+US-10137,2024-02-29,Central,Office Supplies,Paper,1,30.51,10.87
+US-10138,2024-02-29,Central,Office Supplies,Binder,1,42.7,13.82
+US-10139,2024-03-01,Central,Furniture,Bookcase,2,677.39,60.0
+US-10140,2024-03-01,Central,Technology,Phone,1,375.21,71.0
+US-10141,2024-03-02,East,Technology,Laptop,3,2960.14,295.53
+US-10142,2024-03-02,Central,Furniture,Chair,5,1209.3,214.38
+US-10143,2024-03-03,East,Furniture,Chair,2,472.36,75.83
+US-10144,2024-03-04,West,Technology,Phone,2,860.07,180.94
+US-10145,2024-03-04,East,Furniture,Chair,3,658.13,90.73
+US-10146,2024-03-05,South,Furniture,Table,5,2373.4,102.92
+US-10147,2024-03-05,West,Technology,Printer,1,287.83,34.28
+US-10148,2024-03-06,Central,Furniture,Chair,2,436.46,57.13
+US-10149,2024-03-07,East,Office Supplies,Binder,2,65.74,9.22
+US-10150,2024-03-07,West,Technology,Monitor,2,619.3,73.22
+US-10151,2024-03-07,West,Office Supplies,Binder,5,185.97,47.67
+US-10152,2024-03-07,Central,Office Supplies,Binder,1,41.22,12.52
+US-10153,2024-03-08,West,Technology,Monitor,3,931.61,115.73
+US-10154,2024-03-08,Central,Furniture,Table,3,1343.52,79.77
+US-10155,2024-03-08,East,Furniture,Bookcase,2,801.15,88.29
+US-10156,2024-03-09,South,Office Supplies,Paper,1,22.33,4.04
+US-10157,2024-03-09,East,Technology,Printer,1,254.64,13.38
+US-10158,2024-03-10,Central,Furniture,Chair,1,205.86,20.16
+US-10159,2024-03-10,East,Office Supplies,Paper,1,30.47,11.0
+US-10160,2024-03-12,East,Furniture,Table,1,459.08,22.98
+US-10161,2024-03-12,South,Office Supplies,Storage Box,2,138.67,32.05
+US-10162,2024-03-14,South,Technology,Monitor,1,304.6,36.86
+US-10163,2024-03-15,South,Technology,Monitor,3,1021.1,190.83
+US-10164,2024-03-15,South,Office Supplies,Binder,4,174.17,56.88
+US-10165,2024-03-15,East,Office Supplies,Binder,2,81.67,26.61
+US-10166,2024-03-15,East,Office Supplies,Paper,2,61.97,21.75
+US-10167,2024-03-15,West,Office Supplies,Binder,2,76.7,17.73
+US-10168,2024-03-15,West,Technology,Monitor,3,996.37,194.59
+US-10169,2024-03-15,Central,Technology,Phone,1,383.04,46.08
+US-10170,2024-03-17,West,Furniture,Table,3,1273.93,76.85
+US-10171,2024-03-18,Central,Technology,Laptop,1,986.48,117.23
+US-10172,2024-03-18,East,Technology,Monitor,3,955.24,198.46
+US-10173,2024-03-18,West,Office Supplies,Binder,2,83.16,23.76
+US-10174,2024-03-18,West,Technology,Phone,1,387.57,63.77
+US-10175,2024-03-18,West,Furniture,Bookcase,3,1141.54,127.18
+US-10176,2024-03-19,West,Office Supplies,Binder,3,98.98,13.67
+US-10177,2024-03-19,Central,Office Supplies,Paper,1,27.45,8.37
+US-10178,2024-03-20,Central,Technology,Phone,1,349.24,16.31
+US-10179,2024-03-20,West,Office Supplies,Storage Box,3,188.77,32.18
+US-10180,2024-03-20,East,Office Supplies,Pen Set,1,23.42,5.95
+US-10181,2024-03-20,East,Office Supplies,Binder,3,122.06,39.54
+US-10182,2024-03-21,West,Office Supplies,Binder,1,40.32,12.43
+US-10183,2024-03-21,East,Technology,Phone,1,393.24,73.77
+US-10184,2024-03-21,East,Furniture,Chair,3,633.5,55.01
+US-10185,2024-03-22,West,Office Supplies,Pen Set,2,49.68,14.38
+US-10186,2024-03-22,East,Office Supplies,Paper,2,58.9,21.93
+US-10187,2024-03-22,South,Office Supplies,Storage Box,1,66.02,16.28
+US-10188,2024-03-22,West,Office Supplies,Binder,3,132.82,38.77
+US-10189,2024-03-23,Central,Office Supplies,Storage Box,1,50.88,3.46
+US-10190,2024-03-23,South,Technology,Laptop,1,841.36,47.12
+US-10191,2024-03-23,East,Office Supplies,Binder,5,171.12,27.79
+US-10192,2024-03-24,East,Office Supplies,Pen Set,2,47.47,13.45
+US-10193,2024-03-25,South,Furniture,Table,4,1719.05,-22.27
+US-10194,2024-03-25,West,Office Supplies,Pen Set,1,24.0,6.41
+US-10195,2024-03-25,East,Technology,Monitor,1,338.45,63.4
+US-10196,2024-03-26,West,Furniture,Chair,1,224.09,33.72
+US-10197,2024-03-26,West,Furniture,Bookcase,5,1510.02,-70.82
+US-10198,2024-03-26,Central,Office Supplies,Paper,4,123.2,46.45
+US-10199,2024-03-26,East,Office Supplies,Pen Set,4,85.86,20.2
+US-10200,2024-03-27,West,Technology,Phone,2,753.74,103.87
+US-10201,2024-03-27,West,Office Supplies,Paper,3,84.94,31.97
+US-10202,2024-03-27,West,Office Supplies,Binder,1,38.63,10.18
+US-10203,2024-03-28,South,Office Supplies,Binder,1,40.7,13.39
+US-10204,2024-03-28,West,Technology,Monitor,1,351.11,64.64
+US-10205,2024-03-29,West,Furniture,Desk,2,1104.6,102.97
+US-10206,2024-03-29,East,Technology,Laptop,1,1046.46,146.58
+US-10207,2024-03-30,Central,Furniture,Desk,1,418.29,-35.53
+US-10208,2024-03-31,East,Office Supplies,Binder,3,122.94,37.16
+US-10209,2024-03-31,Central,Office Supplies,Binder,4,136.26,22.51
+US-10210,2024-03-31,Central,Technology,Printer,1,258.93,27.06
+US-10211,2024-04-01,West,Office Supplies,Paper,1,24.52,4.97
+US-10212,2024-04-01,East,Office Supplies,Binder,3,119.95,31.74
+US-10213,2024-04-01,Central,Technology,Phone,2,784.36,100.28
+US-10214,2024-04-01,South,Office Supplies,Binder,1,40.29,10.3
+US-10215,2024-04-02,Central,Office Supplies,Paper,3,80.31,21.42
+US-10216,2024-04-02,Central,Office Supplies,Storage Box,1,70.23,17.67
+US-10217,2024-04-02,South,Furniture,Chair,1,195.69,-2.48
+US-10218,2024-04-02,West,Office Supplies,Binder,1,42.4,11.2
+US-10219,2024-04-03,South,Technology,Printer,2,571.47,64.14
+US-10220,2024-04-03,Central,Technology,Phone,2,770.61,179.77
+US-10221,2024-04-03,East,Technology,Monitor,1,252.88,10.81
+US-10222,2024-04-04,West,Office Supplies,Paper,3,90.2,31.69
+US-10223,2024-04-04,West,Technology,Phone,2,796.88,142.89
+US-10224,2024-04-04,West,Technology,Printer,1,262.96,27.41
+US-10225,2024-04-04,West,Technology,Phone,2,787.89,119.58
+US-10226,2024-04-05,Central,Technology,Phone,2,860.35,188.88
+US-10227,2024-04-05,West,Office Supplies,Pen Set,3,72.28,19.23
+US-10228,2024-04-06,South,Technology,Monitor,1,325.19,62.71
+US-10229,2024-04-06,East,Office Supplies,Paper,5,131.58,37.79
+US-10230,2024-04-06,South,Technology,Monitor,1,327.43,51.11
+US-10231,2024-04-07,South,Technology,Monitor,2,643.86,126.01
+US-10232,2024-04-07,East,Office Supplies,Storage Box,3,190.31,45.1
+US-10233,2024-04-08,East,Furniture,Desk,5,2455.34,238.64
+US-10234,2024-04-08,Central,Furniture,Table,3,1256.02,52.06
+US-10235,2024-04-09,West,Office Supplies,Storage Box,3,175.25,31.07
+US-10236,2024-04-09,West,Office Supplies,Storage Box,5,247.9,16.9
+US-10237,2024-04-09,West,Furniture,Table,3,1107.92,-138.46
+US-10238,2024-04-09,West,Office Supplies,Binder,3,118.46,38.95
+US-10239,2024-04-09,Central,Furniture,Table,4,1481.54,-138.28
+US-10240,2024-04-09,West,Technology,Phone,2,800.87,179.5
+US-10241,2024-04-12,West,Office Supplies,Paper,1,27.18,7.89
+US-10242,2024-04-12,West,Furniture,Chair,4,826.06,74.71
+US-10243,2024-04-13,South,Office Supplies,Paper,1,30.83,10.5
+US-10244,2024-04-13,East,Office Supplies,Pen Set,1,25.62,6.9
+US-10245,2024-04-13,South,Office Supplies,Storage Box,1,61.86,14.74
+US-10246,2024-04-14,West,Furniture,Chair,3,602.03,-11.33
+US-10247,2024-04-14,East,Office Supplies,Binder,2,79.73,25.92
+US-10248,2024-04-15,South,Furniture,Bookcase,1,299.91,-9.48
+US-10249,2024-04-15,South,Office Supplies,Paper,2,56.25,19.31
+US-10250,2024-04-16,West,Furniture,Chair,2,395.02,4.56
+US-10251,2024-04-16,Central,Furniture,Table,1,418.66,14.38
+US-10252,2024-04-17,West,Technology,Printer,2,487.06,5.29
+US-10253,2024-04-17,South,Office Supplies,Binder,1,31.49,5.01
+US-10254,2024-04-17,West,Technology,Printer,4,967.91,58.25
+US-10255,2024-04-17,South,Office Supplies,Binder,1,42.07,11.91
+US-10256,2024-04-18,South,Technology,Monitor,1,334.68,67.37
+US-10257,2024-04-18,South,Technology,Laptop,2,1945.82,297.55
+US-10258,2024-04-18,Central,Technology,Monitor,1,313.92,64.58
+US-10259,2024-04-18,Central,Technology,Printer,2,572.35,74.16
+US-10260,2024-04-19,East,Technology,Printer,4,1120.28,102.96
+US-10261,2024-04-19,West,Technology,Laptop,1,998.86,133.19
+US-10262,2024-04-19,West,Office Supplies,Binder,1,39.68,11.71
+US-10263,2024-04-19,East,Technology,Laptop,1,922.65,39.1
+US-10264,2024-04-20,West,Technology,Laptop,2,2033.85,301.04
+US-10265,2024-04-20,East,Furniture,Chair,4,944.57,151.97
+US-10266,2024-04-21,Central,Furniture,Chair,1,210.37,16.77
+US-10267,2024-04-21,South,Furniture,Desk,2,1031.35,41.97
+US-10268,2024-04-21,West,Office Supplies,Pen Set,2,49.6,14.42
+US-10269,2024-04-24,East,Technology,Printer,2,564.39,61.92
+US-10270,2024-04-25,West,Office Supplies,Storage Box,2,135.08,33.97
+US-10271,2024-04-25,Central,Technology,Phone,5,1729.2,216.61
+US-10272,2024-04-25,West,Technology,Monitor,1,336.72,67.66
+US-10273,2024-04-25,South,Furniture,Table,2,740.52,-86.07
+US-10274,2024-04-26,East,Furniture,Chair,2,463.69,80.0
+US-10275,2024-04-26,East,Office Supplies,Binder,3,95.28,13.47
+US-10276,2024-04-26,East,Office Supplies,Binder,2,86.76,27.13
+US-10277,2024-04-26,West,Office Supplies,Paper,1,27.83,7.38
+US-10278,2024-04-26,South,Technology,Phone,3,1183.84,266.93
+US-10279,2024-04-28,Central,Furniture,Chair,2,460.66,32.87
+US-10280,2024-04-28,South,Technology,Printer,3,807.68,62.15
+US-10281,2024-04-29,East,Technology,Printer,4,1003.12,19.89
+US-10282,2024-04-29,Central,Office Supplies,Storage Box,4,254.61,53.96
+US-10283,2024-04-29,West,Furniture,Table,4,1667.86,-56.07
+US-10284,2024-04-30,Central,Furniture,Chair,1,201.37,14.51
+US-10285,2024-04-30,South,Office Supplies,Paper,2,58.59,20.52
+US-10286,2024-04-30,West,Office Supplies,Storage Box,3,176.59,37.35
+US-10287,2024-04-30,East,Office Supplies,Paper,1,28.73,8.71
+US-10288,2024-04-30,Central,Office Supplies,Storage Box,2,104.09,7.23
+US-10289,2024-04-30,Central,Office Supplies,Pen Set,2,36.26,4.02
+US-10290,2024-05-01,Central,Office Supplies,Paper,4,91.32,19.27
+US-10291,2024-05-01,West,Office Supplies,Paper,3,93.37,35.14
+US-10292,2024-05-01,Central,Office Supplies,Paper,1,28.08,9.98
+US-10293,2024-05-01,East,Technology,Printer,1,277.25,33.01
+US-10294,2024-05-01,West,Technology,Printer,1,218.97,-12.2
+US-10295,2024-05-02,Central,Furniture,Table,3,1366.22,87.48
+US-10296,2024-05-03,West,Furniture,Bookcase,2,636.12,-21.24
+US-10297,2024-05-03,East,Technology,Phone,3,1261.53,270.63
+US-10298,2024-05-03,East,Technology,Monitor,1,312.24,59.29
+US-10299,2024-05-03,Central,Office Supplies,Binder,2,79.23,21.81
+US-10300,2024-05-04,Central,Technology,Laptop,1,893.88,51.9
+US-10301,2024-05-04,East,Furniture,Table,1,394.55,-16.75
+US-10302,2024-05-04,East,Furniture,Chair,1,221.03,20.18
+US-10303,2024-05-05,West,Furniture,Chair,3,727.89,130.12
+US-10304,2024-05-06,East,Technology,Laptop,1,933.01,66.56
+US-10305,2024-05-07,West,Technology,Phone,1,331.6,21.11
+US-10306,2024-05-07,Central,Office Supplies,Pen Set,1,23.18,6.92
+US-10307,2024-05-08,West,Furniture,Bookcase,1,397.0,54.27
+US-10308,2024-05-08,West,Office Supplies,Binder,1,43.31,13.06
+US-10309,2024-05-08,Central,Office Supplies,Pen Set,1,22.14,4.94
+US-10310,2024-05-08,Central,Furniture,Chair,2,452.58,76.75
+US-10311,2024-05-08,East,Office Supplies,Binder,4,162.03,53.42
+US-10312,2024-05-10,East,Technology,Phone,2,682.42,28.58
+US-10313,2024-05-10,East,Furniture,Chair,2,385.54,6.97
+US-10314,2024-05-10,East,Furniture,Chair,1,250.94,36.74
+US-10315,2024-05-10,East,Office Supplies,Storage Box,1,67.98,16.6
+US-10316,2024-05-10,South,Technology,Phone,2,653.74,29.46
+US-10317,2024-05-11,Central,Technology,Printer,2,556.89,61.2
+US-10318,2024-05-11,Central,Technology,Printer,2,566.61,73.41
+US-10319,2024-05-11,East,Technology,Phone,2,772.25,125.55
+US-10320,2024-05-11,West,Office Supplies,Paper,1,29.81,9.86
+US-10321,2024-05-12,Central,Office Supplies,Storage Box,2,127.62,28.14
+US-10322,2024-05-13,East,Technology,Phone,1,401.1,93.36
+US-10323,2024-05-15,Central,Office Supplies,Storage Box,4,251.32,50.49
+US-10324,2024-05-15,East,Furniture,Table,1,453.94,16.93
+US-10325,2024-05-16,South,Office Supplies,Paper,1,31.8,11.35
+US-10326,2024-05-16,West,Technology,Monitor,5,1565.65,319.67
+US-10327,2024-05-17,West,Furniture,Desk,1,438.81,11.4
+US-10328,2024-05-17,East,Office Supplies,Paper,1,27.98,8.43
+US-10329,2024-05-17,South,Office Supplies,Binder,3,124.3,38.74
+US-10330,2024-05-18,East,Technology,Phone,1,393.47,90.03
+US-10331,2024-05-19,Central,Office Supplies,Binder,2,86.06,26.9
+US-10332,2024-05-19,East,Furniture,Chair,3,707.22,74.39
+US-10333,2024-05-19,East,Office Supplies,Paper,4,114.42,41.57
+US-10334,2024-05-19,South,Technology,Printer,2,564.33,72.55
+US-10335,2024-05-20,South,Office Supplies,Paper,1,23.38,4.22
+US-10336,2024-05-20,West,Technology,Phone,2,797.61,176.16
+US-10337,2024-05-21,South,Furniture,Table,1,427.24,9.03
+US-10338,2024-05-21,Central,Office Supplies,Binder,4,133.09,20.15
+US-10339,2024-05-21,South,Technology,Monitor,3,983.57,169.41
+US-10340,2024-05-21,West,Technology,Monitor,1,251.27,11.42
+US-10341,2024-05-22,East,Technology,Laptop,1,867.28,62.98
+US-10342,2024-05-22,Central,Furniture,Chair,1,227.51,26.47
+US-10343,2024-05-22,West,Furniture,Table,3,1277.86,46.27
+US-10344,2024-05-22,East,Furniture,Chair,1,228.82,40.84
+US-10345,2024-05-23,South,Technology,Printer,3,768.07,88.96
+US-10346,2024-05-23,Central,Technology,Phone,1,423.1,86.97
+US-10347,2024-05-23,East,Office Supplies,Paper,3,91.98,33.68
+US-10348,2024-05-23,Central,Furniture,Chair,2,482.61,71.34
+US-10349,2024-05-25,East,Furniture,Desk,5,2409.61,91.39
+US-10350,2024-05-25,South,Furniture,Desk,1,505.41,44.89
+US-10351,2024-05-25,West,Office Supplies,Binder,2,69.32,11.12
+US-10352,2024-05-25,West,Technology,Printer,4,835.21,-43.79
+US-10353,2024-05-26,West,Technology,Printer,2,549.91,62.02
+US-10354,2024-05-26,East,Technology,Monitor,4,1200.91,173.1
+US-10355,2024-05-26,Central,Office Supplies,Pen Set,1,24.31,6.52
+US-10356,2024-05-27,East,Office Supplies,Binder,3,132.37,39.63
+US-10357,2024-05-27,Central,Furniture,Bookcase,3,955.79,-53.35
+US-10358,2024-05-27,Central,Office Supplies,Binder,1,40.67,11.97
+US-10359,2024-05-27,West,Technology,Phone,2,791.66,168.14
+US-10360,2024-05-27,East,Technology,Printer,2,440.73,-13.28
+US-10361,2024-05-27,East,Technology,Phone,4,1555.82,351.49
+US-10362,2024-05-28,West,Office Supplies,Binder,3,132.61,38.93
+US-10363,2024-05-28,South,Furniture,Table,4,1833.5,106.24
+US-10364,2024-05-28,Central,Technology,Phone,1,427.63,92.64
+US-10365,2024-05-28,East,Furniture,Desk,5,2588.24,215.28
+US-10366,2024-05-29,South,Furniture,Chair,2,463.48,74.38
+US-10367,2024-05-29,West,Technology,Printer,1,226.56,-7.51
+US-10368,2024-05-29,South,Office Supplies,Paper,1,25.39,7.57
+US-10369,2024-05-31,South,Furniture,Table,2,913.76,39.69
+US-10370,2024-06-03,East,Furniture,Chair,1,190.29,-1.57
+US-10371,2024-06-03,West,Office Supplies,Pen Set,2,51.17,13.64
+US-10372,2024-06-04,East,Furniture,Table,1,361.02,-45.53
+US-10373,2024-06-06,West,Technology,Laptop,3,3072.03,426.18
+US-10374,2024-06-06,South,Office Supplies,Pen Set,1,21.61,5.48
+US-10375,2024-06-06,East,Technology,Phone,3,1146.43,230.73
+US-10376,2024-06-07,Central,Technology,Phone,1,305.95,12.3
+US-10377,2024-06-08,East,Technology,Printer,3,758.5,58.82
+US-10378,2024-06-08,South,Furniture,Desk,2,965.97,-9.44
+US-10379,2024-06-08,East,Technology,Monitor,1,352.08,66.03
+US-10380,2024-06-08,West,Technology,Printer,3,741.1,48.23
+US-10381,2024-06-09,South,Office Supplies,Pen Set,2,45.94,13.38
+US-10382,2024-06-10,West,Office Supplies,Pen Set,4,90.58,24.61
+US-10383,2024-06-11,East,Furniture,Bookcase,2,626.59,-20.7
+US-10384,2024-06-11,Central,Technology,Phone,2,613.79,26.32
+US-10385,2024-06-11,Central,Furniture,Bookcase,3,1193.8,145.45
+US-10386,2024-06-11,Central,Furniture,Bookcase,4,1422.55,185.46
+US-10387,2024-06-12,West,Technology,Printer,3,619.21,-27.79
+US-10388,2024-06-12,Central,Office Supplies,Paper,2,50.44,9.92
+US-10389,2024-06-12,West,Furniture,Table,1,438.99,7.89
+US-10390,2024-06-12,East,Technology,Printer,2,514.0,31.2
+US-10391,2024-06-12,South,Furniture,Chair,1,228.16,28.42
+US-10392,2024-06-13,East,Technology,Phone,3,1047.48,143.32
+US-10393,2024-06-13,West,Technology,Phone,3,1175.71,237.71
+US-10394,2024-06-13,West,Office Supplies,Paper,1,27.79,9.3
+US-10395,2024-06-14,West,Office Supplies,Paper,1,24.12,4.83
+US-10396,2024-06-14,West,Technology,Printer,1,207.56,-11.19
+US-10397,2024-06-14,West,Technology,Printer,3,816.1,43.12
+US-10398,2024-06-15,Central,Office Supplies,Binder,1,40.93,12.05
+US-10399,2024-06-15,Central,Office Supplies,Paper,3,76.19,16.75
+US-10400,2024-06-16,East,Office Supplies,Paper,2,61.49,21.61
+US-10401,2024-06-16,Central,Technology,Monitor,3,986.04,188.33
+US-10402,2024-06-16,East,Office Supplies,Binder,1,42.34,13.74
+US-10403,2024-06-17,West,Furniture,Bookcase,1,357.85,39.83
+US-10404,2024-06-17,West,Furniture,Chair,1,224.64,14.1
+US-10405,2024-06-17,East,Office Supplies,Binder,1,42.07,12.77
+US-10406,2024-06-18,Central,Office Supplies,Storage Box,1,65.99,15.31
+US-10407,2024-06-18,West,Office Supplies,Binder,1,42.42,13.69
+US-10408,2024-06-18,Central,Office Supplies,Binder,1,32.01,4.29
+US-10409,2024-06-18,Central,Office Supplies,Paper,5,131.67,38.62
+US-10410,2024-06-20,Central,Office Supplies,Storage Box,1,64.69,16.7
+US-10411,2024-06-20,Central,Technology,Monitor,3,1016.16,191.23
+US-10412,2024-06-20,West,Office Supplies,Binder,1,40.7,13.25
+US-10413,2024-06-20,East,Office Supplies,Pen Set,1,25.44,6.83
+US-10414,2024-06-20,West,Furniture,Table,3,1395.19,51.95
+US-10415,2024-06-22,Central,Technology,Laptop,3,2936.47,388.41
+US-10416,2024-06-22,South,Technology,Monitor,1,329.12,59.51
+US-10417,2024-06-23,Central,Technology,Printer,2,509.68,30.09
+US-10418,2024-06-24,West,Technology,Phone,4,1571.23,228.45
+US-10419,2024-06-24,West,Office Supplies,Paper,2,54.69,15.72
+US-10420,2024-06-24,West,Technology,Laptop,1,996.06,121.42
+US-10421,2024-06-25,Central,Technology,Printer,3,802.62,73.87
+US-10422,2024-06-25,Central,Furniture,Desk,3,1411.77,-13.84
+US-10423,2024-06-25,West,Technology,Laptop,2,1881.77,126.68
+US-10424,2024-06-25,South,Office Supplies,Binder,3,100.41,15.1
+US-10425,2024-06-27,West,Furniture,Bookcase,2,636.36,22.68
+US-10426,2024-06-27,West,Furniture,Desk,3,1620.79,145.37
+US-10427,2024-06-27,Central,Office Supplies,Paper,3,92.35,34.47
+US-10428,2024-06-27,South,Technology,Printer,2,517.45,63.68
+US-10429,2024-06-28,Central,Technology,Monitor,1,322.88,53.55
+US-10430,2024-06-28,West,Office Supplies,Paper,2,62.73,22.76
+US-10431,2024-06-28,West,Technology,Phone,2,801.07,135.66
+US-10432,2024-06-30,South,Technology,Monitor,2,675.99,125.66
+US-10433,2024-06-30,South,Furniture,Bookcase,2,792.02,85.52
+US-10434,2024-07-01,Central,Furniture,Bookcase,2,735.94,94.54
+US-10435,2024-07-01,Central,Technology,Laptop,2,1736.88,191.39
+US-10436,2024-07-02,West,Technology,Phone,1,429.93,95.47
+US-10437,2024-07-03,South,Technology,Monitor,3,942.53,133.03
+US-10438,2024-07-03,South,Furniture,Desk,1,447.49,-3.67
+US-10439,2024-07-03,West,Technology,Laptop,1,989.02,132.31
+US-10440,2024-07-03,East,Office Supplies,Binder,1,35.34,8.79
+US-10441,2024-07-03,Central,Technology,Phone,1,413.02,90.2
+US-10442,2024-07-05,East,Office Supplies,Storage Box,4,247.99,59.67
+US-10443,2024-07-05,Central,Technology,Phone,1,388.18,84.72
+US-10444,2024-07-05,Central,Furniture,Desk,2,1046.77,87.96
+US-10445,2024-07-05,West,Technology,Printer,1,274.43,30.23
+US-10446,2024-07-06,East,Furniture,Chair,2,462.26,68.93
+US-10447,2024-07-07,Central,Office Supplies,Paper,2,47.93,9.52
+US-10448,2024-07-07,East,Technology,Phone,1,398.45,76.15
+US-10449,2024-07-07,West,Office Supplies,Binder,2,63.29,10.19
+US-10450,2024-07-08,South,Technology,Laptop,2,2052.54,316.3
+US-10451,2024-07-08,West,Office Supplies,Binder,2,84.31,22.26
+US-10452,2024-07-08,East,Office Supplies,Paper,2,55.63,14.77
+US-10453,2024-07-08,South,Technology,Phone,1,397.91,87.87
+US-10454,2024-07-09,West,Furniture,Table,4,1878.16,103.38
+US-10455,2024-07-09,West,Office Supplies,Pen Set,4,91.28,24.0
+US-10456,2024-07-09,West,Furniture,Table,1,466.14,16.88
+US-10457,2024-07-09,West,Technology,Phone,2,785.31,181.85
+US-10458,2024-07-10,Central,Technology,Printer,2,577.45,59.9
+US-10459,2024-07-10,West,Technology,Monitor,2,701.93,126.71
+US-10460,2024-07-10,East,Technology,Laptop,2,2053.73,286.14
+US-10461,2024-07-10,West,Furniture,Table,2,865.62,31.58
+US-10462,2024-07-10,East,Office Supplies,Paper,5,140.79,49.7
+US-10463,2024-07-10,West,Technology,Monitor,5,1454.93,175.14
+US-10464,2024-07-11,South,Office Supplies,Binder,1,39.73,9.15
+US-10465,2024-07-11,West,Office Supplies,Binder,2,75.78,17.02
+US-10466,2024-07-12,South,Technology,Monitor,2,673.52,131.08
+US-10467,2024-07-12,Central,Furniture,Desk,3,1642.44,115.43
+US-10468,2024-07-12,South,Furniture,Desk,2,896.55,-7.44
+US-10469,2024-07-12,East,Technology,Monitor,3,911.77,99.55
+US-10470,2024-07-12,South,Office Supplies,Storage Box,1,69.62,15.38
+US-10471,2024-07-13,East,Technology,Laptop,2,1789.7,88.02
+US-10472,2024-07-13,West,Office Supplies,Binder,2,86.95,26.26
+US-10473,2024-07-14,East,Furniture,Chair,5,1225.55,191.04
+US-10474,2024-07-14,West,Furniture,Bookcase,1,320.0,-14.77
+US-10475,2024-07-15,Central,Office Supplies,Binder,2,86.78,25.7
+US-10476,2024-07-15,East,Technology,Phone,1,395.36,77.06
+US-10477,2024-07-15,South,Technology,Laptop,1,857.35,65.56
+US-10478,2024-07-15,South,Technology,Printer,2,511.21,21.28
+US-10479,2024-07-15,West,Office Supplies,Paper,5,148.88,56.5
+US-10480,2024-07-16,West,Office Supplies,Paper,1,31.56,11.64
+US-10481,2024-07-16,West,Office Supplies,Binder,1,38.7,9.3
+US-10482,2024-07-16,Central,Office Supplies,Pen Set,2,47.13,13.8
+US-10483,2024-07-17,West,Technology,Phone,4,1529.54,224.53
+US-10484,2024-07-17,East,Furniture,Chair,5,1137.88,191.91
+US-10485,2024-07-18,West,Office Supplies,Paper,4,122.11,45.29
+US-10486,2024-07-18,Central,Furniture,Table,1,437.68,28.95
+US-10487,2024-07-18,South,Technology,Phone,3,1190.36,235.62
+US-10488,2024-07-18,East,Office Supplies,Paper,1,31.05,10.78
+US-10489,2024-07-19,West,Furniture,Desk,1,467.19,18.19
+US-10490,2024-07-19,West,Technology,Printer,1,281.72,29.36
+US-10491,2024-07-20,East,Technology,Printer,1,268.86,26.28
+US-10492,2024-07-20,West,Office Supplies,Binder,1,39.81,11.05
+US-10493,2024-07-21,Central,Office Supplies,Binder,5,216.04,66.54
+US-10494,2024-07-22,Central,Office Supplies,Paper,3,77.74,21.93
+US-10495,2024-07-22,West,Furniture,Chair,1,200.79,0.28
+US-10496,2024-07-24,Central,Office Supplies,Pen Set,3,73.1,20.79
+US-10497,2024-07-24,South,Furniture,Chair,3,755.81,115.45
+US-10498,2024-07-24,Central,Office Supplies,Pen Set,1,22.44,6.23
+US-10499,2024-07-25,South,Technology,Monitor,3,998.1,200.59
+US-10500,2024-07-26,West,Office Supplies,Binder,1,37.92,8.59
+US-10501,2024-07-26,West,Technology,Laptop,2,1659.53,120.17
+US-10502,2024-07-26,South,Office Supplies,Paper,1,28.79,9.16
+US-10503,2024-07-27,South,Technology,Laptop,1,880.06,46.51
+US-10504,2024-07-27,East,Furniture,Bookcase,2,752.14,93.12
+US-10505,2024-07-27,East,Furniture,Table,1,463.59,13.93
+US-10506,2024-07-28,West,Office Supplies,Storage Box,2,120.91,26.32
+US-10507,2024-07-29,East,Technology,Phone,1,399.46,92.76
+US-10508,2024-07-29,East,Technology,Phone,1,403.5,95.32
+US-10509,2024-07-29,East,Technology,Printer,1,264.58,27.75
+US-10510,2024-07-29,Central,Technology,Printer,4,1015.41,94.84
+US-10511,2024-07-30,Central,Furniture,Bookcase,3,1151.69,143.59
+US-10512,2024-07-30,Central,Technology,Printer,2,420.84,-20.73
+US-10513,2024-07-30,West,Technology,Monitor,2,663.89,135.99
+US-10514,2024-07-30,West,Technology,Monitor,2,616.81,126.5
+US-10515,2024-07-30,South,Technology,Monitor,1,309.47,42.91
+US-10516,2024-07-31,South,Technology,Printer,2,566.2,51.24
+US-10517,2024-07-31,West,Office Supplies,Pen Set,2,36.1,4.56
+US-10518,2024-08-01,East,Office Supplies,Pen Set,2,45.77,13.14
+US-10519,2024-08-01,East,Office Supplies,Binder,3,122.17,37.66
+US-10520,2024-08-01,South,Furniture,Chair,3,722.0,75.64
+US-10521,2024-08-02,South,Furniture,Desk,1,465.2,22.86
+US-10522,2024-08-02,Central,Technology,Monitor,1,329.2,52.37
+US-10523,2024-08-03,West,Technology,Phone,4,1393.06,106.34
+US-10524,2024-08-04,South,Technology,Phone,4,1678.55,343.39
+US-10525,2024-08-05,West,Furniture,Chair,1,199.04,3.21
+US-10526,2024-08-06,East,Office Supplies,Pen Set,2,47.31,13.99
+US-10527,2024-08-06,Central,Furniture,Chair,3,678.08,99.44
+US-10528,2024-08-06,Central,Furniture,Desk,2,1043.86,112.29
+US-10529,2024-08-07,West,Office Supplies,Binder,4,169.57,54.45
+US-10530,2024-08-07,South,Office Supplies,Binder,1,35.31,8.1
+US-10531,2024-08-07,Central,Technology,Monitor,1,337.02,65.54
+US-10532,2024-08-08,East,Technology,Phone,4,1722.6,391.29
+US-10533,2024-08-08,South,Furniture,Desk,1,467.11,5.98
+US-10534,2024-08-08,East,Technology,Phone,3,1015.47,62.84
+US-10535,2024-08-08,East,Office Supplies,Binder,2,86.43,25.11
+US-10536,2024-08-09,South,Technology,Phone,2,657.76,48.83
+US-10537,2024-08-09,South,Office Supplies,Paper,1,28.22,8.47
+US-10538,2024-08-09,West,Furniture,Desk,5,2645.81,265.6
+US-10539,2024-08-09,West,Technology,Printer,4,1100.4,134.15
+US-10540,2024-08-09,East,Office Supplies,Binder,3,117.42,28.74
+US-10541,2024-08-09,East,Technology,Phone,4,1594.77,363.38
+US-10542,2024-08-09,Central,Technology,Phone,1,377.06,51.66
+US-10543,2024-08-10,East,Furniture,Chair,1,220.38,15.23
+US-10544,2024-08-10,South,Technology,Phone,4,1680.06,359.6
+US-10545,2024-08-10,South,Furniture,Bookcase,2,752.85,59.73
+US-10546,2024-08-11,South,Technology,Printer,1,227.4,4.67
+US-10547,2024-08-12,South,Office Supplies,Pen Set,2,48.52,14.06
+US-10548,2024-08-12,South,Furniture,Desk,2,960.06,62.22
+US-10549,2024-08-12,Central,Office Supplies,Binder,2,72.12,15.49
+US-10550,2024-08-12,West,Technology,Laptop,1,944.23,116.44
+US-10551,2024-08-12,West,Office Supplies,Storage Box,4,271.95,65.06
+US-10552,2024-08-12,West,Office Supplies,Binder,1,32.55,5.17
+US-10553,2024-08-13,East,Office Supplies,Paper,2,59.86,21.45
+US-10554,2024-08-13,West,Office Supplies,Binder,1,35.42,7.54
+US-10555,2024-08-13,Central,Furniture,Chair,4,899.03,75.8
+US-10556,2024-08-13,East,Office Supplies,Pen Set,5,89.72,9.72
+US-10557,2024-08-14,East,Furniture,Desk,2,898.37,18.17
+US-10558,2024-08-14,West,Office Supplies,Binder,2,83.37,21.48
+US-10559,2024-08-14,East,Office Supplies,Pen Set,1,25.06,7.15
+US-10560,2024-08-14,South,Office Supplies,Paper,1,29.45,10.81
+US-10561,2024-08-15,South,Furniture,Chair,4,833.66,65.24
+US-10562,2024-08-15,East,Office Supplies,Storage Box,2,99.41,7.92
+US-10563,2024-08-15,West,Technology,Monitor,1,259.82,12.31
+US-10564,2024-08-16,East,Furniture,Chair,1,222.61,21.71
+US-10565,2024-08-16,Central,Furniture,Table,2,887.02,-5.07
+US-10566,2024-08-17,Central,Office Supplies,Pen Set,1,24.1,6.9
+US-10567,2024-08-17,West,Office Supplies,Binder,5,197.02,63.73
+US-10568,2024-08-17,Central,Furniture,Desk,1,443.96,6.83
+US-10569,2024-08-18,East,Office Supplies,Paper,4,107.03,28.99
+US-10570,2024-08-18,East,Office Supplies,Binder,1,39.38,11.64
+US-10571,2024-08-18,South,Technology,Phone,4,1463.24,202.34
+US-10572,2024-08-18,West,Technology,Printer,1,246.09,21.92
+US-10573,2024-08-18,West,Office Supplies,Pen Set,2,47.33,12.9
+US-10574,2024-08-19,East,Office Supplies,Binder,4,158.74,47.24
+US-10575,2024-08-19,East,Technology,Phone,2,693.97,109.26
+US-10576,2024-08-20,East,Furniture,Table,2,838.6,-23.08
+US-10577,2024-08-20,East,Office Supplies,Pen Set,1,21.25,5.3
+US-10578,2024-08-20,East,Technology,Monitor,3,778.33,19.7
+US-10579,2024-08-21,East,Technology,Phone,3,1150.06,252.46
+US-10580,2024-08-21,Central,Office Supplies,Binder,5,200.98,50.31
+US-10581,2024-08-22,Central,Technology,Laptop,5,3882.79,-43.99
+US-10582,2024-08-22,Central,Furniture,Chair,3,569.59,-4.42
+US-10583,2024-08-22,East,Office Supplies,Paper,2,53.51,16.4
+US-10584,2024-08-22,West,Office Supplies,Binder,3,111.34,31.62
+US-10585,2024-08-23,West,Furniture,Chair,1,252.57,41.23
+US-10586,2024-08-23,West,Office Supplies,Pen Set,1,23.05,6.52
+US-10587,2024-08-23,East,Technology,Phone,4,1683.83,361.27
+US-10588,2024-08-23,West,Technology,Laptop,2,1969.24,298.0
+US-10589,2024-08-26,East,Furniture,Table,2,829.99,-22.38
+US-10590,2024-08-26,West,Furniture,Desk,2,939.55,3.9
+US-10591,2024-08-26,Central,Office Supplies,Paper,3,86.65,26.16
+US-10592,2024-08-26,South,Furniture,Bookcase,1,405.17,45.22
+US-10593,2024-08-27,West,Technology,Monitor,4,1222.83,130.89
+US-10594,2024-08-27,South,Furniture,Desk,5,2453.74,147.41
+US-10595,2024-08-30,South,Office Supplies,Paper,2,61.95,23.24
+US-10596,2024-08-30,West,Office Supplies,Binder,1,38.26,9.02
+US-10597,2024-08-30,East,Technology,Laptop,1,917.0,106.12
+US-10598,2024-08-30,East,Technology,Laptop,1,798.97,-25.23
+US-10599,2024-08-30,West,Technology,Phone,2,767.91,93.61
+US-10600,2024-08-31,West,Office Supplies,Binder,1,41.92,13.62
+US-10601,2024-08-31,East,Office Supplies,Paper,2,56.55,21.24
+US-10602,2024-09-01,Central,Technology,Printer,5,1334.15,141.93
+US-10603,2024-09-01,East,Technology,Phone,2,813.1,177.02
+US-10604,2024-09-01,Central,Technology,Phone,3,1229.87,276.19
+US-10605,2024-09-02,West,Office Supplies,Paper,3,71.37,13.26
+US-10606,2024-09-02,Central,Furniture,Desk,1,462.58,17.77
+US-10607,2024-09-02,East,Office Supplies,Paper,1,31.34,11.02
+US-10608,2024-09-02,West,Furniture,Table,1,415.91,-16.82
+US-10609,2024-09-03,West,Office Supplies,Paper,1,28.24,10.06
+US-10610,2024-09-03,West,Office Supplies,Paper,2,54.34,14.29
+US-10611,2024-09-03,Central,Technology,Laptop,1,926.06,44.06
+US-10612,2024-09-03,East,Office Supplies,Paper,4,109.55,32.5
+US-10613,2024-09-03,East,Furniture,Desk,2,1082.02,100.43
+US-10614,2024-09-04,West,Furniture,Desk,1,514.16,50.49
+US-10615,2024-09-04,South,Technology,Phone,4,1535.47,240.49
+US-10616,2024-09-04,Central,Office Supplies,Pen Set,2,40.33,4.16
+US-10617,2024-09-04,Central,Office Supplies,Paper,4,123.45,43.84
+US-10618,2024-09-04,West,Furniture,Desk,1,397.65,-32.54
+US-10619,2024-09-04,West,Furniture,Table,1,373.01,-41.91
+US-10620,2024-09-04,East,Technology,Printer,1,274.71,34.24
+US-10621,2024-09-05,West,Technology,Laptop,4,3853.19,391.67
+US-10622,2024-09-06,Central,Office Supplies,Binder,2,67.48,10.41
+US-10623,2024-09-09,West,Office Supplies,Paper,1,25.08,5.22
+US-10624,2024-09-09,East,Technology,Monitor,1,335.81,64.23
+US-10625,2024-09-09,West,Furniture,Chair,3,643.44,88.92
+US-10626,2024-09-09,East,Technology,Phone,3,1270.19,300.81
+US-10627,2024-09-10,East,Technology,Printer,1,276.47,32.52
+US-10628,2024-09-10,East,Technology,Phone,4,1637.67,272.77
+US-10629,2024-09-10,West,Technology,Printer,1,272.26,15.65
+US-10630,2024-09-11,East,Technology,Monitor,1,314.91,65.54
+US-10631,2024-09-11,East,Office Supplies,Binder,3,130.88,42.68
+US-10632,2024-09-11,Central,Furniture,Chair,1,242.9,35.7
+US-10633,2024-09-11,East,Furniture,Chair,1,224.62,15.21
+US-10634,2024-09-12,South,Office Supplies,Binder,3,120.13,37.32
+US-10635,2024-09-12,East,Technology,Monitor,3,958.5,132.98
+US-10636,2024-09-12,South,Technology,Printer,1,245.4,9.02
+US-10637,2024-09-12,West,Office Supplies,Paper,3,84.23,23.01
+US-10638,2024-09-13,Central,Technology,Printer,2,520.76,66.07
+US-10639,2024-09-13,East,Furniture,Chair,5,1251.16,198.74
+US-10640,2024-09-15,South,Furniture,Table,4,1530.77,-153.77
+US-10641,2024-09-15,East,Technology,Monitor,3,1012.73,188.35
+US-10642,2024-09-15,Central,Furniture,Chair,4,956.89,165.19
+US-10643,2024-09-15,West,Furniture,Chair,4,946.8,142.85
+US-10644,2024-09-16,West,Technology,Phone,2,781.64,118.93
+US-10645,2024-09-16,Central,Furniture,Chair,2,488.28,77.04
+US-10646,2024-09-16,Central,Furniture,Table,2,827.17,10.13
+US-10647,2024-09-16,East,Technology,Monitor,1,321.76,65.28
+US-10648,2024-09-17,East,Furniture,Bookcase,2,769.45,89.33
+US-10649,2024-09-17,West,Technology,Printer,1,276.21,31.08
+US-10650,2024-09-17,Central,Technology,Monitor,2,692.81,140.36
+US-10651,2024-09-17,Central,Furniture,Chair,3,698.11,113.08
+US-10652,2024-09-17,East,Technology,Phone,2,842.34,179.13
+US-10653,2024-09-18,West,Office Supplies,Storage Box,2,132.11,27.74
+US-10654,2024-09-18,West,Technology,Monitor,2,642.12,113.17
+US-10655,2024-09-18,Central,Technology,Phone,4,1528.89,338.89
+US-10656,2024-09-18,Central,Furniture,Chair,1,222.03,15.33
+US-10657,2024-09-19,Central,Office Supplies,Binder,1,41.64,12.56
+US-10658,2024-09-19,South,Furniture,Bookcase,4,1183.07,-32.86
+US-10659,2024-09-19,Central,Technology,Monitor,3,950.1,96.11
+US-10660,2024-09-20,West,Office Supplies,Binder,2,79.91,23.65
+US-10661,2024-09-20,East,Technology,Phone,1,384.96,83.55
+US-10662,2024-09-21,Central,Technology,Printer,1,285.59,29.49
+US-10663,2024-09-21,Central,Furniture,Chair,2,376.89,1.21
+US-10664,2024-09-22,South,Office Supplies,Binder,1,39.01,9.32
+US-10665,2024-09-23,East,Technology,Monitor,1,348.77,68.8
+US-10666,2024-09-23,South,Technology,Printer,2,492.77,35.25
+US-10667,2024-09-24,East,Furniture,Chair,2,425.86,42.92
+US-10668,2024-09-24,East,Furniture,Desk,1,523.26,46.19
+US-10669,2024-09-24,West,Technology,Laptop,1,916.47,131.55
+US-10670,2024-09-24,Central,Office Supplies,Paper,1,30.24,10.37
+US-10671,2024-09-25,East,Technology,Printer,2,438.68,-28.52
+US-10672,2024-09-26,East,Office Supplies,Pen Set,5,123.18,34.22
+US-10673,2024-09-26,Central,Technology,Phone,5,1872.07,232.5
+US-10674,2024-09-26,Central,Technology,Laptop,1,1031.5,157.09
+US-10675,2024-09-27,East,Furniture,Chair,2,423.87,29.89
+US-10676,2024-09-27,East,Office Supplies,Paper,3,85.72,24.76
+US-10677,2024-09-27,East,Office Supplies,Binder,1,42.02,13.07
+US-10678,2024-09-27,East,Technology,Monitor,2,701.51,125.3
+US-10679,2024-09-27,Central,Office Supplies,Binder,2,62.67,8.29
+US-10680,2024-09-28,West,Technology,Printer,4,1026.95,29.19
+US-10681,2024-09-28,Central,Technology,Laptop,2,1942.45,182.57
+US-10682,2024-09-28,Central,Technology,Phone,5,2179.97,488.12
+US-10683,2024-09-29,West,Technology,Monitor,1,321.6,45.6
+US-10684,2024-09-29,South,Office Supplies,Binder,1,41.5,13.23
+US-10685,2024-09-30,East,Furniture,Bookcase,1,395.11,54.17
+US-10686,2024-09-30,West,Office Supplies,Paper,1,29.73,10.52
+US-10687,2024-10-02,South,Furniture,Desk,2,934.55,57.71
+US-10688,2024-10-02,South,Furniture,Bookcase,1,383.13,52.07
+US-10689,2024-10-03,Central,Furniture,Bookcase,3,1138.29,86.52
+US-10690,2024-10-03,West,Furniture,Desk,1,489.51,4.04
+US-10691,2024-10-03,Central,Technology,Monitor,2,497.81,16.5
+US-10692,2024-10-03,East,Technology,Phone,2,817.8,143.49
+US-10693,2024-10-03,West,Technology,Phone,5,1989.47,438.73
+US-10694,2024-10-05,South,Office Supplies,Paper,3,90.87,27.66
+US-10695,2024-10-05,East,Technology,Printer,2,525.15,58.95
+US-10696,2024-10-06,West,Technology,Phone,1,401.1,90.87
+US-10697,2024-10-07,South,Technology,Printer,2,442.14,-15.51
+US-10698,2024-10-07,East,Office Supplies,Paper,2,56.3,19.97
+US-10699,2024-10-07,Central,Technology,Phone,2,818.94,184.03
+US-10700,2024-10-07,Central,Office Supplies,Binder,1,40.2,12.13
+US-10701,2024-10-08,West,Office Supplies,Binder,2,82.42,24.83
+US-10702,2024-10-08,East,Technology,Phone,2,771.08,175.73
+US-10703,2024-10-08,East,Technology,Monitor,4,1272.39,216.11
+US-10704,2024-10-09,East,Furniture,Chair,2,495.62,71.71
+US-10705,2024-10-09,East,Technology,Phone,1,407.89,70.62
+US-10706,2024-10-09,West,Office Supplies,Storage Box,1,50.36,4.84
+US-10707,2024-10-10,West,Office Supplies,Binder,1,35.67,4.93
+US-10708,2024-10-10,West,Office Supplies,Binder,5,223.39,70.29
+US-10709,2024-10-10,South,Office Supplies,Paper,1,27.26,8.4
+US-10710,2024-10-10,East,Office Supplies,Storage Box,1,61.72,9.51
+US-10711,2024-10-10,East,Office Supplies,Paper,4,115.19,41.38
+US-10712,2024-10-10,West,Technology,Printer,1,261.24,29.78
+US-10713,2024-10-10,West,Technology,Laptop,3,2531.46,165.16
+US-10714,2024-10-11,East,Office Supplies,Binder,1,40.15,11.38
+US-10715,2024-10-14,West,Furniture,Chair,2,375.23,2.81
+US-10716,2024-10-14,East,Technology,Printer,1,210.09,-13.56
+US-10717,2024-10-14,East,Office Supplies,Binder,1,42.0,11.47
+US-10718,2024-10-15,West,Furniture,Table,2,839.21,48.17
+US-10719,2024-10-16,Central,Office Supplies,Paper,1,27.42,7.48
+US-10720,2024-10-16,East,Technology,Printer,1,203.71,-9.01
+US-10721,2024-10-16,West,Technology,Phone,3,1172.01,270.61
+US-10722,2024-10-16,West,Furniture,Desk,2,867.32,-65.54
+US-10723,2024-10-16,South,Office Supplies,Paper,4,126.79,45.82
+US-10724,2024-10-17,East,Office Supplies,Binder,2,89.6,28.5
+US-10725,2024-10-17,South,Office Supplies,Pen Set,1,24.93,6.54
+US-10726,2024-10-17,South,Office Supplies,Pen Set,5,121.94,36.02
+US-10727,2024-10-17,East,Technology,Phone,1,350.49,27.49
+US-10728,2024-10-17,East,Technology,Phone,2,746.99,108.58
+US-10729,2024-10-17,West,Technology,Phone,2,655.55,41.32
+US-10730,2024-10-18,West,Technology,Phone,2,727.4,110.68
+US-10731,2024-10-18,Central,Furniture,Table,3,1438.4,65.29
+US-10732,2024-10-19,West,Office Supplies,Pen Set,4,89.5,25.34
+US-10733,2024-10-21,West,Furniture,Chair,3,676.59,59.26
+US-10734,2024-10-21,West,Technology,Laptop,1,1045.41,147.66
+US-10735,2024-10-21,South,Furniture,Chair,2,445.22,50.99
+US-10736,2024-10-21,East,Office Supplies,Binder,3,119.21,33.99
+US-10737,2024-10-21,West,Office Supplies,Binder,4,169.26,51.62
+US-10738,2024-10-21,East,Office Supplies,Paper,4,119.04,39.52
+US-10739,2024-10-21,West,Furniture,Bookcase,1,352.51,28.08
+US-10740,2024-10-22,East,Office Supplies,Binder,1,44.21,13.56
+US-10741,2024-10-23,East,Furniture,Chair,3,697.53,113.15
+US-10742,2024-10-23,South,Office Supplies,Binder,3,121.42,33.02
+US-10743,2024-10-23,South,Furniture,Chair,1,240.3,43.09
+US-10744,2024-10-23,East,Technology,Phone,3,1234.38,283.64
+US-10745,2024-10-24,West,Office Supplies,Pen Set,4,88.35,20.75
+US-10746,2024-10-24,East,Technology,Laptop,1,881.59,92.92
+US-10747,2024-10-24,South,Technology,Phone,1,423.35,89.31
+US-10748,2024-10-24,East,Office Supplies,Binder,3,129.27,37.65
+US-10749,2024-10-24,East,Office Supplies,Pen Set,4,85.12,21.97
+US-10750,2024-10-25,East,Technology,Monitor,1,301.0,42.16
+US-10751,2024-10-25,East,Technology,Phone,4,1581.48,263.56
+US-10752,2024-10-25,South,Technology,Laptop,3,2602.32,151.58
+US-10753,2024-10-25,East,Technology,Printer,1,285.5,30.62
+US-10754,2024-10-27,West,Office Supplies,Paper,3,75.45,20.4
+US-10755,2024-10-27,East,Furniture,Table,4,1836.36,75.87
+US-10756,2024-10-28,South,Office Supplies,Binder,1,35.85,7.87
+US-10757,2024-10-28,West,Technology,Printer,1,276.23,28.23
+US-10758,2024-10-29,East,Technology,Phone,2,862.18,195.63
+US-10759,2024-10-29,West,Office Supplies,Binder,1,40.53,12.01
+US-10760,2024-10-29,East,Furniture,Bookcase,2,761.29,104.52
+US-10761,2024-10-29,East,Furniture,Table,2,737.1,-95.78
+US-10762,2024-10-29,Central,Office Supplies,Storage Box,1,57.92,8.9
+US-10763,2024-10-30,East,Office Supplies,Paper,3,69.08,12.76
+US-10764,2024-10-30,Central,Office Supplies,Storage Box,3,166.85,12.59
+US-10765,2024-10-31,Central,Office Supplies,Binder,5,214.1,70.35
+US-10766,2024-10-31,West,Office Supplies,Binder,1,41.95,13.18
+US-10767,2024-10-31,Central,Technology,Monitor,1,349.14,60.46
+US-10768,2024-10-31,East,Technology,Monitor,4,1380.65,265.23
+US-10769,2024-11-01,South,Technology,Monitor,1,325.06,60.88
+US-10770,2024-11-01,Central,Technology,Phone,1,415.06,84.33
+US-10771,2024-11-01,West,Office Supplies,Paper,5,158.96,57.39
+US-10772,2024-11-01,East,Technology,Monitor,2,557.96,68.21
+US-10773,2024-11-02,Central,Technology,Phone,4,1650.8,364.58
+US-10774,2024-11-02,West,Technology,Monitor,1,286.12,28.82
+US-10775,2024-11-03,West,Office Supplies,Binder,3,102.22,14.62
+US-10776,2024-11-03,Central,Furniture,Chair,1,224.74,30.49
+US-10777,2024-11-04,South,Office Supplies,Binder,1,44.91,14.67
+US-10778,2024-11-04,South,Office Supplies,Paper,2,62.28,22.94
+US-10779,2024-11-04,West,Technology,Monitor,1,277.09,2.86
+US-10780,2024-11-04,East,Furniture,Chair,2,387.81,-0.6
+US-10781,2024-11-04,Central,Furniture,Chair,2,508.13,85.64
+US-10782,2024-11-05,Central,Office Supplies,Binder,4,136.51,19.54
+US-10783,2024-11-05,Central,Technology,Printer,3,722.0,61.11
+US-10784,2024-11-05,East,Furniture,Table,1,423.0,25.19
+US-10785,2024-11-06,Central,Furniture,Chair,4,887.0,117.64
+US-10786,2024-11-06,East,Technology,Phone,3,1112.18,203.91
+US-10787,2024-11-07,Central,Technology,Monitor,2,646.38,98.14
+US-10788,2024-11-07,West,Technology,Printer,3,811.56,59.97
+US-10789,2024-11-07,West,Technology,Phone,2,831.94,179.03
+US-10790,2024-11-07,East,Furniture,Chair,4,894.87,154.24
+US-10791,2024-11-08,Central,Technology,Phone,1,400.46,91.8
+US-10792,2024-11-08,Central,Office Supplies,Storage Box,1,66.48,16.22
+US-10793,2024-11-09,West,Technology,Phone,3,1180.73,178.44
+US-10794,2024-11-09,East,Technology,Phone,2,769.67,182.02
+US-10795,2024-11-10,South,Technology,Printer,3,744.81,25.2
+US-10796,2024-11-10,Central,Office Supplies,Paper,1,31.77,12.01
+US-10797,2024-11-10,Central,Technology,Laptop,4,4058.24,609.27
+US-10798,2024-11-10,West,Furniture,Desk,1,392.2,-21.82
+US-10799,2024-11-11,Central,Technology,Laptop,1,834.76,-13.29
+US-10800,2024-11-11,East,Technology,Monitor,5,1623.45,291.51
+US-10801,2024-11-11,South,Technology,Laptop,1,914.67,141.55
+US-10802,2024-11-11,Central,Furniture,Desk,3,1353.83,1.49
+US-10803,2024-11-11,Central,Office Supplies,Binder,1,40.43,13.01
+US-10804,2024-11-12,West,Office Supplies,Binder,2,85.33,26.89
+US-10805,2024-11-12,West,Office Supplies,Paper,1,29.38,10.11
+US-10806,2024-11-12,East,Furniture,Bookcase,3,885.09,-47.56
+US-10807,2024-11-12,Central,Office Supplies,Paper,3,84.09,27.89
+US-10808,2024-11-12,East,Technology,Monitor,3,943.02,121.06
+US-10809,2024-11-12,Central,Furniture,Table,3,1410.12,51.17
+US-10810,2024-11-13,South,Office Supplies,Binder,1,40.59,13.13
+US-10811,2024-11-13,Central,Technology,Monitor,2,621.71,115.15
+US-10812,2024-11-13,East,Technology,Monitor,1,262.91,6.47
+US-10813,2024-11-13,Central,Technology,Laptop,1,983.72,122.89
+US-10814,2024-11-14,West,Technology,Monitor,1,264.63,12.51
+US-10815,2024-11-14,East,Technology,Printer,3,786.62,97.68
+US-10816,2024-11-14,West,Technology,Laptop,2,2077.68,273.82
+US-10817,2024-11-14,West,Office Supplies,Pen Set,2,50.77,14.74
+US-10818,2024-11-14,Central,Office Supplies,Paper,5,141.08,51.03
+US-10819,2024-11-14,Central,Office Supplies,Paper,2,47.78,9.18
+US-10820,2024-11-14,Central,Furniture,Chair,1,254.72,38.29
+US-10821,2024-11-14,West,Office Supplies,Pen Set,1,23.06,6.12
+US-10822,2024-11-15,West,Technology,Printer,1,272.52,29.09
+US-10823,2024-11-15,South,Office Supplies,Paper,4,102.93,28.76
+US-10824,2024-11-16,West,Technology,Phone,1,381.19,75.51
+US-10825,2024-11-16,West,Office Supplies,Storage Box,1,53.35,3.31
+US-10826,2024-11-17,South,Office Supplies,Binder,2,75.48,16.37
+US-10827,2024-11-18,South,Furniture,Bookcase,1,396.62,49.12
+US-10828,2024-11-18,East,Furniture,Bookcase,2,794.38,80.3
+US-10829,2024-11-18,Central,Technology,Printer,1,262.75,16.63
+US-10830,2024-11-18,East,Technology,Phone,2,863.43,195.33
+US-10831,2024-11-19,West,Technology,Printer,1,277.26,35.56
+US-10832,2024-11-19,South,Office Supplies,Pen Set,2,39.81,4.77
+US-10833,2024-11-19,South,Furniture,Table,5,2174.19,120.84
+US-10834,2024-11-19,East,Furniture,Chair,3,685.5,116.27
+US-10835,2024-11-19,East,Furniture,Table,4,1770.44,55.42
+US-10836,2024-11-20,Central,Furniture,Chair,4,879.36,115.95
+US-10837,2024-11-20,Central,Technology,Phone,2,769.1,165.98
+US-10838,2024-11-20,Central,Technology,Monitor,1,328.9,51.36
+US-10839,2024-11-20,West,Technology,Phone,1,403.49,87.72
+US-10840,2024-11-20,East,Furniture,Bookcase,1,354.8,7.91
+US-10841,2024-11-21,Central,Technology,Monitor,1,339.72,66.43
+US-10842,2024-11-21,West,Office Supplies,Pen Set,4,86.49,19.42
+US-10843,2024-11-22,South,Office Supplies,Binder,2,80.14,18.07
+US-10844,2024-11-22,East,Office Supplies,Paper,2,53.21,16.21
+US-10845,2024-11-22,East,Furniture,Chair,1,226.47,36.82
+US-10846,2024-11-22,Central,Furniture,Bookcase,4,1396.15,103.8
+US-10847,2024-11-23,South,Furniture,Chair,1,212.44,17.76
+US-10848,2024-11-23,Central,Technology,Monitor,3,972.48,180.13
+US-10849,2024-11-23,Central,Technology,Monitor,2,691.5,136.01
+US-10850,2024-11-23,West,Furniture,Chair,1,241.11,24.99
+US-10851,2024-11-24,East,Furniture,Bookcase,1,367.14,48.79
+US-10852,2024-11-25,West,Furniture,Chair,1,236.74,23.76
+US-10853,2024-11-25,East,Furniture,Desk,3,1256.54,-71.02
+US-10854,2024-11-26,South,Technology,Monitor,5,1509.54,177.99
+US-10855,2024-11-26,South,Furniture,Chair,5,1007.22,10.17
+US-10856,2024-11-26,West,Technology,Monitor,5,1500.91,249.83
+US-10857,2024-11-26,Central,Technology,Monitor,1,322.35,63.18
+US-10858,2024-11-26,East,Furniture,Desk,1,422.15,-30.77
+US-10859,2024-11-26,West,Office Supplies,Paper,1,27.77,7.57
+US-10860,2024-11-26,East,Office Supplies,Pen Set,1,20.43,3.68
+US-10861,2024-11-27,East,Office Supplies,Binder,2,79.52,24.68
+US-10862,2024-11-27,East,Technology,Laptop,3,3002.26,424.35
+US-10863,2024-11-27,East,Office Supplies,Binder,4,147.36,32.04
+US-10864,2024-11-28,East,Office Supplies,Pen Set,3,68.03,18.31
+US-10865,2024-11-28,South,Technology,Phone,3,1124.89,211.89
+US-10866,2024-11-28,South,Furniture,Chair,1,204.67,2.4
+US-10867,2024-11-28,Central,Technology,Printer,3,778.93,91.31
+US-10868,2024-11-28,East,Office Supplies,Paper,1,23.1,4.47
+US-10869,2024-11-28,Central,Technology,Phone,2,772.12,117.14
+US-10870,2024-11-29,East,Furniture,Chair,4,759.45,9.77
+US-10871,2024-11-29,South,Office Supplies,Pen Set,1,23.41,5.28
+US-10872,2024-11-29,East,Office Supplies,Pen Set,1,23.14,6.93
+US-10873,2024-11-29,East,Furniture,Table,5,2320.48,130.02
+US-10874,2024-11-29,East,Furniture,Bookcase,3,1109.34,119.12
+US-10875,2024-11-30,East,Technology,Monitor,3,855.43,82.71
+US-10876,2024-11-30,Central,Furniture,Table,5,2107.07,109.76
+US-10877,2024-11-30,West,Technology,Phone,2,809.49,171.34
+US-10878,2024-12-01,South,Office Supplies,Paper,3,91.3,33.45
+US-10879,2024-12-02,West,Office Supplies,Pen Set,1,23.73,6.89
+US-10880,2024-12-02,Central,Technology,Laptop,1,938.95,88.43
+US-10881,2024-12-03,East,Furniture,Chair,4,893.33,141.44
+US-10882,2024-12-03,East,Technology,Monitor,1,322.39,55.51
+US-10883,2024-12-03,Central,Technology,Laptop,3,2813.93,440.05
+US-10884,2024-12-03,Central,Office Supplies,Pen Set,2,48.73,14.07
+US-10885,2024-12-03,East,Office Supplies,Paper,2,56.06,16.45
+US-10886,2024-12-04,East,Technology,Phone,5,2003.21,448.89
+US-10887,2024-12-04,West,Office Supplies,Pen Set,2,46.7,13.42
+US-10888,2024-12-04,South,Office Supplies,Paper,2,62.7,23.49
+US-10889,2024-12-04,South,Furniture,Chair,3,611.19,9.15
+US-10890,2024-12-04,Central,Technology,Monitor,3,1012.76,207.38
+US-10891,2024-12-04,East,Furniture,Desk,1,492.15,43.22
+US-10892,2024-12-04,East,Office Supplies,Binder,2,80.55,20.49
+US-10893,2024-12-05,South,Office Supplies,Storage Box,2,107.1,7.21
+US-10894,2024-12-05,West,Technology,Monitor,1,317.54,56.24
+US-10895,2024-12-05,Central,Office Supplies,Pen Set,4,91.75,26.82
+US-10896,2024-12-06,Central,Office Supplies,Storage Box,2,135.27,34.48
+US-10897,2024-12-06,East,Office Supplies,Binder,4,172.95,53.39
+US-10898,2024-12-06,East,Furniture,Bookcase,2,740.27,56.03
+US-10899,2024-12-06,East,Furniture,Chair,2,479.67,75.4
+US-10900,2024-12-06,West,Furniture,Bookcase,2,731.5,47.2
+US-10901,2024-12-07,Central,Technology,Monitor,1,304.48,48.08
+US-10902,2024-12-07,West,Furniture,Chair,3,718.74,126.66
+US-10903,2024-12-07,East,Furniture,Table,1,417.01,-2.04
+US-10904,2024-12-07,Central,Office Supplies,Binder,1,40.75,12.04
+US-10905,2024-12-08,West,Technology,Monitor,1,346.26,69.59
+US-10906,2024-12-08,Central,Office Supplies,Storage Box,1,69.96,17.3
+US-10907,2024-12-08,West,Office Supplies,Paper,4,121.86,45.19
+US-10908,2024-12-09,West,Furniture,Table,3,1282.96,47.35
+US-10909,2024-12-09,East,Furniture,Chair,3,713.25,114.96
+US-10910,2024-12-09,Central,Furniture,Chair,4,1007.75,171.26
+US-10911,2024-12-10,East,Technology,Monitor,3,1010.51,196.75
+US-10912,2024-12-10,South,Office Supplies,Paper,1,30.87,11.21
+US-10913,2024-12-10,Central,Technology,Phone,5,1926.13,397.54
+US-10914,2024-12-11,West,Furniture,Chair,2,486.33,79.43
+US-10915,2024-12-11,East,Office Supplies,Pen Set,1,23.92,6.84
+US-10916,2024-12-11,East,Office Supplies,Binder,1,36.4,7.86
+US-10917,2024-12-12,East,Furniture,Chair,1,187.79,-3.29
+US-10918,2024-12-12,Central,Furniture,Chair,1,254.18,40.53
+US-10919,2024-12-12,South,Office Supplies,Paper,1,26.91,8.94
+US-10920,2024-12-12,West,Furniture,Table,3,1030.42,-121.22
+US-10921,2024-12-13,East,Furniture,Chair,2,407.18,32.77
+US-10922,2024-12-13,East,Office Supplies,Storage Box,2,132.1,30.58
+US-10923,2024-12-13,West,Technology,Monitor,1,301.35,49.59
+US-10924,2024-12-13,Central,Technology,Laptop,4,3827.33,549.4
+US-10925,2024-12-14,West,Technology,Phone,1,420.75,91.67
+US-10926,2024-12-15,South,Technology,Laptop,2,1920.82,268.23
+US-10927,2024-12-16,Central,Office Supplies,Binder,1,35.43,6.02
+US-10928,2024-12-16,Central,Technology,Laptop,4,3487.44,330.01
+US-10929,2024-12-16,East,Technology,Phone,3,1132.77,195.8
+US-10930,2024-12-16,South,Furniture,Desk,1,500.13,49.06
+US-10931,2024-12-16,South,Office Supplies,Paper,1,25.15,7.02
+US-10932,2024-12-16,South,Furniture,Chair,2,464.45,70.51
+US-10933,2024-12-17,South,Technology,Printer,1,280.19,29.71
+US-10934,2024-12-17,Central,Furniture,Table,2,864.53,55.15
+US-10935,2024-12-17,Central,Office Supplies,Paper,3,84.97,28.32
+US-10936,2024-12-17,South,Technology,Printer,1,258.79,24.69
+US-10937,2024-12-17,West,Office Supplies,Binder,1,43.02,13.66
+US-10938,2024-12-17,West,Furniture,Chair,3,612.98,-2.05
+US-10939,2024-12-17,Central,Technology,Monitor,1,323.15,46.68
+US-10940,2024-12-18,East,Technology,Phone,1,366.93,56.67
+US-10941,2024-12-18,West,Technology,Laptop,1,731.1,-11.35
+US-10942,2024-12-19,South,Furniture,Chair,1,255.29,40.0
+US-10943,2024-12-19,West,Office Supplies,Pen Set,1,21.37,4.83
+US-10944,2024-12-19,West,Technology,Monitor,2,569.41,55.49
+US-10945,2024-12-19,Central,Furniture,Chair,2,425.04,54.11
+US-10946,2024-12-19,West,Technology,Printer,2,446.19,-16.47
+US-10947,2024-12-20,West,Technology,Printer,1,269.5,30.82
+US-10948,2024-12-20,Central,Furniture,Desk,2,983.12,100.43
+US-10949,2024-12-20,East,Technology,Phone,1,437.57,98.28
+US-10950,2024-12-20,East,Technology,Phone,3,970.43,51.81
+US-10951,2024-12-21,West,Office Supplies,Pen Set,5,97.6,11.8
+US-10952,2024-12-21,South,Technology,Printer,1,242.84,5.38
+US-10953,2024-12-21,Central,Furniture,Chair,1,235.13,33.49
+US-10954,2024-12-22,East,Office Supplies,Storage Box,4,248.19,38.17
+US-10955,2024-12-22,East,Office Supplies,Paper,2,50.25,13.91
+US-10956,2024-12-23,West,Furniture,Chair,4,968.08,118.43
+US-10957,2024-12-23,South,Furniture,Table,3,1241.67,-46.28
+US-10958,2024-12-23,South,Technology,Printer,2,511.35,11.26
+US-10959,2024-12-23,West,Furniture,Desk,2,1063.48,113.87
+US-10960,2024-12-23,East,Office Supplies,Storage Box,2,122.1,24.08
+US-10961,2024-12-24,East,Office Supplies,Binder,4,170.03,51.6
+US-10962,2024-12-24,South,Office Supplies,Binder,2,88.71,27.96
+US-10963,2024-12-24,West,Technology,Laptop,5,3968.01,-144.2
+US-10964,2024-12-24,Central,Office Supplies,Paper,2,60.84,21.24
+US-10965,2024-12-26,East,Furniture,Table,1,452.04,7.55
+US-10966,2024-12-26,Central,Office Supplies,Binder,3,120.86,36.56
+US-10967,2024-12-26,Central,Furniture,Bookcase,1,363.52,32.54
+US-10968,2024-12-26,East,Furniture,Chair,1,245.85,36.64
+US-10969,2024-12-27,Central,Office Supplies,Paper,4,101.1,21.29
+US-10970,2024-12-27,East,Technology,Monitor,2,677.08,131.58
+US-10971,2024-12-27,Central,Office Supplies,Paper,2,48.97,9.68
+US-10972,2024-12-27,West,Furniture,Bookcase,1,360.5,9.39
+US-10973,2024-12-27,South,Technology,Monitor,3,776.39,13.79
+US-10974,2024-12-27,Central,Technology,Monitor,1,320.33,50.17
+US-10975,2024-12-27,West,Office Supplies,Paper,2,55.54,16.8
+US-10976,2024-12-28,West,Furniture,Table,3,1255.59,57.85
+US-10977,2024-12-28,South,Technology,Phone,1,421.37,92.88
+US-10978,2024-12-28,West,Technology,Printer,3,673.7,-23.42
+US-10979,2024-12-29,East,Furniture,Table,4,1427.02,-144.56
+US-10980,2024-12-29,South,Office Supplies,Pen Set,1,22.66,5.89
+US-10981,2024-12-30,South,Office Supplies,Storage Box,1,66.46,12.97
+US-10982,2024-12-30,West,Office Supplies,Binder,4,176.63,54.1
+US-10983,2024-12-30,West,Technology,Laptop,2,1923.34,260.76
+US-10984,2024-12-30,East,Furniture,Chair,4,968.01,149.82
+US-10985,2024-12-30,Central,Office Supplies,Pen Set,5,105.41,21.16
+US-10986,2024-12-31,South,Technology,Laptop,3,2827.51,441.07
+US-10987,2024-12-31,East,Furniture,Bookcase,2,709.04,68.08
+US-10988,2025-01-01,West,Office Supplies,Binder,1,40.62,12.72
+US-10989,2025-01-02,West,Furniture,Table,1,429.3,21.77
+US-10990,2025-01-02,West,Furniture,Chair,1,244.58,40.13
+US-10991,2025-01-03,South,Furniture,Chair,1,230.15,23.7
+US-10992,2025-01-03,Central,Technology,Laptop,4,2996.5,-37.95
+US-10993,2025-01-03,South,Office Supplies,Binder,4,160.12,44.25
+US-10994,2025-01-04,West,Technology,Phone,3,1259.46,280.76
+US-10995,2025-01-05,Central,Office Supplies,Binder,1,41.03,12.53
+US-10996,2025-01-06,East,Technology,Phone,1,366.5,63.61
+US-10997,2025-01-07,Central,Office Supplies,Paper,5,133.0,42.08
+US-10998,2025-01-08,East,Office Supplies,Pen Set,5,102.14,13.44
+US-10999,2025-01-08,Central,Technology,Monitor,2,658.21,98.21
+US-11000,2025-01-08,West,Technology,Phone,4,1576.67,344.76
+US-11001,2025-01-09,East,Office Supplies,Pen Set,1,23.52,5.51
+US-11002,2025-01-09,South,Technology,Monitor,1,302.62,34.4
+US-11003,2025-01-13,East,Technology,Monitor,1,342.2,61.67
+US-11004,2025-01-13,Central,Office Supplies,Binder,3,125.32,32.3
+US-11005,2025-01-13,West,Technology,Printer,1,247.02,10.79
+US-11006,2025-01-14,East,Furniture,Bookcase,2,727.66,61.33
+US-11007,2025-01-14,West,Technology,Printer,1,228.75,-13.4
+US-11008,2025-01-14,East,Technology,Printer,2,507.26,8.38
+US-11009,2025-01-14,West,Office Supplies,Pen Set,4,77.65,9.91
+US-11010,2025-01-14,East,Technology,Phone,1,383.47,74.69
+US-11011,2025-01-15,Central,Office Supplies,Paper,1,28.39,9.82
+US-11012,2025-01-15,South,Furniture,Chair,1,229.09,20.21
+US-11013,2025-01-16,Central,Technology,Printer,2,544.56,55.91
+US-11014,2025-01-17,South,Office Supplies,Binder,3,103.72,17.22
+US-11015,2025-01-17,East,Technology,Laptop,1,949.47,140.05
+US-11016,2025-01-18,Central,Office Supplies,Pen Set,1,19.65,2.02
+US-11017,2025-01-18,East,Office Supplies,Binder,1,33.63,5.61
+US-11018,2025-01-18,West,Technology,Monitor,1,350.6,67.95
+US-11019,2025-01-19,Central,Technology,Phone,2,786.19,156.34
+US-11020,2025-01-19,West,Technology,Phone,2,850.78,196.08
+US-11021,2025-01-19,East,Technology,Laptop,1,984.52,149.98
+US-11022,2025-01-21,South,Office Supplies,Pen Set,4,96.97,26.97
+US-11023,2025-01-21,South,Office Supplies,Binder,1,43.99,13.39
+US-11024,2025-01-21,East,Office Supplies,Paper,2,57.77,20.96
+US-11025,2025-01-21,Central,Office Supplies,Binder,1,43.94,13.24
+US-11026,2025-01-22,South,Technology,Monitor,4,1405.82,266.26
+US-11027,2025-01-22,Central,Office Supplies,Binder,1,42.46,12.51
+US-11028,2025-01-23,Central,Technology,Phone,5,1958.8,399.38
+US-11029,2025-01-23,East,Office Supplies,Paper,3,71.16,13.67
+US-11030,2025-01-24,East,Office Supplies,Paper,1,32.06,11.62
+US-11031,2025-01-24,East,Technology,Phone,1,340.06,19.46
+US-11032,2025-01-25,East,Technology,Phone,3,1204.07,259.57
+US-11033,2025-01-26,West,Technology,Laptop,1,943.3,84.2
+US-11034,2025-01-27,East,Office Supplies,Binder,1,38.68,10.44
+US-11035,2025-01-28,East,Technology,Monitor,1,340.54,70.22
+US-11036,2025-01-28,West,Technology,Monitor,2,522.54,14.1
+US-11037,2025-01-28,South,Technology,Monitor,1,255.44,4.99
+US-11038,2025-01-28,South,Office Supplies,Binder,3,122.31,30.62
+US-11039,2025-01-29,South,Technology,Phone,5,2031.57,334.74
+US-11040,2025-01-29,Central,Furniture,Bookcase,3,1076.32,131.51
+US-11041,2025-01-30,East,Technology,Phone,4,1539.34,352.78
+US-11042,2025-01-30,West,Office Supplies,Binder,3,128.19,37.19
+US-11043,2025-01-30,East,Technology,Printer,5,1437.33,170.41
+US-11044,2025-01-30,West,Technology,Monitor,1,250.92,3.58
+US-11045,2025-01-31,West,Technology,Monitor,5,1615.81,222.52
+US-11046,2025-01-31,West,Technology,Monitor,2,579.95,69.13
+US-11047,2025-02-01,West,Technology,Monitor,2,642.02,133.69
+US-11048,2025-02-03,East,Technology,Printer,2,488.7,15.49
+US-11049,2025-02-04,East,Office Supplies,Binder,3,120.15,35.33
+US-11050,2025-02-04,Central,Technology,Laptop,5,3961.07,-76.2
+US-11051,2025-02-04,Central,Office Supplies,Binder,1,31.83,4.97
+US-11052,2025-02-04,East,Office Supplies,Binder,2,81.53,24.76
+US-11053,2025-02-04,Central,Office Supplies,Binder,2,79.63,23.9
+US-11054,2025-02-04,West,Furniture,Chair,1,246.2,40.11
+US-11055,2025-02-04,East,Office Supplies,Binder,2,81.43,25.33
+US-11056,2025-02-06,West,Furniture,Bookcase,1,345.28,10.45
+US-11057,2025-02-06,East,Technology,Monitor,2,594.84,62.25
+US-11058,2025-02-06,West,Furniture,Chair,2,508.94,81.84
+US-11059,2025-02-06,West,Office Supplies,Binder,2,87.08,28.27
+US-11060,2025-02-07,West,Technology,Phone,1,383.48,88.79
+US-11061,2025-02-07,West,Technology,Phone,4,1347.49,92.03
+US-11062,2025-02-08,Central,Office Supplies,Paper,5,144.07,49.91
+US-11063,2025-02-09,East,Technology,Laptop,2,1844.26,251.05
+US-11064,2025-02-09,Central,Technology,Monitor,2,673.85,134.84
+US-11065,2025-02-09,East,Technology,Laptop,3,2961.57,442.19
+US-11066,2025-02-10,East,Technology,Monitor,1,336.83,59.14
+US-11067,2025-02-10,South,Office Supplies,Paper,5,152.06,52.99
+US-11068,2025-02-10,West,Office Supplies,Paper,1,29.78,11.06
+US-11069,2025-02-10,South,Office Supplies,Storage Box,3,158.15,15.19
+US-11070,2025-02-10,East,Office Supplies,Binder,2,84.73,27.32
+US-11071,2025-02-10,Central,Office Supplies,Storage Box,4,281.66,70.58
+US-11072,2025-02-10,West,Office Supplies,Binder,1,43.75,14.3
+US-11073,2025-02-11,East,Office Supplies,Paper,1,27.98,8.14
+US-11074,2025-02-11,East,Technology,Phone,2,854.84,202.83
+US-11075,2025-02-12,West,Technology,Printer,2,441.0,-28.64
+US-11076,2025-02-12,Central,Technology,Printer,1,272.52,25.2
+US-11077,2025-02-12,East,Furniture,Bookcase,2,614.07,-16.12
+US-11078,2025-02-13,West,Technology,Phone,1,405.52,81.98
+US-11079,2025-02-13,West,Furniture,Chair,2,473.97,83.06
+US-11080,2025-02-13,East,Furniture,Chair,3,659.74,57.97
+US-11081,2025-02-16,Central,Office Supplies,Pen Set,1,23.77,6.25
+US-11082,2025-02-16,East,Technology,Printer,1,267.29,14.58
+US-11083,2025-02-17,East,Technology,Printer,1,258.68,9.48
+US-11084,2025-02-17,East,Furniture,Chair,5,1056.21,75.45
+US-11085,2025-02-17,South,Office Supplies,Binder,1,44.66,13.74
+US-11086,2025-02-17,East,Office Supplies,Paper,3,86.67,25.58
+US-11087,2025-02-18,West,Office Supplies,Binder,1,40.43,11.83
+US-11088,2025-02-18,South,Technology,Phone,2,812.1,133.8
+US-11089,2025-02-18,East,Technology,Printer,3,714.5,33.36
+US-11090,2025-02-19,East,Technology,Laptop,5,5152.92,671.72
+US-11091,2025-02-20,Central,Technology,Monitor,2,557.69,11.2
+US-11092,2025-02-20,East,Technology,Phone,4,1702.5,358.54
+US-11093,2025-02-20,Central,Office Supplies,Binder,1,37.81,10.39
+US-11094,2025-02-20,East,Office Supplies,Pen Set,1,23.56,5.5
+US-11095,2025-02-21,West,Technology,Phone,2,825.85,195.05
+US-11096,2025-02-21,South,Technology,Laptop,4,3723.46,399.72
+US-11097,2025-02-21,East,Technology,Printer,1,278.66,25.85
+US-11098,2025-02-22,East,Technology,Phone,5,2105.45,499.61
+US-11099,2025-02-22,Central,Office Supplies,Storage Box,2,121.29,18.21
+US-11100,2025-02-22,West,Office Supplies,Paper,1,30.85,10.5
+US-11101,2025-02-23,South,Technology,Phone,5,2014.65,444.89
+US-11102,2025-02-24,East,Technology,Monitor,1,302.12,33.39
+US-11103,2025-02-24,Central,Office Supplies,Paper,3,94.89,34.77
+US-11104,2025-02-24,Central,Technology,Monitor,2,698.55,126.28
+US-11105,2025-02-24,West,Office Supplies,Paper,2,63.58,23.64
+US-11106,2025-02-25,Central,Furniture,Bookcase,4,1406.89,132.58
+US-11107,2025-02-25,East,Technology,Phone,1,422.32,93.63
+US-11108,2025-02-25,East,Furniture,Chair,2,488.38,76.54
+US-11109,2025-02-26,Central,Office Supplies,Paper,4,118.33,40.37
+US-11110,2025-02-26,South,Office Supplies,Binder,2,81.86,23.62
+US-11111,2025-02-26,East,Technology,Laptop,1,980.41,90.59
+US-11112,2025-02-27,West,Technology,Phone,1,437.96,102.83
+US-11113,2025-02-27,Central,Office Supplies,Pen Set,1,25.1,6.9
+US-11114,2025-02-27,Central,Technology,Monitor,2,589.7,64.54
+US-11115,2025-02-28,Central,Office Supplies,Binder,4,160.78,50.66
+US-11116,2025-02-28,East,Office Supplies,Paper,4,114.56,30.13
+US-11117,2025-03-01,West,Office Supplies,Binder,2,82.6,25.01
+US-11118,2025-03-02,East,Office Supplies,Paper,3,74.01,13.55
+US-11119,2025-03-02,Central,Office Supplies,Paper,2,57.36,20.02
+US-11120,2025-03-03,East,Office Supplies,Paper,3,95.23,35.81
+US-11121,2025-03-03,West,Office Supplies,Storage Box,2,120.44,23.59
+US-11122,2025-03-03,West,Technology,Monitor,1,315.94,32.61
+US-11123,2025-03-03,East,Technology,Printer,4,999.42,37.97
+US-11124,2025-03-04,South,Office Supplies,Binder,3,118.79,33.24
+US-11125,2025-03-04,East,Technology,Monitor,2,624.47,65.06
+US-11126,2025-03-04,East,Office Supplies,Storage Box,2,134.06,31.04
+US-11127,2025-03-04,West,Office Supplies,Storage Box,2,129.04,33.51
+US-11128,2025-03-04,East,Office Supplies,Paper,2,62.19,22.74
+US-11129,2025-03-05,East,Technology,Monitor,3,943.11,160.82
+US-11130,2025-03-05,East,Technology,Monitor,3,889.96,83.49
+US-11131,2025-03-05,West,Office Supplies,Paper,1,28.04,9.64
+US-11132,2025-03-06,East,Office Supplies,Storage Box,1,55.88,9.26
+US-11133,2025-03-06,Central,Furniture,Chair,3,681.49,55.6
+US-11134,2025-03-06,East,Office Supplies,Pen Set,3,54.62,7.63
+US-11135,2025-03-07,West,Furniture,Bookcase,1,372.51,30.82
+US-11136,2025-03-07,South,Technology,Monitor,5,1590.77,321.18
+US-11137,2025-03-08,East,Technology,Monitor,4,1304.25,264.45
+US-11138,2025-03-09,East,Technology,Printer,2,514.62,20.2
+US-11139,2025-03-10,Central,Office Supplies,Pen Set,2,50.13,14.21
+US-11140,2025-03-10,Central,Furniture,Bookcase,3,1171.16,123.05
+US-11141,2025-03-10,East,Furniture,Table,1,477.58,22.08
+US-11142,2025-03-10,Central,Office Supplies,Paper,5,144.99,46.81
+US-11143,2025-03-10,East,Office Supplies,Binder,3,101.02,16.92
+US-11144,2025-03-11,West,Furniture,Table,4,1684.78,115.42
+US-11145,2025-03-11,West,Technology,Monitor,4,1305.58,253.9
+US-11146,2025-03-11,South,Office Supplies,Binder,2,64.45,8.5
+US-11147,2025-03-11,South,Furniture,Chair,1,223.5,30.57
+US-11148,2025-03-11,West,Furniture,Bookcase,2,674.19,61.67
+US-11149,2025-03-11,South,Office Supplies,Binder,1,40.49,12.45
+US-11150,2025-03-13,Central,Office Supplies,Paper,2,63.64,23.02
+US-11151,2025-03-13,West,Office Supplies,Storage Box,1,65.99,15.3
+US-11152,2025-03-13,Central,Furniture,Table,3,1270.16,-34.47
+US-11153,2025-03-13,Central,Office Supplies,Paper,2,58.27,21.99
+US-11154,2025-03-13,South,Office Supplies,Binder,1,39.86,10.47
+US-11155,2025-03-13,Central,Technology,Monitor,4,1106.83,48.21
+US-11156,2025-03-14,South,Furniture,Chair,1,186.93,0.67
+US-11157,2025-03-14,West,Technology,Laptop,4,3851.36,498.54
+US-11158,2025-03-15,West,Technology,Laptop,1,919.24,57.72
+US-11159,2025-03-15,West,Office Supplies,Binder,3,125.8,36.9
+US-11160,2025-03-15,Central,Office Supplies,Paper,1,26.79,8.73
+US-11161,2025-03-15,Central,Office Supplies,Pen Set,5,111.57,23.1
+US-11162,2025-03-16,Central,Technology,Phone,1,385.92,82.09
+US-11163,2025-03-16,East,Technology,Printer,1,202.36,-12.09
+US-11164,2025-03-16,East,Technology,Laptop,2,1460.43,-13.03
+US-11165,2025-03-16,East,Furniture,Table,1,461.68,20.54
+US-11166,2025-03-16,Central,Office Supplies,Pen Set,1,23.14,6.67
+US-11167,2025-03-17,West,Office Supplies,Paper,1,24.33,5.33
+US-11168,2025-03-17,West,Technology,Laptop,2,2055.92,285.27
+US-11169,2025-03-17,East,Furniture,Table,2,951.67,61.43
+US-11170,2025-03-18,Central,Technology,Monitor,2,506.43,16.6
+US-11171,2025-03-18,East,Technology,Monitor,4,995.16,23.87
+US-11172,2025-03-19,West,Furniture,Table,2,959.56,44.62
+US-11173,2025-03-19,West,Office Supplies,Binder,2,78.24,21.6
+US-11174,2025-03-19,West,Technology,Phone,1,429.52,88.5
+US-11175,2025-03-19,East,Technology,Monitor,1,288.89,36.89
+US-11176,2025-03-20,West,Technology,Printer,1,241.23,18.18
+US-11177,2025-03-20,West,Technology,Monitor,1,254.22,3.89
+US-11178,2025-03-20,South,Office Supplies,Paper,2,59.97,19.39
+US-11179,2025-03-21,East,Furniture,Chair,1,216.96,15.52
+US-11180,2025-03-21,South,Furniture,Chair,2,453.32,67.62
+US-11181,2025-03-21,West,Office Supplies,Pen Set,2,44.96,9.0
+US-11182,2025-03-21,East,Technology,Laptop,5,4951.8,499.52
+US-11183,2025-03-22,East,Office Supplies,Storage Box,3,208.56,46.91
+US-11184,2025-03-22,Central,Office Supplies,Storage Box,4,255.57,63.62
+US-11185,2025-03-22,Central,Technology,Laptop,1,821.25,-17.73
+US-11186,2025-03-22,South,Technology,Laptop,1,873.07,61.12
+US-11187,2025-03-23,West,Office Supplies,Paper,1,23.73,4.45
+US-11188,2025-03-24,East,Office Supplies,Binder,2,70.93,17.34
+US-11189,2025-03-25,East,Technology,Printer,5,1388.45,134.95
+US-11190,2025-03-25,East,Technology,Phone,1,324.95,24.48
+US-11191,2025-03-25,East,Technology,Printer,2,535.93,69.62
+US-11192,2025-03-25,East,Technology,Printer,2,473.37,15.54
+US-11193,2025-03-27,Central,Office Supplies,Paper,1,31.92,11.43
+US-11194,2025-03-27,East,Office Supplies,Binder,2,87.51,27.05
+US-11195,2025-03-27,West,Technology,Printer,1,279.41,28.95
+US-11196,2025-03-27,West,Office Supplies,Binder,1,33.23,4.59
+US-11197,2025-03-29,West,Furniture,Table,3,1429.23,98.28
+US-11198,2025-03-29,South,Furniture,Chair,1,228.71,22.41
+US-11199,2025-03-29,Central,Office Supplies,Binder,1,43.49,12.74
+US-11200,2025-03-30,West,Furniture,Table,1,430.54,13.48
+US-11201,2025-03-30,West,Technology,Monitor,2,558.62,66.26
+US-11202,2025-03-30,West,Technology,Printer,1,261.82,26.33
+US-11203,2025-03-31,South,Office Supplies,Pen Set,1,24.17,6.1
+US-11204,2025-03-31,East,Furniture,Table,1,429.67,18.36
+US-11205,2025-03-31,South,Furniture,Table,1,358.16,-41.49
+US-11206,2025-04-01,Central,Technology,Monitor,2,676.8,139.28
+US-11207,2025-04-01,West,Furniture,Chair,4,912.91,83.74
+US-11208,2025-04-01,East,Technology,Phone,1,334.98,17.05
+US-11209,2025-04-02,West,Furniture,Chair,1,197.84,-2.57
+US-11210,2025-04-02,West,Furniture,Chair,3,714.24,104.52
+US-11211,2025-04-02,Central,Furniture,Chair,3,680.19,107.35
+US-11212,2025-04-02,South,Technology,Phone,1,345.47,27.56
+US-11213,2025-04-02,Central,Technology,Printer,3,809.2,61.76
+US-11214,2025-04-03,West,Office Supplies,Binder,1,33.89,4.55
+US-11215,2025-04-03,East,Office Supplies,Binder,2,75.74,21.91
+US-11216,2025-04-03,West,Office Supplies,Paper,2,58.74,19.7
+US-11217,2025-04-03,Central,Furniture,Desk,2,786.86,-65.19
+US-11218,2025-04-03,West,Technology,Printer,1,253.13,3.76
+US-11219,2025-04-04,West,Technology,Phone,1,320.59,13.06
+US-11220,2025-04-05,West,Office Supplies,Pen Set,1,20.95,4.04
+US-11221,2025-04-05,West,Technology,Printer,1,260.01,16.64
+US-11222,2025-04-05,East,Technology,Monitor,2,503.98,18.49
+US-11223,2025-04-06,West,Office Supplies,Paper,3,82.19,22.11
+US-11224,2025-04-06,West,Technology,Laptop,5,4628.26,256.98
+US-11225,2025-04-07,West,Technology,Phone,2,871.71,192.14
+US-11226,2025-04-07,West,Furniture,Table,3,1345.58,87.22
+US-11227,2025-04-08,South,Technology,Monitor,2,650.44,116.31
+US-11228,2025-04-08,East,Technology,Monitor,1,309.98,40.17
+US-11229,2025-04-08,Central,Office Supplies,Paper,1,31.88,12.04
+US-11230,2025-04-08,East,Furniture,Bookcase,1,359.3,40.66
+US-11231,2025-04-08,East,Office Supplies,Pen Set,5,113.67,27.62
+US-11232,2025-04-09,Central,Technology,Printer,2,534.13,53.74
+US-11233,2025-04-09,West,Technology,Phone,5,2026.23,465.44
+US-11234,2025-04-09,East,Office Supplies,Binder,2,89.38,28.48
+US-11235,2025-04-09,West,Technology,Monitor,1,262.01,5.9
+US-11236,2025-04-09,West,Office Supplies,Binder,2,84.75,24.85
+US-11237,2025-04-10,Central,Technology,Printer,3,719.66,50.57
+US-11238,2025-04-10,West,Office Supplies,Binder,3,118.9,38.08
+US-11239,2025-04-10,East,Furniture,Chair,2,463.73,76.36
+US-11240,2025-04-10,East,Furniture,Table,2,902.53,32.82
+US-11241,2025-04-10,South,Furniture,Bookcase,3,1164.24,156.8
+US-11242,2025-04-11,Central,Office Supplies,Binder,3,117.59,35.45
+US-11243,2025-04-11,South,Technology,Printer,4,1042.33,106.62
+US-11244,2025-04-11,East,Office Supplies,Binder,2,88.81,28.66
+US-11245,2025-04-11,West,Technology,Phone,3,1045.75,160.9
+US-11246,2025-04-12,South,Office Supplies,Binder,2,66.45,11.03
+US-11247,2025-04-13,West,Technology,Monitor,2,642.6,119.67
+US-11248,2025-04-13,East,Technology,Phone,1,339.62,16.4
+US-11249,2025-04-14,West,Furniture,Chair,5,1024.07,68.71
+US-11250,2025-04-14,Central,Technology,Phone,2,800.17,189.48
+US-11251,2025-04-14,Central,Office Supplies,Binder,1,35.2,5.55
+US-11252,2025-04-14,Central,Office Supplies,Paper,4,111.63,41.69
+US-11253,2025-04-15,East,Furniture,Desk,4,1902.74,107.63
+US-11254,2025-04-16,Central,Office Supplies,Binder,4,141.85,35.3
+US-11255,2025-04-17,West,Office Supplies,Paper,3,84.15,27.78
+US-11256,2025-04-17,Central,Technology,Printer,3,608.08,-29.77
+US-11257,2025-04-17,East,Office Supplies,Binder,1,44.61,13.04
+US-11258,2025-04-18,Central,Furniture,Desk,2,1081.68,106.16
+US-11259,2025-04-18,West,Office Supplies,Binder,1,38.65,8.36
+US-11260,2025-04-18,West,Office Supplies,Binder,2,86.87,26.34
+US-11261,2025-04-19,Central,Technology,Phone,1,429.04,96.8
+US-11262,2025-04-19,West,Technology,Phone,4,1554.99,364.16
+US-11263,2025-04-20,West,Office Supplies,Binder,1,44.22,12.98
+US-11264,2025-04-21,East,Technology,Laptop,1,868.43,41.34
+US-11265,2025-04-21,South,Technology,Phone,2,703.22,84.71
+US-11266,2025-04-21,East,Furniture,Chair,4,888.24,104.82
+US-11267,2025-04-22,East,Furniture,Table,2,925.47,60.83
+US-11268,2025-04-22,East,Office Supplies,Binder,2,80.89,24.97
+US-11269,2025-04-22,West,Furniture,Chair,1,212.96,13.98
+US-11270,2025-04-22,West,Furniture,Bookcase,1,366.01,30.43
+US-11271,2025-04-22,Central,Furniture,Chair,1,227.66,22.44
+US-11272,2025-04-22,East,Technology,Monitor,4,1249.03,261.42
+US-11273,2025-04-23,East,Office Supplies,Paper,3,91.83,32.89
+US-11274,2025-04-23,Central,Office Supplies,Pen Set,3,59.03,6.4
+US-11275,2025-04-23,South,Technology,Printer,1,229.26,-11.66
+US-11276,2025-04-23,East,Furniture,Chair,3,606.25,39.65
+US-11277,2025-04-23,West,Technology,Phone,4,1594.09,320.76
+US-11278,2025-04-24,West,Technology,Phone,1,409.99,86.37
+US-11279,2025-04-24,Central,Technology,Phone,2,783.65,114.85
+US-11280,2025-04-24,West,Office Supplies,Paper,1,28.57,8.67
+US-11281,2025-04-25,South,Office Supplies,Paper,1,31.4,10.92
+US-11282,2025-04-25,West,Technology,Monitor,3,954.21,192.53
+US-11283,2025-04-26,West,Furniture,Table,1,417.64,0.84
+US-11284,2025-04-27,West,Office Supplies,Pen Set,2,46.71,10.85
+US-11285,2025-04-28,West,Office Supplies,Paper,1,29.04,10.73
+US-11286,2025-04-28,West,Furniture,Chair,3,613.31,-3.75
+US-11287,2025-04-28,West,Office Supplies,Paper,4,112.83,39.02
+US-11288,2025-04-28,East,Furniture,Bookcase,4,1576.61,205.89
+US-11289,2025-04-29,South,Office Supplies,Binder,3,127.43,32.98
+US-11290,2025-04-29,West,Office Supplies,Storage Box,4,253.98,35.63
+US-11291,2025-04-29,West,Furniture,Table,1,455.12,16.44
+US-11292,2025-04-29,East,Furniture,Table,5,2390.7,99.16
+US-11293,2025-04-29,West,Office Supplies,Binder,4,176.5,53.81
+US-11294,2025-04-30,East,Technology,Monitor,1,322.09,48.3
+US-11295,2025-04-30,Central,Technology,Phone,5,1840.58,251.01
+US-11296,2025-04-30,South,Furniture,Desk,1,395.37,-24.32
+US-11297,2025-04-30,South,Technology,Printer,1,217.59,-11.04
+US-11298,2025-05-01,Central,Office Supplies,Storage Box,1,59.88,8.79
+US-11299,2025-05-01,East,Office Supplies,Pen Set,3,67.99,18.63
+US-11300,2025-05-01,West,Furniture,Desk,1,535.83,43.75
+US-11301,2025-05-01,West,Technology,Phone,3,1235.51,272.06
+US-11302,2025-05-02,West,Technology,Phone,1,307.05,18.93
+US-11303,2025-05-02,East,Furniture,Chair,4,898.56,137.87
+US-11304,2025-05-02,West,Furniture,Chair,2,425.15,41.92
+US-11305,2025-05-03,West,Furniture,Chair,5,1203.02,202.53
+US-11306,2025-05-04,West,Furniture,Bookcase,1,387.17,51.88
+US-11307,2025-05-05,Central,Office Supplies,Pen Set,3,68.35,17.62
+US-11308,2025-05-05,West,Technology,Laptop,1,931.51,143.63
+US-11309,2025-05-05,West,Office Supplies,Pen Set,3,68.74,18.32
+US-11310,2025-05-05,West,Furniture,Chair,2,453.37,65.79
+US-11311,2025-05-05,East,Office Supplies,Pen Set,1,18.14,2.17
+US-11312,2025-05-05,East,Technology,Printer,2,535.02,54.44
+US-11313,2025-05-05,East,Technology,Monitor,3,742.09,11.21
+US-11314,2025-05-06,Central,Technology,Phone,3,1251.0,277.42
+US-11315,2025-05-06,East,Technology,Phone,4,1594.64,269.9
+US-11316,2025-05-06,East,Technology,Phone,1,335.0,13.76
+US-11317,2025-05-06,East,Office Supplies,Binder,3,121.66,31.53
+US-11318,2025-05-06,West,Furniture,Table,1,421.27,-13.89
+US-11319,2025-05-07,West,Technology,Phone,3,1156.58,271.76
+US-11320,2025-05-07,South,Technology,Phone,1,426.78,93.06
+US-11321,2025-05-07,West,Office Supplies,Binder,1,41.23,10.97
+US-11322,2025-05-07,Central,Office Supplies,Binder,2,81.89,25.44
+US-11323,2025-05-07,South,Technology,Monitor,2,629.35,107.52
+US-11324,2025-05-08,East,Office Supplies,Paper,1,29.52,10.35
+US-11325,2025-05-08,South,Technology,Monitor,2,507.32,18.33
+US-11326,2025-05-08,South,Office Supplies,Paper,2,58.51,21.72
+US-11327,2025-05-08,East,Furniture,Desk,5,2462.39,-5.61
+US-11328,2025-05-08,East,Furniture,Chair,1,240.35,34.49
+US-11329,2025-05-08,Central,Office Supplies,Binder,2,83.3,25.73
+US-11330,2025-05-09,East,Office Supplies,Paper,3,86.68,28.66
+US-11331,2025-05-09,East,Office Supplies,Paper,1,27.35,8.75
+US-11332,2025-05-09,Central,Office Supplies,Paper,1,24.42,5.24
+US-11333,2025-05-09,South,Technology,Phone,1,394.18,85.58
+US-11334,2025-05-09,East,Furniture,Bookcase,1,385.7,50.18
+US-11335,2025-05-10,South,Technology,Phone,2,828.95,186.16
+US-11336,2025-05-11,West,Technology,Phone,5,1984.09,449.62
+US-11337,2025-05-11,Central,Technology,Monitor,1,274.54,7.71
+US-11338,2025-05-11,Central,Furniture,Desk,2,952.46,58.42
+US-11339,2025-05-12,South,Technology,Printer,4,970.81,18.79
+US-11340,2025-05-12,South,Office Supplies,Binder,1,42.75,12.58
+US-11341,2025-05-12,West,Furniture,Bookcase,1,332.44,15.66
+US-11342,2025-05-13,West,Technology,Monitor,1,348.6,61.3
+US-11343,2025-05-13,West,Office Supplies,Binder,1,43.52,13.77
+US-11344,2025-05-13,South,Office Supplies,Paper,1,29.46,8.9
+US-11345,2025-05-14,West,Office Supplies,Paper,2,53.82,15.02
+US-11346,2025-05-14,East,Office Supplies,Pen Set,4,87.54,21.53
+US-11347,2025-05-14,Central,Office Supplies,Binder,2,64.22,10.09
+US-11348,2025-05-15,Central,Furniture,Chair,3,689.98,74.98
+US-11349,2025-05-15,East,Office Supplies,Storage Box,5,266.24,19.2
+US-11350,2025-05-15,West,Technology,Printer,2,416.62,-13.65
+US-11351,2025-05-15,East,Technology,Printer,1,287.67,27.99
+US-11352,2025-05-15,South,Technology,Laptop,1,780.59,-16.11
+US-11353,2025-05-16,East,Technology,Printer,2,457.13,-15.65
+US-11354,2025-05-16,Central,Technology,Phone,1,386.01,69.19
+US-11355,2025-05-16,South,Technology,Monitor,1,332.17,54.01
+US-11356,2025-05-17,Central,Office Supplies,Binder,2,82.4,26.48
+US-11357,2025-05-18,East,Technology,Monitor,2,678.93,138.74
+US-11358,2025-05-19,South,Technology,Phone,1,397.49,81.18
+US-11359,2025-05-19,West,Technology,Monitor,1,275.73,12.99
+US-11360,2025-05-19,West,Furniture,Chair,1,227.3,40.55
+US-11361,2025-05-20,East,Office Supplies,Paper,2,55.31,16.78
+US-11362,2025-05-20,East,Office Supplies,Binder,2,75.43,20.81
+US-11363,2025-05-20,East,Technology,Phone,1,381.45,46.78
+US-11364,2025-05-21,South,Technology,Phone,2,768.4,169.24
+US-11365,2025-05-21,East,Technology,Printer,4,1087.73,132.76
+US-11366,2025-05-21,East,Technology,Phone,3,1058.01,165.57
+US-11367,2025-05-21,Central,Office Supplies,Binder,1,38.81,9.96
+US-11368,2025-05-22,South,Technology,Laptop,1,950.79,92.66
+US-11369,2025-05-22,West,Furniture,Bookcase,1,326.0,8.26
+US-11370,2025-05-22,West,Technology,Printer,4,940.0,31.82
+US-11371,2025-05-22,South,Office Supplies,Paper,3,91.48,33.32
+US-11372,2025-05-22,Central,Technology,Phone,3,1111.64,197.58
+US-11373,2025-05-23,East,Furniture,Table,1,447.44,-1.37
+US-11374,2025-05-23,Central,Technology,Printer,1,268.61,33.76
+US-11375,2025-05-23,South,Technology,Printer,1,249.5,4.95
+US-11376,2025-05-23,Central,Office Supplies,Paper,1,28.62,9.45
+US-11377,2025-05-24,West,Furniture,Table,2,827.45,-21.62
+US-11378,2025-05-24,West,Technology,Printer,1,258.95,9.99
+US-11379,2025-05-24,East,Technology,Laptop,2,1789.66,151.55
+US-11380,2025-05-24,West,Furniture,Bookcase,5,1794.98,211.27
+US-11381,2025-05-25,West,Technology,Printer,1,237.75,11.78
+US-11382,2025-05-26,Central,Furniture,Chair,2,429.3,34.88
+US-11383,2025-05-26,East,Office Supplies,Pen Set,1,20.59,3.75
+US-11384,2025-05-26,West,Furniture,Bookcase,2,584.39,-12.7
+US-11385,2025-05-26,East,Office Supplies,Binder,2,83.94,22.17
+US-11386,2025-05-26,East,Office Supplies,Paper,4,114.11,42.84
+US-11387,2025-05-26,Central,Technology,Monitor,3,1004.7,202.57
+US-11388,2025-05-27,East,Office Supplies,Binder,1,42.52,13.4
+US-11389,2025-05-27,Central,Technology,Phone,1,398.52,73.55
+US-11390,2025-05-27,East,Furniture,Table,2,709.52,-72.4
+US-11391,2025-05-27,West,Furniture,Chair,4,974.96,105.33
+US-11392,2025-05-27,East,Technology,Monitor,1,340.83,65.45
+US-11393,2025-05-28,South,Technology,Printer,4,1047.6,111.38
+US-11394,2025-05-28,Central,Furniture,Bookcase,3,1078.15,128.34
+US-11395,2025-05-29,South,Technology,Phone,1,340.75,25.96
+US-11396,2025-05-30,South,Technology,Laptop,5,4742.98,663.74
+US-11397,2025-05-30,Central,Office Supplies,Binder,1,33.72,5.1
+US-11398,2025-05-30,West,Furniture,Bookcase,2,727.1,94.54
+US-11399,2025-05-30,West,Furniture,Chair,2,455.75,75.69
+US-11400,2025-05-31,South,Technology,Phone,1,392.83,78.08
+US-11401,2025-05-31,East,Technology,Monitor,1,345.15,62.91
+US-11402,2025-05-31,East,Office Supplies,Binder,5,175.73,27.77
+US-11403,2025-06-01,East,Technology,Phone,4,1456.86,283.88
+US-11404,2025-06-02,West,Technology,Monitor,1,247.64,8.94
+US-11405,2025-06-02,South,Technology,Phone,1,323.64,23.65
+US-11406,2025-06-02,Central,Technology,Laptop,2,2058.44,301.14
+US-11407,2025-06-02,Central,Office Supplies,Paper,3,89.24,28.68
+US-11408,2025-06-03,East,Office Supplies,Paper,5,135.04,40.68
+US-11409,2025-06-03,Central,Office Supplies,Paper,1,28.9,10.92
+US-11410,2025-06-04,West,Technology,Monitor,3,931.33,178.68
+US-11411,2025-06-04,West,Office Supplies,Binder,3,111.44,30.86
+US-11412,2025-06-04,South,Office Supplies,Pen Set,3,57.22,6.28
+US-11413,2025-06-04,East,Office Supplies,Binder,2,82.74,23.36
+US-11414,2025-06-05,Central,Technology,Printer,1,239.43,18.4
+US-11415,2025-06-05,South,Furniture,Desk,1,485.31,38.95
+US-11416,2025-06-05,West,Technology,Printer,1,263.54,30.42
+US-11417,2025-06-05,East,Office Supplies,Paper,3,76.39,20.42
+US-11418,2025-06-06,West,Furniture,Table,2,868.72,56.52
+US-11419,2025-06-06,West,Furniture,Chair,1,213.19,25.19
+US-11420,2025-06-07,Central,Technology,Phone,5,1598.46,74.82
+US-11421,2025-06-07,South,Office Supplies,Paper,1,26.21,7.55
+US-11422,2025-06-08,West,Technology,Phone,2,700.23,39.95
+US-11423,2025-06-09,Central,Furniture,Desk,3,1462.62,113.75
+US-11424,2025-06-09,East,Technology,Monitor,2,671.47,117.14
+US-11425,2025-06-09,West,Office Supplies,Paper,1,29.9,11.21
+US-11426,2025-06-09,Central,Office Supplies,Paper,2,54.98,18.45
+US-11427,2025-06-09,East,Furniture,Desk,1,553.99,49.73
+US-11428,2025-06-09,East,Office Supplies,Binder,1,41.2,12.44
+US-11429,2025-06-10,East,Office Supplies,Paper,2,55.64,15.2
+US-11430,2025-06-10,Central,Office Supplies,Pen Set,1,19.72,2.39
+US-11431,2025-06-11,Central,Technology,Printer,1,213.21,-8.31
+US-11432,2025-06-11,Central,Technology,Laptop,2,2065.41,314.96
+US-11433,2025-06-11,East,Office Supplies,Storage Box,1,61.15,8.56
+US-11434,2025-06-11,Central,Furniture,Bookcase,3,984.37,45.64
+US-11435,2025-06-12,West,Furniture,Table,3,1275.5,-2.9
+US-11436,2025-06-12,West,Office Supplies,Paper,5,136.91,36.89
+US-11437,2025-06-12,Central,Office Supplies,Paper,2,59.33,21.4
+US-11438,2025-06-12,South,Furniture,Bookcase,1,372.8,48.74
+US-11439,2025-06-15,East,Office Supplies,Pen Set,1,22.9,5.18
+US-11440,2025-06-15,East,Technology,Printer,1,222.52,-12.79
+US-11441,2025-06-15,East,Furniture,Bookcase,1,405.47,47.41
+US-11442,2025-06-16,South,Office Supplies,Paper,1,28.02,9.75
+US-11443,2025-06-16,East,Office Supplies,Binder,1,38.52,10.74
+US-11444,2025-06-16,East,Technology,Monitor,1,259.99,7.55
+US-11445,2025-06-16,East,Technology,Monitor,2,603.45,98.35
+US-11446,2025-06-16,Central,Office Supplies,Binder,2,71.81,17.46
+US-11447,2025-06-17,East,Office Supplies,Storage Box,4,225.27,40.06
+US-11448,2025-06-17,West,Furniture,Bookcase,2,723.75,87.77
+US-11449,2025-06-17,East,Technology,Monitor,1,323.02,61.28
+US-11450,2025-06-17,East,Furniture,Bookcase,3,963.88,-40.49
+US-11451,2025-06-17,Central,Office Supplies,Binder,2,83.0,21.84
+US-11452,2025-06-17,West,Furniture,Desk,1,438.15,-25.33
+US-11453,2025-06-18,East,Technology,Printer,5,1209.03,22.59
+US-11454,2025-06-18,East,Technology,Phone,2,655.15,46.44
+US-11455,2025-06-18,East,Technology,Printer,1,278.31,31.63
+US-11456,2025-06-19,East,Office Supplies,Paper,2,60.88,19.51
+US-11457,2025-06-19,Central,Technology,Phone,1,427.23,96.36
+US-11458,2025-06-19,East,Technology,Printer,3,782.7,67.88
+US-11459,2025-06-19,South,Furniture,Chair,5,1145.36,182.18
+US-11460,2025-06-19,East,Technology,Monitor,2,566.68,51.3
+US-11461,2025-06-20,Central,Office Supplies,Paper,4,115.44,32.13
+US-11462,2025-06-20,East,Office Supplies,Binder,2,88.28,27.43
+US-11463,2025-06-21,West,Technology,Monitor,1,316.72,42.08
+US-11464,2025-06-21,East,Office Supplies,Paper,5,148.08,53.05
+US-11465,2025-06-22,East,Technology,Monitor,5,1533.25,260.47
+US-11466,2025-06-22,East,Furniture,Chair,5,1189.09,201.62
+US-11467,2025-06-22,Central,Office Supplies,Paper,1,29.53,10.31
+US-11468,2025-06-22,East,Office Supplies,Storage Box,2,134.53,29.76
+US-11469,2025-06-22,West,Furniture,Table,5,2342.51,117.46
+US-11470,2025-06-23,East,Technology,Monitor,1,320.57,66.22
+US-11471,2025-06-23,West,Furniture,Chair,2,459.97,75.59
+US-11472,2025-06-23,West,Technology,Printer,5,1250.87,33.25
+US-11473,2025-06-24,East,Technology,Laptop,4,3244.43,-13.9
+US-11474,2025-06-24,West,Technology,Phone,2,627.21,33.38
+US-11475,2025-06-24,South,Technology,Phone,2,874.62,204.67
+US-11476,2025-06-24,South,Furniture,Table,1,451.21,16.96
+US-11477,2025-06-24,West,Furniture,Bookcase,2,718.11,53.49
+US-11478,2025-06-25,Central,Office Supplies,Binder,2,74.75,17.72
+US-11479,2025-06-25,East,Furniture,Chair,1,238.27,41.7
+US-11480,2025-06-25,Central,Furniture,Table,1,341.13,-36.27
+US-11481,2025-06-25,Central,Office Supplies,Paper,2,63.01,23.2
+US-11482,2025-06-25,Central,Technology,Laptop,2,1564.65,-61.16
+US-11483,2025-06-25,East,Technology,Phone,5,1777.73,226.24
+US-11484,2025-06-26,West,Furniture,Bookcase,1,332.51,18.78
+US-11485,2025-06-26,South,Technology,Phone,1,395.64,86.45
+US-11486,2025-06-26,East,Office Supplies,Binder,1,43.58,13.98
+US-11487,2025-06-27,South,Technology,Monitor,1,317.8,59.27
+US-11488,2025-06-27,West,Technology,Phone,1,347.74,52.17
+US-11489,2025-06-27,West,Office Supplies,Paper,1,29.5,11.15
+US-11490,2025-06-27,South,Furniture,Bookcase,2,782.92,103.88
+US-11491,2025-06-27,West,Furniture,Bookcase,1,402.12,54.21
+US-11492,2025-06-27,East,Office Supplies,Pen Set,3,71.21,19.35
+US-11493,2025-06-28,West,Furniture,Desk,1,500.61,32.0
+US-11494,2025-06-28,West,Technology,Printer,2,556.15,64.18
+US-11495,2025-06-29,East,Office Supplies,Binder,4,138.52,20.01
+US-11496,2025-06-29,West,Technology,Phone,3,1258.1,259.45
+US-11497,2025-06-29,West,Technology,Laptop,2,1840.3,244.77
+US-11498,2025-06-29,East,Office Supplies,Binder,2,89.31,28.39
+US-11499,2025-06-30,West,Office Supplies,Pen Set,1,21.25,4.06
+US-11500,2025-06-30,East,Furniture,Chair,2,451.36,70.28
+US-11501,2025-07-01,West,Furniture,Table,3,1214.48,-39.37
+US-11502,2025-07-01,Central,Furniture,Chair,3,575.26,10.75
+US-11503,2025-07-01,West,Office Supplies,Storage Box,1,68.59,17.1
+US-11504,2025-07-01,East,Furniture,Bookcase,1,292.59,-16.28
+US-11505,2025-07-02,South,Technology,Printer,4,1012.52,129.02
+US-11506,2025-07-02,Central,Technology,Monitor,3,987.07,159.83
+US-11507,2025-07-03,Central,Office Supplies,Storage Box,1,67.85,17.31
+US-11508,2025-07-03,West,Furniture,Desk,1,431.49,-24.63
+US-11509,2025-07-04,East,Office Supplies,Binder,1,35.76,5.32
+US-11510,2025-07-04,East,Technology,Printer,1,260.67,27.03
+US-11511,2025-07-04,Central,Technology,Printer,2,555.73,58.22
+US-11512,2025-07-04,East,Office Supplies,Paper,2,58.57,21.04
+US-11513,2025-07-05,South,Technology,Laptop,2,1830.01,271.96
+US-11514,2025-07-05,West,Office Supplies,Binder,1,38.94,9.69
+US-11515,2025-07-06,Central,Furniture,Desk,1,494.87,33.64
+US-11516,2025-07-06,West,Furniture,Table,2,863.52,42.67
+US-11517,2025-07-07,East,Technology,Phone,1,387.0,70.78
+US-11518,2025-07-07,West,Technology,Monitor,4,1325.78,179.2
+US-11519,2025-07-07,East,Office Supplies,Binder,2,83.52,26.67
+US-11520,2025-07-07,Central,Technology,Printer,1,213.52,-7.21
+US-11521,2025-07-07,South,Technology,Monitor,1,352.03,64.24
+US-11522,2025-07-08,West,Technology,Monitor,1,277.71,5.4
+US-11523,2025-07-08,West,Technology,Phone,1,391.64,87.37
+US-11524,2025-07-08,West,Office Supplies,Binder,1,39.91,13.06
+US-11525,2025-07-09,East,Office Supplies,Binder,5,179.43,23.85
+US-11526,2025-07-09,West,Office Supplies,Binder,3,127.48,40.74
+US-11527,2025-07-09,East,Technology,Phone,1,396.49,92.41
+US-11528,2025-07-10,East,Technology,Laptop,4,4113.59,645.17
+US-11529,2025-07-10,South,Furniture,Table,3,1425.73,71.44
+US-11530,2025-07-10,South,Office Supplies,Binder,1,43.15,14.16
+US-11531,2025-07-10,West,Office Supplies,Binder,1,39.39,11.53
+US-11532,2025-07-10,Central,Office Supplies,Paper,1,31.83,11.04
+US-11533,2025-07-11,Central,Office Supplies,Pen Set,1,24.65,7.3
+US-11534,2025-07-11,East,Technology,Monitor,2,687.38,125.28
+US-11535,2025-07-11,East,Technology,Printer,1,260.59,21.26
+US-11536,2025-07-11,South,Office Supplies,Paper,5,117.01,23.83
+US-11537,2025-07-12,Central,Furniture,Desk,4,1902.25,75.82
+US-11538,2025-07-13,Central,Technology,Printer,3,844.79,101.74
+US-11539,2025-07-13,South,Furniture,Desk,3,1487.1,41.21
+US-11540,2025-07-13,East,Office Supplies,Pen Set,1,23.53,5.31
+US-11541,2025-07-14,West,Technology,Monitor,1,292.0,49.57
+US-11542,2025-07-14,South,Technology,Monitor,1,331.05,64.5
+US-11543,2025-07-16,Central,Technology,Printer,1,265.18,23.36
+US-11544,2025-07-16,West,Office Supplies,Paper,2,62.28,23.51
+US-11545,2025-07-17,South,Office Supplies,Binder,3,117.59,33.89
+US-11546,2025-07-17,South,Furniture,Table,4,1521.38,-58.76
+US-11547,2025-07-17,South,Furniture,Bookcase,2,714.83,36.97
+US-11548,2025-07-17,East,Technology,Printer,5,1363.1,95.16
+US-11549,2025-07-17,West,Office Supplies,Binder,1,41.85,13.55
+US-11550,2025-07-18,East,Office Supplies,Binder,1,37.15,8.23
+US-11551,2025-07-18,East,Office Supplies,Pen Set,5,111.77,30.16
+US-11552,2025-07-18,South,Office Supplies,Paper,2,58.01,19.94
+US-11553,2025-07-18,South,Office Supplies,Storage Box,1,49.34,3.41
+US-11554,2025-07-18,West,Technology,Printer,1,283.79,32.99
+US-11555,2025-07-18,East,Office Supplies,Paper,1,23.04,4.37
+US-11556,2025-07-19,West,Technology,Phone,2,773.59,174.25
+US-11557,2025-07-20,West,Technology,Laptop,1,875.79,82.73
+US-11558,2025-07-20,West,Office Supplies,Paper,1,29.16,10.67
+US-11559,2025-07-21,West,Technology,Phone,1,395.19,82.64
+US-11560,2025-07-21,East,Office Supplies,Pen Set,1,23.68,5.4
+US-11561,2025-07-22,East,Furniture,Bookcase,1,341.95,32.96
+US-11562,2025-07-22,East,Furniture,Table,3,1308.31,60.85
+US-11563,2025-07-22,Central,Office Supplies,Storage Box,3,183.12,39.73
+US-11564,2025-07-22,Central,Technology,Printer,1,218.12,-14.39
+US-11565,2025-07-22,East,Office Supplies,Paper,2,60.35,22.29
+US-11566,2025-07-23,East,Office Supplies,Paper,3,88.72,33.41
+US-11567,2025-07-23,Central,Technology,Laptop,5,4518.69,237.92
+US-11568,2025-07-23,West,Technology,Printer,5,1443.0,167.48
+US-11569,2025-07-23,East,Technology,Monitor,3,852.32,78.98
+US-11570,2025-07-23,South,Technology,Monitor,4,1367.89,275.8
+US-11571,2025-07-23,East,Technology,Phone,1,423.22,90.59
+US-11572,2025-07-23,West,Office Supplies,Storage Box,3,151.04,14.47
+US-11573,2025-07-23,West,Technology,Phone,2,829.86,182.59
+US-11574,2025-07-24,West,Technology,Monitor,2,617.34,105.16
+US-11575,2025-07-24,West,Furniture,Desk,2,974.81,46.22
+US-11576,2025-07-24,East,Technology,Printer,2,555.58,68.32
+US-11577,2025-07-24,East,Furniture,Bookcase,2,647.34,34.44
+US-11578,2025-07-25,East,Office Supplies,Paper,5,142.17,44.54
+US-11579,2025-07-25,South,Office Supplies,Storage Box,5,335.43,78.77
+US-11580,2025-07-25,East,Furniture,Table,4,1501.51,-182.5
+US-11581,2025-07-25,Central,Office Supplies,Binder,1,32.5,5.49
+US-11582,2025-07-25,Central,Office Supplies,Binder,5,204.83,57.53
+US-11583,2025-07-26,West,Technology,Phone,1,397.66,81.25
+US-11584,2025-07-26,East,Technology,Printer,1,259.33,27.68
+US-11585,2025-07-28,South,Office Supplies,Storage Box,3,195.47,38.43
+US-11586,2025-07-28,Central,Office Supplies,Pen Set,3,64.99,16.54
+US-11587,2025-07-29,East,Furniture,Chair,1,246.99,40.56
+US-11588,2025-07-29,East,Technology,Phone,2,793.76,182.16
+US-11589,2025-07-30,East,Technology,Printer,4,917.6,-46.61
+US-11590,2025-07-30,East,Technology,Phone,1,398.18,82.05
+US-11591,2025-07-30,Central,Office Supplies,Paper,1,29.84,8.96
+US-11592,2025-07-31,Central,Furniture,Table,2,841.73,-15.66
+US-11593,2025-07-31,West,Office Supplies,Binder,4,129.25,18.75
+US-11594,2025-07-31,Central,Office Supplies,Paper,4,104.04,27.56
+US-11595,2025-07-31,West,Office Supplies,Pen Set,2,43.42,10.65
+US-11596,2025-07-31,East,Technology,Printer,3,770.57,70.5
+US-11597,2025-08-01,West,Office Supplies,Paper,1,30.78,11.06
+US-11598,2025-08-01,Central,Technology,Printer,1,241.94,20.01
+US-11599,2025-08-01,Central,Office Supplies,Paper,2,53.17,17.19
+US-11600,2025-08-02,East,Office Supplies,Paper,3,95.74,34.03
+US-11601,2025-08-02,West,Office Supplies,Paper,1,22.46,4.28
+US-11602,2025-08-02,East,Technology,Monitor,1,338.08,61.9
+US-11603,2025-08-03,West,Technology,Monitor,2,622.59,126.51
+US-11604,2025-08-03,South,Technology,Phone,1,381.58,47.52
+US-11605,2025-08-03,West,Technology,Phone,1,383.41,51.15
+US-11606,2025-08-04,Central,Office Supplies,Pen Set,2,47.77,13.64
+US-11607,2025-08-04,South,Technology,Printer,5,1353.16,147.66
+US-11608,2025-08-04,East,Office Supplies,Binder,2,82.55,26.94
+US-11609,2025-08-05,East,Office Supplies,Binder,2,79.83,24.98
+US-11610,2025-08-05,East,Technology,Phone,1,306.62,18.4
+US-11611,2025-08-05,Central,Office Supplies,Binder,2,73.22,18.29
+US-11612,2025-08-06,West,Technology,Printer,1,256.12,32.78
+US-11613,2025-08-06,East,Technology,Printer,4,827.69,-50.49
+US-11614,2025-08-07,West,Technology,Phone,2,635.06,28.48
+US-11615,2025-08-07,East,Technology,Printer,3,793.99,53.06
+US-11616,2025-08-07,Central,Furniture,Desk,4,1771.95,-5.69
+US-11617,2025-08-07,East,Office Supplies,Pen Set,4,80.72,9.1
+US-11618,2025-08-08,West,Technology,Phone,1,328.87,19.57
+US-11619,2025-08-08,East,Office Supplies,Paper,1,29.56,10.81
+US-11620,2025-08-08,West,Technology,Monitor,1,306.05,28.72
+US-11621,2025-08-08,East,Technology,Monitor,3,999.27,158.8
+US-11622,2025-08-08,Central,Technology,Phone,2,618.06,38.7
+US-11623,2025-08-09,Central,Furniture,Chair,1,230.49,18.73
+US-11624,2025-08-09,Central,Technology,Phone,5,1594.07,107.85
+US-11625,2025-08-10,Central,Technology,Laptop,2,1942.94,228.81
+US-11626,2025-08-10,Central,Office Supplies,Paper,2,63.42,23.26
+US-11627,2025-08-10,South,Technology,Monitor,2,633.94,110.23
+US-11628,2025-08-10,West,Office Supplies,Binder,1,34.98,5.78
+US-11629,2025-08-10,West,Technology,Phone,3,1022.49,68.1
+US-11630,2025-08-11,Central,Technology,Printer,2,493.94,7.86
+US-11631,2025-08-11,Central,Technology,Printer,5,1338.16,132.26
+US-11632,2025-08-12,East,Technology,Laptop,1,913.19,132.32
+US-11633,2025-08-12,West,Technology,Monitor,1,317.41,58.18
+US-11634,2025-08-12,West,Furniture,Table,3,1412.06,43.23
+US-11635,2025-08-12,Central,Furniture,Chair,3,705.72,114.44
+US-11636,2025-08-12,Central,Technology,Phone,4,1565.17,247.56
+US-11637,2025-08-13,West,Furniture,Chair,1,186.83,-3.62
+US-11638,2025-08-13,West,Furniture,Table,2,926.1,31.72
+US-11639,2025-08-14,Central,Technology,Laptop,4,3199.75,-33.07
+US-11640,2025-08-14,West,Technology,Monitor,1,310.37,50.4
+US-11641,2025-08-14,South,Technology,Printer,1,241.62,14.69
+US-11642,2025-08-14,South,Office Supplies,Binder,1,36.99,8.75
+US-11643,2025-08-15,South,Technology,Phone,1,377.1,55.71
+US-11644,2025-08-15,East,Furniture,Chair,2,391.72,4.2
+US-11645,2025-08-15,West,Furniture,Desk,5,2721.95,292.01
+US-11646,2025-08-16,East,Office Supplies,Paper,3,90.7,34.12
+US-11647,2025-08-16,East,Technology,Phone,2,697.71,89.38
+US-11648,2025-08-16,West,Office Supplies,Paper,4,116.33,42.52
+US-11649,2025-08-17,South,Furniture,Bookcase,3,1150.98,123.91
+US-11650,2025-08-17,Central,Technology,Laptop,2,2063.72,307.53
+US-11651,2025-08-18,East,Technology,Printer,2,511.62,65.78
+US-11652,2025-08-18,Central,Technology,Laptop,1,995.14,141.69
+US-11653,2025-08-18,Central,Furniture,Desk,2,1038.19,106.24
+US-11654,2025-08-18,West,Technology,Phone,2,764.32,167.39
+US-11655,2025-08-18,East,Office Supplies,Paper,2,63.43,23.66
+US-11656,2025-08-18,West,Technology,Printer,4,1075.42,95.41
+US-11657,2025-08-19,West,Furniture,Bookcase,2,803.46,101.25
+US-11658,2025-08-20,East,Furniture,Desk,3,1491.1,140.33
+US-11659,2025-08-20,West,Technology,Monitor,2,569.66,64.66
+US-11660,2025-08-20,West,Technology,Phone,2,805.53,167.5
+US-11661,2025-08-20,West,Technology,Monitor,4,1202.06,170.1
+US-11662,2025-08-20,East,Technology,Monitor,1,321.42,56.94
+US-11663,2025-08-21,South,Office Supplies,Paper,4,126.02,45.35
+US-11664,2025-08-21,Central,Technology,Printer,1,209.85,-14.36
+US-11665,2025-08-21,West,Office Supplies,Storage Box,2,101.39,8.47
+US-11666,2025-08-24,South,Technology,Laptop,4,4159.66,525.07
+US-11667,2025-08-24,East,Technology,Printer,5,1283.91,22.32
+US-11668,2025-08-24,South,Furniture,Chair,2,504.84,86.92
+US-11669,2025-08-25,East,Office Supplies,Storage Box,2,126.06,31.5
+US-11670,2025-08-25,Central,Technology,Printer,2,525.56,65.75
+US-11671,2025-08-26,East,Technology,Monitor,3,1014.93,180.2
+US-11672,2025-08-26,East,Office Supplies,Binder,1,41.78,12.52
+US-11673,2025-08-26,South,Office Supplies,Binder,3,98.89,14.53
+US-11674,2025-08-26,East,Office Supplies,Paper,1,22.55,4.11
+US-11675,2025-08-27,East,Technology,Monitor,4,1392.27,245.79
+US-11676,2025-08-27,Central,Technology,Phone,5,1967.9,299.39
+US-11677,2025-08-27,Central,Technology,Printer,2,446.58,-23.33
+US-11678,2025-08-28,East,Office Supplies,Storage Box,4,256.86,52.93
+US-11679,2025-08-28,West,Technology,Printer,2,520.71,33.69
+US-11680,2025-08-28,East,Technology,Monitor,1,329.03,56.76
+US-11681,2025-08-29,South,Office Supplies,Pen Set,2,49.36,14.28
+US-11682,2025-08-29,West,Technology,Laptop,1,891.48,36.03
+US-11683,2025-08-29,Central,Technology,Phone,4,1537.6,334.77
+US-11684,2025-08-29,East,Technology,Phone,4,1611.76,378.18
+US-11685,2025-08-30,East,Furniture,Bookcase,5,1578.39,-92.31
+US-11686,2025-08-31,East,Office Supplies,Binder,1,44.09,13.98
+US-11687,2025-08-31,Central,Technology,Printer,2,440.02,-16.66
+US-11688,2025-08-31,East,Technology,Printer,1,270.08,30.59
+US-11689,2025-09-01,East,Technology,Phone,1,413.84,86.72
+US-11690,2025-09-01,West,Technology,Phone,2,840.6,169.33
+US-11691,2025-09-01,Central,Furniture,Table,1,425.17,17.96
+US-11692,2025-09-01,Central,Technology,Monitor,2,669.31,103.52
+US-11693,2025-09-02,West,Office Supplies,Storage Box,1,56.38,4.22
+US-11694,2025-09-02,West,Office Supplies,Paper,1,29.18,10.05
+US-11695,2025-09-02,South,Office Supplies,Binder,2,85.28,25.1
+US-11696,2025-09-02,West,Office Supplies,Binder,2,87.96,25.61
+US-11697,2025-09-03,South,Technology,Laptop,2,1582.95,-8.98
+US-11698,2025-09-03,Central,Furniture,Table,3,1163.6,-38.78
+US-11699,2025-09-03,West,Technology,Printer,1,250.46,15.77
+US-11700,2025-09-03,East,Technology,Phone,1,423.72,95.87
+US-11701,2025-09-03,West,Technology,Monitor,1,268.15,10.5
+US-11702,2025-09-04,Central,Furniture,Bookcase,1,355.76,43.52
+US-11703,2025-09-04,East,Furniture,Bookcase,1,404.29,56.21
+US-11704,2025-09-05,East,Office Supplies,Paper,3,94.16,34.74
+US-11705,2025-09-05,West,Furniture,Desk,1,528.83,56.06
+US-11706,2025-09-05,East,Technology,Laptop,2,1797.2,146.57
+US-11707,2025-09-05,West,Office Supplies,Paper,4,118.87,42.93
+US-11708,2025-09-05,South,Office Supplies,Paper,1,27.85,8.79
+US-11709,2025-09-05,East,Technology,Monitor,1,312.56,60.73
+US-11710,2025-09-06,South,Office Supplies,Pen Set,2,48.35,13.93
+US-11711,2025-09-08,Central,Technology,Phone,2,861.32,175.44
+US-11712,2025-09-08,West,Technology,Monitor,1,255.02,5.26
+US-11713,2025-09-09,East,Technology,Monitor,1,352.59,60.26
+US-11714,2025-09-09,Central,Furniture,Bookcase,2,708.06,58.35
+US-11715,2025-09-09,Central,Technology,Monitor,3,929.21,163.51
+US-11716,2025-09-09,West,Office Supplies,Paper,1,28.26,8.12
+US-11717,2025-09-09,East,Office Supplies,Pen Set,1,22.74,6.34
+US-11718,2025-09-09,East,Technology,Printer,1,240.6,11.1
+US-11719,2025-09-10,East,Technology,Monitor,1,343.73,62.5
+US-11720,2025-09-10,East,Technology,Laptop,2,1950.11,251.16
+US-11721,2025-09-10,West,Furniture,Chair,1,246.39,40.5
+US-11722,2025-09-11,West,Office Supplies,Paper,1,25.28,5.1
+US-11723,2025-09-11,East,Furniture,Table,4,1910.3,117.49
+US-11724,2025-09-13,West,Technology,Printer,3,779.3,51.11
+US-11725,2025-09-13,East,Technology,Phone,3,1233.32,292.73
+US-11726,2025-09-14,West,Technology,Monitor,4,1200.51,180.25
+US-11727,2025-09-15,West,Technology,Laptop,2,1915.82,216.32
+US-11728,2025-09-15,Central,Furniture,Desk,1,495.64,39.97
+US-11729,2025-09-15,West,Furniture,Bookcase,2,652.39,18.71
+US-11730,2025-09-16,South,Office Supplies,Paper,1,31.09,10.87
+US-11731,2025-09-17,East,Office Supplies,Paper,1,29.38,10.67
+US-11732,2025-09-17,West,Furniture,Desk,3,1549.98,58.97
+US-11733,2025-09-17,Central,Office Supplies,Paper,2,48.62,9.46
+US-11734,2025-09-17,East,Technology,Phone,2,732.17,114.8
+US-11735,2025-09-18,West,Technology,Phone,1,391.87,54.35
+US-11736,2025-09-18,West,Technology,Monitor,1,303.08,50.11
+US-11737,2025-09-18,Central,Technology,Phone,2,786.78,132.53
+US-11738,2025-09-18,Central,Technology,Phone,4,1556.49,196.84
+US-11739,2025-09-18,West,Furniture,Chair,4,906.78,114.48
+US-11740,2025-09-19,West,Technology,Printer,2,554.97,69.0
+US-11741,2025-09-19,Central,Furniture,Chair,1,256.42,43.09
+US-11742,2025-09-19,East,Furniture,Table,1,395.72,-15.64
+US-11743,2025-09-19,East,Office Supplies,Storage Box,3,210.71,47.09
+US-11744,2025-09-20,Central,Office Supplies,Storage Box,2,113.0,16.22
+US-11745,2025-09-20,Central,Furniture,Chair,1,223.48,27.41
+US-11746,2025-09-20,Central,Office Supplies,Pen Set,1,20.08,2.12
+US-11747,2025-09-20,West,Technology,Printer,2,556.86,50.28
+US-11748,2025-09-21,Central,Furniture,Chair,1,233.26,30.4
+US-11749,2025-09-21,West,Office Supplies,Paper,2,56.78,20.54
+US-11750,2025-09-22,South,Office Supplies,Binder,5,197.3,42.2
+US-11751,2025-09-22,East,Office Supplies,Pen Set,1,19.4,2.36
+US-11752,2025-09-22,West,Office Supplies,Storage Box,2,120.31,24.85
+US-11753,2025-09-22,Central,Technology,Laptop,4,3528.82,345.1
+US-11754,2025-09-23,East,Office Supplies,Binder,5,195.91,53.67
+US-11755,2025-09-24,West,Furniture,Bookcase,2,685.01,37.98
+US-11756,2025-09-24,Central,Technology,Phone,4,1747.52,384.25
+US-11757,2025-09-24,West,Office Supplies,Paper,2,57.13,15.04
+US-11758,2025-09-24,East,Technology,Monitor,1,327.04,43.69
+US-11759,2025-09-24,South,Furniture,Chair,2,453.08,50.91
+US-11760,2025-09-24,East,Office Supplies,Storage Box,2,135.72,31.49
+US-11761,2025-09-24,Central,Office Supplies,Paper,2,60.59,20.75
+US-11762,2025-09-24,East,Office Supplies,Paper,2,55.99,20.34
+US-11763,2025-09-24,East,Technology,Monitor,1,342.07,68.65
+US-11764,2025-09-25,South,Technology,Monitor,2,567.67,62.8
+US-11765,2025-09-25,East,Technology,Phone,2,861.59,191.19
+US-11766,2025-09-25,Central,Technology,Monitor,2,603.32,84.95
+US-11767,2025-09-25,East,Office Supplies,Paper,1,29.75,10.47
+US-11768,2025-09-25,East,Technology,Phone,3,1197.52,264.89
+US-11769,2025-09-25,Central,Technology,Monitor,4,1303.89,248.37
+US-11770,2025-09-26,West,Furniture,Chair,5,899.59,-14.28
+US-11771,2025-09-26,East,Office Supplies,Pen Set,3,67.95,17.37
+US-11772,2025-09-27,East,Technology,Printer,2,510.76,64.39
+US-11773,2025-09-27,West,Office Supplies,Pen Set,2,49.0,14.1
+US-11774,2025-09-28,Central,Office Supplies,Pen Set,1,23.84,6.94
+US-11775,2025-09-28,Central,Furniture,Table,5,1925.45,-74.77
+US-11776,2025-09-29,East,Technology,Printer,2,457.11,-31.95
+US-11777,2025-09-29,Central,Furniture,Chair,2,428.99,30.26
+US-11778,2025-09-29,East,Technology,Printer,2,525.1,57.3
+US-11779,2025-09-29,Central,Technology,Printer,2,572.56,71.9
+US-11780,2025-09-29,West,Technology,Printer,1,261.46,24.79
+US-11781,2025-09-30,East,Office Supplies,Binder,5,199.15,60.65
+US-11782,2025-09-30,West,Technology,Phone,5,1570.82,112.59
+US-11783,2025-09-30,West,Office Supplies,Paper,1,32.09,11.66
+US-11784,2025-09-30,Central,Technology,Printer,1,284.5,25.93
+US-11785,2025-10-01,East,Furniture,Chair,3,688.53,60.16
+US-11786,2025-10-01,Central,Office Supplies,Binder,2,86.07,27.67
+US-11787,2025-10-01,West,Technology,Phone,2,788.79,185.5
+US-11788,2025-10-01,West,Furniture,Bookcase,2,642.1,-35.35
+US-11789,2025-10-01,West,Office Supplies,Binder,5,182.94,43.16
+US-11790,2025-10-01,East,Furniture,Bookcase,1,395.99,49.06
+US-11791,2025-10-02,West,Technology,Monitor,3,916.77,83.12
+US-11792,2025-10-02,West,Technology,Phone,1,349.65,19.65
+US-11793,2025-10-02,East,Technology,Printer,1,285.54,33.62
+US-11794,2025-10-03,Central,Furniture,Chair,5,1027.11,81.4
+US-11795,2025-10-03,Central,Technology,Phone,1,401.47,89.98
+US-11796,2025-10-03,East,Furniture,Chair,4,919.8,141.02
+US-11797,2025-10-03,Central,Technology,Monitor,3,931.36,176.6
+US-11798,2025-10-04,Central,Technology,Printer,2,543.45,70.24
+US-11799,2025-10-04,East,Technology,Laptop,1,833.95,-30.25
+US-11800,2025-10-04,Central,Technology,Phone,1,417.34,95.29
+US-11801,2025-10-05,West,Furniture,Chair,1,224.66,38.36
+US-11802,2025-10-06,West,Technology,Phone,3,1282.84,292.45
+US-11803,2025-10-06,West,Office Supplies,Pen Set,3,74.01,19.78
+US-11804,2025-10-07,Central,Office Supplies,Paper,2,45.46,9.37
+US-11805,2025-10-07,South,Technology,Phone,1,375.38,51.49
+US-11806,2025-10-08,West,Furniture,Table,1,423.19,24.44
+US-11807,2025-10-08,Central,Office Supplies,Binder,4,156.95,51.56
+US-11808,2025-10-08,East,Office Supplies,Binder,1,37.9,8.57
+US-11809,2025-10-09,South,Technology,Monitor,1,315.93,44.2
+US-11810,2025-10-09,East,Office Supplies,Paper,1,30.11,9.56
+US-11811,2025-10-09,Central,Technology,Phone,4,1705.86,385.65
+US-11812,2025-10-10,South,Technology,Printer,1,251.56,8.68
+US-11813,2025-10-10,Central,Office Supplies,Paper,5,142.85,41.68
+US-11814,2025-10-10,Central,Office Supplies,Storage Box,1,54.5,3.97
+US-11815,2025-10-11,West,Technology,Laptop,4,2959.72,-29.43
+US-11816,2025-10-11,Central,Office Supplies,Binder,2,76.56,20.89
+US-11817,2025-10-12,Central,Furniture,Table,2,855.95,53.43
+US-11818,2025-10-12,Central,Technology,Monitor,3,993.79,178.4
+US-11819,2025-10-12,Central,Technology,Printer,1,273.92,29.6
+US-11820,2025-10-13,East,Office Supplies,Paper,1,28.43,9.6
+US-11821,2025-10-13,Central,Technology,Printer,1,270.81,29.09
+US-11822,2025-10-13,East,Furniture,Chair,1,227.14,34.62
+US-11823,2025-10-14,West,Furniture,Chair,2,433.11,52.03
+US-11824,2025-10-14,West,Technology,Phone,1,338.93,14.21
+US-11825,2025-10-14,East,Technology,Monitor,1,319.3,57.32
+US-11826,2025-10-14,Central,Technology,Printer,5,1104.11,-67.83
+US-11827,2025-10-15,Central,Office Supplies,Paper,1,31.57,11.24
+US-11828,2025-10-15,South,Technology,Laptop,1,1035.05,138.83
+US-11829,2025-10-16,West,Technology,Monitor,1,343.86,63.71
+US-11830,2025-10-16,West,Office Supplies,Binder,2,69.02,9.43
+US-11831,2025-10-16,West,Technology,Monitor,1,263.65,7.31
+US-11832,2025-10-16,West,Technology,Monitor,1,273.49,4.08
+US-11833,2025-10-16,East,Technology,Printer,1,255.87,6.38
+US-11834,2025-10-16,East,Technology,Phone,3,1148.27,246.26
+US-11835,2025-10-17,Central,Office Supplies,Binder,2,88.33,25.77
+US-11836,2025-10-17,East,Furniture,Bookcase,3,1215.05,140.14
+US-11837,2025-10-17,East,Technology,Laptop,2,1944.04,280.06
+US-11838,2025-10-17,East,Office Supplies,Paper,1,28.0,7.48
+US-11839,2025-10-19,Central,Furniture,Table,4,1734.4,31.7
+US-11840,2025-10-19,Central,Technology,Monitor,2,665.49,89.03
+US-11841,2025-10-20,West,Office Supplies,Paper,3,75.41,14.43
+US-11842,2025-10-20,East,Office Supplies,Binder,1,41.76,13.19
+US-11843,2025-10-20,West,Office Supplies,Pen Set,1,22.72,6.6
+US-11844,2025-10-20,East,Office Supplies,Paper,1,29.47,10.7
+US-11845,2025-10-20,Central,Technology,Monitor,1,311.55,58.72
+US-11846,2025-10-21,South,Furniture,Chair,1,239.66,36.14
+US-11847,2025-10-21,Central,Technology,Monitor,1,348.01,65.49
+US-11848,2025-10-21,East,Office Supplies,Binder,1,38.1,8.31
+US-11849,2025-10-21,West,Office Supplies,Paper,2,62.05,23.45
+US-11850,2025-10-21,Central,Technology,Phone,1,370.59,65.94
+US-11851,2025-10-21,Central,Furniture,Bookcase,3,1074.41,25.39
+US-11852,2025-10-22,Central,Furniture,Chair,1,212.92,20.2
+US-11853,2025-10-23,West,Technology,Printer,2,495.2,39.34
+US-11854,2025-10-23,West,Office Supplies,Binder,1,33.28,4.48
+US-11855,2025-10-23,East,Technology,Monitor,1,314.54,56.3
+US-11856,2025-10-23,Central,Technology,Printer,1,267.99,15.26
+US-11857,2025-10-23,West,Furniture,Chair,1,209.51,16.14
+US-11858,2025-10-23,East,Office Supplies,Pen Set,2,44.89,8.37
+US-11859,2025-10-23,West,Technology,Printer,1,247.03,6.24
+US-11860,2025-10-24,Central,Technology,Phone,4,1629.47,377.62
+US-11861,2025-10-24,East,Office Supplies,Binder,2,78.92,17.0
+US-11862,2025-10-24,East,Technology,Monitor,5,1613.99,276.75
+US-11863,2025-10-24,East,Furniture,Desk,4,2178.74,175.36
+US-11864,2025-10-24,East,Furniture,Bookcase,2,646.97,-25.65
+US-11865,2025-10-25,South,Office Supplies,Binder,2,78.69,21.45
+US-11866,2025-10-25,South,Office Supplies,Paper,4,112.95,36.22
+US-11867,2025-10-26,South,Technology,Monitor,2,679.48,133.7
+US-11868,2025-10-26,Central,Technology,Phone,1,365.41,70.54
+US-11869,2025-10-27,East,Office Supplies,Pen Set,4,93.99,24.86
+US-11870,2025-10-27,East,Furniture,Table,2,693.09,-88.61
+US-11871,2025-10-27,West,Technology,Monitor,1,300.64,49.58
+US-11872,2025-10-27,Central,Office Supplies,Paper,4,103.19,28.08
+US-11873,2025-10-27,South,Technology,Phone,1,404.88,88.35
+US-11874,2025-10-27,West,Furniture,Chair,2,479.65,78.74
+US-11875,2025-10-28,East,Technology,Printer,3,795.05,77.87
+US-11876,2025-10-28,East,Office Supplies,Binder,1,41.94,13.05
+US-11877,2025-10-28,West,Office Supplies,Pen Set,2,51.14,13.85
+US-11878,2025-10-29,East,Office Supplies,Storage Box,3,209.8,52.39
+US-11879,2025-10-29,East,Office Supplies,Storage Box,2,102.9,6.48
+US-11880,2025-10-29,West,Technology,Phone,3,1042.98,59.22
+US-11881,2025-10-29,West,Office Supplies,Binder,4,152.33,35.78
+US-11882,2025-10-29,West,Technology,Phone,1,430.03,101.23
+US-11883,2025-10-30,East,Furniture,Chair,3,700.9,114.92
+US-11884,2025-10-30,West,Office Supplies,Binder,1,36.95,8.01
+US-11885,2025-10-31,West,Furniture,Chair,1,256.18,37.37
+US-11886,2025-10-31,East,Office Supplies,Paper,4,98.83,21.68
+US-11887,2025-10-31,West,Office Supplies,Paper,5,141.56,51.19
+US-11888,2025-11-01,Central,Office Supplies,Pen Set,2,40.15,5.5
+US-11889,2025-11-02,East,Furniture,Desk,2,985.61,22.69
+US-11890,2025-11-02,South,Technology,Printer,1,282.04,26.49
+US-11891,2025-11-02,West,Furniture,Chair,4,763.13,-8.99
+US-11892,2025-11-02,East,Furniture,Chair,1,228.54,37.42
+US-11893,2025-11-03,South,Technology,Printer,1,260.25,32.07
+US-11894,2025-11-03,West,Furniture,Table,2,737.58,-94.26
+US-11895,2025-11-03,South,Office Supplies,Paper,1,28.38,9.83
+US-11896,2025-11-03,East,Furniture,Chair,1,240.46,40.56
+US-11897,2025-11-03,South,Office Supplies,Paper,4,106.78,33.59
+US-11898,2025-11-04,Central,Office Supplies,Binder,3,125.49,39.23
+US-11899,2025-11-04,East,Office Supplies,Pen Set,4,77.55,10.3
+US-11900,2025-11-04,South,Technology,Phone,1,414.97,79.64
+US-11901,2025-11-04,South,Office Supplies,Binder,1,41.08,11.63
+US-11902,2025-11-04,West,Technology,Printer,2,520.37,53.77
+US-11903,2025-11-04,East,Office Supplies,Binder,5,214.95,64.73
+US-11904,2025-11-04,South,Office Supplies,Paper,1,23.19,4.51
+US-11905,2025-11-05,East,Furniture,Bookcase,1,404.46,51.93
+US-11906,2025-11-05,East,Office Supplies,Paper,1,26.44,7.19
+US-11907,2025-11-05,East,Furniture,Table,2,945.56,46.52
+US-11908,2025-11-05,South,Furniture,Desk,3,1543.27,157.72
+US-11909,2025-11-05,East,Technology,Printer,2,510.23,21.55
+US-11910,2025-11-06,South,Technology,Printer,1,276.11,27.08
+US-11911,2025-11-06,West,Office Supplies,Binder,4,159.8,39.35
+US-11912,2025-11-06,East,Technology,Printer,3,809.41,74.34
+US-11913,2025-11-06,Central,Technology,Monitor,3,854.2,104.39
+US-11914,2025-11-06,South,Office Supplies,Paper,1,29.48,10.44
+US-11915,2025-11-06,East,Office Supplies,Paper,1,29.34,10.35
+US-11916,2025-11-07,West,Office Supplies,Storage Box,1,60.44,9.01
+US-11917,2025-11-07,West,Technology,Phone,3,1299.79,308.68
+US-11918,2025-11-07,Central,Office Supplies,Paper,2,62.75,22.01
+US-11919,2025-11-08,Central,Technology,Printer,1,271.83,18.77
+US-11920,2025-11-08,Central,Office Supplies,Pen Set,3,71.44,17.36
+US-11921,2025-11-08,West,Office Supplies,Paper,3,85.27,24.25
+US-11922,2025-11-09,Central,Technology,Printer,4,1031.62,109.51
+US-11923,2025-11-09,East,Office Supplies,Binder,3,123.61,39.71
+US-11924,2025-11-10,South,Technology,Phone,1,403.03,87.13
+US-11925,2025-11-10,East,Technology,Laptop,4,3916.84,332.8
+US-11926,2025-11-10,East,Office Supplies,Storage Box,1,64.94,16.41
+US-11927,2025-11-10,West,Office Supplies,Paper,5,156.53,59.0
+US-11928,2025-11-11,South,Office Supplies,Paper,1,23.96,4.88
+US-11929,2025-11-11,Central,Technology,Monitor,5,1352.91,30.06
+US-11930,2025-11-12,South,Technology,Laptop,2,1910.35,270.15
+US-11931,2025-11-12,East,Office Supplies,Paper,1,29.36,10.46
+US-11932,2025-11-12,South,Technology,Laptop,2,2086.7,266.5
+US-11933,2025-11-13,West,Furniture,Chair,1,255.54,39.34
+US-11934,2025-11-13,West,Office Supplies,Binder,1,39.78,11.8
+US-11935,2025-11-13,West,Furniture,Chair,2,506.94,74.62
+US-11936,2025-11-13,West,Furniture,Chair,2,490.93,70.19
+US-11937,2025-11-13,Central,Office Supplies,Binder,1,43.59,13.43
+US-11938,2025-11-13,West,Technology,Printer,1,282.86,35.29
+US-11939,2025-11-14,Central,Technology,Phone,3,1187.62,265.56
+US-11940,2025-11-14,Central,Technology,Laptop,1,885.83,67.84
+US-11941,2025-11-14,East,Furniture,Bookcase,3,1153.03,130.95
+US-11942,2025-11-15,West,Technology,Phone,4,1678.54,358.52
+US-11943,2025-11-15,West,Office Supplies,Binder,2,78.77,23.36
+US-11944,2025-11-15,South,Technology,Monitor,3,933.52,117.3
+US-11945,2025-11-16,West,Office Supplies,Binder,4,150.91,41.08
+US-11946,2025-11-16,East,Technology,Monitor,5,1392.72,127.62
+US-11947,2025-11-17,East,Office Supplies,Pen Set,1,24.9,7.03
+US-11948,2025-11-17,East,Office Supplies,Paper,4,95.92,21.05
+US-11949,2025-11-18,South,Technology,Phone,3,921.14,43.62
+US-11950,2025-11-18,East,Office Supplies,Storage Box,2,116.8,19.73
+US-11951,2025-11-18,West,Office Supplies,Paper,2,55.34,17.86
+US-11952,2025-11-18,East,Technology,Phone,1,399.19,91.61
+US-11953,2025-11-18,East,Technology,Phone,3,953.45,69.13
+US-11954,2025-11-18,West,Office Supplies,Binder,3,103.46,15.3
+US-11955,2025-11-18,Central,Office Supplies,Storage Box,4,200.92,12.13
+US-11956,2025-11-19,West,Technology,Laptop,1,960.14,109.6
+US-11957,2025-11-19,South,Technology,Printer,1,236.21,3.38
+US-11958,2025-11-19,South,Technology,Printer,4,1142.4,116.51
+US-11959,2025-11-19,South,Furniture,Table,1,342.65,-41.43
+US-11960,2025-11-20,Central,Technology,Phone,1,415.05,93.14
+US-11961,2025-11-20,East,Furniture,Table,1,449.53,-0.46
+US-11962,2025-11-20,West,Technology,Printer,1,235.42,3.02
+US-11963,2025-11-20,Central,Office Supplies,Storage Box,3,187.92,45.07
+US-11964,2025-11-20,South,Technology,Printer,4,1033.93,75.48
+US-11965,2025-11-20,West,Technology,Laptop,2,1954.86,275.43
+US-11966,2025-11-21,East,Technology,Monitor,1,316.05,55.64
+US-11967,2025-11-21,South,Technology,Laptop,5,5127.55,682.81
+US-11968,2025-11-21,Central,Technology,Printer,3,780.94,71.09
+US-11969,2025-11-21,West,Technology,Phone,3,1030.16,48.06
+US-11970,2025-11-21,East,Office Supplies,Paper,1,28.97,9.77
+US-11971,2025-11-22,Central,Technology,Phone,3,1164.46,216.94
+US-11972,2025-11-23,Central,Technology,Phone,3,1177.77,264.24
+US-11973,2025-11-24,Central,Technology,Phone,5,2149.96,433.24
+US-11974,2025-11-24,East,Technology,Phone,2,828.71,172.18
+US-11975,2025-11-24,Central,Technology,Monitor,2,523.08,14.24
+US-11976,2025-11-24,South,Office Supplies,Binder,2,81.67,22.46
+US-11977,2025-11-24,South,Office Supplies,Paper,5,158.98,55.58
+US-11978,2025-11-25,West,Office Supplies,Paper,2,64.18,24.33
+US-11979,2025-11-25,West,Technology,Printer,2,536.92,67.36
+US-11980,2025-11-25,West,Technology,Laptop,4,2948.13,-97.27
+US-11981,2025-11-25,South,Technology,Monitor,2,612.25,72.96
+US-11982,2025-11-25,East,Technology,Laptop,1,929.89,93.07
+US-11983,2025-11-25,West,Office Supplies,Storage Box,1,62.61,15.47
+US-11984,2025-11-26,South,Technology,Printer,2,570.93,54.07
+US-11985,2025-11-26,Central,Technology,Monitor,4,1217.17,123.23
+US-11986,2025-11-26,East,Technology,Laptop,2,1787.68,164.94
+US-11987,2025-11-26,Central,Furniture,Desk,1,541.18,49.92
+US-11988,2025-11-26,Central,Office Supplies,Storage Box,4,267.29,65.06
+US-11989,2025-11-26,West,Furniture,Chair,1,219.1,26.67
+US-11990,2025-11-26,Central,Technology,Phone,2,640.17,45.69
+US-11991,2025-11-27,East,Office Supplies,Binder,2,85.82,25.93
+US-11992,2025-11-27,Central,Technology,Phone,1,379.21,55.3
+US-11993,2025-11-27,South,Technology,Printer,2,533.91,36.21
+US-11994,2025-11-27,East,Office Supplies,Binder,1,42.18,10.57
+US-11995,2025-11-27,West,Office Supplies,Storage Box,1,62.83,12.85
+US-11996,2025-11-28,East,Furniture,Table,2,857.85,-15.21
+US-11997,2025-11-28,West,Office Supplies,Paper,1,29.78,9.99
+US-11998,2025-11-28,Central,Office Supplies,Paper,1,29.17,11.02
+US-11999,2025-11-28,East,Office Supplies,Paper,3,94.68,32.85
+US-12000,2025-11-28,South,Technology,Laptop,2,2057.16,290.8
+US-12001,2025-11-28,Central,Technology,Phone,1,387.92,67.16
+US-12002,2025-11-28,East,Office Supplies,Pen Set,5,104.4,20.75
+US-12003,2025-11-29,East,Office Supplies,Binder,1,35.22,5.66
+US-12004,2025-11-29,Central,Furniture,Desk,2,1010.8,30.65
+US-12005,2025-11-29,West,Technology,Printer,1,255.73,8.42
+US-12006,2025-11-29,West,Furniture,Chair,2,466.04,66.77
+US-12007,2025-11-29,East,Technology,Printer,5,1335.08,166.64
+US-12008,2025-11-30,Central,Technology,Monitor,2,603.9,72.68
+US-12009,2025-12-01,West,Technology,Phone,1,412.19,85.92
+US-12010,2025-12-01,West,Furniture,Chair,1,236.23,25.96
+US-12011,2025-12-01,West,Technology,Phone,2,763.69,95.65
+US-12012,2025-12-02,East,Technology,Phone,4,1498.34,185.95
+US-12013,2025-12-02,West,Technology,Phone,1,394.96,79.52
+US-12014,2025-12-02,West,Technology,Printer,2,558.03,64.94
+US-12015,2025-12-02,West,Office Supplies,Paper,5,142.05,51.77
+US-12016,2025-12-03,West,Technology,Monitor,3,796.85,19.43
+US-12017,2025-12-03,East,Furniture,Chair,3,641.63,40.44
+US-12018,2025-12-03,West,Technology,Phone,5,2082.56,425.59
+US-12019,2025-12-03,West,Technology,Laptop,1,976.53,105.31
+US-12020,2025-12-03,Central,Furniture,Desk,2,950.67,-6.61
+US-12021,2025-12-04,East,Office Supplies,Paper,1,29.71,10.17
+US-12022,2025-12-05,South,Office Supplies,Paper,4,124.31,44.62
+US-12023,2025-12-06,West,Furniture,Table,3,1285.25,86.22
+US-12024,2025-12-06,West,Furniture,Table,3,1042.83,-96.79
+US-12025,2025-12-07,East,Technology,Laptop,2,1765.16,158.52
+US-12026,2025-12-07,West,Technology,Monitor,4,1191.75,134.86
+US-12027,2025-12-08,West,Office Supplies,Paper,2,59.89,22.69
+US-12028,2025-12-08,West,Technology,Phone,3,1205.25,287.1
+US-12029,2025-12-08,West,Office Supplies,Paper,3,78.14,22.71
+US-12030,2025-12-08,East,Office Supplies,Paper,2,54.54,14.42
+US-12031,2025-12-08,West,Technology,Printer,1,225.52,-11.8
+US-12032,2025-12-09,West,Technology,Laptop,1,986.6,120.72
+US-12033,2025-12-09,East,Technology,Monitor,4,1233.81,126.95
+US-12034,2025-12-09,East,Office Supplies,Pen Set,3,69.6,18.8
+US-12035,2025-12-09,South,Technology,Laptop,1,819.04,-4.73
+US-12036,2025-12-09,East,Office Supplies,Paper,1,26.93,7.3
+US-12037,2025-12-09,West,Office Supplies,Binder,1,35.82,8.56
+US-12038,2025-12-10,South,Office Supplies,Binder,2,69.36,9.32
+US-12039,2025-12-10,East,Technology,Monitor,1,322.26,67.62
+US-12040,2025-12-10,Central,Technology,Printer,3,845.46,76.83
+US-12041,2025-12-10,Central,Technology,Printer,3,693.81,13.85
+US-12042,2025-12-11,East,Furniture,Desk,1,502.62,38.32
+US-12043,2025-12-12,West,Office Supplies,Paper,1,29.95,10.32
+US-12044,2025-12-12,West,Technology,Printer,1,260.57,26.33
+US-12045,2025-12-12,West,Office Supplies,Paper,3,85.49,28.18
+US-12046,2025-12-12,Central,Technology,Monitor,2,687.41,140.82
+US-12047,2025-12-12,South,Technology,Monitor,4,1383.24,253.47
+US-12048,2025-12-12,South,Technology,Monitor,4,1361.04,257.14
+US-12049,2025-12-13,West,Technology,Monitor,2,684.5,137.6
+US-12050,2025-12-13,West,Technology,Monitor,2,619.14,125.79
+US-12051,2025-12-13,East,Furniture,Chair,1,234.89,38.48
+US-12052,2025-12-14,East,Furniture,Chair,4,817.56,70.54
+US-12053,2025-12-14,South,Technology,Monitor,1,325.6,65.62
+US-12054,2025-12-15,Central,Office Supplies,Paper,2,52.74,14.1
+US-12055,2025-12-15,East,Technology,Monitor,1,316.43,60.36
+US-12056,2025-12-15,Central,Furniture,Bookcase,1,332.19,11.22
+US-12057,2025-12-15,West,Technology,Phone,1,438.27,91.24
+US-12058,2025-12-15,Central,Technology,Monitor,1,335.2,57.1
+US-12059,2025-12-15,West,Furniture,Desk,1,504.67,54.97
+US-12060,2025-12-15,Central,Furniture,Chair,5,1166.66,159.02
+US-12061,2025-12-16,Central,Furniture,Chair,3,712.52,116.79
+US-12062,2025-12-16,East,Technology,Laptop,1,826.54,-25.87
+US-12063,2025-12-16,East,Technology,Printer,2,421.59,-20.46
+US-12064,2025-12-16,South,Technology,Phone,1,433.42,99.8
+US-12065,2025-12-16,West,Office Supplies,Binder,2,81.15,22.58
+US-12066,2025-12-17,South,Technology,Phone,2,766.2,139.59
+US-12067,2025-12-17,Central,Technology,Monitor,4,1311.81,258.68
+US-12068,2025-12-17,West,Office Supplies,Paper,1,28.54,7.46
+US-12069,2025-12-17,West,Furniture,Bookcase,1,394.83,42.75
+US-12070,2025-12-17,South,Office Supplies,Storage Box,1,62.97,14.02
+US-12071,2025-12-18,West,Technology,Monitor,1,348.56,71.84
+US-12072,2025-12-18,Central,Furniture,Chair,1,231.07,40.78
+US-12073,2025-12-18,West,Technology,Phone,2,867.66,193.69
+US-12074,2025-12-18,Central,Technology,Monitor,1,330.49,63.52
+US-12075,2025-12-18,West,Office Supplies,Binder,2,71.58,16.63
+US-12076,2025-12-18,West,Technology,Laptop,2,2013.29,318.74
+US-12077,2025-12-19,West,Office Supplies,Binder,3,116.96,27.44
+US-12078,2025-12-19,South,Office Supplies,Storage Box,4,243.7,47.18
+US-12079,2025-12-19,East,Furniture,Chair,3,606.7,7.99
+US-12080,2025-12-19,Central,Office Supplies,Pen Set,1,23.55,6.28
+US-12081,2025-12-20,Central,Technology,Phone,1,411.66,84.04
+US-12082,2025-12-20,East,Technology,Laptop,2,1636.25,-36.03
+US-12083,2025-12-20,Central,Technology,Printer,1,230.06,-12.86
+US-12084,2025-12-21,West,Office Supplies,Storage Box,2,121.33,26.01
+US-12085,2025-12-22,East,Technology,Phone,4,1631.25,289.44
+US-12086,2025-12-22,East,Technology,Phone,1,380.88,46.93
+US-12087,2025-12-22,West,Office Supplies,Pen Set,2,51.29,14.35
+US-12088,2025-12-22,East,Office Supplies,Paper,2,52.48,14.45
+US-12089,2025-12-23,Central,Technology,Monitor,3,939.8,107.38
+US-12090,2025-12-23,West,Office Supplies,Paper,2,63.24,23.21
+US-12091,2025-12-23,East,Technology,Phone,1,411.1,84.11
+US-12092,2025-12-23,West,Technology,Phone,4,1700.17,390.33
+US-12093,2025-12-23,West,Technology,Monitor,1,318.93,59.6
+US-12094,2025-12-24,East,Furniture,Chair,1,225.49,28.98
+US-12095,2025-12-24,East,Technology,Phone,5,1950.93,382.45
+US-12096,2025-12-24,West,Furniture,Chair,1,240.78,42.12
+US-12097,2025-12-24,Central,Office Supplies,Binder,2,79.07,18.27
+US-12098,2025-12-24,Central,Technology,Phone,2,673.52,46.51
+US-12099,2025-12-24,East,Technology,Monitor,2,592.39,76.64
+US-12100,2025-12-25,South,Technology,Laptop,2,1943.34,270.53
+US-12101,2025-12-25,South,Furniture,Desk,1,531.34,44.38
+US-12102,2025-12-25,West,Technology,Printer,3,808.9,80.91
+US-12103,2025-12-25,South,Office Supplies,Paper,2,62.68,22.15
+US-12104,2025-12-25,Central,Office Supplies,Paper,2,58.25,21.86
+US-12105,2025-12-25,East,Technology,Laptop,3,2733.29,133.97
+US-12106,2025-12-26,West,Office Supplies,Binder,1,41.23,13.08
+US-12107,2025-12-26,Central,Technology,Monitor,4,1277.35,247.2
+US-12108,2025-12-26,South,Technology,Printer,4,1091.98,70.78
+US-12109,2025-12-26,South,Office Supplies,Binder,3,116.94,30.27
+US-12110,2025-12-26,Central,Furniture,Bookcase,4,1382.67,111.61
+US-12111,2025-12-26,Central,Office Supplies,Storage Box,3,157.9,13.47
+US-12112,2025-12-26,West,Office Supplies,Paper,1,23.67,4.71
+US-12113,2025-12-26,Central,Furniture,Chair,1,214.78,13.47
+US-12114,2025-12-26,East,Technology,Phone,2,779.56,159.77
+US-12115,2025-12-27,West,Office Supplies,Paper,5,134.44,43.3
+US-12116,2025-12-28,West,Office Supplies,Binder,2,83.1,25.48
+US-12117,2025-12-28,East,Technology,Phone,1,411.82,77.74
+US-12118,2025-12-28,Central,Furniture,Desk,3,1550.58,68.35
+US-12119,2025-12-29,East,Office Supplies,Paper,1,22.63,4.24
+US-12120,2025-12-29,West,Office Supplies,Paper,1,23.85,5.16
+US-12121,2025-12-30,West,Furniture,Bookcase,1,322.3,-11.7
+US-12122,2025-12-30,West,Technology,Monitor,1,331.37,47.51
+US-12123,2025-12-30,West,Technology,Monitor,2,655.95,134.8
+US-12124,2025-12-30,East,Office Supplies,Paper,1,24.96,4.88
+US-12125,2025-12-31,East,Technology,Laptop,2,1962.96,260.92
+US-12126,2025-12-31,East,Technology,Phone,1,422.88,95.37
+US-12127,2025-12-31,Central,Technology,Printer,4,1145.97,123.23
+US-12128,2025-12-31,West,Furniture,Desk,2,1000.55,91.3
+US-12129,2025-12-31,South,Technology,Phone,4,1557.82,340.66
+US-12130,2025-12-31,East,Technology,Monitor,4,1392.14,269.35

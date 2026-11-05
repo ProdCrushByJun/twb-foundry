@@ -1,0 +1,6 @@
+DIFF     77.0s  lab_nolod.twbx
+        lab_nolod.twbx vs Desktop re-save lab_nolod.resaved.twbx: 8 differences, 6 cosmetic (Desktop's own rewrites), 2 by meaning
+        dropped: 2
+          dropped /workbook/worksheets/worksheet[name=Categories]/table/view/datasource-dependencies/column-instance[name=[usr:Calculation_1201000023962906241:qk]][column=[Calculation_1201000023962906241]]  <column-instance column='[Calculation_1201000023962906241]' derivation='User' name='[usr:Calculation_1201000023962906241:qk]' pivot='key' type='quantitative'>
+          dropped /workbook/worksheets/worksheet[name=Categories]/table/panes/pane/reference-line[scope=per-cell][id=refline2]  <reference-line axis-column='[federated.k958ldymc3kq8taln3jima9jv2ki].[usr:Calculation_7776292907711204151:qk]' enable-instant-analytics='true' formula='aver...
+        every sheet shown at open: 4/4 OK

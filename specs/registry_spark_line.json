@@ -1,0 +1,19 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "calcs": [],
+  "sheets": [
+    {"name": "Regions", "type": "registry", "title": "Regions **by sales trend**",
+     "subtitle": "Sales and profit 2024-2025; monthly sales, the dot is December 2025", "rows": ["Region"], "sort": "desc",
+     "columns": [
+       {"measure": {"field": "Sales"}, "style": "bar_inside", "label": "Sales"},
+       {"measure": {"field": "Profit"}, "style": "text", "label": "Profit"},
+       {"measure": {"field": "Sales"}, "style": "spark", "label": "Monthly sales",
+        "spark": {"date": "Order Date", "level": "month", "from": "2024-01-01", "count": 24, "form": "line"}}
+     ]}
+  ],
+  "dashboard": {"name": "Registry spark line", "title": "**Registry** spark line", "subtitle": "Sample data, 2024-2025",
+                "width": 1000, "height": 420, "row_heights": [1],
+                "grid": [["Regions"]]}
+}

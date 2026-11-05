@@ -1,0 +1,34 @@
+{
+  "$schema": "../../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "shipments.csv"},
+  "calcs": [
+    {"name": "Year", "formula": "STR(YEAR([Ship Date]))"},
+    {"name": "On-time Rate", "formula": "SUM([On Time Flag]) / COUNT([Shipment ID])", "format": "pct1"},
+    {"name": "Avg Transit", "formula": "AVG([Transit Days])", "format": {"type": "number", "decimals": 1}}
+  ],
+  "fields": {"Year": {"color": {"2024": "#118DFF", "2025": "#12239E"}}},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "arrange": "strip",
+     "measures": [
+       {"field": "Shipment ID", "agg": "count", "label": "Shipments"},
+       {"field": "Freight Cost", "agg": "sum", "label": "Freight cost", "format": {"type": "currency", "decimals": 0}},
+       {"field": "On-time Rate", "label": "On-time delivery"},
+       {"field": "Avg Transit", "label": "Avg transit days"}
+     ]},
+    {"name": "By Carrier", "type": "bar", "title": "Shipments **by carrier and year**", "subtitle": "number of shipments",
+     "dimension": "Carrier", "orientation": "vertical", "sort": "desc",
+     "measure": {"field": "Shipment ID", "agg": "count"}, "color": "Year"},
+    {"name": "By Month", "type": "line", "title": "Freight cost **by month**", "subtitle": "$, 2024-2025",
+     "date": {"field": "Ship Date", "level": "month"},
+     "measure": {"field": "Freight Cost", "agg": "sum", "format": {"type": "currency", "decimals": 0}}},
+    {"name": "Region Matrix", "type": "table", "title": "Freight cost **by region and year**", "subtitle": "$",
+     "rows": "Region", "cols": "Year",
+     "measure": {"field": "Freight Cost", "agg": "sum", "format": {"type": "currency", "decimals": 0}},
+     "totals": {"grand": "both"}, "sort": {"by": "total", "order": "desc"}}
+  ],
+  "dashboard": {"name": "Logistics Performance", "title": "**Logistics Performance** - Shipments 2024-2025",
+    "subtitle": "all regions, January 2024 - December 2025", "theme": "cards", "width": 1280, "height": 900,
+    "row_heights": [2, 5, 4],
+    "grid": [["KPI"], ["By Carrier", "By Month"], ["Region Matrix"]]}
+}

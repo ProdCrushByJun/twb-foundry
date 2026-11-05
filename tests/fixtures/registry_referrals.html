@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product Referrals (fixture)</title>
+<!-- Synthetic fixture in the style of ER Operation 'Referrals' for tests: every number is computed
+     from data/sample/sales_stores.csv (decisions/039). -->
+<style>
+  :root { --brand:#5f938f; --ink:#333333; --muted:#898989; --rule:#e6e6e6; --track:#edeff4 }
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { background:#f5f5f5; color:var(--ink); font-family:Arial, sans-serif }
+  .frame { width:1100px; margin:0 auto; padding:24px; display:grid; grid-template-columns:3fr 2fr; gap:16px }
+  h1 { grid-column:1 / -1; font-size:24px; color:var(--brand) }
+  .card { background:#fff; border:1px solid var(--rule); padding:12px }
+  h3 { font-size:12px; margin-bottom:4px }
+  .sub { font-size:9px; color:var(--muted); margin-bottom:8px }
+  table { width:100%; border-collapse:collapse; font-size:12px }
+  th, td { padding:3px 6px; text-align:left; font-weight:normal }
+  thead th { font-weight:bold; font-size:11px }
+  .rk { color:var(--muted); width:28px }
+  .bar { background:var(--brand); color:#fff; font-weight:bold; padding:2px 4px; white-space:nowrap }
+  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px }
+  .ch { display:grid; grid-template-columns:70px 1fr 120px; align-items:center; gap:8px; margin:8px 0; font-size:12px }
+  .track { background:var(--track); height:14px }
+  .fill { background:#4e79a7; height:14px }
+  .lab { color:var(--muted) } .lab b { color:var(--ink) }
+</style>
+</head>
+<body>
+<div class="frame">
+  <h1>Product Referrals</h1>
+  <section class="card">
+    <h3>Sales by product</h3>
+    <div class="sub">Ranked by sales; share of all sales; dot: average profit per order</div>
+    <table>
+      <thead><tr><th>Product</th><th>#</th><th>Sales</th><th>Share</th><th>Avg profit</th></tr></thead>
+      <tbody>
+      <tr><th scope="row">Delta</th><td class="rk">1</td><td><div class="bar" style="width:100%">23,057</div></td><td class="pc">11%</td><td class="dt"><span class="dot" style="background:#afd6d5"></span>23.4</td></tr>
+      <tr><th scope="row">Orbit</th><td class="rk">2</td><td><div class="bar" style="width:85%">19,524</div></td><td class="pc">9%</td><td class="dt"><span class="dot" style="background:#89c6c5"></span>29.1</td></tr>
+      <tr><th scope="row">Falcon</th><td class="rk">3</td><td><div class="bar" style="width:77%">17,750</div></td><td class="pc">8%</td><td class="dt"><span class="dot" style="background:#58b3b1"></span>36.5</td></tr>
+      <tr><th scope="row">Cobalt</th><td class="rk">4</td><td><div class="bar" style="width:72%">16,686</div></td><td class="pc">8%</td><td class="dt"><span class="dot" style="background:#53b1af"></span>37.2</td></tr>
+      <tr><th scope="row">Beacon</th><td class="rk">5</td><td><div class="bar" style="width:70%">16,077</div></td><td class="pc">7%</td><td class="dt"><span class="dot" style="background:#60b6b4"></span>35.3</td></tr>
+      <tr><th scope="row">Meridian</th><td class="rk">6</td><td><div class="bar" style="width:69%">15,836</div></td><td class="pc">7%</td><td class="dt"><span class="dot" style="background:#79c0bf"></span>31.5</td></tr>
+      <tr><th scope="row">Juniper</th><td class="rk">7</td><td><div class="bar" style="width:67%">15,460</div></td><td class="pc">7%</td><td class="dt"><span class="dot" style="background:#3ea8a6"></span>40.4</td></tr>
+      <tr><th scope="row">Harbor</th><td class="rk">8</td><td><div class="bar" style="width:66%">15,326</div></td><td class="pc">7%</td><td class="dt"><span class="dot" style="background:#66b8b7"></span>34.4</td></tr>
+      <tr><th scope="row">Granite</th><td class="rk">9</td><td><div class="bar" style="width:55%">12,754</div></td><td class="pc">6%</td><td class="dt"><span class="dot" style="background:#9acecd"></span>26.4</td></tr>
+      <tr><th scope="row">Atlas</th><td class="rk">10</td><td><div class="bar" style="width:52%">12,003</div></td><td class="pc">6%</td><td class="dt"><span class="dot" style="background:#c8e0e0"></span>19.6</td></tr>
+      <tr><th scope="row">Nova</th><td class="rk">11</td><td><div class="bar" style="width:51%">11,714</div></td><td class="pc">5%</td><td class="dt"><span class="dot" style="background:#c2dedd"></span>20.4</td></tr>
+      <tr><th scope="row">Iris</th><td class="rk">12</td><td><div class="bar" style="width:47%">10,922</div></td><td class="pc">5%</td><td class="dt"><span class="dot" style="background:#64b7b6"></span>34.7</td></tr>
+      <tr><th scope="row">Pioneer</th><td class="rk">13</td><td><div class="bar" style="width:36%">8,255</div></td><td class="pc">4%</td><td class="dt"><span class="dot" style="background:#afd6d5"></span>23.3</td></tr>
+      <tr><th scope="row">Lumen</th><td class="rk">14</td><td><div class="bar" style="width:33%">7,665</div></td><td class="pc">4%</td><td class="dt"><span class="dot" style="background:#c0dddc"></span>20.8</td></tr>
+      <tr><th scope="row">Kestrel</th><td class="rk">15</td><td><div class="bar" style="width:32%">7,311</div></td><td class="pc">3%</td><td class="dt"><span class="dot" style="background:#f1f1f1"></span>13.4</td></tr>
+      <tr><th scope="row">Ember</th><td class="rk">16</td><td><div class="bar" style="width:28%">6,391</div></td><td class="pc">3%</td><td class="dt"><span class="dot" style="background:#e2ebeb"></span>15.6</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="card">
+    <h3>Channels</h3>
+    <div class="sub">Share of sales (sales)</div>
+      <div class="ch"><span class="nm">Online</span><div class="track"><div class="fill" style="width:36%"></div></div><span class="lab"><b>36%</b> (77,142)</span></div>
+      <div class="ch"><span class="nm">Retail</span><div class="track"><div class="fill" style="width:33%"></div></div><span class="lab"><b>33%</b> (71,684)</span></div>
+      <div class="ch"><span class="nm">Partner</span><div class="track"><div class="fill" style="width:31%"></div></div><span class="lab"><b>31%</b> (67,905)</span></div>
+  </section>
+</div>
+</body>
+</html>

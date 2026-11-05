@@ -1,0 +1,26 @@
+{
+  "$schema": "../../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "sales_nulls.csv"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Quantity"}]},
+    {"name": "Regions", "type": "bar", "title": "Sales **by region**", "dimension": "Region",
+     "measure": {"field": "Sales"}},
+    {"name": "Share", "type": "bar", "title": "Share **of total**", "dimension": "Region",
+     "measure": {"field": "Sales", "table_calc": {"type": "percent_of_total"}}},
+    {"name": "Running", "type": "bar", "title": "Running **total**", "dimension": "Region",
+     "measure": {"field": "Sales", "table_calc": {"type": "running_total"}}},
+    {"name": "Categories", "type": "bar", "title": "Quoted **empty**", "dimension": "Category",
+     "measure": {"field": "Sales"}},
+    {"name": "Channels", "type": "bar", "title": "A **space**", "dimension": "Channel",
+     "measure": {"field": "Sales"}},
+    {"name": "Matrix", "type": "table", "title": "Sales **by region and category**", "rows": "Region",
+     "cols": "Category", "measure": {"field": "Sales"}, "totals": {"grand": "both"}},
+    {"name": "Monthly", "type": "line", "title": "Sales **by month**", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}}
+  ],
+  "filters": [{"field": "Region", "show_on": "KPI"}],
+  "dashboard": {"name": "Nulls", "title": "**Null** marks", "subtitle": "Empty dimension values, decisions/056",
+                "width": 1600, "height": 1100, "row_heights": [1, 3, 3],
+                "grid": [["KPI"], ["Regions", "Share", "Running", "Categories", "Channels"], ["Matrix", "Monthly"]]}
+}

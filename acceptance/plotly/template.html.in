@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HR Overview</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+  :root { --bg: #f4f5f7; --card: #ffffff; --line: #e2e5ea; --text: #1f2933; --muted: #6b7684; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 13px/1.4 "Segoe UI", Arial, sans-serif; }
+  .page { width: 1280px; margin: 0 auto; padding: 20px; }
+  header { margin-bottom: 16px; }
+  h1 { font-size: 22px; margin: 0; font-weight: 600; }
+  .sub { color: var(--muted); margin-top: 2px; }
+  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
+  .kpi .name { color: var(--muted); font-size: 12px; }
+  .kpi .value { font-size: 30px; font-weight: 600; margin-top: 4px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  h2 { font-size: 14px; margin: 0 0 2px; font-weight: 600; }
+  .hint { color: var(--muted); font-size: 11px; margin-bottom: 4px; }
+  .chart { height: 280px; }
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; color: var(--muted); font-weight: 600; font-size: 11px; border-bottom: 1px solid var(--line); padding: 6px 4px; }
+  td { padding: 7px 4px; border-bottom: 1px solid #f0f2f5; }
+  th.num, td.num { text-align: right; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>People &amp; Hiring · Overview 2025</h1>
+    <div class="sub">January – December 2025 · all departments</div>
+  </header>
+
+  <section class="kpis">
+    <div class="card kpi"><div class="name">Hires</div><div class="value" id="k-hires"></div></div>
+    <div class="card kpi"><div class="name">Exits</div><div class="value" id="k-exits"></div></div>
+    <div class="card kpi"><div class="name">Net headcount change</div><div class="value" id="k-net"></div></div>
+  </section>
+
+  <section class="row">
+    <div class="card"><h2>Hires and exits by quarter</h2><div class="hint">number of people</div><div class="chart" id="c-q"></div></div>
+    <div class="card"><h2>Exits by department</h2><div class="hint">number of people, all months</div><div class="chart" id="c-dept"></div></div>
+  </section>
+
+  <section class="row">
+    <div class="card"><h2>Exits by month and department</h2><div class="hint">number of people</div><div class="chart" id="c-heat"></div></div>
+    <div class="card"><h2>Department balance</h2><div class="hint">hires, exits and net change</div>
+      <table><thead><tr><th>Department</th><th class="num">Hires</th><th class="num">Exits</th><th class="num">Net</th></tr></thead>
+        <tbody id="bal"></tbody></table>
+    </div>
+  </section>
+</div>
+
+<script>
+const RAW = /*DATA*/null;
+const rows = RAW.rows.map(r => Object.fromEntries(RAW.cols.map((c, i) => [c, r[i]])));
+const hires = rows.filter(r => r['Event Type'] === 'Hire'), exits = rows.filter(r => r['Event Type'] === 'Exit');
+const fmt = v => v.toLocaleString('en-US');
+document.getElementById('k-hires').textContent = fmt(hires.length);
+document.getElementById('k-exits').textContent = fmt(exits.length);
+document.getElementById('k-net').textContent = (hires.length - exits.length >= 0 ? '+' : '') + fmt(hires.length - exits.length);
+
+const cfg = { displayModeBar: false, responsive: false };
+const font = { family: 'Segoe UI, Arial, sans-serif', size: 12, color: '#1f2933' };
+const month = r => +r['Event Date'].slice(5, 7);
+const count = (a, f) => a.filter(f).length;
+
+// stacked bar by quarter
+const QS = ['Q1', 'Q2', 'Q3', 'Q4'], qOf = r => 'Q' + Math.ceil(month(r) / 3);
+const qSeries = (name, a, color) => ({ type: 'bar', name, x: QS, y: QS.map(q => count(a, r => qOf(r) === q)), marker: { color },
+  text: QS.map(q => count(a, r => qOf(r) === q)), textposition: 'inside', insidetextanchor: 'middle', textfont: { color: '#fff' } });
+Plotly.newPlot('c-q', [qSeries('Hire', hires, '#2f6fb5'), qSeries('Exit', exits, '#e07b39')], {
+  barmode: 'stack', font, margin: { l: 40, r: 12, t: 8, b: 36 }, legend: { orientation: 'h', y: -0.15 },
+  yaxis: { gridcolor: '#eceff3' }, paper_bgcolor: '#fff', plot_bgcolor: '#fff' }, cfg);
+
+// horizontal bar: exits by department
+const DEPTS = ['Engineering', 'Sales', 'Support', 'Operations', 'Finance', 'People'];
+const exitsBy = DEPTS.map(d => [d, count(exits, r => r.Department === d)]).sort((a, b) => b[1] - a[1]);
+Plotly.newPlot('c-dept', [{ type: 'bar', orientation: 'h', x: exitsBy.map(e => e[1]).reverse(), y: exitsBy.map(e => e[0]).reverse(),
+  text: exitsBy.map(e => e[1]).reverse(), textposition: 'outside', cliponaxis: false, marker: { color: '#e07b39' } }], {
+  font, margin: { l: 90, r: 40, t: 8, b: 24 }, xaxis: { visible: false }, yaxis: { automargin: true },
+  paper_bgcolor: '#fff', plot_bgcolor: '#fff' }, cfg);
+
+// heatmap: department x month, exits
+const MN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const z = DEPTS.map(d => MN.map((_, i) => count(exits, r => r.Department === d && month(r) === i + 1)));
+Plotly.newPlot('c-heat', [{ type: 'heatmap', x: MN, y: DEPTS, z, colorscale: [[0, '#f3f6fb'], [1, '#2f6fb5']], showscale: false,
+  text: z, texttemplate: '%{text}', xgap: 2, ygap: 2 }], {
+  font, margin: { l: 90, r: 8, t: 8, b: 28 }, yaxis: { autorange: 'reversed', automargin: true },
+  paper_bgcolor: '#fff', plot_bgcolor: '#fff' }, cfg);
+
+// small table
+document.getElementById('bal').innerHTML = DEPTS.map(d => {
+  const h = count(hires, r => r.Department === d), e = count(exits, r => r.Department === d);
+  return `<tr><td>${d}</td><td class="num">${h}</td><td class="num">${e}</td><td class="num">${h - e >= 0 ? '+' : ''}${h - e}</td></tr>`;
+}).join('');
+</script>
+</body>
+</html>

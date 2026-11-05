@@ -1,0 +1,16 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/complaints.csv"},
+  "sheets": [
+    {"name": "Cost Pareto", "type": "pareto", "title": "Complaint cost **by cause**",
+     "subtitle": "{accent:the vital few} make up 80% of the cost",
+     "dimension": "Cause", "measure": {"field": "Cost", "format": "currency"}},
+    {"name": "Count Pareto", "type": "pareto", "title": "Tickets **by cause**",
+     "subtitle": "running share of tickets, {accent:largest causes first}",
+     "dimension": "Cause", "measure": {"field": "Ticket", "agg": "count", "label": "Tickets"}, "highlight": false}
+  ],
+  "dashboard": {"name": "Pareto", "title": "**Pareto** of complaints", "subtitle": "Sample data, January-September 2026",
+                "width": 1400, "height": 760,
+                "grid": [["Cost Pareto"], ["Count Pareto"]]}
+}

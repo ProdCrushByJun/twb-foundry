@@ -1,0 +1,42 @@
+{
+ "_source": "pandas over data/sample/sales_geo.csv (golden/expected/make_expected.py, decisions/052): states, countries, cities",
+ "States": {
+  "Arizona": 9379.91,
+  "California": 53190.88,
+  "Colorado": 13170.71,
+  "Florida": 32190.09,
+  "Georgia": 19964.82,
+  "Illinois": 24000.14,
+  "Massachusetts": 26025.54,
+  "Minnesota": 4612.39,
+  "New York": 30493.61,
+  "Ohio": 13139.73,
+  "Texas": 41003.19,
+  "Washington": 16348.34
+ },
+ "Countries": {
+  "Australia": 5145.25,
+  "Brazil": 24885.48,
+  "Canada": 43461.21,
+  "France": 16218.01,
+  "Germany": 28759.13,
+  "Japan": 18824.09,
+  "Mexico": 24811.77,
+  "United Kingdom": 29834.3,
+  "United States": 91580.11
+ },
+ "Cities": {
+  "Atlanta": 2871.8,
+  "Boston": 1359.26,
+  "Buffalo": 3631.49,
+  "Chicago": 1735.85,
+  "Columbus": 1719.09,
+  "Denver": 964.15,
+  "Houston": 3579.19,
+  "Los Angeles": 4805.82,
+  "Miami": 3381.54,
+  "Minneapolis": 489.66,
+  "Phoenix": 893.66,
+  "Seattle": 1874.24
+ }
+}

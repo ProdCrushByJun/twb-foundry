@@ -1,0 +1,21 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_dates_us.csv"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Units"}]},
+    {"name": "Orders", "type": "line", "title": "Sales by **order month**", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}},
+    {"name": "Due", "type": "bar", "title": "Sales by **category**", "dimension": "Category", "measure": {"field": "Sales"}},
+    {"name": "Shipments", "type": "line", "title": "Sales by **ship day**", "date": {"field": "Shipped At", "level": "day"},
+     "measure": {"field": "Sales"}}
+  ],
+  "filters": [
+    {"field": "Order Date", "show_on": "Orders", "mode": "relative", "period": "month", "last": 6, "anchor": "2025-06-15"},
+    {"field": "Shipped At", "show_on": "Shipments", "mode": "range", "min": "2025-01-01", "max": "2025-03-31"},
+    {"field": "Due Date", "show_on": "Due", "mode": "range"}
+  ],
+  "dashboard": {"name": "Dates US", "title": "**Sales** by period (US dates)", "subtitle": "MM/DD/YYYY in the CSV, read in en_US",
+                "width": 1600, "height": 900, "row_heights": [2, 3],
+                "grid": [["KPI", "Due"], ["Orders", "Shipments"]]}
+}

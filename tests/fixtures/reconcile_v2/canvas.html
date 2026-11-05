@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Sales canvas</title>
+<style>
+  body { font-family: Segoe UI, Arial, sans-serif; margin: 24px; color: #222 }
+  .kpis { display: flex; gap: 24px; margin-bottom: 16px }
+  .kpi .v { font-size: 28px; font-weight: 600 }
+  .row { display: flex; gap: 24px; flex-wrap: wrap }
+  section { margin-bottom: 16px }
+  .bar-row { display: flex; gap: 8px; align-items: center; width: 360px }
+  .bar-row span:first-child { width: 60px }
+  .fill { background: #4e79a7; height: 14px }
+</style>
+<script src="chart_shim.js"></script>
+</head><body>
+<h1>Sales on canvas</h1>
+<div class="kpis"><div class="kpi"><div class="v">224,710</div><div class="l">Total sales</div></div></div>
+<div class="row">
+  <section><canvas id="c-region" width="420" height="220"></canvas></section>
+  <section><canvas id="c-stack" width="420" height="220"></canvas></section>
+</div>
+<div class="row">
+  <section><h3>Monthly sales 2025</h3><canvas id="c-month" width="420" height="220"></canvas></section>
+  <section><h3>Profit by category</h3>
+    <canvas id="c-profit" width="420" height="220" data-labels='["Furniture", "Office", "Tech"]'
+            data-values='{"Profit": [7585.81, 7211.62, 8752.17]}'></canvas></section>
+  <section><h3>Weekly pattern</h3><canvas id="c-sketch" width="300" height="220"></canvas></section>
+</div>
+<script>
+new Chart(document.getElementById("c-region"), {"type": "bar", "data": {"labels": ["East", "North", "South", "West"], "datasets": [{"label": "Sales", "data": [52353.59, 58482.58, 58862.46, 55011.05]}]}, "options": {"plugins": {"title": {"display": true, "text": "Sales by region"}}}});
+new Chart(document.getElementById("c-stack").getContext("2d"), {"type": "bar", "data": {"labels": ["East", "North", "South", "West"], "datasets": [{"label": "Furniture", "data": [18839.86, 23294.07, 15128.11, 17694.88]}, {"label": "Office", "data": [15632.96, 14205.31, 22634.41, 18705.07]}, {"label": "Tech", "data": [17880.77, 20983.2, 21099.94, 18611.1]}]}, "options": {"plugins": {"title": {"display": true, "text": "Sales by region and category"}}, "scales": {"x": {"stacked": true}, "y": {"stacked": true}}}});
+window.MONTHLY = {"type": "line", "data": {"labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "datasets": [{"label": "Sales", "data": [19090.65, 24338.11, 21982.65, 18283.27, 14367.9, 24065.85, 20679.44, 21003.03, 15322.1, 14716.61, 13106.2, 17753.87]}]}};
+new Chart(document.getElementById("c-month"), window.MONTHLY);
+// a sketch drawn by hand: the page keeps no data for it
+const g = document.getElementById("c-sketch").getContext("2d");
+[40, 80, 60, 120, 90].forEach((h, i) => g.fillRect(20 + i * 50, 200 - h, 30, h));
+// the profit canvas: drawn from its own data attributes
+const p = document.getElementById("c-profit"), pc = p.getContext("2d"), pv = JSON.parse(p.dataset.values).Profit;
+pv.forEach((v, i) => pc.fillRect(20 + i * 120, 200 - v / 100, 80, v / 100));
+</script>
+</body></html>

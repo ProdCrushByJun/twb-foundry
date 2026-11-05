@@ -1,0 +1,90 @@
+{
+ "version": 1,
+ "datasource": {
+  "type": "csv",
+  "path": "../../../data/sample/sales_2y.csv"
+ },
+ "sheets": [
+  {
+   "name": "C1 bottom",
+   "type": "combo",
+   "dimension": "Region",
+   "bar": {
+    "field": "Sales"
+   },
+   "line": {
+    "field": "Profit"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "C2 center",
+   "type": "combo",
+   "dimension": "Region",
+   "bar": {
+    "field": "Sales"
+   },
+   "line": {
+    "field": "Profit"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "C3 top",
+   "type": "combo",
+   "dimension": "Region",
+   "bar": {
+    "field": "Sales"
+   },
+   "line": {
+    "field": "Profit"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "L1 column",
+   "type": "lollipop",
+   "dimension": "Region",
+   "measure": {
+    "field": "Quantity"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "L2 inside",
+   "type": "lollipop",
+   "dimension": "Region",
+   "measure": {
+    "field": "Quantity"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "L3 right",
+   "type": "lollipop",
+   "dimension": "Region",
+   "measure": {
+    "field": "Quantity"
+   },
+   "sort": "desc"
+  }
+ ],
+ "dashboard": {
+  "name": "Lab",
+  "title": "Label lab",
+  "width": 1400,
+  "height": 900,
+  "grid": [
+   [
+    "C1 bottom",
+    "C2 center",
+    "C3 top"
+   ],
+   [
+    "L1 column",
+    "L2 inside",
+    "L3 right"
+   ]
+  ]
+ }
+}

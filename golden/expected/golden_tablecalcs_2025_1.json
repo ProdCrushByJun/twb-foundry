@@ -1,0 +1,70 @@
+{
+ "_source": "pandas over data/sample/sales.csv (golden/expected/make_expected.py, decisions/052): share, AVG share, difference, running, MoM",
+ "Category Share": {
+  "Furniture": 0.3336,
+  "Office": 0.3168,
+  "Tech": 0.3497
+ },
+ "Avg Share": {
+  "East": 0.9789,
+  "North": 1.058,
+  "South": 0.9702,
+  "West": 0.9952
+ },
+ "Share in Region": {
+  "East | Furniture": 0.3599,
+  "East | Office": 0.2986,
+  "East | Tech": 0.3415,
+  "North | Furniture": 0.3983,
+  "North | Office": 0.2429,
+  "North | Tech": 0.3588,
+  "South | Furniture": 0.257,
+  "South | Office": 0.3845,
+  "South | Tech": 0.3585,
+  "West | Furniture": 0.3217,
+  "West | Office": 0.34,
+  "West | Tech": 0.3383
+ },
+ "Region Difference": {
+  "East | Furniture": null,
+  "North | Furniture": 4454.21,
+  "South | Furniture": -8165.96,
+  "West | Furniture": 2566.77,
+  "East | Office": null,
+  "North | Office": -1427.65,
+  "South | Office": 8429.1,
+  "West | Office": -3929.34,
+  "East | Tech": null,
+  "North | Tech": 3102.43,
+  "South | Tech": 116.74,
+  "West | Tech": -2488.84
+ },
+ "Running Sales": {
+  "2025-01": 19090.65,
+  "2025-02": 43428.76,
+  "2025-03": 65411.41,
+  "2025-04": 83694.68,
+  "2025-05": 98062.58,
+  "2025-06": 122128.43,
+  "2025-07": 142807.87,
+  "2025-08": 163810.9,
+  "2025-09": 179133,
+  "2025-10": 193849.61,
+  "2025-11": 206955.81,
+  "2025-12": 224709.68
+ },
+ "MoM Change": {
+  "2025-01": null,
+  "2025-02": 0.2749,
+  "2025-03": -0.0968,
+  "2025-04": -0.1683,
+  "2025-05": -0.2142,
+  "2025-06": 0.675,
+  "2025-07": -0.1407,
+  "2025-08": 0.0156,
+  "2025-09": -0.2705,
+  "2025-10": -0.0395,
+  "2025-11": -0.1094,
+  "2025-12": 0.3546
+ }
+}

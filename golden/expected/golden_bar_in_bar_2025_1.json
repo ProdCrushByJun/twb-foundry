@@ -1,0 +1,43 @@
+{
+ "_source": "pandas over data/sample/sales.csv (golden/expected/make_expected.py, decisions/052): total bar with its parts inside (decisions/156)",
+ "Inside": {
+  "East | Furniture": 18839.86,
+  "East | Office": 15632.96,
+  "East | Tech": 17880.77,
+  "North | Furniture": 23294.07,
+  "North | Office": 14205.31,
+  "North | Tech": 20983.2,
+  "South | Furniture": 15128.11,
+  "South | Office": 22634.41,
+  "South | Tech": 21099.94,
+  "West | Furniture": 17694.88,
+  "West | Office": 18705.07,
+  "West | Tech": 18611.1
+ },
+ "Inside · Total": {
+  "East": 52353.59,
+  "North": 58482.58,
+  "South": 58862.46,
+  "West": 55011.05
+ },
+ "Columns": {
+  "East | Furniture": 1730.9,
+  "East | Office": 1378.06,
+  "East | Tech": 1766.43,
+  "North | Furniture": 2872.4,
+  "North | Office": 1522.56,
+  "North | Tech": 3291.54,
+  "South | Furniture": 1651.05,
+  "South | Office": 2436.61,
+  "South | Tech": 2346.47,
+  "West | Furniture": 1331.46,
+  "West | Office": 1874.39,
+  "West | Tech": 1347.73
+ },
+ "Columns · Total": {
+  "East": 4875.39,
+  "North": 7686.5,
+  "South": 6434.13,
+  "West": 4553.58
+ }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "locale": "en_US",
+  "datasource": {"type": "csv", "path": "data/project_plan.csv"},
+  "fields": {
+    "task": {"caption": "Task"},
+    "status": {"caption": "Status", "color": {"Done": "mark_muted", "In progress": "accent", "Planned": "#d9dde2"}}
+  },
+  "sheets": [
+    {"name": "Plan Timeline", "type": "gantt", "title": "Project plan **by task**", "subtitle": "{accent:In progress} as of 18 February; done in grey, planned light",
+     "task": "task", "start": "start", "end": "end", "color": "status"}
+  ],
+  "dashboard": {"name": "Project Plan", "title": "**Dashboard rollout**: plan", "subtitle": "Synthetic plan, 12 tasks",
+                "theme": "cards", "accent": "#0d6b4f", "width": 1100, "height": 560,
+                "grid": [["Plan Timeline"]]}
+}

@@ -1,0 +1,115 @@
+{
+ "_source": "pandas over data/sample/complaints.csv (golden/expected/make_expected.py, decisions/052): Pareto: cost and tickets by cause, running share, the vital few under 80 %",
+ "Cost Pareto": {
+  "Late delivery": {
+   "SUM(Cost)": 13247.71,
+   "Cumulative": 0.3175
+  },
+  "Damaged package": {
+   "SUM(Cost)": 8974.31,
+   "Cumulative": 0.5326
+  },
+  "Wrong item": {
+   "SUM(Cost)": 5918.9,
+   "Cumulative": 0.6744
+  },
+  "Missing parts": {
+   "SUM(Cost)": 4238.36,
+   "Cumulative": 0.776
+  },
+  "Billing error": {
+   "SUM(Cost)": 3086.33,
+   "Cumulative": 0.85
+  },
+  "Rude staff": {
+   "SUM(Cost)": 1836.65,
+   "Cumulative": 0.894
+  },
+  "Refund delay": {
+   "SUM(Cost)": 1433.65,
+   "Cumulative": 0.9284
+  },
+  "App crash": {
+   "SUM(Cost)": 986.18,
+   "Cumulative": 0.952
+  },
+  "Lost order": {
+   "SUM(Cost)": 739.59,
+   "Cumulative": 0.9697
+  },
+  "Size mismatch": {
+   "SUM(Cost)": 530.61,
+   "Cumulative": 0.9824
+  },
+  "Color mismatch": {
+   "SUM(Cost)": 444.46,
+   "Cumulative": 0.9931
+  },
+  "Long wait": {
+   "SUM(Cost)": 158.32,
+   "Cumulative": 0.9969
+  },
+  "Coupon failed": {
+   "SUM(Cost)": 130.03,
+   "Cumulative": 1
+  }
+ },
+ "Cost Pareto · Vital": {
+  "count": 5,
+  "share": 0.85
+ },
+ "Count Pareto": {
+  "Late delivery": {
+   "COUNT(Ticket)": 132,
+   "Cumulative": 0.3143
+  },
+  "Damaged package": {
+   "COUNT(Ticket)": 93,
+   "Cumulative": 0.5357
+  },
+  "Wrong item": {
+   "COUNT(Ticket)": 61,
+   "Cumulative": 0.681
+  },
+  "Missing parts": {
+   "COUNT(Ticket)": 43,
+   "Cumulative": 0.7833
+  },
+  "Billing error": {
+   "COUNT(Ticket)": 30,
+   "Cumulative": 0.8548
+  },
+  "Rude staff": {
+   "COUNT(Ticket)": 20,
+   "Cumulative": 0.9024
+  },
+  "Refund delay": {
+   "COUNT(Ticket)": 12,
+   "Cumulative": 0.931
+  },
+  "App crash": {
+   "COUNT(Ticket)": 9,
+   "Cumulative": 0.9524
+  },
+  "Lost order": {
+   "COUNT(Ticket)": 7,
+   "Cumulative": 0.969
+  },
+  "Color mismatch": {
+   "COUNT(Ticket)": 6,
+   "Cumulative": 0.9833
+  },
+  "Size mismatch": {
+   "COUNT(Ticket)": 5,
+   "Cumulative": 0.9952
+  },
+  "Coupon failed": {
+   "COUNT(Ticket)": 1,
+   "Cumulative": 0.9976
+  },
+  "Long wait": {
+   "COUNT(Ticket)": 1,
+   "Cumulative": 1
+  }
+ }
+}

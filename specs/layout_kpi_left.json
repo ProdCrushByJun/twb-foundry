@@ -1,0 +1,20 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "cards", "arrange": "column", "title": "Key **metrics**",
+     "date": {"field": "Order Date", "level": "month"},
+     "measures": [{"field": "Sales"}, {"field": "Profit"}, {"field": "Quantity", "label": "Units"}]},
+    {"name": "Bar", "type": "bar", "title": "**Regions** by Sales", "subtitle": "Stacked by category",
+     "dimension": "Region", "measure": {"field": "Sales"}, "color": "Category"},
+    {"name": "Line", "type": "line", "title": "Monthly **Sales**", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}},
+    {"name": "Table", "type": "table", "subtitle": "Sales by region and category", "rows": "Region",
+     "cols": "Category", "measure": {"field": "Sales"}}
+  ],
+  "filters": [{"field": "Region", "show_on": "Table"}],
+  "dashboard": {"name": "KPI Left", "title": "**Sales** Overview", "subtitle": "Archetype A: KPI column on the left",
+                "width": 1200, "height": 800,
+                "grid": [[{"sheet": "KPI", "width": 1}, {"rows": [["Bar", "Line"], ["Table"]], "width": 2}]]}
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "parameters": [
+    {"name": "Target", "type": "integer", "range": {"min": 10000, "max": 20000, "step": 1000}, "default": 15000}
+  ],
+  "sheets": [
+    {"name": "Monthly", "type": "kpi", "style": "cards", "title": "Latest **month**",
+     "subtitle": "bars: {good:better} or {bad:worse} than the month before",
+     "date": {"field": "Order Date", "level": "month"}, "compare": "previous",
+     "measures": [{"field": "Sales"}, {"field": "Profit"}],
+     "history_reference": {"type": "avg"}, "history_color": "change"},
+    {"name": "Regions", "type": "bar", "title": "Sales **by region**", "subtitle": "{accent:above average}, dashed: the average",
+     "dimension": "Region", "measure": {"field": "Sales"}, "sort": "desc",
+     "color": {"vs": "avg"}, "reference": {"type": "avg"}},
+    {"name": "Stack", "type": "bar", "title": "Sales **by region and category**", "subtitle": "dashed: the median region",
+     "dimension": "Region", "measure": {"field": "Sales"}, "color": "Category", "orientation": "vertical", "sort": "desc",
+     "reference": {"type": "median"}},
+    {"name": "Categories", "type": "bar", "title": "Sales **by category**", "subtitle": "dashed: the target",
+     "dimension": "Category", "measure": {"field": "Sales"}, "sort": "desc",
+     "reference": {"type": "const", "value": 105000, "label": "Target"}},
+    {"name": "Trend", "type": "line", "title": "Monthly sales **by region**", "subtitle": "{accent:East}, dashed: the average month of a region",
+     "date": {"field": "Order Date", "level": "month"}, "measure": {"field": "Sales"},
+     "color": {"highlight": ["East"], "field": "Region"}, "reference": {"type": "avg"}},
+    {"name": "Total", "type": "area", "title": "Monthly **sales**", "subtitle": "dashed: the target set in the header",
+     "date": {"field": "Order Date", "level": "month"}, "measure": {"field": "Sales"},
+     "reference": {"type": "param", "parameter": "Target"}}
+  ],
+  "dashboard": {"name": "Reference Lines", "title": "**Reference** lines", "subtitle": "Sample data, 2024-2025",
+                "width": 1400, "height": 960, "row_heights": [5, 4, 4],
+                "grid": [["Monthly"], ["Regions", "Stack", "Categories"], ["Trend", "Total"]]}
+}

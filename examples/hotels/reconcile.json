@@ -1,0 +1,9 @@
+{
+ "accepted": [
+  {
+   "number": "119,390",
+   "context": "119,390 bookings",
+   "reason": "dashboard subtitle, static text; row count checked against the source"
+  }
+ ]
+}

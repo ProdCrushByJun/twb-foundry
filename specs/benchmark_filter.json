@@ -1,0 +1,20 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "filters": [
+    {"field": "Region", "show_on": "Selected", "mode": "single_dropdown", "default": ["North"]},
+    {"field": "Category", "show_on": "Selected", "context": true}
+  ],
+  "sheets": [
+    {"name": "Selected", "type": "line", "title": "Selected region **vs all regions**",
+     "subtitle": "{accent:the region in the filter}, grey: the average region",
+     "date": {"field": "Order Date", "level": "quarter"}, "measure": {"field": "Profit"},
+     "benchmark": {"field": "Region", "select": "filter", "against": "all", "label": "Organization"},
+     "labels": "ends",
+     "reference": [{"type": "date", "value": "2025-01-01"}, {"type": "const", "value": 1000, "label": "Goal"}]}
+  ],
+  "dashboard": {"name": "Benchmark filter", "title": "**Region** vs the organization", "subtitle": "Sample data, 2024-2025",
+                "width": 1200, "height": 700,
+                "grid": [["Selected"]]}
+}

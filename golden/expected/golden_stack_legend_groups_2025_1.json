@@ -1,0 +1,31 @@
+{
+ "_source": "pandas over data/sample/sales.csv (golden/expected/make_expected.py, decisions/052): stack with the legend under the block by groups, wrapped between members (decisions/185)",
+ "Narrow": {
+  "East | Furniture and home furnishings": 18839.86,
+  "East | Office supplies and stationery": 15632.96,
+  "East | Technology and electronics": 17880.77,
+  "North | Furniture and home furnishings": 23294.07,
+  "North | Office supplies and stationery": 14205.31,
+  "North | Technology and electronics": 20983.2,
+  "South | Furniture and home furnishings": 15128.11,
+  "South | Office supplies and stationery": 22634.41,
+  "South | Technology and electronics": 21099.94,
+  "West | Furniture and home furnishings": 17694.88,
+  "West | Office supplies and stationery": 18705.07,
+  "West | Technology and electronics": 18611.1
+ },
+ "Wide": {
+  "East | Furniture and home furnishings": 1730.9,
+  "East | Office supplies and stationery": 1378.06,
+  "East | Technology and electronics": 1766.43,
+  "North | Furniture and home furnishings": 2872.4,
+  "North | Office supplies and stationery": 1522.56,
+  "North | Technology and electronics": 3291.54,
+  "South | Furniture and home furnishings": 1651.05,
+  "South | Office supplies and stationery": 2436.61,
+  "South | Technology and electronics": 2346.47,
+  "West | Furniture and home furnishings": 1331.46,
+  "West | Office supplies and stationery": 1874.39,
+  "West | Technology and electronics": 1347.73
+ }
+}

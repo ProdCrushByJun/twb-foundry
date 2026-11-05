@@ -1,0 +1,18 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "Registry", "type": "registry", "title": "Region **by category**",
+     "subtitle": "Profit below 1 400 and units above 250 highlighted", "rows": ["Region", "Category"], "sort": "desc",
+     "columns": [
+       {"measure": {"field": "Sales"}},
+       {"measure": {"field": "Profit"}, "highlight": {"below": 1400}},
+       {"measure": {"field": "Quantity"}, "style": "text", "label": "Units", "highlight": {"above": 250}}
+     ]},
+    {"name": "By Category", "type": "registry", "title": "**Categories**", "rows": ["Category"],
+     "columns": [{"measure": {"field": "Sales"}}, {"measure": {"field": "Profit"}, "style": "text"}]}
+  ],
+  "dashboard": {"name": "Registries", "title": "**Sales** Registry", "subtitle": "Sample data, 2025",
+                "width": 1000, "height": 800, "grid": [[{"sheet": "Registry", "width": 3}, {"sheet": "By Category", "width": 2}]]}
+}

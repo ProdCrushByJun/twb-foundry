@@ -1,0 +1,59 @@
+{
+ "_source": "pandas over data/sample/params_v2.csv (golden/expected/make_expected.py, decisions/052): Top N / Bottom N on bar, line, table, heatmap and registry, tie order A-Z, aliases, heading",
+ "Bottom Bar": {
+  "C": 360,
+  "E": 240,
+  "F": 240
+ },
+ "Top Bar": {
+  "A": 600,
+  "B": 480,
+  "C": 360
+ },
+ "Top Line": {
+  "2025-01 | A": 200,
+  "2025-01 | B": 160,
+  "2025-01 | C": 120,
+  "2025-02 | A": 200,
+  "2025-02 | B": 160,
+  "2025-02 | C": 120,
+  "2025-03 | A": 200,
+  "2025-03 | B": 160,
+  "2025-03 | C": 120
+ },
+ "Top Table": {
+  "E | East": 60,
+  "E | North": 60,
+  "E | South": 60,
+  "E | West": 60,
+  "F | East": 60,
+  "F | North": 60,
+  "F | South": 60,
+  "F | West": 60
+ },
+ "Top Heat": {
+  "A | East": 150,
+  "A | North": 150,
+  "A | South": 150,
+  "A | West": 150,
+  "B | East": 120,
+  "B | North": 120,
+  "B | South": 120,
+  "B | West": 120,
+  "C | East": 90,
+  "C | North": 90,
+  "C | South": 90,
+  "C | West": 90
+ },
+ "Top Registry": {
+  "C": {
+   "Sales": 360
+  },
+  "E": {
+   "Sales": 240
+  },
+  "F": {
+   "Sales": 240
+  }
+ }
+}

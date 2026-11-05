@@ -1,0 +1,28 @@
+{
+ "_source": "pandas over data/sample/sales_stores.csv (golden/expected/make_expected.py, decisions/052): single slider Region = West, wildcard City 'o', Sales 100..400, Channel with Apply",
+ "KPI": {
+  "SUM(Sales)": 16571.45
+ },
+ "By City": {
+  "Fresno": 6684.88,
+  "Reno": 9886.57
+ },
+ "By Product": {
+  "Atlas": 1070.07,
+  "Beacon": 1728,
+  "Cobalt": 1315.33,
+  "Delta": 1792.63,
+  "Ember": 100.64,
+  "Falcon": 1731.37,
+  "Granite": 982.78,
+  "Harbor": 746.93,
+  "Iris": 1113.42,
+  "Juniper": 543.01,
+  "Kestrel": 760.37,
+  "Lumen": 947.29,
+  "Meridian": 478,
+  "Nova": 684.97,
+  "Orbit": 1775.85,
+  "Pioneer": 800.79
+ }
+}

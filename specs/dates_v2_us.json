@@ -1,0 +1,31 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_dates_v2_us.csv"},
+  "calcs": [
+    {"name": "Minutes Left", "formula": "DATEDIFF('minute', [Logged At], DATEADD('hour', 2, [Ordered At]))"},
+    {"name": "Late Logs", "formula": "IIF(DATEADD('hour', 1, [Ordered At]) < [Logged At], 1, 0)"},
+    {"name": "Order Hour", "formula": "IIF(DATEPART('hour', [Ordered At]) < 10, \"0\", \"\") + STR(DATEPART('hour', [Ordered At])) + \":00\""},
+    {"name": "Paid Month", "formula": "STR(YEAR([Paid On])) + \"-\" + IIF(MONTH([Paid On]) < 10, \"0\", \"\") + STR(MONTH([Paid On]))"}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Units"}, {"field": "Minutes Left"},
+     {"field": "Late Logs"}]},
+    {"name": "Orders", "type": "line", "title": "Sales by **order month**", "date": {"field": "Ordered At", "level": "month"},
+     "measure": {"field": "Sales"}},
+    {"name": "Logs", "type": "line", "title": "Sales by **log day**", "date": {"field": "Logged At", "level": "day"},
+     "measure": {"field": "Sales"}},
+    {"name": "Hours", "type": "table", "title": "Sales by **order hour**", "rows": "Order Hour", "cols": "Channel",
+     "measure": {"field": "Sales"}},
+    {"name": "Paid", "type": "table", "title": "Sales by **payment month**", "rows": "Paid Month", "cols": "Channel",
+     "measure": {"field": "Sales"}}
+  ],
+  "filters": [
+    {"field": "Logged At", "show_on": "Logs", "mode": "range", "min": "2024-03-01 10:00", "max": "2024-11-30 12:30:30"},
+    {"field": "Paid On", "show_on": "Orders", "mode": "relative", "period": "month", "last": 6, "anchor": "2024-12-15"}
+  ],
+  "dashboard": {"name": "Dates v2 US", "title": "**Sales** by period (US dates v2)",
+                "subtitle": "M/D/YYYY H:MM, M/D/YYYY and ISO with T in the CSV, read in en_US",
+                "width": 1400, "height": 1000, "row_heights": [1, 2, 4],
+                "grid": [["KPI"], ["Orders", "Logs"], ["Hours", "Paid"]]}
+}

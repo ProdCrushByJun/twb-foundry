@@ -1,0 +1,30 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_plan.csv"},
+  "sheets": [
+    {"name": "Regions", "type": "registry", "title": "Regions **with a total**",
+     "subtitle": "Rank blank on the total, the share 100 %, the dot without a color, no flag on the total",
+     "rows": ["Region"],
+     "columns": [
+       {"measure": {"field": "Sales"}, "style": "rank", "label": "#"},
+       {"measure": {"field": "Sales"}, "style": "track", "label": "Of total"},
+       {"measure": {"field": "Plan", "agg": "avg"}, "style": "dot", "label": "Avg plan"},
+       {"measure": {"field": "Sales"}, "style": "bar", "label": "Sales", "highlight": {"above": 35000}}
+     ],
+     "totals": {"grand": "rows", "label": "TOTAL"}},
+    {"name": "Managers", "type": "registry", "title": "Managers **by region**",
+     "subtitle": "Subtotals per region and the grand total: the tick's line on the rows only",
+     "rows": ["Region", "Manager"],
+     "columns": [
+       {"measure": {"field": "Sales"}, "style": "tick", "label": "Sales vs plan", "base": {"field": "Plan"}},
+       {"measure": {"field": "Sales"}, "style": "rank", "label": "#"},
+       {"measure": {"field": "Sales"}, "style": "track", "label": "Of total"},
+       {"measure": {"field": "Plan"}, "style": "text", "label": "Plan", "highlight": {"above": 18000}}
+     ],
+     "totals": {"grand": "rows", "sub": ["Region"]}}
+  ],
+  "dashboard": {"name": "Registry Totals Marks", "title": "**Registry** totals: rank, track, dot, tick, highlight",
+                "subtitle": "Sample data, 8 managers, 2025", "width": 1200, "height": 900, "row_heights": [3, 5],
+                "grid": [["Regions"], ["Managers"]]}
+}

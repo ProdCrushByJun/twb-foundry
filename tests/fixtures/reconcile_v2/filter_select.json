@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../../../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "Sales by category", "type": "kpi",
+     "measures": [{"field": "Sales", "label": "Total sales"}, {"field": "Profit", "label": "Total profit"}]},
+    {"name": "Sales by region", "type": "bar", "dimension": "Region", "measure": {"field": "Sales"}}
+  ],
+  "filters": [{"field": "Category", "mode": "single_dropdown", "default": ["Furniture"],
+               "show_on": "Sales by region"}],
+  "dashboard": {"name": "Sales by category", "width": 1000, "height": 700,
+                "grid": [["Sales by category"], ["Sales by region"]]}
+}

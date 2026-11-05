@@ -1,0 +1,189 @@
+{
+ "$schema": "../../../tbuilder/spec.schema.json",
+ "version": 1,
+ "datasource": {
+  "type": "csv",
+  "path": "lab.csv"
+ },
+ "calcs": [
+  {
+   "name": "Big",
+   "formula": "IF [Sales] > 600 THEN 1 ELSE 0 END"
+  },
+  {
+   "name": "Margin",
+   "formula": "SUM([Profit]) / SUM([Sales])",
+   "format": "pct1"
+  }
+ ],
+ "sheets": [
+  {
+   "name": "KPI",
+   "type": "kpi",
+   "style": "tiles",
+   "arrange": "strip",
+   "measures": [
+    {
+     "field": "Code",
+     "agg": "count",
+     "label": "Orders"
+    },
+    {
+     "field": "Big",
+     "label": "Big orders"
+    },
+    {
+     "field": "Sales",
+     "agg": "avg",
+     "label": "Mean order, $"
+    },
+    {
+     "field": "Margin",
+     "label": "Margin"
+    },
+    {
+     "field": "Quantity",
+     "label": "Units"
+    }
+   ]
+  },
+  {
+   "name": "Bar5",
+   "type": "bar",
+   "title": "**Bar** 5 groups",
+   "dimension": "Group",
+   "measure": {
+    "field": "Sales"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "Bar5v",
+   "type": "bar",
+   "title": "**Bar** 5 groups, vertical",
+   "dimension": "Group",
+   "measure": {
+    "field": "Sales"
+   },
+   "orientation": "vertical",
+   "sort": "desc"
+  },
+  {
+   "name": "Reg6",
+   "type": "registry",
+   "title": "**Registry** 6 teams",
+   "rows": [
+    "Team"
+   ],
+   "sort": "desc",
+   "columns": [
+    {
+     "measure": {
+      "field": "Sales"
+     },
+     "style": "bar",
+     "label": "Sales"
+    },
+    {
+     "measure": {
+      "field": "Profit"
+     },
+     "style": "text",
+     "label": "Profit"
+    },
+    {
+     "measure": {
+      "field": "Quantity"
+     },
+     "style": "text",
+     "label": "Units"
+    }
+   ]
+  },
+  {
+   "name": "Bar20",
+   "type": "bar",
+   "title": "**Bar** 20 items",
+   "dimension": "Item",
+   "measure": {
+    "field": "Sales"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "Reg20",
+   "type": "registry",
+   "title": "**Registry** 20 items",
+   "rows": [
+    "Item"
+   ],
+   "sort": "desc",
+   "columns": [
+    {
+     "measure": {
+      "field": "Sales"
+     },
+     "style": "bar",
+     "label": "Sales"
+    },
+    {
+     "measure": {
+      "field": "Profit"
+     },
+     "style": "text",
+     "label": "Profit"
+    },
+    {
+     "measure": {
+      "field": "Quantity"
+     },
+     "style": "text",
+     "label": "Units"
+    }
+   ]
+  },
+  {
+   "name": "Table",
+   "type": "table",
+   "title": "**Table** team x region",
+   "rows": "Team",
+   "cols": "Region",
+   "measure": {
+    "field": "Sales"
+   }
+  }
+ ],
+ "dashboard": {
+  "name": "Lab",
+  "title": "**Fit** lab: lists",
+  "theme": "cards",
+  "width": 1300,
+  "grid": [
+   [
+    "KPI"
+   ],
+   [
+    "Bar5",
+    "Bar5v",
+    {
+     "sheet": "Reg6",
+     "width": 2
+    }
+   ],
+   [
+    "Bar20",
+    {
+     "sheet": "Reg20",
+     "width": 2
+    },
+    "Table"
+   ]
+  ],
+  "row_heights": [
+   2,
+   5,
+   5
+  ],
+  "height": 900
+ }
+}

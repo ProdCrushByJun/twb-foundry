@@ -1,0 +1,2072 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook locale='en_US' original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <DatagraphCoreV1 />
+    <DatagraphNodeDashboardZoneVisibilityV1 />
+    <DatagraphNodeSingleValueFieldV1 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <ParameterAction />
+    <ParameterActionClearSelection />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneVisibilityControl />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Metric' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Sales&quot;'>
+        <calculation class='tableau' formula='&quot;Sales&quot;' />
+        <members>
+          <member value='&quot;Sales&quot;' />
+          <member value='&quot;Profit&quot;' />
+          <member value='&quot;Quantity&quot;' />
+        </members>
+      </column>
+      <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+        <calculation class='tableau' formula='&quot;L6M&quot;' />
+        <members>
+          <member value='&quot;L3M&quot;' />
+          <member value='&quot;L6M&quot;' />
+          <member value='&quot;L9M&quot;' />
+          <member value='&quot;All&quot;' />
+        </members>
+      </column>
+      <column caption='View' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;Chart&quot;'>
+        <calculation class='tableau' formula='&quot;Chart&quot;' />
+        <members>
+          <member value='&quot;Chart&quot;' />
+          <member value='&quot;Table&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='sales_products' inline='true' name='federated.lyl8wthdb6068eodoaqvdj3tew32' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sales_products' name='textscan.oh2u2iwzmgi7eywyy0hxy2vs5ai1'>
+            <connection class='textscan' directory='Data/sample' filename='sales_products.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.oh2u2iwzmgi7eywyy0hxy2vs5ai1' name='sales_products.csv' table='[sales_products#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Order Date' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='string' name='Product' ordinal='2' />
+            <column datatype='real' name='Sales' ordinal='3' />
+            <column datatype='real' name='Profit' ordinal='4' />
+            <column datatype='integer' name='Quantity' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_products.csv_212D1CA86EBC4032BE1B7B02C72BEA53]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[sales_products.csv_212D1CA86EBC4032BE1B7B02C72BEA53]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[sales_products.csv_212D1CA86EBC4032BE1B7B02C72BEA53]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_products.csv_212D1CA86EBC4032BE1B7B02C72BEA53]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_products.csv_212D1CA86EBC4032BE1B7B02C72BEA53]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[sales_products.csv]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_products.csv_212D1CA86EBC4032BE1B7B02C72BEA53]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Period · All' datatype='string' name='[Calculation_1120247532009684936]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;All&quot;' />
+      </column>
+      <column caption='Period · L6M · on' datatype='boolean' name='[Calculation_1397519084912130760]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 2] = &quot;L6M&quot;' />
+      </column>
+      <column caption='Metric · Profit · on' datatype='boolean' name='[Calculation_1847387353440378276]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1] = &quot;Profit&quot;' />
+      </column>
+      <column caption='Metric · Quantity' datatype='string' name='[Calculation_2332797074647028805]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Quantity&quot;' />
+      </column>
+      <column caption='Metric · Sales · on' datatype='boolean' name='[Calculation_2547239318767152162]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1] = &quot;Sales&quot;' />
+      </column>
+      <column caption='Period · L3M · on' datatype='boolean' name='[Calculation_3135604558766052663]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 2] = &quot;L3M&quot;' />
+      </column>
+      <column caption='Period · L9M · on' datatype='boolean' name='[Calculation_3208788395718826007]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 2] = &quot;L9M&quot;' />
+      </column>
+      <column caption='Products · Table' datatype='boolean' name='[Calculation_5048239439728566347]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 3] = &quot;Table&quot;' />
+      </column>
+      <column caption='Products · Chart' datatype='boolean' name='[Calculation_5374144746351083206]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 3] = &quot;Chart&quot;' />
+      </column>
+      <column caption='Metric · Sales' datatype='string' name='[Calculation_6590377792664663927]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Sales&quot;' />
+      </column>
+      <column caption='Metric · Quantity · on' datatype='boolean' name='[Calculation_6771826345719410710]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1] = &quot;Quantity&quot;' />
+      </column>
+      <column caption='Period · All · on' datatype='boolean' name='[Calculation_7091969000309030775]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 2] = &quot;All&quot;' />
+      </column>
+      <column caption='Metric value' datatype='real' name='[Calculation_7325679637406209574]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Parameters].[Parameter 1] WHEN &quot;Sales&quot; THEN SUM([Sales]) WHEN &quot;Profit&quot; THEN SUM([Profit]) WHEN &quot;Quantity&quot; THEN SUM([Quantity]) END' />
+      </column>
+      <column caption='Period · L6M' datatype='string' name='[Calculation_8189124688577676045]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;L6M&quot;' />
+      </column>
+      <column caption='Period · L3M' datatype='string' name='[Calculation_9496723195531716326]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;L3M&quot;' />
+      </column>
+      <column caption='Period · L9M' datatype='string' name='[Calculation_9623362561709430310]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;L9M&quot;' />
+      </column>
+      <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+      </column>
+      <column caption='Metric · Profit' datatype='string' name='[Calculation_9911032396319369802]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Profit&quot;' />
+      </column>
+      <column caption='sales_products.csv' datatype='table' name='[__tableau_internal_object_id__].[sales_products.csv_212D1CA86EBC4032BE1B7B02C72BEA53]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1397519084912130760]' derivation='None' name='[none:Calculation_1397519084912130760:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1847387353440378276]' derivation='None' name='[none:Calculation_1847387353440378276:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_2547239318767152162]' derivation='None' name='[none:Calculation_2547239318767152162:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_3135604558766052663]' derivation='None' name='[none:Calculation_3135604558766052663:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_3208788395718826007]' derivation='None' name='[none:Calculation_3208788395718826007:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_6771826345719410710]' derivation='None' name='[none:Calculation_6771826345719410710:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_7091969000309030775]' derivation='None' name='[none:Calculation_7091969000309030775:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1847387353440378276:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#898989'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_6771826345719410710:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#898989'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_2547239318767152162:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#898989'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_7091969000309030775:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#898989'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_3135604558766052663:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#898989'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1397519084912130760:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#898989'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_3208788395718826007:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#898989'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Russia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Metric' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Sales&quot;'>
+          <calculation class='tableau' formula='&quot;Sales&quot;' />
+        </column>
+        <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+          <calculation class='tableau' formula='&quot;L6M&quot;' />
+        </column>
+        <column caption='View' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;Chart&quot;'>
+          <calculation class='tableau' formula='&quot;Chart&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='sales_products.csv' id='sales_products.csv_212D1CA86EBC4032BE1B7B02C72BEA53'>
+            <properties context=''>
+              <relation connection='textscan.oh2u2iwzmgi7eywyy0hxy2vs5ai1' name='sales_products.csv' table='[sales_products#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Order Date' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='string' name='Product' ordinal='2' />
+                  <column datatype='real' name='Sales' ordinal='3' />
+                  <column datatype='real' name='Profit' ordinal='4' />
+                  <column datatype='integer' name='Quantity' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+      <datasources>
+        <datasource caption='sales_products' name='federated.lyl8wthdb6068eodoaqvdj3tew32' />
+      </datasources>
+      <datasource-dependencies datasource='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+        <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+        </column>
+        <column-instance column='[Calculation_9892914390142087505]' derivation='None' name='[none:Calculation_9892914390142087505:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]'>
+        <groupfilter function='member' level='[none:Calculation_9892914390142087505:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <edit-parameter-action caption='Periods · L3M' name='[Action1_D30802E1C98650BBA5C62C6FE5C020E3]'>
+      <activation type='on-select' />
+      <source dashboard='Explorer' type='sheet' worksheet='Periods · L3M' />
+      <agg-type type='attr' />
+      <clear-option type='do-nothing' value='s:LROOT:' />
+      <params>
+        <param name='source-field' value='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9496723195531716326:nk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 2]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='Periods · L6M' name='[Action2_F21DCA2C79F857CE92F62451D829C371]'>
+      <activation type='on-select' />
+      <source dashboard='Explorer' type='sheet' worksheet='Periods · L6M' />
+      <agg-type type='attr' />
+      <clear-option type='do-nothing' value='s:LROOT:' />
+      <params>
+        <param name='source-field' value='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_8189124688577676045:nk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 2]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='Periods · L9M' name='[Action3_9789D60BC88C5484B3FD807A3A1DE11E]'>
+      <activation type='on-select' />
+      <source dashboard='Explorer' type='sheet' worksheet='Periods · L9M' />
+      <agg-type type='attr' />
+      <clear-option type='do-nothing' value='s:LROOT:' />
+      <params>
+        <param name='source-field' value='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9623362561709430310:nk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 2]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='Periods · All' name='[Action4_F3405A631A505F9AA6EBD91826960370]'>
+      <activation type='on-select' />
+      <source dashboard='Explorer' type='sheet' worksheet='Periods · All' />
+      <agg-type type='attr' />
+      <clear-option type='do-nothing' value='s:LROOT:' />
+      <params>
+        <param name='source-field' value='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_1120247532009684936:nk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 2]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='Metrics · Sales' name='[Action5_95B62BF554AD53B0A8A22841D6CF4166]'>
+      <activation type='on-select' />
+      <source dashboard='Explorer' type='sheet' worksheet='Metrics · Sales' />
+      <agg-type type='attr' />
+      <clear-option type='do-nothing' value='s:LROOT:' />
+      <params>
+        <param name='source-field' value='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_6590377792664663927:nk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 1]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='Metrics · Profit' name='[Action6_E3FC9B67A27356A887F3FFBF030E484B]'>
+      <activation type='on-select' />
+      <source dashboard='Explorer' type='sheet' worksheet='Metrics · Profit' />
+      <agg-type type='attr' />
+      <clear-option type='do-nothing' value='s:LROOT:' />
+      <params>
+        <param name='source-field' value='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9911032396319369802:nk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 1]' />
+      </params>
+    </edit-parameter-action>
+    <edit-parameter-action caption='Metrics · Quantity' name='[Action7_6458765A55B75F82A58EE331D83D8CEF]'>
+      <activation type='on-select' />
+      <source dashboard='Explorer' type='sheet' worksheet='Metrics · Quantity' />
+      <agg-type type='attr' />
+      <clear-option type='do-nothing' value='s:LROOT:' />
+      <params>
+        <param name='source-field' value='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_2332797074647028805:nk]' />
+        <param name='target-parameter' value='[Parameters].[Parameter 1]' />
+      </params>
+    </edit-parameter-action>
+  </actions>
+  <worksheets>
+    <worksheet name='Metrics · Profit'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.lyl8wthdb6068eodoaqvdj3tew32' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Metric' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Sales&quot;'>
+              <calculation class='tableau' formula='&quot;Sales&quot;' />
+            </column>
+            <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+              <calculation class='tableau' formula='&quot;L6M&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+            <column caption='Metric · Profit · on' datatype='boolean' name='[Calculation_1847387353440378276]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 1] = &quot;Profit&quot;' />
+            </column>
+            <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+            </column>
+            <column caption='Metric · Profit' datatype='string' name='[Calculation_9911032396319369802]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Profit&quot;' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1847387353440378276]' derivation='None' name='[none:Calculation_1847387353440378276:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9892914390142087505]' derivation='None' name='[none:Calculation_9892914390142087505:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9911032396319369802]' derivation='None' name='[none:Calculation_9911032396319369802:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_1847387353440378276:nk]' />
+              <text column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9911032396319369802:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='10'><![CDATA[<[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9911032396319369802:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5C8053FE-640E-4590-9E00-B5BEB1166D85}' />
+    </worksheet>
+    <worksheet name='Metrics · Quantity'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.lyl8wthdb6068eodoaqvdj3tew32' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Metric' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Sales&quot;'>
+              <calculation class='tableau' formula='&quot;Sales&quot;' />
+            </column>
+            <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+              <calculation class='tableau' formula='&quot;L6M&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+            <column caption='Metric · Quantity' datatype='string' name='[Calculation_2332797074647028805]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Quantity&quot;' />
+            </column>
+            <column caption='Metric · Quantity · on' datatype='boolean' name='[Calculation_6771826345719410710]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 1] = &quot;Quantity&quot;' />
+            </column>
+            <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2332797074647028805]' derivation='None' name='[none:Calculation_2332797074647028805:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_6771826345719410710]' derivation='None' name='[none:Calculation_6771826345719410710:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9892914390142087505]' derivation='None' name='[none:Calculation_9892914390142087505:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_6771826345719410710:nk]' />
+              <text column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_2332797074647028805:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='10'><![CDATA[<[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_2332797074647028805:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{55474E3D-A9C4-483E-9CF3-32BFBFF30BDA}' />
+    </worksheet>
+    <worksheet name='Metrics · Sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.lyl8wthdb6068eodoaqvdj3tew32' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Metric' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Sales&quot;'>
+              <calculation class='tableau' formula='&quot;Sales&quot;' />
+            </column>
+            <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+              <calculation class='tableau' formula='&quot;L6M&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+            <column caption='Metric · Sales · on' datatype='boolean' name='[Calculation_2547239318767152162]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 1] = &quot;Sales&quot;' />
+            </column>
+            <column caption='Metric · Sales' datatype='string' name='[Calculation_6590377792664663927]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Sales&quot;' />
+            </column>
+            <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2547239318767152162]' derivation='None' name='[none:Calculation_2547239318767152162:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_6590377792664663927]' derivation='None' name='[none:Calculation_6590377792664663927:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9892914390142087505]' derivation='None' name='[none:Calculation_9892914390142087505:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_2547239318767152162:nk]' />
+              <text column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_6590377792664663927:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='10'><![CDATA[<[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_6590377792664663927:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D4A3925F-6D3C-49C4-A05F-765F71C29D12}' />
+    </worksheet>
+    <worksheet name='Periods · All'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.lyl8wthdb6068eodoaqvdj3tew32' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+              <calculation class='tableau' formula='&quot;L6M&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+            <column caption='Period · All' datatype='string' name='[Calculation_1120247532009684936]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;All&quot;' />
+            </column>
+            <column caption='Period · All · on' datatype='boolean' name='[Calculation_7091969000309030775]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 2] = &quot;All&quot;' />
+            </column>
+            <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1120247532009684936]' derivation='None' name='[none:Calculation_1120247532009684936:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_7091969000309030775]' derivation='None' name='[none:Calculation_7091969000309030775:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9892914390142087505]' derivation='None' name='[none:Calculation_9892914390142087505:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_7091969000309030775:nk]' />
+              <text column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_1120247532009684936:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='10'><![CDATA[<[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_1120247532009684936:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8BD160DF-3B8E-48E7-8317-F6BB75761C6D}' />
+    </worksheet>
+    <worksheet name='Periods · L3M'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.lyl8wthdb6068eodoaqvdj3tew32' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+              <calculation class='tableau' formula='&quot;L6M&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+            <column caption='Period · L3M · on' datatype='boolean' name='[Calculation_3135604558766052663]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 2] = &quot;L3M&quot;' />
+            </column>
+            <column caption='Period · L3M' datatype='string' name='[Calculation_9496723195531716326]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;L3M&quot;' />
+            </column>
+            <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_3135604558766052663]' derivation='None' name='[none:Calculation_3135604558766052663:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9496723195531716326]' derivation='None' name='[none:Calculation_9496723195531716326:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9892914390142087505]' derivation='None' name='[none:Calculation_9892914390142087505:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_3135604558766052663:nk]' />
+              <text column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9496723195531716326:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='10'><![CDATA[<[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9496723195531716326:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6332FCF9-C489-4245-A368-14A226776876}' />
+    </worksheet>
+    <worksheet name='Periods · L6M'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.lyl8wthdb6068eodoaqvdj3tew32' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+              <calculation class='tableau' formula='&quot;L6M&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+            <column caption='Period · L6M · on' datatype='boolean' name='[Calculation_1397519084912130760]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 2] = &quot;L6M&quot;' />
+            </column>
+            <column caption='Period · L6M' datatype='string' name='[Calculation_8189124688577676045]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;L6M&quot;' />
+            </column>
+            <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1397519084912130760]' derivation='None' name='[none:Calculation_1397519084912130760:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_8189124688577676045]' derivation='None' name='[none:Calculation_8189124688577676045:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9892914390142087505]' derivation='None' name='[none:Calculation_9892914390142087505:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_1397519084912130760:nk]' />
+              <text column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_8189124688577676045:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='10'><![CDATA[<[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_8189124688577676045:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{572D8565-A4F1-4EEB-A549-37B85B1B2AF1}' />
+    </worksheet>
+    <worksheet name='Periods · L9M'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.lyl8wthdb6068eodoaqvdj3tew32' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+              <calculation class='tableau' formula='&quot;L6M&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+            <column caption='Period · L9M · on' datatype='boolean' name='[Calculation_3208788395718826007]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 2] = &quot;L9M&quot;' />
+            </column>
+            <column caption='Period · L9M' datatype='string' name='[Calculation_9623362561709430310]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;L9M&quot;' />
+            </column>
+            <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_3208788395718826007]' derivation='None' name='[none:Calculation_3208788395718826007:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9623362561709430310]' derivation='None' name='[none:Calculation_9623362561709430310:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_9892914390142087505]' derivation='None' name='[none:Calculation_9892914390142087505:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_3208788395718826007:nk]' />
+              <text column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9623362561709430310:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='10'><![CDATA[<[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9623362561709430310:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{940336DF-FF3E-4514-8785-3CBA7C0F2FC4}' />
+    </worksheet>
+    <worksheet name='Products Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.lyl8wthdb6068eodoaqvdj3tew32' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Metric' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Sales&quot;'>
+              <calculation class='tableau' formula='&quot;Sales&quot;' />
+            </column>
+            <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+              <calculation class='tableau' formula='&quot;L6M&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+            <column caption='Metric value' datatype='real' name='[Calculation_7325679637406209574]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1] WHEN &quot;Sales&quot; THEN SUM([Sales]) WHEN &quot;Profit&quot; THEN SUM([Profit]) WHEN &quot;Quantity&quot; THEN SUM([Quantity]) END' />
+            </column>
+            <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quantity]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_9892914390142087505]' derivation='None' name='[none:Calculation_9892914390142087505:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_7325679637406209574]' derivation='User' name='[usr:Calculation_7325679637406209574:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Product:nk]' direction='DESC' using='[federated.lyl8wthdb6068eodoaqvdj3tew32].[usr:Calculation_7325679637406209574:qk]' />
+          <slices>
+            <column>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.lyl8wthdb6068eodoaqvdj3tew32].[usr:Calculation_7325679637406209574:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.lyl8wthdb6068eodoaqvdj3tew32].[usr:Calculation_7325679637406209574:qk]' scope='cols' value='false' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='width' field='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Product:nk]' value='77' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Product:nk]' value='#333333' />
+            <format attr='font-size' field='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Product:nk]' value='10' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#898989' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Product:nk]</rows>
+        <cols>[federated.lyl8wthdb6068eodoaqvdj3tew32].[usr:Calculation_7325679637406209574:qk]</cols>
+      </table>
+      <simple-id uuid='{8F74A8F1-64CA-4ECA-9876-CEF9AA14582E}' />
+    </worksheet>
+    <worksheet name='Products Table'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.lyl8wthdb6068eodoaqvdj3tew32' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Metric' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Sales&quot;'>
+              <calculation class='tableau' formula='&quot;Sales&quot;' />
+            </column>
+            <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+              <calculation class='tableau' formula='&quot;L6M&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+            <column caption='Metric value' datatype='real' name='[Calculation_7325679637406209574]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1] WHEN &quot;Sales&quot; THEN SUM([Sales]) WHEN &quot;Profit&quot; THEN SUM([Profit]) WHEN &quot;Quantity&quot; THEN SUM([Quantity]) END' />
+            </column>
+            <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quantity]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_9892914390142087505]' derivation='None' name='[none:Calculation_9892914390142087505:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_7325679637406209574]' derivation='User' name='[usr:Calculation_7325679637406209574:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Product:nk]' value='30' />
+            <format attr='width' value='59' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#898989' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.lyl8wthdb6068eodoaqvdj3tew32].[usr:Calculation_7325679637406209574:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Product:nk]</rows>
+        <cols>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Region:nk]</cols>
+      </table>
+      <simple-id uuid='{D46914EF-95F7-45DC-B6A6-B984771BF7BE}' />
+    </worksheet>
+    <worksheet name='Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_products' name='federated.lyl8wthdb6068eodoaqvdj3tew32' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Metric' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Sales&quot;'>
+              <calculation class='tableau' formula='&quot;Sales&quot;' />
+            </column>
+            <column caption='Period' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;L6M&quot;'>
+              <calculation class='tableau' formula='&quot;L6M&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.lyl8wthdb6068eodoaqvdj3tew32'>
+            <column caption='Metric value' datatype='real' name='[Calculation_7325679637406209574]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1] WHEN &quot;Sales&quot; THEN SUM([Sales]) WHEN &quot;Profit&quot; THEN SUM([Profit]) WHEN &quot;Quantity&quot; THEN SUM([Quantity]) END' />
+            </column>
+            <column caption='Period filter' datatype='boolean' name='[Calculation_9892914390142087505]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 2] WHEN &quot;L3M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 3 WHEN &quot;L6M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 6 WHEN &quot;L9M&quot; THEN DATEDIFF(&apos;month&apos;, [Order Date], {FIXED : MAX([Order Date])}) &lt; 9 WHEN &quot;All&quot; THEN TRUE END' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quantity]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_9892914390142087505]' derivation='None' name='[none:Calculation_9892914390142087505:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Order Date]' derivation='Month-Trunc' name='[tmn:Order Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_7325679637406209574]' derivation='User' name='[usr:Calculation_7325679637406209574:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.lyl8wthdb6068eodoaqvdj3tew32].[none:Calculation_9892914390142087505:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.lyl8wthdb6068eodoaqvdj3tew32].[tmn:Order Date:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.lyl8wthdb6068eodoaqvdj3tew32].[usr:Calculation_7325679637406209574:qk]' scope='rows' value='' />
+            <format attr='width' field='[federated.lyl8wthdb6068eodoaqvdj3tew32].[usr:Calculation_7325679637406209574:qk]' value='36' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#898989' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.lyl8wthdb6068eodoaqvdj3tew32].[usr:Calculation_7325679637406209574:qk]</rows>
+        <cols>[federated.lyl8wthdb6068eodoaqvdj3tew32].[tmn:Order Date:qk]</cols>
+      </table>
+      <simple-id uuid='{7032D243-E236-4E32-846A-EB7EF7C90AA8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Explorer'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+      </style>
+      <size maxheight='1000' maxwidth='1400' minheight='1000' minwidth='1400' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='View' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;Chart&quot;'>
+          <calculation class='tableau' formula='&quot;Chart&quot;' />
+          <members>
+            <member value='&quot;Chart&quot;' />
+            <member value='&quot;Table&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='3' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='8700' id='4' param='horz' type-v2='layout-flow' w='99142' x='429' y='600'>
+            <zone forceUpdate='true' h='8700' id='5' type-v2='text' w='88285' x='429' y='600'>
+              <formatted-text>
+                <run bold='true' fontcolor='#333333' fontsize='18'>Product</run>
+                <run fontcolor='#333333' fontsize='18'> Explorer</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#666666' fontsize='11'>Sample data, 2025, 640 orders</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='6' />
+                <format attr='margin-right' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='142' h='8700' id='6' is-fixed='true' mode='list' param='[Parameters].[Parameter 3]' type-v2='paramctrl' w='10857' x='88714' y='600'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='6' />
+                <format attr='margin-left' value='4' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='90100' id='7' param='horz' type-v2='layout-flow' w='99142' x='429' y='9300'>
+            <zone h='90100' id='8' type-v2='layout-basic' w='99142' x='429' y='9300'>
+              <zone h='12013' id='9' param='vert' type-v2='layout-flow' w='99142' x='429' y='9300'>
+                <zone h='7413' id='10' type-v2='layout-basic' w='95856' x='2072' y='11600'>
+                  <zone h='7413' id='11' name='Periods · L3M' show-title='false' w='23964' x='2072' y='11600'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-right' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='7413' id='12' name='Periods · L6M' show-title='false' w='23964' x='26036' y='11600'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-right' value='4' />
+                      <format attr='margin-left' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='7413' id='13' name='Periods · L9M' show-title='false' w='23964' x='50000' y='11600'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-right' value='4' />
+                      <format attr='margin-left' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='7413' id='14' name='Periods · All' show-title='false' w='23964' x='73964' y='11600'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-left' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='30033' id='15' param='vert' type-v2='layout-flow' w='19828' x='429' y='21313'>
+                <zone h='25433' id='16' type-v2='layout-basic' w='16542' x='2072' y='23613'>
+                  <zone forceUpdate='true' h='6100' id='17' type-v2='text' w='16542' x='2072' y='23613'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>Metric</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#898989' fontsize='9'>Click to switch</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6444' id='18' name='Metrics · Sales' show-title='false' w='16542' x='2072' y='29713'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6444' id='19' name='Metrics · Profit' show-title='false' w='16542' x='2072' y='36157'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-top' value='4' />
+                      <format attr='margin-bottom' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6445' id='20' name='Metrics · Quantity' show-title='false' w='16542' x='2072' y='42601'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-top' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='30033' id='21' param='vert' type-v2='layout-flow' w='79314' x='20257' y='21313'>
+                <zone h='25433' id='22' type-v2='layout-basic' w='76028' x='21900' y='23613'>
+                  <zone forceUpdate='true' h='6100' id='23' type-v2='text' w='76028' x='21900' y='23613'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>&lt;[Parameters].[Parameter 1]&gt; </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>by month</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#898989' fontsize='9'><![CDATA[Period <[Parameters].[Parameter 2]>]]></run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='19333' id='24' name='Trend' show-title='false' w='76028' x='21900' y='29713'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='48054' id='25' param='horz' type-v2='layout-flow' w='99142' x='429' y='51346'>
+                <zone h='48054' id='26' type-v2='layout-basic' w='99142' x='429' y='51346'>
+                  <zone h='48054' id='27' param='vert' type-v2='layout-flow' w='99142' x='429' y='51346'>
+                    <zone h='43454' id='28' type-v2='layout-basic' w='95856' x='2072' y='53646'>
+                      <zone forceUpdate='true' h='4000' id='29' type-v2='text' w='95856' x='2072' y='53646'>
+                        <formatted-text>
+                          <run fontcolor='#333333' fontsize='12'>&lt;[Parameters].[Parameter 1]&gt; </run>
+                          <run bold='true' fontcolor='#333333' fontsize='12'>by product</run>
+                        </formatted-text>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='0' />
+                          <format attr='margin-bottom' value='12' />
+                        </zone-style>
+                      </zone>
+                      <zone h='39454' id='30' name='Products Chart' show-title='false' w='95856' x='2072' y='57646'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='0' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone-style>
+                      <format attr='border-color' value='#e6e6e6' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='6' />
+                      <format attr='padding' value='16' />
+                      <format attr='background-color' value='#ffffff' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='48054' hidden-by-user='true' id='31' type-v2='layout-basic' w='99142' x='429' y='51346'>
+                  <zone h='48054' hidden-by-user='true' id='32' param='vert' type-v2='layout-flow' w='99142' x='429' y='51346'>
+                    <zone h='43454' hidden-by-user='true' id='33' type-v2='layout-basic' w='95856' x='2072' y='53646'>
+                      <zone forceUpdate='true' h='4000' hidden-by-user='true' id='34' type-v2='text' w='95856' x='2072' y='53646'>
+                        <formatted-text>
+                          <run fontcolor='#333333' fontsize='12'>&lt;[Parameters].[Parameter 1]&gt; </run>
+                          <run bold='true' fontcolor='#333333' fontsize='12'>by product and region</run>
+                        </formatted-text>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='0' />
+                          <format attr='margin-bottom' value='12' />
+                        </zone-style>
+                      </zone>
+                      <zone h='39454' hidden-by-user='true' id='35' name='Products Table' show-title='false' w='95856' x='2072' y='57646'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='0' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone-style>
+                      <format attr='border-color' value='#e6e6e6' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='6' />
+                      <format attr='padding' value='16' />
+                      <format attr='background-color' value='#ffffff' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='6' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{AC8A30E2-AD16-4C1B-99B1-361141561A97}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Periods · L3M'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C763349A-342D-41C5-A73F-158780119149}' />
+    </window>
+    <window class='worksheet' name='Periods · L6M'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3DC4C210-F8A9-4B43-B3E8-5CB5297E16DD}' />
+    </window>
+    <window class='worksheet' name='Periods · L9M'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8ACBBBD4-9423-48AA-B207-1ED29EB0DF71}' />
+    </window>
+    <window class='worksheet' name='Periods · All'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD9C3517-7021-4166-950C-59506837FB68}' />
+    </window>
+    <window class='worksheet' name='Metrics · Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1542BD3E-0F3E-41BF-BAAF-16274105551B}' />
+    </window>
+    <window class='worksheet' name='Metrics · Profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD180FA4-041B-4A8F-A4BE-C2D05421BC2F}' />
+    </window>
+    <window class='worksheet' name='Metrics · Quantity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8979BDF4-1914-439F-8127-91627809253A}' />
+    </window>
+    <window class='worksheet' name='Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{37CF3EF2-FCE9-462B-AD1D-0CEAD09C5F89}' />
+    </window>
+    <window class='worksheet' name='Products Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{42A31FC6-D0BE-4761-A87F-7AC49F500096}' />
+    </window>
+    <window class='worksheet' name='Products Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DC6EF11F-1DBC-4A18-9984-266B5EED0CC8}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Explorer'>
+      <viewpoints>
+        <viewpoint name='Metrics · Profit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Metrics · Quantity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Metrics · Sales'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Periods · All'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Periods · L3M'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Periods · L6M'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Periods · L9M'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Products Chart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Products Table'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C605740E-40D7-4638-904E-266B466D0400}' />
+    </window>
+  </windows>
+  <datagraph>
+    <graph>
+      <properties>
+        <default-execution-subgraph-guid value='62f12656-1f7c-50ce-a312-1d0075903adc' />
+      </properties>
+      <node-execution-subgraphs>
+        <pair execution-subgraph-guid='62f12656-1f7c-50ce-a312-1d0075903adc' node-guid='178c0952-97a7-5c01-bb5d-bac5bea54243' />
+        <pair execution-subgraph-guid='62f12656-1f7c-50ce-a312-1d0075903adc' node-guid='f8900146-e653-5d41-82d3-f709bff6b24d' />
+        <pair execution-subgraph-guid='62f12656-1f7c-50ce-a312-1d0075903adc' node-guid='8e68fa9f-a29f-5ae1-9a02-4f4042f85956' />
+        <pair execution-subgraph-guid='62f12656-1f7c-50ce-a312-1d0075903adc' node-guid='614600f7-0ea7-5ac9-955d-f367a50368bf' />
+      </node-execution-subgraphs>
+      <nodes>
+        <single-value-field-node fieldname='[federated.lyl8wthdb6068eodoaqvdj3tew32].[Calculation_5374144746351083206]' fieldname-input-guid='dc637a9b-29a1-5196-9999-3901e5f8bfb1' node-guid='f8900146-e653-5d41-82d3-f709bff6b24d' value-output-guid='fe04999f-4f79-570f-80ef-ea22a3799b1d' />
+        <dashboard-zone-visibility-node dashboard-identifier='{AC8A30E2-AD16-4C1B-99B1-361141561A97}' node-guid='178c0952-97a7-5c01-bb5d-bac5bea54243' visibility-input-guid='ef6781e2-0782-593d-be4c-52661a346342' zone-id='31' />
+        <single-value-field-node fieldname='[federated.lyl8wthdb6068eodoaqvdj3tew32].[Calculation_5048239439728566347]' fieldname-input-guid='920bd45d-8c49-506b-91e1-5f1b72cbe907' node-guid='614600f7-0ea7-5ac9-955d-f367a50368bf' value-output-guid='45a40daa-4954-5bb6-a355-0c229a6c7590' />
+        <dashboard-zone-visibility-node dashboard-identifier='{AC8A30E2-AD16-4C1B-99B1-361141561A97}' node-guid='8e68fa9f-a29f-5ae1-9a02-4f4042f85956' visibility-input-guid='07959376-2224-5fe9-814b-4cad1d177d81' zone-id='26' />
+      </nodes>
+      <edges>
+        <edge from='45a40daa-4954-5bb6-a355-0c229a6c7590' to='ef6781e2-0782-593d-be4c-52661a346342' />
+        <edge from='fe04999f-4f79-570f-80ef-ea22a3799b1d' to='07959376-2224-5fe9-814b-4cad1d177d81' />
+      </edges>
+      <pin-values />
+    </graph>
+  </datagraph>
+  <thumbnails>
+    <thumbnail height='192' name='Explorer' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

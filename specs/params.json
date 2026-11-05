@@ -1,0 +1,29 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_products.csv"},
+  "parameters": [
+    {"name": "Metric", "type": "string", "values": ["Sales", "Profit", "Quantity"], "default": "Sales"},
+    {"name": "Top N", "type": "integer", "range": {"min": 4, "max": 12, "step": 4}, "default": 8},
+    {"name": "Period", "type": "string", "values": ["week", "month", "quarter"], "default": "month"}
+  ],
+  "calcs": [
+    {"name": "Metric value",
+     "formula": "CASE [Metric] WHEN \"Sales\" THEN SUM([Sales]) WHEN \"Profit\" THEN SUM([Profit]) WHEN \"Quantity\" THEN SUM([Quantity]) END"},
+    {"name": "Period start", "formula": "DATETRUNC([Parameters].[Period], [Order Date])"}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "title": "Total **[Metric]**",
+     "measures": [{"field": "Metric value", "label": "All products"}]},
+    {"name": "Top Products", "type": "bar", "title": "Top [Top N] **products** by [Metric]", "dimension": "Product",
+     "measure": {"field": "Metric value"}, "sort": "desc", "top": {"n": "Top N"}},
+    {"name": "Most Profitable", "type": "bar", "title": "Top 3 **products** by profit", "subtitle": "Ranked by profit whatever the metric",
+     "dimension": "Product", "measure": {"field": "Profit"}, "sort": "desc", "top": {"n": 3}},
+    {"name": "Trend", "type": "line", "title": "[Metric] **by [Period]**",
+     "date": {"field": "Period start", "level": "day"}, "measure": {"field": "Metric value"}}
+  ],
+  "filters": [{"field": "Region", "show_on": "Top Products"}],
+  "dashboard": {"name": "Explorer", "title": "**Product** Explorer", "subtitle": "Sample data, 2025, 640 orders",
+                "width": 1400, "height": 900, "row_heights": [4, 7, 5],
+                "grid": [["KPI"], [{"sheet": "Top Products", "width": 2}, "Most Profitable"], ["Trend"]]}
+}

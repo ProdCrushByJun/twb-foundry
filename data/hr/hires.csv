@@ -1,0 +1,301 @@
+Hire Date,Department,City,Salary,Headcount
+2024-11-27,Sales,Novi Sad,3208.46,1
+2025-07-02,Engineering,Novi Sad,2956.32,3
+2024-08-07,Engineering,Belgrade,2404.49,1
+2024-09-03,Engineering,Nis,2370.72,3
+2024-05-06,Sales,Nis,3121.5,1
+2025-08-13,HR,Novi Sad,983.48,1
+2024-02-17,HR,Belgrade,1871.55,1
+2025-07-07,Engineering,Nis,1941.38,3
+2024-07-04,Engineering,Nis,2913.46,1
+2025-01-16,Engineering,Nis,3434.81,3
+2024-03-02,HR,Belgrade,2636.73,3
+2025-03-13,Support,Novi Sad,2966.58,2
+2025-01-05,Support,Belgrade,3739.2,3
+2024-09-06,Engineering,Nis,1910.92,2
+2024-12-17,Finance,Novi Sad,3053.15,1
+2024-04-30,HR,Novi Sad,1410.36,2
+2024-06-04,Finance,Novi Sad,945.07,3
+2024-03-20,HR,Nis,3719.65,2
+2024-12-14,Support,Nis,2637.7,2
+2024-03-11,Engineering,Novi Sad,2554.16,3
+2024-03-07,Engineering,Nis,3395.52,3
+2025-08-14,Finance,Novi Sad,3451.52,3
+2024-12-21,Engineering,Novi Sad,2115.22,3
+2024-04-29,Finance,Belgrade,1607.37,2
+2024-05-12,Sales,Novi Sad,2246.51,2
+2024-03-23,Sales,Novi Sad,2286.08,2
+2024-05-20,Finance,Nis,1830.16,2
+2025-01-02,Finance,Belgrade,1358.41,1
+2024-06-03,Sales,Nis,1663.34,2
+2025-08-26,Sales,Novi Sad,1843.14,1
+2025-03-05,HR,Novi Sad,3056.31,2
+2024-05-08,HR,Nis,3223.38,3
+2024-02-25,Finance,Nis,3752.13,2
+2025-02-11,Finance,Novi Sad,1183.09,3
+2025-02-14,Engineering,Belgrade,1049.19,1
+2025-03-27,Sales,Belgrade,2058.2,1
+2024-04-14,Engineering,Nis,1359.68,1
+2025-01-07,HR,Belgrade,1060.17,1
+2025-09-20,Finance,Belgrade,3147.32,2
+2025-09-08,Support,Novi Sad,1254.52,2
+2025-04-22,Finance,Novi Sad,1953.85,1
+2024-04-14,Support,Nis,1779.6,3
+2024-06-14,HR,Belgrade,1559.3,3
+2025-01-05,Sales,Nis,2809.74,1
+2025-06-24,Support,Nis,3994.3,3
+2024-09-24,HR,Novi Sad,4160.56,2
+2024-08-16,HR,Nis,3682.5,2
+2025-10-13,Sales,Nis,3802.59,1
+2024-09-02,Finance,Nis,3772.31,1
+2025-06-14,Finance,Novi Sad,3504.71,1
+2024-10-13,Finance,Novi Sad,1516.49,3
+2024-12-18,Finance,Nis,4455.74,2
+2024-03-23,Sales,Belgrade,1639.33,1
+2024-12-11,Sales,Novi Sad,3109.05,3
+2024-01-02,Finance,Nis,2072.83,3
+2024-03-27,Engineering,Novi Sad,3694.52,1
+2025-05-04,Sales,Novi Sad,3719.8,2
+2024-03-29,Finance,Novi Sad,2285.13,1
+2024-06-11,Sales,Belgrade,901.93,3
+2025-04-21,Sales,Nis,3858.09,2
+2025-11-04,Support,Belgrade,2830.04,1
+2024-01-22,Engineering,Nis,3203.8,3
+2024-05-22,Finance,Belgrade,3856.77,1
+2024-01-29,Support,Belgrade,1883.98,1
+2025-08-23,Support,Novi Sad,2814.11,1
+2024-03-03,Support,Novi Sad,3251.16,3
+2025-03-06,HR,Belgrade,2767.75,3
+2025-06-06,Engineering,Novi Sad,3673.07,3
+2024-01-05,Sales,Belgrade,1323.77,3
+2024-05-03,HR,Belgrade,2006.13,3
+2025-06-27,HR,Novi Sad,3701.81,1
+2025-07-27,Engineering,Belgrade,1507.83,1
+2024-04-10,HR,Novi Sad,2878.4,1
+2025-03-29,Support,Nis,4401.43,3
+2025-06-08,Sales,Nis,1825.59,3
+2025-06-30,Finance,Nis,4283.55,3
+2025-06-19,Support,Nis,4103.19,1
+2025-04-03,Sales,Novi Sad,1250.0,2
+2024-11-19,Engineering,Nis,1690.36,1
+2024-08-05,Support,Belgrade,4119.0,1
+2025-10-20,Support,Belgrade,1736.5,1
+2025-04-23,Sales,Nis,4324.27,2
+2025-05-13,Sales,Nis,3880.05,1
+2025-12-24,Finance,Nis,2294.1,2
+2024-07-19,Support,Novi Sad,1141.12,2
+2024-01-20,Support,Nis,2497.08,3
+2024-01-19,Finance,Novi Sad,2714.51,2
+2025-06-08,Engineering,Belgrade,4444.81,1
+2024-04-17,Engineering,Novi Sad,1806.11,1
+2024-10-03,Sales,Novi Sad,3943.47,3
+2024-09-21,Finance,Belgrade,2785.42,3
+2025-08-07,Finance,Nis,2010.08,2
+2024-02-28,Sales,Novi Sad,4112.56,2
+2024-01-18,Engineering,Novi Sad,1109.85,1
+2024-03-09,Support,Belgrade,2478.96,2
+2025-07-20,Finance,Novi Sad,3100.3,1
+2025-06-23,Sales,Belgrade,4386.09,2
+2024-02-21,Sales,Belgrade,4249.31,3
+2024-11-08,HR,Belgrade,1872.86,3
+2025-11-19,Sales,Novi Sad,2083.9,1
+2024-09-13,Engineering,Belgrade,868.21,3
+2025-07-18,Sales,Nis,2556.61,2
+2024-04-18,Finance,Nis,2631.51,2
+2025-06-02,Support,Nis,1596.17,1
+2024-12-16,Sales,Nis,3496.72,1
+2025-02-18,Support,Belgrade,3896.86,1
+2024-03-13,Support,Novi Sad,1404.01,1
+2025-11-12,Finance,Nis,3281.01,2
+2025-09-05,Sales,Nis,1884.32,2
+2024-07-08,Sales,Novi Sad,2449.55,2
+2025-01-07,Support,Nis,1997.08,1
+2024-11-12,Sales,Novi Sad,1476.94,2
+2025-01-25,Engineering,Novi Sad,1832.04,3
+2024-07-24,Sales,Nis,3672.08,1
+2024-09-27,Engineering,Belgrade,2278.19,1
+2025-02-07,Engineering,Novi Sad,1925.7,1
+2024-03-27,HR,Nis,3957.02,1
+2025-11-04,HR,Novi Sad,3627.95,3
+2025-05-21,Sales,Novi Sad,3479.38,3
+2024-05-28,Engineering,Nis,4100.19,3
+2025-03-15,HR,Belgrade,4166.58,3
+2025-08-05,Engineering,Nis,2961.03,3
+2025-11-30,Sales,Belgrade,915.29,1
+2025-10-14,Support,Belgrade,2193.49,2
+2025-07-25,Engineering,Nis,869.71,3
+2025-11-28,Sales,Novi Sad,1776.03,2
+2024-03-12,HR,Nis,1140.19,3
+2024-03-08,Finance,Novi Sad,3794.11,2
+2024-08-28,Sales,Belgrade,3537.37,2
+2025-05-20,Finance,Belgrade,2572.34,3
+2024-10-21,Engineering,Nis,3141.33,1
+2024-03-20,HR,Belgrade,2027.56,3
+2025-12-10,Support,Nis,2900.72,1
+2025-05-08,Engineering,Novi Sad,1794.46,3
+2024-04-11,Sales,Nis,2611.57,3
+2025-06-12,Support,Novi Sad,2523.82,1
+2025-07-16,Sales,Novi Sad,4419.07,2
+2024-01-18,Support,Novi Sad,1082.92,3
+2025-04-05,Support,Novi Sad,1576.4,1
+2024-03-17,HR,Belgrade,1324.44,3
+2024-09-25,Support,Belgrade,3032.45,3
+2025-06-04,Support,Belgrade,3402.35,1
+2025-05-24,Finance,Novi Sad,891.89,1
+2025-05-18,Finance,Novi Sad,1917.22,1
+2025-03-02,Support,Novi Sad,1969.49,2
+2024-01-02,Support,Novi Sad,3904.71,1
+2024-07-19,Engineering,Nis,1872.38,2
+2024-03-07,Finance,Novi Sad,4495.53,3
+2024-03-19,Support,Novi Sad,3595.93,1
+2024-10-14,Engineering,Belgrade,3888.3,2
+2025-10-12,Sales,Belgrade,4392.84,2
+2025-06-07,Support,Belgrade,3660.78,2
+2024-01-30,Finance,Nis,2832.14,3
+2024-03-23,Engineering,Nis,2320.28,3
+2024-05-21,Support,Novi Sad,981.21,3
+2024-05-10,Sales,Novi Sad,2335.01,2
+2024-10-31,Support,Nis,3533.36,3
+2024-09-23,Finance,Nis,1683.06,2
+2025-07-24,Finance,Belgrade,1419.13,1
+2024-03-17,Sales,Nis,4152.05,2
+2025-07-17,Sales,Novi Sad,4153.16,2
+2025-03-13,Sales,Nis,1511.91,1
+2024-06-27,Support,Nis,1137.05,1
+2025-01-12,Support,Nis,1547.92,1
+2025-02-26,Finance,Novi Sad,3559.61,1
+2025-01-20,Support,Novi Sad,3582.81,2
+2024-10-11,HR,Novi Sad,1265.73,3
+2025-06-25,Sales,Belgrade,1802.78,1
+2025-01-28,Finance,Nis,2449.68,2
+2024-01-23,Sales,Belgrade,2373.24,2
+2025-08-24,Finance,Belgrade,1070.61,3
+2025-04-24,Finance,Belgrade,3697.5,1
+2024-06-07,Sales,Nis,4395.98,1
+2025-12-18,Finance,Belgrade,2840.55,1
+2024-01-02,Sales,Belgrade,2906.71,1
+2025-10-22,Support,Belgrade,3117.95,3
+2025-10-13,Finance,Nis,3626.22,1
+2024-03-13,Support,Nis,4291.1,1
+2025-02-01,Support,Belgrade,3724.8,1
+2024-01-11,HR,Novi Sad,4486.58,2
+2024-11-19,Sales,Novi Sad,2747.23,3
+2024-09-09,Engineering,Novi Sad,3407.22,2
+2024-02-26,Engineering,Belgrade,2643.75,3
+2025-10-24,Finance,Belgrade,1751.85,3
+2025-03-10,Support,Belgrade,2623.89,3
+2024-12-12,Finance,Novi Sad,3325.5,1
+2024-01-07,Support,Nis,3927.05,1
+2024-07-29,Finance,Belgrade,1953.35,1
+2024-08-24,Finance,Belgrade,1780.58,2
+2024-04-21,HR,Novi Sad,3057.36,1
+2025-05-11,Finance,Nis,1008.74,3
+2024-05-29,Finance,Belgrade,1587.91,3
+2024-05-25,Finance,Belgrade,3426.48,1
+2025-02-06,Finance,Nis,4069.26,3
+2024-04-25,Engineering,Belgrade,2018.2,1
+2025-10-30,HR,Nis,2530.18,2
+2025-11-11,Finance,Novi Sad,4444.44,2
+2024-06-22,Engineering,Belgrade,1089.5,1
+2024-12-25,Finance,Belgrade,2876.18,1
+2025-01-24,Support,Novi Sad,3841.43,2
+2024-03-30,Engineering,Nis,2551.82,2
+2025-07-08,Finance,Belgrade,1996.24,3
+2025-04-30,Engineering,Nis,2319.97,3
+2025-02-18,Engineering,Novi Sad,928.96,1
+2024-03-04,Support,Belgrade,3564.96,3
+2024-12-13,Support,Novi Sad,2039.39,3
+2024-02-14,Support,Nis,3451.55,2
+2024-10-09,Support,Belgrade,3469.82,3
+2025-10-11,Engineering,Belgrade,3856.27,1
+2025-05-01,Finance,Novi Sad,3722.26,2
+2025-05-20,Sales,Novi Sad,1476.88,3
+2024-11-06,Sales,Nis,1673.73,2
+2025-04-16,Support,Nis,1092.36,1
+2025-02-05,Sales,Belgrade,2308.7,3
+2024-02-04,Finance,Nis,2815.08,1
+2025-03-12,Engineering,Belgrade,1780.1,1
+2024-08-01,Engineering,Novi Sad,2644.36,3
+2025-04-02,Sales,Belgrade,1291.85,2
+2025-09-27,Sales,Nis,2792.69,3
+2024-05-04,Support,Novi Sad,1833.77,2
+2025-01-16,Support,Nis,1763.24,2
+2024-09-10,Sales,Belgrade,1671.36,2
+2025-08-15,Sales,Novi Sad,1039.78,2
+2024-09-08,HR,Nis,1656.11,1
+2025-10-31,Finance,Belgrade,1178.63,2
+2024-08-24,Finance,Novi Sad,949.34,2
+2024-08-26,Engineering,Belgrade,1501.42,3
+2024-07-17,Engineering,Novi Sad,2696.88,1
+2025-04-04,HR,Novi Sad,3667.49,3
+2024-01-07,Engineering,Nis,3005.74,3
+2024-12-24,Sales,Belgrade,2164.22,1
+2024-02-15,Sales,Novi Sad,941.47,3
+2025-10-29,Sales,Belgrade,3829.68,2
+2025-11-25,Support,Belgrade,3097.75,1
+2024-07-27,Engineering,Novi Sad,2827.77,1
+2025-02-21,Engineering,Novi Sad,3256.9,1
+2025-10-16,HR,Belgrade,3216.32,2
+2025-12-13,Support,Novi Sad,4456.48,3
+2024-11-10,Finance,Belgrade,1955.74,3
+2024-12-31,Finance,Novi Sad,867.39,2
+2025-10-21,Sales,Novi Sad,3493.72,1
+2024-01-07,Finance,Belgrade,2367.89,1
+2025-02-19,HR,Novi Sad,2505.35,1
+2024-05-13,Engineering,Belgrade,2840.73,3
+2025-02-10,Engineering,Nis,3102.12,2
+2025-05-31,Sales,Belgrade,2087.4,1
+2025-06-17,Sales,Belgrade,1202.53,2
+2024-07-21,Support,Belgrade,3897.98,1
+2025-05-09,Support,Belgrade,3048.29,3
+2025-02-01,Engineering,Nis,3095.27,1
+2025-10-17,Sales,Nis,2296.59,1
+2025-04-29,Sales,Nis,1607.11,2
+2025-06-14,Sales,Novi Sad,2129.07,1
+2024-09-09,Sales,Belgrade,4070.29,3
+2024-02-09,Support,Belgrade,2242.4,2
+2025-07-17,Support,Nis,2354.27,3
+2024-09-12,Finance,Novi Sad,3237.72,2
+2025-05-30,Finance,Belgrade,886.49,3
+2025-05-16,Finance,Belgrade,2453.23,3
+2025-04-14,Sales,Novi Sad,2281.27,1
+2024-05-11,Support,Novi Sad,2151.73,2
+2025-05-31,HR,Nis,950.84,3
+2024-05-13,Engineering,Nis,1960.79,3
+2025-06-07,Engineering,Belgrade,3582.62,2
+2025-10-30,Sales,Belgrade,3971.16,3
+2025-12-10,Engineering,Belgrade,1286.98,2
+2024-10-21,Sales,Nis,3717.01,1
+2024-03-08,Support,Nis,3597.87,1
+2024-11-27,HR,Novi Sad,4148.73,2
+2024-05-27,Support,Nis,4368.01,2
+2024-08-01,HR,Novi Sad,3078.71,1
+2024-11-22,Support,Belgrade,1536.09,2
+2024-06-14,Support,Nis,2012.95,2
+2024-06-21,Support,Belgrade,3642.58,1
+2025-10-13,Support,Novi Sad,2854.17,3
+2025-12-06,Engineering,Novi Sad,4473.93,3
+2025-02-07,Support,Novi Sad,2190.24,2
+2025-08-14,Sales,Novi Sad,2024.07,1
+2025-03-28,Sales,Belgrade,3076.88,1
+2024-10-30,HR,Novi Sad,1947.27,3
+2025-11-10,Support,Nis,806.63,1
+2024-08-14,Sales,Novi Sad,3079.39,2
+2025-03-03,HR,Novi Sad,4113.51,1
+2025-05-15,Sales,Nis,3216.5,1
+2024-02-25,Engineering,Nis,2113.36,1
+2025-06-19,Support,Nis,1629.76,3
+2024-11-04,HR,Belgrade,1555.48,3
+2025-05-01,Sales,Belgrade,852.21,1
+2025-12-25,Sales,Novi Sad,1154.48,3
+2024-05-28,Support,Novi Sad,3802.81,1
+2024-02-27,HR,Novi Sad,3000.48,3
+2025-03-30,HR,Nis,3514.03,1
+2024-06-18,Engineering,Belgrade,1027.66,1
+2025-02-19,Sales,Belgrade,1389.1,1
+2024-01-13,HR,Nis,3230.16,1
+2024-05-25,Finance,Belgrade,2717.55,3
+2025-06-03,Finance,Nis,1446.17,2
+2024-03-06,Support,Nis,979.42,3
+2025-05-04,HR,Belgrade,2188.09,2
+2025-04-21,Engineering,Nis,3225.47,1

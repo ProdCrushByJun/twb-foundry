@@ -1,0 +1,500 @@
+{
+ "$schema": "../../../tbuilder/spec.schema.json",
+ "version": 1,
+ "datasource": {
+  "type": "csv",
+  "path": "lab.csv"
+ },
+ "sheets": [
+  {
+   "name": "F96",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "F97",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "F98",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "F99",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "F100",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "F101",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "F102",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "L120",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "Z",
+      "format": {
+       "type": "number",
+       "decimals": 2
+      }
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "L125",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "Z",
+      "format": {
+       "type": "number",
+       "decimals": 2
+      }
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "L130",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "Z",
+      "format": {
+       "type": "number",
+       "decimals": 2
+      }
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "L135",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "Z",
+      "format": {
+       "type": "number",
+       "decimals": 2
+      }
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "L140",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "Z",
+      "format": {
+       "type": "number",
+       "decimals": 2
+      }
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "L145",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "Z",
+      "format": {
+       "type": "number",
+       "decimals": 2
+      }
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "L150",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "Z",
+      "format": {
+       "type": "number",
+       "decimals": 2
+      }
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "BV98",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "bar",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "BV100",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "bar",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "BV102",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "bar",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "BV104",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "bar",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "BV106",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "bar",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "D96",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "V0"
+    },
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "X1"
+    }
+   ]
+  },
+  {
+   "name": "D100",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "V0"
+    },
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "X1"
+    }
+   ]
+  },
+  {
+   "name": "D104",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "V0"
+    },
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "X1"
+    }
+   ]
+  },
+  {
+   "name": "S4",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "Z",
+      "format": {
+       "type": "number",
+       "decimals": 2
+      }
+     },
+     "style": "text",
+     "label": "Z0"
+    },
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "X1"
+    }
+   ]
+  }
+ ],
+ "dashboard": {
+  "name": "Lab",
+  "title": "Registry fine lab",
+  "width": 1366,
+  "height": 900,
+  "grid": [
+   [
+    "F96",
+    "F97",
+    "F98",
+    "F99",
+    "F100",
+    "F101"
+   ],
+   [
+    "F102",
+    "L120",
+    "L125",
+    "L130",
+    "L135",
+    "L140"
+   ],
+   [
+    "L145",
+    "L150",
+    "BV98",
+    "BV100",
+    "BV102",
+    "BV104"
+   ],
+   [
+    "BV106"
+   ],
+   [
+    "D96",
+    "D100",
+    "D104"
+   ],
+   [
+    "S4"
+   ]
+  ]
+ }
+}

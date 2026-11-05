@@ -1,0 +1,27 @@
+out/
+__pycache__/
+.venv/
+*.pyc
+# Tableau lock / temp files
+~*.twbr
+*.tmp
+hyperd*.log
+# duplicate save with a mangled name (see golden/README.md)
+golden/*.twbxgolden_*.twbx
+
+# third-party reference workbooks (Tableau Public), kept local
+data/refs/
+
+# user profiles are the user's (decisions/193); the template and the house style are in git
+profiles/*
+!profiles/example/
+!profiles/house/
+!profiles/hotels/
+profiles/hotels/*
+!profiles/hotels/profile.yaml
+
+# made from the local Desktop on first use (tools/geo_names.py): Tableau's data, not ours to ship
+tbuilder/geo_names.json.gz
+
+# the hotels example downloads its data and builds into out/
+examples/hotels/data/

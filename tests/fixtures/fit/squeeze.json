@@ -1,0 +1,184 @@
+{
+ "$schema": "../../../tbuilder/spec.schema.json",
+ "version": 1,
+ "datasource": {
+  "type": "csv",
+  "path": "lab.csv"
+ },
+ "calcs": [
+  {
+   "name": "Big",
+   "formula": "IF [Sales] > 600 THEN 1 ELSE 0 END"
+  },
+  {
+   "name": "Margin",
+   "formula": "SUM([Profit]) / SUM([Sales])",
+   "format": "pct1"
+  }
+ ],
+ "sheets": [
+  {
+   "name": "Bar11",
+   "type": "bar",
+   "title": "**Bar** 11 rows",
+   "dimension": "N11",
+   "measure": {
+    "field": "Sales"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "Bar13",
+   "type": "bar",
+   "title": "**Bar** 13 rows",
+   "dimension": "N13",
+   "measure": {
+    "field": "Sales"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "Bar14",
+   "type": "bar",
+   "title": "**Bar** 14 rows",
+   "dimension": "N14",
+   "measure": {
+    "field": "Sales"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "Bar15",
+   "type": "bar",
+   "title": "**Bar** 15 rows",
+   "dimension": "N15",
+   "measure": {
+    "field": "Sales"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "Bar17",
+   "type": "bar",
+   "title": "**Bar** 17 rows",
+   "dimension": "N17",
+   "measure": {
+    "field": "Sales"
+   },
+   "sort": "desc"
+  },
+  {
+   "name": "Reg7",
+   "type": "registry",
+   "title": "**Registry** 7 rows",
+   "rows": [
+    "N7"
+   ],
+   "sort": "desc",
+   "columns": [
+    {
+     "measure": {
+      "field": "Sales"
+     },
+     "style": "bar",
+     "label": "Sales"
+    }
+   ]
+  },
+  {
+   "name": "Reg8",
+   "type": "registry",
+   "title": "**Registry** 8 rows",
+   "rows": [
+    "N8"
+   ],
+   "sort": "desc",
+   "columns": [
+    {
+     "measure": {
+      "field": "Sales"
+     },
+     "style": "bar",
+     "label": "Sales"
+    }
+   ]
+  },
+  {
+   "name": "Reg9",
+   "type": "registry",
+   "title": "**Registry** 9 rows",
+   "rows": [
+    "N9"
+   ],
+   "sort": "desc",
+   "columns": [
+    {
+     "measure": {
+      "field": "Sales"
+     },
+     "style": "bar",
+     "label": "Sales"
+    }
+   ]
+  },
+  {
+   "name": "Reg10",
+   "type": "registry",
+   "title": "**Registry** 10 rows",
+   "rows": [
+    "N10"
+   ],
+   "sort": "desc",
+   "columns": [
+    {
+     "measure": {
+      "field": "Sales"
+     },
+     "style": "bar",
+     "label": "Sales"
+    }
+   ]
+  },
+  {
+   "name": "Reg12",
+   "type": "registry",
+   "title": "**Registry** 12 rows",
+   "rows": [
+    "N12"
+   ],
+   "sort": "desc",
+   "columns": [
+    {
+     "measure": {
+      "field": "Sales"
+     },
+     "style": "bar",
+     "label": "Sales"
+    }
+   ]
+  }
+ ],
+ "dashboard": {
+  "name": "Lab",
+  "title": "**Fit** lab: squeeze",
+  "theme": "cards",
+  "width": 1300,
+  "grid": [
+   [
+    "Bar11",
+    "Bar13",
+    "Bar14",
+    "Bar15",
+    "Bar17"
+   ],
+   [
+    "Reg7",
+    "Reg8",
+    "Reg9",
+    "Reg10",
+    "Reg12"
+   ]
+  ],
+  "height": 780
+ }
+}

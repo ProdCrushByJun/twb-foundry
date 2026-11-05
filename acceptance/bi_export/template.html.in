@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Logistics Performance - Report</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #eaeaea; font-family: "Segoe UI", "Segoe UI Web (West European)", wf_segoe-ui_normal, helvetica, arial, sans-serif; }
+  .reportCanvas { position: relative; width: 1280px; height: 740px; margin: 0 auto; background: #ffffff; overflow: hidden; }
+  .visualContainer { position: absolute; box-sizing: border-box; background-color: #ffffff; }
+  .visualContainer.bordered { border: 1px solid #d9dbe0; }
+  .vcHeader { position: absolute; left: 12px; top: 8px; right: 12px; height: 20px; }
+  .vcTitle { font-size: 13px; font-weight: 600; color: #252423; white-space: nowrap; }
+  .vcBody { position: absolute; left: 0; right: 0; bottom: 0; top: 30px; }
+  .pbi-banner { background-color: #1f3a5f; color: #ffffff; }
+  .pbi-banner .brand { position: absolute; left: 20px; top: 12px; font-size: 22px; font-weight: 600; letter-spacing: .2px; }
+  .pbi-banner .brandSub { position: absolute; left: 20px; top: 40px; font-size: 11px; color: #b8c7dc; }
+  .slicer { position: absolute; box-sizing: border-box; height: 44px; top: 12px; background-color: #2b4c7a; border-radius: 3px; color: #ffffff; padding: 5px 10px; }
+  .slicer .sl-label { font-size: 10px; color: #b8c7dc; text-transform: uppercase; }
+  .slicer .sl-value { font-size: 14px; font-weight: 600; margin-top: 1px; }
+  .slicer .sl-arrow { position: absolute; right: 10px; top: 14px; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 6px solid #b8c7dc; }
+  .cardVisual .cv-label { position: absolute; left: 16px; top: 12px; font-size: 12px; color: #605e5c; }
+  .cardVisual .cv-value { position: absolute; left: 16px; top: 34px; font-size: 32px; font-weight: 600; color: #252423; }
+  .cardVisual .cv-bar { position: absolute; left: 0; top: 0; width: 4px; height: 100%; }
+  .matrixVisual table { border-collapse: collapse; width: 100%; font-size: 12px; color: #252423; }
+  .matrixVisual th { background: #f3f2f1; font-weight: 600; text-align: right; padding: 6px 10px; border-bottom: 2px solid #c8c6c4; }
+  .matrixVisual th.rowHdr { text-align: left; }
+  .matrixVisual td { padding: 6px 10px; text-align: right; border-bottom: 1px solid #edebe9; }
+  .matrixVisual td.rowName { text-align: left; font-weight: 600; }
+  .matrixVisual tr.grand td { font-weight: 700; border-top: 2px solid #c8c6c4; background: #faf9f8; }
+  svg text { font-family: "Segoe UI", helvetica, arial, sans-serif; fill: #605e5c; font-size: 11px; }
+  .legendBox text { font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="reportCanvas" id="canvas">
+
+  <div class="visualContainer pbi-banner" style="left:0px; top:0px; width:1280px; height:68px;" data-visual="banner">
+    <div class="brand">Logistics Performance</div>
+    <div class="brandSub">Shipments 2024-2025 &middot; all regions</div>
+    <div class="slicer" style="left:820px; width:200px;"><div class="sl-label">Year</div><div class="sl-value">2024 - 2025</div><div class="sl-arrow"></div></div>
+    <div class="slicer" style="left:1040px; width:220px;"><div class="sl-label">Region</div><div class="sl-value">All</div><div class="sl-arrow"></div></div>
+  </div>
+
+  <div class="visualContainer bordered cardVisual" style="left:16px; top:82px; width:300px; height:92px;" data-visual="card1"><div class="cv-bar" style="background:#118DFF"></div><div class="cv-label">Shipments</div><div class="cv-value" id="k-ship"></div></div>
+  <div class="visualContainer bordered cardVisual" style="left:332px; top:82px; width:300px; height:92px;" data-visual="card2"><div class="cv-bar" style="background:#12239E"></div><div class="cv-label">Freight cost</div><div class="cv-value" id="k-cost"></div></div>
+  <div class="visualContainer bordered cardVisual" style="left:648px; top:82px; width:300px; height:92px;" data-visual="card3"><div class="cv-bar" style="background:#E66C37"></div><div class="cv-label">On-time delivery</div><div class="cv-value" id="k-ot"></div></div>
+  <div class="visualContainer bordered cardVisual" style="left:964px; top:82px; width:300px; height:92px;" data-visual="card4"><div class="cv-bar" style="background:#6B007B"></div><div class="cv-label">Avg transit days</div><div class="cv-value" id="k-days"></div></div>
+
+  <div class="visualContainer bordered" style="left:16px; top:190px; width:620px; height:272px;" data-visual="clusteredBarChart">
+    <div class="vcHeader"><span class="vcTitle">Shipments by carrier and year</span></div>
+    <div class="vcBody"><svg id="s-bar" width="618" height="240" viewBox="0 0 618 240"></svg></div>
+  </div>
+  <div class="visualContainer bordered" style="left:652px; top:190px; width:612px; height:272px;" data-visual="lineChart">
+    <div class="vcHeader"><span class="vcTitle">Freight cost by month</span></div>
+    <div class="vcBody"><svg id="s-line" width="610" height="240" viewBox="0 0 610 240"></svg></div>
+  </div>
+
+  <div class="visualContainer bordered matrixVisual" style="left:16px; top:478px; width:1248px; height:246px;" data-visual="pivotTable">
+    <div class="vcHeader"><span class="vcTitle">Freight cost by region and year</span></div>
+    <div class="vcBody" style="padding:0 12px;" id="m-body"></div>
+  </div>
+</div>
+
+<script>
+var DATA = /*DATA*/null;
+var NS = "http://www.w3.org/2000/svg";
+var C = {}; DATA.cols.forEach(function (c, i) { C[c] = i; });
+var R = DATA.rows;
+function el(tag, attrs, parent, text) {
+  var e = document.createElementNS(NS, tag);
+  for (var k in attrs) e.setAttribute(k, attrs[k]);
+  if (text !== undefined) e.textContent = text;
+  if (parent) parent.appendChild(e);
+  return e;
+}
+function fmt(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
+function year(r) { return r[C["Ship Date"]].slice(0, 4); }
+function sum(rows, col) { return rows.reduce(function (a, r) { return a + r[C[col]]; }, 0); }
+
+// cards
+document.getElementById("k-ship").textContent = fmt(R.length);
+document.getElementById("k-cost").textContent = "$" + fmt(sum(R, "Freight Cost"));
+document.getElementById("k-ot").textContent = (100 * sum(R, "On Time Flag") / R.length).toFixed(1) + "%";
+document.getElementById("k-days").textContent = (sum(R, "Transit Days") / R.length).toFixed(1);
+
+// clustered bar: shipments by carrier, series = year
+(function () {
+  var svg = document.getElementById("s-bar");
+  var carriers = {}, years = ["2024", "2025"];
+  R.forEach(function (r) { var c = r[C["Carrier"]]; carriers[c] = carriers[c] || {"2024": 0, "2025": 0}; carriers[c][year(r)]++; });
+  var names = Object.keys(carriers).sort(function (a, b) { return (carriers[b]["2024"] + carriers[b]["2025"]) - (carriers[a]["2024"] + carriers[a]["2025"]); });
+  var max = 0; names.forEach(function (n) { years.forEach(function (y) { max = Math.max(max, carriers[n][y]); }); });
+  var top = Math.ceil(max / 200) * 200, x0 = 46, y0 = 196, w = 560, h = 150, colors = {"2024": "#118DFF", "2025": "#12239E"};
+  var root = el("g", {"class": "chart", transform: "translate(0,6)"}, svg);
+  var grid = el("g", {"class": "grid"}, root), ax = el("g", {"class": "axis-y"}, root);
+  for (var t = 0; t <= top; t += top / 4) {
+    var y = y0 - 6 - h * t / top;
+    el("line", {x1: x0, x2: x0 + w, y1: y, y2: y, stroke: "#e1dfdd", "stroke-width": 1}, grid);
+    el("text", {x: x0 - 6, y: y + 4, "text-anchor": "end"}, ax, fmt(t));
+  }
+  var plot = el("g", {"class": "plot", transform: "translate(" + x0 + ",0)"}, root);
+  var band = w / names.length;
+  names.forEach(function (n, i) {
+    var g = el("g", {"class": "category", transform: "translate(" + (i * band) + ",0)"}, plot);
+    years.forEach(function (yr, j) {
+      var v = carriers[n][yr], bh = h * v / top, bx = band / 2 - 34 + j * 36;
+      var bg = el("g", {"class": "series series-" + yr}, g);
+      el("rect", {x: bx, y: y0 - 6 - bh, width: 32, height: bh, fill: colors[yr]}, bg);
+      el("text", {x: bx + 16, y: y0 - 10 - bh, "text-anchor": "middle", style: "font-size:10px"}, bg, fmt(v));
+    });
+    el("text", {x: band / 2, y: y0 + 12, "text-anchor": "middle"}, g, n);
+  });
+  var lg = el("g", {"class": "legendBox", transform: "translate(" + (x0 + w - 110) + ",-2)"}, root);
+  years.forEach(function (yr, j) {
+    el("rect", {x: j * 56, y: 0, width: 10, height: 10, fill: colors[yr]}, lg);
+    el("text", {x: j * 56 + 14, y: 9}, lg, yr);
+  });
+})();
+
+// line: freight cost by month (24 points)
+(function () {
+  var svg = document.getElementById("s-line");
+  var months = {}, mn = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  R.forEach(function (r) { var k = r[C["Ship Date"]].slice(0, 7); months[k] = (months[k] || 0) + r[C["Freight Cost"]]; });
+  var keys = Object.keys(months).sort();
+  var max = 0; keys.forEach(function (k) { max = Math.max(max, months[k]); });
+  var top = Math.ceil(max / 40000) * 40000, x0 = 52, y0 = 196, w = 540, h = 160;
+  var root = el("g", {"class": "chart", transform: "translate(0,6)"}, svg);
+  var grid = el("g", {"class": "grid"}, root), ax = el("g", {"class": "axis-y"}, root);
+  for (var t = 0; t <= top; t += top / 4) {
+    var y = y0 - 6 - h * t / top;
+    el("line", {x1: x0, x2: x0 + w, y1: y, y2: y, stroke: "#e1dfdd", "stroke-width": 1}, grid);
+    el("text", {x: x0 - 6, y: y + 4, "text-anchor": "end"}, ax, "$" + (t / 1000) + "K");
+  }
+  var plot = el("g", {"class": "plot"}, root), pts = [];
+  var step = w / (keys.length - 1);
+  var axx = el("g", {"class": "axis-x"}, root);
+  keys.forEach(function (k, i) {
+    var x = x0 + i * step, y = y0 - 6 - h * months[k] / top;
+    pts.push(x + "," + y);
+    if (i % 3 === 0) el("text", {x: x, y: y0 + 12, "text-anchor": "middle"}, axx, mn[+k.slice(5) - 1] + " " + k.slice(2, 4));
+  });
+  var s = el("g", {"class": "series"}, plot);
+  el("polyline", {points: pts.join(" "), fill: "none", stroke: "#118DFF", "stroke-width": 2.5}, s);
+  keys.forEach(function (k, i) { var p = pts[i].split(","); el("circle", {cx: p[0], cy: p[1], r: 3, fill: "#118DFF"}, s); });
+})();
+
+// matrix: freight cost, rows = region, columns = year, with totals
+(function () {
+  var regs = {}, tot = {"2024": 0, "2025": 0};
+  R.forEach(function (r) {
+    var g = r[C["Region"]], y = year(r), v = r[C["Freight Cost"]];
+    regs[g] = regs[g] || {"2024": 0, "2025": 0}; regs[g][y] += v; tot[y] += v;
+  });
+  var names = Object.keys(regs).sort(function (a, b) { return (regs[b]["2024"] + regs[b]["2025"]) - (regs[a]["2024"] + regs[a]["2025"]); });
+  var h = '<table><thead><tr><th class="rowHdr">Region</th><th>2024</th><th>2025</th><th>Total</th></tr></thead><tbody>';
+  names.forEach(function (n) { h += '<tr><td class="rowName">' + n + '</td><td>$' + fmt(regs[n]["2024"]) + '</td><td>$' + fmt(regs[n]["2025"]) + '</td><td>$' + fmt(regs[n]["2024"] + regs[n]["2025"]) + '</td></tr>'; });
+  h += '<tr class="grand"><td class="rowName">Total</td><td>$' + fmt(tot["2024"]) + '</td><td>$' + fmt(tot["2025"]) + '</td><td>$' + fmt(tot["2024"] + tot["2025"]) + '</td></tr></tbody></table>';
+  document.getElementById("m-body").innerHTML = h;
+})();
+</script>
+</body>
+</html>

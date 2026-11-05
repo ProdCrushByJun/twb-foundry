@@ -1,0 +1,79 @@
+{
+ "_source": "pandas over data/sample/sales.csv (golden/expected/make_expected.py, decisions/052): registry Region x Category and Category",
+ "Registry": {
+  "East | Furniture": {
+   "Sales": 18839.86,
+   "Profit": 1730.9,
+   "Units": 193
+  },
+  "East | Office": {
+   "Sales": 15632.96,
+   "Profit": 1378.06,
+   "Units": 176
+  },
+  "East | Tech": {
+   "Sales": 17880.77,
+   "Profit": 1766.43,
+   "Units": 258
+  },
+  "North | Furniture": {
+   "Sales": 23294.07,
+   "Profit": 2872.4,
+   "Units": 234
+  },
+  "North | Office": {
+   "Sales": 14205.31,
+   "Profit": 1522.56,
+   "Units": 165
+  },
+  "North | Tech": {
+   "Sales": 20983.2,
+   "Profit": 3291.54,
+   "Units": 209
+  },
+  "South | Furniture": {
+   "Sales": 15128.11,
+   "Profit": 1651.05,
+   "Units": 183
+  },
+  "South | Office": {
+   "Sales": 22634.41,
+   "Profit": 2436.61,
+   "Units": 317
+  },
+  "South | Tech": {
+   "Sales": 21099.94,
+   "Profit": 2346.47,
+   "Units": 251
+  },
+  "West | Furniture": {
+   "Sales": 17694.88,
+   "Profit": 1331.46,
+   "Units": 168
+  },
+  "West | Office": {
+   "Sales": 18705.07,
+   "Profit": 1874.39,
+   "Units": 240
+  },
+  "West | Tech": {
+   "Sales": 18611.1,
+   "Profit": 1347.73,
+   "Units": 216
+  }
+ },
+ "By Category": {
+  "Furniture": {
+   "Sales": 74956.92,
+   "Profit": 7585.81
+  },
+  "Office": {
+   "Sales": 71177.75,
+   "Profit": 7211.62
+  },
+  "Tech": {
+   "Sales": 78575.01,
+   "Profit": 8752.17
+  }
+ }
+}

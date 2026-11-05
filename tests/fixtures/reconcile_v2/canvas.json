@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../../../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "Sales on canvas", "type": "kpi", "measures": [{"field": "Sales", "label": "Total sales"}]},
+    {"name": "Sales by region", "type": "bar", "dimension": "Region", "measure": {"field": "Sales"}},
+    {"name": "Sales by region and category", "type": "bar", "dimension": "Region", "color": "Category",
+     "measure": {"field": "Sales"}},
+    {"name": "Monthly sales 2025", "type": "line", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}},
+    {"name": "Profit by category", "type": "bar", "dimension": "Category", "measure": {"field": "Profit"}}
+  ],
+  "dashboard": {"name": "Sales canvas", "width": 1200, "height": 900,
+                "grid": [["Sales on canvas"], ["Sales by region", "Sales by region and category"],
+                         ["Monthly sales 2025", "Profit by category"]]}
+}

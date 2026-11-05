@@ -1,0 +1,24 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Profit"}]},
+    {"name": "By Region", "type": "registry", "title": "**Regions**", "subtitle": "Sales and profit", "rows": ["Region"],
+     "sort": "desc", "columns": [{"measure": {"field": "Sales"}}, {"measure": {"field": "Profit"}, "style": "text"}]},
+    {"name": "By Category", "type": "bar", "title": "**Categories**", "subtitle": "Sum of sales", "dimension": "Category",
+     "measure": {"field": "Sales"}, "sort": "desc"},
+    {"name": "Trend", "type": "line", "title": "Monthly **Sales**", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}}
+  ],
+  "dashboard": {"name": "Actions", "title": "**Sales** Actions", "subtitle": "Sample data, 500 orders",
+                "width": 1000, "height": 800, "row_heights": [5, 9, 9],
+                "grid": [["KPI"], ["By Region", "By Category"], ["Trend"]],
+                "action_hints": true,
+                "actions": [
+                  {"source": "By Region"},
+                  {"source": "By Category", "targets": ["Trend"], "fields": ["Category"], "clear": "exclude",
+                   "hint": "Click a bar to see its trend"},
+                  {"source": "Trend", "on": "hover", "targets": ["KPI"]}
+                ]}
+}

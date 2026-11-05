@@ -1,0 +1,159 @@
+{
+ "_source": "pandas over data/sample/sales_2y.csv (golden/expected/make_expected.py, decisions/052): rank, share, track, dot, tick at 2024, change, two-line cell, top 2 per field",
+ "Regions": {
+  "East": {
+   "#": 3,
+   "Sales": 45254.44,
+   "Of total": 0.2534,
+   "Share": 0.2534,
+   "Share · value": 45254.44,
+   "Avg profit": 31.5337
+  },
+  "North": {
+   "#": 1,
+   "Sales": 47810.97,
+   "Of total": 0.2678,
+   "Share": 0.2678,
+   "Share · value": 47810.97,
+   "Avg profit": 35.168
+  },
+  "South": {
+   "#": 4,
+   "Sales": 38386.69,
+   "Of total": 0.215,
+   "Share": 0.215,
+   "Share · value": 38386.69,
+   "Avg profit": 27.6095
+  },
+  "West": {
+   "#": 2,
+   "Sales": 47109.55,
+   "Of total": 0.2638,
+   "Share": 0.2638,
+   "Share · value": 47109.55,
+   "Avg profit": 38.4077
+  }
+ },
+ "Categories": {
+  "East | Furniture": {
+   "#": 3,
+   "Sales vs PY": 12220.19,
+   "Sales vs PY · Sales 2024": 11274.72,
+   "Change": 0.0839,
+   "Units": 210,
+   "Units · Profit": 1380.5
+  },
+  "East | Office": {
+   "#": 2,
+   "Sales vs PY": 16107.22,
+   "Sales vs PY · Sales 2024": 12943.05,
+   "Change": 0.2445,
+   "Units": 227,
+   "Units · Profit": 2183.08
+  },
+  "East | Tech": {
+   "#": 1,
+   "Sales vs PY": 16927.03,
+   "Sales vs PY · Sales 2024": 9173.86,
+   "Change": 0.8451,
+   "Units": 248,
+   "Units · Profit": 2333.22
+  },
+  "North | Furniture": {
+   "#": 2,
+   "Sales vs PY": 16295.11,
+   "Sales vs PY · Sales 2024": 9749.82,
+   "Change": 0.6713,
+   "Units": 228,
+   "Units · Profit": 2415.54
+  },
+  "North | Office": {
+   "#": 1,
+   "Sales vs PY": 21771.32,
+   "Sales vs PY · Sales 2024": 11916.39,
+   "Change": 0.827,
+   "Units": 227,
+   "Units · Profit": 2935.15
+  },
+  "North | Tech": {
+   "#": 3,
+   "Sales vs PY": 9744.54,
+   "Sales vs PY · Sales 2024": 13431.86,
+   "Change": -0.2745,
+   "Units": 213,
+   "Units · Profit": 1296.07
+  },
+  "South | Furniture": {
+   "#": 1,
+   "Sales vs PY": 13649.91,
+   "Sales vs PY · Sales 2024": 13999.75,
+   "Change": -0.025,
+   "Units": 202,
+   "Units · Profit": 1919.57
+  },
+  "South | Office": {
+   "#": 2,
+   "Sales vs PY": 12446.1,
+   "Sales vs PY · Sales 2024": 9121.14,
+   "Change": 0.3645,
+   "Units": 170,
+   "Units · Profit": 1228.42
+  },
+  "South | Tech": {
+   "#": 3,
+   "Sales vs PY": 12290.68,
+   "Sales vs PY · Sales 2024": 8705.06,
+   "Change": 0.4119,
+   "Units": 183,
+   "Units · Profit": 1518.02
+  },
+  "West | Furniture": {
+   "#": 2,
+   "Sales vs PY": 15440.73,
+   "Sales vs PY · Sales 2024": 12632.74,
+   "Change": 0.2223,
+   "Units": 221,
+   "Units · Profit": 2673.46
+  },
+  "West | Office": {
+   "#": 3,
+   "Sales vs PY": 13974.25,
+   "Sales vs PY · Sales 2024": 9937.59,
+   "Change": 0.4062,
+   "Units": 159,
+   "Units · Profit": 1902.6
+  },
+  "West | Tech": {
+   "#": 1,
+   "Sales vs PY": 17694.57,
+   "Sales vs PY · Sales 2024": 15885.31,
+   "Change": 0.1139,
+   "Units": 256,
+   "Units · Profit": 2759.82
+  }
+ },
+ "Top · Region": {
+  "North": {
+   "#": 1,
+   "Sales": 47810.97,
+   "vs PY": 0.3622
+  },
+  "West": {
+   "#": 2,
+   "Sales": 47109.55,
+   "vs PY": 0.225
+  }
+ },
+ "Top · Category": {
+  "Furniture": {
+   "#": 2,
+   "Sales": 57605.94,
+   "vs PY": 0.2088
+  },
+  "Office": {
+   "#": 1,
+   "Sales": 64298.89,
+   "vs PY": 0.4641
+  }
+ }
+}

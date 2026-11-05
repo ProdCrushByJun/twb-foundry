@@ -1,0 +1,3539 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://twb-foundry.local/spec.schema.json",
+  "title": "twb-foundry spec v1",
+  "description": "Contract between the HTML->spec step (LLM) and the deterministic .twbx generator. Structural rules live here; data-dependent rules (field exists, numeric for SUM, date for line) are checked by the builder against the CSV.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "sheets"
+  ],
+  "oneOf": [
+    {"required": ["dashboard"]},
+    {"required": ["dashboards"]}
+  ],
+  "allOf": [
+    {"oneOf": [
+      {"required": ["datasource"]},
+      {"required": ["datasources"]}
+    ]}
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "const": 1
+    },
+    "locale": {
+      "enum": ["en_US", "ru_RU"],
+      "default": "en_US",
+      "description": "The workbook's locale (<workbook locale>, File > Workbook Locale): grouping and decimal marks, month and day names on any machine. From the HTML's <html lang> (outline.locale: ru* -> ru_RU, else en_US); without it en_US (decisions/085). A CSV with ISO dates or none is read in it too; DD.MM / MM/DD dates keep the text-file locale their order needs."
+    },
+    "datasource": {
+      "$ref": "#/$defs/source",
+      "unevaluatedProperties": false
+    },
+    "datasources": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 8,
+      "items": {
+        "$ref": "#/$defs/source",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "$ref": "#/$defs/objectName",
+            "description": "The source's name: sheets[].datasource and calcs[].datasource refer to it"
+          }
+        },
+        "unevaluatedProperties": false
+      },
+      "description": "Several independent data sources (decisions/083), instead of 'datasource': each is a datasource of the workbook with its own file; a sheet takes exactly one (sheets[].datasource, default the first), no blending or relationships. A calc belongs to calcs[].datasource (default the first), a filter to its show_on sheet's source, fields to every source that has the column"
+    },
+    "sheets": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 24,
+      "items": {
+        "$ref": "#/$defs/sheet"
+      }
+    },
+    "filters": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {
+        "$ref": "#/$defs/filter"
+      }
+    },
+    "dashboard": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "grid"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/objectName"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "pattern": "^[^<>]+$",
+          "description": "Dashboard header, 24pt; wrap key words in ** to make only them bold ('**Regions** Overview'), otherwise the whole title is bold"
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "pattern": "^[^<>]+$",
+          "description": "Grey line under the dashboard title: period, source, 'Data updated: ...'; colored words as in a sheet subtitle ({accent:East}), for colors some sheet draws"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 400,
+          "maximum": 4000,
+          "default": 1000
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 300,
+          "maximum": 4000,
+          "default": 800
+        },
+        "grid": {
+          "type": "array",
+          "description": "Rows top-to-bottom; each row lists cells left-to-right. A cell is a sheet name, {sheet, width} or a group {rows, width, row_heights} with its own grid (nesting up to 3 levels); widths are relative weights (default 1)",
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "$ref": "#/$defs/gridRow"
+          }
+        },
+        "row_heights": {
+          "type": "array",
+          "description": "Relative row weights, one per grid row (default: equal)",
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          }
+        },
+        "sidebar": {
+          "oneOf": [
+            {
+              "type": "boolean",
+              "description": "Left panel (grey) with the dashboard title, filter dropdowns and legends, instead of the header row and the right-hand panel"
+            },
+            {
+              "$ref": "#/$defs/brandSidebar"
+            }
+          ],
+          "default": false
+        },
+        "topbar": {
+          "$ref": "#/$defs/topbar"
+        },
+        "theme": {
+          "enum": ["cards", "flat"],
+          "description": "Look of the blocks, default 'cards' (decisions/168); 'flat' is the plain look without cards, and the only one a sidebar, a topbar or block_headers false can have. Card theme (decisions/030): grey canvas #f5f5f5, every block a white card with a 1px #e6e6e6 border and padding 12, 16px apart; the theme's type scale (title 18, block 12, KPI 24 up to 3 in a row / 18, chart text and column titles 8pt; decisions/089). Without it the dashboard is drawn as before"
+        },
+        "card_border": {
+          "type": "boolean",
+          "default": true,
+          "description": "Theme 'cards': false draws the cards without their 1px border, told from the canvas by their white face only (decisions/089)"
+        },
+        "theme_font": {
+          "enum": ["Arial"],
+          "description": "Workbook font for every text (style-rule element='all'); default Tableau's own (Tableau Book)"
+        },
+        "accent": {
+          "$ref": "#/$defs/brandColor",
+          "description": "The book's accent instead of the house #4e79a7 (decisions/137): highlight, the dark end of a sequential scale (heatmap, bar, map), symbol map circles, KPI, nav line, reference line flags, registry bars, scatter, benchmark. One value for all dashboards; lint C7 warns when it is near good / bad, C8 checks white text on it (bar_inside)"
+        },
+        "data_as_of": {
+          "$ref": "#/$defs/fieldName",
+          "description": "A date column: 'Data as of <its latest date>' at the right of the dashboard header (decisions/037; needs a dashboard title, no sidebar)"
+        },
+        "filter_toggle": {
+          "enum": ["shown", "hidden"],
+          "description": "A Show/Hide button at the right of the dashboard header for its filter cards, and their state at open (decisions/160)"
+        },
+        "action_hints": {
+          "type": "boolean",
+          "description": "true writes the default hint ('Click to filter') after the subtitle of each action's source block; off by default (decisions/183). An action's own 'hint' is always written"
+        },
+        "actions": {
+          "type": "array",
+          "description": "Actions: a click (or hover) on the source sheet's marks/rows filters or highlights the target sheets, opens a link or sets a parameter; each is signed in the source block's subtitle",
+          "maxItems": 8,
+          "items": {
+            "$ref": "#/$defs/action"
+          }
+        }
+      }
+    },
+    "profile": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$",
+      "description": "The user profile (profiles/<name>, a name, not a path; decisions/193): the defaults of this book; --profile is stronger, explicit fields of the spec are stronger than the profile"
+    },
+    "dashboards": {
+      "type": "array",
+      "description": "Several dashboards over the same sheets, filters and calcs (decisions/040), instead of one 'dashboard'. Each is a dashboard object; the first opens with the workbook. The shell (sidebar, topbar, theme, theme_font, accent, data_as_of) is the same on all of them",
+      "minItems": 2,
+      "maxItems": 8,
+      "items": {
+        "$ref": "#/properties/dashboard"
+      }
+    },
+    "nav": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["style"],
+      "description": "Navigation between the dashboards (decisions/040): a goto button per dashboard on every dashboard, the current one highlighted",
+      "properties": {
+        "style": {
+          "enum": ["tabs", "sidebar"],
+          "description": "tabs: a row of tabs at the top, the current one underlined in the accent color (Citizen Service); sidebar: buttons in the dashboard sidebar under its title, the current one on a white face (Admissions)"
+        },
+        "items": {
+          "type": "array",
+          "description": "Order and captions of the buttons: every dashboard once; default all dashboards in order, captioned by name",
+          "minItems": 2,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["dashboard"],
+            "properties": {
+              "dashboard": {"$ref": "#/$defs/objectName"},
+              "label": {"type": "string", "minLength": 1, "maxLength": 30, "pattern": "^[^<>]+$"}
+            }
+          }
+        }
+      }
+    },
+    "declutter": {
+      "type": "boolean",
+      "default": true,
+      "description": "Hide gridlines, zero lines, axis rulers/ticks and table dividers on every sheet (reference-author style)"
+    },
+    "block_headers": {
+      "type": "boolean",
+      "default": true,
+      "description": "Sheet title/subtitle drawn as a text block above the sheet on the dashboard (reference-author style); a sheet with neither has no header. false = Tableau's own worksheet title (sheet name or 'title'), kept for the early goldens"
+    },
+    "calcs": {
+      "type": "array",
+      "maxItems": 50,
+      "description": "Calculated fields. Formula subset: numbers, \"strings\", [Field] (CSV column or another calc), + - * /, comparisons, AND/OR/NOT, IF/ELSEIF/ELSE/END, CASE/WHEN/ELSE/END, SUM AVG MIN MAX COUNT COUNTD, ZN ABS ROUND, DATETRUNC DATEADD, LODs, parameters ([Name] or [Parameters].[Name]), table calculation functions RANK RANK_DENSE WINDOW_SUM WINDOW_AVG WINDOW_MAX WINDOW_MIN LOOKUP RUNNING_SUM TOTAL INDEX FIRST LAST (with compute_using). Use the calc name wherever a field name is expected; aggregate calcs (e.g. SUM([Profit])/SUM([Sales])) are used as measures without 'agg'.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "formula"
+        ],
+        "properties": {
+          "name": {
+            "$ref": "#/$defs/fieldName"
+          },
+          "formula": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "datasource": {
+            "$ref": "#/$defs/objectName",
+            "description": "With datasources (decisions/083): the source whose columns the formula uses; default the first"
+          },
+          "folder": {
+            "$ref": "#/$defs/objectName",
+            "description": "The Data pane folder the calc sits in (decisions/146); default none. A field is in one folder"
+          },
+          "format": {
+            "$ref": "#/$defs/numberFormat"
+          },
+          "good": {
+            "enum": ["up", "down"],
+            "description": "An aggregate change calc shown in an insight line or a KPI tile note as '▲ 11.4%' / '▼ 60.3%', in the good or bad text color (up: a rise is good; decisions/139)"
+          },
+          "compute_using": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "items": {
+              "$ref": "#/$defs/fieldName"
+            },
+            "description": "Required for a formula with table calculation functions (decisions/034): the sheet dimensions it runs along, in order (Tableau 'Specific Dimensions'); the other dimensions of the sheet partition it. Every sheet that shows the calc must have these dimensions"
+          }
+        }
+      }
+    },
+    "parameters": {
+      "type": "array",
+      "maxItems": 6,
+      "description": "Parameters (decisions/020): a metric switch, the N of a Top N, a period level. Used by name: [Name] or [Parameters].[Name] in calc formulas (CASE [Metric] WHEN \"Sales\" THEN SUM([Sales]) ... END; DATETRUNC([Period], [Date])), top.n of a bar, [Name] in a title or subtitle (shows the current value). Each gets a control card in the dashboard header row.",
+      "items": {
+        "$ref": "#/$defs/parameter"
+      }
+    },
+    "fields": {
+      "type": "object",
+      "description": "Field properties (decisions/033), by field name: aliases of the members, their manual order, a group, their default colors. Keys of aliases / order / color are the values in the data (a group's: its bin names and 'other'). A group is a new field named by its key, used like a column.",
+      "propertyNames": {
+        "$ref": "#/$defs/fieldName"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/fieldProps"
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": [
+        "type",
+        "path"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "csv",
+            "excel"
+          ]
+        },
+        "path": {
+          "type": "string",
+          "pattern": "\\.(csv|xlsx|xlsm|xls)$",
+          "description": "Relative to the spec file"
+        },
+        "sheet": {
+          "type": "string",
+          "minLength": 1,
+          "description": "excel: the sheet with the table, the only block of cells on it, header in its first row (decisions/025, 050)"
+        },
+        "union": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1},
+          "description": "excel: more sheets with the same columns, appended under 'sheet'; Desktop adds the columns 'Sheet' and 'Table Name' (decisions/050)"
+        },
+        "join": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sheet", "on", "how"],
+          "properties": {
+            "sheet": {"type": "string", "minLength": 1},
+            "on": {"type": "string", "minLength": 1, "description": "key column, the same name on both sheets"},
+            "how": {"enum": ["inner", "left"]}
+          },
+          "description": "excel: the columns of a second sheet joined to 'sheet' by a key; a column named like one of 'sheet' becomes '<name> (<sheet>)' (decisions/050)"
+        },
+        "hyper": {
+          "type": "boolean",
+          "description": "csv: package the data as a Hyper extract (true) or as the CSV (false); omitted: Hyper when the CSV is larger than the build's threshold (decisions/026)"
+        }
+      },
+      "if": {
+        "properties": {
+          "type": {
+            "const": "excel"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "sheet"
+        ],
+        "properties": {
+          "path": {
+            "pattern": "\\.(xlsx|xlsm|xls)$"
+          },
+          "hyper": false
+        },
+        "not": {
+          "required": ["union", "join"]
+        }
+      },
+      "else": {
+        "properties": {
+          "path": {
+            "pattern": "\\.csv$"
+          },
+          "sheet": false,
+          "union": false,
+          "join": false
+        }
+      }
+    },
+    "fieldProps": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "folder": {
+          "$ref": "#/$defs/objectName",
+          "description": "The Data pane folder the field sits in (decisions/146); default none. A column of the data or a calc (same as the calc's own folder), not a group; with datasources the folder is in every source that has the field"
+        },
+        "caption": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "description": "The column's name in the workbook (decisions/073): what table headers, filter cards and tooltips show instead of the data's name ('customer_tier' -> 'Customer Tier'); the spec keeps using the data's name. Any column of the data, not a calc or a group"
+        },
+        "aliases": {
+          "type": "object",
+          "minProperties": 1,
+          "description": "value in the data -> label Tableau shows ('19 Mon' -> 'Mon'); formulas and filters keep the values",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        },
+        "order": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "description": "every value of the field, in the order the sheets show them (Mon..Sun, Low/Medium/High)",
+          "items": {
+            "type": "string"
+          }
+        },
+        "color": {
+          "type": "object",
+          "minProperties": 1,
+          "description": "value -> #rrggbb, or a design token name (accent, good, bad, warn, muted, mark_muted), for every value of the field: its color wherever the field is on Color",
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/brandColor"
+              },
+              {
+                "enum": [
+                  "accent",
+                  "good",
+                  "bad",
+                  "warn",
+                  "muted",
+                  "mark_muted"
+                ]
+              }
+            ]
+          }
+        },
+        "group": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "field",
+            "bins"
+          ],
+          "properties": {
+            "field": {
+              "$ref": "#/$defs/fieldName",
+              "description": "the text or integer column, or the row-level text calculation, whose members are grouped (decisions/151)"
+            },
+            "bins": {
+              "type": "object",
+              "minProperties": 1,
+              "description": "bin name -> its members; a member belongs to one bin",
+              "propertyNames": {
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "additionalProperties": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": [
+                    "string",
+                    "integer"
+                  ]
+                }
+              }
+            },
+            "other": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100,
+              "description": "name of every member out of the bins ('Other'); omitted: they keep their own names"
+            }
+          }
+        }
+      }
+    },
+    "brandColor": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$",
+      "description": "#rrggbb"
+    },
+    "shellText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[^<>]+$"
+    },
+    "brandSidebar": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["color"],
+      "description": "Brand sidebar (decisions/029): the grey sidebar's title and filters on the brand color, plus a logo, export buttons and a footer",
+      "properties": {
+        "color": {"$ref": "#/$defs/brandColor", "description": "Panel background: the brand color"},
+        "text": {"$ref": "#/$defs/brandColor", "description": "Text color; default white or dark, whichever contrasts more"},
+        "logo": {
+          "oneOf": [
+            {"type": "object", "additionalProperties": false, "required": ["text"],
+             "properties": {"text": {"$ref": "#/$defs/shellText", "description": "Monogram, bold: 'C calls.'"}}},
+            {"type": "object", "additionalProperties": false, "required": ["image"],
+             "properties": {"image": {"type": "string", "minLength": 1, "pattern": "^[^<>&'\"]+$",
+                                      "description": "Picture next to the spec (.png/.jpg/.gif/.bmp), packaged in the .twbx"}}}
+          ]
+        },
+        "download": {
+          "type": "array",
+          "description": "Export buttons: the whole dashboard as PDF, PowerPoint or a picture",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"enum": ["pdf", "ppt", "image"]}
+        },
+        "footer": {
+          "type": "array",
+          "description": "Lines at the bottom: 'Created by ...', 'Data source: ...'",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {"$ref": "#/$defs/shellText"}
+        }
+      }
+    },
+    "topbar": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["color", "title"],
+      "description": "App bar over the whole dashboard (decisions/029): the app name, optionally 'Welcome, <user>' (FULLNAME())",
+      "properties": {
+        "color": {"$ref": "#/$defs/brandColor"},
+        "text": {"$ref": "#/$defs/brandColor", "description": "Text color; default white or dark, whichever contrasts more"},
+        "title": {"$ref": "#/$defs/shellText", "description": "App name; ** marks bold words, otherwise all bold"},
+        "welcome": {"type": "boolean", "default": false}
+      }
+    },
+    "topSeries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "n"
+      ],
+      "description": "Only the top (end: bottom) N members of the sheet's own dimension by its measure: a line / area's series (its 'color' field), a table's row field (one), a heatmap's rows. Tableau Top N filter, computed before the dimension filters (decisions/148)",
+      "properties": {
+        "n": {
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000
+            },
+            {
+              "$ref": "#/$defs/fieldName",
+              "description": "An integer parameter: the control in the header sets N"
+            }
+          ]
+        },
+        "by": {
+          "$ref": "#/$defs/measure",
+          "description": "Rank by this measure instead of the sheet's (decisions/067)"
+        },
+        "end": {
+          "enum": [
+            "top",
+            "bottom"
+          ],
+          "default": "top",
+          "description": "bottom: the N smallest members (Filter > Top > Bottom, ascending); not with 'after' (decisions/148)"
+        }
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "type"
+      ],
+      "oneOf": [
+        {"required": ["default"]},
+        {"required": ["default_from"]}
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/fieldName"
+        },
+        "type": {
+          "enum": [
+            "string",
+            "integer",
+            "real",
+            "date",
+            "boolean"
+          ],
+          "description": "string: one of 'values' (dropdown); integer / real: a number in 'range' (slider) or one of 'values' (dropdown); date: an ISO date in 'range' {min, max} (a date card) or one of 'values'; boolean: true / false, no values or range (decisions/057)"
+        },
+        "aliases": {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 20,
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100,
+            "pattern": "^[^\"]+$"
+          },
+          "description": "List parameters only: {value: label}, the label the dropdown / radio list shows for that value (<member alias=... value=.../>); formulas still see the value. A value that is not in 'values' is refused (decisions/148)"
+        },
+        "values": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 20,
+          "uniqueItems": true,
+          "items": {
+            "type": [
+              "string",
+              "number"
+            ],
+            "minLength": 1,
+            "maxLength": 100,
+            "pattern": "^[^\"]+$"
+          }
+        },
+        "range": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "min",
+            "max"
+          ],
+          "properties": {
+            "min": {
+              "type": [
+                "number",
+                "string"
+              ],
+              "minimum": -1000000000,
+              "maximum": 1000000000,
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            "max": {
+              "type": [
+                "number",
+                "string"
+              ],
+              "minimum": -1000000000,
+              "maximum": 1000000000,
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            "step": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1000000000,
+              "default": 1,
+              "description": "integer / real only; a date range has no step"
+            }
+          }
+        },
+        "default": {
+          "type": [
+            "string",
+            "number",
+            "boolean"
+          ],
+          "description": "The value when the workbook opens: one of 'values', or a step of 'range' (a date: YYYY-MM-DD)"
+        },
+        "values_from": {
+          "$ref": "#/$defs/fieldName",
+          "description": "A list read from this CSV column when the workbook opens (Tableau 2020.1+ dynamic parameter, Desktop's source-field; decisions/163): its values in the data, re-read at every open. Instead of 'values' / 'range'; a column of the parameter's type; no aliases"
+        },
+        "default_from": {
+          "$ref": "#/$defs/fieldName",
+          "description": "The value when the workbook opens from a calc (Desktop's default-value-field; decisions/163): a calc of one value over the whole data, a FIXED LOD without dimensions such as {MAX([Order Date])}, without parameters, of the parameter's type. Instead of 'default'"
+        },
+        "control": {
+          "enum": [
+            "card",
+            "radio",
+            "none"
+          ],
+          "description": "Its control in the dashboard header row (decisions/042): card = a dropdown (string) or a slider (integer); radio = a radio button per value (string); none = no card. Default: none when a buttons sheet sets the parameter, else card"
+        },
+        "period": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "field"
+          ],
+          "description": "A period switch (decisions/042, SuperMart L6M ... All): every sheet keeps the rows of the selected period up to the last date of the data. Values: L<N> with D, W, M, Q or Y (L6M = the last 6 whole months, the last date's month included) and All",
+          "properties": {
+            "field": {
+              "$ref": "#/$defs/fieldName"
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "string"
+              }
+            }
+          },
+          "then": {
+            "oneOf": [
+              {"required": ["values"]},
+              {"required": ["values_from"]}
+            ],
+            "not": {
+              "required": [
+                "range"
+              ]
+            },
+            "properties": {
+              "values": {
+                "items": {
+                  "type": "string"
+                }
+              },
+              "default": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "integer"
+              }
+            }
+          },
+          "then": {
+            "oneOf": [
+              {"required": ["range"]},
+              {"required": ["values"]},
+              {"required": ["values_from"]}
+            ],
+            "properties": {
+              "values": {
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "range": {
+                "properties": {
+                  "min": {"type": "integer"},
+                  "max": {"type": "integer"},
+                  "step": {"type": "integer"}
+                }
+              },
+              "default": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "real"
+              }
+            }
+          },
+          "then": {
+            "oneOf": [
+              {"required": ["range"]},
+              {"required": ["values"]},
+              {"required": ["values_from"]}
+            ],
+            "properties": {
+              "values": {
+                "items": {
+                  "type": "number"
+                }
+              },
+              "range": {
+                "properties": {
+                  "min": {"type": "number"},
+                  "max": {"type": "number"}
+                }
+              },
+              "default": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "date"
+              }
+            }
+          },
+          "then": {
+            "oneOf": [
+              {"required": ["range"]},
+              {"required": ["values"]},
+              {"required": ["values_from"]}
+            ],
+            "properties": {
+              "values": {
+                "items": {
+                  "$ref": "#/$defs/isoDate"
+                }
+              },
+              "range": {
+                "properties": {
+                  "min": {"$ref": "#/$defs/isoDate"},
+                  "max": {"$ref": "#/$defs/isoDate"},
+                  "step": false
+                }
+              },
+              "default": {
+                "$ref": "#/$defs/isoDate"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "boolean"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                {"required": ["range"]},
+                {"required": ["values"]},
+                {"required": ["values_from"]}
+              ]
+            },
+            "properties": {
+              "default": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "sheetFilters": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "description": "The sheet's own filters (decisions/057), not shared with the other sheets and without a card: a filter of values on a text column or a text / boolean calc (default, exclude), or a filter on an aggregate (min / max of agg(field), or of an aggregate calc), applied to each mark of the sheet after the dimension filters",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["field"],
+        "properties": {
+          "field": {"$ref": "#/$defs/fieldName"},
+          "default": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 50,
+            "uniqueItems": true,
+            "items": {"type": ["string", "boolean"], "minLength": 1},
+            "description": "The values the sheet keeps (true / false of a boolean calc)"
+          },
+          "exclude": {"type": "boolean", "description": "default lists the value left out"},
+          "agg": {"enum": ["sum", "avg", "min", "max", "count", "countd"], "default": "sum"},
+          "min": {"type": "number", "description": "Marks whose aggregate is at least this"},
+          "max": {"type": "number", "description": "Marks whose aggregate is at most this"}
+        },
+        "oneOf": [
+          {"required": ["default"], "not": {"anyOf": [{"required": ["min"]}, {"required": ["max"]}, {"required": ["agg"]}]}},
+          {"anyOf": [{"required": ["min"]}, {"required": ["max"]}], "not": {"anyOf": [{"required": ["default"]}, {"required": ["exclude"]}]}}
+        ]
+      }
+    },
+    "objectName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": "^[^\\[\\]'\"<>&]+$",
+      "description": "Sheet/dashboard name; no XML- or Tableau-reference-unsafe characters"
+    },
+    "fieldName": {
+      "$ref": "#/$defs/objectName"
+    },
+    "isoDate": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "YYYY-MM-DD, whatever the CSV's date format"
+    },
+    "filter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field",
+        "show_on"
+      ],
+      "properties": {
+        "field": {
+          "$ref": "#/$defs/fieldName"
+        },
+        "show_on": {
+          "$ref": "#/$defs/objectName",
+          "description": "Sheet on the dashboard that owns the filter card"
+        },
+        "mode": {
+          "enum": [
+            "values",
+            "checkdropdown",
+            "single_dropdown",
+            "single_list",
+            "single_slider",
+            "multi_list",
+            "wildcard",
+            "range",
+            "relative"
+          ],
+          "default": "values",
+          "description": "values: a filter of a text field's values, its card a multiple-values dropdown (checkdropdown) in the header or sidebar, a multiple-values list (multi_list) in the right panel; checkdropdown / single_dropdown (one value, an HTML <select>) / single_list (one value, radio buttons, right panel) / single_slider (one value, a slider; header or sidebar) / multi_list: the same filter with that card; wildcard: a text box that keeps the values matching 'pattern' (a search box, decisions/162); range: date range of a date field (min..max inclusive, without them the whole range), or a measure range of a number column with numeric min and max (row-level values, decisions/162); relative: the last N periods of a date field up to 'anchor'"
+        },
+        "pattern": {
+          "type": "string",
+          "minLength": 1,
+          "description": "wildcard: the text typed in the card when the workbook opens; without it the card is empty and keeps every value"
+        },
+        "match": {
+          "enum": ["contains", "starts_with"],
+          "default": "contains",
+          "description": "wildcard: how pattern matches a value"
+        },
+        "apply": {
+          "type": "boolean",
+          "description": "The card has an Apply button (Tableau 'Show Apply Button'): the selection changes the sheets only on Apply. A multiple-values card (values / checkdropdown / multi_list)"
+        },
+        "default": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 50,
+          "uniqueItems": true,
+          "items": {"type": ["string", "boolean"], "minLength": 1},
+          "description": "Values selected when the workbook opens (an HTML select or preset with a chosen value); without it (All). A single_* card takes one value. On a boolean calc: true / false (decisions/057)"
+        },
+        "relevant": {
+          "type": "boolean",
+          "description": "The card lists only the values relevant to the other filters (cascading filters: Region -> City)"
+        },
+        "exclude": {
+          "type": "boolean",
+          "description": "default lists the values left out; the others and values added to the data later pass"
+        },
+        "context": {
+          "type": "boolean",
+          "description": "Context filter: applied before Top N and FIXED (top 10 within the selected region); other filters after them"
+        },
+        "scope": {
+          "enum": ["dashboard", "workbook"],
+          "description": "A book with several dashboards (decisions/071): dashboard (the default) filters the sheets of the dashboard its card (show_on) stands on, and of any dashboard sharing a sheet with it; workbook filters every sheet, its card on every dashboard (040). A date or context filter needs workbook"
+        },
+        "sheets": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/objectName"},
+          "description": "Only these sheets (decisions/074, Tableau 'Apply to selected worksheets'): an HTML filter that changes one block and leaves the others; show_on is one of them, its card stands on every dashboard showing one. Not with scope workbook; not on a date or context filter"
+        },
+        "min": {
+          "type": ["string", "number"], "pattern": "^\\d{4}-\\d{2}-\\d{2}( \\d{2}:\\d{2}(:\\d{2})?)?$",
+          "description": "range: first date shown (with max), YYYY-MM-DD; on a datetime field also YYYY-MM-DD HH:MM[:SS] (decisions/051); a number on a measure range (the lowest row value kept, decisions/162)"
+        },
+        "max": {
+          "type": ["string", "number"], "pattern": "^\\d{4}-\\d{2}-\\d{2}( \\d{2}:\\d{2}(:\\d{2})?)?$",
+          "description": "range: last date shown (with min), its whole day; with HH:MM[:SS] (datetime field) up to that moment; a number on a measure range (the highest row value kept)"
+        },
+        "period": {
+          "enum": [
+            "day",
+            "week",
+            "month",
+            "quarter",
+            "year"
+          ],
+          "description": "relative: the period unit"
+        },
+        "last": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 999,
+          "description": "relative: how many periods, the anchor's period included (1 = this month, 3 = last 3 months)"
+        },
+        "anchor": {
+          "$ref": "#/$defs/isoDate",
+          "description": "relative: the date counted back from (Tableau 'Anchor relative to'); default: the latest date in the data at build time"
+        }
+      },
+      "dependentRequired": {
+        "min": [
+          "max"
+        ],
+        "max": [
+          "min"
+        ]
+      },
+      "dependentSchemas": {
+        "period": {
+          "$ref": "#/$defs/relativeFilter"
+        },
+        "last": {
+          "$ref": "#/$defs/relativeFilter"
+        },
+        "anchor": {
+          "$ref": "#/$defs/relativeFilter"
+        },
+        "min": {
+          "$ref": "#/$defs/rangeFilter"
+        },
+        "max": {
+          "$ref": "#/$defs/rangeFilter"
+        }
+      },
+      "if": {
+        "required": [
+          "mode"
+        ],
+        "properties": {
+          "mode": {
+            "const": "relative"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "period",
+          "last"
+        ]
+      }
+    },
+    "relativeFilter": {
+      "description": "period / last / anchor belong to mode 'relative'",
+      "required": [
+        "mode"
+      ],
+      "properties": {
+        "mode": {
+          "const": "relative"
+        }
+      }
+    },
+    "rangeFilter": {
+      "description": "min / max belong to mode 'range'",
+      "required": [
+        "mode"
+      ],
+      "properties": {
+        "mode": {
+          "const": "range"
+        }
+      }
+    },
+    "highlight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "highlight"
+      ],
+      "description": "Muted base with an accent: these values of 'field' in the accent color, the others muted; no legend (name the colors in the subtitle: {accent:East})",
+      "properties": {
+        "highlight": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          }
+        },
+        "field": {
+          "$ref": "#/$defs/fieldName",
+          "description": "Text dimension whose values are highlighted; bar default: its dimension; line/area: required (the series)"
+        }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type"
+      ],
+      "description": "Reference line (decisions/028): dashed, muted, labelled '<label> <value>' ('Average 76'). avg / median of the marks in the view (a stacked bar: of the bar totals), const = 'value', param = a numeric parameter; date = a solid vertical line on the date axis of a line/area at the day 'value', labelled with its text only (SOC 'Jun 1st'); band = a pale fill between 'from' and 'to' (decisions/043); target = a solid line across each bar at its own 'measure', no label (a bar of members, decisions/095; with color {below: target} the bars below it in the bad color; with 'bands' a bullet graph, decisions/152)",
+      "properties": {
+        "type": {
+          "enum": [
+            "avg",
+            "median",
+            "const",
+            "param",
+            "date",
+            "band",
+            "target"
+          ]
+        },
+        "value": {
+          "oneOf": [
+            {"type": "number", "description": "const: where the line is drawn"},
+            {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "date: the day, YYYY-MM-DD"}
+          ]
+        },
+        "from": {
+          "oneOf": [{"type": "number"}, {"$ref": "#/$defs/fieldName"}],
+          "description": "band only: the lower edge, a number or an integer parameter"
+        },
+        "to": {
+          "oneOf": [{"type": "number"}, {"$ref": "#/$defs/fieldName"}],
+          "description": "band only: the upper edge, a number or an integer parameter; above 'from'"
+        },
+        "parameter": {
+          "$ref": "#/$defs/fieldName",
+          "description": "param only: an integer parameter; its control in the header moves the line"
+        },
+        "measure": {
+          "$ref": "#/$defs/measure",
+          "description": "target: each bar's target (required). avg / median only: average this measure over the marks instead of the sheet's own ('weekday avg': a calc that is null on weekends); default: the sheet's measure"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60,
+          "pattern": "^[^<>]+$",
+          "description": "Text before the value; default Average / Median / Target / the parameter name"
+        },
+        "bands": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 100},
+          "description": "target only: a bullet graph (decisions/152) - zones under each bar at these percents of its own target, rising ([80, 95]: below 80 %, 80-95 %, above 95 %), gray from dark to light; name them in the subtitle"
+        }
+      }
+    },
+    "benchmark": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field",
+        "select",
+        "against"
+      ],
+      "description": "The selected member against all members (decisions/043, SOC Monitor): two lines, the selected in the accent color, the benchmark muted; the benchmark is a FIXED LOD per period (the sum over all members / their count, or for agg avg the average of all rows), so no filter or parameter changes it. Name the colors in the subtitle: {accent:Selected region}",
+      "properties": {
+        "field": {
+          "$ref": "#/$defs/fieldName",
+          "description": "Text dimension whose member is selected (Region)"
+        },
+        "select": {
+          "oneOf": [
+            {"type": "string", "minLength": 1, "maxLength": 200, "description": "A value of field, or \"filter\": the dashboard filter on field (single_dropdown, one default) selects it"},
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["parameter"],
+              "properties": {"parameter": {"$ref": "#/$defs/fieldName", "description": "A string parameter over values of field"}}
+            }
+          ]
+        },
+        "against": {
+          "const": "all",
+          "description": "The benchmark: every member of field"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60,
+          "pattern": "^[^<>]+$",
+          "description": "The benchmark's name in the expected numbers (default 'All <field> avg')"
+        }
+      }
+    },
+    "references": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/reference"
+        },
+        {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/$defs/reference"
+          }
+        }
+      ]
+    },
+    "totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "description": "Grand totals and subtotals (decisions/036): a total is the measure over the rows of its partition, not the sum of the cells",
+      "properties": {
+        "grand": {
+          "enum": [
+            "rows",
+            "cols",
+            "both"
+          ],
+          "description": "rows: a total row under the rows; cols: a total column right of the columns (table only); both: the two and their corner"
+        },
+        "sub": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 1,
+          "items": {
+            "$ref": "#/$defs/fieldName"
+          },
+          "description": "Registry with two rows: a 'Total' row after each member of the outer dimension"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40,
+          "pattern": "^[^<>]+$",
+          "default": "Total",
+          "description": "Label of the grand total row / column"
+        }
+      }
+    },
+    "tooltip": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500,
+      "pattern": "<[^<>]+>",
+      "description": "The sheet's tooltip phrase (decisions/036): fields as <Region> (on the sheet) or <SUM(Sales)>, <AVG(Profit)>, <AGG(calc)>; a measure not on the sheet goes on its Tooltip shelf; \\n breaks the line"
+    },
+    "colorScale": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scale"
+      ],
+      "description": "The measure on Color with a continuous scale from the design tokens (decisions/041)",
+      "properties": {
+        "scale": {
+          "enum": [
+            "sequential",
+            "diverging"
+          ],
+          "description": "sequential: light grey to the accent; diverging: bad, neutral grey at 'center', good"
+        },
+        "palette": {
+          "enum": [
+            "accent",
+            "good_bad"
+          ],
+          "description": "accent for sequential, good_bad for diverging (the default of each)"
+        },
+        "good": {
+          "enum": [
+            "up",
+            "down"
+          ],
+          "description": "diverging: values above the center are good (up) or bad (down)"
+        },
+        "steps": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 20,
+          "description": "Stepped color: that many color steps instead of a smooth scale"
+        },
+        "min": {
+          "type": "number",
+          "description": "A fixed start of the range (within the data: lighter marks below it saturate)"
+        },
+        "max": {
+          "type": "number",
+          "description": "A fixed end of the range (within the data)"
+        },
+        "center": {
+          "type": "number",
+          "description": "diverging (required): the value drawn neutral, e.g. 0 for a change"
+        }
+      }
+    },
+    "mapColor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scale"
+      ],
+      "description": "A map's marks on a continuous color scale (decisions/137): the colorScale of a heatmap (decisions/041) by the map's measure, or by color.measure. Sequential starts 30% of the way to the accent (the Light map's land is the scale's light end); diverging is a heatmap's",
+      "properties": {
+        "scale": {"$ref": "#/$defs/colorScale/properties/scale"},
+        "palette": {"$ref": "#/$defs/colorScale/properties/palette"},
+        "good": {"$ref": "#/$defs/colorScale/properties/good"},
+        "steps": {"$ref": "#/$defs/colorScale/properties/steps"},
+        "min": {"$ref": "#/$defs/colorScale/properties/min"},
+        "max": {"$ref": "#/$defs/colorScale/properties/max"},
+        "center": {"$ref": "#/$defs/colorScale/properties/center"},
+        "measure": {
+          "$ref": "#/$defs/measure",
+          "description": "A second measure on Color (the map's measure keeps the size and the labels); default the map's measure"
+        }
+      }
+    },
+    "seriesHighlight": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/highlight"
+        },
+        {
+          "required": [
+            "field"
+          ]
+        }
+      ]
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source"
+      ],
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/objectName",
+          "description": "Sheet on the dashboard whose marks/rows are clicked (bar, line, area, table, heatmap or registry)"
+        },
+        "targets": {
+          "description": "\"all\" = every other sheet of the dashboard (default), or the sheets to filter",
+          "oneOf": [
+            {
+              "const": "all"
+            },
+            {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/$defs/objectName"
+              }
+            }
+          ]
+        },
+        "type": {
+          "enum": [
+            "filter",
+            "highlight",
+            "url",
+            "parameter"
+          ],
+          "default": "filter",
+          "description": "filter (decisions/017), highlight (tsc:brush), url (open a link), parameter (set a parameter to the clicked member) — decisions/160"
+        },
+        "on": {
+          "enum": [
+            "select",
+            "hover",
+            "menu"
+          ],
+          "default": "select",
+          "description": "select / hover; menu (the link in the tooltip menu) for url only; parameter: select only"
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^(https?://|mailto:)[^\\s\"'<>]*(<[^<>]+>[^\\s\"'<>]*)*$",
+          "maxLength": 500,
+          "description": "type url: the link; <Field> is the clicked mark's value of a dimension of the source sheet"
+        },
+        "parameter": {
+          "$ref": "#/$defs/objectName",
+          "description": "type parameter: the string parameter with a list of values the click sets"
+        },
+        "field": {
+          "$ref": "#/$defs/fieldName",
+          "description": "type parameter: the dimension of the source sheet whose clicked member the parameter gets"
+        },
+        "fields": {
+          "type": "array",
+          "description": "Filter only by these dimensions of the source sheet (Tableau 'Selected fields'); default: all of them",
+          "minItems": 1,
+          "maxItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/fieldName"
+          }
+        },
+        "clear": {
+          "type": "string",
+          "minLength": 1,
+          "description": "filter: show_all (default) / exclude — when the selection is cleared, show all values again or nothing in the targets; parameter: the value the parameter gets when the selection is cleared (default: it keeps the clicked one)"
+        },
+        "hint": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[^<>]+$",
+          "description": "Text after the source block's subtitle ('Click a region to filter'); the default text (per type: decisions/160) is written only with dashboard.action_hints"
+        }
+      },
+      "allOf": [
+        {"if": {"properties": {"type": {"enum": ["filter"]}}},
+         "then": {"not": {"anyOf": [{"required": ["url"]}, {"required": ["parameter"]}, {"required": ["field"]}]},
+                  "properties": {"on": {"enum": ["select", "hover"]}, "clear": {"enum": ["show_all", "exclude"]}}}},
+        {"if": {"required": ["type"], "properties": {"type": {"const": "highlight"}}},
+         "then": {"not": {"anyOf": [{"required": ["url"]}, {"required": ["parameter"]}, {"required": ["field"]},
+                                    {"required": ["clear"]}]},
+                  "properties": {"on": {"enum": ["select", "hover"]}}}},
+        {"if": {"required": ["type"], "properties": {"type": {"const": "url"}}},
+         "then": {"required": ["url"],
+                  "not": {"anyOf": [{"required": ["targets"]}, {"required": ["fields"]}, {"required": ["parameter"]},
+                                    {"required": ["field"]}, {"required": ["clear"]}]},
+                  "properties": {"on": {"enum": ["select", "menu"]}}}},
+        {"if": {"required": ["type"], "properties": {"type": {"const": "parameter"}}},
+         "then": {"required": ["parameter", "field"],
+                  "not": {"anyOf": [{"required": ["targets"]}, {"required": ["fields"]}, {"required": ["url"]}]},
+                  "properties": {"on": {"const": "select"}}}}
+      ]
+    },
+    "measure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field"
+      ],
+      "properties": {
+        "field": {
+          "$ref": "#/$defs/fieldName"
+        },
+        "agg": {
+          "enum": [
+            "sum",
+            "avg",
+            "min",
+            "max",
+            "count",
+            "countd",
+            "median"
+          ],
+          "description": "Default sum; must be omitted for aggregate calculated fields"
+        },
+        "scale": {"enum": ["log"], "description": "A log axis (polish-26): scatter x / y, strip, beeswarm, bar"},
+        "per": {
+          "$ref": "#/$defs/fieldName",
+          "description": "cards only: the measure is SUM(field) / SUM(per) of a period (Profit per Sales = margin); its change is in percentage points (+1.6 pp), not a percent, unless delta 'pct'"
+        },
+        "per_agg": {
+          "enum": ["sum", "count", "countd"],
+          "default": "sum",
+          "description": "cards only, with per (decisions/198): how per adds up over a period; countd of invoices under revenue is an average order value"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60,
+          "pattern": "^[^<]+$",
+          "description": "Caption shown on a KPI tile (default: field name); on a bar/line/area it is a name of the measure the block header may say, so the axis title that repeats it is hidden"
+        },
+        "heading": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[^<>]+$",
+          "description": "cards only: the name line of the KPI tile when it should say a parameter, e.g. 'Top [Top N] sales'; each [Parameter] shows its current value. 'label' stays the plain name (calc captions); default: label (decisions/148)"
+        },
+        "axis_title": {
+          "enum": ["none"],
+          "description": "bar/line/area only: 'none' hides the title of the measure axis whatever the block header says (decisions/136); without it the title goes only when the header repeats the measure (colors.repeats)"
+        },
+        "table_calc": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type"
+          ],
+          "description": "Quick table calculation on this measure (sheet with dimensions only). 'along' = the sheet dimensions to compute along (Tableau 'Specific Dimensions'); the other sheet dimensions partition the result. Default: all sheet dimensions (whole table).",
+          "properties": {
+            "type": {
+              "enum": [
+                "percent_of_total",
+                "difference",
+                "percent_difference",
+                "running_total"
+              ]
+            },
+            "along": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "$ref": "#/$defs/fieldName"
+              }
+            }
+          }
+        },
+        "good": {
+          "enum": [
+            "up",
+            "down"
+          ],
+          "default": "up",
+          "description": "cards only: which direction of change is good (Avg days to close: down)"
+        },
+        "delta": {
+          "enum": ["pct", "abs"],
+          "default": "pct",
+          "description": "cards only (decisions/169): the change of this measure as a percent ('▲ 12.5%') or absolute in its own format ('▲ 3' of a count); a ratio ('per') changes in percentage points unless given 'pct' (decisions/198)"
+        },
+        "goal": {
+          "type": "number",
+          "description": "cards only, with history 'line' right of the number (decisions/178): the measure's goal, a dashed line on the sparkline without a label and ' · goal 95%' after the change"
+        },
+        "delta_format": {
+          "$ref": "#/$defs/numberFormat",
+          "description": "cards only, with delta 'abs' (decisions/177): the change's own number format; default: the measure's format, of an average (agg not sum / count) one decimal more"
+        },
+        "status": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "on",
+            "thresholds"
+          ],
+          "description": "KPI cards only (decisions/062): a dot right of the card text colored by thresholds (SOC Monitor). Two thresholds [lo, hi]: at or above hi good, from lo warn, below lo bad (good 'down': at or below lo good, up to hi warn, above hi bad); one threshold: good or bad. Its legend is a line of a header (status_legend)",
+          "properties": {
+            "on": {
+              "enum": [
+                "value",
+                "change"
+              ],
+              "description": "value: the card's number against thresholds in its units (a target 15000: [13500, 15000]); change: the card's change against the base period as a fraction ([-0.05, 0])"
+            },
+            "thresholds": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 2,
+              "items": {
+                "type": "number"
+              },
+              "description": "ascending"
+            }
+          }
+        },
+        "target": {
+          "type": "object",
+          "additionalProperties": false,
+          "minProperties": 1,
+          "maxProperties": 2,
+          "description": "KPI cards only (decisions/155): the card's target for its current period; the card text says '103% of $15.0K target' and a progress bar under it fills to the share (full and in the good color at or over the target; bad for good 'down'). Every measure of the sheet has one",
+          "properties": {
+            "value": {"type": "number", "exclusiveMinimum": 0, "description": "a constant target in the measure's units"},
+            "field": {"$ref": "#/$defs/fieldName", "description": "a numeric column with the target (plan) per row, aggregated over the current period like the card's value"},
+            "agg": {"enum": ["sum", "avg", "min", "max"], "description": "with field: its aggregate, default sum"}
+          },
+          "oneOf": [{"required": ["value"], "not": {"required": ["agg"]}}, {"required": ["field"]}]
+        },
+        "format": {
+          "$ref": "#/$defs/numberFormat"
+        },
+        "note": {
+          "$ref": "#/$defs/insight",
+          "description": "kpi tiles only (decisions/045): a line under the tile's number, a phrase with [Calc]: '[Incidents Share] of total'"
+        }
+      }
+    },
+    "insight": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[^<>]+$",
+      "description": "A phrase with aggregate calcs in brackets, under the block header (decisions/045): 'Busiest day: **[Peak Day] ([Peak Day Closures])**; weekend adds only [Weekend Closures].' Tableau shows each [Calc] (following the filters); ** marks the bold parts"
+    },
+    "numberFormat": {
+      "description": "Number format of the field (decisions/032): its default-format, so every sheet shows it the same way. A preset or {type, decimals, units, symbol, negative}.",
+      "oneOf": [
+        {
+          "enum": [
+            "percent",
+            "pct0",
+            "pct1",
+            "pct2",
+            "number",
+            "number1",
+            "number_k",
+            "number_m",
+            "currency",
+            "currency_k",
+            "currency_m"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "enum": [
+                "number",
+                "currency",
+                "percent"
+              ]
+            },
+            "decimals": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 6
+            },
+            "units": {
+              "enum": [
+                "none",
+                "K",
+                "M",
+                "B"
+              ]
+            },
+            "symbol": {
+              "enum": [
+                "$",
+                "€",
+                "£",
+                "¥",
+                "₽"
+              ]
+            },
+            "negative": {
+              "enum": [
+                "minus",
+                "parentheses"
+              ]
+            },
+            "plus": {"type": "boolean"},
+            "suffix": {"enum": ["pp", "pcs", "min"]}
+          }
+        }
+      ]
+    },
+    "sheet": {
+      "type": "object",
+      "required": [
+        "name",
+        "type"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/objectName"
+        },
+        "datasource": {
+          "$ref": "#/$defs/objectName",
+          "description": "With datasources (decisions/083): the name of the source this sheet takes its fields from; default the first"
+        },
+        "type": {
+          "enum": [
+            "kpi",
+            "bar",
+            "line",
+            "area",
+            "table",
+            "heatmap",
+            "registry",
+            "buttons",
+            "switch",
+            "combo",
+            "donut",
+            "lollipop",
+            "dumbbell",
+            "waterfall",
+            "pareto",
+            "funnel",
+            "gantt",
+            "map",
+            "scatter",
+            "treemap",
+            "histogram",
+            "strip",
+            "beeswarm",
+            "calendar",
+            "bump",
+            "bubbles",
+            "slope",
+            "boxplot",
+            "waffle",
+            "tilegrid"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "pattern": "^[^<>]+$",
+          "description": "Block header shown above the sheet on the dashboard, 14pt; ** marks bold key words as in the dashboard title (with block_headers false: Tableau's worksheet title, default sheet name)"
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "pattern": "^[^<>]+$",
+          "description": "Grey 9pt hint under the block title ('click to filter', what a mark is); needs block_headers. Legend as colored words: {accent:East}, {good:above plan}, {bad:below plan} are drawn bold in a color the sheet draws (color.highlight, color.good, plan, KPI cards)"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "combo"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "dimension",
+              "bar",
+              "line"
+            ],
+            "description": "Dual axis (decisions/044, ER Operation): bars of one measure by a dimension (muted, labelled), a line of another on the second axis (accent, its axis hidden); the axes are synchronized when both measures are in one unit (the same field, or one explicit number format)",
+            "properties": {
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "title": true,
+              "subtitle": true,
+              "dimension": {
+                "$ref": "#/$defs/fieldName"
+              },
+              "date_level": {"enum": ["year", "quarter", "month", "week", "day"], "description": "The dimension is a date: a bar per period, the line across the periods (a case AI traffic, decisions/140)"},
+              "bar": {
+                "$ref": "#/$defs/measure"
+              },
+              "line": {
+                "$ref": "#/$defs/measure"
+              },
+              "sort": {
+                "enum": [
+                  "none",
+                  "asc",
+                  "desc"
+                ],
+                "default": "none",
+                "description": "Sort by the bar measure"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "donut"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "dimension",
+              "measure"
+            ],
+            "description": "Dual axis pie (decisions/044, SuperMart, E-Commerce): the measure's shares by the dimension as a ring, its total in the centre, and a legend sheet beside it: 'member value (share)'. Up to 5 members (lint C2)",
+            "properties": {
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "title": true,
+              "subtitle": true,
+              "dimension": {
+                "$ref": "#/$defs/fieldName"
+              },
+              "measure": {
+                "$ref": "#/$defs/measure"
+              },
+              "color": {
+                "$ref": "#/$defs/highlight",
+                "description": "Muted ring with an accent: these members of the dimension in the accent color, the others muted. Written as fields.<dimension>.color (every sheet with the dimension on Color shows it); 'field' is the dimension"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "dumbbell"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": ["dimension", "from", "to"],
+            "description": "Dual axis (decisions/139, SOC 'Line - Uptime'): per member a muted span from 'from' to 'to' (a Gantt bar sized by the change) and an accent circle at 'to' with its value, horizontal, one synchronized scale",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true,
+              "dimension": {"$ref": "#/$defs/fieldName"},
+              "from": {"$ref": "#/$defs/measure"},
+              "to": {"$ref": "#/$defs/measure"},
+              "sort": {"enum": ["none", "asc", "desc"], "default": "none", "description": "Sort by the 'to' measure"},
+              "zero": {"type": "boolean", "default": true, "description": "false: the axis spans the values, not from zero (Include zero off, polish-26b); the range stays automatic, a filter moves it"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "slope"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["dimension", "period", "measure", "filters"],
+            "description": "Slope chart (decisions/141): a line per member between the two periods the sheet's filter on period keeps (default [before, after]), the member and its value at both ends; good / bad by the change, or color.highlight accent and the rest muted",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true, "filters": {"$ref": "#/$defs/sheetFilters"},
+              "dimension": {"$ref": "#/$defs/fieldName"},
+              "period": {"$ref": "#/$defs/fieldName", "description": "A text dimension (a year as STR(YEAR(...)) calc): its two kept values on Columns"},
+              "measure": {"$ref": "#/$defs/measure"},
+              "good": {"enum": ["up", "down"], "default": "up", "description": "up: a rise is good"},
+              "color": {"type": "object", "additionalProperties": false, "required": ["highlight"],
+                        "properties": {"highlight": {"type": "array", "minItems": 1, "maxItems": 3, "uniqueItems": true, "items": {"type": "string"}, "description": "Members in the accent, the rest muted: {accent:...} in the subtitle"}}},
+              "labels": {"enum": ["cull", "spread"], "default": "cull", "description": "cull: Tableau hides a label that would overlap another; spread: every member's label at both ends, moved apart where values are close (a second synchronized axis of label positions, polish-26b; up to 12 members)"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "boxplot"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["dimension", "measure", "detail"],
+            "description": "Box plot (decisions/141, Higher Education 'Box Plot - Time'): a row per member, Tableau's box (quartiles, median, whiskers 1.5 IQR) over a dot per detail member",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true, "filters": {"$ref": "#/$defs/sheetFilters"},
+              "dimension": {"$ref": "#/$defs/fieldName"},
+              "measure": {"$ref": "#/$defs/measure"},
+              "detail": {"$ref": "#/$defs/fieldName", "description": "A text row id: a dot each"},
+              "points": {"type": "boolean", "default": false, "description": "Every dot; false: only the outliers"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "waffle"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["cells", "measure", "part"],
+            "description": "Waffle (decisions/141, a reference): 10 x 10 squares, the share of part in the measure filled in the accent, the rest light grey; square cells sized from the zone, no scrollbar (polish-26b)",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true, "filters": {"$ref": "#/$defs/sheetFilters"},
+              "cells": {"$ref": "#/$defs/fieldName", "description": "A numeric row id with every value 1..100: a square each"},
+              "measure": {"$ref": "#/$defs/measure", "description": "Summed: the whole"},
+              "value": {"type": "boolean", "default": false, "description": "true: the share as a big % in the block, over the squares (the sheet's title with the share field, polish-26b)"},
+              "part": {"type": "object", "additionalProperties": false, "required": ["field", "values"],
+                       "properties": {"field": {"$ref": "#/$defs/fieldName"}, "values": {"type": "array", "minItems": 1, "items": {"type": "string"}}}}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "tilegrid"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["dimension", "measure", "layout"],
+            "description": "Tile grid (decisions/154): a square tile per member of dimension, colored by the measure, its code and value on it. layout {row, col}: a tile map, the tile's place from two numeric columns of the data (reference 'US Tile Map'); layout {cols}: a wall, the members by the measure descending, cols to a row (reference: INDEX() % cols), in blocks side by side by group",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true, "filters": {"$ref": "#/$defs/sheetFilters"},
+              "dimension": {"$ref": "#/$defs/fieldName", "description": "A tile per member"},
+              "label": {"$ref": "#/$defs/fieldName", "description": "The short name on the tile (a state's code); default the member"},
+              "measure": {"$ref": "#/$defs/measure"},
+              "color": {"$ref": "#/$defs/colorScale"},
+              "layout": {"type": "object", "additionalProperties": false, "minProperties": 1,
+                "properties": {"row": {"$ref": "#/$defs/fieldName", "description": "A numeric column: the tile's row, 1 at the top"},
+                               "col": {"$ref": "#/$defs/fieldName", "description": "A numeric column: the tile's column, 1 at the left"},
+                               "cols": {"type": "integer", "minimum": 1, "maximum": 20, "description": "A wall: tiles to a row"}}},
+              "group": {"$ref": "#/$defs/fieldName", "description": "A wall's blocks: a block of cols columns per member, its name over it"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "histogram"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["field", "bins"],
+            "description": "A bar per bin of a numeric column, its height the count of rows (decisions/140, HelpDesk RWFD 'DAYS OPEN')",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true, "filters": {"$ref": "#/$defs/sheetFilters"},
+              "field": {"$ref": "#/$defs/fieldName", "description": "A numeric CSV column"},
+              "bins": {"type": "object", "additionalProperties": false, "minProperties": 1, "maxProperties": 1,
+                "properties": {"size": {"type": "number", "exclusiveMinimum": 0, "description": "The width of a bin"},
+                               "count": {"type": "integer", "minimum": 2, "maximum": 100, "description": "About this many bins over the column's range (a round width)"}}}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "strip"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["measure", "detail"],
+            "description": "A dot per member of detail at its measure, spread by a fixed jitter (INDEX() along detail), a row per dimension member (decisions/140)",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true, "filters": {"$ref": "#/$defs/sheetFilters"},
+              "measure": {"$ref": "#/$defs/measure"},
+              "detail": {"$ref": "#/$defs/fieldName", "description": "A text row id: a dot each (a numeric id as a STR() calc)"},
+              "dimension": {"$ref": "#/$defs/fieldName", "description": "A row of dots per member"},
+              "tooltip": {"$ref": "#/$defs/tooltip"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "beeswarm"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["measure", "detail", "bins"],
+            "description": "A strip whose dots of one bin of the measure stack outward from the middle line, no overlaps (decisions/140)",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true, "filters": {"$ref": "#/$defs/sheetFilters"},
+              "measure": {"$ref": "#/$defs/measure"},
+              "detail": {"$ref": "#/$defs/fieldName", "description": "A text row id: a dot each"},
+              "dimension": {"$ref": "#/$defs/fieldName", "description": "A row of dots per member"},
+              "tooltip": {"$ref": "#/$defs/tooltip"},
+              "bins": {"type": "object", "additionalProperties": false, "minProperties": 1, "maxProperties": 1,
+                "properties": {"size": {"type": "number", "exclusiveMinimum": 0, "description": "The width of a bin"},
+                               "count": {"type": "integer", "minimum": 2, "maximum": 100, "description": "About this many bins over the column's range (a round width)"}}}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "calendar"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["date", "measure"],
+            "description": "A square per day, weekday rows under month / week columns, colored by the measure on the house sequential scale; a sheet filter keeps one year (decisions/140)",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true, "filters": {"$ref": "#/$defs/sheetFilters"},
+              "date": {"$ref": "#/$defs/fieldName", "description": "A date column"},
+              "measure": {"$ref": "#/$defs/measure"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "bump"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["date", "dimension", "measure", "highlight"],
+            "description": "The rank of each member per period (RANK along the dimension), a line with a dot per period, rank 1 on top, highlighted members in the accent, the rest muted, the name at the line's end (decisions/140)",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true, "filters": {"$ref": "#/$defs/sheetFilters"},
+              "date": {"type": "object", "additionalProperties": false, "required": ["field"],
+                       "properties": {"field": {"$ref": "#/$defs/fieldName"}, "level": {"enum": ["year", "quarter", "month", "week"], "default": "year"}}},
+              "dimension": {"$ref": "#/$defs/fieldName"},
+              "measure": {"$ref": "#/$defs/measure", "description": "Ranked largest first"},
+              "highlight": {"type": "array", "minItems": 1, "maxItems": 3, "uniqueItems": true, "items": {"type": "string"}, "description": "Members in the accent; name them in the subtitle: {accent:...}"}
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "waterfall"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": ["dimension", "measure"],
+            "description": "Waterfall (decisions/139, Higher Education Admissions): a Gantt bar per member from the running total before it to the one after it, good / bad by the step's sign, the step as its label",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true,
+              "dimension": {"$ref": "#/$defs/fieldName"},
+              "measure": {"$ref": "#/$defs/measure"},
+              "good": {"enum": ["up", "down"], "default": "up", "description": "up: a rise is good"},
+              "total": {"type": "boolean", "default": false, "description": "A last bar 'Total' from 0 to the sum, muted (decisions/144, reference <cols total='true'>)"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "pareto"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["dimension", "measure"],
+            "description": "Pareto (decisions/157, reference 'Advanced Pareto Chart'): bars of the measure by the dimension, largest first, the running share of the total as a line on a 0-100 % axis on the right, a dashed line at the threshold; the vital few (the running share before them under the threshold) in the accent",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true,
+              "dimension": {"$ref": "#/$defs/fieldName"},
+              "measure": {"$ref": "#/$defs/measure"},
+              "threshold": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1, "default": 0.8, "description": "The share of the total the reference line marks (0.8 = the 80/20 rule)"},
+              "highlight": {"type": "boolean", "default": true, "description": "true: the vital few bars in the accent, the rest muted, the line muted; false: every bar muted, the line in the accent"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "funnel"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["dimension", "measure"],
+            "description": "Funnel (decisions/159, reference 'Funnel with Gantt bars'): a stage per row, a level bar centered on zero as long as its value, the conversion beside the value",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true, "filters": true,
+              "dimension": {"$ref": "#/$defs/fieldName", "description": "The stages, top to bottom"},
+              "measure": {"$ref": "#/$defs/measure"},
+              "sort": {"enum": ["desc", "none"], "default": "desc", "description": "desc: by the value; none: the field's order (fields.<dim>.order for the process order)"},
+              "conversion": {"enum": ["previous", "first", "none"], "default": "previous", "description": "previous: over the stage before it; first: over the first stage; none: the value only"}
+            }
+          }
+        },
+        {
+          "if": {"properties": {"type": {"const": "gantt"}}},
+          "then": {
+            "additionalProperties": false,
+            "required": ["task", "start", "end"],
+            "description": "Gantt / timeline (polish-26, AdsCampaignsOverview): a bar per task from its start date for DATEDIFF('day', start, end) days, colored by a status with fields.<color>.color",
+            "properties": {
+              "name": true, "type": true, "datasource": true, "title": true, "subtitle": true, "filters": true,
+              "task": {"$ref": "#/$defs/fieldName"},
+              "start": {"$ref": "#/$defs/fieldName"},
+              "end": {"$ref": "#/$defs/fieldName"},
+              "color": {"$ref": "#/$defs/fieldName", "description": "A status column; its members' colors in fields.<color>.color"}
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "lollipop"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "dimension",
+              "measure"
+            ],
+            "description": "Dual axis (decisions/044, Admissions): a thin muted stick and an accent circle with the value per member, horizontal; both axes hidden",
+            "properties": {
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "title": true,
+              "subtitle": true,
+              "dimension": {
+                "$ref": "#/$defs/fieldName"
+              },
+              "measure": {
+                "$ref": "#/$defs/measure"
+              },
+              "sort": {
+                "enum": [
+                  "none",
+                  "asc",
+                  "desc"
+                ],
+                "default": "none",
+                "description": "Sort by the measure"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "scatter"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "detail",
+              "x",
+              "y"
+            ],
+            "description": "Scatter plot (decisions/047, NovaCart): a circle per member of the detail dimension at (x, y), both measures aggregated per member; accent points unless colored; optional dashed lines across both axes at the average (median) of the points and a linear trend line",
+            "properties": {
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "title": true,
+              "subtitle": true,
+              "detail": {
+                "$ref": "#/$defs/fieldName",
+                "description": "Text dimension: one point per member (on Detail)"
+              },
+              "x": {
+                "$ref": "#/$defs/measure",
+                "description": "Measure on Columns (horizontal axis)"
+              },
+              "y": {
+                "$ref": "#/$defs/measure",
+                "description": "Measure on Rows (vertical axis)"
+              },
+              "color": {
+                "oneOf": [
+                  {
+                    "$ref": "#/$defs/fieldName",
+                    "description": "A dimension: Tableau's palette and legend; a point per detail x color member"
+                  },
+                  {
+                    "$ref": "#/$defs/measure",
+                    "description": "A measure: the house sequential scale"
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "highlight"
+                    ],
+                    "properties": {
+                      "highlight": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 12,
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "description": "Members of detail drawn in the accent color, the others muted (no legend: {accent:...} in the subtitle)"
+                      }
+                    }
+                  }
+                ]
+              },
+              "size": {
+                "$ref": "#/$defs/measure",
+                "description": "Measure on Size"
+              },
+              "axis_lines": {
+                "type": "object",
+                "additionalProperties": false,
+                "description": "A dashed muted line across each axis at the average (median) of the points, labelled '<label> <value>' ('Avg: 17.8')",
+                "properties": {
+                  "type": {
+                    "enum": [
+                      "avg",
+                      "median"
+                    ],
+                    "default": "avg"
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 30,
+                    "pattern": "^[^<>]+$",
+                    "description": "Text before the value; default Average / Median"
+                  }
+                }
+              },
+              "trend": {
+                "type": "boolean",
+                "default": false,
+                "description": "A linear trend line over all points, muted"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": ["treemap", "bubbles"]
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "size",
+              "label"
+            ],
+            "description": "Treemap (decisions/138), packed bubbles (bubbles, decisions/141: the same as circles): a rectangle per member of label, its area the size measure, nested in group; the house sequential scale by the size (scale_low -> accent) unless color.highlight; labels that do not fit are hidden",
+            "properties": {
+              "filters": {"$ref": "#/$defs/sheetFilters"},
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "title": true,
+              "subtitle": true,
+              "size": {
+                "$ref": "#/$defs/measure",
+                "description": "Measure on Size: the area of a rectangle (and its color, without color.highlight)"
+              },
+              "label": {
+                "$ref": "#/$defs/fieldName",
+                "description": "Dimension: a rectangle per member, its text"
+              },
+              "group": {
+                "$ref": "#/$defs/fieldName",
+                "description": "Dimension one level up (on Detail): the rectangles of a member stay together"
+              },
+              "value": {
+                "type": "boolean",
+                "default": false,
+                "description": "The size measure as a second line of the label"
+              },
+              "color": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "highlight"
+                ],
+                "properties": {
+                  "highlight": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 12,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "description": "Members of group (of label without a group) in the accent color, the others muted (no legend: {accent:...} in the subtitle)"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "map"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "geo",
+              "measure"
+            ],
+            "description": "Map on Tableau's built-in geocoding (decisions/046): a circle per place sized by the measure (symbol, Admissions, Cutest Financial) or the place's polygon colored by it on the house sequential scale (filled, Superstore); light background. Every value of the geo field must be a name Desktop geocodes (checked before the build). Under 3 places: lint G1 (bars read better)",
+            "properties": {
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "title": true,
+              "subtitle": true,
+              "geo": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "field"
+                ],
+                "description": "Built-in geocoding {field, role, country?}, or the data's coordinates {field, lat, lon}",
+                "properties": {
+                  "field": {
+                    "$ref": "#/$defs/fieldName",
+                    "description": "Text column of place names (with lat / lon: of the places the points are)"
+                  },
+                  "lat": {
+                    "$ref": "#/$defs/fieldName",
+                    "description": "Numeric latitude column (-90..90), one value per place; Tableau role [Geographical].[Latitude], AVG on Rows"
+                  },
+                  "lon": {
+                    "$ref": "#/$defs/fieldName",
+                    "description": "Numeric longitude column (-180..180), with lat"
+                  },
+                  "role": {
+                    "enum": [
+                      "country",
+                      "state",
+                      "city"
+                    ],
+                    "description": "Geographic role (Tableau semantic role [Country].[Name], [State].[Name], [City].[Name])"
+                  },
+                  "country": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100,
+                    "pattern": "^[^<>&\"]+$",
+                    "description": "state / city only, required: the country the names are looked up in ('United States'); one per workbook"
+                  }
+                }
+              },
+              "measure": {
+                "$ref": "#/$defs/measure",
+                "description": "symbol: the circle size; filled: the color"
+              },
+              "style": {
+                "enum": [
+                  "symbol",
+                  "filled"
+                ],
+                "default": "symbol",
+                "description": "filled: country or state only (Tableau has no city polygons)"
+              },
+              "labels": {
+                "type": "boolean",
+                "default": true,
+                "description": "The measure's value on each mark, overlapping labels hidden"
+              },
+              "color": {
+                "$ref": "#/$defs/mapColor"
+              },
+              "size": {
+                "type": "boolean",
+                "default": true,
+                "description": "symbol only: false draws every circle the same size (then a color scale carries the measure; decisions/137)"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "buttons"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "parameter"
+            ],
+            "description": "A button per value of a string parameter (decisions/042, SuperMart): a click sets the parameter; the current value in the accent, the others muted",
+            "properties": {
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "title": true,
+              "subtitle": true,
+              "parameter": {
+                "$ref": "#/$defs/fieldName"
+              },
+              "arrange": {
+                "enum": [
+                  "row",
+                  "column"
+                ],
+                "default": "row",
+                "description": "side by side (period tabs) or stacked (a list of metrics)"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "switch"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "parameter",
+              "views"
+            ],
+            "description": "Dynamic zone visibility (decisions/042, 082): one cell that shows the sheet of the parameter's current value; the views are bar, line, area, table, heatmap or registry sheets placed nowhere else in the grid; with datasources the switch takes its views' datasource",
+            "properties": {
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "parameter": {
+                "$ref": "#/$defs/fieldName"
+              },
+              "views": {
+                "type": "object",
+                "minProperties": 2,
+                "maxProperties": 6,
+                "additionalProperties": {
+                  "$ref": "#/$defs/objectName"
+                },
+                "description": "{parameter value: sheet name}, one per value of the parameter"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "kpi"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "measures"
+            ],
+            "properties": {
+              "filters": {"$ref": "#/$defs/sheetFilters"},
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "measures": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 8,
+                "items": {
+                  "$ref": "#/$defs/measure"
+                }
+              },
+              "title": true,
+              "subtitle": true,
+              "style": {
+                "enum": [
+                  "table",
+                  "tiles",
+                  "cards"
+                ],
+                "default": "table",
+                "description": "tiles: one big-number tile per measure, side by side; cards: per measure the latest period's value, its change against the base period (colored by 'good') and a history of the measure by period (needs 'date')"
+              },
+              "date": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "field"
+                ],
+                "description": "cards only: the date field and the period of a card (latest period in the data)",
+                "properties": {
+                  "field": {
+                    "$ref": "#/$defs/fieldName"
+                  },
+                  "level": {
+                    "enum": [
+                      "week",
+                      "month",
+                      "year"
+                    ],
+                    "default": "month"
+                  }
+                }
+              },
+              "anchor": {"enum": ["last", "last_complete"], "default": "last", "description": "cards only (polish-26): the period of the latest date, or the latest whole period (the latest date is its last day; a part-filled current period is left out)"},
+              "compare": {
+                "enum": [
+                  "previous",
+                  "year"
+                ],
+                "default": "previous",
+                "description": "cards only: base of the change - the previous period (MoM) or the same period a year back (YoY)"
+              },
+              "arrange": {
+                "enum": [
+                  "row",
+                  "column",
+                  "strip"
+                ],
+                "default": "row",
+                "description": "tiles/cards: side by side (row) or stacked (column; a card then puts its value left of its history); strip = side by side in one card with a 1px divider between the measures (theme 'cards' only)"
+              },
+              "history_reference": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "type"
+                ],
+                "description": "cards only: a reference line over each card's history bars (Call Center 'Average')",
+                "properties": {
+                  "type": {
+                    "enum": [
+                      "avg",
+                      "median"
+                    ]
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 60,
+                    "pattern": "^[^<>]+$"
+                  }
+                }
+              },
+              "history_color": {
+                "enum": [
+                  "change"
+                ],
+                "description": "cards only: history bars that got better than the period before in the good color, worse in the bad color, the rest muted (by the measure's 'good'); replaces the accent on the current bar"
+              },
+              "delta": {
+                "enum": [
+                  "pct",
+                  "abs_pct"
+                ],
+                "default": "pct",
+                "description": "cards only (decisions/037): the change as a percent ('▲ 10.5% MoM') or as the absolute change with its arrow and then the percent ('▲ 1,466 | 10.5% MoM'); the absolute change takes the measure's format"
+              },
+              "delta_style": {
+                "enum": [
+                  "text",
+                  "pill"
+                ],
+                "default": "text",
+                "description": "cards only: the change as a colored line of the card text, or a pill under it: bold text on a pale fill in the good / bad color"
+              },
+              "history": {
+                "enum": [
+                  "bar",
+                  "line",
+                  "area"
+                ],
+                "default": "bar",
+                "description": "cards only: the history as bars (the current one in the accent) or a sparkline with only its max and its last value labelled; area: the sparkline over its pale fill (decisions/088); history_reference draws the dashed average over either"
+              },
+              "history_months": {
+                "enum": [
+                  "letter"
+                ],
+                "description": "cards with a sparkline by month (decisions/088): the months under it as one letter, J F M (as in the reference)"
+              },
+              "history_points_legend": {
+                "enum": [
+                  "block"
+                ],
+                "description": "with history_points (decisions/088): their legend '● Max ● Min' once as a line under the block's title, not on every card (needs the title or subtitle; the measures agree on 'good')"
+              },
+              "base_value": {
+                "type": "boolean",
+                "description": "cards only (decisions/088): the base period's value as a number after the change, '▲ 10.5% | $14.0K Last Month' (reference '78,038 Last Year')"
+              },
+              "history_points": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 3,
+                "uniqueItems": true,
+                "items": {
+                  "enum": [
+                    "max",
+                    "min",
+                    "last"
+                  ]
+                },
+                "description": "cards with history 'line' or 'area' only (decisions/059): a dot on the sparkline at its max (good color), min (bad; swapped for good 'down') and last period (accent), a second layer on the line's axis; a period that is two of them takes the first listed"
+              },
+              "history_point_labels": {
+                "type": "boolean",
+                "default": true,
+                "description": "with history_points: the value next to each dot (off: dots only, the line unlabelled)"
+              },
+              "progress": {
+                "enum": [
+                  "bar",
+                  "thin"
+                ],
+                "default": "bar",
+                "description": "cards whose measures have a target (decisions/155): the progress bar as the fill over a pale track of its thickness (bar), or over a thin track line (thin)"
+              },
+              "marker": {
+                "enum": [
+                  "bar"
+                ],
+                "description": "cards only: a 4px bar left of each card's text in the good / bad color by the sign of the change"
+              },
+              "period_line": {
+                "oneOf": [{"type": "boolean"}, {"enum": ["header", "card"]}],
+                "description": "cards only, one sheet per spec: 'Dec 2025 compared to Nov 2025' once under the dashboard header (needs a dashboard title, no sidebar); 'header': in the header row at its right, and the cards without their date line; 'card': the date under each card's name instead of above it (decisions/169)"
+              },
+              "history_place": {
+                "enum": ["below", "right"],
+                "default": "below",
+                "description": "cards only (decisions/169): the history under the card text, or a small one right of the value"
+              },
+              "delta_zero": {
+                "enum": ["sign", "neutral"],
+                "default": "sign",
+                "description": "cards only (decisions/169): a zero change counts as good (sign) or is grey '= no change' (neutral)"
+              },
+              "card_date": {
+                "oneOf": [{"type": "boolean"}, {"const": "range"}],
+                "default": false,
+                "description": "cards only, with period_line 'card' (decisions/177): the period's date under each card's name; without it the card has no date line, the change line says against what. 'range' (decisions/178, date level week, compare previous): 'wk 12 (19–24 Oct) vs wk 11'"
+              },
+              "separate_cards": {
+                "type": "boolean",
+                "default": false,
+                "description": "cards only, with history_place 'right', period_line 'card', arrange 'row' and no title (decisions/178): each measure its own white card with its border, the canvas between them"
+              },
+              "delta_colors": {
+                "enum": ["accent"],
+                "description": "cards only, with delta_zero 'neutral' (decisions/178): a worse change in the accent, a better one and no change dark grey, no green; the last sparkline point likewise"
+              },
+              "status_labels": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 30,
+                  "pattern": "^[^<>\"]+$"
+                },
+                "default": ["On track", "At risk", "Off track"],
+                "description": "cards with a measure status (decisions/062): the good, warn and bad status names, in the legend and the status calc (SOC: Healthy, Warning, Critical)"
+              },
+              "status_legend": {
+                "enum": [
+                  "block",
+                  "dashboard",
+                  "none"
+                ],
+                "default": "block",
+                "description": "cards with a measure status: the legend of the statuses as a line of this block's header (needs its title or subtitle), of the dashboard header, or none (another block's legend names the same statuses; lint K4)"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "bar"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "dimension",
+              "measure"
+            ],
+            "properties": {
+              "filters": {"$ref": "#/$defs/sheetFilters"},
+              "facet": {"type": "object", "additionalProperties": false, "required": ["field"], "description": "Small multiples (decisions/141): a panel per member of field side by side, its name over the panel, one shared axis", "properties": {"field": {"$ref": "#/$defs/fieldName"}}},
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "dimension": {
+                "$ref": "#/$defs/fieldName"
+              },
+              "date_level": {
+                "enum": [
+                  "year",
+                  "quarter",
+                  "month",
+                  "week",
+                  "day"
+                ],
+                "description": "The dimension is a date: a bar per period (discrete truncation, headers 'Jan' for months), stacked by a color field (decisions/090)"
+              },
+              "measure": {
+                "$ref": "#/$defs/measure"
+              },
+              "color": {
+                "oneOf": [
+                  {
+                    "$ref": "#/$defs/fieldName",
+                    "description": "A dimension on Color: Tableau's palette and a legend"
+                  },
+                  {
+                    "$ref": "#/$defs/highlight"
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "good"
+                    ],
+                    "properties": {
+                      "good": {
+                        "enum": [
+                          "up",
+                          "down"
+                        ],
+                        "description": "Bars by the sign of the measure: in the good color when >= 0 (up) or <= 0 (down), else in the bad color"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "vs"
+                    ],
+                    "properties": {
+                      "vs": {
+                        "enum": [
+                          "avg"
+                        ],
+                        "description": "Bars at or above the average of the bars in the accent color, the others muted (ER Patients vs Waiting Time); name it in the subtitle: {accent:above average}"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "below"
+                    ],
+                    "properties": {
+                      "below": {
+                        "enum": [
+                          "target"
+                        ],
+                        "description": "Bars below their reference line 'target' in the bad color, the others muted (reference 'Color vs. Target', decisions/095); name it in the subtitle: {bad:below target}"
+                      }
+                    }
+                  },
+                  {
+                    "$ref": "#/$defs/colorScale"
+                  }
+                ]
+              },
+              "reference": {
+                "$ref": "#/$defs/references"
+              },
+              "total": {
+                "enum": [
+                  "end"
+                ],
+                "description": "A stacked horizontal bar (color by a field): the stack total right of each bar, the axis hidden (reference 'Stacked with End Labels', decisions/095); not with a reference line"
+              },
+              "parts": {
+                "enum": [
+                  "inside"
+                ],
+                "description": "Bar-in-bar (decisions/156, reference 'Ungrouped Stacked'): the member's total as a wide muted bar, the parts of 'color' (a field) side by side inside it in their colors; values at the bar ends, the axes hidden; orientation vertical only"
+              },
+              "value_column": {
+                "enum": [
+                  "left"
+                ],
+                "description": "A horizontal bar of members: its value as a second row header, right-aligned beside the member, the bar without a label and the axis hidden (reference 'Labels on the Left', decisions/095)"
+              },
+              "plan": {
+                "$ref": "#/$defs/measure",
+                "description": "Plan as a wide muted bar behind the fact (fact in the accent color); no 'color' with it"
+              },
+              "orientation": {
+                "enum": [
+                  "horizontal",
+                  "vertical"
+                ],
+                "default": "horizontal"
+              },
+              "labels": {
+                "enum": [
+                  "end",
+                  "none"
+                ],
+                "description": "end: each bar's value at its end and no axis (reference 'Labels on the End'); the default of a horizontal bar of members without a color stack, a plan, a date_level or a target reference (a line across all the bars keeps its own label: decisions/165). none: the axis instead of labels (decisions/087)"
+              },
+              "tooltip": {
+                "$ref": "#/$defs/tooltip"
+              },
+              "insight": {
+                "$ref": "#/$defs/insight"
+              },
+              "legend": {
+                "oneOf": [
+                  {"enum": ["inline"]},
+                  {"type": "object", "additionalProperties": false,
+                   "properties": {
+                     "position": {"enum": ["header", "below"]},
+                     "groups": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false,
+                       "required": ["label", "values"],
+                       "properties": {"label": {"type": "string"}, "values": {"type": "array", "minItems": 1, "items": {"type": "string"}}}}}}}
+                ],
+                "description": "The color legend as a line of the block header (bar / line / area colored by a field with fields.<field>.color): a colored square and the label per member, no legend column (decisions/045). Object form (decisions/173): position header (default) | below (a text zone under the block), groups [{label, values}] = one line per group, every member of fields.<field>.color once"
+              },
+              "title": true,
+              "subtitle": true,
+              "sort": {
+                "enum": [
+                  "none",
+                  "asc",
+                  "desc"
+                ],
+                "default": "none",
+                "description": "Sort bars by the measure"
+              },
+              "top": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "n"
+                ],
+                "description": "Only the top N bars by the measure (Tableau Top N filter, computed before the dimension filters)",
+                "properties": {
+                  "n": {
+                    "oneOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 1000
+                      },
+                      {
+                        "$ref": "#/$defs/fieldName",
+                        "description": "An integer parameter: the control in the header sets N"
+                      }
+                    ]
+                  },
+                  "end": {
+                    "enum": [
+                      "top",
+                      "bottom"
+                    ],
+                    "default": "top",
+                    "description": "bottom: the N smallest members (Filter > Top > Bottom, ascending); not with 'after' (decisions/148)"
+                  },
+                  "by": {
+                    "$ref": "#/$defs/measure",
+                    "description": "Rank by this measure instead of the sheet's (Filter > Top > By field; a public book's State Wise (%): the top 5 states by SUM(Sales) showing their % change, decisions/067). Not on the sheet: Desktop declares its column, no instance"
+                  },
+                  "after": {
+                    "enum": [
+                      "filters"
+                    ],
+                    "description": "Rank the marks after every filter (a RANK table calc of the measure filtered to 1..N, a public book's Sales by City: the top 5 cities of the United States), not before the dimension filters. A tie at the N-th place keeps every tied bar. n a number from 2, no 'by' (decisions/086)"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "line"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "date"
+            ],
+            "oneOf": [
+              {"required": ["measure"]},
+              {"required": ["repeat"]}
+            ],
+            "properties": {
+              "top": {"$ref": "#/$defs/topSeries"},
+              "facet": {"type": "object", "additionalProperties": false, "required": ["field"], "description": "Small multiples (decisions/141): a panel per member of field side by side, its name over the panel, one shared axis; cols N (decisions/144): N panels a row, the member named at its line's end", "properties": {"field": {"$ref": "#/$defs/fieldName"}, "cols": {"type": "integer", "minimum": 1, "maximum": 9}}},
+              "annotate": {"type": "object", "additionalProperties": false, "required": ["top"], "description": "Label the N largest values only (polish-26)", "properties": {"top": {"type": "integer", "minimum": 1, "maximum": 10}}},
+              "step": {"type": "boolean", "default": false, "description": "A step line: the value held until the next period, a vertical jump at each change (line-interpolation step, two Tableau Public step line books)"},
+              "benchmark": {
+                "$ref": "#/$defs/benchmark"
+              },
+              "labels": {
+                "enum": [
+                  "last",
+                  "ends"
+                ],
+                "description": "Label the line ends (decisions/043): its last value (SOC), or its first and last (Call Center); every series. A line split by color reads 'series value' (decisions/170); an overlapping label is not drawn"
+              },
+              "axis": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "zero": {"type": "boolean", "description": "Include zero. Default: off for a share, a percent, a mean or a ratio (AVG / MEDIAN, a calc with '/'), on for a sum or a count (decisions/170)"},
+                  "min": {"type": "number", "description": "A fixed range from min to max (with max); every value must fall inside it"},
+                  "max": {"type": "number"}
+                },
+                "dependentRequired": {"min": ["max"], "max": ["min"]},
+                "description": "The value axis (decisions/170): Include zero, or a fixed range (Edit Axis: Fixed); not with benchmark"
+              },
+              "repeat": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 8,
+                "items": {
+                  "$ref": "#/$defs/measure"
+                },
+                "description": "Small multiples (decisions/043): one copy of the sheet per measure ('<name> · <label>', title '<title> **<label>**'), the subtitle (shared legend) on the first only; replaces 'measure'"
+              },
+              "columns": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 4,
+                "description": "repeat only: the copies as a grid group of this many per row (2 = a 2x2 for four measures); default all side by side in the sheet's row"
+              },
+              "filters": {"$ref": "#/$defs/sheetFilters"},
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "date": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "field"
+                ],
+                "properties": {
+                  "field": {
+                    "$ref": "#/$defs/fieldName"
+                  },
+                  "axis_title": {"enum": ["none"], "description": "'none' hides the date axis title ('Month of Order Date') under dated ticks (polish-26)"},
+                  "level": {
+                    "enum": [
+                      "year",
+                      "quarter",
+                      "month",
+                      "week",
+                      "day"
+                    ],
+                    "default": "month"
+                  }
+                }
+              },
+              "measure": {
+                "$ref": "#/$defs/measure"
+              },
+              "color": {
+                "oneOf": [
+                  {
+                    "$ref": "#/$defs/fieldName",
+                    "description": "A dimension on Color: one series per value, Tableau's palette and a legend"
+                  },
+                  {
+                    "$ref": "#/$defs/seriesHighlight"
+                  }
+                ]
+              },
+              "reference": {
+                "$ref": "#/$defs/references"
+              },
+              "tooltip": {
+                "$ref": "#/$defs/tooltip"
+              },
+              "insight": {
+                "$ref": "#/$defs/insight"
+              },
+              "legend": {
+                "oneOf": [
+                  {"enum": ["inline"]},
+                  {"type": "object", "additionalProperties": false,
+                   "properties": {
+                     "position": {"enum": ["header", "below"]},
+                     "groups": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false,
+                       "required": ["label", "values"],
+                       "properties": {"label": {"type": "string"}, "values": {"type": "array", "minItems": 1, "items": {"type": "string"}}}}}}}
+                ],
+                "description": "The color legend as a line of the block header (bar / line / area colored by a field with fields.<field>.color): a colored square and the label per member, no legend column (decisions/045). Object form (decisions/173): position header (default) | below (a text zone under the block), groups [{label, values}] = one line per group, every member of fields.<field>.color once"
+              },
+              "title": true,
+              "subtitle": true
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "table"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "rows",
+              "cols",
+              "measure"
+            ],
+            "properties": {
+              "top": {"$ref": "#/$defs/topSeries"},
+              "filters": {"$ref": "#/$defs/sheetFilters"},
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "rows": {
+                "oneOf": [
+                  {
+                    "$ref": "#/$defs/fieldName"
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 2,
+                    "items": {
+                      "$ref": "#/$defs/fieldName"
+                    },
+                    "description": "Two row fields nest: [outer, inner] (an analyst and the team beside it, decisions/045)"
+                  }
+                ]
+              },
+              "cols": {
+                "$ref": "#/$defs/fieldName"
+              },
+              "measure": {
+                "$ref": "#/$defs/measure"
+              },
+              "tooltip": {
+                "$ref": "#/$defs/tooltip"
+              },
+              "insight": {
+                "$ref": "#/$defs/insight"
+              },
+              "legend": {
+                "oneOf": [
+                  {"enum": ["inline"]},
+                  {"type": "object", "additionalProperties": false,
+                   "properties": {
+                     "position": {"enum": ["header", "below"]},
+                     "groups": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false,
+                       "required": ["label", "values"],
+                       "properties": {"label": {"type": "string"}, "values": {"type": "array", "minItems": 1, "items": {"type": "string"}}}}}}}
+                ],
+                "description": "The color legend as a line of the block header (bar / line / area colored by a field with fields.<field>.color): a colored square and the label per member, no legend column (decisions/045). Object form (decisions/173): position header (default) | below (a text zone under the block), groups [{label, values}] = one line per group, every member of fields.<field>.color once"
+              },
+              "totals": {
+                "$ref": "#/$defs/totals"
+              },
+              "sort": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "by"
+                ],
+                "description": "The rows by their row total (decisions/045): the outer row field sorted by the measure over the columns",
+                "properties": {
+                  "by": {
+                    "enum": [
+                      "total"
+                    ]
+                  },
+                  "order": {
+                    "enum": [
+                      "asc",
+                      "desc"
+                    ],
+                    "default": "desc"
+                  }
+                }
+              },
+              "title": true,
+              "subtitle": true
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "area"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "date",
+              "measure"
+            ],
+            "properties": {
+              "top": {"$ref": "#/$defs/topSeries"},
+              "facet": {"type": "object", "additionalProperties": false, "required": ["field"], "description": "Small multiples (decisions/141): a panel per member of field side by side, its name over the panel, one shared axis; cols N (decisions/144): N panels a row, the member named at its line's end", "properties": {"field": {"$ref": "#/$defs/fieldName"}, "cols": {"type": "integer", "minimum": 1, "maximum": 9}}},
+              "annotate": {"type": "object", "additionalProperties": false, "required": ["top"], "description": "Label the N largest values only (polish-26)", "properties": {"top": {"type": "integer", "minimum": 1, "maximum": 10}}},
+              "step": {"type": "boolean", "default": false, "description": "A step area (decisions/158): the value held until the next period, a vertical jump at each change; Bars as wide as the period side by side (reference 'Stepped Area Chart'); labels: last only"},
+              "labels": {"enum": ["last", "ends"], "description": "Label the area's last value (or its first and last), as on a line (decisions/043, 158)"},
+              "filters": {"$ref": "#/$defs/sheetFilters"},
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "date": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "field"
+                ],
+                "properties": {
+                  "field": {
+                    "$ref": "#/$defs/fieldName"
+                  },
+                  "axis_title": {"enum": ["none"], "description": "'none' hides the date axis title ('Month of Order Date') under dated ticks (polish-26)"},
+                  "level": {
+                    "enum": [
+                      "year",
+                      "quarter",
+                      "month",
+                      "week",
+                      "day"
+                    ],
+                    "default": "month"
+                  }
+                }
+              },
+              "measure": {
+                "$ref": "#/$defs/measure"
+              },
+              "color": {
+                "oneOf": [
+                  {
+                    "$ref": "#/$defs/fieldName",
+                    "description": "A dimension on Color: one series per value, Tableau's palette and a legend"
+                  },
+                  {
+                    "$ref": "#/$defs/seriesHighlight"
+                  }
+                ]
+              },
+              "reference": {
+                "$ref": "#/$defs/references"
+              },
+              "tooltip": {
+                "$ref": "#/$defs/tooltip"
+              },
+              "insight": {
+                "$ref": "#/$defs/insight"
+              },
+              "legend": {
+                "oneOf": [
+                  {"enum": ["inline"]},
+                  {"type": "object", "additionalProperties": false,
+                   "properties": {
+                     "position": {"enum": ["header", "below"]},
+                     "groups": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false,
+                       "required": ["label", "values"],
+                       "properties": {"label": {"type": "string"}, "values": {"type": "array", "minItems": 1, "items": {"type": "string"}}}}}}}
+                ],
+                "description": "The color legend as a line of the block header (bar / line / area colored by a field with fields.<field>.color): a colored square and the label per member, no legend column (decisions/045). Object form (decisions/173): position header (default) | below (a text zone under the block), groups [{label, values}] = one line per group, every member of fields.<field>.color once"
+              },
+              "title": true,
+              "subtitle": true
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "heatmap"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "rows",
+              "cols",
+              "measure"
+            ],
+            "properties": {
+              "top": {"$ref": "#/$defs/topSeries"},
+              "field_labels": {"enum": ["none"], "description": "'none' hides the field labels over the row and column headers ('Year of Status date'): the block header names the cut (polish-26)"},
+              "filters": {"$ref": "#/$defs/sheetFilters"},
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "rows": {
+                "oneOf": [
+                  {
+                    "$ref": "#/$defs/fieldName"
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 2,
+                    "items": {
+                      "$ref": "#/$defs/fieldName"
+                    },
+                    "description": "Two row fields nest as [outer, inner]: the outer header bold once over its inner rows (a warehouse over its waves, decisions/171), a gap between the outer groups (decisions/186)"
+                  }
+                ]
+              },
+              "cols": {
+                "$ref": "#/$defs/fieldName"
+              },
+              "label": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["min"],
+                "properties": {
+                  "min": {"type": "number", "description": "only cells whose measure is >= min carry their number, in the measure's own units (10 for a percent x 100)"}
+                },
+                "description": "Cell labels of the outliers only (decisions/171): a label calc IF <measure> >= min THEN <measure> END on Text; the other cells show their color alone"
+              },
+              "date_level": {
+                "enum": ["year", "quarter", "month", "week", "day"],
+                "description": "cols is a date: a column per period (discrete truncation, headers 'Jan' for months), no column margin (decisions/125)"
+              },
+              "measure": {
+                "$ref": "#/$defs/measure"
+              },
+              "color": {
+                "$ref": "#/$defs/colorScale"
+              },
+              "margins": {
+                "type": "object",
+                "additionalProperties": false,
+                "minProperties": 1,
+                "description": "Marginal totals (decisions/041): each row's total as a bar at the right, each column's above the cells, with an average line",
+                "properties": {
+                  "rows": {
+                    "const": "bar"
+                  },
+                  "cols": {
+                    "const": "bar"
+                  }
+                }
+              },
+              "tooltip": {
+                "$ref": "#/$defs/tooltip"
+              },
+              "insight": {
+                "$ref": "#/$defs/insight"
+              },
+              "legend": {
+                "oneOf": [
+                  {"enum": ["inline"]},
+                  {"type": "object", "additionalProperties": false,
+                   "properties": {
+                     "position": {"enum": ["header", "below"]},
+                     "groups": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false,
+                       "required": ["label", "values"],
+                       "properties": {"label": {"type": "string"}, "values": {"type": "array", "minItems": 1, "items": {"type": "string"}}}}}}}
+                ],
+                "description": "The color legend as a line of the block header (bar / line / area colored by a field with fields.<field>.color): a colored square and the label per member, no legend column (decisions/045). Object form (decisions/173): position header (default) | below (a text zone under the block), groups [{label, values}] = one line per group, every member of fields.<field>.color once"
+              },
+              "title": true,
+              "subtitle": true
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "registry"
+              }
+            }
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "columns"
+            ],
+            "oneOf": [
+              {
+                "required": [
+                  "rows"
+                ]
+              },
+              {
+                "required": [
+                  "repeat"
+                ]
+              }
+            ],
+            "properties": {
+              "filters": {"$ref": "#/$defs/sheetFilters"},
+              "name": true,
+              "type": true,
+              "datasource": true,
+              "totals": {
+                "$ref": "#/$defs/totals"
+              },
+              "insight": {
+                "$ref": "#/$defs/insight"
+              },
+              "legend": {
+                "oneOf": [
+                  {"enum": ["inline"]},
+                  {"type": "object", "additionalProperties": false,
+                   "properties": {
+                     "position": {"enum": ["header", "below"]},
+                     "groups": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false,
+                       "required": ["label", "values"],
+                       "properties": {"label": {"type": "string"}, "values": {"type": "array", "minItems": 1, "items": {"type": "string"}}}}}}}
+                ],
+                "description": "The color legend as a line of the block header (bar / line / area colored by a field with fields.<field>.color): a colored square and the label per member, no legend column (decisions/045). Object form (decisions/173): position header (default) | below (a text zone under the block), groups [{label, values}] = one line per group, every member of fields.<field>.color once"
+              },
+              "header": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["color"],
+                "description": "The column titles on a band of this color, as the HTML table's header (th background; decisions/079); without it the titles stand on the page",
+                "properties": {
+                  "color": {"$ref": "#/$defs/brandColor", "description": "Band color: the th background in the HTML"},
+                  "text": {"$ref": "#/$defs/brandColor", "description": "Title color (the th color); default white or dark, whichever contrasts more (lint C8)"}
+                }
+              },
+              "bar_color": {
+                "$ref": "#/$defs/brandColor",
+                "description": "Color of the bar_inside bars and the track's share instead of the accent, as the HTML draws its in-cell bars (decisions/079); the white value inside must read on it (lint C8)"
+              },
+              "repeat": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 6,
+                "items": {
+                  "$ref": "#/$defs/fieldName"
+                },
+                "description": "A template: one registry per dimension ('<name> · <dim>', rows [dim]); its dashboard cell becomes a cell per dimension in the same row (decisions/039)"
+              },
+              "top": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "n"
+                ],
+                "description": "Only the top N rows by the first column's measure, or by top.by (one row dimension; Tableau Top N filter)",
+                "properties": {
+                  "n": {
+                    "oneOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 1000
+                      },
+                      {
+                        "$ref": "#/$defs/fieldName",
+                        "description": "An integer parameter: the control in the header sets N"
+                      }
+                    ]
+                  },
+                  "end": {
+                    "enum": [
+                      "top",
+                      "bottom"
+                    ],
+                    "default": "top",
+                    "description": "bottom: the N smallest members (Filter > Top > Bottom, ascending); not with 'after' (decisions/148)"
+                  },
+                  "by": {
+                    "$ref": "#/$defs/measure",
+                    "description": "Rank by this measure instead of the sheet's (Filter > Top > By field; a public book's State Wise (%): the top 5 states by SUM(Sales) showing their % change, decisions/067). Not on the sheet: Desktop declares its column, no instance"
+                  }
+                }
+              },
+              "title": true,
+              "subtitle": true,
+              "rows": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 2,
+                "items": {
+                  "$ref": "#/$defs/fieldName"
+                },
+                "description": "Row dimensions, outer group first"
+              },
+              "columns": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 8,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "measure"
+                  ],
+                  "properties": {
+                    "measure": {
+                      "$ref": "#/$defs/measure"
+                    },
+                    "style": {
+                      "enum": [
+                        "bar",
+                        "text",
+                        "rank",
+                        "share",
+                        "bar_inside",
+                        "track",
+                        "dot",
+                        "tick",
+                        "delta",
+                        "spark",
+                        "pill"
+                      ],
+                      "default": "bar",
+                      "description": "bar: grey bar with the value on it; text: the value only; rank: RANK of the measure within the outer group; share: % of the table total; bar_inside: accent bar, value inside (outside, dark, when its bar is too short; decisions/077); track: share bar on a 100% track (one per registry); dot: dot colored by the measure, value right of it; tick: bar with a tick at 'base'; delta: change vs 'base' with an arrow, good/bad color (decisions/039); spark: a mini-trend of block glyphs, needs 'spark'; pill: the measure's level as a label on a pale fill, needs 'levels' (decisions/096)"
+                    },
+                    "shape": {
+                      "enum": ["sign"],
+                      "description": "dot: a status mark instead of the dot, Tableau's filled triangle up / down or circle by the sign of the measure, good / bad / muted by 'good' (decisions/139)"
+                    },
+                    "spark": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": ["date", "level", "from", "count"],
+                      "description": "spark: the measure (summed, or its 'agg') per period of a date field, 'count' periods from 'from'; a row with no rows in a period counts 0 (decisions/096)",
+                      "properties": {
+                        "date": { "$ref": "#/$defs/fieldName" },
+                        "level": { "enum": ["day", "month", "quarter", "year"] },
+                        "from": {
+                          "type": "string",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                          "description": "Start of the first period (the first day of the month / quarter / year)"
+                        },
+                        "count": { "type": "integer", "minimum": 2, "maximum": 60, "description": "Periods: 2..12 as glyphs, 2..60 as a line" },
+                        "form": {
+                          "enum": ["glyphs", "line"],
+                          "description": "Default: line where the registry takes one, else glyphs (decisions/164). glyphs: block glyphs in the cell (decisions/096); line: the measure per period as a line, the last period a dot, each row on its own scale, on a sheet right of the registry; the last column, one row dimension, no totals or top (decisions/153)"
+                        }
+                      }
+                    },
+                    "levels": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 5,
+                      "description": "pill: from the lowest level up; the lowest has no 'from', each next one starts at its 'from' (value >= from); a null value takes the lowest (decisions/096)",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": ["label", "color"],
+                        "properties": {
+                          "from": { "type": "number" },
+                          "label": { "type": "string", "minLength": 1, "maxLength": 16, "pattern": "^[^<>\"\\\\]+$" },
+                          "color": { "enum": ["good", "warn", "bad", "neutral"] }
+                        }
+                      }
+                    },
+                    "base": {
+                      "$ref": "#/$defs/measure",
+                      "description": "tick / delta: the measure compared with (previous period calc, plan)"
+                    },
+                    "second": {
+                      "$ref": "#/$defs/measure",
+                      "description": "text: a second line under the value, 8pt muted"
+                    },
+                    "of": {
+                      "enum": ["max"],
+                      "description": "track: the bar as a share of the largest row (WINDOW_MAX) instead of the rows' total (decisions/144)"
+                    },
+                    "with_value": {
+                      "type": "boolean",
+                      "description": "share: '**21 %** (230)', the share bold and the measure in brackets"
+                    },
+                    "good": {
+                      "enum": [
+                        "up",
+                        "down"
+                      ],
+                      "default": "up",
+                      "description": "delta: which sign is good; dot: which end of the scale is good (good color) or bad"
+                    },
+                    "label": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 40,
+                      "pattern": "^[^<>]+$",
+                      "description": "Column title (default: field name)"
+                    },
+                    "highlight": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "minProperties": 1,
+                      "maxProperties": 1,
+                      "properties": {
+                        "below": {
+                          "type": "number"
+                        },
+                        "above": {
+                          "type": "number"
+                        }
+                      },
+                      "description": "Cells below/above the threshold get the 'bad' background"
+                    },
+                    "total": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "minProperties": 1,
+                      "description": "bar / bar_inside in a registry with 'totals' (decisions/081): the total row shows the measure over its rows (a ratio of sums, not a sum of ratios) without a bar, so the rows' bars keep their scale",
+                      "properties": {
+                        "bar": {
+                          "type": "boolean",
+                          "default": false,
+                          "description": "bar columns: draw the total's bar too, where it is no longer than the longest row bar (a ratio or an average); a longer total (a sum) draws its number only. Not on bar_inside (its total is a number without a bar)"
+                        },
+                        "format": {
+                          "$ref": "#/$defs/numberFormat",
+                          "description": "The total's number in its own format: 25.1% under rows of 52%"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "sort": {
+                "enum": [
+                  "none",
+                  "asc",
+                  "desc"
+                ],
+                "default": "none",
+                "description": "Rows by the first column (within the outer group)"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "gridRow": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "items": {
+        "$ref": "#/$defs/gridCell"
+      }
+    },
+    "gridCell": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/objectName"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sheet"
+          ],
+          "properties": {
+            "sheet": {
+              "$ref": "#/$defs/objectName"
+            },
+            "width": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12,
+              "default": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "rows"
+          ],
+          "description": "A group: its own grid inside the cell (e.g. a full-height KPI column next to rows of charts)",
+          "properties": {
+            "rows": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 6,
+              "items": {
+                "$ref": "#/$defs/gridRow"
+              }
+            },
+            "width": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12,
+              "default": 1
+            },
+            "row_heights": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 6,
+              "items": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 12
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_stores.csv"},
+  "sheets": [
+    {"name": "Products", "type": "registry", "title": "Sales **by product**",
+     "subtitle": "Ranked by sales; share of all sales; dot: average profit per order", "rows": ["Product"],
+     "sort": "desc",
+     "columns": [
+       {"measure": {"field": "Sales"}, "style": "rank", "label": "#"},
+       {"measure": {"field": "Sales"}, "style": "bar_inside", "label": "Sales"},
+       {"measure": {"field": "Sales"}, "style": "share", "label": "Share"},
+       {"measure": {"field": "Profit", "agg": "avg"}, "style": "dot", "label": "Avg profit"}
+     ]},
+    {"name": "Channels", "type": "registry", "title": "**Channels**", "subtitle": "Share of sales (sales)",
+     "rows": ["Channel"], "sort": "desc",
+     "columns": [
+       {"measure": {"field": "Sales"}, "style": "track", "label": "Of total"},
+       {"measure": {"field": "Sales"}, "style": "share", "label": "Share of sales", "with_value": true}
+     ]}
+  ],
+  "dashboard": {"name": "Product Referrals", "title": "**Product** Referrals", "width": 1100, "height": 700,
+                "grid": [[{"sheet": "Products", "width": 3}, {"sheet": "Channels", "width": 2}]]}
+}

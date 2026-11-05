@@ -1,0 +1,22 @@
+{
+ "_source": "pandas over data/sample/sales_products.csv (golden/expected/make_expected.py, decisions/052): Top N after the filters (RANK 1..N) against before them; after a measure filter",
+ "Top 5 in Region": {
+  "Beacon": 4060.58,
+  "Ember": 3783.84,
+  "Iris": 5017.11,
+  "Meridian": 4449.16,
+  "Pioneer": 3858.19
+ },
+ "Top 5 Overall": {
+  "Beacon": 4060.58,
+  "Cobalt": 3242.21,
+  "Ember": 3783.84,
+  "Iris": 5017.11,
+  "Juniper": 3102.22
+ },
+ "Busiest Small Sellers": {
+  "Atlas": 8.9333,
+  "Falcon": 10,
+  "Nova": 5.7
+ }
+}

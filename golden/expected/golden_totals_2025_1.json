@@ -1,0 +1,140 @@
+{
+ "_source": "pandas over data/sample/sales.csv (golden/expected/make_expected.py, decisions/052): grand totals both ways (sum, average), registry subtotals and the total row",
+ "Sales": {
+  "East | Furniture": 18839.86,
+  "East | Office": 15632.96,
+  "East | Tech": 17880.77,
+  "North | Furniture": 23294.07,
+  "North | Office": 14205.31,
+  "North | Tech": 20983.2,
+  "South | Furniture": 15128.11,
+  "South | Office": 22634.41,
+  "South | Tech": 21099.94,
+  "West | Furniture": 17694.88,
+  "West | Office": 18705.07,
+  "West | Tech": 18611.1,
+  "East | Total": 52353.59,
+  "North | Total": 58482.58,
+  "South | Total": 58862.46,
+  "West | Total": 55011.05,
+  "Total | Furniture": 74956.92,
+  "Total | Office": 71177.75,
+  "Total | Tech": 78575.01,
+  "Total | Total": 224709.68
+ },
+ "Avg Profit": {
+  "East | Furniture": 42.2171,
+  "East | Office": 43.0644,
+  "East | Tech": 38.4007,
+  "North | Furniture": 62.4435,
+  "North | Office": 42.2933,
+  "North | Tech": 80.2815,
+  "South | Furniture": 47.1729,
+  "South | Office": 45.9738,
+  "South | Tech": 49.9249,
+  "West | Furniture": 40.3473,
+  "West | Office": 41.6531,
+  "West | Tech": 29.9496,
+  "East | All": 40.9697,
+  "North | All": 62.4919,
+  "South | All": 47.6602,
+  "West | All": 37.021,
+  "All | Furniture": 48.9407,
+  "All | Office": 43.4435,
+  "All | Tech": 48.8948,
+  "All | All": 47.0992
+ },
+ "Registry": {
+  "East | Furniture": {
+   "Sales": 18839.86,
+   "Avg profit": 42.2171,
+   "Order sizes": 9
+  },
+  "East | Office": {
+   "Sales": 15632.96,
+   "Avg profit": 43.0644,
+   "Order sizes": 8
+  },
+  "East | Tech": {
+   "Sales": 17880.77,
+   "Avg profit": 38.4007,
+   "Order sizes": 9
+  },
+  "North | Furniture": {
+   "Sales": 23294.07,
+   "Avg profit": 62.4435,
+   "Order sizes": 9
+  },
+  "North | Office": {
+   "Sales": 14205.31,
+   "Avg profit": 42.2933,
+   "Order sizes": 9
+  },
+  "North | Tech": {
+   "Sales": 20983.2,
+   "Avg profit": 80.2815,
+   "Order sizes": 9
+  },
+  "South | Furniture": {
+   "Sales": 15128.11,
+   "Avg profit": 47.1729,
+   "Order sizes": 9
+  },
+  "South | Office": {
+   "Sales": 22634.41,
+   "Avg profit": 45.9738,
+   "Order sizes": 9
+  },
+  "South | Tech": {
+   "Sales": 21099.94,
+   "Avg profit": 49.9249,
+   "Order sizes": 9
+  },
+  "West | Furniture": {
+   "Sales": 17694.88,
+   "Avg profit": 40.3473,
+   "Order sizes": 9
+  },
+  "West | Office": {
+   "Sales": 18705.07,
+   "Avg profit": 41.6531,
+   "Order sizes": 9
+  },
+  "West | Tech": {
+   "Sales": 18611.1,
+   "Avg profit": 29.9496,
+   "Order sizes": 9
+  },
+  "East | Total": {
+   "Sales": 52353.59,
+   "Avg profit": 40.9697,
+   "Order sizes": 9
+  },
+  "North | Total": {
+   "Sales": 58482.58,
+   "Avg profit": 62.4919,
+   "Order sizes": 9
+  },
+  "South | Total": {
+   "Sales": 58862.46,
+   "Avg profit": 47.6602,
+   "Order sizes": 9
+  },
+  "West | Total": {
+   "Sales": 55011.05,
+   "Avg profit": 37.021,
+   "Order sizes": 9
+  },
+  "Total": {
+   "Sales": 224709.68,
+   "Avg profit": 47.0992,
+   "Order sizes": 9
+  }
+ },
+ "Regions": {
+  "East": 52353.59,
+  "North": 58482.58,
+  "South": 58862.46,
+  "West": 55011.05
+ }
+}

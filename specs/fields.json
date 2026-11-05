@@ -1,0 +1,30 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_products.csv"},
+  "fields": {
+    "Region": {
+      "caption": "Sales Region",
+      "aliases": {"East": "East coast", "North": "North side", "South": "South belt", "West": "West coast"},
+      "order": ["North", "East", "South", "West"],
+      "color": {"North": "#1f3a5f", "East": "#4e79a7", "South": "#a0c4e8", "West": "#d4d4d4"}
+    },
+    "Product Line": {
+      "group": {"field": "Product", "bins": {"Core": ["Atlas", "Beacon", "Cobalt", "Delta"],
+                                              "Growth": ["Ember", "Falcon", "Granite"]}, "other": "Other"},
+      "order": ["Growth", "Core", "Other"],
+      "color": {"Core": "#4e79a7", "Growth": "#3ea8a6", "Other": "#d4d4d4"}
+    }
+  },
+  "sheets": [
+    {"name": "Regions", "type": "bar", "title": "Sales **by region**", "subtitle": "north to west, regions renamed",
+     "dimension": "Region", "measure": {"field": "Sales"}, "color": "Region"},
+    {"name": "Lines", "type": "bar", "title": "Sales **by product line**", "subtitle": "Core and Growth, the rest Other",
+     "dimension": "Product Line", "measure": {"field": "Sales"}, "sort": "desc", "color": "Product Line"},
+    {"name": "Matrix", "type": "table", "title": "Sales **by region and line**",
+     "rows": "Region", "cols": "Product Line", "measure": {"field": "Sales"}}
+  ],
+  "filters": [{"field": "Region", "show_on": "Matrix"}],
+  "dashboard": {"name": "Fields", "title": "**Field** properties", "subtitle": "Aliases, manual order, a group with Other, default colors · sample data",
+                "width": 1200, "height": 800, "grid": [["Regions", "Lines"], ["Matrix"]]}
+}

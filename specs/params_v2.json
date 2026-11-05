@@ -1,0 +1,36 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/params_v2.csv"},
+  "parameters": [
+    {"name": "Region pick", "type": "string", "values": ["North", "South", "East", "West"], "default": "East",
+     "aliases": {"North": "Northern region", "South": "Southern region"}},
+    {"name": "Top count", "type": "integer", "values": [2, 3, 4], "default": 3},
+    {"name": "Target", "type": "real", "range": {"min": 0, "max": 0.5, "step": 0.125}, "default": 0.25},
+    {"name": "With East", "type": "boolean", "default": true}
+  ],
+  "calcs": [
+    {"name": "Region sales", "formula": "SUM(IIF([Region] = [Region pick], [Sales], 0))"},
+    {"name": "Shown sales", "formula": "IF [With East] THEN SUM([Sales]) ELSE SUM(IIF([Region] <> \"East\", [Sales], 0)) END"},
+    {"name": "Gap", "formula": "SUM([Profit]) / SUM([Sales]) - [Target]", "format": "percent"}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles",
+     "measures": [{"field": "Region sales", "label": "Picked region", "heading": "[Region pick] sales"}, {"field": "Shown sales"}, {"field": "Gap"}]},
+    {"name": "Bottom Bar", "type": "bar", "title": "Bottom [Top count] **products**", "dimension": "Product",
+     "measure": {"field": "Sales"}, "sort": "asc", "top": {"n": "Top count", "end": "bottom"}},
+    {"name": "Top Bar", "type": "bar", "title": "Top [Top count] **products**", "dimension": "Product",
+     "measure": {"field": "Sales"}, "sort": "desc", "top": {"n": 3}},
+    {"name": "Top Line", "type": "line", "title": "Top 3 **products** by month", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}, "color": "Product", "top": {"n": 3}},
+    {"name": "Top Table", "type": "table", "title": "Bottom 2 products by region", "rows": "Product", "cols": "Region",
+     "measure": {"field": "Sales"}, "top": {"n": 2, "end": "bottom"}},
+    {"name": "Top Heat", "type": "heatmap", "title": "Top 3 products by region", "rows": "Product", "cols": "Region",
+     "measure": {"field": "Sales"}, "top": {"n": 3}},
+    {"name": "Top Registry", "type": "registry", "title": "Bottom 3 products", "rows": ["Product"],
+     "top": {"n": 3, "end": "bottom"}, "columns": [{"measure": {"field": "Sales"}, "style": "text", "label": "Sales"}]}
+  ],
+  "dashboard": {"name": "Params v2", "title": "**Parameters** v2", "subtitle": "Top and Bottom N, ties, aliases",
+                "width": 1250, "height": 1000, "row_heights": [2, 4, 4],
+                "grid": [["KPI"], ["Bottom Bar", "Top Bar", "Top Line"], ["Top Table", "Top Heat", "Top Registry"]]}
+}

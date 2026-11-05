@@ -1,0 +1,31 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_products.csv"},
+  "parameters": [
+    {"name": "Metric", "type": "string", "values": ["Sales", "Profit", "Quantity"], "default": "Sales"},
+    {"name": "Period", "type": "string", "values": ["L3M", "L6M", "L9M", "All"], "default": "L6M",
+     "period": {"field": "Order Date"}},
+    {"name": "View", "type": "string", "values": ["Chart", "Table"], "default": "Chart", "control": "radio"}
+  ],
+  "calcs": [
+    {"name": "Metric value",
+     "formula": "CASE [Metric] WHEN \"Sales\" THEN SUM([Sales]) WHEN \"Profit\" THEN SUM([Profit]) WHEN \"Quantity\" THEN SUM([Quantity]) END"}
+  ],
+  "sheets": [
+    {"name": "Periods", "type": "buttons", "parameter": "Period"},
+    {"name": "Metrics", "type": "buttons", "parameter": "Metric", "arrange": "column", "title": "**Metric**",
+     "subtitle": "Click to switch"},
+    {"name": "Trend", "type": "line", "title": "[Metric] **by month**", "subtitle": "Period [Period]",
+     "date": {"field": "Order Date", "level": "month"}, "measure": {"field": "Metric value"}},
+    {"name": "Products", "type": "switch", "parameter": "View",
+     "views": {"Chart": "Products Chart", "Table": "Products Table"}},
+    {"name": "Products Chart", "type": "bar", "title": "[Metric] **by product**", "dimension": "Product",
+     "measure": {"field": "Metric value"}, "sort": "desc"},
+    {"name": "Products Table", "type": "table", "title": "[Metric] **by product and region**", "rows": "Product",
+     "cols": "Region", "measure": {"field": "Metric value"}}
+  ],
+  "dashboard": {"name": "Explorer", "title": "**Product** Explorer", "subtitle": "Sample data, 2025, 640 orders",
+                "width": 1400, "height": 1000, "row_heights": [2, 5, 8],
+                "grid": [["Periods"], ["Metrics", {"sheet": "Trend", "width": 4}], ["Products"]]}
+}

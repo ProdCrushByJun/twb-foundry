@@ -1,0 +1,34 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_dates_v2.csv"},
+  "calcs": [
+    {"name": "Ship Hours", "formula": "DATEDIFF('hour', [Ordered At], [Shipped At])"},
+    {"name": "Active Hours", "formula": "COUNTD(DATETRUNC('hour', [Ordered At]))"},
+    {"name": "Order Hour", "formula": "IIF(DATEPART('hour', [Ordered At]) < 10, \"0\", \"\") + STR(DATEPART('hour', [Ordered At])) + \":00\""},
+    {"name": "Paid Month", "formula": "STR(YEAR([Paid On])) + \"-\" + IIF(MONTH([Paid On]) < 10, \"0\", \"\") + STR(MONTH([Paid On]))"},
+    {"name": "Booked Month", "formula": "STR(YEAR([Booked On])) + \"-\" + IIF(MONTH([Booked On]) < 10, \"0\", \"\") + STR(MONTH([Booked On]))"}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales"}, {"field": "Units"}, {"field": "Ship Hours"},
+     {"field": "Active Hours"}]},
+    {"name": "Orders", "type": "line", "title": "Sales by **order month**", "date": {"field": "Ordered At", "level": "month"},
+     "measure": {"field": "Sales"}},
+    {"name": "Shipments", "type": "line", "title": "Sales by **ship week**", "date": {"field": "Shipped At", "level": "week"},
+     "measure": {"field": "Sales"}},
+    {"name": "Hours", "type": "table", "title": "Sales by **order hour**", "rows": "Order Hour", "cols": "Channel",
+     "measure": {"field": "Sales"}},
+    {"name": "Paid", "type": "table", "title": "Sales by **payment month**", "rows": "Paid Month", "cols": "Channel",
+     "measure": {"field": "Sales"}},
+    {"name": "Booked", "type": "table", "title": "Sales by **booking month**", "rows": "Booked Month", "cols": "Channel",
+     "measure": {"field": "Sales"}}
+  ],
+  "filters": [
+    {"field": "Ordered At", "show_on": "Orders", "mode": "range", "min": "2024-01-01 09:00", "max": "2024-12-31 18:00"},
+    {"field": "Shipped At", "show_on": "Shipments", "mode": "relative", "period": "month", "last": 12}
+  ],
+  "dashboard": {"name": "Dates v2", "title": "**Sales** by period (dates v2)",
+                "subtitle": "ISO with T, DD.MM.YYYY HH:MM, D.M.YYYY and D/M/YYYY in the CSV, read in ru_RU",
+                "width": 1400, "height": 1000, "row_heights": [1, 2, 4],
+                "grid": [["KPI"], ["Orders", "Shipments"], ["Hours", "Paid", "Booked"]]}
+}

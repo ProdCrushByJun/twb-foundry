@@ -1,0 +1,23 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "block_headers": false,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "calcs": [
+    {"name": "Category Sales", "formula": "{INCLUDE [Category] : SUM([Sales])}"},
+    {"name": "Max Category Sales", "formula": "MAX({INCLUDE [Category] : SUM([Sales])})"},
+    {"name": "Total excl Category", "formula": "{EXCLUDE [Category] : SUM([Sales])}"},
+    {"name": "Share in Region", "formula": "SUM([Sales]) / SUM({EXCLUDE [Category] : SUM([Sales])})", "format": "percent"}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [
+      {"field": "Max Category Sales", "label": "Best category"},
+      {"field": "Category Sales", "agg": "avg", "label": "Avg category"}]},
+    {"name": "Avg Category by Region", "type": "bar", "dimension": "Region", "measure": {"field": "Category Sales", "agg": "avg"}},
+    {"name": "Region Total Grid", "type": "table", "rows": "Region", "cols": "Category", "measure": {"field": "Total excl Category"}},
+    {"name": "Share Grid", "type": "heatmap", "rows": "Region", "cols": "Category", "measure": {"field": "Share in Region"}},
+    {"name": "Month Total", "type": "line", "date": {"field": "Order Date", "level": "month"}, "measure": {"field": "Total excl Category"}, "color": "Category"}
+  ],
+  "dashboard": {"theme": "flat", "name": "Include Exclude", "width": 1300, "height": 850, "row_heights": [1, 3, 3],
+                "grid": [["KPI"], ["Avg Category by Region", "Region Total Grid", "Share Grid"], ["Month Total"]]}
+}

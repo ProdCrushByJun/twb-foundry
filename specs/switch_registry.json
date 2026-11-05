@@ -1,0 +1,41 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasources": [
+    {"name": "orders", "type": "csv", "path": "../data/sample/sales.csv"},
+    {"name": "plan", "type": "csv", "path": "../data/sample/sales_plan.csv"}
+  ],
+  "parameters": [
+    {"name": "Breakdown", "type": "string", "values": ["By manager", "By region", "Chart"], "default": "By manager",
+     "control": "radio"}
+  ],
+  "calcs": [
+    {"name": "Attainment", "datasource": "plan", "formula": "SUM([Sales]) / SUM([Plan])", "format": "pct1"}
+  ],
+  "sheets": [
+    {"name": "Orders KPI", "type": "kpi", "style": "tiles",
+     "measures": [{"field": "Sales", "label": "Sales", "format": "number"},
+                  {"field": "Profit", "label": "Profit", "format": "number"}]},
+    {"name": "Plan", "type": "switch", "datasource": "plan", "parameter": "Breakdown",
+     "views": {"By manager": "Plan by Manager", "By region": "Plan by Region", "Chart": "Plan Chart"}},
+    {"name": "Plan by Manager", "type": "registry", "datasource": "plan", "title": "Plan **by manager**",
+     "subtitle": "Sales against plan, 2025", "rows": ["Manager"], "sort": "desc",
+     "header": {"color": "#0d3a6b"}, "bar_color": "#0d3a6b",
+     "columns": [
+       {"measure": {"field": "Sales", "format": "number"}, "style": "text", "label": "Sales"},
+       {"measure": {"field": "Plan", "format": "number"}, "style": "text", "label": "Plan"},
+       {"measure": {"field": "Attainment"}, "style": "bar_inside", "label": "Attainment"}
+     ]},
+    {"name": "Plan by Region", "type": "registry", "datasource": "plan", "title": "Plan **by region**",
+     "subtitle": "Sales against plan, 2025", "rows": ["Region"], "sort": "desc",
+     "columns": [
+       {"measure": {"field": "Sales", "format": "number"}, "style": "bar", "label": "Sales"},
+       {"measure": {"field": "Plan", "format": "number"}, "style": "text", "label": "Plan"}
+     ]},
+    {"name": "Plan Chart", "type": "bar", "datasource": "plan", "title": "Sales **by manager**",
+     "subtitle": "Sum of sales, 2025", "dimension": "Manager", "measure": {"field": "Sales"}, "sort": "desc"}
+  ],
+  "dashboard": {"name": "Plan Switch", "title": "**Plan** switch", "subtitle": "A switch of two registries and a bar",
+                "width": 1000, "height": 700, "row_heights": [2, 4],
+                "grid": [["Orders KPI"], ["Plan"]]}
+}

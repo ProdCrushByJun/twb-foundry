@@ -1,0 +1,21 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "sheets": [
+    {"name": "Monthly", "type": "kpi", "style": "cards", "title": "Latest **month**",
+     "date": {"field": "Order Date", "level": "month"}, "compare": "previous",
+     "measures": [{"field": "Sales", "format": "currency_k", "status": {"on": "value", "thresholds": [13000, 15000]}},
+                  {"field": "Profit", "status": {"on": "change", "thresholds": [-0.2, 0]}},
+                  {"field": "Quantity", "label": "Units", "good": "down",
+                   "status": {"on": "change", "thresholds": [0, 0.05]}}]},
+    {"name": "Yearly", "type": "kpi", "style": "cards", "title": "Same month, **last year**",
+     "date": {"field": "Order Date", "level": "month"}, "compare": "year", "arrange": "column",
+     "status_labels": ["Healthy", "Warning", "Critical"], "status_legend": "dashboard",
+     "measures": [{"field": "Sales", "format": "currency_k", "status": {"on": "change", "thresholds": [0]}},
+                  {"field": "Profit", "status": {"on": "value", "thresholds": [500, 1000]}}]}
+  ],
+  "dashboard": {"name": "KPI Status", "title": "**Sales** KPI", "subtitle": "Sample data, 2024-2025",
+                "theme": "cards", "width": 1250, "height": 900, "row_heights": [2, 3],
+                "grid": [["Monthly"], ["Yearly"]]}
+}

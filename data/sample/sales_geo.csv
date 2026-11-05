@@ -1,0 +1,601 @@
+Order Date,State,City,Latitude,Longitude,Ship Country,Sales,Profit
+2025-01-02,Georgia,Atlanta,33.749,-84.388,United States,97.38,-0.18
+2025-01-02,Texas,Houston,29.7604,-95.3698,Canada,350.0,-51.92
+2025-01-03,Texas,Houston,29.7604,-95.3698,United Kingdom,460.9,135.53
+2025-01-06,Ohio,Columbus,39.9612,-82.9988,United Kingdom,231.61,27.84
+2025-01-09,California,Los Angeles,34.0522,-118.2437,Germany,163.79,53.88
+2025-01-09,California,Los Angeles,34.0522,-118.2437,United States,53.16,6.53
+2025-01-09,Florida,Miami,25.7617,-80.1918,France,353.7,54.58
+2025-01-09,Georgia,Atlanta,33.749,-84.388,Brazil,586.27,188.73
+2025-01-09,New York,Buffalo,42.8864,-78.8784,Mexico,348.52,23.95
+2025-01-09,Texas,Houston,29.7604,-95.3698,United States,849.27,35.4
+2025-01-10,Washington,Seattle,47.6062,-122.3321,France,507.92,-47.27
+2025-01-11,Arizona,Phoenix,33.4484,-112.074,Mexico,260.1,-15.93
+2025-01-11,Illinois,Chicago,41.8781,-87.6298,Canada,503.57,-10.75
+2025-01-12,California,Los Angeles,34.0522,-118.2437,United Kingdom,504.95,90.57
+2025-01-12,California,Los Angeles,34.0522,-118.2437,United States,525.69,57.05
+2025-01-13,California,Los Angeles,34.0522,-118.2437,Brazil,301.09,-20.0
+2025-01-14,Arizona,Phoenix,33.4484,-112.074,United States,245.01,-22.46
+2025-01-14,California,Los Angeles,34.0522,-118.2437,United States,177.7,50.43
+2025-01-14,Georgia,Atlanta,33.749,-84.388,Brazil,242.27,-30.55
+2025-01-14,Texas,Houston,29.7604,-95.3698,United States,293.66,12.37
+2025-01-15,California,Los Angeles,34.0522,-118.2437,Germany,339.56,110.06
+2025-01-15,California,Los Angeles,34.0522,-118.2437,United States,626.43,-77.03
+2025-01-16,California,Los Angeles,34.0522,-118.2437,Mexico,726.11,-83.89
+2025-01-16,Florida,Miami,25.7617,-80.1918,United States,358.68,123.62
+2025-01-18,New York,Buffalo,42.8864,-78.8784,Germany,208.82,39.91
+2025-01-19,Arizona,Phoenix,33.4484,-112.074,United Kingdom,173.42,18.63
+2025-01-19,California,Los Angeles,34.0522,-118.2437,Mexico,580.4,-35.7
+2025-01-19,Florida,Miami,25.7617,-80.1918,Japan,151.5,2.22
+2025-01-19,Texas,Houston,29.7604,-95.3698,France,614.36,-37.38
+2025-01-20,California,Los Angeles,34.0522,-118.2437,Mexico,363.89,-33.74
+2025-01-20,Georgia,Atlanta,33.749,-84.388,Brazil,535.88,-25.96
+2025-01-20,Illinois,Chicago,41.8781,-87.6298,Germany,701.88,-99.77
+2025-01-21,Florida,Miami,25.7617,-80.1918,Brazil,683.14,9.86
+2025-01-21,New York,Buffalo,42.8864,-78.8784,United Kingdom,296.56,31.48
+2025-01-21,Ohio,Columbus,39.9612,-82.9988,United Kingdom,301.22,53.7
+2025-01-22,California,Los Angeles,34.0522,-118.2437,United Kingdom,651.58,-43.96
+2025-01-22,Florida,Miami,25.7617,-80.1918,United Kingdom,793.86,161.0
+2025-01-23,Texas,Houston,29.7604,-95.3698,France,474.45,78.05
+2025-01-24,California,Los Angeles,34.0522,-118.2437,United States,587.9,-80.04
+2025-01-25,California,Los Angeles,34.0522,-118.2437,Mexico,424.09,20.63
+2025-01-25,Colorado,Denver,39.7392,-104.9903,Brazil,606.37,-3.83
+2025-01-25,New York,Buffalo,42.8864,-78.8784,United States,628.54,218.81
+2025-01-26,Massachusetts,Boston,42.3601,-71.0589,Canada,813.69,204.03
+2025-01-27,California,Los Angeles,34.0522,-118.2437,United States,823.41,199.42
+2025-01-27,New York,Buffalo,42.8864,-78.8784,Canada,294.87,36.66
+2025-01-27,Texas,Houston,29.7604,-95.3698,Germany,290.25,15.92
+2025-01-27,Texas,Houston,29.7604,-95.3698,Germany,592.8,58.82
+2025-01-27,Washington,Seattle,47.6062,-122.3321,Canada,510.18,139.35
+2025-01-28,California,Los Angeles,34.0522,-118.2437,Brazil,232.38,-24.26
+2025-01-29,California,Los Angeles,34.0522,-118.2437,Brazil,302.56,-18.59
+2025-01-30,New York,Buffalo,42.8864,-78.8784,United Kingdom,805.77,35.85
+2025-01-31,Colorado,Denver,39.7392,-104.9903,Germany,270.16,60.68
+2025-01-31,Illinois,Chicago,41.8781,-87.6298,Japan,265.75,5.93
+2025-01-31,Texas,Houston,29.7604,-95.3698,United Kingdom,169.39,-19.7
+2025-02-01,Massachusetts,Boston,42.3601,-71.0589,Brazil,690.03,-24.6
+2025-02-02,California,Los Angeles,34.0522,-118.2437,France,289.11,52.34
+2025-02-03,Illinois,Chicago,41.8781,-87.6298,Japan,725.83,-31.65
+2025-02-03,Illinois,Chicago,41.8781,-87.6298,United States,497.5,23.46
+2025-02-04,Georgia,Atlanta,33.749,-84.388,United States,420.7,-7.98
+2025-02-04,Texas,Houston,29.7604,-95.3698,United States,290.31,-40.19
+2025-02-05,Georgia,Atlanta,33.749,-84.388,United States,525.62,29.31
+2025-02-05,Illinois,Chicago,41.8781,-87.6298,Mexico,760.9,154.4
+2025-02-05,Texas,Houston,29.7604,-95.3698,Brazil,874.92,37.69
+2025-02-06,New York,Buffalo,42.8864,-78.8784,United States,670.43,5.83
+2025-02-06,Texas,Houston,29.7604,-95.3698,Canada,78.99,20.94
+2025-02-06,Texas,Houston,29.7604,-95.3698,United States,247.86,7.5
+2025-02-07,Colorado,Denver,39.7392,-104.9903,Japan,289.44,-14.1
+2025-02-07,Florida,Miami,25.7617,-80.1918,Canada,227.25,9.54
+2025-02-07,Florida,Miami,25.7617,-80.1918,United States,294.45,41.77
+2025-02-07,Florida,Miami,25.7617,-80.1918,United States,660.55,111.43
+2025-02-08,Illinois,Chicago,41.8781,-87.6298,Japan,681.89,12.52
+2025-02-08,Texas,Houston,29.7604,-95.3698,France,606.0,155.83
+2025-02-08,Texas,Houston,29.7604,-95.3698,United States,835.82,-64.69
+2025-02-08,Washington,Seattle,47.6062,-122.3321,Canada,434.24,34.65
+2025-02-09,California,Los Angeles,34.0522,-118.2437,Brazil,625.33,198.71
+2025-02-09,Colorado,Denver,39.7392,-104.9903,Mexico,740.53,77.56
+2025-02-10,Massachusetts,Boston,42.3601,-71.0589,France,431.24,40.04
+2025-02-10,Texas,Houston,29.7604,-95.3698,Mexico,328.66,63.89
+2025-02-11,Texas,Houston,29.7604,-95.3698,United States,622.57,88.74
+2025-02-12,Florida,Miami,25.7617,-80.1918,France,562.78,-2.98
+2025-02-12,Georgia,Atlanta,33.749,-84.388,United States,364.36,48.06
+2025-02-13,California,Los Angeles,34.0522,-118.2437,Mexico,690.54,-101.88
+2025-02-13,Colorado,Denver,39.7392,-104.9903,United States,226.49,-25.39
+2025-02-14,California,Los Angeles,34.0522,-118.2437,France,885.42,154.74
+2025-02-14,California,Los Angeles,34.0522,-118.2437,United States,686.57,61.15
+2025-02-14,Colorado,Denver,39.7392,-104.9903,Germany,822.19,40.55
+2025-02-16,Arizona,Phoenix,33.4484,-112.074,Canada,718.95,150.86
+2025-02-16,California,Los Angeles,34.0522,-118.2437,Brazil,589.72,121.0
+2025-02-17,Florida,Miami,25.7617,-80.1918,United States,549.64,-70.01
+2025-02-17,Illinois,Chicago,41.8781,-87.6298,Germany,112.23,-2.48
+2025-02-17,Texas,Houston,29.7604,-95.3698,Canada,879.59,-47.42
+2025-02-17,Texas,Houston,29.7604,-95.3698,United States,647.67,31.73
+2025-02-18,Colorado,Denver,39.7392,-104.9903,United States,706.58,-23.15
+2025-02-19,Illinois,Chicago,41.8781,-87.6298,Canada,504.21,35.7
+2025-02-22,Washington,Seattle,47.6062,-122.3321,Brazil,762.86,-57.27
+2025-02-23,Florida,Miami,25.7617,-80.1918,United States,699.27,166.11
+2025-02-24,Illinois,Chicago,41.8781,-87.6298,Canada,713.45,96.49
+2025-02-25,Arizona,Phoenix,33.4484,-112.074,Germany,147.62,21.71
+2025-02-26,California,Los Angeles,34.0522,-118.2437,Canada,757.11,-61.9
+2025-02-26,Georgia,Atlanta,33.749,-84.388,Japan,67.46,-8.71
+2025-02-26,New York,Buffalo,42.8864,-78.8784,United States,521.3,176.87
+2025-02-27,Colorado,Denver,39.7392,-104.9903,Brazil,180.71,49.08
+2025-02-28,Florida,Miami,25.7617,-80.1918,Canada,41.37,12.49
+2025-02-28,New York,Buffalo,42.8864,-78.8784,Brazil,792.18,-4.93
+2025-02-28,Washington,Seattle,47.6062,-122.3321,United States,805.32,-1.27
+2025-03-01,Arizona,Phoenix,33.4484,-112.074,Japan,753.61,120.95
+2025-03-01,California,Los Angeles,34.0522,-118.2437,Germany,331.81,87.09
+2025-03-01,Illinois,Chicago,41.8781,-87.6298,Canada,717.74,105.06
+2025-03-02,Minnesota,Minneapolis,44.9778,-93.265,Canada,158.07,-9.22
+2025-03-02,Ohio,Columbus,39.9612,-82.9988,Canada,847.16,113.13
+2025-03-02,Texas,Houston,29.7604,-95.3698,Mexico,631.35,-56.53
+2025-03-03,Massachusetts,Boston,42.3601,-71.0589,Canada,59.74,2.01
+2025-03-03,New York,Buffalo,42.8864,-78.8784,United Kingdom,562.97,-50.92
+2025-03-03,Texas,Houston,29.7604,-95.3698,United States,230.41,-31.04
+2025-03-05,Arizona,Phoenix,33.4484,-112.074,Canada,421.55,133.82
+2025-03-05,Colorado,Denver,39.7392,-104.9903,United States,216.2,-6.91
+2025-03-05,Illinois,Chicago,41.8781,-87.6298,Japan,246.08,-33.94
+2025-03-06,Arizona,Phoenix,33.4484,-112.074,United States,806.62,142.22
+2025-03-06,Texas,Houston,29.7604,-95.3698,Mexico,825.42,-79.08
+2025-03-07,Texas,Houston,29.7604,-95.3698,United Kingdom,459.28,133.62
+2025-03-08,California,Los Angeles,34.0522,-118.2437,United States,484.33,-2.17
+2025-03-08,Texas,Houston,29.7604,-95.3698,United States,359.74,105.04
+2025-03-09,Florida,Miami,25.7617,-80.1918,Mexico,681.3,-90.59
+2025-03-11,California,Los Angeles,34.0522,-118.2437,Germany,454.97,-16.89
+2025-03-11,Ohio,Columbus,39.9612,-82.9988,France,418.45,-13.89
+2025-03-11,Texas,Houston,29.7604,-95.3698,France,761.97,94.74
+2025-03-12,Texas,Houston,29.7604,-95.3698,Brazil,283.06,-15.98
+2025-03-12,Washington,Seattle,47.6062,-122.3321,Canada,245.61,58.84
+2025-03-13,California,Los Angeles,34.0522,-118.2437,Germany,339.62,92.66
+2025-03-13,Georgia,Atlanta,33.749,-84.388,Brazil,519.98,-17.63
+2025-03-13,Washington,Seattle,47.6062,-122.3321,United States,237.02,48.48
+2025-03-14,Florida,Miami,25.7617,-80.1918,Brazil,622.46,-16.41
+2025-03-14,Illinois,Chicago,41.8781,-87.6298,Japan,492.25,23.83
+2025-03-15,Massachusetts,Boston,42.3601,-71.0589,Japan,742.47,-82.83
+2025-03-15,Ohio,Columbus,39.9612,-82.9988,Brazil,801.82,72.18
+2025-03-15,Texas,Houston,29.7604,-95.3698,Japan,164.63,51.65
+2025-03-15,Texas,Houston,29.7604,-95.3698,United States,704.12,224.82
+2025-03-16,Arizona,Phoenix,33.4484,-112.074,United States,740.15,130.49
+2025-03-16,New York,Buffalo,42.8864,-78.8784,Australia,626.87,148.13
+2025-03-17,California,Los Angeles,34.0522,-118.2437,Canada,328.1,-12.93
+2025-03-17,Texas,Houston,29.7604,-95.3698,United Kingdom,24.58,4.63
+2025-03-18,California,Los Angeles,34.0522,-118.2437,Canada,141.2,-4.26
+2025-03-18,Colorado,Denver,39.7392,-104.9903,Brazil,134.11,31.68
+2025-03-18,Colorado,Denver,39.7392,-104.9903,Japan,501.15,1.22
+2025-03-18,New York,Buffalo,42.8864,-78.8784,United States,159.32,-21.93
+2025-03-19,California,Los Angeles,34.0522,-118.2437,Germany,754.42,124.37
+2025-03-19,California,Los Angeles,34.0522,-118.2437,Mexico,868.68,12.56
+2025-03-20,California,Los Angeles,34.0522,-118.2437,United States,825.28,66.5
+2025-03-20,Illinois,Chicago,41.8781,-87.6298,Canada,457.46,-37.85
+2025-03-20,New York,Buffalo,42.8864,-78.8784,Mexico,363.4,97.28
+2025-03-21,Florida,Miami,25.7617,-80.1918,United States,228.29,-19.9
+2025-03-21,Illinois,Chicago,41.8781,-87.6298,United States,320.44,65.43
+2025-03-21,Massachusetts,Boston,42.3601,-71.0589,Canada,693.69,-15.6
+2025-03-22,California,Los Angeles,34.0522,-118.2437,Germany,115.87,-13.21
+2025-03-22,Georgia,Atlanta,33.749,-84.388,Brazil,269.52,92.63
+2025-03-22,Massachusetts,Boston,42.3601,-71.0589,France,660.44,-29.65
+2025-03-23,Florida,Miami,25.7617,-80.1918,Canada,321.78,-25.57
+2025-03-23,Massachusetts,Boston,42.3601,-71.0589,Canada,694.74,17.9
+2025-03-23,New York,Buffalo,42.8864,-78.8784,United States,235.3,71.37
+2025-03-25,New York,Buffalo,42.8864,-78.8784,United States,850.47,45.03
+2025-03-25,Texas,Houston,29.7604,-95.3698,United States,139.73,37.92
+2025-03-26,Illinois,Chicago,41.8781,-87.6298,Japan,882.94,-131.63
+2025-03-26,New York,Buffalo,42.8864,-78.8784,Mexico,844.22,218.1
+2025-03-27,Florida,Miami,25.7617,-80.1918,Canada,781.68,-18.9
+2025-03-27,Massachusetts,Boston,42.3601,-71.0589,United Kingdom,384.8,-31.26
+2025-03-27,New York,Buffalo,42.8864,-78.8784,United Kingdom,381.57,-6.08
+2025-03-28,New York,Buffalo,42.8864,-78.8784,Japan,45.19,-1.16
+2025-03-29,California,Los Angeles,34.0522,-118.2437,United States,527.5,54.89
+2025-03-30,Florida,Miami,25.7617,-80.1918,United States,885.45,205.29
+2025-03-30,Ohio,Columbus,39.9612,-82.9988,United Kingdom,711.02,-48.01
+2025-03-31,California,Los Angeles,34.0522,-118.2437,United Kingdom,457.45,130.46
+2025-03-31,California,Los Angeles,34.0522,-118.2437,United States,482.03,19.44
+2025-03-31,Texas,Houston,29.7604,-95.3698,United States,378.4,36.17
+2025-04-01,California,Los Angeles,34.0522,-118.2437,Brazil,737.82,172.33
+2025-04-01,Washington,Seattle,47.6062,-122.3321,United Kingdom,377.37,52.12
+2025-04-02,Georgia,Atlanta,33.749,-84.388,Japan,77.81,-10.76
+2025-04-02,New York,Buffalo,42.8864,-78.8784,Canada,869.47,116.69
+2025-04-03,California,Los Angeles,34.0522,-118.2437,United States,396.63,1.49
+2025-04-03,Illinois,Chicago,41.8781,-87.6298,Brazil,444.06,-21.77
+2025-04-03,Illinois,Chicago,41.8781,-87.6298,Brazil,486.57,137.84
+2025-04-03,Washington,Seattle,47.6062,-122.3321,United States,728.24,43.48
+2025-04-03,Washington,Seattle,47.6062,-122.3321,United States,889.63,-44.5
+2025-04-04,California,Los Angeles,34.0522,-118.2437,United Kingdom,548.88,-35.93
+2025-04-04,California,Los Angeles,34.0522,-118.2437,United States,773.19,-32.53
+2025-04-05,Florida,Miami,25.7617,-80.1918,United States,408.32,28.3
+2025-04-05,Massachusetts,Boston,42.3601,-71.0589,United Kingdom,720.27,-67.16
+2025-04-05,New York,Buffalo,42.8864,-78.8784,United Kingdom,627.69,6.47
+2025-04-07,California,Los Angeles,34.0522,-118.2437,United States,574.39,-83.01
+2025-04-08,California,Los Angeles,34.0522,-118.2437,Canada,221.02,-16.12
+2025-04-08,Massachusetts,Boston,42.3601,-71.0589,United States,110.96,-15.14
+2025-04-08,Texas,Houston,29.7604,-95.3698,United Kingdom,344.63,50.66
+2025-04-09,Illinois,Chicago,41.8781,-87.6298,Brazil,370.79,48.7
+2025-04-09,Massachusetts,Boston,42.3601,-71.0589,Australia,831.86,123.06
+2025-04-09,Massachusetts,Boston,42.3601,-71.0589,Brazil,695.37,229.21
+2025-04-09,Minnesota,Minneapolis,44.9778,-93.265,Germany,158.0,35.63
+2025-04-09,Ohio,Columbus,39.9612,-82.9988,Brazil,35.35,4.83
+2025-04-10,Florida,Miami,25.7617,-80.1918,Japan,560.46,16.3
+2025-04-10,Illinois,Chicago,41.8781,-87.6298,United Kingdom,145.42,-5.96
+2025-04-11,Georgia,Atlanta,33.749,-84.388,Canada,587.52,167.23
+2025-04-11,New York,Buffalo,42.8864,-78.8784,Germany,253.33,85.97
+2025-04-12,California,Los Angeles,34.0522,-118.2437,Canada,42.97,9.96
+2025-04-12,California,Los Angeles,34.0522,-118.2437,Canada,141.18,42.07
+2025-04-15,Florida,Miami,25.7617,-80.1918,Mexico,847.86,-0.98
+2025-04-15,Illinois,Chicago,41.8781,-87.6298,France,52.9,11.96
+2025-04-16,Georgia,Atlanta,33.749,-84.388,United States,275.27,7.04
+2025-04-19,Colorado,Denver,39.7392,-104.9903,Canada,802.99,-9.38
+2025-04-19,Illinois,Chicago,41.8781,-87.6298,United States,85.49,27.6
+2025-04-20,Georgia,Atlanta,33.749,-84.388,Germany,826.11,-0.38
+2025-04-21,Florida,Miami,25.7617,-80.1918,Germany,889.17,-41.59
+2025-04-21,Massachusetts,Boston,42.3601,-71.0589,Canada,767.91,-98.7
+2025-04-22,New York,Buffalo,42.8864,-78.8784,Germany,271.82,82.46
+2025-04-23,New York,Buffalo,42.8864,-78.8784,United States,822.82,-58.85
+2025-04-24,Massachusetts,Boston,42.3601,-71.0589,United States,670.93,7.74
+2025-04-25,Massachusetts,Boston,42.3601,-71.0589,United States,254.79,-12.73
+2025-04-25,Washington,Seattle,47.6062,-122.3321,France,714.47,109.47
+2025-04-26,Washington,Seattle,47.6062,-122.3321,United States,790.92,208.51
+2025-04-27,Minnesota,Minneapolis,44.9778,-93.265,Brazil,223.06,38.72
+2025-04-28,Georgia,Atlanta,33.749,-84.388,United States,858.58,254.38
+2025-04-28,Massachusetts,Boston,42.3601,-71.0589,Canada,537.99,89.99
+2025-04-29,Arizona,Phoenix,33.4484,-112.074,United States,395.91,-12.65
+2025-04-29,New York,Buffalo,42.8864,-78.8784,Germany,89.8,13.69
+2025-04-30,Florida,Miami,25.7617,-80.1918,Brazil,137.43,36.32
+2025-04-30,Florida,Miami,25.7617,-80.1918,United States,718.38,109.89
+2025-04-30,Massachusetts,Boston,42.3601,-71.0589,Germany,240.86,42.87
+2025-04-30,New York,Buffalo,42.8864,-78.8784,United States,511.1,150.22
+2025-05-04,California,Los Angeles,34.0522,-118.2437,United States,342.5,109.06
+2025-05-04,Georgia,Atlanta,33.749,-84.388,United States,807.3,154.28
+2025-05-04,Illinois,Chicago,41.8781,-87.6298,United Kingdom,145.21,41.39
+2025-05-05,California,Los Angeles,34.0522,-118.2437,United States,353.81,54.84
+2025-05-05,Massachusetts,Boston,42.3601,-71.0589,Canada,687.13,87.36
+2025-05-05,New York,Buffalo,42.8864,-78.8784,United Kingdom,258.32,46.52
+2025-05-05,Washington,Seattle,47.6062,-122.3321,Brazil,153.54,1.09
+2025-05-06,Illinois,Chicago,41.8781,-87.6298,Canada,819.9,190.65
+2025-05-07,Colorado,Denver,39.7392,-104.9903,Germany,811.09,259.83
+2025-05-07,Texas,Houston,29.7604,-95.3698,Canada,878.89,-120.17
+2025-05-08,Georgia,Atlanta,33.749,-84.388,United States,121.06,42.01
+2025-05-09,California,Los Angeles,34.0522,-118.2437,United States,245.97,-8.41
+2025-05-09,Florida,Miami,25.7617,-80.1918,Canada,163.89,30.53
+2025-05-10,Texas,Houston,29.7604,-95.3698,United Kingdom,265.52,3.75
+2025-05-11,Florida,Miami,25.7617,-80.1918,United States,753.72,103.77
+2025-05-11,Washington,Seattle,47.6062,-122.3321,Germany,715.86,19.03
+2025-05-13,New York,Buffalo,42.8864,-78.8784,Canada,371.14,28.42
+2025-05-16,California,Los Angeles,34.0522,-118.2437,United States,28.06,4.14
+2025-05-16,Colorado,Denver,39.7392,-104.9903,Canada,899.73,-0.4
+2025-05-16,Illinois,Chicago,41.8781,-87.6298,Mexico,156.1,53.65
+2025-05-16,Massachusetts,Boston,42.3601,-71.0589,Canada,315.14,27.63
+2025-05-16,Washington,Seattle,47.6062,-122.3321,United States,353.06,88.56
+2025-05-18,California,Los Angeles,34.0522,-118.2437,France,868.11,67.44
+2025-05-18,Massachusetts,Boston,42.3601,-71.0589,United States,529.15,-34.54
+2025-05-18,New York,Buffalo,42.8864,-78.8784,France,202.44,-24.4
+2025-05-20,Florida,Miami,25.7617,-80.1918,Germany,881.44,-8.39
+2025-05-20,Georgia,Atlanta,33.749,-84.388,United Kingdom,892.34,126.4
+2025-05-22,California,Los Angeles,34.0522,-118.2437,Brazil,683.99,172.24
+2025-05-22,California,Los Angeles,34.0522,-118.2437,Germany,488.1,23.96
+2025-05-22,Texas,Houston,29.7604,-95.3698,United States,537.91,68.92
+2025-05-23,California,Los Angeles,34.0522,-118.2437,Canada,504.23,59.25
+2025-05-25,California,Los Angeles,34.0522,-118.2437,Brazil,97.04,-10.08
+2025-05-25,Florida,Miami,25.7617,-80.1918,United States,858.91,237.06
+2025-05-25,Georgia,Atlanta,33.749,-84.388,United States,343.7,55.22
+2025-05-26,Washington,Seattle,47.6062,-122.3321,Germany,296.45,75.85
+2025-05-27,New York,Buffalo,42.8864,-78.8784,United States,690.8,56.46
+2025-05-28,Georgia,Atlanta,33.749,-84.388,Canada,576.52,169.43
+2025-05-28,Illinois,Chicago,41.8781,-87.6298,Brazil,482.17,-40.45
+2025-05-29,Minnesota,Minneapolis,44.9778,-93.265,Brazil,856.45,247.66
+2025-05-30,Georgia,Atlanta,33.749,-84.388,United Kingdom,33.27,6.67
+2025-06-01,Illinois,Chicago,41.8781,-87.6298,Germany,34.08,-2.24
+2025-06-02,California,Los Angeles,34.0522,-118.2437,Brazil,779.96,125.02
+2025-06-04,Florida,Miami,25.7617,-80.1918,Japan,122.1,29.58
+2025-06-04,Georgia,Atlanta,33.749,-84.388,Canada,97.53,26.7
+2025-06-05,Florida,Miami,25.7617,-80.1918,United Kingdom,178.96,52.13
+2025-06-06,Texas,Houston,29.7604,-95.3698,United Kingdom,854.43,290.32
+2025-06-07,Massachusetts,Boston,42.3601,-71.0589,Germany,662.19,40.64
+2025-06-08,Massachusetts,Boston,42.3601,-71.0589,Japan,752.84,-110.21
+2025-06-08,Texas,Houston,29.7604,-95.3698,Canada,545.94,-19.33
+2025-06-11,Illinois,Chicago,41.8781,-87.6298,Japan,469.41,-57.03
+2025-06-12,Florida,Miami,25.7617,-80.1918,United States,32.55,6.47
+2025-06-13,California,Los Angeles,34.0522,-118.2437,Australia,352.31,-4.04
+2025-06-14,Illinois,Chicago,41.8781,-87.6298,United States,683.98,161.47
+2025-06-14,Ohio,Columbus,39.9612,-82.9988,United States,135.51,11.8
+2025-06-14,Texas,Houston,29.7604,-95.3698,Germany,816.25,280.07
+2025-06-16,California,Los Angeles,34.0522,-118.2437,United States,294.82,76.02
+2025-06-16,Georgia,Atlanta,33.749,-84.388,United States,343.33,11.53
+2025-06-16,Illinois,Chicago,41.8781,-87.6298,Canada,874.07,244.59
+2025-06-17,Texas,Houston,29.7604,-95.3698,Mexico,362.55,-21.52
+2025-06-18,Massachusetts,Boston,42.3601,-71.0589,United States,701.86,97.25
+2025-06-18,New York,Buffalo,42.8864,-78.8784,United States,113.22,23.26
+2025-06-18,Ohio,Columbus,39.9612,-82.9988,United States,512.06,152.46
+2025-06-19,Arizona,Phoenix,33.4484,-112.074,United States,890.39,-60.97
+2025-06-19,Colorado,Denver,39.7392,-104.9903,Japan,721.5,-3.35
+2025-06-19,Georgia,Atlanta,33.749,-84.388,Canada,150.52,0.0
+2025-06-19,Texas,Houston,29.7604,-95.3698,Germany,573.69,141.89
+2025-06-20,Arizona,Phoenix,33.4484,-112.074,Brazil,110.14,26.77
+2025-06-21,California,Los Angeles,34.0522,-118.2437,France,358.29,71.77
+2025-06-21,Colorado,Denver,39.7392,-104.9903,United States,237.22,9.42
+2025-06-21,Florida,Miami,25.7617,-80.1918,United States,178.9,11.91
+2025-06-21,New York,Buffalo,42.8864,-78.8784,United States,199.67,66.9
+2025-06-22,Washington,Seattle,47.6062,-122.3321,United Kingdom,400.74,41.39
+2025-06-23,California,Los Angeles,34.0522,-118.2437,Canada,618.76,123.71
+2025-06-23,Ohio,Columbus,39.9612,-82.9988,United States,483.59,153.21
+2025-06-24,California,Los Angeles,34.0522,-118.2437,Germany,216.79,-1.02
+2025-06-25,Florida,Miami,25.7617,-80.1918,United States,274.55,24.92
+2025-06-25,New York,Buffalo,42.8864,-78.8784,United States,73.6,10.51
+2025-06-25,Texas,Houston,29.7604,-95.3698,Germany,614.85,-47.58
+2025-06-26,Georgia,Atlanta,33.749,-84.388,Australia,235.12,18.2
+2025-06-26,New York,Buffalo,42.8864,-78.8784,Germany,636.04,-89.87
+2025-06-28,Texas,Houston,29.7604,-95.3698,Canada,168.5,29.49
+2025-06-29,Georgia,Atlanta,33.749,-84.388,Japan,797.64,72.75
+2025-06-29,Massachusetts,Boston,42.3601,-71.0589,United States,350.8,-16.55
+2025-06-29,New York,Buffalo,42.8864,-78.8784,United States,712.73,117.86
+2025-06-29,Ohio,Columbus,39.9612,-82.9988,United States,899.03,24.65
+2025-06-30,Florida,Miami,25.7617,-80.1918,France,80.01,-0.87
+2025-06-30,Illinois,Chicago,41.8781,-87.6298,United States,436.71,-54.45
+2025-06-30,Texas,Houston,29.7604,-95.3698,United States,676.35,218.41
+2025-07-01,California,Los Angeles,34.0522,-118.2437,United States,316.71,92.05
+2025-07-01,Georgia,Atlanta,33.749,-84.388,United States,113.87,32.83
+2025-07-01,New York,Buffalo,42.8864,-78.8784,Brazil,382.11,122.01
+2025-07-02,Arizona,Phoenix,33.4484,-112.074,Canada,21.35,1.32
+2025-07-03,Texas,Houston,29.7604,-95.3698,Germany,311.82,45.4
+2025-07-04,California,Los Angeles,34.0522,-118.2437,Canada,554.87,169.49
+2025-07-04,California,Los Angeles,34.0522,-118.2437,United States,397.63,123.74
+2025-07-05,Florida,Miami,25.7617,-80.1918,Mexico,179.15,11.48
+2025-07-05,Florida,Miami,25.7617,-80.1918,United States,470.66,65.59
+2025-07-05,Massachusetts,Boston,42.3601,-71.0589,Australia,694.01,-62.5
+2025-07-06,Ohio,Columbus,39.9612,-82.9988,United States,383.83,119.95
+2025-07-06,Texas,Houston,29.7604,-95.3698,Mexico,627.15,108.07
+2025-07-07,California,Los Angeles,34.0522,-118.2437,United Kingdom,432.62,99.55
+2025-07-07,Georgia,Atlanta,33.749,-84.388,Brazil,477.25,158.26
+2025-07-07,New York,Buffalo,42.8864,-78.8784,Canada,477.1,43.04
+2025-07-07,Texas,Houston,29.7604,-95.3698,France,555.5,191.42
+2025-07-08,California,Los Angeles,34.0522,-118.2437,Canada,561.25,132.59
+2025-07-08,Illinois,Chicago,41.8781,-87.6298,United Kingdom,662.89,-28.86
+2025-07-09,New York,Buffalo,42.8864,-78.8784,United States,506.31,58.08
+2025-07-11,Ohio,Columbus,39.9612,-82.9988,Mexico,77.7,26.82
+2025-07-13,Massachusetts,Boston,42.3601,-71.0589,United Kingdom,235.62,34.75
+2025-07-13,New York,Buffalo,42.8864,-78.8784,United States,560.84,54.4
+2025-07-14,Georgia,Atlanta,33.749,-84.388,United Kingdom,354.23,-45.87
+2025-07-14,Texas,Houston,29.7604,-95.3698,Japan,790.59,198.54
+2025-07-14,Washington,Seattle,47.6062,-122.3321,United States,810.57,-96.66
+2025-07-16,Illinois,Chicago,41.8781,-87.6298,Canada,377.29,0.33
+2025-07-17,Florida,Miami,25.7617,-80.1918,Japan,98.83,7.64
+2025-07-17,New York,Buffalo,42.8864,-78.8784,Brazil,80.68,-7.1
+2025-07-17,Texas,Houston,29.7604,-95.3698,Mexico,207.39,57.65
+2025-07-18,Florida,Miami,25.7617,-80.1918,Canada,579.9,189.12
+2025-07-18,Washington,Seattle,47.6062,-122.3321,Germany,680.52,185.59
+2025-07-19,Colorado,Denver,39.7392,-104.9903,Germany,279.76,8.05
+2025-07-19,Illinois,Chicago,41.8781,-87.6298,United States,806.7,-14.42
+2025-07-19,New York,Buffalo,42.8864,-78.8784,United States,69.06,20.9
+2025-07-20,Minnesota,Minneapolis,44.9778,-93.265,Germany,317.04,-25.18
+2025-07-21,California,Los Angeles,34.0522,-118.2437,United Kingdom,850.36,164.77
+2025-07-21,Massachusetts,Boston,42.3601,-71.0589,United States,275.8,33.7
+2025-07-22,Florida,Miami,25.7617,-80.1918,France,648.16,118.07
+2025-07-22,New York,Buffalo,42.8864,-78.8784,United Kingdom,878.16,-52.36
+2025-07-22,Ohio,Columbus,39.9612,-82.9988,Germany,371.26,40.96
+2025-07-23,California,Los Angeles,34.0522,-118.2437,United Kingdom,668.79,-70.85
+2025-07-23,Florida,Miami,25.7617,-80.1918,United States,107.22,-0.77
+2025-07-23,Texas,Houston,29.7604,-95.3698,United Kingdom,211.22,68.38
+2025-07-24,Illinois,Chicago,41.8781,-87.6298,United States,578.61,7.44
+2025-07-25,Ohio,Columbus,39.9612,-82.9988,Japan,871.85,294.27
+2025-07-26,California,Los Angeles,34.0522,-118.2437,United States,394.63,88.52
+2025-07-26,California,Los Angeles,34.0522,-118.2437,United States,617.63,96.86
+2025-07-27,Ohio,Columbus,39.9612,-82.9988,United Kingdom,106.82,-6.13
+2025-07-28,California,Los Angeles,34.0522,-118.2437,Brazil,608.32,85.61
+2025-07-28,Florida,Miami,25.7617,-80.1918,United States,639.48,137.8
+2025-07-29,California,Los Angeles,34.0522,-118.2437,Mexico,572.27,90.53
+2025-07-29,Colorado,Denver,39.7392,-104.9903,United States,46.01,15.26
+2025-07-29,New York,Buffalo,42.8864,-78.8784,Canada,399.79,79.72
+2025-07-31,Massachusetts,Boston,42.3601,-71.0589,Mexico,743.35,89.99
+2025-07-31,New York,Buffalo,42.8864,-78.8784,France,320.69,-25.93
+2025-08-01,Florida,Miami,25.7617,-80.1918,United Kingdom,568.51,51.46
+2025-08-02,Massachusetts,Boston,42.3601,-71.0589,France,468.82,-0.35
+2025-08-03,Florida,Miami,25.7617,-80.1918,United Kingdom,534.21,59.17
+2025-08-04,Arizona,Phoenix,33.4484,-112.074,United States,612.26,109.03
+2025-08-04,Washington,Seattle,47.6062,-122.3321,Canada,520.77,171.93
+2025-08-06,California,Los Angeles,34.0522,-118.2437,Australia,536.36,2.93
+2025-08-06,Colorado,Denver,39.7392,-104.9903,United Kingdom,839.08,71.73
+2025-08-06,Texas,Houston,29.7604,-95.3698,United States,388.64,119.96
+2025-08-07,Massachusetts,Boston,42.3601,-71.0589,Canada,219.36,-18.62
+2025-08-08,Massachusetts,Boston,42.3601,-71.0589,United States,164.85,-19.13
+2025-08-09,Georgia,Atlanta,33.749,-84.388,United States,347.61,93.94
+2025-08-09,Texas,Houston,29.7604,-95.3698,United States,62.15,15.09
+2025-08-10,Florida,Miami,25.7617,-80.1918,United States,822.63,-31.9
+2025-08-12,California,Los Angeles,34.0522,-118.2437,France,23.25,6.6
+2025-08-12,California,Los Angeles,34.0522,-118.2437,Germany,278.41,34.49
+2025-08-12,California,Los Angeles,34.0522,-118.2437,United States,206.25,69.54
+2025-08-12,New York,Buffalo,42.8864,-78.8784,Germany,537.86,127.78
+2025-08-14,California,Los Angeles,34.0522,-118.2437,United States,619.96,154.09
+2025-08-15,California,Los Angeles,34.0522,-118.2437,United States,226.62,63.03
+2025-08-16,Texas,Houston,29.7604,-95.3698,United States,804.31,139.25
+2025-08-17,Illinois,Chicago,41.8781,-87.6298,Germany,535.13,57.04
+2025-08-18,Minnesota,Minneapolis,44.9778,-93.265,Germany,692.4,-102.25
+2025-08-19,Washington,Seattle,47.6062,-122.3321,Japan,296.93,62.07
+2025-08-20,Washington,Seattle,47.6062,-122.3321,Canada,822.09,-25.16
+2025-08-22,Illinois,Chicago,41.8781,-87.6298,Mexico,390.39,96.39
+2025-08-23,Florida,Miami,25.7617,-80.1918,United States,428.43,112.46
+2025-08-23,Massachusetts,Boston,42.3601,-71.0589,United Kingdom,358.91,81.25
+2025-08-24,Washington,Seattle,47.6062,-122.3321,United States,336.93,93.58
+2025-08-25,California,Los Angeles,34.0522,-118.2437,United Kingdom,673.03,33.09
+2025-08-26,Texas,Houston,29.7604,-95.3698,Australia,305.32,49.44
+2025-08-27,Georgia,Atlanta,33.749,-84.388,Brazil,788.07,-85.41
+2025-08-27,New York,Buffalo,42.8864,-78.8784,Canada,557.48,-0.55
+2025-08-28,Colorado,Denver,39.7392,-104.9903,United States,207.35,24.87
+2025-08-29,Florida,Miami,25.7617,-80.1918,Germany,714.63,141.42
+2025-08-29,Florida,Miami,25.7617,-80.1918,United States,760.03,45.03
+2025-08-30,Ohio,Columbus,39.9612,-82.9988,Germany,893.51,148.21
+2025-08-31,Illinois,Chicago,41.8781,-87.6298,Japan,531.0,150.62
+2025-08-31,Ohio,Columbus,39.9612,-82.9988,Brazil,435.25,138.06
+2025-08-31,Texas,Houston,29.7604,-95.3698,United States,767.93,99.27
+2025-09-01,California,Los Angeles,34.0522,-118.2437,Brazil,482.61,20.25
+2025-09-01,Texas,Houston,29.7604,-95.3698,Japan,892.81,48.64
+2025-09-03,California,Los Angeles,34.0522,-118.2437,Canada,88.03,7.05
+2025-09-03,Florida,Miami,25.7617,-80.1918,Canada,302.5,-22.8
+2025-09-05,California,Los Angeles,34.0522,-118.2437,Japan,410.32,-7.93
+2025-09-06,Washington,Seattle,47.6062,-122.3321,Canada,692.18,204.28
+2025-09-07,California,Los Angeles,34.0522,-118.2437,Brazil,380.01,-31.32
+2025-09-08,California,Los Angeles,34.0522,-118.2437,United States,40.58,-0.83
+2025-09-09,Massachusetts,Boston,42.3601,-71.0589,Canada,126.49,-8.58
+2025-09-09,Massachusetts,Boston,42.3601,-71.0589,United Kingdom,884.66,137.66
+2025-09-10,California,Los Angeles,34.0522,-118.2437,United States,478.02,-41.06
+2025-09-10,Minnesota,Minneapolis,44.9778,-93.265,United States,647.13,57.47
+2025-09-11,Massachusetts,Boston,42.3601,-71.0589,United States,225.02,-14.0
+2025-09-11,New York,Buffalo,42.8864,-78.8784,United States,891.39,150.91
+2025-09-12,California,Los Angeles,34.0522,-118.2437,United States,291.19,-20.31
+2025-09-12,Washington,Seattle,47.6062,-122.3321,United States,487.03,-7.13
+2025-09-13,Georgia,Atlanta,33.749,-84.388,United States,494.78,147.8
+2025-09-14,New York,Buffalo,42.8864,-78.8784,Germany,709.43,-26.79
+2025-09-14,Texas,Houston,29.7604,-95.3698,Mexico,835.51,77.82
+2025-09-15,Georgia,Atlanta,33.749,-84.388,Mexico,474.63,9.24
+2025-09-17,Illinois,Chicago,41.8781,-87.6298,United Kingdom,752.76,-93.0
+2025-09-17,New York,Buffalo,42.8864,-78.8784,United Kingdom,789.59,41.22
+2025-09-18,California,Los Angeles,34.0522,-118.2437,Germany,435.78,2.7
+2025-09-18,Georgia,Atlanta,33.749,-84.388,Canada,101.13,-9.9
+2025-09-18,Georgia,Atlanta,33.749,-84.388,Germany,743.23,207.46
+2025-09-18,Texas,Houston,29.7604,-95.3698,Japan,256.69,26.13
+2025-09-19,Florida,Miami,25.7617,-80.1918,Japan,681.32,39.14
+2025-09-19,Massachusetts,Boston,42.3601,-71.0589,France,763.79,64.05
+2025-09-19,Ohio,Columbus,39.9612,-82.9988,Japan,126.97,24.03
+2025-09-19,Texas,Houston,29.7604,-95.3698,United Kingdom,74.19,-8.95
+2025-09-19,Washington,Seattle,47.6062,-122.3321,United States,769.64,185.47
+2025-09-20,California,Los Angeles,34.0522,-118.2437,Canada,26.58,-2.56
+2025-09-20,Illinois,Chicago,41.8781,-87.6298,United States,145.95,21.89
+2025-09-20,Texas,Houston,29.7604,-95.3698,France,189.04,45.36
+2025-09-21,Georgia,Atlanta,33.749,-84.388,United States,637.06,13.91
+2025-09-22,California,Los Angeles,34.0522,-118.2437,France,847.32,108.42
+2025-09-23,California,Los Angeles,34.0522,-118.2437,United Kingdom,113.61,-14.79
+2025-09-23,California,Los Angeles,34.0522,-118.2437,United States,137.71,-15.2
+2025-09-23,New York,Buffalo,42.8864,-78.8784,United Kingdom,792.22,-112.53
+2025-09-24,California,Los Angeles,34.0522,-118.2437,Brazil,150.35,27.96
+2025-09-25,Ohio,Columbus,39.9612,-82.9988,Brazil,335.84,-16.01
+2025-09-26,Colorado,Denver,39.7392,-104.9903,United Kingdom,679.46,64.47
+2025-09-26,Florida,Miami,25.7617,-80.1918,United States,509.01,79.31
+2025-09-26,New York,Buffalo,42.8864,-78.8784,United States,812.04,231.82
+2025-09-26,Texas,Houston,29.7604,-95.3698,Mexico,812.18,-15.12
+2025-09-28,Arizona,Phoenix,33.4484,-112.074,France,455.07,-28.69
+2025-09-28,Washington,Seattle,47.6062,-122.3321,Germany,129.79,-5.94
+2025-09-30,Massachusetts,Boston,42.3601,-71.0589,Canada,797.97,186.33
+2025-10-02,California,Los Angeles,34.0522,-118.2437,United States,312.93,53.69
+2025-10-03,Arizona,Phoenix,33.4484,-112.074,Mexico,618.49,6.74
+2025-10-03,Washington,Seattle,47.6062,-122.3321,United States,322.8,36.83
+2025-10-05,Florida,Miami,25.7617,-80.1918,Germany,877.03,31.43
+2025-10-05,Massachusetts,Boston,42.3601,-71.0589,United States,792.87,-19.35
+2025-10-05,New York,Buffalo,42.8864,-78.8784,United States,689.08,165.57
+2025-10-06,California,Los Angeles,34.0522,-118.2437,United States,639.61,58.81
+2025-10-06,Illinois,Chicago,41.8781,-87.6298,Canada,746.61,167.06
+2025-10-07,California,Los Angeles,34.0522,-118.2437,United States,248.41,-7.65
+2025-10-07,New York,Buffalo,42.8864,-78.8784,United States,132.9,17.83
+2025-10-08,California,Los Angeles,34.0522,-118.2437,Canada,525.73,163.16
+2025-10-08,Colorado,Denver,39.7392,-104.9903,United States,810.46,103.84
+2025-10-08,Texas,Houston,29.7604,-95.3698,Germany,301.01,91.1
+2025-10-10,Florida,Miami,25.7617,-80.1918,United States,692.27,164.05
+2025-10-12,Ohio,Columbus,39.9612,-82.9988,Mexico,372.15,-17.03
+2025-10-12,Texas,Houston,29.7604,-95.3698,Canada,289.58,-36.66
+2025-10-13,Massachusetts,Boston,42.3601,-71.0589,United Kingdom,804.03,122.29
+2025-10-14,California,Los Angeles,34.0522,-118.2437,United States,788.85,-45.6
+2025-10-14,Colorado,Denver,39.7392,-104.9903,Germany,193.69,-2.63
+2025-10-14,Florida,Miami,25.7617,-80.1918,Brazil,119.71,21.7
+2025-10-14,Georgia,Atlanta,33.749,-84.388,United States,862.8,286.21
+2025-10-15,Illinois,Chicago,41.8781,-87.6298,United Kingdom,131.52,37.65
+2025-10-16,Florida,Miami,25.7617,-80.1918,United States,715.46,63.58
+2025-10-16,Ohio,Columbus,39.9612,-82.9988,Mexico,686.59,4.86
+2025-10-17,Florida,Miami,25.7617,-80.1918,Japan,102.73,8.24
+2025-10-18,Ohio,Columbus,39.9612,-82.9988,Japan,488.79,59.96
+2025-10-19,California,Los Angeles,34.0522,-118.2437,Canada,200.46,-10.38
+2025-10-19,Florida,Miami,25.7617,-80.1918,Mexico,602.6,181.19
+2025-10-19,Illinois,Chicago,41.8781,-87.6298,Germany,254.68,6.62
+2025-10-21,California,Los Angeles,34.0522,-118.2437,Canada,381.68,-43.86
+2025-10-21,Florida,Miami,25.7617,-80.1918,Canada,656.46,43.02
+2025-10-23,California,Los Angeles,34.0522,-118.2437,Canada,587.06,-9.85
+2025-10-23,Florida,Miami,25.7617,-80.1918,Brazil,61.35,-4.68
+2025-10-25,California,Los Angeles,34.0522,-118.2437,Canada,769.35,156.19
+2025-10-25,Massachusetts,Boston,42.3601,-71.0589,Brazil,360.5,75.17
+2025-10-25,Texas,Houston,29.7604,-95.3698,Mexico,185.13,8.37
+2025-10-26,Georgia,Atlanta,33.749,-84.388,Japan,193.37,52.79
+2025-10-26,New York,Buffalo,42.8864,-78.8784,United States,46.27,12.66
+2025-10-27,Florida,Miami,25.7617,-80.1918,Brazil,123.48,37.49
+2025-10-27,Texas,Houston,29.7604,-95.3698,United States,375.43,91.65
+2025-10-28,Texas,Houston,29.7604,-95.3698,United States,657.5,3.24
+2025-10-29,California,Los Angeles,34.0522,-118.2437,Canada,99.42,-3.02
+2025-10-29,Texas,Houston,29.7604,-95.3698,Mexico,752.76,-51.22
+2025-10-29,Texas,Houston,29.7604,-95.3698,United Kingdom,437.03,-45.35
+2025-10-30,California,Los Angeles,34.0522,-118.2437,United States,706.69,82.88
+2025-10-30,Illinois,Chicago,41.8781,-87.6298,United States,661.56,26.76
+2025-10-31,Illinois,Chicago,41.8781,-87.6298,Canada,129.54,42.95
+2025-11-01,New York,Buffalo,42.8864,-78.8784,Canada,44.31,-3.03
+2025-11-01,New York,Buffalo,42.8864,-78.8784,Mexico,842.18,86.84
+2025-11-01,Washington,Seattle,47.6062,-122.3321,France,710.91,153.72
+2025-11-03,Arizona,Phoenix,33.4484,-112.074,United States,187.51,54.41
+2025-11-03,New York,Buffalo,42.8864,-78.8784,United States,427.67,140.31
+2025-11-03,Washington,Seattle,47.6062,-122.3321,France,58.6,15.74
+2025-11-04,Arizona,Phoenix,33.4484,-112.074,United States,647.77,64.63
+2025-11-04,Massachusetts,Boston,42.3601,-71.0589,Canada,733.17,65.38
+2025-11-04,Texas,Houston,29.7604,-95.3698,Mexico,145.03,44.2
+2025-11-05,California,Los Angeles,34.0522,-118.2437,United States,242.3,-8.21
+2025-11-06,Florida,Miami,25.7617,-80.1918,Japan,469.33,21.83
+2025-11-06,New York,Buffalo,42.8864,-78.8784,Mexico,287.4,-14.23
+2025-11-07,Texas,Houston,29.7604,-95.3698,Australia,619.76,128.55
+2025-11-08,California,Los Angeles,34.0522,-118.2437,United States,845.75,38.23
+2025-11-08,Illinois,Chicago,41.8781,-87.6298,Mexico,876.94,62.49
+2025-11-08,Minnesota,Minneapolis,44.9778,-93.265,United States,309.34,83.99
+2025-11-09,Florida,Miami,25.7617,-80.1918,United States,580.4,195.33
+2025-11-09,New York,Buffalo,42.8864,-78.8784,Canada,27.19,4.75
+2025-11-10,Massachusetts,Boston,42.3601,-71.0589,United States,887.7,-89.05
+2025-11-10,Texas,Houston,29.7604,-95.3698,United States,524.76,115.41
+2025-11-13,California,Los Angeles,34.0522,-118.2437,Canada,686.19,164.48
+2025-11-13,California,Los Angeles,34.0522,-118.2437,United Kingdom,163.44,45.57
+2025-11-13,New York,Buffalo,42.8864,-78.8784,Mexico,284.98,94.69
+2025-11-13,Texas,Houston,29.7604,-95.3698,United States,603.24,2.26
+2025-11-14,Florida,Miami,25.7617,-80.1918,Mexico,808.87,-37.63
+2025-11-14,Massachusetts,Boston,42.3601,-71.0589,Mexico,789.64,25.22
+2025-11-14,New York,Buffalo,42.8864,-78.8784,Mexico,353.05,-33.22
+2025-11-16,California,Los Angeles,34.0522,-118.2437,Canada,819.79,-42.86
+2025-11-17,New York,Buffalo,42.8864,-78.8784,Canada,747.65,67.92
+2025-11-17,Ohio,Columbus,39.9612,-82.9988,United States,140.75,39.25
+2025-11-18,Texas,Houston,29.7604,-95.3698,Germany,536.36,6.78
+2025-11-19,Ohio,Columbus,39.9612,-82.9988,Canada,529.51,173.01
+2025-11-19,Texas,Houston,29.7604,-95.3698,Brazil,749.81,188.09
+2025-11-20,Massachusetts,Boston,42.3601,-71.0589,France,581.36,15.38
+2025-11-21,Illinois,Chicago,41.8781,-87.6298,United States,292.69,53.42
+2025-11-21,Minnesota,Minneapolis,44.9778,-93.265,United States,494.44,118.02
+2025-11-22,Ohio,Columbus,39.9612,-82.9988,Germany,776.43,197.47
+2025-11-23,Illinois,Chicago,41.8781,-87.6298,United States,398.71,120.43
+2025-11-24,Florida,Miami,25.7617,-80.1918,Germany,131.32,19.67
+2025-11-24,New York,Buffalo,42.8864,-78.8784,Japan,655.47,196.84
+2025-11-25,Arizona,Phoenix,33.4484,-112.074,Japan,699.82,-11.35
+2025-11-25,California,Los Angeles,34.0522,-118.2437,United States,460.78,68.06
+2025-11-25,Massachusetts,Boston,42.3601,-71.0589,Japan,443.97,-29.69
+2025-11-25,Washington,Seattle,47.6062,-122.3321,United States,127.26,17.18
+2025-11-26,New York,Buffalo,42.8864,-78.8784,Brazil,805.5,279.63
+2025-11-27,Florida,Miami,25.7617,-80.1918,France,23.92,-2.33
+2025-11-29,Ohio,Columbus,39.9612,-82.9988,Germany,589.55,-22.08
+2025-11-30,Illinois,Chicago,41.8781,-87.6298,Brazil,249.08,-10.82
+2025-11-30,Illinois,Chicago,41.8781,-87.6298,United States,689.59,32.56
+2025-12-02,California,Los Angeles,34.0522,-118.2437,Brazil,241.92,-10.79
+2025-12-02,Texas,Houston,29.7604,-95.3698,Mexico,552.79,-78.92
+2025-12-03,Georgia,Atlanta,33.749,-84.388,Mexico,520.84,92.62
+2025-12-04,Illinois,Chicago,41.8781,-87.6298,Canada,435.86,91.84
+2025-12-05,California,Los Angeles,34.0522,-118.2437,United Kingdom,822.96,37.32
+2025-12-05,Georgia,Atlanta,33.749,-84.388,United States,390.46,1.98
+2025-12-05,New York,Buffalo,42.8864,-78.8784,United States,486.23,65.3
+2025-12-06,Ohio,Columbus,39.9612,-82.9988,United States,576.11,-38.41
+2025-12-09,Colorado,Denver,39.7392,-104.9903,Germany,86.29,21.05
+2025-12-09,Illinois,Chicago,41.8781,-87.6298,Mexico,81.66,-3.24
+2025-12-09,Minnesota,Minneapolis,44.9778,-93.265,France,756.46,44.82
+2025-12-10,Arizona,Phoenix,33.4484,-112.074,Germany,444.13,62.32
+2025-12-10,New York,Buffalo,42.8864,-78.8784,Canada,558.69,148.45
+2025-12-10,Texas,Houston,29.7604,-95.3698,Japan,303.6,-41.5
+2025-12-11,California,Los Angeles,34.0522,-118.2437,United Kingdom,724.39,87.47
+2025-12-11,Colorado,Denver,39.7392,-104.9903,Canada,523.25,108.8
+2025-12-11,Texas,Houston,29.7604,-95.3698,United States,69.78,-0.89
+2025-12-11,Texas,Houston,29.7604,-95.3698,United States,817.33,-61.99
+2025-12-12,Florida,Miami,25.7617,-80.1918,United States,117.2,37.46
+2025-12-13,Florida,Miami,25.7617,-80.1918,United States,884.29,272.71
+2025-12-13,Georgia,Atlanta,33.749,-84.388,United Kingdom,737.78,192.17
+2025-12-14,California,Los Angeles,34.0522,-118.2437,Brazil,390.07,-46.9
+2025-12-14,Texas,Houston,29.7604,-95.3698,France,115.31,4.99
+2025-12-15,California,Los Angeles,34.0522,-118.2437,Mexico,119.9,32.29
+2025-12-15,Texas,Houston,29.7604,-95.3698,Japan,353.64,4.69
+2025-12-18,Texas,Houston,29.7604,-95.3698,Canada,284.69,-34.48
+2025-12-20,Texas,Houston,29.7604,-95.3698,Japan,644.11,-71.28
+2025-12-21,Colorado,Denver,39.7392,-104.9903,Canada,537.51,18.03
+2025-12-21,Florida,Miami,25.7617,-80.1918,Mexico,206.43,50.33
+2025-12-23,Arizona,Phoenix,33.4484,-112.074,Germany,30.04,1.81
+2025-12-23,California,Los Angeles,34.0522,-118.2437,Canada,506.27,126.07
+2025-12-23,Texas,Houston,29.7604,-95.3698,Brazil,733.17,-10.25
+2025-12-23,Texas,Houston,29.7604,-95.3698,Canada,52.57,2.2
+2025-12-24,Washington,Seattle,47.6062,-122.3321,United States,388.01,40.26
+2025-12-25,Georgia,Atlanta,33.749,-84.388,France,857.75,288.89
+2025-12-25,Texas,Houston,29.7604,-95.3698,United States,653.28,18.06
+2025-12-26,Florida,Miami,25.7617,-80.1918,Germany,637.57,-28.96
+2025-12-26,Florida,Miami,25.7617,-80.1918,United States,351.2,15.99
+2025-12-27,California,Los Angeles,34.0522,-118.2437,Canada,359.97,-9.97
+2025-12-27,Georgia,Atlanta,33.749,-84.388,Germany,434.46,149.63
+2025-12-27,Massachusetts,Boston,42.3601,-71.0589,Australia,672.76,218.6
+2025-12-27,Washington,Seattle,47.6062,-122.3321,Australia,270.88,71.97
+2025-12-28,California,Los Angeles,34.0522,-118.2437,United States,831.53,204.65
+2025-12-28,Colorado,Denver,39.7392,-104.9903,United States,87.3,16.16
+2025-12-28,Texas,Houston,29.7604,-95.3698,Canada,663.64,217.29
+2025-12-29,California,Los Angeles,34.0522,-118.2437,United Kingdom,605.79,200.84
+2025-12-29,Georgia,Atlanta,33.749,-84.388,United Kingdom,782.44,-83.17
+2025-12-30,Colorado,Denver,39.7392,-104.9903,Germany,714.09,71.01
+2025-12-31,Texas,Houston,29.7604,-95.3698,United States,379.77,-43.48

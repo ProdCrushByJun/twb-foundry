@@ -1,0 +1,22 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "calcs": [],
+  "sheets": [
+    {"name": "Regions", "type": "registry", "title": "Regions **by sales trend**",
+     "subtitle": "Sales per quarter 2024-2025; profit level", "rows": ["Region"], "sort": "desc",
+     "header": {"color": "#0d3a6b"}, "bar_color": "#0d3a6b",
+     "columns": [
+       {"measure": {"field": "Sales"}, "style": "bar_inside", "label": "Sales"},
+       {"measure": {"field": "Sales"}, "style": "spark", "label": "Quarterly sales",
+        "spark": {"date": "Order Date", "level": "quarter", "from": "2024-01-01", "count": 8}},
+       {"measure": {"field": "Profit"}, "style": "pill", "label": "Profit",
+        "levels": [{"label": "Low", "color": "bad"}, {"from": 5000, "label": "OK", "color": "warn"},
+                   {"from": 7000, "label": "High", "color": "good"}]}
+     ]}
+  ],
+  "dashboard": {"name": "Registry spark pill", "title": "**Registry** spark and pill", "subtitle": "Sample data, 2024-2025",
+                "width": 1200, "height": 720, "row_heights": [1],
+                "grid": [["Regions"]]}
+}

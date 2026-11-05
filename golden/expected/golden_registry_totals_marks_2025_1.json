@@ -1,0 +1,128 @@
+{
+ "_source": "pandas over data/sample/sales_plan.csv (golden/expected/make_expected.py, decisions/052): registry rank, track, dot, tick and highlight under totals",
+ "Regions": {
+  "East": {
+   "#": 2,
+   "Of total": 0.2584,
+   "Avg plan": 1508.6,
+   "Sales": 35352.62
+  },
+  "North": {
+   "#": 4,
+   "Of total": 0.2371,
+   "Avg plan": 1290.5667,
+   "Sales": 32449.07
+  },
+  "South": {
+   "#": 3,
+   "Of total": 0.2373,
+   "Avg plan": 1354.4096,
+   "Sales": 32466.43
+  },
+  "West": {
+   "#": 1,
+   "Of total": 0.2673,
+   "Avg plan": 1532.0871,
+   "Sales": 36570.26
+  },
+  "TOTAL": {
+   "#": null,
+   "Of total": 1,
+   "Avg plan": 1421.4158,
+   "Sales": 136838.38
+  }
+ },
+ "Managers": {
+  "East | Anna": {
+   "Sales vs plan": 19165.39,
+   "Sales vs plan · Plan": 18881.16,
+   "#": 1,
+   "Of total": 0.1401,
+   "Plan": 18881.16
+  },
+  "East | Boris": {
+   "Sales vs plan": 16187.23,
+   "Sales vs plan · Plan": 17325.24,
+   "#": 2,
+   "Of total": 0.1183,
+   "Plan": 17325.24
+  },
+  "East | Total": {
+   "Sales vs plan": 35352.62,
+   "Sales vs plan · Plan": null,
+   "#": null,
+   "Of total": 0.2584,
+   "Plan": 36206.4
+  },
+  "North | Clara": {
+   "Sales vs plan": 13689.51,
+   "Sales vs plan · Plan": 14264.88,
+   "#": 2,
+   "Of total": 0.1,
+   "Plan": 14264.88
+  },
+  "North | Denis": {
+   "Sales vs plan": 18759.56,
+   "Sales vs plan · Plan": 16708.72,
+   "#": 1,
+   "Of total": 0.1371,
+   "Plan": 16708.72
+  },
+  "North | Total": {
+   "Sales vs plan": 32449.07,
+   "Sales vs plan · Plan": null,
+   "#": null,
+   "Of total": 0.2371,
+   "Plan": 30973.6
+  },
+  "South | Elena": {
+   "Sales vs plan": 14826.01,
+   "Sales vs plan · Plan": 15271.32,
+   "#": 2,
+   "Of total": 0.1083,
+   "Plan": 15271.32
+  },
+  "South | Fedor": {
+   "Sales vs plan": 17640.42,
+   "Sales vs plan · Plan": 17234.51,
+   "#": 1,
+   "Of total": 0.1289,
+   "Plan": 17234.51
+  },
+  "South | Total": {
+   "Sales vs plan": 32466.43,
+   "Sales vs plan · Plan": null,
+   "#": null,
+   "Of total": 0.2373,
+   "Plan": 32505.83
+  },
+  "West | Galina": {
+   "Sales vs plan": 15580.27,
+   "Sales vs plan · Plan": 14436.99,
+   "#": 2,
+   "Of total": 0.1139,
+   "Plan": 14436.99
+  },
+  "West | Igor": {
+   "Sales vs plan": 20989.99,
+   "Sales vs plan · Plan": 22333.1,
+   "#": 1,
+   "Of total": 0.1534,
+   "Plan": 22333.1
+  },
+  "West | Total": {
+   "Sales vs plan": 36570.26,
+   "Sales vs plan · Plan": null,
+   "#": null,
+   "Of total": 0.2673,
+   "Plan": 36770.09
+  },
+  "Total": {
+   "Sales vs plan": 136838.38,
+   "Sales vs plan · Plan": null,
+   "#": null,
+   "Of total": 1,
+   "Plan": 136455.92
+  }
+ }
+}

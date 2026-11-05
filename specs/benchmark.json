@@ -1,0 +1,31 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_2y.csv"},
+  "parameters": [
+    {"name": "Select Region", "type": "string", "values": ["East", "North", "South", "West"], "default": "West"},
+    {"name": "Target Low", "type": "integer", "range": {"min": 2000, "max": 6000, "step": 500}, "default": 3000}
+  ],
+  "sheets": [
+    {"name": "Compare", "type": "line", "title": "[Select Region] vs all regions:",
+     "subtitle": "{accent:selected region}, grey: the average region; line: H2 2025 starts",
+     "date": {"field": "Order Date", "level": "month"},
+     "repeat": [{"field": "Sales"}, {"field": "Profit"}, {"field": "Quantity"}, {"field": "Sales", "agg": "avg", "label": "Avg sale"}],
+     "columns": 2,
+     "benchmark": {"field": "Region", "select": {"parameter": "Select Region"}, "against": "all", "label": "All regions avg"},
+     "labels": "last",
+     "reference": {"type": "date", "value": "2025-07-01", "label": "H2 2025"}},
+    {"name": "East", "type": "line", "title": "**East** vs all regions", "subtitle": "{accent:East}, grey: the average region; band: the target range",
+     "date": {"field": "Order Date", "level": "month"}, "measure": {"field": "Sales"},
+     "benchmark": {"field": "Region", "select": "East", "against": "all"},
+     "labels": "ends",
+     "reference": {"type": "band", "from": "Target Low", "to": 5000, "label": "Target range"}},
+    {"name": "Total", "type": "line", "title": "Monthly **sales**", "subtitle": "band: the usual range",
+     "date": {"field": "Order Date", "level": "month"}, "measure": {"field": "Sales"},
+     "labels": "ends",
+     "reference": [{"type": "band", "from": 13000, "to": 16000, "label": "Usual"}, {"type": "avg"}]}
+  ],
+  "dashboard": {"name": "Benchmark", "title": "**Region** vs the organization", "subtitle": "Sample data, 2024-2025",
+                "width": 1400, "height": 1000, "row_heights": [3, 1],
+                "grid": [["Compare"], ["East", "Total"]]}
+}

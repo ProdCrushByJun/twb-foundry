@@ -1,0 +1,32 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "calcs": [
+    {"name": "Margin", "formula": "SUM([Profit]) / SUM([Sales])", "format": "pct0"}
+  ],
+  "sheets": [
+    {"name": "Regions", "type": "registry", "title": "Regions **with a total**",
+     "subtitle": "The totals: numbers without bars, the margin with one decimal",
+     "rows": ["Region"], "header": {"color": "#0d3a6b"}, "bar_color": "#0d3a6b",
+     "columns": [
+       {"measure": {"field": "Sales"}, "style": "bar", "label": "Sales"},
+       {"measure": {"field": "Margin"}, "style": "bar_inside", "label": "Margin",
+        "total": {"format": "pct1"}},
+       {"measure": {"field": "Quantity"}, "style": "text", "label": "Units"}
+     ],
+     "totals": {"grand": "rows", "label": "TOTAL"}},
+    {"name": "Categories", "type": "registry", "title": "Region **by category**",
+     "subtitle": "Subtotals per region and the grand total; the margin keeps its total bars",
+     "rows": ["Region", "Category"],
+     "columns": [
+       {"measure": {"field": "Sales"}, "style": "bar_inside", "label": "Sales"},
+       {"measure": {"field": "Profit"}, "style": "bar", "label": "Profit", "total": {"format": "currency"}},
+       {"measure": {"field": "Margin"}, "style": "bar", "label": "Margin %", "total": {"bar": true}}
+     ],
+     "totals": {"grand": "rows", "sub": ["Region"]}}
+  ],
+  "dashboard": {"name": "Registry Totals", "title": "**Registry** totals with bars", "subtitle": "Sample data, 500 orders",
+                "width": 1200, "height": 900, "row_heights": [3, 5],
+                "grid": [["Regions"], ["Categories"]]}
+}

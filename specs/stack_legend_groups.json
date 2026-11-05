@@ -1,0 +1,21 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "fields": {"Category": {"aliases": {"Furniture": "Furniture and home furnishings", "Office": "Office supplies and stationery",
+                                      "Tech": "Technology and electronics"},
+                          "order": ["Furniture", "Office", "Tech"],
+                          "color": {"Furniture": "#2f4a6d", "Office": "#5b8db8", "Tech": "#b3c3d6"}}},
+  "sheets": [
+    {"name": "Narrow", "type": "bar", "title": "Sales **by region**", "subtitle": "A group's line wraps between members",
+     "dimension": "Region", "measure": {"field": "Sales"}, "sort": "desc", "color": "Category",
+     "legend": {"position": "below", "groups": [{"label": "home", "values": ["Furniture"]},
+                                                {"label": "business and tech", "values": ["Office", "Tech"]}]}},
+    {"name": "Wide", "type": "bar", "title": "Profit **by region**", "subtitle": "The same legend on one line per group",
+     "dimension": "Region", "measure": {"field": "Profit"}, "sort": "desc", "color": "Category",
+     "legend": {"position": "below", "groups": [{"label": "home", "values": ["Furniture"]},
+                                                {"label": "business and tech", "values": ["Office", "Tech"]}]}}
+  ],
+  "dashboard": {"name": "Stack legend groups", "title": "**Stack** legend groups", "subtitle": "Sample data, 2025",
+                "width": 1200, "height": 700, "grid": [["Narrow", {"sheet": "Wide", "width": 2}]]}
+}

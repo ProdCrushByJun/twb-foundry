@@ -1,0 +1,18 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "Sales Pulse 2025", "type": "kpi",
+     "measures": [{"field": "Sales"}, {"field": "Profit"}, {"field": "Quantity"}]},
+    {"name": "Sales by Region", "type": "bar", "dimension": "Region", "measure": {"field": "Sales"}},
+    {"name": "Monthly Sales Trend", "type": "line", "date": {"field": "Order Date", "level": "month"},
+     "measure": {"field": "Sales"}},
+    {"name": "Sales by Region and Category", "type": "table", "rows": "Region", "cols": "Category",
+     "measure": {"field": "Sales"}}
+  ],
+  "filters": [{"field": "Region", "show_on": "Sales by Region"}],
+  "dashboard": {"name": "Sales Pulse", "width": 1200, "height": 904,
+                "grid": [["Sales Pulse 2025"], ["Sales by Region", "Monthly Sales Trend"],
+                         ["Sales by Region and Category"]]}
+}

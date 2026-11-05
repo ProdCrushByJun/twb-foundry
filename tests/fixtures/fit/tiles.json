@@ -1,0 +1,82 @@
+{
+ "$schema": "../../../tbuilder/spec.schema.json",
+ "version": 1,
+ "datasource": {
+  "type": "csv",
+  "path": "lab.csv"
+ },
+ "calcs": [
+  {
+   "name": "Big",
+   "formula": "IF [Sales] > 600 THEN 1 ELSE 0 END"
+  },
+  {
+   "name": "Margin",
+   "formula": "SUM([Profit]) / SUM([Sales])",
+   "format": "pct1"
+  }
+ ],
+ "sheets": [
+  {
+   "name": "KPI",
+   "type": "kpi",
+   "style": "tiles",
+   "arrange": "strip",
+   "measures": [
+    {
+     "field": "Code",
+     "agg": "count",
+     "label": "Orders"
+    },
+    {
+     "field": "Big",
+     "label": "Big orders"
+    },
+    {
+     "field": "Sales",
+     "agg": "avg",
+     "label": "Mean order, $"
+    },
+    {
+     "field": "Margin",
+     "label": "Margin"
+    },
+    {
+     "field": "Quantity",
+     "label": "Units"
+    }
+   ]
+  },
+  {
+   "name": "KPI table",
+   "type": "kpi",
+   "title": "**KPI** table",
+   "measures": [
+    {
+     "field": "Sales"
+    },
+    {
+     "field": "Profit"
+    },
+    {
+     "field": "Quantity"
+    }
+   ]
+  }
+ ],
+ "dashboard": {
+  "name": "Lab",
+  "title": "**Fit** lab: tiles",
+  "theme": "cards",
+  "width": 1300,
+  "grid": [
+   [
+    "KPI"
+   ],
+   [
+    "KPI table"
+   ]
+  ],
+  "height": 420
+ }
+}

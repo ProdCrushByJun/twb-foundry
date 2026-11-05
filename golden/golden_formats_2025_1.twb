@@ -1,0 +1,1619 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook locale='en_US' original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='sales_2y' inline='true' name='federated.dg3kjlmhazs175svgruerchbeiez' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sales_2y' name='textscan.ezm75nempujbjxg3uwpdrjjj0xhm'>
+            <connection class='textscan' directory='Data/sample' filename='sales_2y.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.ezm75nempujbjxg3uwpdrjjj0xhm' name='sales_2y.csv' table='[sales_2y#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Order Date' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='string' name='Category' ordinal='2' />
+            <column datatype='real' name='Sales' ordinal='3' />
+            <column datatype='real' name='Profit' ordinal='4' />
+            <column datatype='integer' name='Quantity' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_2y.csv_987F1697B9F344F6BFE4EF2E04C96A01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[sales_2y.csv_987F1697B9F344F6BFE4EF2E04C96A01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[sales_2y.csv_987F1697B9F344F6BFE4EF2E04C96A01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_2y.csv_987F1697B9F344F6BFE4EF2E04C96A01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_2y.csv_987F1697B9F344F6BFE4EF2E04C96A01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_2y.csv_987F1697B9F344F6BFE4EF2E04C96A01]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Monthly · Is Current' datatype='boolean' name='[Calculation_1342124811051182286]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;, [Order Date]) = DATETRUNC(&apos;month&apos;, [Calculation_1374784819800076574])' />
+      </column>
+      <column caption='Last Order Date' datatype='date' name='[Calculation_1374784819800076574]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='{FIXED : MAX([Order Date])}' />
+      </column>
+      <column caption='Monthly · Sales · Previous' datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Calculation_2330669723199080652]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF DATETRUNC(&apos;month&apos;, [Order Date]) = DATEADD(&apos;month&apos;, -1, DATETRUNC(&apos;month&apos;, [Calculation_1374784819800076574])) THEN [Sales] END)' />
+      </column>
+      <column caption='Profit Ratio' datatype='real' default-format='p0.0%;(0.0%)' name='[Calculation_2614967747736977933]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Profit]) / SUM([Sales])' />
+      </column>
+      <column caption='Monthly · Sales · Change' datatype='real' default-format='p0.0%' name='[Calculation_4119399421028682453]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([Calculation_5188227284233026689] - [Calculation_2330669723199080652]) / ABS([Calculation_2330669723199080652])' />
+      </column>
+      <column caption='Monthly · Sales · Change Bad' datatype='real' default-format='*▲ 0.0%;▼ 0.0%' name='[Calculation_4860382685588656856]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_4119399421028682453] &lt; 0 THEN [Calculation_4119399421028682453] END' />
+      </column>
+      <column caption='Monthly · Sales · Change Good' datatype='real' default-format='*▲ 0.0%;▼ 0.0%' name='[Calculation_5008825049040534289]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_4119399421028682453] &gt;= 0 THEN [Calculation_4119399421028682453] END' />
+      </column>
+      <column caption='Monthly · Sales · Current' datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Calculation_5188227284233026689]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF DATETRUNC(&apos;month&apos;, [Order Date]) = DATETRUNC(&apos;month&apos;, [Calculation_1374784819800076574]) THEN [Sales] END)' />
+      </column>
+      <column caption='Monthly · Period' datatype='datetime' default-format='*mmm yyyy' name='[Calculation_6072130590605439925]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;, [Calculation_1374784819800076574])' />
+      </column>
+      <column caption='Sales Scaled' datatype='real' default-format='n#,##0,,,.00B;-#,##0,,,.00B' name='[Calculation_7015394864811452984]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Sales]) * 100000' />
+      </column>
+      <column caption='Avg Price' datatype='real' default-format='c#,##0.00&quot; ₽&quot;;-#,##0.00&quot; ₽&quot;' name='[Calculation_7777691099000874125]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Sales]) / SUM([Quantity])' />
+      </column>
+      <column datatype='real' default-format='c&quot;$&quot;#,##0.0;(&quot;$&quot;#,##0.0)' name='[Profit]' role='measure' type='quantitative' />
+      <column datatype='integer' default-format='n#,##0;-#,##0' name='[Quantity]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Sales]' role='measure' type='quantitative' />
+      <column caption='sales_2y.csv' datatype='table' name='[__tableau_internal_object_id__].[sales_2y.csv_987F1697B9F344F6BFE4EF2E04C96A01]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1342124811051182286]' derivation='None' name='[none:Calculation_1342124811051182286:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1342124811051182286:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#e6e6e6'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Russia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='sales_2y.csv' id='sales_2y.csv_987F1697B9F344F6BFE4EF2E04C96A01'>
+            <properties context=''>
+              <relation connection='textscan.ezm75nempujbjxg3uwpdrjjj0xhm' name='sales_2y.csv' table='[sales_2y#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Order Date' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='string' name='Category' ordinal='2' />
+                  <column datatype='real' name='Sales' ordinal='3' />
+                  <column datatype='real' name='Profit' ordinal='4' />
+                  <column datatype='integer' name='Quantity' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Monthly · Sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_2y' name='federated.dg3kjlmhazs175svgruerchbeiez' />
+          </datasources>
+          <datasource-dependencies datasource='federated.dg3kjlmhazs175svgruerchbeiez'>
+            <column caption='Last Order Date' datatype='date' name='[Calculation_1374784819800076574]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{FIXED : MAX([Order Date])}' />
+            </column>
+            <column caption='Monthly · Sales · Previous' datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Calculation_2330669723199080652]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF DATETRUNC(&apos;month&apos;, [Order Date]) = DATEADD(&apos;month&apos;, -1, DATETRUNC(&apos;month&apos;, [Calculation_1374784819800076574])) THEN [Sales] END)' />
+            </column>
+            <column caption='Monthly · Sales · Change' datatype='real' default-format='p0.0%' name='[Calculation_4119399421028682453]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([Calculation_5188227284233026689] - [Calculation_2330669723199080652]) / ABS([Calculation_2330669723199080652])' />
+            </column>
+            <column caption='Monthly · Sales · Change Bad' datatype='real' default-format='*▲ 0.0%;▼ 0.0%' name='[Calculation_4860382685588656856]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_4119399421028682453] &lt; 0 THEN [Calculation_4119399421028682453] END' />
+            </column>
+            <column caption='Monthly · Sales · Change Good' datatype='real' default-format='*▲ 0.0%;▼ 0.0%' name='[Calculation_5008825049040534289]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_4119399421028682453] &gt;= 0 THEN [Calculation_4119399421028682453] END' />
+            </column>
+            <column caption='Monthly · Sales · Current' datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Calculation_5188227284233026689]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF DATETRUNC(&apos;month&apos;, [Order Date]) = DATETRUNC(&apos;month&apos;, [Calculation_1374784819800076574]) THEN [Sales] END)' />
+            </column>
+            <column caption='Monthly · Period' datatype='datetime' default-format='*mmm yyyy' name='[Calculation_6072130590605439925]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;, [Calculation_1374784819800076574])' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_6072130590605439925]' derivation='Min' name='[min:Calculation_6072130590605439925:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4860382685588656856]' derivation='User' name='[usr:Calculation_4860382685588656856:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5008825049040534289]' derivation='User' name='[usr:Calculation_5008825049040534289:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5188227284233026689]' derivation='User' name='[usr:Calculation_5188227284233026689:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.dg3kjlmhazs175svgruerchbeiez].[min:Calculation_6072130590605439925:qk]' />
+              <text column='[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_5188227284233026689:qk]' />
+              <text column='[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_5008825049040534289:qk]' />
+              <text column='[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_4860382685588656856:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontcolor='#898989' fontsize='9'><![CDATA[<[federated.dg3kjlmhazs175svgruerchbeiez].[min:Calculation_6072130590605439925:qk]>]]></run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0' fontcolor='#898989' fontsize='11'>Sales</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run bold='true' fontalignment='0' fontcolor='#333333' fontsize='24'><![CDATA[<[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_5188227284233026689:qk]>]]></run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0' fontcolor='#2f8f8d' fontsize='10'><![CDATA[<[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_5008825049040534289:qk]>]]></run>
+                <run fontalignment='0' fontcolor='#e0484c' fontsize='10'><![CDATA[<[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_4860382685588656856:qk]>]]></run>
+                <run fontalignment='0' fontcolor='#898989' fontsize='10'> MoM</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F74CAE3B-756D-4BF1-BE0C-DB2F456AD3F3}' />
+    </worksheet>
+    <worksheet name='Monthly · Sales · History'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_2y' name='federated.dg3kjlmhazs175svgruerchbeiez' />
+          </datasources>
+          <datasource-dependencies datasource='federated.dg3kjlmhazs175svgruerchbeiez'>
+            <column caption='Monthly · Is Current' datatype='boolean' name='[Calculation_1342124811051182286]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;, [Order Date]) = DATETRUNC(&apos;month&apos;, [Calculation_1374784819800076574])' />
+            </column>
+            <column caption='Last Order Date' datatype='date' name='[Calculation_1374784819800076574]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='{FIXED : MAX([Order Date])}' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Max' name='[max:Order Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1342124811051182286]' derivation='None' name='[none:Calculation_1342124811051182286:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Month-Trunc' name='[tmn:Order Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.dg3kjlmhazs175svgruerchbeiez].[tmn:Order Date:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.dg3kjlmhazs175svgruerchbeiez].[sum:Sales:qk]' scope='rows' value='false' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.dg3kjlmhazs175svgruerchbeiez].[none:Calculation_1342124811051182286:nk]' />
+            </encodings>
+            <label-data column='[federated.dg3kjlmhazs175svgruerchbeiez].[max:Order Date:qk]' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#898989'>Order Date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.dg3kjlmhazs175svgruerchbeiez].[tmn:Order Date:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#898989'>Sales:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.dg3kjlmhazs175svgruerchbeiez].[sum:Sales:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='most-recent' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.dg3kjlmhazs175svgruerchbeiez].[sum:Sales:qk]</rows>
+        <cols>[federated.dg3kjlmhazs175svgruerchbeiez].[tmn:Order Date:qk]</cols>
+      </table>
+      <simple-id uuid='{BA38C4F8-FF04-4863-9925-746A657D58F0}' />
+    </worksheet>
+    <worksheet name='Ratio'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_2y' name='federated.dg3kjlmhazs175svgruerchbeiez' />
+          </datasources>
+          <datasource-dependencies datasource='federated.dg3kjlmhazs175svgruerchbeiez'>
+            <column caption='Profit Ratio' datatype='real' default-format='p0.0%;(0.0%)' name='[Calculation_2614967747736977933]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Profit]) / SUM([Sales])' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='c&quot;$&quot;#,##0.0;(&quot;$&quot;#,##0.0)' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2614967747736977933]' derivation='User' name='[usr:Calculation_2614967747736977933:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.dg3kjlmhazs175svgruerchbeiez].[none:Category:nk]' value='81' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.dg3kjlmhazs175svgruerchbeiez].[none:Region:nk]' value='63' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_2614967747736977933:qk]' />
+              <text column='[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_2614967747736977933:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.dg3kjlmhazs175svgruerchbeiez].[none:Region:nk]</rows>
+        <cols>[federated.dg3kjlmhazs175svgruerchbeiez].[none:Category:nk]</cols>
+      </table>
+      <simple-id uuid='{B2830A71-19CC-49C2-A998-217F06F16474}' />
+    </worksheet>
+    <worksheet name='Sales by Region'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_2y' name='federated.dg3kjlmhazs175svgruerchbeiez' />
+          </datasources>
+          <datasource-dependencies datasource='federated.dg3kjlmhazs175svgruerchbeiez'>
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.dg3kjlmhazs175svgruerchbeiez].[none:Region:nk]' direction='DESC' using='[federated.dg3kjlmhazs175svgruerchbeiez].[sum:Sales:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.dg3kjlmhazs175svgruerchbeiez].[sum:Sales:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.dg3kjlmhazs175svgruerchbeiez].[sum:Sales:qk]' scope='cols' value='false' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='width' field='[federated.dg3kjlmhazs175svgruerchbeiez].[none:Region:nk]' value='60' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.dg3kjlmhazs175svgruerchbeiez].[none:Region:nk]' value='#333333' />
+            <format attr='font-size' field='[federated.dg3kjlmhazs175svgruerchbeiez].[none:Region:nk]' value='10' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#898989' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.dg3kjlmhazs175svgruerchbeiez].[none:Region:nk]</rows>
+        <cols>[federated.dg3kjlmhazs175svgruerchbeiez].[sum:Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{7983C487-373B-48DD-8DAB-565CCAF8EB7E}' />
+    </worksheet>
+    <worksheet name='Totals · Avg Price'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_2y' name='federated.dg3kjlmhazs175svgruerchbeiez' />
+          </datasources>
+          <datasource-dependencies datasource='federated.dg3kjlmhazs175svgruerchbeiez'>
+            <column caption='Avg Price' datatype='real' default-format='c#,##0.00&quot; ₽&quot;;-#,##0.00&quot; ₽&quot;' name='[Calculation_7777691099000874125]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Sales]) / SUM([Quantity])' />
+            </column>
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Quantity]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_7777691099000874125]' derivation='User' name='[usr:Calculation_7777691099000874125:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_7777691099000874125:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#898989' fontsize='11'>Avg Price</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#333333' fontsize='18'><![CDATA[<[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_7777691099000874125:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{850D29EB-51B1-4E49-BB18-C8B2A2F09731}' />
+    </worksheet>
+    <worksheet name='Totals · Profit Ratio'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_2y' name='federated.dg3kjlmhazs175svgruerchbeiez' />
+          </datasources>
+          <datasource-dependencies datasource='federated.dg3kjlmhazs175svgruerchbeiez'>
+            <column caption='Profit Ratio' datatype='real' default-format='p0.0%;(0.0%)' name='[Calculation_2614967747736977933]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Profit]) / SUM([Sales])' />
+            </column>
+            <column datatype='real' default-format='c&quot;$&quot;#,##0.0;(&quot;$&quot;#,##0.0)' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2614967747736977933]' derivation='User' name='[usr:Calculation_2614967747736977933:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_2614967747736977933:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#898989' fontsize='11'>Profit Ratio</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#333333' fontsize='18'><![CDATA[<[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_2614967747736977933:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C964C093-28A3-4689-91D9-0DA6C72A0792}' />
+    </worksheet>
+    <worksheet name='Totals · Quantity'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_2y' name='federated.dg3kjlmhazs175svgruerchbeiez' />
+          </datasources>
+          <datasource-dependencies datasource='federated.dg3kjlmhazs175svgruerchbeiez'>
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Quantity]' role='measure' type='quantitative' />
+            <column-instance column='[Quantity]' derivation='Sum' name='[sum:Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.dg3kjlmhazs175svgruerchbeiez].[sum:Quantity:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#898989' fontsize='11'>Quantity</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#333333' fontsize='18'><![CDATA[<[federated.dg3kjlmhazs175svgruerchbeiez].[sum:Quantity:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{66AF47F1-85D8-4D6E-8246-C4DD72459224}' />
+    </worksheet>
+    <worksheet name='Totals · Sales Scaled'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_2y' name='federated.dg3kjlmhazs175svgruerchbeiez' />
+          </datasources>
+          <datasource-dependencies datasource='federated.dg3kjlmhazs175svgruerchbeiez'>
+            <column caption='Sales Scaled' datatype='real' default-format='n#,##0,,,.00B;-#,##0,,,.00B' name='[Calculation_7015394864811452984]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Sales]) * 100000' />
+            </column>
+            <column datatype='real' default-format='c&quot;$&quot;#,##0,.0K;-&quot;$&quot;#,##0,.0K' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_7015394864811452984]' derivation='User' name='[usr:Calculation_7015394864811452984:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_7015394864811452984:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#898989' fontsize='11'>Sales Scaled</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#333333' fontsize='18'><![CDATA[<[federated.dg3kjlmhazs175svgruerchbeiez].[usr:Calculation_7015394864811452984:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8A25BF22-5352-4DBF-99A1-89BDA219D8CC}' />
+    </worksheet>
+    <worksheet name='Worst Order'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_2y' name='federated.dg3kjlmhazs175svgruerchbeiez' />
+          </datasources>
+          <datasource-dependencies datasource='federated.dg3kjlmhazs175svgruerchbeiez'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='c&quot;$&quot;#,##0.0;(&quot;$&quot;#,##0.0)' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Profit]' derivation='Min' name='[min:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.dg3kjlmhazs175svgruerchbeiez].[none:Region:nk]' value='30' />
+            <format attr='width' value='81' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='color' value='#898989' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.dg3kjlmhazs175svgruerchbeiez].[min:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.dg3kjlmhazs175svgruerchbeiez].[none:Region:nk]</rows>
+        <cols>[federated.dg3kjlmhazs175svgruerchbeiez].[none:Category:nk]</cols>
+      </table>
+      <simple-id uuid='{03B08FAE-51C8-4B8B-B2B4-C1219B91EB18}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Formats'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' />
+      <zones>
+        <zone h='100000' id='3' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='9750' id='4' type-v2='text' w='99000' x='500' y='750'>
+            <formatted-text>
+              <run bold='true' fontcolor='#333333' fontsize='18'>Number</run>
+              <run fontcolor='#333333' fontsize='18'> formats</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#666666' fontsize='11'>Sample data, 2024-2025</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='6' />
+            </zone-style>
+          </zone>
+          <zone h='88750' id='5' param='horz' type-v2='layout-flow' w='99000' x='500' y='10500'>
+            <zone h='88750' id='6' type-v2='layout-basic' w='99000' x='500' y='10500'>
+              <zone h='53250' id='7' param='vert' type-v2='layout-flow' w='33000' x='500' y='10500'>
+                <zone h='48500' id='8' type-v2='layout-basic' w='29834' x='2083' y='12875'>
+                  <zone forceUpdate='true' h='7625' id='9' type-v2='text' w='29834' x='2083' y='12875'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>Latest </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>month</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#898989' fontsize='9'>vs the month before</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='19000' id='10' name='Monthly · Sales' show-title='false' w='29834' x='2083' y='20500'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='21875' id='11' name='Monthly · Sales · History' show-title='false' w='29834' x='2083' y='39500'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-top' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='12' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='53250' id='12' param='vert' type-v2='layout-flow' w='66000' x='33500' y='10500'>
+                <zone h='48500' id='13' type-v2='layout-basic' w='62834' x='35083' y='12875'>
+                  <zone h='48500' id='14' name='Totals · Quantity' show-title='false' w='15708' x='35083' y='12875'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-right' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='48500' id='15' name='Totals · Profit Ratio' show-title='false' w='15709' x='50791' y='12875'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-right' value='4' />
+                      <format attr='margin-left' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='48500' id='16' name='Totals · Avg Price' show-title='false' w='15708' x='66500' y='12875'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-right' value='4' />
+                      <format attr='margin-left' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='48500' id='17' name='Totals · Sales Scaled' show-title='false' w='15709' x='82208' y='12875'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-left' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='12' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='35500' id='18' param='vert' type-v2='layout-flow' w='33000' x='500' y='63750'>
+                <zone h='29750' id='19' type-v2='layout-basic' w='29168' x='2416' y='66625'>
+                  <zone forceUpdate='true' h='5000' id='20' type-v2='text' w='29168' x='2416' y='66625'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>Sales by </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>Region</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='24750' id='21' name='Sales by Region' show-title='false' w='29168' x='2416' y='71625'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='35500' id='22' param='vert' type-v2='layout-flow' w='33000' x='33500' y='63750'>
+                <zone h='29750' id='23' type-v2='layout-basic' w='29168' x='35416' y='66625'>
+                  <zone forceUpdate='true' h='5000' id='24' type-v2='text' w='29168' x='35416' y='66625'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>Worst </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>order</run>
+                      <run fontcolor='#333333' fontsize='12'> profit</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='24750' id='25' name='Worst Order' show-title='false' w='29168' x='35416' y='71625'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='35500' id='26' param='vert' type-v2='layout-flow' w='33000' x='66500' y='63750'>
+                <zone h='29750' id='27' type-v2='layout-basic' w='29168' x='68416' y='66625'>
+                  <zone forceUpdate='true' h='5000' id='28' type-v2='text' w='29168' x='68416' y='66625'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>Profit </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>ratio</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone h='24750' id='29' name='Ratio' show-title='false' w='29168' x='68416' y='71625'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='6' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{B027D56A-9338-43B2-88DA-73FE6CF31214}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Monthly · Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4917514A-F629-49B1-87D7-F5876874DF7E}' />
+    </window>
+    <window class='worksheet' name='Monthly · Sales · History'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ED0BC789-1B1E-4E5A-AEDF-34F07B890C6E}' />
+    </window>
+    <window class='worksheet' name='Totals · Quantity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{372316C6-8742-4566-B20A-EC05EDE1C656}' />
+    </window>
+    <window class='worksheet' name='Totals · Profit Ratio'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7AAD3E25-425C-4D5B-B0EE-7CFE97594C25}' />
+    </window>
+    <window class='worksheet' name='Totals · Avg Price'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D8F55ED5-69CD-414A-8286-276A03DBFBE1}' />
+    </window>
+    <window class='worksheet' name='Totals · Sales Scaled'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9F04688F-C715-4B4B-84D8-46FE05A51030}' />
+    </window>
+    <window class='worksheet' name='Sales by Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{15C7E198-2A20-40BA-9505-5B893DEDA1A2}' />
+    </window>
+    <window class='worksheet' name='Worst Order'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DEB5E670-A723-4FC8-A5C9-41B8823CB0DF}' />
+    </window>
+    <window class='worksheet' name='Ratio'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{28B469FE-2D7C-4FB0-9BEF-98C11294684E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Formats'>
+      <viewpoints>
+        <viewpoint name='Monthly · Sales'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly · Sales · History'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Ratio'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sales by Region'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Totals · Avg Price'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Totals · Profit Ratio'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Totals · Quantity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Totals · Sales Scaled'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Worst Order'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C37A2319-5051-4B1A-8F8D-E4E713596109}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Formats' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

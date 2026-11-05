@@ -1,0 +1,47 @@
+{
+ "_source": "pandas over data/sample/sales_2y.csv (golden/expected/make_expected.py, decisions/052): combo, donut with its total and legend, lollipop",
+ "Combo": {
+  "East": {
+   "SUM(Sales)": 78646.07,
+   "SUM(Profit)": 5896.8
+  },
+  "North": {
+   "SUM(Sales)": 82909.04,
+   "SUM(Profit)": 6646.76
+  },
+  "South": {
+   "SUM(Sales)": 70212.64,
+   "SUM(Profit)": 4666.01
+  },
+  "West": {
+   "SUM(Sales)": 85565.19,
+   "SUM(Profit)": 7335.88
+  }
+ },
+ "Donut": {
+  "Furniture": 105262.97,
+  "Office": 108217.06,
+  "Tech": 103852.91
+ },
+ "Donut · Total": 317332.94,
+ "Donut · Legend": {
+  "Furniture": {
+   "value": 105262.97,
+   "share": 0.3317
+  },
+  "Office": {
+   "value": 108217.06,
+   "share": 0.341
+  },
+  "Tech": {
+   "value": 103852.91,
+   "share": 0.3273
+  }
+ },
+ "Lollipop": {
+  "East": 685,
+  "North": 668,
+  "South": 555,
+  "West": 636
+ }
+}

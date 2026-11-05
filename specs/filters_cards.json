@@ -1,0 +1,21 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_stores.csv"},
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [{"field": "Sales", "label": "Sales"}]},
+    {"name": "By City", "type": "bar", "title": "Sales **by city**", "dimension": "City",
+     "measure": {"field": "Sales"}, "sort": "desc"},
+    {"name": "By Product", "type": "bar", "title": "Sales **by product**", "dimension": "Product",
+     "measure": {"field": "Sales"}, "sort": "desc"}
+  ],
+  "filters": [
+    {"field": "Region", "show_on": "By City", "mode": "single_slider", "default": ["West"]},
+    {"field": "City", "show_on": "By City", "mode": "wildcard", "pattern": "o"},
+    {"field": "Sales", "show_on": "By Product", "mode": "range", "min": 100, "max": 400},
+    {"field": "Channel", "show_on": "By Product", "default": ["Online", "Retail"], "apply": true}
+  ],
+  "dashboard": {"name": "Stores", "title": "**Stores**: filter cards", "subtitle": "Sample data, 2025, 800 orders",
+                "width": 1600, "height": 800, "row_heights": [2, 5],
+                "grid": [["KPI"], ["By City", "By Product"]]}
+}

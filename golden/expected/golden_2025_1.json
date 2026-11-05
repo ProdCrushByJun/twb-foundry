@@ -1,0 +1,50 @@
+{
+ "_source": "pandas over data/sample/sales.csv (golden/expected/make_expected.py, decisions/052): KPI, bar Region x Category, line by month, table",
+ "KPI": {
+  "SUM(Profit)": 23549.6,
+  "SUM(Quantity)": 2610,
+  "SUM(Sales)": 224709.68
+ },
+ "Bar": {
+  "East | Furniture": 18839.86,
+  "East | Office": 15632.96,
+  "East | Tech": 17880.77,
+  "North | Furniture": 23294.07,
+  "North | Office": 14205.31,
+  "North | Tech": 20983.2,
+  "South | Furniture": 15128.11,
+  "South | Office": 22634.41,
+  "South | Tech": 21099.94,
+  "West | Furniture": 17694.88,
+  "West | Office": 18705.07,
+  "West | Tech": 18611.1
+ },
+ "Line": {
+  "2025-01": 19090.65,
+  "2025-02": 24338.11,
+  "2025-03": 21982.65,
+  "2025-04": 18283.27,
+  "2025-05": 14367.9,
+  "2025-06": 24065.85,
+  "2025-07": 20679.44,
+  "2025-08": 21003.03,
+  "2025-09": 15322.1,
+  "2025-10": 14716.61,
+  "2025-11": 13106.2,
+  "2025-12": 17753.87
+ },
+ "Table": {
+  "East | Furniture": 18839.86,
+  "East | Office": 15632.96,
+  "East | Tech": 17880.77,
+  "North | Furniture": 23294.07,
+  "North | Office": 14205.31,
+  "North | Tech": 20983.2,
+  "South | Furniture": 15128.11,
+  "South | Office": 22634.41,
+  "South | Tech": 21099.94,
+  "West | Furniture": 17694.88,
+  "West | Office": 18705.07,
+  "West | Tech": 18611.1
+ }
+}

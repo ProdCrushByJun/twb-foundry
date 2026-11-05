@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales Overview</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<style>
+  :root { --bg: #f5f6f8; --card: #ffffff; --line: #e4e7ec; --text: #1d2939; --muted: #667085; --accent: #3b7ddd; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 13px/1.4 "Segoe UI", Arial, sans-serif; }
+  .page { width: 1280px; margin: 0 auto; padding: 20px; }
+  header { margin-bottom: 16px; }
+  h1 { font-size: 22px; margin: 0; font-weight: 600; }
+  .sub { color: var(--muted); margin-top: 2px; }
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
+  .kpi .name { color: var(--muted); font-size: 12px; }
+  .kpi .value { font-size: 28px; font-weight: 600; margin-top: 4px; }
+  .row { display: grid; gap: 16px; margin-bottom: 16px; }
+  .row.a { grid-template-columns: 2fr 1fr; }
+  .row.b { grid-template-columns: 2fr 1fr; }
+  h2 { font-size: 14px; margin: 0 0 2px; font-weight: 600; }
+  .hint { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+  .chart { height: 260px; }
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; color: var(--muted); font-weight: 600; font-size: 11px; border-bottom: 1px solid var(--line); padding: 6px 4px; }
+  td { padding: 6px 4px; border-bottom: 1px solid #f0f2f5; }
+  th.num, td.num { text-align: right; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Retail Sales · Overview 2025</h1>
+    <div class="sub">January – December 2025 · all regions</div>
+  </header>
+
+  <section class="kpis">
+    <div class="card kpi"><div class="name">Revenue</div><div class="value" id="k-rev"></div></div>
+    <div class="card kpi"><div class="name">Orders</div><div class="value" id="k-orders"></div></div>
+    <div class="card kpi"><div class="name">Average order value</div><div class="value" id="k-aov"></div></div>
+    <div class="card kpi"><div class="name">Profit margin</div><div class="value" id="k-margin"></div></div>
+  </section>
+
+  <section class="row a">
+    <div class="card"><h2>Revenue by month</h2><div class="hint">$ thousands</div><div class="chart" id="c-month"></div></div>
+    <div class="card"><h2>Revenue by category</h2><div class="hint">$ thousands, all months</div><div class="chart" id="c-cat"></div></div>
+  </section>
+
+  <section class="row b">
+    <div class="card"><h2>Top 10 products</h2><div class="hint">by revenue</div>
+      <table><thead><tr><th>Product</th><th>Category</th><th class="num">Orders</th><th class="num">Revenue, $K</th><th class="num">Margin</th></tr></thead>
+        <tbody id="top"></tbody></table>
+    </div>
+    <div class="card"><h2>Revenue by channel</h2><div class="hint">share of revenue</div><div class="chart" id="c-chan"></div></div>
+  </section>
+</div>
+
+<script>
+const RAW = /*DATA*/null;
+const rows = RAW.rows.map(r => Object.fromEntries(RAW.cols.map((c, i) => [c, r[i]])));
+const sum = (a, f) => a.reduce((s, r) => s + f(r), 0);
+const group = (a, key) => { const m = new Map(); a.forEach(r => { const k = key(r); (m.get(k) || m.set(k, []).get(k)).push(r); }); return m; };
+const revenue = r => r.Revenue, cost = r => r.Cost;
+
+const rev = sum(rows, revenue), n = rows.length;
+document.getElementById('k-rev').textContent = '$' + (rev / 1e6).toFixed(2) + 'M';
+document.getElementById('k-orders').textContent = n.toLocaleString('en-US');
+document.getElementById('k-aov').textContent = '$' + (rev / n).toFixed(0);
+document.getElementById('k-margin').textContent = ((rev - sum(rows, cost)) / rev * 100).toFixed(1) + '%';
+
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const byMonth = group(rows, r => +r['Order Date'].slice(5, 7) - 1);
+const monthly = MONTHS.map((_, i) => Math.round(sum(byMonth.get(i) || [], revenue) / 1000));
+const grid = { left: 44, right: 12, top: 12, bottom: 24 };
+
+echarts.init(document.getElementById('c-month')).setOption({
+  grid, tooltip: { trigger: 'axis' },
+  xAxis: { type: 'category', data: MONTHS },
+  yAxis: { type: 'value', splitLine: { lineStyle: { color: '#eceff3' } } },
+  series: [{ type: 'line', data: monthly, smooth: true, symbol: 'circle', itemStyle: { color: '#3b7ddd' }, areaStyle: { opacity: .08 } }]
+});
+
+const byCat = [...group(rows, r => r.Category)].map(([k, a]) => [k, Math.round(sum(a, revenue) / 1000)]).sort((a, b) => b[1] - a[1]);
+echarts.init(document.getElementById('c-cat')).setOption({
+  grid: { left: 110, right: 40, top: 8, bottom: 8 }, tooltip: {},
+  xAxis: { type: 'value', show: false },
+  yAxis: { type: 'category', data: byCat.map(c => c[0]).reverse(), axisTick: { show: false }, axisLine: { show: false } },
+  series: [{ type: 'bar', data: byCat.map(c => c[1]).reverse(), itemStyle: { color: '#3b7ddd' }, label: { show: true, position: 'right' } }]
+});
+
+const byChan = [...group(rows, r => r.Channel)].map(([k, a]) => ({ name: k, value: Math.round(sum(a, revenue)) })).sort((a, b) => b.value - a.value);
+echarts.init(document.getElementById('c-chan')).setOption({
+  tooltip: { trigger: 'item' }, legend: { bottom: 0, itemWidth: 10, itemHeight: 10 },
+  color: ['#3b7ddd', '#7aa8e8', '#f2a541', '#b8c0cc'],
+  series: [{ type: 'pie', radius: ['38%', '54%'], center: ['50%', '44%'], data: byChan,
+    label: { formatter: '{b} {d}%', overflow: 'none' }, labelLine: { show: true } }]
+});
+
+const topN = [...group(rows, r => r.Product)].map(([k, a]) => ({
+  product: k, category: a[0].Category, orders: a.length, rev: sum(a, revenue), margin: (sum(a, revenue) - sum(a, cost)) / sum(a, revenue)
+})).sort((a, b) => b.rev - a.rev).slice(0, 10);
+document.getElementById('top').innerHTML = topN.map(t =>
+  `<tr><td>${t.product}</td><td>${t.category}</td><td class="num">${t.orders}</td><td class="num">${Math.round(t.rev / 1000).toLocaleString('en-US')}</td><td class="num">${(t.margin * 100).toFixed(1)}%</td></tr>`).join('');
+</script>
+</body>
+</html>

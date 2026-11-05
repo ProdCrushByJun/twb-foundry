@@ -1,0 +1,467 @@
+{
+ "_source": "pandas over data/sample/sales_products.csv (golden/expected/make_expected.py, decisions/052): points, average / median axis lines",
+ "Products": {
+  "Atlas": {
+   "SUM(Quantity)": 390,
+   "SUM(Sales)": 10983.19
+  },
+  "Beacon": {
+   "SUM(Quantity)": 313,
+   "SUM(Sales)": 17414.43
+  },
+  "Cobalt": {
+   "SUM(Quantity)": 109,
+   "SUM(Sales)": 16876.09
+  },
+  "Delta": {
+   "SUM(Quantity)": 128,
+   "SUM(Sales)": 8254.79
+  },
+  "Ember": {
+   "SUM(Quantity)": 109,
+   "SUM(Sales)": 15379.56
+  },
+  "Falcon": {
+   "SUM(Quantity)": 385,
+   "SUM(Sales)": 7318.13
+  },
+  "Granite": {
+   "SUM(Quantity)": 203,
+   "SUM(Sales)": 9899.5
+  },
+  "Harbor": {
+   "SUM(Quantity)": 164,
+   "SUM(Sales)": 10475.33
+  },
+  "Iris": {
+   "SUM(Quantity)": 329,
+   "SUM(Sales)": 16983.45
+  },
+  "Juniper": {
+   "SUM(Quantity)": 66,
+   "SUM(Sales)": 12365.45
+  },
+  "Kestrel": {
+   "SUM(Quantity)": 156,
+   "SUM(Sales)": 8231.14
+  },
+  "Lumen": {
+   "SUM(Quantity)": 87,
+   "SUM(Sales)": 2856.3
+  },
+  "Meridian": {
+   "SUM(Quantity)": 241,
+   "SUM(Sales)": 11963.41
+  },
+  "Nova": {
+   "SUM(Quantity)": 207,
+   "SUM(Sales)": 2531.62
+  },
+  "Orbit": {
+   "SUM(Quantity)": 125,
+   "SUM(Sales)": 7766.03
+  },
+  "Pioneer": {
+   "SUM(Quantity)": 273,
+   "SUM(Sales)": 11249.15
+  }
+ },
+ "Products · Axis Lines": {
+  "SUM(Quantity)": 205.3125,
+  "SUM(Sales)": 10659.2231
+ },
+ "Profitability": {
+  "Atlas": {
+   "SUM(Sales)": 10983.19,
+   "SUM(Profit)": 1943.65
+  },
+  "Beacon": {
+   "SUM(Sales)": 17414.43,
+   "SUM(Profit)": 1917.43
+  },
+  "Cobalt": {
+   "SUM(Sales)": 16876.09,
+   "SUM(Profit)": 2260.13
+  },
+  "Delta": {
+   "SUM(Sales)": 8254.79,
+   "SUM(Profit)": -798.63
+  },
+  "Ember": {
+   "SUM(Sales)": 15379.56,
+   "SUM(Profit)": 5188.7
+  },
+  "Falcon": {
+   "SUM(Sales)": 7318.13,
+   "SUM(Profit)": 1150.13
+  },
+  "Granite": {
+   "SUM(Sales)": 9899.5,
+   "SUM(Profit)": 2394.88
+  },
+  "Harbor": {
+   "SUM(Sales)": 10475.33,
+   "SUM(Profit)": -1391.58
+  },
+  "Iris": {
+   "SUM(Sales)": 16983.45,
+   "SUM(Profit)": 5517.39
+  },
+  "Juniper": {
+   "SUM(Sales)": 12365.45,
+   "SUM(Profit)": 394.42
+  },
+  "Kestrel": {
+   "SUM(Sales)": 8231.14,
+   "SUM(Profit)": 1009.42
+  },
+  "Lumen": {
+   "SUM(Sales)": 2856.3,
+   "SUM(Profit)": 433.67
+  },
+  "Meridian": {
+   "SUM(Sales)": 11963.41,
+   "SUM(Profit)": 1476.91
+  },
+  "Nova": {
+   "SUM(Sales)": 2531.62,
+   "SUM(Profit)": 373.65
+  },
+  "Orbit": {
+   "SUM(Sales)": 7766.03,
+   "SUM(Profit)": 2487.03
+  },
+  "Pioneer": {
+   "SUM(Sales)": 11249.15,
+   "SUM(Profit)": 234.53
+  }
+ },
+ "Profitability · Axis Lines": {
+  "SUM(Sales)": 10729.26,
+  "SUM(Profit)": 1313.52
+ },
+ "Regions": {
+  "Atlas | East": {
+   "SUM(Quantity)": 63,
+   "SUM(Sales)": 1720.04
+  },
+  "Atlas | North": {
+   "SUM(Quantity)": 108,
+   "SUM(Sales)": 3091.77
+  },
+  "Atlas | South": {
+   "SUM(Quantity)": 85,
+   "SUM(Sales)": 2512.26
+  },
+  "Atlas | West": {
+   "SUM(Quantity)": 134,
+   "SUM(Sales)": 3659.12
+  },
+  "Beacon | East": {
+   "SUM(Quantity)": 91,
+   "SUM(Sales)": 5003.16
+  },
+  "Beacon | North": {
+   "SUM(Quantity)": 82,
+   "SUM(Sales)": 5172.45
+  },
+  "Beacon | South": {
+   "SUM(Quantity)": 59,
+   "SUM(Sales)": 3178.24
+  },
+  "Beacon | West": {
+   "SUM(Quantity)": 81,
+   "SUM(Sales)": 4060.58
+  },
+  "Cobalt | East": {
+   "SUM(Quantity)": 26,
+   "SUM(Sales)": 4978.71
+  },
+  "Cobalt | North": {
+   "SUM(Quantity)": 21,
+   "SUM(Sales)": 3845.89
+  },
+  "Cobalt | South": {
+   "SUM(Quantity)": 34,
+   "SUM(Sales)": 4809.28
+  },
+  "Cobalt | West": {
+   "SUM(Quantity)": 28,
+   "SUM(Sales)": 3242.21
+  },
+  "Delta | East": {
+   "SUM(Quantity)": 25,
+   "SUM(Sales)": 1701.41
+  },
+  "Delta | North": {
+   "SUM(Quantity)": 34,
+   "SUM(Sales)": 1853.77
+  },
+  "Delta | South": {
+   "SUM(Quantity)": 28,
+   "SUM(Sales)": 1903.67
+  },
+  "Delta | West": {
+   "SUM(Quantity)": 41,
+   "SUM(Sales)": 2795.94
+  },
+  "Ember | East": {
+   "SUM(Quantity)": 21,
+   "SUM(Sales)": 2982.66
+  },
+  "Ember | North": {
+   "SUM(Quantity)": 29,
+   "SUM(Sales)": 4557.68
+  },
+  "Ember | South": {
+   "SUM(Quantity)": 28,
+   "SUM(Sales)": 4055.38
+  },
+  "Ember | West": {
+   "SUM(Quantity)": 31,
+   "SUM(Sales)": 3783.84
+  },
+  "Falcon | East": {
+   "SUM(Quantity)": 113,
+   "SUM(Sales)": 2129.43
+  },
+  "Falcon | North": {
+   "SUM(Quantity)": 104,
+   "SUM(Sales)": 1988.21
+  },
+  "Falcon | South": {
+   "SUM(Quantity)": 78,
+   "SUM(Sales)": 1553.16
+  },
+  "Falcon | West": {
+   "SUM(Quantity)": 90,
+   "SUM(Sales)": 1647.33
+  },
+  "Granite | East": {
+   "SUM(Quantity)": 38,
+   "SUM(Sales)": 1931.72
+  },
+  "Granite | North": {
+   "SUM(Quantity)": 52,
+   "SUM(Sales)": 2252.09
+  },
+  "Granite | South": {
+   "SUM(Quantity)": 39,
+   "SUM(Sales)": 2211.04
+  },
+  "Granite | West": {
+   "SUM(Quantity)": 74,
+   "SUM(Sales)": 3504.65
+  },
+  "Harbor | East": {
+   "SUM(Quantity)": 29,
+   "SUM(Sales)": 1848.02
+  },
+  "Harbor | North": {
+   "SUM(Quantity)": 62,
+   "SUM(Sales)": 3962.43
+  },
+  "Harbor | South": {
+   "SUM(Quantity)": 35,
+   "SUM(Sales)": 2260.29
+  },
+  "Harbor | West": {
+   "SUM(Quantity)": 38,
+   "SUM(Sales)": 2404.59
+  },
+  "Iris | East": {
+   "SUM(Quantity)": 53,
+   "SUM(Sales)": 2650.79
+  },
+  "Iris | North": {
+   "SUM(Quantity)": 109,
+   "SUM(Sales)": 5493.03
+  },
+  "Iris | South": {
+   "SUM(Quantity)": 74,
+   "SUM(Sales)": 3822.52
+  },
+  "Iris | West": {
+   "SUM(Quantity)": 93,
+   "SUM(Sales)": 5017.11
+  },
+  "Juniper | East": {
+   "SUM(Quantity)": 6,
+   "SUM(Sales)": 1981.91
+  },
+  "Juniper | North": {
+   "SUM(Quantity)": 20,
+   "SUM(Sales)": 3361.74
+  },
+  "Juniper | South": {
+   "SUM(Quantity)": 23,
+   "SUM(Sales)": 3919.58
+  },
+  "Juniper | West": {
+   "SUM(Quantity)": 17,
+   "SUM(Sales)": 3102.22
+  },
+  "Kestrel | East": {
+   "SUM(Quantity)": 21,
+   "SUM(Sales)": 1132.91
+  },
+  "Kestrel | North": {
+   "SUM(Quantity)": 29,
+   "SUM(Sales)": 1468.42
+  },
+  "Kestrel | South": {
+   "SUM(Quantity)": 71,
+   "SUM(Sales)": 3962.48
+  },
+  "Kestrel | West": {
+   "SUM(Quantity)": 35,
+   "SUM(Sales)": 1667.33
+  },
+  "Lumen | East": {
+   "SUM(Quantity)": 21,
+   "SUM(Sales)": 651.81
+  },
+  "Lumen | North": {
+   "SUM(Quantity)": 23,
+   "SUM(Sales)": 782.72
+  },
+  "Lumen | South": {
+   "SUM(Quantity)": 16,
+   "SUM(Sales)": 585.86
+  },
+  "Lumen | West": {
+   "SUM(Quantity)": 27,
+   "SUM(Sales)": 835.91
+  },
+  "Meridian | East": {
+   "SUM(Quantity)": 48,
+   "SUM(Sales)": 2562.11
+  },
+  "Meridian | North": {
+   "SUM(Quantity)": 46,
+   "SUM(Sales)": 2084.06
+  },
+  "Meridian | South": {
+   "SUM(Quantity)": 54,
+   "SUM(Sales)": 2868.08
+  },
+  "Meridian | West": {
+   "SUM(Quantity)": 93,
+   "SUM(Sales)": 4449.16
+  },
+  "Nova | East": {
+   "SUM(Quantity)": 62,
+   "SUM(Sales)": 827.7
+  },
+  "Nova | North": {
+   "SUM(Quantity)": 31,
+   "SUM(Sales)": 357.32
+  },
+  "Nova | South": {
+   "SUM(Quantity)": 57,
+   "SUM(Sales)": 657.09
+  },
+  "Nova | West": {
+   "SUM(Quantity)": 57,
+   "SUM(Sales)": 689.51
+  },
+  "Orbit | East": {
+   "SUM(Quantity)": 29,
+   "SUM(Sales)": 1759.72
+  },
+  "Orbit | North": {
+   "SUM(Quantity)": 33,
+   "SUM(Sales)": 1930.36
+  },
+  "Orbit | South": {
+   "SUM(Quantity)": 38,
+   "SUM(Sales)": 2268.44
+  },
+  "Orbit | West": {
+   "SUM(Quantity)": 25,
+   "SUM(Sales)": 1807.51
+  },
+  "Pioneer | East": {
+   "SUM(Quantity)": 35,
+   "SUM(Sales)": 1348.82
+  },
+  "Pioneer | North": {
+   "SUM(Quantity)": 56,
+   "SUM(Sales)": 2316.53
+  },
+  "Pioneer | South": {
+   "SUM(Quantity)": 89,
+   "SUM(Sales)": 3725.61
+  },
+  "Pioneer | West": {
+   "SUM(Quantity)": 93,
+   "SUM(Sales)": 3858.19
+  }
+ },
+ "Margin": {
+  "Atlas": {
+   "SUM(Quantity)": 390,
+   "SUM(Profit)": 1943.65
+  },
+  "Beacon": {
+   "SUM(Quantity)": 313,
+   "SUM(Profit)": 1917.43
+  },
+  "Cobalt": {
+   "SUM(Quantity)": 109,
+   "SUM(Profit)": 2260.13
+  },
+  "Delta": {
+   "SUM(Quantity)": 128,
+   "SUM(Profit)": -798.63
+  },
+  "Ember": {
+   "SUM(Quantity)": 109,
+   "SUM(Profit)": 5188.7
+  },
+  "Falcon": {
+   "SUM(Quantity)": 385,
+   "SUM(Profit)": 1150.13
+  },
+  "Granite": {
+   "SUM(Quantity)": 203,
+   "SUM(Profit)": 2394.88
+  },
+  "Harbor": {
+   "SUM(Quantity)": 164,
+   "SUM(Profit)": -1391.58
+  },
+  "Iris": {
+   "SUM(Quantity)": 329,
+   "SUM(Profit)": 5517.39
+  },
+  "Juniper": {
+   "SUM(Quantity)": 66,
+   "SUM(Profit)": 394.42
+  },
+  "Kestrel": {
+   "SUM(Quantity)": 156,
+   "SUM(Profit)": 1009.42
+  },
+  "Lumen": {
+   "SUM(Quantity)": 87,
+   "SUM(Profit)": 433.67
+  },
+  "Meridian": {
+   "SUM(Quantity)": 241,
+   "SUM(Profit)": 1476.91
+  },
+  "Nova": {
+   "SUM(Quantity)": 207,
+   "SUM(Profit)": 373.65
+  },
+  "Orbit": {
+   "SUM(Quantity)": 125,
+   "SUM(Profit)": 2487.03
+  },
+  "Pioneer": {
+   "SUM(Quantity)": 273,
+   "SUM(Profit)": 234.53
+  }
+ }
+}

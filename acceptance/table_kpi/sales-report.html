@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retail Sales Report</title>
+<style>
+  :root { --bg: #f4f5f7; --card: #ffffff; --line: #e2e5ea; --text: #1f2933; --muted: #6b7684; --good: #1e8e5a; --bad: #c8412f; --head: #0d3a6b; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 13px/1.4 "Segoe UI", Arial, sans-serif; }
+  .page { width: 1280px; margin: 0 auto; padding: 20px; }
+  header { margin-bottom: 16px; }
+  h1 { font-size: 22px; margin: 0; font-weight: 600; }
+  .sub { color: var(--muted); margin-top: 2px; }
+  .kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
+  .kpi .name { color: var(--muted); font-size: 12px; }
+  .kpi .value { font-size: 30px; font-weight: 600; margin-top: 4px; }
+  .kpi .delta { font-size: 12px; font-weight: 600; margin-top: 2px; }
+  .kpi .delta span { color: var(--muted); font-weight: 400; }
+  .good { color: var(--good); } .bad { color: var(--bad); }
+  .row { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; align-items: start; }
+  h2 { font-size: 14px; margin: 0 0 2px; font-weight: 600; }
+  .hint { color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; color: #fff; background: var(--head); font-weight: 600; font-size: 11px; padding: 6px 8px; }
+  th.num, td.num { text-align: right; }
+  td { padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  td.ind { padding-left: 24px; }
+  td.rk { width: 28px; color: var(--muted); }
+  tr.grp td { font-weight: 600; background: #eef1f5; }
+  tr.sub td { font-weight: 600; }
+  tr.grand td { font-weight: 700; border-top: 2px solid var(--text); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Retail Sales Report</h1>
+    <div class="sub">December 2025 against November 2025 · full year 2025 against 2024 · all regions</div>
+  </header>
+  <section class="kpis">
+    <div class="card kpi"><div class="name">Sales</div><div class="value">$75.6K</div><div class="delta good">&#9650; +1.3% <span>vs Nov 2025</span></div></div>
+    <div class="card kpi"><div class="name">Profit</div><div class="value">$9.9K</div><div class="delta good">&#9650; +15.5% <span>vs Nov 2025</span></div></div>
+    <div class="card kpi"><div class="name">Profit margin</div><div class="value">13.1%</div><div class="delta good">&#9650; +1.6 pp <span>vs Nov 2025</span></div></div>
+    <div class="card kpi"><div class="name">Orders</div><div class="value">122</div><div class="delta good">&#9650; +0.8% <span>vs Nov 2025</span></div></div>
+    <div class="card kpi"><div class="name">Units sold</div><div class="value">264</div><div class="delta bad">&#9660; −3.3% <span>vs Nov 2025</span></div></div>
+  </section>
+  <section class="row">
+    <div class="card">
+      <h2>Sales by region and category</h2>
+      <div class="hint">2025 totals; change against 2024</div>
+      <table>
+        <thead><tr><th>Region / category</th><th class="num">Sales</th><th class="num">vs 2024</th><th class="num">Profit</th><th class="num">Margin</th><th class="num">Margin vs 2024</th><th class="num">Units</th></tr></thead>
+        <tbody>
+        <tr class="grp"><td colspan="7">East</td></tr>
+        <tr class=""><td class="ind">Furniture</td><td class="num">$51,516</td><td class="num bad">−18.4%</td><td class="num">$2,995</td><td class="num">5.8%</td><td class="num bad">−0.7 pp</td><td class="num">151</td></tr>
+        <tr class=""><td class="ind">Technology</td><td class="num">$148,476</td><td class="num good">+53.9%</td><td class="num">$18,268</td><td class="num">12.3%</td><td class="num bad">−2.6 pp</td><td class="num">360</td></tr>
+        <tr class=""><td class="ind">Office Supplies</td><td class="num">$10,618</td><td class="num good">+31.3%</td><td class="num">$2,748</td><td class="num">25.9%</td><td class="num bad">−1.5 pp</td><td class="num">306</td></tr>
+        <tr class="sub"><td>East total</td><td class="num">$210,609</td><td class="num good">+25.6%</td><td class="num">$24,011</td><td class="num">11.4%</td><td class="num bad">−1.0 pp</td><td class="num">817</td></tr>
+        <tr class="grp"><td colspan="7">West</td></tr>
+        <tr class=""><td class="ind">Furniture</td><td class="num">$58,149</td><td class="num good">+20.7%</td><td class="num">$3,866</td><td class="num">6.6%</td><td class="num good">+1.9 pp</td><td class="num">173</td></tr>
+        <tr class=""><td class="ind">Technology</td><td class="num">$122,079</td><td class="num good">+27.3%</td><td class="num">$16,354</td><td class="num">13.4%</td><td class="num good">+0.9 pp</td><td class="num">307</td></tr>
+        <tr class=""><td class="ind">Office Supplies</td><td class="num">$8,157</td><td class="num bad">−5.4%</td><td class="num">$2,194</td><td class="num">26.9%</td><td class="num good">+0.6 pp</td><td class="num">233</td></tr>
+        <tr class="sub"><td>West total</td><td class="num">$188,385</td><td class="num good">+23.4%</td><td class="num">$22,413</td><td class="num">11.9%</td><td class="num good">+1.1 pp</td><td class="num">713</td></tr>
+        <tr class="grp"><td colspan="7">Central</td></tr>
+        <tr class=""><td class="ind">Furniture</td><td class="num">$41,095</td><td class="num bad">−15.1%</td><td class="num">$2,322</td><td class="num">5.6%</td><td class="num bad">−1.5 pp</td><td class="num">117</td></tr>
+        <tr class=""><td class="ind">Technology</td><td class="num">$110,715</td><td class="num good">+43.4%</td><td class="num">$12,938</td><td class="num">11.7%</td><td class="num bad">−1.8 pp</td><td class="num">282</td></tr>
+        <tr class=""><td class="ind">Office Supplies</td><td class="num">$7,605</td><td class="num good">+15.3%</td><td class="num">$2,023</td><td class="num">26.6%</td><td class="num good">+1.6 pp</td><td class="num">213</td></tr>
+        <tr class="sub"><td>Central total</td><td class="num">$159,415</td><td class="num good">+20.6%</td><td class="num">$17,283</td><td class="num">10.8%</td><td class="num bad">−0.9 pp</td><td class="num">612</td></tr>
+        <tr class="grp"><td colspan="7">South</td></tr>
+        <tr class=""><td class="ind">Furniture</td><td class="num">$16,622</td><td class="num bad">−54.6%</td><td class="num">$1,196</td><td class="num">7.2%</td><td class="num good">+3.1 pp</td><td class="num">47</td></tr>
+        <tr class=""><td class="ind">Technology</td><td class="num">$77,608</td><td class="num good">+27.1%</td><td class="num">$10,463</td><td class="num">13.5%</td><td class="num bad">−0.1 pp</td><td class="num">171</td></tr>
+        <tr class=""><td class="ind">Office Supplies</td><td class="num">$4,853</td><td class="num good">+13.3%</td><td class="num">$1,258</td><td class="num">25.9%</td><td class="num bad">−1.3 pp</td><td class="num">133</td></tr>
+        <tr class="sub"><td>South total</td><td class="num">$99,082</td><td class="num bad">−2.8%</td><td class="num">$12,917</td><td class="num">13.0%</td><td class="num good">+2.3 pp</td><td class="num">351</td></tr>
+        <tr class="grand"><td>Grand total</td><td class="num">$657,492</td><td class="num good">+18.6%</td><td class="num">$76,623</td><td class="num">11.7%</td><td class="num good">+0.2 pp</td><td class="num">2,493</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <h2>Top 5 products</h2>
+      <div class="hint">by 2025 sales</div>
+      <table>
+        <thead><tr><th>#</th><th>Product</th><th class="num">Sales</th><th class="num">Share</th><th class="num">vs 2024</th></tr></thead>
+        <tbody>
+        <tr><td class="rk">1</td><td>Laptop</td><td class="num">$148,176</td><td class="num">22.5%</td><td class="num good">+30.1%</td></tr>
+        <tr><td class="rk">2</td><td>Phone</td><td class="num">$141,420</td><td class="num">21.5%</td><td class="num good">+30.6%</td></tr>
+        <tr><td class="rk">3</td><td>Monitor</td><td class="num">$95,226</td><td class="num">14.5%</td><td class="num good">+51.3%</td></tr>
+        <tr><td class="rk">4</td><td>Printer</td><td class="num">$74,056</td><td class="num">11.3%</td><td class="num good">+62.9%</td></tr>
+        <tr><td class="rk">5</td><td>Table</td><td class="num">$49,207</td><td class="num">7.5%</td><td class="num bad">−18.3%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+</body>
+</html>

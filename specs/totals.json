@@ -1,0 +1,24 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "sheets": [
+    {"name": "Sales", "type": "table", "title": "Sales **by region and category**", "rows": "Region",
+     "cols": "Category", "measure": {"field": "Sales"}, "totals": {"grand": "both"},
+     "tooltip": "<Region>, <Category>\nSales: <SUM(Sales)>\nOrders: <COUNT(Sales)>"},
+    {"name": "Avg Profit", "type": "table", "title": "Average **profit per order**", "rows": "Region",
+     "cols": "Category", "measure": {"field": "Profit", "agg": "avg"}, "totals": {"grand": "both", "label": "All"}},
+    {"name": "Registry", "type": "registry", "title": "Region **by category**", "rows": ["Region", "Category"],
+     "columns": [
+       {"measure": {"field": "Sales"}, "style": "text"},
+       {"measure": {"field": "Profit", "agg": "avg"}, "style": "text", "label": "Avg profit"},
+       {"measure": {"field": "Quantity", "agg": "countd"}, "style": "text", "label": "Order sizes"}
+     ],
+     "totals": {"grand": "rows", "sub": ["Region"]}},
+    {"name": "Regions", "type": "bar", "title": "**Regions**", "dimension": "Region", "measure": {"field": "Sales"},
+     "sort": "desc", "tooltip": "Region: <Region>\nSales: <SUM(Sales)>\nProfit: <SUM(Profit)>"}
+  ],
+  "dashboard": {"name": "Totals", "title": "**Totals** and tooltips", "subtitle": "Sample data, 500 orders",
+                "width": 1200, "height": 900, "row_heights": [1, 1],
+                "grid": [["Sales", "Avg Profit"], [{"sheet": "Registry", "width": 3}, {"sheet": "Regions", "width": 2}]]}
+}

@@ -1,0 +1,19 @@
+{
+ "_source": "pandas over data/sample/sales_stores.csv (golden/expected/make_expected.py, decisions/052): context Region = North, Top 5 products, Channel Online + Retail",
+ "KPI": {
+  "SUM(Sales)": 35939.97,
+  "AGG(Share of region)": 0.6662
+ },
+ "Top Products": {
+  "Cobalt": 3898.92,
+  "Harbor": 3444.59,
+  "Juniper": 2750.2,
+  "Meridian": 3278.39,
+  "Orbit": 3204.7
+ },
+ "By City": {
+  "Bismarck": 8276.33,
+  "Duluth": 16032.62,
+  "Fargo": 11631.02
+ }
+}

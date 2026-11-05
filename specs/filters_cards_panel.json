@@ -1,0 +1,16 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_stores.csv"},
+  "sheets": [
+    {"name": "By City", "type": "bar", "title": "Sales **by city**", "dimension": "City",
+     "measure": {"field": "Sales"}, "sort": "desc"},
+    {"name": "By Product", "type": "bar", "title": "Sales **by product**", "dimension": "Product",
+     "measure": {"field": "Sales"}, "sort": "desc"}
+  ],
+  "filters": [
+    {"field": "Region", "show_on": "By City", "mode": "single_list", "default": ["East"]},
+    {"field": "Channel", "show_on": "By Product", "mode": "multi_list", "default": ["Online", "Partner"], "apply": true}
+  ],
+  "dashboard": {"name": "Stores", "width": 1200, "height": 800, "grid": [["By City", "By Product"]]}
+}

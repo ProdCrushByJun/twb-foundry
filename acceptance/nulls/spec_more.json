@@ -1,0 +1,29 @@
+{
+  "$schema": "../../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "sales_nulls.csv"},
+  "fields": {
+    "Coast": {"group": {"field": "Region", "bins": {"Coast": ["East", "West"]}, "other": "Inland"}},
+    "Upper": {"group": {"field": "Region", "bins": {"Upper": ["North", "East"]}}}
+  },
+  "sheets": [
+    {"name": "Registry", "type": "registry", "title": "Regions **ranked**", "rows": ["Region"], "sort": "desc",
+     "columns": [
+       {"measure": {"field": "Sales"}, "style": "rank", "label": "#"},
+       {"measure": {"field": "Sales"}, "style": "text", "label": "Sales"},
+       {"measure": {"field": "Sales"}, "style": "share", "label": "Share"}
+     ]},
+    {"name": "Subtotals", "type": "registry", "title": "Region **by category**", "rows": ["Region", "Category"],
+     "columns": [{"measure": {"field": "Sales"}, "style": "text", "label": "Sales"}],
+     "totals": {"grand": "rows", "sub": ["Region"]}},
+    {"name": "Heat", "type": "heatmap", "title": "**Heatmap** with margins", "rows": "Region", "cols": "Category",
+     "measure": {"field": "Sales"}, "color": {"scale": "sequential"}, "margins": {"rows": "bar", "cols": "bar"}},
+    {"name": "Coast", "type": "bar", "title": "Group **with Other**", "dimension": "Coast",
+     "measure": {"field": "Sales"}},
+    {"name": "Upper", "type": "bar", "title": "Group **without Other**", "dimension": "Upper",
+     "measure": {"field": "Sales"}}
+  ],
+  "dashboard": {"name": "Nulls more", "title": "**Null** in registry, heatmap, groups",
+                "subtitle": "Empty dimension values, decisions/056", "width": 1600, "height": 1100,
+                "grid": [["Registry", "Subtotals", "Heat"], ["Coast", "Upper"]]}
+}

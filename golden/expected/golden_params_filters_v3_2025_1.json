@@ -1,0 +1,53 @@
+{
+ "_source": "pandas over data/sample/sales_products.csv (golden/expected/make_expected.py, decisions/052): date / integer list / real / boolean parameters, context filter on a boolean calc, a sheet's own filters, measure filters",
+ "KPI": {
+  "AGG(Shown sales)": 128632.46,
+  "AGG(Margin gap)": -0.106
+ },
+ "Top Products": {
+  "Beacon": 13644.15,
+  "Cobalt": 11352.18,
+  "Ember": 13185.23,
+  "Iris": 12574.75,
+  "Meridian": 9418.03
+ },
+ "North East": {
+  "Atlas": 3219.64,
+  "Beacon": 8151.84,
+  "Cobalt": 6205.17,
+  "Ember": 6976.78,
+  "Falcon": 2769.92,
+  "Granite": 2409.08,
+  "Iris": 5791.22,
+  "Juniper": 2897.56,
+  "Kestrel": 1727.83,
+  "Lumen": 773.78,
+  "Meridian": 3484.59,
+  "Nova": 709.16,
+  "Orbit": 3242.73,
+  "Pioneer": 2445.52
+ },
+ "Big Products": {
+  "Beacon": 13644.15,
+  "Cobalt": 11352.18,
+  "Ember": 13185.23,
+  "Iris": 12574.75,
+  "Meridian": 9418.03,
+  "Pioneer": 9255.41
+ },
+ "Large Orders": {
+  "East": 0.1539,
+  "West": 0.1412
+ },
+ "Trend": {
+  "2025-01": 12847.76,
+  "2025-02": 14044.88,
+  "2025-03": 13486.24,
+  "2025-04": 15348.57,
+  "2025-05": 16426.09,
+  "2025-06": 12714.36,
+  "2025-07": 13835.65,
+  "2025-08": 15054.35,
+  "2025-09": 14874.56
+ }
+}

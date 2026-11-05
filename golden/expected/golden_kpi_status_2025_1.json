@@ -1,0 +1,37 @@
+{
+ "_source": "pandas over data/sample/sales_2y.csv (golden/expected/make_expected.py, decisions/052): KPI status dots by thresholds on the value or the change",
+ "Monthly": {
+  "Sales": {
+   "current": 15462.12,
+   "previous": 13995.54,
+   "delta": 0.1048,
+   "status": "On track"
+  },
+  "Profit": {
+   "current": 825.38,
+   "previous": 1257.53,
+   "delta": -0.3436,
+   "status": "Off track"
+  },
+  "Units": {
+   "current": 104,
+   "previous": 102,
+   "delta": 0.0196,
+   "status": "At risk"
+  }
+ },
+ "Yearly": {
+  "Sales": {
+   "current": 15462.12,
+   "previous": 9571.36,
+   "delta": 0.6155,
+   "status": "Healthy"
+  },
+  "Profit": {
+   "current": 825.38,
+   "previous": 406.4,
+   "delta": 1.031,
+   "status": "Warning"
+  }
+ }
+}

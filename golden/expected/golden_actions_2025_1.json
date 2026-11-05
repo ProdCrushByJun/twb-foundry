@@ -1,0 +1,44 @@
+{
+ "_source": "pandas over data/sample/sales.csv (golden/expected/make_expected.py, decisions/052): KPI, registry Region, bar Category, line",
+ "KPI": {
+  "SUM(Sales)": 224709.68,
+  "SUM(Profit)": 23549.6
+ },
+ "By Region": {
+  "East": {
+   "Sales": 52353.59,
+   "Profit": 4875.39
+  },
+  "North": {
+   "Sales": 58482.58,
+   "Profit": 7686.5
+  },
+  "South": {
+   "Sales": 58862.46,
+   "Profit": 6434.13
+  },
+  "West": {
+   "Sales": 55011.05,
+   "Profit": 4553.58
+  }
+ },
+ "By Category": {
+  "Furniture": 74956.92,
+  "Office": 71177.75,
+  "Tech": 78575.01
+ },
+ "Trend": {
+  "2025-01": 19090.65,
+  "2025-02": 24338.11,
+  "2025-03": 21982.65,
+  "2025-04": 18283.27,
+  "2025-05": 14367.9,
+  "2025-06": 24065.85,
+  "2025-07": 20679.44,
+  "2025-08": 21003.03,
+  "2025-09": 15322.1,
+  "2025-10": 14716.61,
+  "2025-11": 13106.2,
+  "2025-12": 17753.87
+ }
+}

@@ -1,0 +1,806 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook locale='en_US' original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='sales_2y' inline='true' name='federated.cdbc56raqlrtbcsleq8libsocm0y' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sales_2y' name='textscan.ioavr3xly211rmlg1wmirodrqyrs'>
+            <connection class='textscan' directory='Data/sample' filename='sales_2y.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.ioavr3xly211rmlg1wmirodrqyrs' name='sales_2y.csv' table='[sales_2y#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Order Date' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='string' name='Category' ordinal='2' />
+            <column datatype='real' name='Sales' ordinal='3' />
+            <column datatype='real' name='Profit' ordinal='4' />
+            <column datatype='integer' name='Quantity' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_2y.csv_6F8C222738A5485AA59BA30904D32533]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[sales_2y.csv_6F8C222738A5485AA59BA30904D32533]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[sales_2y.csv_6F8C222738A5485AA59BA30904D32533]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_2y.csv_6F8C222738A5485AA59BA30904D32533]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_2y.csv_6F8C222738A5485AA59BA30904D32533]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[sales_2y.csv]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[sales_2y.csv_6F8C222738A5485AA59BA30904D32533]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Regions · Quarterly sales · Period 8' datatype='real' name='[Calculation_1831862557557644182]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2025-10-01# THEN [Sales] END))' />
+      </column>
+      <column caption='Regions · Quarterly sales · Period 5' datatype='real' name='[Calculation_3206906709141276980]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2025-01-01# THEN [Sales] END))' />
+      </column>
+      <column caption='Regions · Profit · Pill' datatype='string' name='[Calculation_3375421249854604176]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF SUM([Profit]) &gt;= 7000 THEN &quot;High&quot; ELSEIF SUM([Profit]) &gt;= 5000 THEN &quot;OK&quot; ELSE &quot;Low&quot; END' />
+      </column>
+      <column caption='Regions · Quarterly sales · Period 4' datatype='real' name='[Calculation_4717195676439985583]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2024-10-01# THEN [Sales] END))' />
+      </column>
+      <column caption='Regions · Quarterly sales · Period 1' datatype='real' name='[Calculation_5117989418621782728]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2024-01-01# THEN [Sales] END))' />
+      </column>
+      <column caption='Regions · Quarterly sales · Period 2' datatype='real' name='[Calculation_5199774344922134622]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2024-04-01# THEN [Sales] END))' />
+      </column>
+      <column caption='Regions · Sales · Inside' datatype='real' name='[Calculation_5431305383707631528]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF SUM([Sales]) &gt; 0 AND SUM([Sales]) &gt;= 0.193 * WINDOW_MAX(SUM([Sales])) THEN SUM([Sales]) END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Regions · Quarterly sales · Spark' datatype='string' name='[Calculation_5807833705534648984]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_5117989418621782728] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_5199774344922134622] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_9576966952684831173] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_4717195676439985583] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_3206906709141276980] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_9887475786131882503] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_9595877620888026037] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_1831862557557644182] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1)' />
+      </column>
+      <column caption='Regions · Quarterly sales · Highest' datatype='real' name='[Calculation_6973710823747238485]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_5117989418621782728] &gt;= [Calculation_5199774344922134622] AND [Calculation_5117989418621782728] &gt;= [Calculation_9576966952684831173] AND [Calculation_5117989418621782728] &gt;= [Calculation_4717195676439985583] AND [Calculation_5117989418621782728] &gt;= [Calculation_3206906709141276980] AND [Calculation_5117989418621782728] &gt;= [Calculation_9887475786131882503] AND [Calculation_5117989418621782728] &gt;= [Calculation_9595877620888026037] AND [Calculation_5117989418621782728] &gt;= [Calculation_1831862557557644182] THEN [Calculation_5117989418621782728] ELSEIF [Calculation_5199774344922134622] &gt;= [Calculation_5117989418621782728] AND [Calculation_5199774344922134622] &gt;= [Calculation_9576966952684831173] AND [Calculation_5199774344922134622] &gt;= [Calculation_4717195676439985583] AND [Calculation_5199774344922134622] &gt;= [Calculation_3206906709141276980] AND [Calculation_5199774344922134622] &gt;= [Calculation_9887475786131882503] AND [Calculation_5199774344922134622] &gt;= [Calculation_9595877620888026037] AND [Calculation_5199774344922134622] &gt;= [Calculation_1831862557557644182] THEN [Calculation_5199774344922134622] ELSEIF [Calculation_9576966952684831173] &gt;= [Calculation_5117989418621782728] AND [Calculation_9576966952684831173] &gt;= [Calculation_5199774344922134622] AND [Calculation_9576966952684831173] &gt;= [Calculation_4717195676439985583] AND [Calculation_9576966952684831173] &gt;= [Calculation_3206906709141276980] AND [Calculation_9576966952684831173] &gt;= [Calculation_9887475786131882503] AND [Calculation_9576966952684831173] &gt;= [Calculation_9595877620888026037] AND [Calculation_9576966952684831173] &gt;= [Calculation_1831862557557644182] THEN [Calculation_9576966952684831173] ELSEIF [Calculation_4717195676439985583] &gt;= [Calculation_5117989418621782728] AND [Calculation_4717195676439985583] &gt;= [Calculation_5199774344922134622] AND [Calculation_4717195676439985583] &gt;= [Calculation_9576966952684831173] AND [Calculation_4717195676439985583] &gt;= [Calculation_3206906709141276980] AND [Calculation_4717195676439985583] &gt;= [Calculation_9887475786131882503] AND [Calculation_4717195676439985583] &gt;= [Calculation_9595877620888026037] AND [Calculation_4717195676439985583] &gt;= [Calculation_1831862557557644182] THEN [Calculation_4717195676439985583] ELSEIF [Calculation_3206906709141276980] &gt;= [Calculation_5117989418621782728] AND [Calculation_3206906709141276980] &gt;= [Calculation_5199774344922134622] AND [Calculation_3206906709141276980] &gt;= [Calculation_9576966952684831173] AND [Calculation_3206906709141276980] &gt;= [Calculation_4717195676439985583] AND [Calculation_3206906709141276980] &gt;= [Calculation_9887475786131882503] AND [Calculation_3206906709141276980] &gt;= [Calculation_9595877620888026037] AND [Calculation_3206906709141276980] &gt;= [Calculation_1831862557557644182] THEN [Calculation_3206906709141276980] ELSEIF [Calculation_9887475786131882503] &gt;= [Calculation_5117989418621782728] AND [Calculation_9887475786131882503] &gt;= [Calculation_5199774344922134622] AND [Calculation_9887475786131882503] &gt;= [Calculation_9576966952684831173] AND [Calculation_9887475786131882503] &gt;= [Calculation_4717195676439985583] AND [Calculation_9887475786131882503] &gt;= [Calculation_3206906709141276980] AND [Calculation_9887475786131882503] &gt;= [Calculation_9595877620888026037] AND [Calculation_9887475786131882503] &gt;= [Calculation_1831862557557644182] THEN [Calculation_9887475786131882503] ELSEIF [Calculation_9595877620888026037] &gt;= [Calculation_5117989418621782728] AND [Calculation_9595877620888026037] &gt;= [Calculation_5199774344922134622] AND [Calculation_9595877620888026037] &gt;= [Calculation_9576966952684831173] AND [Calculation_9595877620888026037] &gt;= [Calculation_4717195676439985583] AND [Calculation_9595877620888026037] &gt;= [Calculation_3206906709141276980] AND [Calculation_9595877620888026037] &gt;= [Calculation_9887475786131882503] AND [Calculation_9595877620888026037] &gt;= [Calculation_1831862557557644182] THEN [Calculation_9595877620888026037] ELSE [Calculation_1831862557557644182] END' />
+      </column>
+      <column caption='Regions · Profit · Cell' datatype='integer' name='[Calculation_7323096905206686960]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MIN(1)' />
+      </column>
+      <column caption='Regions · Sales · Outside' datatype='real' name='[Calculation_7325262857248529684]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF NOT (SUM([Sales]) &gt; 0 AND SUM([Sales]) &gt;= 0.193 * WINDOW_MAX(SUM([Sales]))) THEN SUM([Sales]) END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Regions · Quarterly sales · Lowest' datatype='real' name='[Calculation_9166515203698724603]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_5117989418621782728] &lt;= [Calculation_5199774344922134622] AND [Calculation_5117989418621782728] &lt;= [Calculation_9576966952684831173] AND [Calculation_5117989418621782728] &lt;= [Calculation_4717195676439985583] AND [Calculation_5117989418621782728] &lt;= [Calculation_3206906709141276980] AND [Calculation_5117989418621782728] &lt;= [Calculation_9887475786131882503] AND [Calculation_5117989418621782728] &lt;= [Calculation_9595877620888026037] AND [Calculation_5117989418621782728] &lt;= [Calculation_1831862557557644182] THEN [Calculation_5117989418621782728] ELSEIF [Calculation_5199774344922134622] &lt;= [Calculation_5117989418621782728] AND [Calculation_5199774344922134622] &lt;= [Calculation_9576966952684831173] AND [Calculation_5199774344922134622] &lt;= [Calculation_4717195676439985583] AND [Calculation_5199774344922134622] &lt;= [Calculation_3206906709141276980] AND [Calculation_5199774344922134622] &lt;= [Calculation_9887475786131882503] AND [Calculation_5199774344922134622] &lt;= [Calculation_9595877620888026037] AND [Calculation_5199774344922134622] &lt;= [Calculation_1831862557557644182] THEN [Calculation_5199774344922134622] ELSEIF [Calculation_9576966952684831173] &lt;= [Calculation_5117989418621782728] AND [Calculation_9576966952684831173] &lt;= [Calculation_5199774344922134622] AND [Calculation_9576966952684831173] &lt;= [Calculation_4717195676439985583] AND [Calculation_9576966952684831173] &lt;= [Calculation_3206906709141276980] AND [Calculation_9576966952684831173] &lt;= [Calculation_9887475786131882503] AND [Calculation_9576966952684831173] &lt;= [Calculation_9595877620888026037] AND [Calculation_9576966952684831173] &lt;= [Calculation_1831862557557644182] THEN [Calculation_9576966952684831173] ELSEIF [Calculation_4717195676439985583] &lt;= [Calculation_5117989418621782728] AND [Calculation_4717195676439985583] &lt;= [Calculation_5199774344922134622] AND [Calculation_4717195676439985583] &lt;= [Calculation_9576966952684831173] AND [Calculation_4717195676439985583] &lt;= [Calculation_3206906709141276980] AND [Calculation_4717195676439985583] &lt;= [Calculation_9887475786131882503] AND [Calculation_4717195676439985583] &lt;= [Calculation_9595877620888026037] AND [Calculation_4717195676439985583] &lt;= [Calculation_1831862557557644182] THEN [Calculation_4717195676439985583] ELSEIF [Calculation_3206906709141276980] &lt;= [Calculation_5117989418621782728] AND [Calculation_3206906709141276980] &lt;= [Calculation_5199774344922134622] AND [Calculation_3206906709141276980] &lt;= [Calculation_9576966952684831173] AND [Calculation_3206906709141276980] &lt;= [Calculation_4717195676439985583] AND [Calculation_3206906709141276980] &lt;= [Calculation_9887475786131882503] AND [Calculation_3206906709141276980] &lt;= [Calculation_9595877620888026037] AND [Calculation_3206906709141276980] &lt;= [Calculation_1831862557557644182] THEN [Calculation_3206906709141276980] ELSEIF [Calculation_9887475786131882503] &lt;= [Calculation_5117989418621782728] AND [Calculation_9887475786131882503] &lt;= [Calculation_5199774344922134622] AND [Calculation_9887475786131882503] &lt;= [Calculation_9576966952684831173] AND [Calculation_9887475786131882503] &lt;= [Calculation_4717195676439985583] AND [Calculation_9887475786131882503] &lt;= [Calculation_3206906709141276980] AND [Calculation_9887475786131882503] &lt;= [Calculation_9595877620888026037] AND [Calculation_9887475786131882503] &lt;= [Calculation_1831862557557644182] THEN [Calculation_9887475786131882503] ELSEIF [Calculation_9595877620888026037] &lt;= [Calculation_5117989418621782728] AND [Calculation_9595877620888026037] &lt;= [Calculation_5199774344922134622] AND [Calculation_9595877620888026037] &lt;= [Calculation_9576966952684831173] AND [Calculation_9595877620888026037] &lt;= [Calculation_4717195676439985583] AND [Calculation_9595877620888026037] &lt;= [Calculation_3206906709141276980] AND [Calculation_9595877620888026037] &lt;= [Calculation_9887475786131882503] AND [Calculation_9595877620888026037] &lt;= [Calculation_1831862557557644182] THEN [Calculation_9595877620888026037] ELSE [Calculation_1831862557557644182] END' />
+      </column>
+      <column caption='Regions · Quarterly sales · Period 3' datatype='real' name='[Calculation_9576966952684831173]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2024-07-01# THEN [Sales] END))' />
+      </column>
+      <column caption='Regions · Quarterly sales · Period 7' datatype='real' name='[Calculation_9595877620888026037]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2025-07-01# THEN [Sales] END))' />
+      </column>
+      <column caption='Regions · Quarterly sales · Cell' datatype='integer' name='[Calculation_9677478343522088781]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MIN(1)' />
+      </column>
+      <column caption='Regions · Quarterly sales · Period 6' datatype='real' name='[Calculation_9887475786131882503]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2025-04-01# THEN [Sales] END))' />
+      </column>
+      <column caption='sales_2y.csv' datatype='table' name='[__tableau_internal_object_id__].[sales_2y.csv_6F8C222738A5485AA59BA30904D32533]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_3375421249854604176]' derivation='User' name='[usr:Calculation_3375421249854604176:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[usr:Calculation_3375421249854604176:nk]' type='palette'>
+            <map to='#d8eeed'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#fdecc8'>
+              <bucket>&quot;OK&quot;</bucket>
+            </map>
+            <map to='#ffdedf'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Russia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='sales_2y.csv' id='sales_2y.csv_6F8C222738A5485AA59BA30904D32533'>
+            <properties context=''>
+              <relation connection='textscan.ioavr3xly211rmlg1wmirodrqyrs' name='sales_2y.csv' table='[sales_2y#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Order Date' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='string' name='Category' ordinal='2' />
+                  <column datatype='real' name='Sales' ordinal='3' />
+                  <column datatype='real' name='Profit' ordinal='4' />
+                  <column datatype='integer' name='Quantity' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Regions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_2y' name='federated.cdbc56raqlrtbcsleq8libsocm0y' />
+          </datasources>
+          <datasource-dependencies datasource='federated.cdbc56raqlrtbcsleq8libsocm0y'>
+            <column caption='Regions · Quarterly sales · Period 8' datatype='real' name='[Calculation_1831862557557644182]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2025-10-01# THEN [Sales] END))' />
+            </column>
+            <column caption='Regions · Quarterly sales · Period 5' datatype='real' name='[Calculation_3206906709141276980]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2025-01-01# THEN [Sales] END))' />
+            </column>
+            <column caption='Regions · Profit · Pill' datatype='string' name='[Calculation_3375421249854604176]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF SUM([Profit]) &gt;= 7000 THEN &quot;High&quot; ELSEIF SUM([Profit]) &gt;= 5000 THEN &quot;OK&quot; ELSE &quot;Low&quot; END' />
+            </column>
+            <column caption='Regions · Quarterly sales · Period 4' datatype='real' name='[Calculation_4717195676439985583]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2024-10-01# THEN [Sales] END))' />
+            </column>
+            <column caption='Regions · Quarterly sales · Period 1' datatype='real' name='[Calculation_5117989418621782728]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2024-01-01# THEN [Sales] END))' />
+            </column>
+            <column caption='Regions · Quarterly sales · Period 2' datatype='real' name='[Calculation_5199774344922134622]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2024-04-01# THEN [Sales] END))' />
+            </column>
+            <column caption='Regions · Sales · Inside' datatype='real' name='[Calculation_5431305383707631528]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF SUM([Sales]) &gt; 0 AND SUM([Sales]) &gt;= 0.193 * WINDOW_MAX(SUM([Sales])) THEN SUM([Sales]) END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Regions · Quarterly sales · Spark' datatype='string' name='[Calculation_5807833705534648984]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_5117989418621782728] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_5199774344922134622] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_9576966952684831173] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_4717195676439985583] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_3206906709141276980] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_9887475786131882503] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_9595877620888026037] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1) + MID(&quot;▁▂▃▄▅▆▇█&quot;, IIF([Calculation_6973710823747238485] = [Calculation_9166515203698724603], 4, INT(7 * ([Calculation_1831862557557644182] - [Calculation_9166515203698724603]) / ([Calculation_6973710823747238485] - [Calculation_9166515203698724603]) + 0.5) + 1), 1)' />
+            </column>
+            <column caption='Regions · Quarterly sales · Highest' datatype='real' name='[Calculation_6973710823747238485]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_5117989418621782728] &gt;= [Calculation_5199774344922134622] AND [Calculation_5117989418621782728] &gt;= [Calculation_9576966952684831173] AND [Calculation_5117989418621782728] &gt;= [Calculation_4717195676439985583] AND [Calculation_5117989418621782728] &gt;= [Calculation_3206906709141276980] AND [Calculation_5117989418621782728] &gt;= [Calculation_9887475786131882503] AND [Calculation_5117989418621782728] &gt;= [Calculation_9595877620888026037] AND [Calculation_5117989418621782728] &gt;= [Calculation_1831862557557644182] THEN [Calculation_5117989418621782728] ELSEIF [Calculation_5199774344922134622] &gt;= [Calculation_5117989418621782728] AND [Calculation_5199774344922134622] &gt;= [Calculation_9576966952684831173] AND [Calculation_5199774344922134622] &gt;= [Calculation_4717195676439985583] AND [Calculation_5199774344922134622] &gt;= [Calculation_3206906709141276980] AND [Calculation_5199774344922134622] &gt;= [Calculation_9887475786131882503] AND [Calculation_5199774344922134622] &gt;= [Calculation_9595877620888026037] AND [Calculation_5199774344922134622] &gt;= [Calculation_1831862557557644182] THEN [Calculation_5199774344922134622] ELSEIF [Calculation_9576966952684831173] &gt;= [Calculation_5117989418621782728] AND [Calculation_9576966952684831173] &gt;= [Calculation_5199774344922134622] AND [Calculation_9576966952684831173] &gt;= [Calculation_4717195676439985583] AND [Calculation_9576966952684831173] &gt;= [Calculation_3206906709141276980] AND [Calculation_9576966952684831173] &gt;= [Calculation_9887475786131882503] AND [Calculation_9576966952684831173] &gt;= [Calculation_9595877620888026037] AND [Calculation_9576966952684831173] &gt;= [Calculation_1831862557557644182] THEN [Calculation_9576966952684831173] ELSEIF [Calculation_4717195676439985583] &gt;= [Calculation_5117989418621782728] AND [Calculation_4717195676439985583] &gt;= [Calculation_5199774344922134622] AND [Calculation_4717195676439985583] &gt;= [Calculation_9576966952684831173] AND [Calculation_4717195676439985583] &gt;= [Calculation_3206906709141276980] AND [Calculation_4717195676439985583] &gt;= [Calculation_9887475786131882503] AND [Calculation_4717195676439985583] &gt;= [Calculation_9595877620888026037] AND [Calculation_4717195676439985583] &gt;= [Calculation_1831862557557644182] THEN [Calculation_4717195676439985583] ELSEIF [Calculation_3206906709141276980] &gt;= [Calculation_5117989418621782728] AND [Calculation_3206906709141276980] &gt;= [Calculation_5199774344922134622] AND [Calculation_3206906709141276980] &gt;= [Calculation_9576966952684831173] AND [Calculation_3206906709141276980] &gt;= [Calculation_4717195676439985583] AND [Calculation_3206906709141276980] &gt;= [Calculation_9887475786131882503] AND [Calculation_3206906709141276980] &gt;= [Calculation_9595877620888026037] AND [Calculation_3206906709141276980] &gt;= [Calculation_1831862557557644182] THEN [Calculation_3206906709141276980] ELSEIF [Calculation_9887475786131882503] &gt;= [Calculation_5117989418621782728] AND [Calculation_9887475786131882503] &gt;= [Calculation_5199774344922134622] AND [Calculation_9887475786131882503] &gt;= [Calculation_9576966952684831173] AND [Calculation_9887475786131882503] &gt;= [Calculation_4717195676439985583] AND [Calculation_9887475786131882503] &gt;= [Calculation_3206906709141276980] AND [Calculation_9887475786131882503] &gt;= [Calculation_9595877620888026037] AND [Calculation_9887475786131882503] &gt;= [Calculation_1831862557557644182] THEN [Calculation_9887475786131882503] ELSEIF [Calculation_9595877620888026037] &gt;= [Calculation_5117989418621782728] AND [Calculation_9595877620888026037] &gt;= [Calculation_5199774344922134622] AND [Calculation_9595877620888026037] &gt;= [Calculation_9576966952684831173] AND [Calculation_9595877620888026037] &gt;= [Calculation_4717195676439985583] AND [Calculation_9595877620888026037] &gt;= [Calculation_3206906709141276980] AND [Calculation_9595877620888026037] &gt;= [Calculation_9887475786131882503] AND [Calculation_9595877620888026037] &gt;= [Calculation_1831862557557644182] THEN [Calculation_9595877620888026037] ELSE [Calculation_1831862557557644182] END' />
+            </column>
+            <column caption='Regions · Profit · Cell' datatype='integer' name='[Calculation_7323096905206686960]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MIN(1)' />
+            </column>
+            <column caption='Regions · Sales · Outside' datatype='real' name='[Calculation_7325262857248529684]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF NOT (SUM([Sales]) &gt; 0 AND SUM([Sales]) &gt;= 0.193 * WINDOW_MAX(SUM([Sales]))) THEN SUM([Sales]) END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Regions · Quarterly sales · Lowest' datatype='real' name='[Calculation_9166515203698724603]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_5117989418621782728] &lt;= [Calculation_5199774344922134622] AND [Calculation_5117989418621782728] &lt;= [Calculation_9576966952684831173] AND [Calculation_5117989418621782728] &lt;= [Calculation_4717195676439985583] AND [Calculation_5117989418621782728] &lt;= [Calculation_3206906709141276980] AND [Calculation_5117989418621782728] &lt;= [Calculation_9887475786131882503] AND [Calculation_5117989418621782728] &lt;= [Calculation_9595877620888026037] AND [Calculation_5117989418621782728] &lt;= [Calculation_1831862557557644182] THEN [Calculation_5117989418621782728] ELSEIF [Calculation_5199774344922134622] &lt;= [Calculation_5117989418621782728] AND [Calculation_5199774344922134622] &lt;= [Calculation_9576966952684831173] AND [Calculation_5199774344922134622] &lt;= [Calculation_4717195676439985583] AND [Calculation_5199774344922134622] &lt;= [Calculation_3206906709141276980] AND [Calculation_5199774344922134622] &lt;= [Calculation_9887475786131882503] AND [Calculation_5199774344922134622] &lt;= [Calculation_9595877620888026037] AND [Calculation_5199774344922134622] &lt;= [Calculation_1831862557557644182] THEN [Calculation_5199774344922134622] ELSEIF [Calculation_9576966952684831173] &lt;= [Calculation_5117989418621782728] AND [Calculation_9576966952684831173] &lt;= [Calculation_5199774344922134622] AND [Calculation_9576966952684831173] &lt;= [Calculation_4717195676439985583] AND [Calculation_9576966952684831173] &lt;= [Calculation_3206906709141276980] AND [Calculation_9576966952684831173] &lt;= [Calculation_9887475786131882503] AND [Calculation_9576966952684831173] &lt;= [Calculation_9595877620888026037] AND [Calculation_9576966952684831173] &lt;= [Calculation_1831862557557644182] THEN [Calculation_9576966952684831173] ELSEIF [Calculation_4717195676439985583] &lt;= [Calculation_5117989418621782728] AND [Calculation_4717195676439985583] &lt;= [Calculation_5199774344922134622] AND [Calculation_4717195676439985583] &lt;= [Calculation_9576966952684831173] AND [Calculation_4717195676439985583] &lt;= [Calculation_3206906709141276980] AND [Calculation_4717195676439985583] &lt;= [Calculation_9887475786131882503] AND [Calculation_4717195676439985583] &lt;= [Calculation_9595877620888026037] AND [Calculation_4717195676439985583] &lt;= [Calculation_1831862557557644182] THEN [Calculation_4717195676439985583] ELSEIF [Calculation_3206906709141276980] &lt;= [Calculation_5117989418621782728] AND [Calculation_3206906709141276980] &lt;= [Calculation_5199774344922134622] AND [Calculation_3206906709141276980] &lt;= [Calculation_9576966952684831173] AND [Calculation_3206906709141276980] &lt;= [Calculation_4717195676439985583] AND [Calculation_3206906709141276980] &lt;= [Calculation_9887475786131882503] AND [Calculation_3206906709141276980] &lt;= [Calculation_9595877620888026037] AND [Calculation_3206906709141276980] &lt;= [Calculation_1831862557557644182] THEN [Calculation_3206906709141276980] ELSEIF [Calculation_9887475786131882503] &lt;= [Calculation_5117989418621782728] AND [Calculation_9887475786131882503] &lt;= [Calculation_5199774344922134622] AND [Calculation_9887475786131882503] &lt;= [Calculation_9576966952684831173] AND [Calculation_9887475786131882503] &lt;= [Calculation_4717195676439985583] AND [Calculation_9887475786131882503] &lt;= [Calculation_3206906709141276980] AND [Calculation_9887475786131882503] &lt;= [Calculation_9595877620888026037] AND [Calculation_9887475786131882503] &lt;= [Calculation_1831862557557644182] THEN [Calculation_9887475786131882503] ELSEIF [Calculation_9595877620888026037] &lt;= [Calculation_5117989418621782728] AND [Calculation_9595877620888026037] &lt;= [Calculation_5199774344922134622] AND [Calculation_9595877620888026037] &lt;= [Calculation_9576966952684831173] AND [Calculation_9595877620888026037] &lt;= [Calculation_4717195676439985583] AND [Calculation_9595877620888026037] &lt;= [Calculation_3206906709141276980] AND [Calculation_9595877620888026037] &lt;= [Calculation_9887475786131882503] AND [Calculation_9595877620888026037] &lt;= [Calculation_1831862557557644182] THEN [Calculation_9595877620888026037] ELSE [Calculation_1831862557557644182] END' />
+            </column>
+            <column caption='Regions · Quarterly sales · Period 3' datatype='real' name='[Calculation_9576966952684831173]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2024-07-01# THEN [Sales] END))' />
+            </column>
+            <column caption='Regions · Quarterly sales · Period 7' datatype='real' name='[Calculation_9595877620888026037]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2025-07-01# THEN [Sales] END))' />
+            </column>
+            <column caption='Regions · Quarterly sales · Cell' datatype='integer' name='[Calculation_9677478343522088781]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MIN(1)' />
+            </column>
+            <column caption='Regions · Quarterly sales · Period 6' datatype='real' name='[Calculation_9887475786131882503]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM(IF DATETRUNC(&apos;quarter&apos;, [Order Date]) = #2025-04-01# THEN [Sales] END))' />
+            </column>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3375421249854604176]' derivation='User' name='[usr:Calculation_3375421249854604176:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_5431305383707631528]' derivation='User' name='[usr:Calculation_5431305383707631528:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.cdbc56raqlrtbcsleq8libsocm0y].[none:Region:nk]' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[Calculation_5807833705534648984]' derivation='User' name='[usr:Calculation_5807833705534648984:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_7323096905206686960]' derivation='User' name='[usr:Calculation_7323096905206686960:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_7325262857248529684]' derivation='User' name='[usr:Calculation_7325262857248529684:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.cdbc56raqlrtbcsleq8libsocm0y].[none:Region:nk]' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[Calculation_9677478343522088781]' derivation='User' name='[usr:Calculation_9677478343522088781:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.cdbc56raqlrtbcsleq8libsocm0y].[none:Region:nk]' direction='DESC' using='[federated.cdbc56raqlrtbcsleq8libsocm0y].[sum:Sales:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_7323096905206686960:qk]' field-type='quantitative' max='1' min='0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='1' field='[federated.cdbc56raqlrtbcsleq8libsocm0y].[sum:Sales:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.cdbc56raqlrtbcsleq8libsocm0y].[sum:Sales:qk]' scope='cols' value='false' />
+            <format attr='display' class='1' field='[federated.cdbc56raqlrtbcsleq8libsocm0y].[sum:Sales:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_9677478343522088781:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_7323096905206686960:qk]' scope='cols' value='false' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.cdbc56raqlrtbcsleq8libsocm0y].[none:Region:nk]' value='30' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='width' field='[federated.cdbc56raqlrtbcsleq8libsocm0y].[none:Region:nk]' value='63' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.cdbc56raqlrtbcsleq8libsocm0y].[none:Region:nk]' value='left' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.cdbc56raqlrtbcsleq8libsocm0y].[sum:Sales:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_5431305383707631528:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff'><![CDATA[<[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_5431305383707631528:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#0d3a6b' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='359' />
+                <format attr='maxwidth' value='359' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.cdbc56raqlrtbcsleq8libsocm0y].[sum:Sales:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_7325262857248529684:qk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#333333'><![CDATA[<[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_7325262857248529684:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-transparency' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_9677478343522088781:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_5807833705534648984:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#4e79a7'><![CDATA[<[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_5807833705534648984:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='359' />
+                <format attr='maxwidth' value='359' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_7323096905206686960:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_3375421249854604176:nk]' />
+              <text column='[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_3375421249854604176:nk]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#333333' fontsize='8'><![CDATA[<[federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_3375421249854604176:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='359' />
+                <format attr='maxwidth' value='359' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.cdbc56raqlrtbcsleq8libsocm0y].[none:Region:nk]</rows>
+        <cols>([federated.cdbc56raqlrtbcsleq8libsocm0y].[sum:Sales:qk] + ([federated.cdbc56raqlrtbcsleq8libsocm0y].[sum:Sales:qk] + ([federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_9677478343522088781:qk] + [federated.cdbc56raqlrtbcsleq8libsocm0y].[usr:Calculation_7323096905206686960:qk])))</cols>
+      </table>
+      <simple-id uuid='{9CF20476-DE48-4914-B2BA-45B36AEAED4A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Registry spark pill'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+      </style>
+      <size maxheight='720' maxwidth='1200' minheight='720' minwidth='1200' />
+      <zones>
+        <zone h='100000' id='3' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='10833' id='4' type-v2='text' w='99000' x='500' y='833'>
+            <formatted-text>
+              <run bold='true' fontcolor='#333333' fontsize='18'>Registry</run>
+              <run fontcolor='#333333' fontsize='18'> spark and pill</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#666666' fontsize='11'>Sample data, 2024-2025</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='6' />
+            </zone-style>
+          </zone>
+          <zone h='87501' id='5' param='horz' type-v2='layout-flow' w='99000' x='500' y='11666'>
+            <zone h='87501' id='6' type-v2='layout-basic' w='99000' x='500' y='11666'>
+              <zone h='87501' id='7' param='vert' type-v2='layout-flow' w='99000' x='500' y='11666'>
+                <zone h='81113' id='8' type-v2='layout-basic' w='95168' x='2416' y='14860'>
+                  <zone forceUpdate='true' h='8472' id='9' type-v2='text' w='95168' x='2416' y='14860'>
+                    <formatted-text>
+                      <run fontcolor='#333333' fontsize='12'>Regions </run>
+                      <run bold='true' fontcolor='#333333' fontsize='12'>by sales trend</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#898989' fontsize='9'>Sales per quarter 2024-2025; profit level</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='margin-bottom' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='3889' id='10' type-v2='text' w='5250' x='2416' y='23332'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#ffffff' fontsize='8'>Region</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='padding' value='4' />
+                      <format attr='background-color' value='#0d3a6b' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='3889' id='11' type-v2='text' w='29917' x='7666' y='23332'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#ffffff' fontsize='8'>Sales</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='padding' value='4' />
+                      <format attr='background-color' value='#0d3a6b' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='3889' id='12' type-v2='text' w='29916' x='37583' y='23332'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#ffffff' fontsize='8'>Quarterly sales</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='padding' value='4' />
+                      <format attr='background-color' value='#0d3a6b' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='3889' id='13' type-v2='text' w='29917' x='67499' y='23332'>
+                    <formatted-text>
+                      <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='8'>Profit</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                      <format attr='padding' value='4' />
+                      <format attr='background-color' value='#0d3a6b' />
+                    </zone-style>
+                  </zone>
+                  <zone h='68752' id='14' name='Regions' show-title='false' w='95168' x='2416' y='27221'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='0' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#e6e6e6' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='16' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='6' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{C07D35A1-2D9F-4BB0-93D7-0010E49498E0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Regions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4BEDBA95-D1AA-4A71-BBAA-83258F02A0DF}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Registry spark pill'>
+      <viewpoints>
+        <viewpoint name='Regions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{28F0F82F-2E6F-47EA-90E1-5218329D9BD2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Registry spark pill' width='192'>
+      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
+      SURBVMZ1N4YdjOwAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

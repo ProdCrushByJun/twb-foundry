@@ -1,0 +1,23 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "datasource": {"type": "csv", "path": "../data/sample/sales_products.csv"},
+  "sheets": [
+    {"name": "Top 5 in Region", "type": "bar", "title": "**Top 5** products of the region",
+     "subtitle": "Ranked after the filters (RANK table calc)", "dimension": "Product", "measure": {"field": "Sales"},
+     "sort": "desc", "top": {"n": 5, "after": "filters"}},
+    {"name": "Top 5 Overall", "type": "bar", "title": "**Top 5** products overall, in the region",
+     "subtitle": "Ranked before the filters (Top N filter)", "dimension": "Product", "measure": {"field": "Sales"},
+     "sort": "desc", "top": {"n": 5}},
+    {"name": "Busiest Small Sellers", "type": "bar", "title": "**Busiest** products under 3 800",
+     "subtitle": "Top 3 by average quantity after a measure filter", "dimension": "Product",
+     "measure": {"field": "Quantity", "agg": "avg", "format": "number1"}, "sort": "desc", "top": {"n": 3, "after": "filters"},
+     "filters": [{"field": "Sales", "agg": "sum", "max": 3800}]}
+  ],
+  "filters": [
+    {"field": "Region", "show_on": "Top 5 in Region", "default": ["West"]}
+  ],
+  "dashboard": {"name": "Top After", "title": "**Top N** after the filters", "subtitle": "Sample data, 2025, 640 orders",
+                "width": 1200, "height": 800,
+                "grid": [["Top 5 in Region", "Top 5 Overall"], ["Busiest Small Sellers"]]}
+}

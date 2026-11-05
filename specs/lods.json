@@ -1,0 +1,26 @@
+{
+  "$schema": "../tbuilder/spec.schema.json",
+  "version": 1,
+  "block_headers": false,
+  "datasource": {"type": "csv", "path": "../data/sample/sales.csv"},
+  "calcs": [
+    {"name": "Total Sales", "formula": "{FIXED : SUM([Sales])}"},
+    {"name": "Region Sales", "formula": "{FIXED [Region] : SUM([Sales])}"},
+    {"name": "Share of Total", "formula": "SUM([Sales]) / MIN([Total Sales])", "format": "percent"},
+    {"name": "Share of Region", "formula": "SUM([Sales]) / MIN([Region Sales])", "format": "percent"},
+    {"name": "Region Size", "formula": "IF [Region Sales] > 56000 THEN \"Big region\" ELSE \"Small region\" END"},
+    {"name": "Max Region Sales", "formula": "MAX([Region Sales])"},
+    {"name": "First Day Orders", "formula": "IF [Order Date] = {FIXED [Region] : MIN([Order Date])} THEN 1 ELSE 0 END"}
+  ],
+  "sheets": [
+    {"name": "KPI", "type": "kpi", "style": "tiles", "measures": [
+      {"field": "Total Sales", "agg": "min", "label": "Total (FIXED)"},
+      {"field": "Max Region Sales", "label": "Best region"},
+      {"field": "First Day Orders", "label": "First-day orders"}]},
+    {"name": "Share by Category", "type": "bar", "dimension": "Category", "measure": {"field": "Share of Total"}, "sort": "desc"},
+    {"name": "Region Mix", "type": "heatmap", "rows": "Region", "cols": "Category", "measure": {"field": "Share of Region"}},
+    {"name": "Sales by Region", "type": "bar", "dimension": "Region", "measure": {"field": "Sales"}, "color": "Region Size"}
+  ],
+  "dashboard": {"theme": "flat", "name": "LODs", "width": 1200, "height": 800, "row_heights": [1, 3],
+                "grid": [["KPI"], ["Share by Category", "Region Mix", "Sales by Region"]]}
+}

@@ -1,0 +1,367 @@
+{
+ "$schema": "../../tbuilder/spec.schema.json",
+ "version": 1,
+ "profile": "hotels",
+ "datasource": {
+  "type": "csv",
+  "path": "data/hotel_bookings.csv"
+ },
+ "calcs": [
+  {
+   "name": "Cancelled 2016",
+   "formula": "IF YEAR([Arrival Date]) = 2016 AND [Arrival Month] IN (\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\") THEN [Cancelled] END"
+  },
+  {
+   "name": "Cancelled 2017",
+   "formula": "IF YEAR([Arrival Date]) = 2017 THEN [Cancelled] END"
+  },
+  {
+   "name": "Change vs 2016",
+   "formula": "SUM([Cancelled 2017]) - SUM([Cancelled 2016])",
+   "format": "number"
+  },
+  {
+   "name": "Change Pct",
+   "formula": "(SUM([Cancelled 2017]) - SUM([Cancelled 2016])) / SUM([Cancelled 2016])",
+   "format": {
+    "type": "percent",
+    "decimals": 0,
+    "plus": true
+   }
+  },
+  {
+   "name": "Rate Week",
+   "formula": "SUM(IF [Lead Time Band] = \"0-7 days\" THEN [Cancelled] END) / COUNT(IF [Lead Time Band] = \"0-7 days\" THEN [Booking ID] END)",
+   "format": "pct0"
+  },
+  {
+   "name": "Rate Long",
+   "formula": "SUM(IF [Lead Time Band] = \"181+ days\" THEN [Cancelled] END) / COUNT(IF [Lead Time Band] = \"181+ days\" THEN [Booking ID] END)",
+   "format": "pct0"
+  },
+  {
+   "name": "City Bookings",
+   "formula": "IF [Hotel] = \"City hotel\" THEN [Booking ID] END"
+  },
+  {
+   "name": "City Cancelled",
+   "formula": "IF [Hotel] = \"City hotel\" THEN [Cancelled] END"
+  },
+  {
+   "name": "Resort Bookings",
+   "formula": "IF [Hotel] = \"Resort hotel\" THEN [Booking ID] END"
+  },
+  {
+   "name": "Resort Cancelled",
+   "formula": "IF [Hotel] = \"Resort hotel\" THEN [Cancelled] END"
+  },
+  {
+   "name": "Rate Long No Refund Excluded",
+   "formula": "SUM(IF [Lead Time Band] = \"181+ days\" AND [Deposit Type] <> \"Non Refund\" THEN [Cancelled] END) / COUNT(IF [Lead Time Band] = \"181+ days\" AND [Deposit Type] <> \"Non Refund\" THEN [Booking ID] END)",
+   "format": "pct0"
+  },
+  {
+   "name": "City Rate Calc",
+   "formula": "SUM([City Cancelled]) / COUNT([City Bookings])",
+   "format": "pct1"
+  },
+  {
+   "name": "City Cancelled Count",
+   "formula": "SUM([City Cancelled])",
+   "format": "number"
+  },
+  {
+   "name": "City Booking Count",
+   "formula": "COUNT([City Bookings])",
+   "format": "number"
+  },
+  {
+   "name": "Resort Rate Calc",
+   "formula": "SUM([Resort Cancelled]) / COUNT([Resort Bookings])",
+   "format": "pct1"
+  },
+  {
+   "name": "Resort Cancelled Count",
+   "formula": "SUM([Resort Cancelled])",
+   "format": "number"
+  },
+  {
+   "name": "Resort Booking Count",
+   "formula": "COUNT([Resort Bookings])",
+   "format": "number"
+  }
+ ],
+ "fields": {
+  "Lead Time Band": {
+   "order": [
+    "0-7 days",
+    "8-30 days",
+    "31-90 days",
+    "91-180 days",
+    "181+ days"
+   ],
+   "aliases": {
+    "0-7 days": "0-7",
+    "8-30 days": "8-30",
+    "31-90 days": "31-90",
+    "91-180 days": "91-180",
+    "181+ days": "181+"
+   }
+  },
+  "Segment": {
+   "order": [
+    "Groups",
+    "Online agents",
+    "Offline agents",
+    "Corporate",
+    "Direct",
+    "Other"
+   ]
+  },
+  "Arrival Month": {
+   "order": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+   ]
+  },
+  "Cancelled": {
+   "caption": "Cancelled"
+  },
+  "Hotel": {
+   "aliases": {
+    "City hotel": "City",
+    "Resort hotel": "Resort"
+   }
+  },
+  "Outcome": {
+   "order": [
+    "Cancelled",
+    "Stayed"
+   ],
+   "color": {
+    "Cancelled": "#f4842e",
+    "Stayed": "#d3deeb"
+   }
+  }
+ },
+ "sheets": [
+  {
+   "name": "City Rate",
+   "type": "kpi",
+   "style": "tiles",
+   "measures": [
+    {
+     "field": "City Rate Calc",
+     "label": "City hotel",
+     "note": "[City Cancelled Count] of [City Booking Count]"
+    }
+   ]
+  },
+  {
+   "name": "Resort Rate",
+   "type": "kpi",
+   "style": "tiles",
+   "measures": [
+    {
+     "field": "Resort Rate Calc",
+     "label": "Resort hotel",
+     "note": "[Resort Cancelled Count] of [Resort Booking Count]"
+    }
+   ]
+  },
+  {
+   "name": "City Months",
+   "type": "bar",
+   "title": "**City** by month",
+   "subtitle": "{accent:cancelled} of all bookings",
+   "orientation": "vertical",
+   "dimension": "Arrival Date",
+   "measure": {
+    "field": "City Bookings",
+    "agg": "count",
+    "label": "Bookings"
+   },
+   "date_level": "month",
+   "color": {
+    "highlight": [
+     "Cancelled"
+    ],
+    "field": "Outcome"
+   }
+  },
+  {
+   "name": "Resort Months",
+   "type": "bar",
+   "title": "**Resort** by month",
+   "subtitle": "{accent:cancelled} of all bookings",
+   "orientation": "vertical",
+   "dimension": "Arrival Date",
+   "measure": {
+    "field": "Resort Bookings",
+    "agg": "count",
+    "label": "Bookings"
+   },
+   "date_level": "month",
+   "color": {
+    "highlight": [
+     "Cancelled"
+    ],
+    "field": "Outcome"
+   }
+  },
+  {
+   "name": "Lead Time Heat",
+   "type": "heatmap",
+   "title": "**Lead time**",
+   "subtitle": "% cancelled, by days booked ahead",
+   "insight": "Within a week **[Rate Week]**; 181+ days **[Rate Long]**, **[Rate Long No Refund Excluded]** without non-refund",
+   "rows": "Segment",
+   "cols": "Lead Time Band",
+   "measure": {
+    "field": "Cancelled",
+    "agg": "avg",
+    "format": "pct0"
+   },
+   "color": {
+    "scale": "sequential"
+   },
+   "margins": {
+    "rows": "bar",
+    "cols": "bar"
+   }
+  },
+  {
+   "name": "Cancelled 2017 Bars",
+   "type": "bar",
+   "title": "**2017** cancellations",
+   "insight": "**[Change Pct]** vs Jan-Aug 2016",
+   "orientation": "vertical",
+   "dimension": "Arrival Month",
+   "measure": {
+    "field": "Cancelled 2017",
+    "agg": "sum",
+    "label": "Cancelled, 2017"
+   },
+   "facet": {
+    "field": "Hotel"
+   },
+   "sort": "none",
+   "filters": [
+    {
+     "field": "Arrival Month",
+     "default": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Change Bars",
+   "type": "bar",
+   "title": "**Change vs 2016**",
+   "subtitle": "{bad:more} or {good:fewer} cancelled",
+   "orientation": "vertical",
+   "dimension": "Arrival Month",
+   "measure": {
+    "field": "Change vs 2016",
+    "label": "Change vs 2016"
+   },
+   "facet": {
+    "field": "Hotel"
+   },
+   "sort": "none",
+   "color": {
+    "good": "down"
+   },
+   "filters": [
+    {
+     "field": "Arrival Month",
+     "default": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug"
+     ]
+    }
+   ]
+  }
+ ],
+ "dashboard": {
+  "name": "Hotel Cancellations",
+  "title": "**Hotel cancellations**: booked earlier, cancelled more",
+  "subtitle": "119,390 bookings, two hotels in Portugal, Jul 2015 to Aug 2017",
+  "theme": "cards",
+  "width": 1400,
+  "height": 900,
+  "row_heights": [
+   4,
+   3
+  ],
+  "grid": [
+   [
+    {
+     "sheet": "Lead Time Heat",
+     "width": 7
+    },
+    {
+     "rows": [
+      [
+       {
+        "sheet": "City Rate",
+        "width": 2
+       },
+       {
+        "sheet": "City Months",
+        "width": 5
+       }
+      ],
+      [
+       {
+        "sheet": "Resort Rate",
+        "width": 2
+       },
+       {
+        "sheet": "Resort Months",
+        "width": 5
+       }
+      ]
+     ],
+     "width": 6
+    }
+   ],
+   [
+    "Cancelled 2017 Bars",
+    "Change Bars"
+   ]
+  ],
+  "actions": [
+   {
+    "source": "Lead Time Heat",
+    "type": "filter",
+    "targets": ["City Rate", "Resort Rate", "City Months", "Resort Months", "Cancelled 2017 Bars", "Change Bars"],
+    "hint": "Click to filter"
+   }
+  ]
+ }
+}

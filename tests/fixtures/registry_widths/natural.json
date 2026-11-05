@@ -1,0 +1,476 @@
+{
+ "$schema": "../../../tbuilder/spec.schema.json",
+ "version": 1,
+ "datasource": {
+  "type": "csv",
+  "path": "lab.csv"
+ },
+ "sheets": [
+  {
+   "name": "V66",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "V72",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "V78",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "V84",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "V90",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "V96",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "V102",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "V108",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "V114",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "V120",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "V126",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "X66",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "X72",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "X78",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "X84",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "X90",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "X96",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "X102",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "X108",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "X114",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "X120",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "X126",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "Revenue"
+    }
+   ]
+  },
+  {
+   "name": "S1",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "X0"
+    },
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "V1"
+    }
+   ]
+  },
+  {
+   "name": "S2",
+   "type": "registry",
+   "rows": [
+    "Region"
+   ],
+   "columns": [
+    {
+     "measure": {
+      "field": "V",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "V0"
+    },
+    {
+     "measure": {
+      "field": "X",
+      "format": "number"
+     },
+     "style": "text",
+     "label": "X1"
+    }
+   ]
+  }
+ ],
+ "dashboard": {
+  "name": "Lab",
+  "title": "Registry natural lab",
+  "width": 1366,
+  "height": 1000,
+  "grid": [
+   [
+    "V66",
+    "V72",
+    "V78",
+    "V84",
+    "V90",
+    "V96"
+   ],
+   [
+    "V102",
+    "V108",
+    "V114",
+    "V120",
+    "V126",
+    "X66"
+   ],
+   [
+    "X72",
+    "X78",
+    "X84",
+    "X90",
+    "X96",
+    "X102"
+   ],
+   [
+    "X108",
+    "X114",
+    "X120",
+    "X126"
+   ],
+   [
+    "S1",
+    "S2"
+   ]
+  ]
+ }
+}

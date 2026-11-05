@@ -1,0 +1,77 @@
+{
+ "_source": "pandas over data/sample/sales_2y.csv (golden/expected/make_expected.py, decisions/052): cards abs + % delta, pill and marker bars, history max / min / last and average, period line, data as of",
+ "Monthly": {
+  "Sales": {
+   "current": 15462.12,
+   "previous": 13995.54,
+   "delta": 0.1048,
+   "diff": 1466.58
+  },
+  "Profit": {
+   "current": 825.38,
+   "previous": 1257.53,
+   "delta": -0.3436,
+   "diff": -432.15
+  },
+  "Units": {
+   "current": 104,
+   "previous": 102,
+   "delta": 0.0196,
+   "diff": 2
+  }
+ },
+ "Monthly · Sales · History · Reference": {
+  "Average": 13222.2058
+ },
+ "Monthly · Sales · History · Points": {
+  "max": 17285.09,
+  "min": 5612.36,
+  "last": 15462.12
+ },
+ "Monthly · Profit · History · Reference": {
+  "Average": 1022.7271
+ },
+ "Monthly · Profit · History · Points": {
+  "max": 1903.65,
+  "min": 347.44,
+  "last": 825.38
+ },
+ "Monthly · Units · History · Reference": {
+  "Average": 106
+ },
+ "Monthly · Units · History · Points": {
+  "max": 139,
+  "min": 73,
+  "last": 104
+ },
+ "Monthly · Period Line": {
+  "period": "2025-12-01",
+  "base": "2025-11-01"
+ },
+ "Yearly": {
+  "Sales": {
+   "current": 15462.12,
+   "previous": 9571.36,
+   "delta": 0.6155
+  },
+  "Profit": {
+   "current": 825.38,
+   "previous": 406.4,
+   "delta": 1.031
+  }
+ },
+ "Stacked": {
+  "Units": {
+   "current": 104,
+   "previous": 102,
+   "delta": 0.0196,
+   "diff": 2
+  }
+ },
+ "Stacked · Units · History · Points": {
+  "max": 139,
+  "min": 73,
+  "last": 104
+ },
+ "KPI v2 · Data as of": "2025-12-31"
+}

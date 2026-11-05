@@ -1,0 +1,47 @@
+{
+ "_source": "pandas over data/sample/funnel.csv (golden/expected/make_expected.py, decisions/052): stages by users with the conversion over the stage above; Social in process order over the visits",
+ "Funnel": {
+  "Visit": {
+   "value": 172349,
+   "conversion": null
+  },
+  "Sign-up": {
+   "value": 45529,
+   "conversion": 0.2642
+  },
+  "Trial": {
+   "value": 23470,
+   "conversion": 0.5155
+  },
+  "Purchase": {
+   "value": 8825,
+   "conversion": 0.376
+  },
+  "Renewal": {
+   "value": 6135,
+   "conversion": 0.6952
+  }
+ },
+ "Social Funnel": {
+  "Visit": {
+   "value": 86763,
+   "conversion": 1
+  },
+  "Sign-up": {
+   "value": 15674,
+   "conversion": 0.1807
+  },
+  "Trial": {
+   "value": 6658,
+   "conversion": 0.0767
+  },
+  "Purchase": {
+   "value": 2005,
+   "conversion": 0.0231
+  },
+  "Renewal": {
+   "value": 1185,
+   "conversion": 0.0137
+  }
+ }
+}
